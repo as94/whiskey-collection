@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Georama;
+  src: url(georama.ttf);
+}
+
+:root {
+  --primary-light-brown: #3d3232;
+  --primary-light-green: #7d9f8c;
+  --text-brown-dark: #4e4442;
+  --text-brown-light: #907d7a;
+  --text-white: #ffffff;
+  --btn-hover-green: #53714b;
+}
+
+body {
+  margin: 0;
+  font-family: Georama;
+  height: 100%;
+  width: 100%;
+  color: #4e4442;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 104px;
+}
+
+.logo {
+  left: 80px;
+  position: absolute;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  border-bottom: 2px solid var(--primary-light-green);
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.menu-item:hover {
+  border-bottom: 2px solid var(--primary-light-brown);
+  cursor: pointer;
+}
+
+.h-4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.045em;
+  text-align: left;
+}
