@@ -11,31 +11,55 @@ const getWhiskey = async () => {
   return await response.json();
 };
 
-const run = async () => {
-  const whiskey = await getWhiskey();
+// const run = async () => {
+//   const whiskey = await getWhiskey();
 
-  for (const item of whiskey) {
-    const product = document.createElement('div');
-    product.style.width = '300px';
-    product.style.border = '1px solid #ccc';
-    product.style.textAlign = 'center';
+//   for (const item of whiskey) {
+//     const product = document.createElement('div');
+//     product.style.width = '300px';
+//     product.style.border = '1px solid #ccc';
+//     product.style.textAlign = 'center';
 
-    const img = document.createElement('img');
-    img.src = item.ImageUrl;
-    img.style.maxWidth = '100%';
-    img.style.height = '300px';
-    img.style.objectFit = 'contain';
-    img.style.display = 'inline-block';
-    img.style.margin = 'auto';
+//     const img = document.createElement('img');
+//     img.src = item.ImageUrl;
+//     img.style.maxWidth = '100%';
+//     img.style.height = '300px';
+//     img.style.objectFit = 'contain';
+//     img.style.display = 'inline-block';
+//     img.style.margin = 'auto';
 
-    product.appendChild(img);
+//     product.appendChild(img);
 
-    const name = document.createElement('p');
-    name.innerText = item.Name;
-    product.appendChild(name);
+//     const name = document.createElement('p');
+//     name.innerText = item.Name;
+//     product.appendChild(name);
 
-    whiskeyCollection.appendChild(product);
+//     whiskeyCollection.appendChild(product);
+//   }
+// };
+
+// run();
+function nextSlide() {
+  const currentSlide = document.querySelector('.slider__slide.active');
+
+  currentSlide.classList.remove('active');
+
+  let nextSlide = currentSlide.nextElementSibling;
+
+  if (!nextSlide) {
+    nextSlide = document.querySelector('.slider__slide:first-child');
   }
-};
 
-run();
+  nextSlide.classList.add('active');
+
+  const sliderWrapper = document.getElementById('sliderWrapper');
+  const height = document.querySelector('.slider__slide').clientHeight;
+  sliderWrapper.style.transform = `translateY(-${
+    height * (nextSlide.dataset.index - 1)
+  }px)`;
+}
+
+const firstSlide = document.querySelector('.slider__slide:first-child');
+firstSlide.classList.add('active');
+
+setInterval(nextSlide, 5000);
