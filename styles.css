@@ -160,7 +160,7 @@ body {
 }
 
 .column.slider {
-  height: 600px;
+  padding-top: 10vh;
   overflow: hidden;
 }
 
