@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primary-light-brown: #3d3232;
+  --primary-brown: #3d3232;
   --primary-light-green: #7d9f8c;
   --text-brown-dark: #4e4442;
   --text-brown-light: #907d7a;
@@ -45,7 +45,109 @@ body {
 }
 
 .menu-item:hover {
-  border-bottom: 2px solid var(--primary-light-brown);
+  border-bottom: 2px solid var(--primary-brown);
+  cursor: pointer;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: var(--primary-brown);
+}
+
+.column {
+  width: 33.3%;
+}
+
+.column.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.usp-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.045em;
+  text-align: left;
+  color: var(--text-white);
+  padding-left: 105px;
+  padding-top: 100px;
+}
+
+.usp-product {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.first-row {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0.045em;
+  text-align: right;
+  color: var(--text-white);
+  padding-bottom: 5px;
+}
+
+.second-row {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0.045em;
+  text-align: left;
+  color: var(--text-white);
+}
+
+.third-row {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0.045em;
+  text-align: right;
+  color: var(--primary-light-green);
+  padding-bottom: 15px;
+}
+
+.fourth-row {
+  display: flex;
+  justify-content: end;
+}
+
+.catalog-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 50px;
+  width: 150px;
+  border-radius: 4px;
+  background-color: var(--primary-light-green);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.045em;
+  text-align: left;
+}
+
+.catalog-btn::after {
+  content: '';
+  background-image: url('icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.catalog-btn:hover {
+  background-color: var(--btn-hover-green);
   cursor: pointer;
 }
 
