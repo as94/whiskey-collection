@@ -20,7 +20,7 @@ body {
   color: #4e4442;
 }
 
-.header {
+.main-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,18 +80,18 @@ body {
   width: 360px;
 }
 
-.first-row {
+.usp-product .first-row {
   text-align: right;
   color: var(--text-white);
   padding-bottom: 5px;
 }
 
-.second-row {
+.usp-product .second-row {
   text-align: left;
   color: var(--text-white);
 }
 
-.third-row {
+.usp-product .third-row {
   text-align: right;
   color: var(--primary-light-green);
   padding-bottom: 15px;
@@ -130,4 +130,45 @@ body {
 .catalog-btn:hover {
   background-color: var(--btn-hover-green);
   cursor: pointer;
+}
+
+.world-whiskey {
+  padding-top: 125px;
+  padding-bottom: 145px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+.world-whiskey .header {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-before {
+  display: flex;
+  align-items: center;
+}
+
+.line-before::before {
+  content: '';
+  width: 400px;
+  border-top: 1px solid var(--primary-brown);
+  margin-right: 64px;
+}
+
+.world-whiskey .header .second-row {
+  color: var(--primary-light-green);
+  justify-content: end;
+}
+
+.line-after {
+  display: flex;
+  align-items: center;
+}
+
+.line-after::after {
+  content: '';
+  width: 400px;
+  border-top: 1px solid var(--primary-light-green);
+  margin-left: 64px;
 }
