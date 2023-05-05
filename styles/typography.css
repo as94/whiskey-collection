@@ -12,6 +12,13 @@
   letter-spacing: 0.045em;
 }
 
+.h-3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0.045em;
+}
+
 .h-4 {
   font-size: 24px;
   font-weight: 600;
@@ -19,9 +26,16 @@
   letter-spacing: 0.045em;
 }
 
-.body-text {
+.body-text-14 {
   font-size: 14px;
   font-weight: 600;
   line-height: 17px;
+  letter-spacing: 0.045em;
+}
+
+.body-text-16 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
   letter-spacing: 0.045em;
 }
