@@ -1,0 +1,30 @@
+.column.slider {
+  padding-top: 5vh;
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 1800px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider__slide {
+  height: 600px;
+  transition: opacity 0.5s ease-in-out;
+  transform: translateY(0);
+}
+
+.slider__slide:not(.active) {
+  opacity: 0;
+}
+
+.slider__slide img {
+  width: 450px;
+  height: 600px;
+}
+
+.active {
+  opacity: 1;
+}

@@ -1,6 +1,6 @@
 @font-face {
   font-family: Georama;
-  src: url(georama.ttf);
+  src: url(../fonts/georama.ttf);
 }
 
 :root {
@@ -39,6 +39,7 @@ body {
 }
 
 .menu-item {
+  text-align: left;
   border-bottom: 2px solid var(--primary-light-green);
   padding-bottom: 2px;
   padding-top: 2px;
@@ -67,10 +68,6 @@ body {
 }
 
 .usp-text {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 34px;
-  letter-spacing: 0.045em;
   text-align: left;
   color: var(--text-white);
   padding-left: 105px;
@@ -84,29 +81,17 @@ body {
 }
 
 .first-row {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 45px;
-  letter-spacing: 0.045em;
   text-align: right;
   color: var(--text-white);
   padding-bottom: 5px;
 }
 
 .second-row {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 67px;
-  letter-spacing: 0.045em;
   text-align: left;
   color: var(--text-white);
 }
 
 .third-row {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 67px;
-  letter-spacing: 0.045em;
   text-align: right;
   color: var(--primary-light-green);
   padding-bottom: 15px;
@@ -128,16 +113,12 @@ body {
   width: 150px;
   border-radius: 4px;
   background-color: var(--primary-light-green);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 17px;
-  letter-spacing: 0.045em;
   text-align: left;
 }
 
 .catalog-btn::after {
   content: '';
-  background-image: url('icons/arrow.svg');
+  background-image: url('../icons/arrow.svg');
   background-repeat: no-repeat;
   background-size: contain;
   padding: 0;
@@ -149,43 +130,4 @@ body {
 .catalog-btn:hover {
   background-color: var(--btn-hover-green);
   cursor: pointer;
-}
-
-.h-4 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 34px;
-  letter-spacing: 0.045em;
-  text-align: left;
-}
-
-.column.slider {
-  padding-top: 5vh;
-  overflow: hidden;
-}
-
-.slider__wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 1800px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slider__slide {
-  height: 600px;
-  transition: opacity 0.5s ease-in-out;
-  transform: translateY(0);
-}
-
-.slider__slide:not(.active) {
-  opacity: 0;
-}
-
-.slider__slide img {
-  width: 450px;
-  height: 600px;
-}
-
-.active {
-  opacity: 1;
 }
