@@ -46,3 +46,10 @@
   line-height: 22px;
   letter-spacing: 0.045em;
 }
+
+.body-text-20 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.045em;
+}

@@ -311,6 +311,76 @@ body {
   padding: 0 110px;
 }
 
+.filters {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.filter-block {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.filter-block label {
+  padding-bottom: 20px;
+  text-align: center;
+  color: var(--primary-brown);
+  user-select: none;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.selected-country {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+  padding: 10px;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.dropdown-options {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.dropdown-options.show {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option.selected {
+  font-weight: bold;
+}
+
 .search-line {
   margin-bottom: 40px;
   width: 100%;
@@ -323,6 +393,7 @@ body {
   padding: 15px;
   width: 95%;
   margin-left: 30px;
+  user-select: none;
 }
 
 .search-line input[type='text']:hover {
@@ -333,6 +404,7 @@ body {
   position: absolute;
   margin-top: 10px;
   margin-left: 10px;
+  user-select: none;
 }
 
 .find-btn {

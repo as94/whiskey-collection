@@ -63,3 +63,27 @@ const firstSlide = document.querySelector('.slider__slide:first-child');
 firstSlide.classList.add('active');
 
 setInterval(nextSlide, 5000);
+
+$(document).ready(function () {
+  $('.selected-country').click(function () {
+    $(this).toggleClass('active');
+    $('.dropdown-options').toggleClass('show');
+  });
+
+  $('.option').click(function () {
+    var selectedOption = $(this).text();
+    $('#selected-country').text(selectedOption);
+    $('.option').removeClass('selected');
+    $(this).addClass('selected');
+    $('.dropdown-options').removeClass('show');
+    $('.selected-country').removeClass('active');
+  });
+
+  $(document).click(function (event) {
+    var target = $(event.target);
+    if (!target.closest('.dropdown-container').length) {
+      $('.dropdown-options').removeClass('show');
+      $('.selected-country').removeClass('active');
+    }
+  });
+});

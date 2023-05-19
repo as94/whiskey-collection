@@ -176,12 +176,60 @@
       </div>
 
       <div class="search-parameters">
-        <div class="filters"></div>
+        <div class="filters">
+          <div class="filter-block">
+            <label for="country" class="body-text-20">What country?</label>
+            <div class="dropdown-container">
+              <div class="selected-country">
+                <span id="selected-country" class="body-text-16"
+                  >United States</span
+                >
+                <img src="icons/chevron.svg" />
+              </div>
+              <ul class="dropdown-options">
+                <li class="option selected">United States</li>
+                <li class="option">UK</li>
+                <li class="option">Japan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-block">
+            <label for="country" class="body-text-20">What brand?</label>
+            <div class="dropdown-container">
+              <div class="selected-country">
+                <span id="selected-country" class="body-text-16"
+                  >Jack Daniel's</span
+                >
+                <img src="icons/chevron.svg" />
+              </div>
+              <ul class="dropdown-options">
+                <li class="option selected">Jack Daniel's</li>
+                <li class="option">Singleton</li>
+                <li class="option">Macallan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-block">
+            <label for="country" class="body-text-20">What budget?</label>
+            <div class="dropdown-container">
+              <div class="selected-country">
+                <span id="selected-country" class="body-text-16">30-60</span>
+                <img src="icons/chevron.svg" />
+              </div>
+              <ul class="dropdown-options">
+                <li class="option selected">30-60</li>
+                <li class="option">60-90</li>
+                <li class="option">90-120</li>
+                <li class="option">120-150</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="search-line">
           <img class="search-icon" src="icons/search.svg" />
           <input
             type="text"
-            placeholder="Search something (optional)"
+            placeholder="Search whiskey"
             class="body-text-16"
           />
         </div>
@@ -212,6 +260,7 @@
       </div>
     </div>
 
+    <script src="libs/jquery-3.7.0.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
