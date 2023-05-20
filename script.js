@@ -65,25 +65,29 @@ firstSlide.classList.add('active');
 setInterval(nextSlide, 5000);
 
 $(document).ready(function () {
-  $('.selected-country').click(function () {
-    $(this).toggleClass('active');
-    $('.dropdown-options').toggleClass('show');
-  });
+  const filters = ['country', 'brand', 'budget'];
 
-  $('.option').click(function () {
-    var selectedOption = $(this).text();
-    $('#selected-country').text(selectedOption);
-    $('.option').removeClass('selected');
-    $(this).addClass('selected');
-    $('.dropdown-options').removeClass('show');
-    $('.selected-country').removeClass('active');
-  });
+  for (const filter of filters) {
+    $(`.selected-item.${filter}`).click(function () {
+      $(this).toggleClass('active');
+      $(`.dropdown-options.${filter}`).toggleClass('show');
+    });
+
+    $(`.dropdown-options.${filter} > li`).click(function () {
+      var selectedOption = $(this).text();
+      $(`#selected-${filter}`).text(selectedOption);
+      $(`.dropdown-options.${filter} > li`).removeClass('selected');
+      $(this).addClass('selected');
+      $('.dropdown-options').removeClass('show');
+      $('.selected-item').removeClass('active');
+    });
+  }
 
   $(document).click(function (event) {
     var target = $(event.target);
     if (!target.closest('.dropdown-container').length) {
       $('.dropdown-options').removeClass('show');
-      $('.selected-country').removeClass('active');
+      $('.selected-item').removeClass('active');
     }
   });
 });

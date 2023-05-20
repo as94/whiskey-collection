@@ -336,7 +336,7 @@ body {
   display: inline-block;
 }
 
-.selected-country {
+.selected-item {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #000;
@@ -368,17 +368,17 @@ body {
   z-index: 1;
 }
 
-.option {
+.dropdown-options > li {
   padding: 10px;
   cursor: pointer;
   user-select: none;
 }
 
-.option:hover {
+.dropdown-options > li:hover {
   background-color: #f0f0f0;
 }
 
-.option.selected {
+.dropdown-options > li.selected {
   font-weight: bold;
 }
 
