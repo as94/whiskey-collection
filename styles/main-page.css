@@ -31,24 +31,6 @@ body {
   position: absolute;
 }
 
-.header-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-menu-item {
-  text-align: left;
-  border-bottom: 2px solid var(--primary-light-green);
-  padding-bottom: 2px;
-  padding-top: 2px;
-}
-
-.header-menu-item:hover {
-  border-bottom: 2px solid var(--primary-brown);
-  cursor: pointer;
-}
-
 .thumbnail {
   display: flex;
   justify-content: space-between;
