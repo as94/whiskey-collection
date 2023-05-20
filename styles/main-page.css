@@ -31,10 +31,6 @@ body {
   position: absolute;
 }
 
-.logo:hover {
-  cursor: pointer;
-}
-
 .header-menu {
   display: flex;
   justify-content: center;
