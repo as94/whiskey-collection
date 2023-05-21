@@ -1,36 +1,3 @@
-@font-face {
-  font-family: Georama;
-  src: url(../fonts/georama.ttf);
-}
-
-:root {
-  --primary-brown: #3d3232;
-  --primary-light-green: #7d9f8c;
-  --text-brown-dark: #4e4442;
-  --text-brown-light: #907d7a;
-  --btn-hover-green: #53714b;
-}
-
-body {
-  margin: 0;
-  font-family: Georama;
-  height: 100%;
-  width: 100%;
-  color: #4e4442;
-}
-
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 105px;
-}
-
-.header-logo {
-  left: 80px;
-  position: absolute;
-}
-
 .thumbnail {
   display: flex;
   justify-content: space-between;
@@ -402,43 +369,4 @@ body {
 .find-btn:hover {
   background-color: var(--btn-hover-green);
   cursor: pointer;
-}
-
-.main-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  background-color: var(--primary-brown);
-  flex-direction: row;
-}
-
-.footer-logo {
-  left: 80px;
-  position: absolute;
-  margin-bottom: 10px;
-}
-
-.footer-menu {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 5;
-}
-
-.footer-menu-item {
-  width: 30%;
-  padding: 10px;
-}
-
-.footer-blank {
-  flex: 2;
-}
-
-.footer-link {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  color: var(--primary-light-green);
 }

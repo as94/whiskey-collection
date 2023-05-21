@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Georama;
+  src: url(../fonts/georama.ttf);
+}
+
+:root {
+  --primary-brown: #3d3232;
+  --primary-light-green: #7d9f8c;
+  --text-brown-dark: #4e4442;
+  --text-brown-light: #907d7a;
+  --btn-hover-green: #53714b;
+}
+
+body {
+  margin: 0;
+  font-family: Georama;
+  height: 100%;
+  width: 100%;
+  color: #4e4442;
+}

@@ -4,6 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/main-page.css" />
     <link rel="stylesheet" href="styles/slider.css" />
     <link rel="stylesheet" href="styles/typography.css" />
@@ -12,11 +15,13 @@
   <body>
     <!-- <div id="whiskey-collection" /> -->
 
-    <div class="main-header">
+    <!-- <div class="main-header">
       <a href="#" class="header-logo">
         <img src="logo-dark-text.svg" />
       </a>
-    </div>
+    </div> -->
+    <!-- <object data="components/header.html" type="text/html"></object> -->
+    <div id="mainHeader"></div>
     <div class="thumbnail">
       <div class="column">
         <div class="usp-text h-4">
@@ -57,7 +62,9 @@
         <div class="card">
           <div class="category-name h-3">American Whiskey</div>
           <div class="category-link-container">
-            <a href="#" class="category-link body-text-14">Discover more</a>
+            <a href="catalog.html" class="category-link body-text-14"
+              >Discover more</a
+            >
           </div>
           <div class="category-image">
             <img
@@ -263,5 +270,6 @@
 
     <script src="libs/jquery-3.7.0.min.js"></script>
     <script src="script.js"></script>
+    <script src="imports.js" type="module"></script>
   </body>
 </html>

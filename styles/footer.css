@@ -1,0 +1,38 @@
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: var(--primary-brown);
+  flex-direction: row;
+}
+
+.footer-logo {
+  left: 80px;
+  position: absolute;
+  margin-bottom: 10px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 5;
+}
+
+.footer-menu-item {
+  width: 30%;
+  padding: 10px;
+}
+
+.footer-blank {
+  flex: 2;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--primary-light-green);
+}

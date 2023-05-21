@@ -1,0 +1,11 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 105px;
+}
+
+.header-logo {
+  left: 80px;
+  position: absolute;
+}
