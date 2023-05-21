@@ -63,31 +63,3 @@ const firstSlide = document.querySelector('.slider__slide:first-child');
 firstSlide.classList.add('active');
 
 setInterval(nextSlide, 5000);
-
-$(document).ready(function () {
-  const filters = ['country', 'brand', 'budget'];
-
-  for (const filter of filters) {
-    $(`.selected-item.${filter}`).click(function () {
-      $(this).toggleClass('active');
-      $(`.dropdown-options.${filter}`).toggleClass('show');
-    });
-
-    $(`.dropdown-options.${filter} > li`).click(function () {
-      var selectedOption = $(this).text();
-      $(`#selected-${filter}`).text(selectedOption);
-      $(`.dropdown-options.${filter} > li`).removeClass('selected');
-      $(this).addClass('selected');
-      $('.dropdown-options').removeClass('show');
-      $('.selected-item').removeClass('active');
-    });
-  }
-
-  $(document).click(function (event) {
-    var target = $(event.target);
-    if (!target.closest('.dropdown-container').length) {
-      $('.dropdown-options').removeClass('show');
-      $('.selected-item').removeClass('active');
-    }
-  });
-});

@@ -1,0 +1,34 @@
+.block-title {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 85px;
+}
+
+.line-before {
+  display: flex;
+  align-items: center;
+}
+
+.line-before::before {
+  content: '';
+  width: 400px;
+  border-top: 1px solid var(--primary-brown);
+  margin-right: 64px;
+}
+
+.block-title .second-row {
+  color: var(--primary-light-green);
+  justify-content: end;
+}
+
+.line-after {
+  display: flex;
+  align-items: center;
+}
+
+.line-after::after {
+  content: '';
+  width: 400px;
+  border-top: 1px solid var(--primary-light-green);
+  margin-left: 64px;
+}

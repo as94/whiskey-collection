@@ -5,42 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/root.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/typography.css" />
     <title>Whiskey collection</title>
   </head>
   <body>
-    <div class="main-header">
-      <a href="#" class="header-logo">
-        <img src="logo-dark-text.svg" />
-      </a>
-    </div>
-
-    <div class="main-footer">
-      <a href="#" class="footer-logo">
-        <img src="logo-light-text.svg" />
-      </a>
-      <div class="footer-blank"></div>
-      <div class="footer-menu">
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">Irish Whiskey</a>
-        </div>
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">American Whiskey</a>
-        </div>
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">Japanese Whiskey</a>
-        </div>
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">Scotch Whiskey</a>
-        </div>
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">Canadian Whiskey</a>
-        </div>
-      </div>
-    </div>
+    <div id="mainHeader"></div>
+    <div id="searchBlock"></div>
+    <div id="mainFooter"></div>
 
     <script src="libs/jquery-3.7.0.min.js"></script>
+    <script src="/components/Header/header.js" type="module"></script>
+    <script src="/components/Search/search.js" type="module"></script>
+    <script src="/components/Footer/footer.js" type="module"></script>
   </body>
 </html>

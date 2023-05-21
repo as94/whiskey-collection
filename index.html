@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/root.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/main-page.css" />
     <link rel="stylesheet" href="styles/slider.css" />
     <link rel="stylesheet" href="styles/typography.css" />
@@ -14,13 +12,6 @@
   </head>
   <body>
     <!-- <div id="whiskey-collection" /> -->
-
-    <!-- <div class="main-header">
-      <a href="#" class="header-logo">
-        <img src="logo-dark-text.svg" />
-      </a>
-    </div> -->
-    <!-- <object data="components/header.html" type="text/html"></object> -->
     <div id="mainHeader"></div>
     <div class="thumbnail">
       <div class="column">
@@ -54,10 +45,15 @@
       </div>
     </div>
     <div class="world-whiskey">
-      <div class="block-title">
+      <div
+        id="world-whiskey-block-title"
+        firstRow="World"
+        secondRow="Whiskey"
+      ></div>
+      <!-- <div class="block-title">
         <div class="first-row h-2 line-before"><span>World</span></div>
         <div class="second-row h-2 line-after">Whiskey</div>
-      </div>
+      </div> -->
       <div class="catalog">
         <div class="card">
           <div class="category-name h-3">American Whiskey</div>
@@ -83,7 +79,7 @@
         <div class="card">
           <div class="category-name h-3">Scotch Whiskey</div>
           <div class="category-link-container">
-            <a href="#" class="category-link body-text-14">Discover more</a>
+            <a href="/" class="category-link body-text-14">Discover more</a>
           </div>
           <div class="category-image">
             <img
@@ -107,7 +103,7 @@
         <div class="card">
           <div class="category-name h-3">Canadian Whiskey</div>
           <div class="category-link-container">
-            <a href="#" class="category-link body-text-14">Discover more</a>
+            <a href="/" class="category-link body-text-14">Discover more</a>
           </div>
           <div class="category-image">
             <img
@@ -130,7 +126,7 @@
         <div class="card">
           <div class="category-name h-3">Irish Whiskey</div>
           <div class="category-link-container">
-            <a href="#" class="category-link body-text-14">Discover more</a>
+            <a href="/" class="category-link body-text-14">Discover more</a>
           </div>
           <div class="category-image">
             <img
@@ -151,7 +147,7 @@
         <div class="card">
           <div class="category-name h-3">Japaneese Whiskey</div>
           <div class="category-link-container">
-            <a href="#" class="category-link body-text-14">Discover more</a>
+            <a href="/" class="category-link body-text-14">Discover more</a>
           </div>
           <div class="category-image">
             <img
@@ -174,102 +170,21 @@
         </div>
       </div>
     </div>
-
-    <div class="search-block">
-      <div class="block-title">
-        <div class="first-row h-2 line-before"><span>I want to</span></div>
-        <div class="second-row h-2 line-after">Find</div>
-      </div>
-
-      <div class="search-parameters">
-        <div class="filters">
-          <div class="filter-block">
-            <label for="country" class="body-text-20">What country?</label>
-            <div class="dropdown-container">
-              <div class="selected-item country">
-                <span id="selected-country" class="body-text-16"
-                  >United States</span
-                >
-                <img src="icons/chevron.svg" />
-              </div>
-              <ul class="dropdown-options country">
-                <li class="selected">United States</li>
-                <li>UK</li>
-                <li>Japan</li>
-              </ul>
-            </div>
-          </div>
-          <div class="filter-block">
-            <label for="brand" class="body-text-20">What brand?</label>
-            <div class="dropdown-container">
-              <div class="selected-item brand">
-                <span id="selected-brand" class="body-text-16"
-                  >Jack Daniel's</span
-                >
-                <img src="icons/chevron.svg" />
-              </div>
-              <ul class="dropdown-options brand">
-                <li class="selected">Jack Daniel's</li>
-                <li>Singleton</li>
-                <li>Macallan</li>
-              </ul>
-            </div>
-          </div>
-          <div class="filter-block">
-            <label for="budget" class="body-text-20">What budget?</label>
-            <div class="dropdown-container">
-              <div class="selected-item budget">
-                <span id="selected-budget" class="body-text-16">30-60</span>
-                <img src="icons/chevron.svg" />
-              </div>
-              <ul class="dropdown-options budget">
-                <li class="selected">30-60</li>
-                <li>60-90</li>
-                <li>90-120</li>
-                <li>120-150</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="search-line">
-          <img class="search-icon" src="icons/search.svg" />
-          <input
-            type="text"
-            placeholder="Search whiskey"
-            class="body-text-16"
-          />
-        </div>
-
-        <button class="find-btn body-text-18">Find</button>
-      </div>
-    </div>
-
-    <div class="main-footer">
-      <a href="#" class="footer-logo">
-        <img src="logo-light-text.svg" />
-      </a>
-      <div class="footer-blank"></div>
-      <div class="footer-menu">
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">Irish Whiskey</a>
-        </div>
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">American Whiskey</a>
-        </div>
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">Japanese Whiskey</a>
-        </div>
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">Scotch Whiskey</a>
-        </div>
-        <div class="footer-menu-item body-text-16">
-          <a href="#" class="footer-link">Canadian Whiskey</a>
-        </div>
-      </div>
-    </div>
+    <div id="searchBlock"></div>
+    <div id="mainFooter"></div>
 
     <script src="libs/jquery-3.7.0.min.js"></script>
     <script src="script.js"></script>
-    <script src="imports.js" type="module"></script>
+    <script src="/components/Header/header.js" type="module"></script>
+    <script
+      src="/components/BlockTitle/worldWhiskeyBlockTitle.js"
+      type="module"
+    ></script>
+    <script
+      src="/components/BlockTitle/searchBlockTitle.js"
+      type="module"
+    ></script>
+    <script src="/components/Search/search.js" type="module"></script>
+    <script src="/components/Footer/footer.js" type="module"></script>
   </body>
 </html>
