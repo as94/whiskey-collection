@@ -1,0 +1,19 @@
+.breadcrumbs {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 120px;
+  padding-bottom: 50px;
+}
+
+.breadcrumbs .item {
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.breadcrumbs .chevron {
+  padding-right: 10px;
+}
+
+.breadcrumbs .item:hover {
+  cursor: pointer;
+}
