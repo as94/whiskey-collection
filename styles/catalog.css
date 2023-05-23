@@ -1,1 +1,24 @@
+.category-description {
+  display: flex;
+  height: 300px;
+  background-color: var(--primary-brown);
+  margin-bottom: 80px;
+  color: white;
+}
 
+.category-description .category-image {
+  height: 300px;
+  padding-left: 115px;
+  padding-right: 45px;
+}
+
+.category-description .description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-right: 70px;
+}
+
+.category-description .description .title {
+  padding-bottom: 20px;
+}
