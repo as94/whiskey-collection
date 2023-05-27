@@ -1,0 +1,29 @@
+.pagination-block {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-block .page {
+  text-decoration: none;
+  color: var(--text-brown-dark);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-block .page.active {
+  color: var(--primary-light-green);
+}
+
+.pagination-block .page.go-back {
+  padding-right: 5%;
+}
+
+.pagination-block .page.go-forward {
+  padding-left: 5%;
+}
+
+.pagination-block a:hover {
+  color: var(--primary-light-green);
+}

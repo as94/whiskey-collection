@@ -117,3 +117,13 @@
 .foreground-image {
   z-index: 1;
 }
+
+.catalog-footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 140px;
+}
+
+.catalog-footer .pagination {
+  width: 20%;
+}
