@@ -22,3 +22,20 @@
 .category-description .description .title {
   padding-bottom: 20px;
 }
+
+.catalog {
+  padding: 0 105px;
+}
+
+.catalog .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog .result-label {
+  padding-top: 10px;
+}
+
+.order-by {
+  width: 20%;
+}

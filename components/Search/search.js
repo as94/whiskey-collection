@@ -72,34 +72,36 @@ const search = `
 </div>
 `;
 
-$('#searchBlock').html(search);
-
-registerBlockTitle('search-block-title');
-
 $(document).ready(function () {
   const filters = ['country', 'brand', 'budget'];
 
+  const root = '.filter-block .dropdown-container';
+
   for (const filter of filters) {
-    $(`.selected-item.${filter}`).click(function () {
+    $(`${root} .selected-item.${filter}`).click(function () {
       $(this).toggleClass('active');
-      $(`.dropdown-options.${filter}`).toggleClass('show');
+      $(`${root} .dropdown-options.${filter}`).toggleClass('show');
     });
 
-    $(`.dropdown-options.${filter} > li`).click(function () {
+    $(`${root} .dropdown-options.${filter} > li`).click(function () {
       var selectedOption = $(this).text();
       $(`#selected-${filter}`).text(selectedOption);
-      $(`.dropdown-options.${filter} > li`).removeClass('selected');
+      $(`${root} .dropdown-options.${filter} > li`).removeClass('selected');
       $(this).addClass('selected');
-      $('.dropdown-options').removeClass('show');
-      $('.selected-item').removeClass('active');
+      $(`${root} .dropdown-options`).removeClass('show');
+      $(`${root} .selected-item`).removeClass('active');
     });
   }
 
   $(document).click(function (event) {
     var target = $(event.target);
-    if (!target.closest('.dropdown-container').length) {
-      $('.dropdown-options').removeClass('show');
-      $('.selected-item').removeClass('active');
+    if (!target.closest(root).length) {
+      $(`${root} .dropdown-options`).removeClass('show');
+      $(`${root} .selected-item`).removeClass('active');
     }
   });
 });
+
+$('#searchBlock').html(search);
+
+registerBlockTitle('search-block-title');
