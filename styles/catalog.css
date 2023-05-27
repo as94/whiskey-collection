@@ -23,19 +23,97 @@
   padding-bottom: 20px;
 }
 
-.catalog {
-  padding: 0 105px;
-}
-
-.catalog .header {
+.catalog-header {
   display: flex;
   justify-content: space-between;
+  padding: 0 120px;
 }
 
-.catalog .result-label {
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+
+.catalog-header .result-label {
   padding-top: 10px;
 }
 
 .order-by {
   width: 20%;
+}
+
+.catalog {
+  padding: 0 105px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.catalog .card {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.catalog .card:nth-child(even) {
+  background-color: var(--primary-brown);
+}
+
+.catalog .card:nth-child(odd) {
+  background-color: var(--primary-light-green);
+}
+
+.catalog .card:last-child {
+  padding: 0;
+}
+
+.catalog .card:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalog .card .whiskey-name {
+  color: white;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.catalog .card .whiskey-characteristics {
+  color: white;
+}
+
+.catalog .card .whiskey-image {
+  width: 320px;
+  min-height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foreground-image {
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.foreground-image {
+  z-index: 1;
 }
