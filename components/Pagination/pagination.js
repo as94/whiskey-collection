@@ -1,7 +1,6 @@
 const maxItemsCount = 4;
 const itemsCount = 30;
-
-let globalCurrentPage = 1;
+const anchor = '#catalog-result';
 
 const getPages = currentPageNumber => {
   let result = '';
@@ -75,76 +74,48 @@ const pagination = (itemsCount, currentPageNumber, currentPage) => {
 const changePage = page => {
   var params = new URLSearchParams(window.location.search);
   params.set('page', page);
-  var newUrl = window.location.pathname + '?' + params.toString();
-  window.history.pushState(null, '', newUrl);
-
-  console.log('page', getPage());
+  var newUrl = window.location.pathname + '?' + params.toString() + anchor;
+  window.location.href = newUrl;
 };
 
 const getPage = () => {
   var params = new URLSearchParams(window.location.search);
-  return params.get('page');
-};
-
-const renderPagination = (oldPage, newPage, currentPageNumber) => {
-  $('#pagination').html(pagination(itemsCount, currentPageNumber, newPage));
-  if (oldPage) {
-    $(`#page-${oldPage}`).removeClass('active');
+  const page = params.get('page');
+  if (page) {
+    return Number(page);
   }
-  $(`#page-${newPage}`).addClass('active');
+  return 1;
 };
 
-$(document).on('click', '.pagination-block .page', function () {
-  const oldPage = globalCurrentPage;
-  const newPage = Number($(this).attr('id').replace('page-', ''));
-  renderPagination(
-    oldPage,
-    newPage,
-    Math.floor((newPage - 1) / maxItemsCount) + 1
-  );
-  globalCurrentPage = newPage;
-  changePage(globalCurrentPage);
+$(document).ready(function () {
+  $('.pagination-block .page').click(function () {
+    changePage(Number($(this).attr('id').replace('page-', '')));
+  });
+
+  $('.pagination-block .arrow.go-back').click(function () {
+    const page = getPage();
+    changePage(page - 1);
+  });
+
+  $('.pagination-block .arrow.go-forward').click(function () {
+    const page = getPage();
+    changePage(page + 1);
+  });
+
+  $('.pagination-block .arrow.go-first').click(function () {
+    changePage(1);
+  });
+
+  $('.pagination-block .arrow.go-last').click(function () {
+    changePage(itemsCount);
+  });
 });
 
-$(document).on('click', '.pagination-block .arrow.go-back', function () {
-  const oldPage = globalCurrentPage;
-  const newPage = globalCurrentPage - 1;
-  renderPagination(
-    oldPage,
-    newPage,
-    Math.floor((newPage - 1) / maxItemsCount) + 1
-  );
-  globalCurrentPage = newPage;
-  changePage(globalCurrentPage);
-});
+const renderPagination = () => {
+  const page = getPage();
+  const currentPageNumber = Math.floor((page - 1) / maxItemsCount) + 1;
+  $('#pagination').html(pagination(itemsCount, currentPageNumber, page));
+  $(`#page-${page}`).addClass('active');
+};
 
-$(document).on('click', '.pagination-block .arrow.go-forward', function () {
-  const oldPage = globalCurrentPage;
-  const newPage = globalCurrentPage + 1;
-  renderPagination(
-    oldPage,
-    newPage,
-    Math.floor((newPage - 1) / maxItemsCount) + 1
-  );
-  globalCurrentPage = newPage;
-  changePage(globalCurrentPage);
-});
-
-$(document).on('click', '.pagination-block .arrow.go-last', function () {
-  const oldPage = globalCurrentPage;
-  const newPage = itemsCount;
-  const pageNumber = Math.ceil(itemsCount / maxItemsCount);
-  renderPagination(oldPage, newPage, pageNumber);
-  globalCurrentPage = newPage;
-});
-
-$(document).on('click', '.pagination-block .arrow.go-first', function () {
-  const oldPage = globalCurrentPage;
-  const newPage = 1;
-  const pageNumber = 1;
-  renderPagination(oldPage, newPage, pageNumber);
-  globalCurrentPage = newPage;
-  changePage(globalCurrentPage);
-});
-
-renderPagination(null, 1, 1);
+renderPagination();
