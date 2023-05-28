@@ -23,26 +23,6 @@
   padding-bottom: 20px;
 }
 
-.catalog-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 120px;
-}
-
-.catalog-header {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 70px;
-}
-
-.catalog-header .result-label {
-  padding-top: 10px;
-}
-
-.order-by {
-  width: 20%;
-}
-
 .catalog {
   padding: 0 105px;
   display: flex;

@@ -1,0 +1,120 @@
+.search-block {
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: var(--primary-brown);
+  margin-bottom: 75px;
+}
+
+.search-parameters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 110px;
+}
+
+.filters {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.filter-block {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.filter-block label {
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  user-select: none;
+}
+
+.filter-block .dropdown-container {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.filter-block .dropdown-container .selected-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  padding: 10px;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.filter-block .dropdown-container .dropdown-options {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-brown);
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.filter-block .dropdown-container .dropdown-options.show {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 5;
+}
+
+.filter-block .dropdown-container .dropdown-options > li {
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-block .dropdown-container .dropdown-options > li:hover {
+  background-color: var(--primary-light-green);
+}
+
+.filter-block .dropdown-container .dropdown-options > li.selected {
+  font-weight: bold;
+}
+
+.search-line {
+  margin-bottom: 40px;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+.search-line input[type='text'] {
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 95%;
+  margin-left: 30px;
+  user-select: none;
+  background-color: var(--primary-brown);
+  color: white;
+}
+
+.search-line input[type='text']::placeholder {
+  color: var(--text-brown-light);
+}
+
+.search-line input[type='text']:hover {
+  cursor: pointer;
+}
+
+.search-icon {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  user-select: none;
+}
