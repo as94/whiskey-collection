@@ -161,4 +161,10 @@ const catalog = `
 </div>
 `;
 
+$(document).ready(function () {
+  $('.card').click(function () {
+    window.location.href = 'productCard.html';
+  });
+});
+
 $('#catalog').html(catalog);

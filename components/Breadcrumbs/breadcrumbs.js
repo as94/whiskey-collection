@@ -13,7 +13,7 @@ const getItems = items => {
   return result;
 };
 
-const breadcrumbs = items => `
+export const breadcrumbs = items => `
 <link rel="stylesheet" href="./components/Breadcrumbs/breadcrumbs.css" />
 <div class="breadcrumbs">
     ${getItems(items)}

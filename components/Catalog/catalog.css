@@ -14,6 +14,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 2%;
+  cursor: pointer;
 }
 
 .catalog .card:nth-child(even) {
@@ -32,6 +33,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.catalog .card:nth-child(odd):hover .whiskey-name,
+.catalog .card:nth-child(odd):hover .whiskey-characteristics {
+  color: var(--text-brown-dark);
+}
+
+.catalog .card:nth-child(even):hover .whiskey-name,
+.catalog .card:nth-child(even):hover .whiskey-characteristics {
+  color: var(--primary-light-green);
 }
 
 .catalog .card .whiskey-name {
