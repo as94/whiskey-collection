@@ -25,11 +25,11 @@
   background-color: var(--primary-light-green);
 }
 
-.catalog .card:last-child {
+.catalog .card:nth-child(even):last-child {
   padding: 0;
 }
 
-.catalog .card:last-child img {
+.catalog .card:nth-child(even):last-child img {
   width: 100%;
   height: 100%;
   object-fit: cover;
