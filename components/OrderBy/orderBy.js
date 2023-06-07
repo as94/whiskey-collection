@@ -19,14 +19,14 @@ const orderBy = `
 </div>
 `;
 
-$(document).ready(function () {
+$(document).ready(() => {
   const root = '.order-by .dropdown-container';
-  $(`${root} .selected-item.sorting-field`).click(function () {
+  $(`${root} .selected-item.sorting-field`).click(() => {
     $(this).toggleClass('active');
     $(`${root} .dropdown-options.sorting-field`).toggleClass('show');
   });
 
-  $(`${root} .dropdown-options.sorting-field > li`).click(function () {
+  $(`${root} .dropdown-options.sorting-field > li`).click(() => {
     var selectedOption = $(this).text();
     $(`#selected-sorting-field`).text(selectedOption);
     $(`${root} .dropdown-options.sorting-field > li`).removeClass('selected');
@@ -35,7 +35,7 @@ $(document).ready(function () {
     $(`${root} .selected-item`).removeClass('active');
   });
 
-  $(document).click(function (event) {
+  $(document).click(event => {
     var target = $(event.target);
     if (!target.closest(root).length) {
       $(`${root} .dropdown-options`).removeClass('show');

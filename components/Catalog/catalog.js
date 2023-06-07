@@ -48,8 +48,8 @@ export const catalog = count => `
 </div>
 `;
 
-$(document).ready(function () {
-  $('.card').click(function () {
+$(document).ready(() => {
+  $('.card').click(() => {
     window.location.href = 'productCard.html';
   });
 });

@@ -67,18 +67,18 @@ const searchInput = `
 </div>
 `;
 
-$(document).ready(function () {
+$(document).ready(() => {
   const filters = ['country', 'brand', 'budget'];
 
   const root = '.filter-block .dropdown-container';
 
   for (const filter of filters) {
-    $(`${root} .selected-item.${filter}`).click(function () {
+    $(`${root} .selected-item.${filter}`).click(() => {
       $(this).toggleClass('active');
       $(`${root} .dropdown-options.${filter}`).toggleClass('show');
     });
 
-    $(`${root} .dropdown-options.${filter} > li`).click(function () {
+    $(`${root} .dropdown-options.${filter} > li`).click(() => {
       var selectedOption = $(this).text();
       $(`#selected-${filter}`).text(selectedOption);
       $(`${root} .dropdown-options.${filter} > li`).removeClass('selected');
@@ -88,7 +88,7 @@ $(document).ready(function () {
     });
   }
 
-  $(document).click(function (event) {
+  $(document).click(event => {
     var target = $(event.target);
     if (!target.closest(root).length) {
       $(`${root} .dropdown-options`).removeClass('show');

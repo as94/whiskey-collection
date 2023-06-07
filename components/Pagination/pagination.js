@@ -87,26 +87,26 @@ const getPage = () => {
   return 1;
 };
 
-$(document).ready(function () {
-  $('.pagination-block .page').click(function () {
+$(document).ready(() => {
+  $('.pagination-block .page').click(() => {
     changePage(Number($(this).attr('id').replace('page-', '')));
   });
 
-  $('.pagination-block .arrow.go-back').click(function () {
+  $('.pagination-block .arrow.go-back').click(() => {
     const page = getPage();
     changePage(page - 1);
   });
 
-  $('.pagination-block .arrow.go-forward').click(function () {
+  $('.pagination-block .arrow.go-forward').click(() => {
     const page = getPage();
     changePage(page + 1);
   });
 
-  $('.pagination-block .arrow.go-first').click(function () {
+  $('.pagination-block .arrow.go-first').click(() => {
     changePage(1);
   });
 
-  $('.pagination-block .arrow.go-last').click(function () {
+  $('.pagination-block .arrow.go-last').click(() => {
     changePage(itemsCount);
   });
 });
