@@ -1,0 +1,80 @@
+.thumbnail {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: var(--primary-brown);
+}
+
+.thumbnail .column {
+  width: 33.3%;
+}
+
+.thumbnail .column.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail .column .usp-text {
+  text-align: left;
+  color: white;
+  padding-left: 105px;
+  padding-top: 100px;
+}
+
+.thumbnail .column .usp-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail .column .usp-product .first-row {
+  text-align: right;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.thumbnail .column .usp-product .second-row {
+  text-align: left;
+  color: white;
+}
+
+.thumbnail .column .usp-product .third-row {
+  text-align: right;
+  color: var(--primary-light-green);
+  padding-bottom: 15px;
+}
+
+.thumbnail .column .usp-product .fourth-row {
+  display: flex;
+  justify-content: end;
+}
+
+.catalog-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 50px;
+  width: 150px;
+  border-radius: 4px;
+  background-color: var(--primary-light-green);
+  text-align: left;
+}
+
+.catalog-btn::after {
+  content: '';
+  background-image: url('../../icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.catalog-btn:hover {
+  background-color: var(--btn-hover-green);
+  cursor: pointer;
+}
