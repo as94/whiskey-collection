@@ -1,5 +1,5 @@
-import { setWhiskey } from './services/state.js';
-import { whiskeyLoaded } from './services/customEvents.js';
+import { setWhiskey } from './state.js';
+import { whiskeyLoaded } from './customEvents.js';
 
 (async () => {
   const response = await fetch('./services/whiskey.json');

@@ -1,4 +1,7 @@
-import { getWhiskeyByCategory } from '../../services/state.js';
+import {
+  getMainCategories,
+  getWhiskeyByCategory,
+} from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
 import { whiskeyLoaded } from '../../services/customEvents.js';
 
@@ -68,14 +71,9 @@ const thumbnail = (category, country, topRatedWhiskey) => `
 </div>`;
 
 window.addEventListener(whiskeyLoaded, () => {
-  let whiskeyByCategory = getWhiskeyByCategory();
-  whiskeyByCategory = Object.fromEntries(
-    Object.entries(whiskeyByCategory).filter(([, items]) => items.length > 1)
-  );
-  console.log(whiskeyByCategory);
-
-  const categories = Object.keys(whiskeyByCategory);
+  const categories = getMainCategories();
   const category = getRandomItem(categories);
+  const whiskeyByCategory = getWhiskeyByCategory();
   const whiskey = whiskeyByCategory[category];
   const top5RatedWhiskey = whiskey
     .slice()
