@@ -17,7 +17,9 @@ export const setWhiskey = whiskey => {
     Object.entries(whiskeyByCategory).filter(([, items]) => items.length > 1)
   );
 
-  const categories = Object.keys(whiskeyByCategory);
+  const categories = Object.keys(whiskeyByCategory).sort((a, b) =>
+    a.localeCompare(b)
+  );
   state.mainCategories = categories;
 };
 
