@@ -88,7 +88,7 @@ const getPage = () => {
 };
 
 $(document).ready(() => {
-  $('.pagination-block .page').click(() => {
+  $('.pagination-block .page').click(function () {
     changePage(Number($(this).attr('id').replace('page-', '')));
   });
 
@@ -111,11 +111,7 @@ $(document).ready(() => {
   });
 });
 
-const renderPagination = () => {
-  const page = getPage();
-  const currentPageNumber = Math.floor((page - 1) / maxItemsCount) + 1;
-  $('#pagination').html(pagination(itemsCount, currentPageNumber, page));
-  $(`#page-${page}`).addClass('active');
-};
-
-renderPagination();
+const page = getPage();
+const currentPageNumber = Math.floor((page - 1) / maxItemsCount) + 1;
+$('#pagination').html(pagination(itemsCount, currentPageNumber, page));
+$(`#page-${page}`).addClass('active');

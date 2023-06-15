@@ -21,12 +21,12 @@ const orderBy = `
 
 $(document).ready(() => {
   const root = '.order-by .dropdown-container';
-  $(`${root} .selected-item.sorting-field`).click(() => {
+  $(`${root} .selected-item.sorting-field`).click(function () {
     $(this).toggleClass('active');
     $(`${root} .dropdown-options.sorting-field`).toggleClass('show');
   });
 
-  $(`${root} .dropdown-options.sorting-field > li`).click(() => {
+  $(`${root} .dropdown-options.sorting-field > li`).click(function () {
     var selectedOption = $(this).text();
     $(`#selected-sorting-field`).text(selectedOption);
     $(`${root} .dropdown-options.sorting-field > li`).removeClass('selected');

@@ -73,12 +73,12 @@ $(document).ready(() => {
   const root = '.filter-block .dropdown-container';
 
   for (const filter of filters) {
-    $(`${root} .selected-item.${filter}`).click(() => {
+    $(`${root} .selected-item.${filter}`).click(function () {
       $(this).toggleClass('active');
       $(`${root} .dropdown-options.${filter}`).toggleClass('show');
     });
 
-    $(`${root} .dropdown-options.${filter} > li`).click(() => {
+    $(`${root} .dropdown-options.${filter} > li`).click(function () {
       var selectedOption = $(this).text();
       $(`#selected-${filter}`).text(selectedOption);
       $(`${root} .dropdown-options.${filter} > li`).removeClass('selected');
