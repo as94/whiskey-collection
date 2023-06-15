@@ -4,7 +4,6 @@ import { whiskeyLoaded } from '../../services/customEvents.js';
 const getCategories = () => {
   let result = '';
   const categories = getMainCategories();
-  console.log(categories);
 
   for (let index = 0; index < categories.length; index++) {
     const category = categories[index];

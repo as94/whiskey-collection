@@ -6,26 +6,12 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/root.css" />
     <link rel="stylesheet" href="styles/typography.css" />
-    <link rel="stylesheet" href="styles/catalog.css" />
     <title>Whiskey collection</title>
   </head>
   <body>
     <div id="mainHeader"></div>
     <div id="breadcrumbs"></div>
-    <div class="category-description">
-      <img class="category-image" src="images/atmosphere-2.jpg" />
-      <div class="description">
-        <div class="title h-2">SCOTLAND WHISKEY</div>
-        <div class="text body-text-18">
-          Scotch whisky is a popular alcoholic beverage made from malted barley,
-          water, and yeast, produced in Scotland. It comes in two main
-          categories: single malt and blended, and is highly regulated in terms
-          of production and aging. The flavor can vary depending on several
-          factors and it is enjoyed in various ways, including neat, on the
-          rocks, and in cocktails.
-        </div>
-      </div>
-    </div>
+    <div id="category-description"></div>
 
     <div id="catalogHeader"></div>
     <div id="catalog"></div>
@@ -50,6 +36,10 @@
     <script src="/components/Search/search.js" type="module"></script>
     <script
       src="/components/Breadcrumbs/categoryBreadcrumbs.js"
+      type="module"
+    ></script>
+    <script
+      src="/components/CategoryDescription/categoryDescription.js"
       type="module"
     ></script>
     <script src="/components/Footer/footer.js" type="module"></script>

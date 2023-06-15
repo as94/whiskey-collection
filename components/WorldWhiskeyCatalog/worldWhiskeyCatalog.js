@@ -4,6 +4,7 @@ import {
 } from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
 import { whiskeyLoaded } from '../../services/customEvents.js';
+import { onCategoryClick } from '../../services/categoryChanges.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 
 const getCatalogItems = () => {
@@ -14,10 +15,10 @@ const getCatalogItems = () => {
     const category = categories[index];
     const whiskey = getRandomItem(whiskeyByCategory[category]);
 
-    result += `<div class="card">
+    result += `<div class="card" data-whiskey-category="${category}">
         <div class="category-name h-3">${category}</div>
         <div class="category-link-container">
-        <a href="catalog.html" class="category-link body-text-14">
+        <a class="category-link body-text-14">
             Discover more
         </a>
         </div>
@@ -40,6 +41,11 @@ const getCatalogItems = () => {
 
   return result;
 };
+
+$(document).on('click', '.card', function () {
+  const category = $(this).data('whiskey-category');
+  onCategoryClick(category);
+});
 
 const catalog = () => `
 <link rel="stylesheet" href="./components/WorldWhiskeyCatalog/worldWhiskeyCatalog.css" />

@@ -19,5 +19,3 @@ export const breadcrumbs = items => `
     ${getItems(items)}
 </div>
 `;
-
-$('#breadcrumbs').html(breadcrumbs(['Home', 'Scotch Whiskey']));

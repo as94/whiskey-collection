@@ -1,3 +1,4 @@
 import { breadcrumbs } from './breadcrumbs.js';
+import { getCategory } from '../../services/categoryChanges.js';
 
-$('#breadcrumbs').html(breadcrumbs(['Home', 'Scotch Whiskey']));
+$('#breadcrumbs').html(breadcrumbs(['Home', getCategory()]));
