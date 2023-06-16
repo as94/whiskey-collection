@@ -1,6 +1,15 @@
-const generateCatalogRows = count => {
+import { getWhiskeyByCategory } from '../../services/state.js';
+import { getCategory } from '../../services/categoryChanges.js';
+import { whiskeyLoaded } from '../../services/customEvents.js';
+
+const generateCatalogRows = () => {
+  const category = getCategory();
+  const whiskeyByCategory = getWhiskeyByCategory();
+  const whiskeyItems = whiskeyByCategory[category];
+  const count = whiskeyItems.length;
   let result = '';
   for (let index = 0; index < count; index++) {
+    const whiskey = whiskeyItems[index];
     if (index % 2 === 0) {
       result += `<div class="card">
       <div class="whiskey-image">
@@ -8,12 +17,12 @@ const generateCatalogRows = count => {
           class="background-image"
           src="images/product-card-backgrounds/dark-green.png"
         />
-        <img class="foreground-image" src="images/whiskey/aberlour.png" />
+        <img class="foreground-image" src="${whiskey.ImageLink}" />
       </div>
       <div class="whiskey-name body-text-18">
-        Angel’s Envy Kentucky Straight Bourbon Whiskey
+        ${whiskey.Name}
       </div>
-      <div class="whiskey-characteristics body-text-18">70cl/40%</div>
+      <div class="whiskey-characteristics body-text-18">${whiskey.ABV}</div>
     </div>`;
     } else {
       result += `<div class="card">
@@ -22,12 +31,12 @@ const generateCatalogRows = count => {
           class="background-image"
           src="images/product-card-backgrounds/light-green.png"
         />
-        <img class="foreground-image" src="images/whiskey/glenfiddich.png" />
+        <img class="foreground-image" src="${whiskey.ImageLink}" />
       </div>
       <div class="whiskey-name body-text-18">
-        Angel’s Envy Kentucky Straight Bourbon Whiskey
+        ${whiskey.Name}
       </div>
-      <div class="whiskey-characteristics body-text-18">70cl/40%</div>
+      <div class="whiskey-characteristics body-text-18">${whiskey.ABV}</div>
     </div>`;
     }
   }
@@ -41,10 +50,10 @@ const generateCatalogRows = count => {
   return result;
 };
 
-export const catalog = count => `
+export const catalog = () => `
 <link rel="stylesheet" href="./components/Catalog/catalog.css" />
 <div class="catalog">
-  ${generateCatalogRows(count)}
+  ${generateCatalogRows()}
 </div>
 `;
 
@@ -53,5 +62,6 @@ $(document).ready(() => {
     window.location.href = 'productCard.html';
   });
 });
-
-$('#catalog').html(catalog(11));
+window.addEventListener(whiskeyLoaded, () => {
+  $('#catalog').html(catalog());
+});
