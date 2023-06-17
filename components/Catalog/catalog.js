@@ -4,7 +4,7 @@ import {
   getPage,
   getOrderBy,
 } from '../../services/urlSearchParams.js';
-import { whiskeyLoaded } from '../../services/customEvents.js';
+import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
 import {
   nameAsc,
@@ -106,6 +106,5 @@ $(document).ready(() => {
   });
 });
 
-window.addEventListener(whiskeyLoaded, () => {
-  $('#catalog').html(catalog());
-});
+await initializeWhiskey();
+$('#catalog').html(catalog());

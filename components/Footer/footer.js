@@ -1,5 +1,5 @@
 import { getMainCategories } from '../../services/state.js';
-import { whiskeyLoaded } from '../../services/customEvents.js';
+import { initializeWhiskey } from '../../services/loadWhiskey.js';
 
 const getCategories = () => {
   let result = '';
@@ -32,6 +32,5 @@ const footer = () => {
   `;
 };
 
-window.addEventListener(whiskeyLoaded, () => {
-  $('#mainFooter').html(footer());
-});
+await initializeWhiskey();
+$('#mainFooter').html(footer());

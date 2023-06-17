@@ -3,7 +3,7 @@ import {
   getWhiskeyByCategory,
 } from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
-import { whiskeyLoaded } from '../../services/customEvents.js';
+import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { changeCategory } from '../../services/urlSearchParams.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 
@@ -54,6 +54,5 @@ const catalog = () => `
 </div>
 `;
 
-window.addEventListener(whiskeyLoaded, () => {
-  $('#world-whiskey-catalog').html(catalog());
-});
+await initializeWhiskey();
+$('#world-whiskey-catalog').html(catalog());

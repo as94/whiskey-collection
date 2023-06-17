@@ -1,4 +1,4 @@
-import { whiskeyLoaded } from '../../services/customEvents.js';
+import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { changeOrderBy, getOrderBy } from '../../services/urlSearchParams.js';
 import {
   nameAsc,
@@ -66,48 +66,47 @@ const orderBy = () => {
   `;
 };
 
-window.addEventListener(whiskeyLoaded, () => {
-  $(document).ready(() => {
-    const root = '.order-by .dropdown-container';
-    $(`${root} .selected-item.sorting-field`).click(function () {
-      $(this).toggleClass('active');
-      $(`${root} .dropdown-options.sorting-field`).toggleClass('show');
-    });
-
-    $(`${root} .dropdown-options.sorting-field > li`).click(function () {
-      const selectedOption = $(this).text();
-      switch (selectedOption) {
-        case 'Name (A-Z)':
-          changeOrderBy(nameAsc);
-          break;
-        case 'Name (Z-A)':
-          changeOrderBy(nameDesc);
-          break;
-        case 'Price (Low-High)':
-          changeOrderBy(priceAsc);
-          break;
-        case 'Price (High-Low)':
-          changeOrderBy(priceDesc);
-          break;
-        case 'Popular':
-          changeOrderBy(popularDesc);
-          break;
-      }
-      $(`#selected-sorting-field`).text(selectedOption);
-      $(`${root} .dropdown-options.sorting-field > li`).removeClass('selected');
-      $(this).addClass('selected');
-      $(`${root} .dropdown-options`).removeClass('show');
-      $(`${root} .selected-item`).removeClass('active');
-    });
-
-    $(document).click(event => {
-      const target = $(event.target);
-      if (!target.closest(root).length) {
-        $(`${root} .dropdown-options`).removeClass('show');
-        $(`${root} .selected-item`).removeClass('active');
-      }
-    });
+await initializeWhiskey();
+$(document).ready(() => {
+  const root = '.order-by .dropdown-container';
+  $(`${root} .selected-item.sorting-field`).click(function () {
+    $(this).toggleClass('active');
+    $(`${root} .dropdown-options.sorting-field`).toggleClass('show');
   });
 
-  $('#orderBy').html(orderBy());
+  $(`${root} .dropdown-options.sorting-field > li`).click(function () {
+    const selectedOption = $(this).text();
+    switch (selectedOption) {
+      case 'Name (A-Z)':
+        changeOrderBy(nameAsc);
+        break;
+      case 'Name (Z-A)':
+        changeOrderBy(nameDesc);
+        break;
+      case 'Price (Low-High)':
+        changeOrderBy(priceAsc);
+        break;
+      case 'Price (High-Low)':
+        changeOrderBy(priceDesc);
+        break;
+      case 'Popular':
+        changeOrderBy(popularDesc);
+        break;
+    }
+    $(`#selected-sorting-field`).text(selectedOption);
+    $(`${root} .dropdown-options.sorting-field > li`).removeClass('selected');
+    $(this).addClass('selected');
+    $(`${root} .dropdown-options`).removeClass('show');
+    $(`${root} .selected-item`).removeClass('active');
+  });
+
+  $(document).click(event => {
+    const target = $(event.target);
+    if (!target.closest(root).length) {
+      $(`${root} .dropdown-options`).removeClass('show');
+      $(`${root} .selected-item`).removeClass('active');
+    }
+  });
 });
+
+$('#orderBy').html(orderBy());

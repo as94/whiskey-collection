@@ -3,7 +3,7 @@ import {
   getWhiskeyByCategory,
 } from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
-import { whiskeyLoaded } from '../../services/customEvents.js';
+import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { changeCategory } from '../../services/urlSearchParams.js';
 
 const nextSlide = () => {
@@ -71,34 +71,31 @@ const thumbnail = (category, country, topRatedWhiskey) => `
   </div>
 </div>`;
 
-window.addEventListener(whiskeyLoaded, () => {
-  const categories = getMainCategories();
-  const category = getRandomItem(categories);
-  const whiskeyByCategory = getWhiskeyByCategory();
-  const whiskey = whiskeyByCategory[category];
-  const top5RatedWhiskey = whiskey
-    .slice()
-    .sort((a, b) => {
-      const weightA = a.Rating * Math.log10(a.RateCount + 1);
-      const weightB = b.Rating * Math.log10(b.RateCount + 1);
+await initializeWhiskey();
+const categories = getMainCategories();
+const category = getRandomItem(categories);
+const whiskeyByCategory = getWhiskeyByCategory();
+const whiskey = whiskeyByCategory[category];
+const top5RatedWhiskey = whiskey
+  .slice()
+  .sort((a, b) => {
+    const weightA = a.Rating * Math.log10(a.RateCount + 1);
+    const weightB = b.Rating * Math.log10(b.RateCount + 1);
 
-      const difference = weightB - weightA;
+    const difference = weightB - weightA;
 
-      if (Number(difference.toFixed(2)) !== 0) {
-        return difference;
-      }
+    if (Number(difference.toFixed(2)) !== 0) {
+      return difference;
+    }
 
-      return a.Name.localeCompare(b.Name);
-    })
-    .slice(0, 5);
+    return a.Name.localeCompare(b.Name);
+  })
+  .slice(0, 5);
 
-  $(document).on('click', '.catalog-btn', function () {
-    changeCategory(category);
-  });
-
-  $('#thumbnail').html(
-    thumbnail(category, whiskey[0].Country, top5RatedWhiskey)
-  );
-  setFirstSlideActive();
-  setInterval(nextSlide, 5000);
+$(document).on('click', '.catalog-btn', function () {
+  changeCategory(category);
 });
+
+$('#thumbnail').html(thumbnail(category, whiskey[0].Country, top5RatedWhiskey));
+setFirstSlideActive();
+setInterval(nextSlide, 5000);

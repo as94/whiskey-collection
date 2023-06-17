@@ -1,4 +1,4 @@
-import { whiskeyLoaded } from '../../services/customEvents.js';
+import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getWhiskeyItemsCount } from '../../services/paginationUtils.js';
 import { getPage } from '../../services/urlSearchParams.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
@@ -14,18 +14,17 @@ const catalogHeader = () => {
   </div>`;
 };
 
-window.addEventListener(whiskeyLoaded, () => {
-  const whiskeyItemsCount = getWhiskeyItemsCount();
-  const page = getPage();
-  const start = (page - 1) * whiskeyItemsPerPage + 1;
-  let end = whiskeyItemsPerPage * page;
-  end = end > whiskeyItemsCount ? whiskeyItemsCount : end;
-  let range = `${start}-${end}`;
-  if (start === end) {
-    range = end;
-  }
-
-  $('#catalog-result').text(`Showing: ${range} out of ${whiskeyItemsCount}`);
-});
-
 $('#catalogHeader').html(catalogHeader());
+
+await initializeWhiskey();
+const whiskeyItemsCount = getWhiskeyItemsCount();
+const page = getPage();
+const start = (page - 1) * whiskeyItemsPerPage + 1;
+let end = whiskeyItemsPerPage * page;
+end = end > whiskeyItemsCount ? whiskeyItemsCount : end;
+let range = `${start}-${end}`;
+if (start === end) {
+  range = end;
+}
+
+$('#catalog-result').text(`Showing: ${range} out of ${whiskeyItemsCount}`);

@@ -1,6 +1,6 @@
 import { visiblePagesCount } from '../../services/paginationUtils.js';
 import { changePage, getPage } from '../../services/urlSearchParams.js';
-import { whiskeyLoaded } from '../../services/customEvents.js';
+import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import {
   getPagesCount,
   getTotalPagesCount,
@@ -76,36 +76,35 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
   `;
 };
 
-window.addEventListener(whiskeyLoaded, () => {
-  const page = getPage();
-  const totalPagesCount = getTotalPagesCount();
-  const pagesCount = getPagesCount();
+await initializeWhiskey();
+const page = getPage();
+const totalPagesCount = getTotalPagesCount();
+const pagesCount = getPagesCount();
 
-  $(document).ready(() => {
-    $('.pagination-block .page').click(function () {
-      changePage(Number($(this).attr('id').replace('page-', '')));
-    });
-
-    $('.pagination-block .arrow.go-back').click(() => {
-      changePage(page - 1);
-    });
-
-    $('.pagination-block .arrow.go-forward').click(() => {
-      changePage(page + 1);
-    });
-
-    $('.pagination-block .arrow.go-first').click(() => {
-      changePage(1);
-    });
-
-    $('.pagination-block .arrow.go-last').click(() => {
-      changePage(totalPagesCount);
-    });
+$(document).ready(() => {
+  $('.pagination-block .page').click(function () {
+    changePage(Number($(this).attr('id').replace('page-', '')));
   });
 
-  if (totalPagesCount > 1) {
-    const currentPageNumber = Math.floor((page - 1) / pagesCount) + 1;
-    $('#pagination').html(pagination(totalPagesCount, currentPageNumber, page));
-    $(`#page-${page}`).addClass('active');
-  }
+  $('.pagination-block .arrow.go-back').click(() => {
+    changePage(page - 1);
+  });
+
+  $('.pagination-block .arrow.go-forward').click(() => {
+    changePage(page + 1);
+  });
+
+  $('.pagination-block .arrow.go-first').click(() => {
+    changePage(1);
+  });
+
+  $('.pagination-block .arrow.go-last').click(() => {
+    changePage(totalPagesCount);
+  });
 });
+
+if (totalPagesCount > 1) {
+  const currentPageNumber = Math.floor((page - 1) / pagesCount) + 1;
+  $('#pagination').html(pagination(totalPagesCount, currentPageNumber, page));
+  $(`#page-${page}`).addClass('active');
+}
