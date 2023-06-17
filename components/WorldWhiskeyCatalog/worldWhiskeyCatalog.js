@@ -4,7 +4,7 @@ import {
 } from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
 import { whiskeyLoaded } from '../../services/customEvents.js';
-import { onCategoryClick } from '../../services/categoryChanges.js';
+import { changeCategory } from '../../services/urlSearchParams.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 
 const getCatalogItems = () => {
@@ -44,7 +44,7 @@ const getCatalogItems = () => {
 
 $(document).on('click', '.card', function () {
   const category = $(this).data('whiskey-category');
-  onCategoryClick(category);
+  changeCategory(category);
 });
 
 const catalog = () => `

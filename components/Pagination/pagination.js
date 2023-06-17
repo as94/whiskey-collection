@@ -1,21 +1,46 @@
-const maxItemsCount = 4;
-const itemsCount = 30;
-const anchor = '#catalog-result';
+import {
+  whiskeyItemsPerPage,
+  visiblePagesCount,
+} from '../../services/paginationSettings.js';
+import {
+  changePage,
+  getPage,
+  getCategory,
+} from '../../services/urlSearchParams.js';
+import { getWhiskeyByCategory } from '../../services/state.js';
+import { whiskeyLoaded } from '../../services/customEvents.js';
+
+const getTotalPagesCount = () => {
+  const category = getCategory();
+  const whiskeyByCategory = getWhiskeyByCategory();
+  const whiskeyItems = whiskeyByCategory[category];
+  const whiskeyItemsCount = whiskeyItems.length;
+
+  return Math.ceil(whiskeyItemsCount / whiskeyItemsPerPage);
+};
+
+const getPagesCount = () => {
+  const totalPagesCount = getTotalPagesCount();
+  return totalPagesCount < visiblePagesCount
+    ? totalPagesCount
+    : visiblePagesCount;
+};
 
 const getPages = currentPageNumber => {
+  const pagesCount = getPagesCount();
+  const totalPagesCount = getTotalPagesCount();
+  const start = (currentPageNumber - 1) * pagesCount + 1;
+  let end = currentPageNumber * pagesCount;
+  end = end > totalPagesCount ? totalPagesCount : end;
+
   let result = '';
-
-  const start = (currentPageNumber - 1) * maxItemsCount + 1;
-  let end = currentPageNumber * maxItemsCount;
-  end = end > itemsCount ? itemsCount : end;
-
   for (let id = start; id <= end; id++) {
     result += `<div id='page-${id}' class="page body-text-20">${id}</div>`;
   }
   return result;
 };
 
-const pagination = (itemsCount, currentPageNumber, currentPage) => {
+const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
   let withoutGoFirst = false;
   if (currentPageNumber === 1) {
     withoutGoFirst = true;
@@ -26,14 +51,14 @@ const pagination = (itemsCount, currentPageNumber, currentPage) => {
     withoutGoBack = true;
   }
 
-  let withoutGoLast = false;
-  if (currentPageNumber === Math.ceil(itemsCount / maxItemsCount)) {
-    withoutGoLast = true;
+  let withoutGoForward = false;
+  if (currentPage === totalPagesCount) {
+    withoutGoForward = true;
   }
 
-  let withoutGoForward = false;
-  if (currentPage === itemsCount) {
-    withoutGoForward = true;
+  let withoutGoLast = false;
+  if (currentPageNumber === Math.ceil(totalPagesCount / visiblePagesCount)) {
+    withoutGoLast = true;
   }
 
   return `
@@ -71,47 +96,36 @@ const pagination = (itemsCount, currentPageNumber, currentPage) => {
   `;
 };
 
-const changePage = page => {
-  var params = new URLSearchParams(window.location.search);
-  params.set('page', page);
-  var newUrl = window.location.pathname + '?' + params.toString() + anchor;
-  window.location.href = newUrl;
-};
+window.addEventListener(whiskeyLoaded, () => {
+  const page = getPage();
+  const totalPagesCount = getTotalPagesCount();
+  const pagesCount = getPagesCount();
 
-const getPage = () => {
-  var params = new URLSearchParams(window.location.search);
-  const page = params.get('page');
-  if (page) {
-    return Number(page);
+  $(document).ready(() => {
+    $('.pagination-block .page').click(function () {
+      changePage(Number($(this).attr('id').replace('page-', '')));
+    });
+
+    $('.pagination-block .arrow.go-back').click(() => {
+      changePage(page - 1);
+    });
+
+    $('.pagination-block .arrow.go-forward').click(() => {
+      changePage(page + 1);
+    });
+
+    $('.pagination-block .arrow.go-first').click(() => {
+      changePage(1);
+    });
+
+    $('.pagination-block .arrow.go-last').click(() => {
+      changePage(totalPagesCount);
+    });
+  });
+
+  if (totalPagesCount > 1) {
+    const currentPageNumber = Math.floor((page - 1) / pagesCount) + 1;
+    $('#pagination').html(pagination(totalPagesCount, currentPageNumber, page));
+    $(`#page-${page}`).addClass('active');
   }
-  return 1;
-};
-
-$(document).ready(() => {
-  $('.pagination-block .page').click(function () {
-    changePage(Number($(this).attr('id').replace('page-', '')));
-  });
-
-  $('.pagination-block .arrow.go-back').click(() => {
-    const page = getPage();
-    changePage(page - 1);
-  });
-
-  $('.pagination-block .arrow.go-forward').click(() => {
-    const page = getPage();
-    changePage(page + 1);
-  });
-
-  $('.pagination-block .arrow.go-first').click(() => {
-    changePage(1);
-  });
-
-  $('.pagination-block .arrow.go-last').click(() => {
-    changePage(itemsCount);
-  });
 });
-
-const page = getPage();
-const currentPageNumber = Math.floor((page - 1) / maxItemsCount) + 1;
-$('#pagination').html(pagination(itemsCount, currentPageNumber, page));
-$(`#page-${page}`).addClass('active');

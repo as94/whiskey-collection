@@ -1,4 +1,4 @@
-import { getCategory } from '../../services/categoryChanges.js';
+import { getCategory } from '../../services/urlSearchParams.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 
 const categoryDescription = () => {

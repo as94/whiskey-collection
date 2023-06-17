@@ -1,11 +1,15 @@
 import { getWhiskeyByCategory } from '../../services/state.js';
-import { getCategory } from '../../services/categoryChanges.js';
+import { getCategory, getPage } from '../../services/urlSearchParams.js';
 import { whiskeyLoaded } from '../../services/customEvents.js';
+import { whiskeyItemsPerPage } from '../../services/paginationSettings.js';
 
 const generateCatalogRows = () => {
   const category = getCategory();
   const whiskeyByCategory = getWhiskeyByCategory();
-  const whiskeyItems = whiskeyByCategory[category];
+  const page = getPage();
+  const whiskeyItems = whiskeyByCategory[category]
+    .sort((a, b) => a.Name.localeCompare(b.Name))
+    .slice((page - 1) * whiskeyItemsPerPage, whiskeyItemsPerPage * page);
   const count = whiskeyItems.length;
   let result = '';
   for (let index = 0; index < count; index++) {
@@ -41,11 +45,12 @@ const generateCatalogRows = () => {
     }
   }
 
-  if (count % 3 !== 0) {
-    result += `<div class="card">
-    <img src="images/atmosphere-1.jpg" />
-  </div>`;
-  }
+  // TODO: rewrite, fill empty space with dummy pictures
+  // if (count % 3 !== 0) {
+  //   result += `<div class="card">
+  //     <img src="images/atmosphere-1.jpg" />
+  //   </div>`;
+  // }
 
   return result;
 };
@@ -62,6 +67,7 @@ $(document).ready(() => {
     window.location.href = 'productCard.html';
   });
 });
+
 window.addEventListener(whiskeyLoaded, () => {
   $('#catalog').html(catalog());
 });
