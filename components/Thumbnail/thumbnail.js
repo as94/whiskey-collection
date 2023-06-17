@@ -4,6 +4,7 @@ import {
 } from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
 import { whiskeyLoaded } from '../../services/customEvents.js';
+import { changeCategory } from '../../services/urlSearchParams.js';
 
 const nextSlide = () => {
   const currentSlide = $('.active');
@@ -90,6 +91,10 @@ window.addEventListener(whiskeyLoaded, () => {
       return a.Name.localeCompare(b.Name);
     })
     .slice(0, 5);
+
+  $(document).on('click', '.catalog-btn', function () {
+    changeCategory(category);
+  });
 
   $('#thumbnail').html(
     thumbnail(category, whiskey[0].Country, top5RatedWhiskey)

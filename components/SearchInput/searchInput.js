@@ -4,7 +4,7 @@ const searchInput = `
   <div class="search-parameters">
     <div class="filters">
       <div class="filter-block">
-        <label for="country" class="body-text-20">
+        <label class="body-text-20">
           What country?
         </label>
         <div class="dropdown-container">
@@ -22,7 +22,7 @@ const searchInput = `
         </div>
       </div>
       <div class="filter-block">
-        <label for="brand" class="body-text-20">
+        <label class="body-text-20">
           What brand?
         </label>
         <div class="dropdown-container">
@@ -40,7 +40,7 @@ const searchInput = `
         </div>
       </div>
       <div class="filter-block">
-        <label for="budget" class="body-text-20">
+        <label class="body-text-20">
           What budget?
         </label>
         <div class="dropdown-container">

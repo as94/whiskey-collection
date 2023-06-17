@@ -1,30 +1,10 @@
-import {
-  whiskeyItemsPerPage,
-  visiblePagesCount,
-} from '../../services/paginationSettings.js';
-import {
-  changePage,
-  getPage,
-  getCategory,
-} from '../../services/urlSearchParams.js';
-import { getWhiskeyByCategory } from '../../services/state.js';
+import { visiblePagesCount } from '../../services/paginationUtils.js';
+import { changePage, getPage } from '../../services/urlSearchParams.js';
 import { whiskeyLoaded } from '../../services/customEvents.js';
-
-const getTotalPagesCount = () => {
-  const category = getCategory();
-  const whiskeyByCategory = getWhiskeyByCategory();
-  const whiskeyItems = whiskeyByCategory[category];
-  const whiskeyItemsCount = whiskeyItems.length;
-
-  return Math.ceil(whiskeyItemsCount / whiskeyItemsPerPage);
-};
-
-const getPagesCount = () => {
-  const totalPagesCount = getTotalPagesCount();
-  return totalPagesCount < visiblePagesCount
-    ? totalPagesCount
-    : visiblePagesCount;
-};
+import {
+  getPagesCount,
+  getTotalPagesCount,
+} from '../../services/paginationUtils.js';
 
 const getPages = currentPageNumber => {
   const pagesCount = getPagesCount();

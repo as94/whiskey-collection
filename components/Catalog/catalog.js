@@ -1,7 +1,7 @@
 import { getWhiskeyByCategory } from '../../services/state.js';
 import { getCategory, getPage } from '../../services/urlSearchParams.js';
 import { whiskeyLoaded } from '../../services/customEvents.js';
-import { whiskeyItemsPerPage } from '../../services/paginationSettings.js';
+import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
 
 const generateCatalogRows = () => {
   const category = getCategory();

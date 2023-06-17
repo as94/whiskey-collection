@@ -1,3 +1,5 @@
+import { whiskeyLoaded } from '../../services/customEvents.js';
+
 const orderBy = `
 <link rel="stylesheet" href="./components/OrderBy/orderBy.css" />
 <div>
@@ -19,29 +21,31 @@ const orderBy = `
 </div>
 `;
 
-$(document).ready(() => {
-  const root = '.order-by .dropdown-container';
-  $(`${root} .selected-item.sorting-field`).click(function () {
-    $(this).toggleClass('active');
-    $(`${root} .dropdown-options.sorting-field`).toggleClass('show');
-  });
+window.addEventListener(whiskeyLoaded, () => {
+  $(document).ready(() => {
+    const root = '.order-by .dropdown-container';
+    $(`${root} .selected-item.sorting-field`).click(function () {
+      $(this).toggleClass('active');
+      $(`${root} .dropdown-options.sorting-field`).toggleClass('show');
+    });
 
-  $(`${root} .dropdown-options.sorting-field > li`).click(function () {
-    var selectedOption = $(this).text();
-    $(`#selected-sorting-field`).text(selectedOption);
-    $(`${root} .dropdown-options.sorting-field > li`).removeClass('selected');
-    $(this).addClass('selected');
-    $(`${root} .dropdown-options`).removeClass('show');
-    $(`${root} .selected-item`).removeClass('active');
-  });
-
-  $(document).click(event => {
-    var target = $(event.target);
-    if (!target.closest(root).length) {
+    $(`${root} .dropdown-options.sorting-field > li`).click(function () {
+      var selectedOption = $(this).text();
+      $(`#selected-sorting-field`).text(selectedOption);
+      $(`${root} .dropdown-options.sorting-field > li`).removeClass('selected');
+      $(this).addClass('selected');
       $(`${root} .dropdown-options`).removeClass('show');
       $(`${root} .selected-item`).removeClass('active');
-    }
-  });
-});
+    });
 
-$('#orderBy').html(orderBy);
+    $(document).click(event => {
+      var target = $(event.target);
+      if (!target.closest(root).length) {
+        $(`${root} .dropdown-options`).removeClass('show');
+        $(`${root} .selected-item`).removeClass('active');
+      }
+    });
+  });
+
+  $('#orderBy').html(orderBy);
+});
