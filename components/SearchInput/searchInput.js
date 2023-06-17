@@ -79,7 +79,7 @@ $(document).ready(() => {
     });
 
     $(`${root} .dropdown-options.${filter} > li`).click(function () {
-      var selectedOption = $(this).text();
+      const selectedOption = $(this).text();
       $(`#selected-${filter}`).text(selectedOption);
       $(`${root} .dropdown-options.${filter} > li`).removeClass('selected');
       $(this).addClass('selected');
@@ -89,7 +89,7 @@ $(document).ready(() => {
   }
 
   $(document).click(event => {
-    var target = $(event.target);
+    const target = $(event.target);
     if (!target.closest(root).length) {
       $(`${root} .dropdown-options`).removeClass('show');
       $(`${root} .selected-item`).removeClass('active');

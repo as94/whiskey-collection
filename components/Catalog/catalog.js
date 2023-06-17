@@ -1,14 +1,48 @@
 import { getWhiskeyByCategory } from '../../services/state.js';
-import { getCategory, getPage } from '../../services/urlSearchParams.js';
+import {
+  getCategory,
+  getPage,
+  getOrderBy,
+} from '../../services/urlSearchParams.js';
 import { whiskeyLoaded } from '../../services/customEvents.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
+import {
+  nameAsc,
+  nameDesc,
+  priceAsc,
+  priceDesc,
+  popularDesc,
+} from '../../services/orderBySettings.js';
 
 const generateCatalogRows = () => {
   const category = getCategory();
   const whiskeyByCategory = getWhiskeyByCategory();
   const page = getPage();
+  const orderBy = getOrderBy();
   const whiskeyItems = whiskeyByCategory[category]
-    .sort((a, b) => a.Name.localeCompare(b.Name))
+    .sort((a, b) => {
+      switch (orderBy) {
+        case nameAsc:
+          return a.Name.localeCompare(b.Name);
+        case nameDesc:
+          return b.Name.localeCompare(a.Name);
+        case priceAsc:
+          return parseFloat(a.Price.slice(1)) - parseFloat(b.Price.slice(1));
+        case priceDesc:
+          return parseFloat(b.Price.slice(1)) - parseFloat(a.Price.slice(1));
+        case popularDesc:
+          const weightA = a.Rating * Math.log10(a.RateCount + 1);
+          const weightB = b.Rating * Math.log10(b.RateCount + 1);
+
+          const difference = weightB - weightA;
+
+          if (Number(difference.toFixed(2)) !== 0) {
+            return difference;
+          }
+
+          return a.Name.localeCompare(b.Name);
+      }
+    })
     .slice((page - 1) * whiskeyItemsPerPage, whiskeyItemsPerPage * page);
   const count = whiskeyItems.length;
   let result = '';
@@ -26,7 +60,9 @@ const generateCatalogRows = () => {
       <div class="whiskey-name body-text-18">
         ${whiskey.Name}
       </div>
-      <div class="whiskey-characteristics body-text-18">${whiskey.ABV}</div>
+      <div class="whiskey-characteristics body-text-18">${
+        whiskey.ABV ? `${whiskey.ABV} / ${whiskey.Price}` : `${whiskey.Price}`
+      }</div>
     </div>`;
     } else {
       result += `<div class="card">
@@ -40,7 +76,9 @@ const generateCatalogRows = () => {
       <div class="whiskey-name body-text-18">
         ${whiskey.Name}
       </div>
-      <div class="whiskey-characteristics body-text-18">${whiskey.ABV}</div>
+      <div class="whiskey-characteristics body-text-18">${
+        whiskey.ABV ? `${whiskey.ABV} / ${whiskey.Price}` : `${whiskey.Price}`
+      }</div>
     </div>`;
     }
   }
