@@ -72,6 +72,7 @@ const thumbnail = (category, country, topRatedWhiskey) => `
 </div>`;
 
 await initializeWhiskey();
+
 const categories = getMainCategories();
 const category = getRandomItem(categories);
 const whiskeyByCategory = getWhiskeyByCategory();

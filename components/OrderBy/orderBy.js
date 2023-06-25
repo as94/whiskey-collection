@@ -67,6 +67,7 @@ const orderBy = () => {
 };
 
 await initializeWhiskey();
+
 $(document).ready(() => {
   const root = '.order-by .dropdown-container';
   $(`${root} .selected-item.sorting-field`).click(function () {

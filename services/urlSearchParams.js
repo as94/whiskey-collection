@@ -46,3 +46,16 @@ export const changeOrderBy = orderBy => {
     window.location.pathname + '?' + params.toString() + '#catalog-result';
   window.location.href = newUrl;
 };
+
+export const changeSearchResults = (country, brand, priceRange, searchText) => {
+  const params = new URLSearchParams(window.location.search);
+  params.set('country', country);
+  params.set('brand', brand);
+  params.set('priceRange', priceRange);
+  if (searchText) {
+    params.set('searchText', searchText);
+  }
+  params.set('page', 1);
+  const newUrl = 'searchResults.html' + '?' + params.toString();
+  window.location.href = newUrl;
+};
