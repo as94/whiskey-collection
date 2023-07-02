@@ -116,6 +116,7 @@ const searchInput = () => {
     <div class="search-line">
       <img class="search-icon" src="icons/search.svg" />
       <input id="search" type="text" placeholder="Search whiskey" class="body-text-16" value="${searchText}" />
+      <div class="search-clean"></div>
     </div>
 
     <button class="find-again-btn body-text-18">Find again</button>
@@ -166,13 +167,24 @@ $(document).ready(() => {
     $('#search').val('');
   });
 
-  $('.find-again-btn').click(function () {
+  const handleClick = () => {
     const country = $('#selected-country').text();
     const brand = $('#selected-brand').text();
     const budget = $('#selected-budget').text();
     const searchText = $('#search').val();
 
     changeSearchResults(country, brand, budget, searchText);
+  };
+
+  $('#search').keypress(function (event) {
+    if (event.which === 13) {
+      event.preventDefault();
+      handleClick();
+    }
+  });
+
+  $('.find-again-btn').click(function () {
+    handleClick();
   });
 });
 

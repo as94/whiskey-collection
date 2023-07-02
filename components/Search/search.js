@@ -147,13 +147,24 @@ $(document).ready(() => {
     $('#search').val('');
   });
 
-  $('.find-btn').click(function () {
+  const handleClick = () => {
     const country = $('#selected-country').text();
     const brand = $('#selected-brand').text();
     const budget = $('#selected-budget').text();
     const searchText = $('#search').val();
 
     changeSearchResults(country, brand, budget, searchText);
+  };
+
+  $('#search').keypress(function (event) {
+    if (event.which === 13) {
+      event.preventDefault();
+      handleClick();
+    }
+  });
+
+  $('.find-btn').click(function () {
+    handleClick();
   });
 });
 

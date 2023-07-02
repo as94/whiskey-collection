@@ -1,8 +1,13 @@
-import { getWhiskeyByCategory } from '../../services/state.js';
+import { getWhiskeyByCategory, getWhiskeyBy } from '../../services/state.js';
 import {
   getCategory,
   getPage,
   getOrderBy,
+  getBrand,
+  getCountry,
+  getPriceRange,
+  getRoute,
+  getSearchText,
 } from '../../services/urlSearchParams.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
@@ -13,13 +18,32 @@ import {
   priceDesc,
   popularDesc,
 } from '../../services/orderBySettings.js';
+import {
+  catalogByCategory,
+  catalogBySearchResults,
+} from '../../services/routePaths.js';
 
 const generateCatalogRows = () => {
-  const category = getCategory();
-  const whiskeyByCategory = getWhiskeyByCategory();
+  let whiskeyItems = [];
+  const route = getRoute();
+  if (route === catalogByCategory) {
+    const category = getCategory();
+    if (category) {
+      const whiskeyByCategory = getWhiskeyByCategory();
+      whiskeyItems = whiskeyByCategory[category];
+    }
+  }
+  if (route === catalogBySearchResults) {
+    const country = getCountry();
+    const brand = getBrand();
+    const priceRange = getPriceRange();
+    const searchText = getSearchText();
+
+    whiskeyItems = getWhiskeyBy(country, brand, priceRange, searchText);
+  }
   const page = getPage();
   const orderBy = getOrderBy();
-  const whiskeyItems = whiskeyByCategory[category]
+  whiskeyItems = whiskeyItems
     .sort((a, b) => {
       switch (orderBy) {
         case nameAsc:
@@ -93,6 +117,8 @@ const generateCatalogRows = () => {
   return result;
 };
 
+await initializeWhiskey();
+
 export const catalog = () => `
 <link rel="stylesheet" href="./components/Catalog/catalog.css" />
 <div class="catalog">
@@ -106,5 +132,4 @@ $(document).ready(() => {
   });
 });
 
-await initializeWhiskey();
 $('#catalog').html(catalog());

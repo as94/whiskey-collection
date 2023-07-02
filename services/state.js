@@ -64,6 +64,7 @@ const initBrands = whiskey => {
 export const getWhiskey = () => state.whiskey;
 export const getWhiskeyBy = (country, brand, priceRange, searchText) => {
   let result = state.whiskey;
+
   if (country && country !== emptyFilter) {
     result = result.filter(x => x.Country === country);
   }

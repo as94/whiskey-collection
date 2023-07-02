@@ -113,6 +113,7 @@
   margin-bottom: 40px;
   width: 100%;
   border-bottom: 1px solid white;
+  display: flex;
 }
 
 .search-line input[type='text'] {
@@ -139,6 +140,15 @@
   margin-top: 10px;
   margin-left: 10px;
   user-select: none;
+}
+
+.search-line .search-clean {
+  background-image: url('/icons/close.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12px;
+  cursor: pointer;
+  margin: 14px 10px;
 }
 
 .find-again-btn {

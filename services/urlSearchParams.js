@@ -71,9 +71,7 @@ export const changeSearchResults = (country, brand, priceRange, searchText) => {
   params.set('country', country);
   params.set('brand', brand);
   params.set('priceRange', priceRange);
-  if (searchText) {
-    params.set('searchText', searchText);
-  }
+  params.set('searchText', searchText);
   params.set('page', 1);
   const newUrl = catalogBySearchResultsHtml + '?' + params.toString();
   window.location.href = newUrl;
