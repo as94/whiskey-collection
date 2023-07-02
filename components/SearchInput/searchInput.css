@@ -46,9 +46,31 @@
   align-items: center;
   border-bottom: 1px solid white;
   cursor: pointer;
-  padding: 10px;
+  padding: 0 10px;
   justify-content: space-between;
   user-select: none;
+}
+
+.filter-block .dropdown-container .selected-item .dropdown-controls {
+  display: flex;
+}
+
+.filter-block .dropdown-container .selected-item .clean {
+  background-image: url('/icons/close.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+.filter-block .dropdown-container .selected-item .open {
+  background-image: url('/icons/chevron.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12px;
+  cursor: pointer;
+  margin: 10px 5px;
 }
 
 .filter-block .dropdown-container .dropdown-options {
@@ -117,4 +139,22 @@
   margin-top: 10px;
   margin-left: 10px;
   user-select: none;
+}
+
+.find-again-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 60px;
+  width: 230px;
+  border-radius: 4px;
+  background-color: var(--primary-light-green);
+}
+
+.find-again-btn:hover {
+  background-color: var(--btn-hover-green);
+  cursor: pointer;
 }

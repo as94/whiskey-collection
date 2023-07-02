@@ -6,6 +6,7 @@ const state = {
   mainCategories: [],
   countries: [],
   brands: [],
+  budgetRanges: [],
 };
 
 export const setWhiskey = whiskey => {
@@ -13,6 +14,7 @@ export const setWhiskey = whiskey => {
   initWhiskeyByCategory(whiskey);
   initCountries(whiskey);
   initBrands(whiskey);
+  initBudgetRanges();
 };
 
 const initWhiskeyByCategory = whiskey => {
@@ -38,6 +40,17 @@ const initCountries = whiskey => {
   state.countries = countries;
 };
 
+const initBudgetRanges = () => {
+  state.budgetRanges = [
+    '$0 - $30',
+    '$30 - $60',
+    '$60 - $90',
+    '$90 - $120',
+    '$120 - $150',
+    '$150 - $2000',
+  ];
+};
+
 const initBrands = whiskey => {
   const groupedByBrandWhiskey = groupBy(whiskey, 'Brand');
   const brands = Object.keys(groupedByBrandWhiskey).sort((a, b) =>
@@ -51,3 +64,4 @@ export const getWhiskeyByCategory = () => state.whiskeyByCategory;
 export const getMainCategories = () => state.mainCategories;
 export const getCountries = () => state.countries;
 export const getBrands = () => state.brands;
+export const getBudgetRanges = () => state.budgetRanges;

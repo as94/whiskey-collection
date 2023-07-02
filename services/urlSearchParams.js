@@ -59,3 +59,39 @@ export const changeSearchResults = (country, brand, priceRange, searchText) => {
   const newUrl = 'searchResults.html' + '?' + params.toString();
   window.location.href = newUrl;
 };
+
+export const getCountry = () => {
+  const params = new URLSearchParams(window.location.search);
+  const country = params.get('country');
+  if (country) {
+    return country;
+  }
+  return 'Any';
+};
+
+export const getBrand = () => {
+  const params = new URLSearchParams(window.location.search);
+  const brand = params.get('brand');
+  if (brand) {
+    return brand;
+  }
+  return 'Any';
+};
+
+export const getPriceRange = () => {
+  const params = new URLSearchParams(window.location.search);
+  const priceRange = params.get('priceRange');
+  if (priceRange) {
+    return priceRange;
+  }
+  return 'Any';
+};
+
+export const getSearchText = () => {
+  const params = new URLSearchParams(window.location.search);
+  const searchText = params.get('searchText');
+  if (searchText) {
+    return searchText;
+  }
+  return '';
+};

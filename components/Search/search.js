@@ -1,6 +1,10 @@
 import { registerBlockTitle } from '../BlockTitle/blockTitle.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { getCountries, getBrands } from '../../services/state.js';
+import {
+  getCountries,
+  getBrands,
+  getBudgetRanges,
+} from '../../services/state.js';
 import { changeSearchResults } from '../../services/urlSearchParams.js';
 
 const generateCountryListItems = () => {
@@ -17,6 +21,15 @@ const generateBrandListItems = () => {
   const brands = getBrands();
   for (const brand of brands) {
     result += `<li>${brand}</li>`;
+  }
+  return result;
+};
+
+const generateBudgetListItems = () => {
+  let result = '';
+  const budgetRanges = getBudgetRanges();
+  for (const budgetRange of budgetRanges) {
+    result += `<li>${budgetRange}</li>`;
   }
   return result;
 };
@@ -75,12 +88,7 @@ const search = () => {
             </div>
           </div>
           <ul class="dropdown-options budget">
-            <li>$0 - $30</li>
-            <li>$30 - $60</li>
-            <li>$60 - $90</li>
-            <li>$90 - $120</li>
-            <li>$120 - $150</li>
-            <li>$150 - $2000</li>
+            ${generateBudgetListItems()}
           </ul>
         </div>
       </div>
@@ -145,13 +153,7 @@ $(document).ready(() => {
     const budget = $('#selected-budget').text();
     const searchText = $('#search').val();
 
-    let normalizedBudget = 'Any';
-    if (budget !== 'Any') {
-      const numbers = budget.match(/\d+/g);
-      normalizedBudget = `${numbers[0]}, ${numbers[1]}`;
-    }
-
-    changeSearchResults(country, brand, normalizedBudget, searchText);
+    changeSearchResults(country, brand, budget, searchText);
   });
 });
 
