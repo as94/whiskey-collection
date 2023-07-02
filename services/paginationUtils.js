@@ -1,13 +1,38 @@
-import { getWhiskeyByCategory } from './state.js';
-import { getCategory } from '../../services/urlSearchParams.js';
+import { getWhiskeyByCategory, getWhiskeyBy } from './state.js';
+import {
+  getBrand,
+  getCategory,
+  getCountry,
+  getPriceRange,
+  getRoute,
+  getSearchText,
+} from '../services/urlSearchParams.js';
+import {
+  catalogByCategory,
+  catalogBySearchResults,
+} from '../services/routePaths.js';
 
 export const whiskeyItemsPerPage = 9;
 export const visiblePagesCount = 4;
 
 export const getWhiskeyItemsCount = () => {
-  const category = getCategory();
-  const whiskeyByCategory = getWhiskeyByCategory();
-  const whiskeyItems = whiskeyByCategory[category];
+  let whiskeyItems = [];
+  const route = getRoute();
+  if (route === catalogByCategory) {
+    const category = getCategory();
+    if (category) {
+      const whiskeyByCategory = getWhiskeyByCategory();
+      whiskeyItems = whiskeyByCategory[category];
+    }
+  }
+  if (route === catalogBySearchResults) {
+    const country = getCountry();
+    const brand = getBrand();
+    const priceRange = getPriceRange();
+    const searchText = getSearchText();
+
+    whiskeyItems = getWhiskeyBy(country, brand, priceRange, searchText);
+  }
   return whiskeyItems.length;
 };
 

@@ -1,5 +1,7 @@
 import { groupBy } from './utils.js';
 
+const emptyFilter = 'Any';
+
 const state = {
   whiskey: [],
   whiskeyByCategory: {},
@@ -60,6 +62,34 @@ const initBrands = whiskey => {
 };
 
 export const getWhiskey = () => state.whiskey;
+export const getWhiskeyBy = (country, brand, priceRange, searchText) => {
+  let result = state.whiskey;
+  if (country && country !== emptyFilter) {
+    result = result.filter(x => x.Country === country);
+  }
+
+  if (brand && brand !== emptyFilter) {
+    result = result.filter(x => x.Brand === brand);
+  }
+
+  if (priceRange && priceRange !== emptyFilter) {
+    const numbers = priceRange.match(/\d+/g);
+    const min = numbers[0];
+    const max = numbers[1];
+    result = result.filter(x => {
+      const price = parseFloat(x.Price.slice(1));
+      return price >= min && price < max;
+    });
+  }
+
+  if (searchText && searchText !== '') {
+    result = result.filter(x =>
+      x.Name.toLowerCase().includes(searchText.toLowerCase())
+    );
+  }
+
+  return result;
+};
 export const getWhiskeyByCategory = () => state.whiskeyByCategory;
 export const getMainCategories = () => state.mainCategories;
 export const getCountries = () => state.countries;

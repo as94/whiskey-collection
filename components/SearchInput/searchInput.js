@@ -132,9 +132,16 @@ $(document).ready(() => {
   const root = '.filter-block .dropdown-container';
 
   for (const filter of filters) {
-    $(`${root} .selected-item.${filter}`).click(function () {
+    $(`${root} .selected-item.${filter} .open`).click(function () {
       $(this).toggleClass('active');
       $(`${root} .dropdown-options.${filter}`).toggleClass('show');
+    });
+
+    $(`${root} .selected-item.${filter} .clean`).click(function () {
+      $(`${root} .dropdown-options.${filter} > li`).removeClass('selected');
+      $(`${root} .selected-item`).removeClass('active');
+      $(`${root} .dropdown-options`).removeClass('show');
+      $(`#selected-${filter}`).text('Any');
     });
 
     $(`${root} .dropdown-options.${filter} > li`).click(function () {
@@ -153,6 +160,10 @@ $(document).ready(() => {
       $(`${root} .dropdown-options`).removeClass('show');
       $(`${root} .selected-item`).removeClass('active');
     }
+  });
+
+  $('.search-line .search-clean').click(() => {
+    $('#search').val('');
   });
 
   $('.find-again-btn').click(function () {

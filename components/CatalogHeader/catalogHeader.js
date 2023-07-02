@@ -17,6 +17,7 @@ const catalogHeader = () => {
 $('#catalogHeader').html(catalogHeader());
 
 await initializeWhiskey();
+
 const whiskeyItemsCount = getWhiskeyItemsCount();
 const page = getPage();
 const start = (page - 1) * whiskeyItemsPerPage + 1;
