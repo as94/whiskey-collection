@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Jack Daniel’s Old No. 7 Tennessee Whiskey",
+    "Name": "Jack Daniels Old No. 7 Tennessee Whiskey",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "Bourbon",
@@ -13,10 +13,10 @@
     "Price": "$24.00",
     "Volume": "750ml",
     "Description": "Jack Daniel's Tennessee Whiskey is the world's best selling whiskey, with every bottle distilled and bottled at the Jack Daniel Distillery in Lynchburg, Tennessee, America's oldest registered distillery, established in 1866. Made from the finest corn, rye, and barley malt these choice grains are mixed with the iron-free water that flows from the Cave Spring found on the distillery grounds. From there Jack Daniel's is charcoal mellowed drop by drop through 10 feet of sugar maple charcoal which imparts our distinct smoothness. Finally, Jack Daniel's is matured in handcrafted white oak barrels of our own making.",
-    "ImageLink": "images/products/Jack Daniel’s Old No. 7 Tennessee Whiskey.png"
+    "ImageLink": "images/products/Jack Daniels Old No. 7 Tennessee Whiskey.png"
   },
   {
-    "Name": "Jack Daniel’s Tennessee Honey",
+    "Name": "Jack Daniels Tennessee Honey",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "Flavored Whiskey",
@@ -28,11 +28,11 @@
     "RateCount": 283,
     "Price": "$46.93",
     "Volume": "",
-    "Description": "Jack Daniel’s Tennessee Honey is a blend of Jack Daniel’s Tennessee Whiskey and a unique honey liqueur of our own making, for a taste that’s one-of-a-kind and unmistakably Jack. With hints of honey and a finish that’s naturally smooth, Jack Daniel’s Tennessee Honey is something special.",
-    "ImageLink": "images/products/Jack Daniel’s Tennessee Honey.png"
+    "Description": "Jack Daniels Tennessee Honey is a blend of Jack Daniels Tennessee Whiskey and a unique honey liqueur of our own making, for a taste that's one-of-a-kind and unmistakably Jack. With hints of honey and a finish that's naturally smooth, Jack Daniels Tennessee Honey is something special.",
+    "ImageLink": "images/products/Jack Daniels Tennessee Honey.png"
   },
   {
-    "Name": "Jack Daniel’s Gentleman Jack Tennessee Whiskey",
+    "Name": "Jack Daniels Gentleman Jack Tennessee Whiskey",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "American Whiskey",
@@ -44,11 +44,11 @@
     "RateCount": 131,
     "Price": "$32.99",
     "Volume": "",
-    "Description": "Jack Daniel's Gentleman Jack  is an exceptionally smooth Tennessee whiskey with a rich, rewarding taste and a gentle farewell. Crafted by combining traditional methods with a unique process that’s all its own, Gentleman Jack undergoes a second charcoal mellowing to achieve exceptional smoothness.",
-    "ImageLink": "images/products/Jack Daniel’s Gentleman Jack Tennessee Whiskey.png"
+    "Description": "Jack Daniel's Gentleman Jack  is an exceptionally smooth Tennessee whiskey with a rich, rewarding taste and a gentle farewell. Crafted by combining traditional methods with a unique process that's all its own, Gentleman Jack undergoes a second charcoal mellowing to achieve exceptional smoothness.",
+    "ImageLink": "images/products/Jack Daniels Gentleman Jack Tennessee Whiskey.png"
   },
   {
-    "Name": "Jack Daniel’s Tennessee Fire Flavored Whiskey",
+    "Name": "Jack Daniels Tennessee Fire Flavored Whiskey",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "Flavored Whiskey",
@@ -60,11 +60,11 @@
     "RateCount": 68,
     "Price": "$24.99",
     "Volume": "",
-    "Description": "Jack Daniel’s Tennessee Fire delivers a rich, complex and multi-dimensional tasting experience; Jack Daniel's Tennessee Whiskey, on its own, brings flavors of toasted wood, roasted nuts and vanilla beans. Our proprietary and unique cinnamon liqueur perfectly complements the whiskey flavors by adding warm, indulgent and spicy notes of ground cinnamon, delicate cinnamon bark, and spicy clove. The result: a delicious Jack.",
-    "ImageLink": "images/products/Jack Daniel’s Tennessee Fire Flavored Whiskey.png"
+    "Description": "Jack Daniels Tennessee Fire delivers a rich, complex and multi-dimensional tasting experience; Jack Daniel's Tennessee Whiskey, on its own, brings flavors of toasted wood, roasted nuts and vanilla beans. Our proprietary and unique cinnamon liqueur perfectly complements the whiskey flavors by adding warm, indulgent and spicy notes of ground cinnamon, delicate cinnamon bark, and spicy clove. The result: a delicious Jack.",
+    "ImageLink": "images/products/Jack Daniels Tennessee Fire Flavored Whiskey.png"
   },
   {
-    "Name": "Jack Daniel’s Tennessee Apple Flavored Whiskey",
+    "Name": "Jack Daniels Tennessee Apple Flavored Whiskey",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "Flavored Whiskey",
@@ -76,11 +76,11 @@
     "RateCount": 44,
     "Price": "$24.99",
     "Volume": "",
-    "Description": "Highly versatile, deliciously smooth, and refreshing, Jack Apple combines our proprietary crisp, green apple liqueur with the unique and unmistakable character of Jack Daniel’s. It’s an apple-flavored whiskey* that only Jack Daniel’s can deliver.",
-    "ImageLink": "images/products/Jack Daniel’s Tennessee Apple Flavored Whiskey.png"
+    "Description": "Highly versatile, deliciously smooth, and refreshing, Jack Apple combines our proprietary crisp, green apple liqueur with the unique and unmistakable character of Jack Daniels. It's an apple-flavored whiskey* that only Jack Daniels can deliver.",
+    "ImageLink": "images/products/Jack Daniels Tennessee Apple Flavored Whiskey.png"
   },
   {
-    "Name": "Jack Daniel’s Tennessee Cider Winter Jack",
+    "Name": "Jack Daniels Tennessee Cider Winter Jack",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "Flavored Whiskey",
@@ -92,11 +92,11 @@
     "RateCount": 39,
     "Price": "$18.99",
     "Volume": "",
-    "Description": "Jack Daniel’s Winter Jack is a seasonal blend of apple cider liqueur, Jack Daniel’s Old No. 7 Tennessee Whiskey and holiday spices, based on an original family recipe from Jack’s home in Lynchburg, Tennessee. Even if you live in a place where it’s never cold or snowy, you’ll never regret being prepared. Our heartwarming Tennessee Cider should always be enjoyed with friends and family.",
-    "ImageLink": "images/products/Jack Daniel’s Tennessee Cider Winter Jack.png"
+    "Description": "Jack Daniels Winter Jack is a seasonal blend of apple cider liqueur, Jack Daniels Old No. 7 Tennessee Whiskey and holiday spices, based on an original family recipe from Jack's home in Lynchburg, Tennessee. Even if you live in a place where it's never cold or snowy, you'll never regret being prepared. Our heartwarming Tennessee Cider should always be enjoyed with friends and family.",
+    "ImageLink": "images/products/Jack Daniels Tennessee Cider Winter Jack.png"
   },
   {
-    "Name": "Jack Daniel’s Single Barrel Select Tennessee Whiskey",
+    "Name": "Jack Daniels Single Barrel Select Tennessee Whiskey",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "American Whiskey",
@@ -108,11 +108,11 @@
     "RateCount": 26,
     "Price": "$53.99",
     "Volume": "",
-    "Description": "Jack Daniel’s Single Barrel Select is hand selected from the highest reaches of the barrel house and  bottled in the smallest of batches, just one barrel at a time, at 94 proof with robust character and notes of caramel and spice.",
-    "ImageLink": "images/products/Jack Daniel’s Single Barrel Select Tennessee Whiskey.png"
+    "Description": "Jack Daniels Single Barrel Select is hand selected from the highest reaches of the barrel house and  bottled in the smallest of batches, just one barrel at a time, at 94 proof with robust character and notes of caramel and spice.",
+    "ImageLink": "images/products/Jack Daniels Single Barrel Select Tennessee Whiskey.png"
   },
   {
-    "Name": "Jack Daniel’s Rye Tennessee Whiskey",
+    "Name": "Jack Daniels Rye Tennessee Whiskey",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "Rye Whiskey",
@@ -125,10 +125,10 @@
     "Price": "$25.99",
     "Volume": "",
     "Description": "Jack Daniel's Tennessee Rye brings together two classics - Rye's distinctive flavor, drawn from our unique 70% Rye grain bill, and Jack's time-honored charcoal mellowing method. What emerges is a spicy whiskey that's sipping' smooth.",
-    "ImageLink": "images/products/Jack Daniel’s Rye Tennessee Whiskey.png"
+    "ImageLink": "images/products/Jack Daniels Rye Tennessee Whiskey.png"
   },
   {
-    "Name": "Jack Daniel’s Single Barrel Barrel Proof Tennessee Whiskey",
+    "Name": "Jack Daniels Single Barrel Barrel Proof Tennessee Whiskey",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "American Whiskey",
@@ -140,11 +140,11 @@
     "RateCount": 12,
     "Price": "$64.99",
     "Volume": "",
-    "Description": "It’s whiskey as nature intended it—bottled straight from the barrel at its full proof. Intense, smooth, and remarkably varied, Barrel Proof is bottled at anywhere from 125 to 140-proof, taking Jack’s trademark vanilla and toasted oak flavors to bold new levels.",
-    "ImageLink": "images/products/Jack Daniel’s Single Barrel Barrel Proof Tennessee Whiskey.png"
+    "Description": "It's whiskey as nature intended it—bottled straight from the barrel at its full proof. Intense, smooth, and remarkably varied, Barrel Proof is bottled at anywhere from 125 to 140-proof, taking Jack's trademark vanilla and toasted oak flavors to bold new levels.",
+    "ImageLink": "images/products/Jack Daniels Single Barrel Barrel Proof Tennessee Whiskey.png"
   },
   {
-    "Name": "Jack Daniel’s Sinatra Select Tennessee Whiskey",
+    "Name": "Jack Daniels Sinatra Select Tennessee Whiskey",
     "Country": "United States",
     "Brand": "Jack Daniels",
     "Categories": "American Whiskey",
@@ -156,8 +156,8 @@
     "RateCount": 10,
     "Price": "$109.99",
     "Volume": "1L",
-    "Description": "Sinatra Select pays tribute to Jack’s biggest fan: Frank Sinatra. Made with our unique “Sinatra Barrels” that have deep grooves specially carved into their staves to expose the whiskey to extra layers of toasted oak. This added exposure imparts a rich amber color, bold character, and pleasant smokiness, punctuated by an incredibly smooth vanilla finish. Much like Frank, this Tennessee Whiskey is one of a kind.",
-    "ImageLink": "images/products/Jack Daniel’s Sinatra Select Tennessee Whiskey.png"
+    "Description": "Sinatra Select pays tribute to Jack's biggest fan: Frank Sinatra. Made with our unique “Sinatra Barrels” that have deep grooves specially carved into their staves to expose the whiskey to extra layers of toasted oak. This added exposure imparts a rich amber color, bold character, and pleasant smokiness, punctuated by an incredibly smooth vanilla finish. Much like Frank, this Tennessee Whiskey is one of a kind.",
+    "ImageLink": "images/products/Jack Daniels Sinatra Select Tennessee Whiskey.png"
   },
   {
     "Name": "Johnnie Walker Black Label Blended Scotch Whisky",
@@ -188,7 +188,7 @@
     "RateCount": 177,
     "Price": "$39.99",
     "Volume": "",
-    "Description": "Indulge all of your senses with a smooth glass of Johnnie Walker Red Label Blended Scotch Whisky. Highly versatile and with universal appeal, it has a bold, distinctive flavor that shines through even when mixed. Johnnie Walker Red Label is now one of the best-selling Scotch whiskies around the globe. Perfect for parties and get-togethers, at home, or going out, we recommend enjoying with friends. Simply mix with squeezed lime and ginger ale and pour over ice for a Johnnie & Ginger. Johnnie Walker was recognized as one of the world's top-trending Scotch whiskies at the 2020 Drinks International awards.  The Johnnie Walker brand's extraordinary knowledge of Scotland’s malts and its deep desire to create well-balanced blends of island malt whiskies led to the whisky brand we have today. Each batch is then carefully matured to perfection in quality oak casks. As one of the biggest whisky brands in the world, Johnnie Walker embraces a rallying cry for optimism through adversity as it challenges the world to keep walking. Please drink responsibly.",
+    "Description": "Indulge all of your senses with a smooth glass of Johnnie Walker Red Label Blended Scotch Whisky. Highly versatile and with universal appeal, it has a bold, distinctive flavor that shines through even when mixed. Johnnie Walker Red Label is now one of the best-selling Scotch whiskies around the globe. Perfect for parties and get-togethers, at home, or going out, we recommend enjoying with friends. Simply mix with squeezed lime and ginger ale and pour over ice for a Johnnie & Ginger. Johnnie Walker was recognized as one of the world's top-trending Scotch whiskies at the 2020 Drinks International awards.  The Johnnie Walker brand's extraordinary knowledge of Scotland's malts and its deep desire to create well-balanced blends of island malt whiskies led to the whisky brand we have today. Each batch is then carefully matured to perfection in quality oak casks. As one of the biggest whisky brands in the world, Johnnie Walker embraces a rallying cry for optimism through adversity as it challenges the world to keep walking. Please drink responsibly.",
     "ImageLink": "images/products/Johnnie Walker Red Label Blended Scotch Whisky.png"
   },
   {
@@ -204,7 +204,7 @@
     "RateCount": 149,
     "Price": "$169.00",
     "Volume": "750ml",
-    "Description": "Indulge all of your senses with a smooth glass of Johnnie Walker Blue Label Blended Scotch Whisky. An exquisite blend made from some of Scotland’s rarest and most exceptional Scotch whiskies, our whisky offers incomparably rich and smoky waves of powerful flavor. Only one in every ten thousand casks has the elusive quality, character and flavor to deliver the remarkable signature taste of Johnnie Walker Blue Label. Truly, it is an extraordinary Scotch Whisky for extraordinary occasions. Simply pour over ice in a whisky tumbler for an elegantly simple drink. Johnnie Walker was recognized as one of the world's top-trending Scotch whiskies at the 2020 Drinks International awards.  Please drink responsibly.",
+    "Description": "Indulge all of your senses with a smooth glass of Johnnie Walker Blue Label Blended Scotch Whisky. An exquisite blend made from some of Scotland's rarest and most exceptional Scotch whiskies, our whisky offers incomparably rich and smoky waves of powerful flavor. Only one in every ten thousand casks has the elusive quality, character and flavor to deliver the remarkable signature taste of Johnnie Walker Blue Label. Truly, it is an extraordinary Scotch Whisky for extraordinary occasions. Simply pour over ice in a whisky tumbler for an elegantly simple drink. Johnnie Walker was recognized as one of the world's top-trending Scotch whiskies at the 2020 Drinks International awards.  Please drink responsibly.",
     "ImageLink": "images/products/Johnnie Walker Blue Label Blended Scotch Whisky.png"
   },
   {
@@ -220,7 +220,7 @@
     "RateCount": 39,
     "Price": "$39.99",
     "Volume": "",
-    "Description": "Strongly influenced by the cold white mist that covers the Far North of Westeros, our limited edition Johnnie Walker Blended Scotch Whisky features a frosted bottle sleeve that reveals hidden designs when exposed to the cold (not all bottles come with boxes). Chill-filtered for an extraordinarily smooth and approachable flavor, Johnnie Walker White Walker Blended Scotch Whisky offers incomparably rich seasonal flavors of vanilla, red fruits and orchard fruits that are perfect for sharing at the next premier, finale or any occasion. Simply add with coconut soda, garnish with a lemon wheel and mint sprig and pour into an ice-filled highball glass for a refreshing tasting Army of the Dead cocktail. \n\nOur 41.7% ABV is a nod to the seven kingdoms and their one true throne and includes one 750 mL bottle of the limited edition White Walker Blended Scotch Whisky.\n\nThe Johnnie Walker brand's extraordinary knowledge of Scotland’s malts and its deep desire to create well-balanced blends of malt whiskies led to the whisky brand we have today. Each batch is carefully matured to perfection in quality oak casks. As one of the biggest whisky brands in the world, Johnnie Walker embraces a rallying cry for optimism through adversity as it challenges the world (and Westeros) to keep walking. Please drink responsibly.\n\n•One 750 mL limited edition bottle of Johnnie Walker White Walker Blended Scotch Whisky \n\n•Rich seasonal flavors of vanilla, red fruits and orchard fruits\n\n•41.7% ABV as a nod to the 7 kingdoms and their 1 true throne\n\n•Chill-filtered for an extraordinary smooth and approachable flavor\n\n•Perfect addition to your Game of Thrones or whisky collection\n\n•Frosted bottle sleeve reveals hidden designs when exposed to the cold\n\n•Simply add with coconut soda, garnish with a lemon wheel and mint sprig and pour into an ice-filled highball glass for a refreshing tasting Army of the Dead cocktail.",
+    "Description": "Strongly influenced by the cold white mist that covers the Far North of Westeros, our limited edition Johnnie Walker Blended Scotch Whisky features a frosted bottle sleeve that reveals hidden designs when exposed to the cold (not all bottles come with boxes). Chill-filtered for an extraordinarily smooth and approachable flavor, Johnnie Walker White Walker Blended Scotch Whisky offers incomparably rich seasonal flavors of vanilla, red fruits and orchard fruits that are perfect for sharing at the next premier, finale or any occasion. Simply add with coconut soda, garnish with a lemon wheel and mint sprig and pour into an ice-filled highball glass for a refreshing tasting Army of the Dead cocktail. \n\nOur 41.7% ABV is a nod to the seven kingdoms and their one true throne and includes one 750 mL bottle of the limited edition White Walker Blended Scotch Whisky.\n\nThe Johnnie Walker brand's extraordinary knowledge of Scotland's malts and its deep desire to create well-balanced blends of malt whiskies led to the whisky brand we have today. Each batch is carefully matured to perfection in quality oak casks. As one of the biggest whisky brands in the world, Johnnie Walker embraces a rallying cry for optimism through adversity as it challenges the world (and Westeros) to keep walking. Please drink responsibly.\n\n•One 750 mL limited edition bottle of Johnnie Walker White Walker Blended Scotch Whisky \n\n•Rich seasonal flavors of vanilla, red fruits and orchard fruits\n\n•41.7% ABV as a nod to the 7 kingdoms and their 1 true throne\n\n•Chill-filtered for an extraordinary smooth and approachable flavor\n\n•Perfect addition to your Game of Thrones or whisky collection\n\n•Frosted bottle sleeve reveals hidden designs when exposed to the cold\n\n•Simply add with coconut soda, garnish with a lemon wheel and mint sprig and pour into an ice-filled highball glass for a refreshing tasting Army of the Dead cocktail.",
     "ImageLink": "images/products/Johnnie Walker White Walker Blended Scotch Whisky.png"
   },
   {
@@ -236,7 +236,7 @@
     "RateCount": 30,
     "Price": "$56.99",
     "Volume": "",
-    "Description": "Indulge all of your senses with a smooth glass of Johnnie Walker Double Black Label Blended Scotch Whisky. Strongly influenced by powerful and peaty West Coast and Islay Single Malts, the intensity is immediately apparent with the taste of smoke and smoldering spices. An impressive blended Scotch to share, whatever the occasion. Simply mix with soda water, pour over ice and garnish with a lime wedge for a Highball cocktail. Johnnie Walker was recognized as one of the world's top-trending Scotch whiskies at the 2020 Drinks International awards.  The Johnnie Walker brand's extraordinary knowledge of Scotland’s malts and its deep desire to create well-balanced blends of island malt whiskies led to the whisky brand we have today. Each batch is then carefully matured to perfection in quality oak casks. As one of the biggest whisky brands in the world, Johnnie Walker embraces a rallying cry for optimism through adversity as it challenges the world to keep walking. Please drink responsibly.",
+    "Description": "Indulge all of your senses with a smooth glass of Johnnie Walker Double Black Label Blended Scotch Whisky. Strongly influenced by powerful and peaty West Coast and Islay Single Malts, the intensity is immediately apparent with the taste of smoke and smoldering spices. An impressive blended Scotch to share, whatever the occasion. Simply mix with soda water, pour over ice and garnish with a lime wedge for a Highball cocktail. Johnnie Walker was recognized as one of the world's top-trending Scotch whiskies at the 2020 Drinks International awards.  The Johnnie Walker brand's extraordinary knowledge of Scotland's malts and its deep desire to create well-balanced blends of island malt whiskies led to the whisky brand we have today. Each batch is then carefully matured to perfection in quality oak casks. As one of the biggest whisky brands in the world, Johnnie Walker embraces a rallying cry for optimism through adversity as it challenges the world to keep walking. Please drink responsibly.",
     "ImageLink": "images/products/Johnnie Walker Double Black Label Blended Scotch Whisky.png"
   },
   {
@@ -268,7 +268,7 @@
     "RateCount": 15,
     "Price": "$98.22",
     "Volume": "",
-    "Description": "Indulge all of your senses with a smooth glass of Johnnie Walker Gold Label Reserve Blended Scotch Whisky. Luxurious, creamy and honeyed, it is a wonderful tribute to the harmonious partnership of Speyside and Highland Whiskies, with just a hint of smoldering embers from the West Coast. Johnnie Walker Gold Label Reserve is made for those unforgettable nights out with amazing friends. Simply mix with soda water, pour over ice and garnish with an orange slice for an elegantly simple drink. Johnnie Walker was recognized as one of the world's top-trending Scotch whiskies at the 2020 Drinks International awards.  The Johnnie Walker brand's extraordinary knowledge of Scotland’s malts and its deep desire to create well-balanced blends of island malt whiskies led to the whisky brand we have today. Each batch is then carefully matured to perfection in quality oak casks. As one of the biggest whisky brands in the world, Johnnie Walker embraces a rallying cry for optimism through adversity as it challenges the world to keep walking. Please drink responsibly.",
+    "Description": "Indulge all of your senses with a smooth glass of Johnnie Walker Gold Label Reserve Blended Scotch Whisky. Luxurious, creamy and honeyed, it is a wonderful tribute to the harmonious partnership of Speyside and Highland Whiskies, with just a hint of smoldering embers from the West Coast. Johnnie Walker Gold Label Reserve is made for those unforgettable nights out with amazing friends. Simply mix with soda water, pour over ice and garnish with an orange slice for an elegantly simple drink. Johnnie Walker was recognized as one of the world's top-trending Scotch whiskies at the 2020 Drinks International awards.  The Johnnie Walker brand's extraordinary knowledge of Scotland's malts and its deep desire to create well-balanced blends of island malt whiskies led to the whisky brand we have today. Each batch is then carefully matured to perfection in quality oak casks. As one of the biggest whisky brands in the world, Johnnie Walker embraces a rallying cry for optimism through adversity as it challenges the world to keep walking. Please drink responsibly.",
     "ImageLink": "images/products/Johnnie Walker Gold Label Reserve Blended Scotch Whisky.png"
   },
   {
@@ -348,7 +348,7 @@
     "RateCount": 91,
     "Price": "$22.99",
     "Volume": "",
-    "Description": "Jim Beam Black® is a premium bourbon with a more flavorful character made to be sipped and savored. Our premium 86-proof, extra-aged bourbon ages years longer in white oak barrels than original Jim Beam®. It’s those extra years of aging that give Jim Beam Black® its full-bodied flavor with smooth caramel and warm oak notes.\n\nWinner of Gold Medal at the 2016 International Spirits Challenge",
+    "Description": "Jim Beam Black® is a premium bourbon with a more flavorful character made to be sipped and savored. Our premium 86-proof, extra-aged bourbon ages years longer in white oak barrels than original Jim Beam®. It's those extra years of aging that give Jim Beam Black® its full-bodied flavor with smooth caramel and warm oak notes.\n\nWinner of Gold Medal at the 2016 International Spirits Challenge",
     "ImageLink": "images/products/Jim Beam Black Extra Aged Bourbon Whiskey.png"
   },
   {
@@ -396,7 +396,7 @@
     "RateCount": 59,
     "Price": "$16.99",
     "Volume": "",
-    "Description": "Jim Beam Peach combines the ripe and fresh flavor of Peach with the world’s finest Kentucky Straight Bourbon Whiskey. The result is a perfect blend of sweetness and the woody notes of bourbon. Jim Beam Peach finishes soft with a touch of sweetness, perfect for summer cocktails like peach ice tea!",
+    "Description": "Jim Beam Peach combines the ripe and fresh flavor of Peach with the world's finest Kentucky Straight Bourbon Whiskey. The result is a perfect blend of sweetness and the woody notes of bourbon. Jim Beam Peach finishes soft with a touch of sweetness, perfect for summer cocktails like peach ice tea!",
     "ImageLink": "images/products/Jim Beam Peach Bourbon Whiskey.png"
   },
   {
@@ -428,11 +428,11 @@
     "RateCount": 46,
     "Price": "$16.99",
     "Volume": "",
-    "Description": "Jim Beam Vanilla combines the natural flavor of Madagascar Bourbon Vanilla bean with the world’s finest Kentucky Straight Bourbon Whiskey. The result is a perfect balance of rich full bodied vanilla and subtle hints of oak, complemented with the deep caramel notes of bourbon.",
+    "Description": "Jim Beam Vanilla combines the natural flavor of Madagascar Bourbon Vanilla bean with the world's finest Kentucky Straight Bourbon Whiskey. The result is a perfect balance of rich full bodied vanilla and subtle hints of oak, complemented with the deep caramel notes of bourbon.",
     "ImageLink": "images/products/Jim Beam Vanilla Bourbon Whiskey.png"
   },
   {
-    "Name": "Jim Beam Devil’s Cut Bourbon Whiskey",
+    "Name": "Jim Beam Devil's Cut Bourbon Whiskey",
     "Country": "United States",
     "Brand": "Jim Beam",
     "Categories": "Bourbon",
@@ -444,8 +444,8 @@
     "RateCount": 28,
     "Price": "$22.99",
     "Volume": "",
-    "Description": "Unleash the bold spirit of Jim Beam® Devil’s Cut®, a premium bourbon with depth and complexity that comes from liquid extracted from inside the barrel wood. We use a proprietary process that extracts the rich bourbon trapped inside the barrel wood. When ready, we then blend this liquid with extra-aged bourbon and bottle it at 90 proof for robust, premium bourbon with deep color, aroma and character.\n\nWinner of Gold Medal at the 2017 SIP Awards",
-    "ImageLink": "images/products/Jim Beam Devil’s Cut Bourbon Whiskey.png"
+    "Description": "Unleash the bold spirit of Jim Beam® Devil's Cut®, a premium bourbon with depth and complexity that comes from liquid extracted from inside the barrel wood. We use a proprietary process that extracts the rich bourbon trapped inside the barrel wood. When ready, we then blend this liquid with extra-aged bourbon and bottle it at 90 proof for robust, premium bourbon with deep color, aroma and character.\n\nWinner of Gold Medal at the 2017 SIP Awards",
+    "ImageLink": "images/products/Jim Beam Devil's Cut Bourbon Whiskey.png"
   },
   {
     "Name": "Barrell Dovetail Whiskey",
@@ -476,7 +476,7 @@
     "RateCount": 16,
     "Price": "$109.98",
     "Volume": "750ml",
-    "Description": "This complex 15-year-old bourbon was blended and bottled at peak maturity so you can experience its true flavor. It is a perfect union of grain and barrel, with an old, oaky nose and a deep, honey- maple palate that reveals the lushness of the grain.\n\nAppearance: Worn leather\n\nNose: Incredibly fruity, the nose opens with strawberry salt-water taffy, Bing cherry, and raspberry but more exotic fruits lurk in the depths: prickly pear, lychee, blood orange, grapefruit marmalade, damson plum, even tomato. The fruits nearly overpower subtle herbaceous notes of pizzelle, Maraschino liqueur, Cynar, and pipe tobacco. Its sweetness is kept in check by a hint of paraffin and scorched earth.\n\nThe palate is as fruity as the nose, exhibiting strawberry and rose jam, lychee, Maraschino liqueur, and calvados, balanced by très leches cake, hibiscus, and angelica.\n\nThe finish slowly evolves into more fruit: guava, watermelon, Pink Lady apples; they’re joined by a touch of paraffin from the nose and a spicy signature of candied chili pepper.",
+    "Description": "This complex 15-year-old bourbon was blended and bottled at peak maturity so you can experience its true flavor. It is a perfect union of grain and barrel, with an old, oaky nose and a deep, honey- maple palate that reveals the lushness of the grain.\n\nAppearance: Worn leather\n\nNose: Incredibly fruity, the nose opens with strawberry salt-water taffy, Bing cherry, and raspberry but more exotic fruits lurk in the depths: prickly pear, lychee, blood orange, grapefruit marmalade, damson plum, even tomato. The fruits nearly overpower subtle herbaceous notes of pizzelle, Maraschino liqueur, Cynar, and pipe tobacco. Its sweetness is kept in check by a hint of paraffin and scorched earth.\n\nThe palate is as fruity as the nose, exhibiting strawberry and rose jam, lychee, Maraschino liqueur, and calvados, balanced by très leches cake, hibiscus, and angelica.\n\nThe finish slowly evolves into more fruit: guava, watermelon, Pink Lady apples; they're joined by a touch of paraffin from the nose and a spicy signature of candied chili pepper.",
     "ImageLink": "images/products/BCS Line 15 Year Bourbon (1st bottling).png"
   },
   {
@@ -492,7 +492,7 @@
     "RateCount": 10,
     "Price": "$99.99",
     "Volume": "",
-    "Description": "Blended from 7 and 8 year-old whiskeys aged in oak, this American Whiskey is unlike any other. Imagine a brioche French toast dripping with fresh-churned butter and dark maple syrup. With each bite, a spiciness reminiscent of fine, stone ground chocolate lingers in the back of the mouth. Soft to the palate throughout, the next sip is always welcome. The mash is a mix of corn, rye, and malted barley. Akin to a “Vatted Malt,” no neutral grain spirit is added. We do not chill filter, a common practice that removes natural, flavor rich oils. Only a coarse particulate filter strains the small bits of charred oak surrendered by the barrel. Like many great whiskeys, this spirit has aged gently in ex-bourbon barrels. As much as we love the intense flavor of a bourbons, the abundant wood sugars in the new barrels required for their production mask many subtler, complex flavors. This spirit’s patient aging in used cooperage yields a drier dram open to revealing these subtle essences of taste.",
+    "Description": "Blended from 7 and 8 year-old whiskeys aged in oak, this American Whiskey is unlike any other. Imagine a brioche French toast dripping with fresh-churned butter and dark maple syrup. With each bite, a spiciness reminiscent of fine, stone ground chocolate lingers in the back of the mouth. Soft to the palate throughout, the next sip is always welcome. The mash is a mix of corn, rye, and malted barley. Akin to a “Vatted Malt,” no neutral grain spirit is added. We do not chill filter, a common practice that removes natural, flavor rich oils. Only a coarse particulate filter strains the small bits of charred oak surrendered by the barrel. Like many great whiskeys, this spirit has aged gently in ex-bourbon barrels. As much as we love the intense flavor of a bourbons, the abundant wood sugars in the new barrels required for their production mask many subtler, complex flavors. This spirit's patient aging in used cooperage yields a drier dram open to revealing these subtle essences of taste.",
     "ImageLink": "images/products/Barrell Straight Bourbon Whiskey.png"
   },
   {
@@ -508,7 +508,7 @@
     "RateCount": 37,
     "Price": "$43.99",
     "Volume": "",
-    "Description": "Glenmorangie Single Malt Scotch Whisky originates in the Scottish Highlands where it is distilled in the tallest malt whisky stills in Scotland, expertly matured in the finest oak casks, only used twice. Glenmorangie distillery, founded in 1843 is renowned as a pioneer in whisky making, uniting tradition with innovation.\n\nGlenmorangie Original, Scotland’s favorite Single Malt, is matured for 10 years in American White Oak ex-bourbon casks. “Complexity at its most complex” – Jim Murray\n\nInternational Spirits Challenge 2015: Gold medal \nSan Francisco World Spirits 2015: Double Gold medal",
+    "Description": "Glenmorangie Single Malt Scotch Whisky originates in the Scottish Highlands where it is distilled in the tallest malt whisky stills in Scotland, expertly matured in the finest oak casks, only used twice. Glenmorangie distillery, founded in 1843 is renowned as a pioneer in whisky making, uniting tradition with innovation.\n\nGlenmorangie Original, Scotland's favorite Single Malt, is matured for 10 years in American White Oak ex-bourbon casks. “Complexity at its most complex” – Jim Murray\n\nInternational Spirits Challenge 2015: Gold medal \nSan Francisco World Spirits 2015: Double Gold medal",
     "ImageLink": "images/products/Glenmorangie Original 10 Year Old Single Malt Whisky.png"
   },
   {
@@ -572,7 +572,7 @@
     "RateCount": 33,
     "Price": "$79.99",
     "Volume": "",
-    "Description": "The Macallan Sherry Oak 12 Years Old is an iconic single malt Scotch whisky born of The Macallan’s unrivalled commitment to the mastery of wood and spirit. Twelve years in Oloroso Sherry-seasoned oak casks have delivered an exquisitely rich and complex flavor profile full of dried fruit, opulent vanilla and warm spice.",
+    "Description": "The Macallan Sherry Oak 12 Years Old is an iconic single malt Scotch whisky born of The Macallan's unrivalled commitment to the mastery of wood and spirit. Twelve years in Oloroso Sherry-seasoned oak casks have delivered an exquisitely rich and complex flavor profile full of dried fruit, opulent vanilla and warm spice.",
     "ImageLink": "images/products/The Macallan Sherry Oak 12 Years Old.png"
   },
   {
@@ -624,7 +624,7 @@
     "ImageLink": "images/products/The Glenlivet 12 Year.png"
   },
   {
-    "Name": "The Glenlivet Founder’s Reserve",
+    "Name": "The Glenlivet Founder's Reserve",
     "Country": "Scotland",
     "Brand": "The Glenlivet",
     "Categories": "Scotch Whisky",
@@ -637,7 +637,7 @@
     "Price": "$40.99",
     "Volume": "",
     "Description": "Inspired by our legendary founder George Smith, this whisky is an expression of both tradition and innovation.\n\nIts creamy sweetness originates from the selective use of  first-fill American oak casks, still so full of the Bourbon character their previous occupants left behind, and complemented by traditional oak casks. This sweetness contrasts wonderfully with the liveliness of zesty fruits, creating an expression that is worthy of its reserve status.",
-    "ImageLink": "images/products/The Glenlivet Founder’s Reserve.png"
+    "ImageLink": "images/products/The Glenlivet Founder's Reserve.png"
   },
   {
     "Name": "The Glenlivet Single Malt Scotch Whisky 14 Year Old",
@@ -668,7 +668,7 @@
     "RateCount": 17,
     "Price": "$79.99",
     "Volume": "",
-    "Description": "The Glenlivet 15 Year Old gets its distinctive rich and exotic character from a process of selective maturation in which a proportion of the spirit is matured in French oak casks. In fact, The Glenlivet were one of the first to use French oak for making whisky, a technique that has since been imitated the world over. The Limousin oak used is cut in France’s Dordogne region, where it’s often used to mature cognacs. Its low density allows whisky to sink deep into the wood, and The Glenlivet distillers carefully control how long the whisky matures in the casks so as not to overpower the desired result: a unique, pleasing spiciness.",
+    "Description": "The Glenlivet 15 Year Old gets its distinctive rich and exotic character from a process of selective maturation in which a proportion of the spirit is matured in French oak casks. In fact, The Glenlivet were one of the first to use French oak for making whisky, a technique that has since been imitated the world over. The Limousin oak used is cut in France's Dordogne region, where it's often used to mature cognacs. Its low density allows whisky to sink deep into the wood, and The Glenlivet distillers carefully control how long the whisky matures in the casks so as not to overpower the desired result: a unique, pleasing spiciness.",
     "ImageLink": "images/products/The Glenlivet 15 Year.png"
   },
   {
@@ -1004,7 +1004,7 @@
     "RateCount": 10,
     "Price": "$21.99",
     "Volume": "",
-    "Description": "There's not a Bloody Mary in the world that can’t be improved by a little bit of dill pickle. That’s why we created The Real Dill Shine, a perfect dill pickle, pickled in our moonshine. Firm, crunchy and dill-icious, you can munch on it and then have a dill pickle shot to follow.",
+    "Description": "There's not a Bloody Mary in the world that can't be improved by a little bit of dill pickle. That's why we created The Real Dill Shine, a perfect dill pickle, pickled in our moonshine. Firm, crunchy and dill-icious, you can munch on it and then have a dill pickle shot to follow.",
     "ImageLink": "images/products/Ole Smoky Moonshine Pickles.png"
   },
   {
@@ -1052,7 +1052,7 @@
     "RateCount": 31,
     "Price": "$39.99",
     "Volume": "",
-    "Description": "The perfectly balanced taste of our Kentucky Straight Rye Whiskey is distilled, matured, and bottled in Kentucky and delivers bold and spicy character. Made with a lower amount of rye in the mash bill than most contemporary rye whiskies, Woodford Reserve Rye Whiskey is representative to a more traditional Kentucky Rye. It’s bold character and emphasis on spice delivers a long and sweetly spiced finish.",
+    "Description": "The perfectly balanced taste of our Kentucky Straight Rye Whiskey is distilled, matured, and bottled in Kentucky and delivers bold and spicy character. Made with a lower amount of rye in the mash bill than most contemporary rye whiskies, Woodford Reserve Rye Whiskey is representative to a more traditional Kentucky Rye. It's bold character and emphasis on spice delivers a long and sweetly spiced finish.",
     "ImageLink": "images/products/Woodford Reserve Kentucky Straight Rye Whiskey.png"
   },
   {
@@ -1100,7 +1100,7 @@
     "RateCount": 56,
     "Price": "$34.99",
     "Volume": "",
-    "Description": "Knob Creek® Rye is made in small batches, patiently aged in the deepest charred barrels and bottled at a full 100 proof to maintain its big flavor. It’s made of the highest quality rye which gives it a unique spicy, smooth flavor perfect for cocktails. Start with a classic Old Fashioned or just sip it neat or with ice.\n\nWinner of Gold Medal at the 2016 SIP Awards & International Spirits Challenge",
+    "Description": "Knob Creek® Rye is made in small batches, patiently aged in the deepest charred barrels and bottled at a full 100 proof to maintain its big flavor. It's made of the highest quality rye which gives it a unique spicy, smooth flavor perfect for cocktails. Start with a classic Old Fashioned or just sip it neat or with ice.\n\nWinner of Gold Medal at the 2016 SIP Awards & International Spirits Challenge",
     "ImageLink": "images/products/Knob Creek Rye Whiskey.png"
   },
   {
@@ -1132,7 +1132,7 @@
     "RateCount": 21,
     "Price": "$49.99",
     "Volume": "",
-    "Description": "Knob Creek® Single Barrel Reserve encounters no detours or distractions. It’s just the big, pure flavor that Booker set out to create. Each barrel of Knob Creek® Single Barrel Reserve is bottled individually to become one-of-a-kind, meaning that each batch we handpick will have slight variations in taste, color, and aroma based on its final age, rack placement, and other proprietary methods passed down for seven generations.",
+    "Description": "Knob Creek® Single Barrel Reserve encounters no detours or distractions. It's just the big, pure flavor that Booker set out to create. Each barrel of Knob Creek® Single Barrel Reserve is bottled individually to become one-of-a-kind, meaning that each batch we handpick will have slight variations in taste, color, and aroma based on its final age, rack placement, and other proprietary methods passed down for seven generations.",
     "ImageLink": "images/products/Knob Creek Single Barrel Bourbon Whiskey.png"
   },
   {
@@ -1148,7 +1148,7 @@
     "RateCount": 10,
     "Price": "$64.99",
     "Volume": "",
-    "Description": "There’s no faking full bourbon flavor. It has to be earned. So that’s what we do in Clermont: we earn it. We start by selecting the finest grains. And we finish by meticulously aging our whiskey in white oak barrels with maximum char, for an unmistakable richness and signature sweetness. It’s the natural way. And there’s just no cheating nature.",
+    "Description": "There's no faking full bourbon flavor. It has to be earned. So that's what we do in Clermont: we earn it. We start by selecting the finest grains. And we finish by meticulously aging our whiskey in white oak barrels with maximum char, for an unmistakable richness and signature sweetness. It's the natural way. And there's just no cheating nature.",
     "ImageLink": "images/products/Knob Creek Straight Bourbon 12 Year.png"
   },
   {
@@ -1180,7 +1180,7 @@
     "RateCount": 29,
     "Price": "$17.59",
     "Volume": "",
-    "Description": "In Kentucky, buffalo carved a pathway followed by America’s first explorers. Those brave pioneers distilled whiskey using traditional methods and drank it right off the still. They called it White Dog. This raw distillate was clear, un-aged and had a hint of sweet corn. Later distillers discovered this spirit was perfect for aging - creating what we know today as fine Kentucky Straight Bourbon Whiskey. We’re still making whiskey on the spot where ancient buffalo once crossed the Kentucky River and following centuries of time-honored distilling tradition. Enjoy this White Dog the way Americans did more than 200 years ago.",
+    "Description": "In Kentucky, buffalo carved a pathway followed by America's first explorers. Those brave pioneers distilled whiskey using traditional methods and drank it right off the still. They called it White Dog. This raw distillate was clear, un-aged and had a hint of sweet corn. Later distillers discovered this spirit was perfect for aging - creating what we know today as fine Kentucky Straight Bourbon Whiskey. We're still making whiskey on the spot where ancient buffalo once crossed the Kentucky River and following centuries of time-honored distilling tradition. Enjoy this White Dog the way Americans did more than 200 years ago.",
     "ImageLink": "images/products/Buffalo Trace White Dog Mash.png"
   },
   {
@@ -1212,7 +1212,7 @@
     "RateCount": 15,
     "Price": "$1297.97",
     "Volume": "",
-    "Description": "Distilled in the spring of 2002, this bourbon matured on the first floor of warehouse P. Like last year, it’s bottled at 101 proof, where it will remain going forward.",
+    "Description": "Distilled in the spring of 2002, this bourbon matured on the first floor of warehouse P. Like last year, it's bottled at 101 proof, where it will remain going forward.",
     "ImageLink": "images/products/Eagle Rare Buffalo Trace Antique Collection Bourbon 17 Year.png"
   },
   {
@@ -1228,7 +1228,7 @@
     "RateCount": 13,
     "Price": "$59.84",
     "Volume": "",
-    "Description": "In 1815, Ardbeg’s founder established our Distillery on the rugged, wild coastal rocks of South Islay. Over 200 years later, we’re still using our unique peat-laden wild water source and wisdom handed down through generations to craft the Ultimate Islay Single Malt Scotch Whisky.\n\nOur flagship expression, matured for ten years in 1st Fill and 2nd Fill ex-bourbon American Oak casks to create a smoky balance of sweet vanilla and bold spice.\n\nSan Francisco World Spirits Competition 2015: Gold medal \nJim Murray Whisky Bible 2016: 97/100 \nJim Murray Whisky Bible: 2008 World Whisky of the Year",
+    "Description": "In 1815, Ardbeg's founder established our Distillery on the rugged, wild coastal rocks of South Islay. Over 200 years later, we're still using our unique peat-laden wild water source and wisdom handed down through generations to craft the Ultimate Islay Single Malt Scotch Whisky.\n\nOur flagship expression, matured for ten years in 1st Fill and 2nd Fill ex-bourbon American Oak casks to create a smoky balance of sweet vanilla and bold spice.\n\nSan Francisco World Spirits Competition 2015: Gold medal \nJim Murray Whisky Bible 2016: 97/100 \nJim Murray Whisky Bible: 2008 World Whisky of the Year",
     "ImageLink": "images/products/Ardbeg 10 Year Single Malt Scotch Whisky.png"
   },
   {
@@ -1244,7 +1244,7 @@
     "RateCount": 11,
     "Price": "$74.99",
     "Volume": "750ml",
-    "Description": "In 1815, Ardbeg’s founder established our Distillery on the rugged, wild coastal rocks of South Islay. Over 200 years later, we’re still using our unique peat-laden wild water source and wisdom handed down through generations to craft the Ultimate Islay Single Malt Scotch Whisky.\n\nMatured in ex-bourbon American Oak and ex-Oloroso Sherry casks, Uigeadail - pronounced ‘Ooga-dal’ – is Gaelic for ‘dark and mysterious place’, named after the Ardbeg’s water source, Loch Uigeadail.\n\nInternational Wine and Spirits Competition 2015: Gold Outstanding medal & trophy \nSan Francisco World Spirits Competition 2015: Gold medal \nJim Murray Whisky Bible 2016: 97.5/100 \nJim Murray Whisky Bible: 2009 World Whisky of the Year",
+    "Description": "In 1815, Ardbeg's founder established our Distillery on the rugged, wild coastal rocks of South Islay. Over 200 years later, we're still using our unique peat-laden wild water source and wisdom handed down through generations to craft the Ultimate Islay Single Malt Scotch Whisky.\n\nMatured in ex-bourbon American Oak and ex-Oloroso Sherry casks, Uigeadail - pronounced ‘Ooga-dal' – is Gaelic for ‘dark and mysterious place', named after the Ardbeg's water source, Loch Uigeadail.\n\nInternational Wine and Spirits Competition 2015: Gold Outstanding medal & trophy \nSan Francisco World Spirits Competition 2015: Gold medal \nJim Murray Whisky Bible 2016: 97.5/100 \nJim Murray Whisky Bible: 2009 World Whisky of the Year",
     "ImageLink": "images/products/Ardbeg Scotch Uigeadail.png"
   },
   {
@@ -1260,7 +1260,7 @@
     "RateCount": 34,
     "Price": "$50.99",
     "Volume": "",
-    "Description": "Willett Pot Still Reserve Bourbon was introduced in 2008 and is a hand-selected, limited x Kentucky straight Bourbon, aged 8-10 years and bottled at 47% ABV. It comes in one of the coolest decanters on the market. The Willett Distilling Company or Kentucky Bourbon Distillers, as it is also known, is a small, family-owned company that markets Bourbon and Rye Whiskey. They’re located in Bardstown, Kentucky. As a relatively large independent bottling company, they’re called the big daddy of Bourbon and Rye Bottling.",
+    "Description": "Willett Pot Still Reserve Bourbon was introduced in 2008 and is a hand-selected, limited x Kentucky straight Bourbon, aged 8-10 years and bottled at 47% ABV. It comes in one of the coolest decanters on the market. The Willett Distilling Company or Kentucky Bourbon Distillers, as it is also known, is a small, family-owned company that markets Bourbon and Rye Whiskey. They're located in Bardstown, Kentucky. As a relatively large independent bottling company, they're called the big daddy of Bourbon and Rye Bottling.",
     "ImageLink": "images/products/Willett Pot Still Reserve Bourbon.png"
   },
   {
@@ -1292,7 +1292,7 @@
     "RateCount": 47,
     "Price": "$22.98",
     "Volume": "",
-    "Description": "Real honey, real bourbon, real friends. That’s how you keep good company. American Honey is a delicious blend of bold Kentucky straight bourbon and the sweetness of real honey that delivers a flavor your closest friends and family are sure to enjoy.",
+    "Description": "Real honey, real bourbon, real friends. That's how you keep good company. American Honey is a delicious blend of bold Kentucky straight bourbon and the sweetness of real honey that delivers a flavor your closest friends and family are sure to enjoy.",
     "ImageLink": "images/products/Wild Turkey American Honey.png"
   },
   {
@@ -1324,11 +1324,11 @@
     "RateCount": 31,
     "Price": "$21.99",
     "Volume": "",
-    "Description": "Crafted with conviction by our Master Distillers, Wild Turkey Bourbon is aged longer to deliver more character - and to give it that Wild Turkey signature kick, Eddie and Jimmy Russell use the classic Wild Turkey high-rye mash bill before it ages in the deepest level #4 “alligator” char American oak barrels. Wild Turkey shines on its own, or in a mixed drink like a Manhattan or an Old Fashioned. That’s why Eddie calls it “a whiskey that can stand up to any mixer or in any cocktail with the bold, in-your–face taste that is distinctively Wild Turkey.” We distill at a lower proof, so less water is added, resulting in a fuller and more robust bourbon flavor – just way the Russell’s have been making it for over 60 years.",
+    "Description": "Crafted with conviction by our Master Distillers, Wild Turkey Bourbon is aged longer to deliver more character - and to give it that Wild Turkey signature kick, Eddie and Jimmy Russell use the classic Wild Turkey high-rye mash bill before it ages in the deepest level #4 “alligator” char American oak barrels. Wild Turkey shines on its own, or in a mixed drink like a Manhattan or an Old Fashioned. That's why Eddie calls it “a whiskey that can stand up to any mixer or in any cocktail with the bold, in-your–face taste that is distinctively Wild Turkey.” We distill at a lower proof, so less water is added, resulting in a fuller and more robust bourbon flavor – just way the Russell's have been making it for over 60 years.",
     "ImageLink": "images/products/Wild Turkey Bourbon.png"
   },
   {
-    "Name": "Maker’s Mark Bourbon Whisky",
+    "Name": "Maker's Mark Bourbon Whisky",
     "Country": "United States",
     "Brand": "Makers Mark",
     "Categories": "Bourbon",
@@ -1340,11 +1340,11 @@
     "RateCount": 964,
     "Price": "$27.95",
     "Volume": "750ml",
-    "Description": "Maker's Mark started with bread, of course. Bill Samuels bought the Burks' Distillery in Loretto, Kentucky, in 1953 and did the predictable – just not in a predictable way.\n\nHe wanted to select the right mashbill for his new Bourbon. He took inspiration from the Old Fitzgerald and W. L. Weller recipes made by Pappy Van Winkle. He did not want to take the time to distill, age and taste each candidate, so he made a loaf of bread from each mix of grain. One had no rye in it.\n\nNo rye? Samuels liked the loaf without the rye best so he ran with it. The winner contained the customary corn with malted barley and a large dose of red winter wheat. The product is in stark contrast to rye-heavy spirits like Bulleit or Knob Creek.\n\nThe result is less spicy than the rye-influenced whiskeys. Bring a glass to your nose. You'll smell spiced honey, cut fruit and citrus peel. Have a sip. Barley malt, butterscotch and vanilla bean will gradually bloom on your tongue. Wait a moment. The finish is of medium length with gentle caramel and dry oak spice.\n\nThis collection of flavors makes Maker's Mark very friendly with sweet vermouth. It makes a fine Manhattan with a cherry. Go light with the bitters. It's also a great choice with an Old Fashioned, particularly if you have dark purple Bing cherries to muddle.\n\nIf you're feeling funky, ask yourself two questions. Does bourbon like peaches? Both are as southern as sassafras. Does peach like orange? Of course, or we'd have no Fuzzy Navel. Bring all three together. Add 1 1/2 ounces of Maker's with 3/4 of an ounce peach schnapps to an ounce of OJ. Shake that well and then serve it up or on the rocks. There's a navel with some extra fuzz.\n\nFor your home bar (depending on your budget and the height of your top shelf) Maker's Mark makes a fine everyday house bourbon or a special occasion sipper to put next to your best bottles from Scotland, Ireland and Japan. Buy Maker’s Mark Whisky online at a great price on Drizly and have it delivered directly to your door or pick it up in store.",
-    "ImageLink": "images/products/Maker’s Mark Bourbon Whisky.png"
+    "Description": "Maker's Mark started with bread, of course. Bill Samuels bought the Burks' Distillery in Loretto, Kentucky, in 1953 and did the predictable – just not in a predictable way.\n\nHe wanted to select the right mashbill for his new Bourbon. He took inspiration from the Old Fitzgerald and W. L. Weller recipes made by Pappy Van Winkle. He did not want to take the time to distill, age and taste each candidate, so he made a loaf of bread from each mix of grain. One had no rye in it.\n\nNo rye? Samuels liked the loaf without the rye best so he ran with it. The winner contained the customary corn with malted barley and a large dose of red winter wheat. The product is in stark contrast to rye-heavy spirits like Bulleit or Knob Creek.\n\nThe result is less spicy than the rye-influenced whiskeys. Bring a glass to your nose. You'll smell spiced honey, cut fruit and citrus peel. Have a sip. Barley malt, butterscotch and vanilla bean will gradually bloom on your tongue. Wait a moment. The finish is of medium length with gentle caramel and dry oak spice.\n\nThis collection of flavors makes Maker's Mark very friendly with sweet vermouth. It makes a fine Manhattan with a cherry. Go light with the bitters. It's also a great choice with an Old Fashioned, particularly if you have dark purple Bing cherries to muddle.\n\nIf you're feeling funky, ask yourself two questions. Does bourbon like peaches? Both are as southern as sassafras. Does peach like orange? Of course, or we'd have no Fuzzy Navel. Bring all three together. Add 1 1/2 ounces of Maker's with 3/4 of an ounce peach schnapps to an ounce of OJ. Shake that well and then serve it up or on the rocks. There's a navel with some extra fuzz.\n\nFor your home bar (depending on your budget and the height of your top shelf) Maker's Mark makes a fine everyday house bourbon or a special occasion sipper to put next to your best bottles from Scotland, Ireland and Japan. Buy Maker's Mark Whisky online at a great price on Drizly and have it delivered directly to your door or pick it up in store.",
+    "ImageLink": "images/products/Maker's Mark Bourbon Whisky.png"
   },
   {
-    "Name": "Maker’s 46 Bourbon Whisky",
+    "Name": "Maker's 46 Bourbon Whisky",
     "Country": "United States",
     "Brand": "Makers Mark",
     "Categories": "Bourbon",
@@ -1357,10 +1357,10 @@
     "Price": "$40.69",
     "Volume": "",
     "Description": "Maker's 46 was created by Bill Samuels, Jr., to amplify the flavors he loves in Maker's Mark. The innovative wood stave finishing process starts with fully matured Maker's Mark® at cask strength. We then insert seared virgin French oak staves into the barrel and finish it a bit longer in our limestone cellar. The result is Maker's 46: bolder and more complex, but without the bitterness typical of longer aged whiskies.\n\nProof: 94\nAroma: Hints of French oak, caramel and sweetness.\nTaste: Very intense flavors, wood blending nicely with complex, rich notes of vanilla and caramel.\nFinish: Smooth and subtle.",
-    "ImageLink": "images/products/Maker’s 46 Bourbon Whisky.png"
+    "ImageLink": "images/products/Maker's 46 Bourbon Whisky.png"
   },
   {
-    "Name": "Maker’s Mark 101 Bourbon Whisky",
+    "Name": "Maker's Mark 101 Bourbon Whisky",
     "Country": "United States",
     "Brand": "Makers Mark",
     "Categories": "Bourbon",
@@ -1372,11 +1372,11 @@
     "RateCount": 18,
     "Price": "$42.99",
     "Volume": "",
-    "Description": "Maker’s Mark 101 is a rare take on our signature bourbon. Up until now, we’ve only offered this unique expression – bottled at 101-proof – to special guests at the distillery, but here you can offer it to special guests of your own. Stronger notes of sweet, dark spice from the higher proof are met with the classic Maker’s Mark smooth finish. It’s deliberately different, and a rare treat for all that make the pour. The box includes one 750mL bottle of carefully made Maker’s Mark 101.",
-    "ImageLink": "images/products/Maker’s Mark 101 Bourbon Whisky.png"
+    "Description": "Maker's Mark 101 is a rare take on our signature bourbon. Up until now, we've only offered this unique expression – bottled at 101-proof – to special guests at the distillery, but here you can offer it to special guests of your own. Stronger notes of sweet, dark spice from the higher proof are met with the classic Maker's Mark smooth finish. It's deliberately different, and a rare treat for all that make the pour. The box includes one 750mL bottle of carefully made Maker's Mark 101.",
+    "ImageLink": "images/products/Maker's Mark 101 Bourbon Whisky.png"
   },
   {
-    "Name": "Maker’s Mark Cask Strength Bourbon Whisky",
+    "Name": "Maker's Mark Cask Strength Bourbon Whisky",
     "Country": "United States",
     "Brand": "Makers Mark",
     "Categories": "Bourbon",
@@ -1388,8 +1388,8 @@
     "RateCount": 13,
     "Price": "$34.99",
     "Volume": "",
-    "Description": "Bottled at 108 to 114 proof, Maker’s Mark® Cask Strength amps up the front-of-the-palate flavors of Maker’s Mark®. In other words, it’s Maker’s™ with a lot more Maker’s™. But the higher alcohol content of our Cask Strength isn’t the story here – it’s the taste. Maker’s Mark® Cask Strength has more of the rich oak, vanilla, caramel and spice that are the signature flavors of Maker’s Mark®.",
-    "ImageLink": "images/products/Maker’s Mark Cask Strength Bourbon Whisky.png"
+    "Description": "Bottled at 108 to 114 proof, Maker's Mark® Cask Strength amps up the front-of-the-palate flavors of Maker's Mark®. In other words, it's Maker's™ with a lot more Maker's™. But the higher alcohol content of our Cask Strength isn't the story here – it's the taste. Maker's Mark® Cask Strength has more of the rich oak, vanilla, caramel and spice that are the signature flavors of Maker's Mark®.",
+    "ImageLink": "images/products/Maker's Mark Cask Strength Bourbon Whisky.png"
   },
   {
     "Name": "Canadian Club Whisky",
@@ -1584,7 +1584,7 @@
     "ImageLink": "images/products/High West Double Rye Whiskey.png"
   },
   {
-    "Name": "High West A Midwinter’s Night Dram Whiskey Limited Release",
+    "Name": "High West A Midwinter's Night Dram Whiskey Limited Release",
     "Country": "United States",
     "Brand": "High West",
     "Categories": "Rye Whiskey",
@@ -1596,8 +1596,8 @@
     "RateCount": 20,
     "Price": "$116.63",
     "Volume": "",
-    "Description": "High West is Utah’s first distillery, born in 1879. High West A Midwinter Night's Dram Whiskey is a limited release of High West Rendezvous Rye finished in French oak and port barrels.\n\nThis fine whiskey blends older straight ryes aged from 5 to 19 years in charred white oak barrels. This 98.6-proof whiskey is rich and full bodied with dried fruits, fig syrup, and candied ginger, finished with spiced blackberries, cloves, and cinnamon.\n\nBest enjoyed neat, due to its many layers of complexity, next to a warm fire as the snow piles up on the window sill.",
-    "ImageLink": "images/products/High West A Midwinter’s Night Dram Whiskey Limited Release.png"
+    "Description": "High West is Utah's first distillery, born in 1879. High West A Midwinter Night's Dram Whiskey is a limited release of High West Rendezvous Rye finished in French oak and port barrels.\n\nThis fine whiskey blends older straight ryes aged from 5 to 19 years in charred white oak barrels. This 98.6-proof whiskey is rich and full bodied with dried fruits, fig syrup, and candied ginger, finished with spiced blackberries, cloves, and cinnamon.\n\nBest enjoyed neat, due to its many layers of complexity, next to a warm fire as the snow piles up on the window sill.",
+    "ImageLink": "images/products/High West A Midwinter's Night Dram Whiskey Limited Release.png"
   },
   {
     "Name": "High West Rendezvous Rye Whiskey",
@@ -1616,7 +1616,7 @@
     "ImageLink": "images/products/High West Rendezvous Rye Whiskey.png"
   },
   {
-    "Name": "Dewar’s White Label Blended Scotch Whisky",
+    "Name": "Dewar's White Label Blended Scotch Whisky",
     "Country": "Scotland",
     "Brand": "Dewars",
     "Categories": "Scotch Whisky",
@@ -1628,11 +1628,11 @@
     "RateCount": 127,
     "Price": "$38.99",
     "Volume": "",
-    "Description": "Drinking scotch is not for the faint of heart. However, that doesn't mean it comes with a huge price tag. That's why there's Dewar's White Label. Distilled for the man or woman who wants a smooth scotch without all the extras, Dewar's White Label is where it's at, wherever you want to be.\n\nSince 1899, this scotch whiskey has been produced with a time-honored traditional distillation process. Honey, vanilla, apple and wood combine into a versatile and soothing mix with an aftertaste of smokiness and a bit of fudge. That means you can indulge in divine chocolatey goodness without having to head to a candy shop or the grocery store.\n\nThe best way to drink Dewar's White Label is to uncork it and let it breathe. Wait just a few minutes before you pour it into your favorite rocks glass or snifter. This allows the blend to explode with flavor, leaving you in its wake. It's not often you want to take a grenade to the face, but if it's Dewar's White Label, you'll probably let it slide. A predisposition for mischief may also call for a Dewar's on its own. Keep this in the cabinet for times that call for fun and playfulness.\n\nIf you simply must have a cocktail, Dewar's White Label is nothing short of a fantastic mixer. Blend it with sweet vermouth and bitter for a classy Rob Roy. For something subtler, combine equal parts Dewar's White Label with amaretto for a delicious beverage.\n\nBuy Dewar’s White Label online at a great price through Drizly and have it delivered directly to your door or pick it up in store.",
-    "ImageLink": "images/products/Dewar’s White Label Blended Scotch Whisky.png"
+    "Description": "Drinking scotch is not for the faint of heart. However, that doesn't mean it comes with a huge price tag. That's why there's Dewar's White Label. Distilled for the man or woman who wants a smooth scotch without all the extras, Dewar's White Label is where it's at, wherever you want to be.\n\nSince 1899, this scotch whiskey has been produced with a time-honored traditional distillation process. Honey, vanilla, apple and wood combine into a versatile and soothing mix with an aftertaste of smokiness and a bit of fudge. That means you can indulge in divine chocolatey goodness without having to head to a candy shop or the grocery store.\n\nThe best way to drink Dewar's White Label is to uncork it and let it breathe. Wait just a few minutes before you pour it into your favorite rocks glass or snifter. This allows the blend to explode with flavor, leaving you in its wake. It's not often you want to take a grenade to the face, but if it's Dewar's White Label, you'll probably let it slide. A predisposition for mischief may also call for a Dewar's on its own. Keep this in the cabinet for times that call for fun and playfulness.\n\nIf you simply must have a cocktail, Dewar's White Label is nothing short of a fantastic mixer. Blend it with sweet vermouth and bitter for a classy Rob Roy. For something subtler, combine equal parts Dewar's White Label with amaretto for a delicious beverage.\n\nBuy Dewar's White Label online at a great price through Drizly and have it delivered directly to your door or pick it up in store.",
+    "ImageLink": "images/products/Dewar's White Label Blended Scotch Whisky.png"
   },
   {
-    "Name": "Dewar’s 12 Year Blended Scotch Whisky",
+    "Name": "Dewar's 12 Year Blended Scotch Whisky",
     "Country": "Scotland",
     "Brand": "Dewars",
     "Categories": "Scotch Whisky",
@@ -1645,7 +1645,7 @@
     "Price": "$30.00",
     "Volume": "",
     "Description": "Dewar's 12 Year Flavor Notes: Honey, homemade candy apples, and fudge. Warm, buttery, and mellow. Juicy raisins and fresh citrus, with subtle vanilla. Clean, full, and lively. Melted caramel with a trace of oak. Rounded, smooth, and long.",
-    "ImageLink": "images/products/Dewar’s 12 Year Blended Scotch Whisky.png"
+    "ImageLink": "images/products/Dewar's 12 Year Blended Scotch Whisky.png"
   },
   {
     "Name": "Balcones Texas Pot Still Bourbon Whisky",
@@ -1820,7 +1820,7 @@
     "RateCount": 13,
     "Price": "$59.99",
     "Volume": "",
-    "Description": "1910 Old Fine Whisky, Old Forester’s fourth and final expression in the Whiskey Row Series, is a double barreled Bourbon creating a smooth mingling of sweet oatmeal raisin cookie and milk chocolate, caramel corn, and evolving spice that lead into a refined, charred oak finish.",
+    "Description": "1910 Old Fine Whisky, Old Forester's fourth and final expression in the Whiskey Row Series, is a double barreled Bourbon creating a smooth mingling of sweet oatmeal raisin cookie and milk chocolate, caramel corn, and evolving spice that lead into a refined, charred oak finish.",
     "ImageLink": "images/products/Old Forester 1910 Old Fine Whisky.png"
   },
   {
@@ -1840,7 +1840,7 @@
     "ImageLink": "images/products/Old Forester Statesman Bourbon.png"
   },
   {
-    "Name": "Michter’s US-1 Kentucky Straight Rye",
+    "Name": "Michter's US-1 Kentucky Straight Rye",
     "Country": "United States",
     "Brand": "Michters",
     "Categories": "Rye Whiskey",
@@ -1852,11 +1852,11 @@
     "RateCount": 40,
     "Price": "$47.07",
     "Volume": "",
-    "Description": "Renowned for rye, America’s first whiskey, since our founding in 1753, we take production of every barrel of Michter’s Rye very seriously. Michter's US-1 Rye is made from select American rye grain that is sheared to enable the saturation of more flavor during fermentation. It is then aged in a heated warehouse. This premium rye has hints of light spice, black pepper, marmalade and plum, spicy grain and light caramel.",
-    "ImageLink": "images/products/Michter’s US-1 Kentucky Straight Rye.png"
+    "Description": "Renowned for rye, America's first whiskey, since our founding in 1753, we take production of every barrel of Michter's Rye very seriously. Michter's US-1 Rye is made from select American rye grain that is sheared to enable the saturation of more flavor during fermentation. It is then aged in a heated warehouse. This premium rye has hints of light spice, black pepper, marmalade and plum, spicy grain and light caramel.",
+    "ImageLink": "images/products/Michter's US-1 Kentucky Straight Rye.png"
   },
   {
-    "Name": "Michter’s US-1 Kentucky Straight Bourbon",
+    "Name": "Michter's US-1 Kentucky Straight Bourbon",
     "Country": "United States",
     "Brand": "Michters",
     "Categories": "Bourbon",
@@ -1868,8 +1868,8 @@
     "RateCount": 32,
     "Price": "$46.99",
     "Volume": "",
-    "Description": "Michter’s US-1 Bourbon is made from a carefully selected mashbill that features the highest quality American corn. It is then matured to the peak of perfection, with barrels often aging in excess of eight years. Truly “small batch,” each batch of our US*1 Bourbon is typically composed of no more than two dozen barrels, leaving no margin for “blending out” imperfection and thus necessitating excellence from every barrel. Reflecting the spirit of the Bluegrass State, Michter’s US*1 Bourbon is nuanced, mellow, and earthy.",
-    "ImageLink": "images/products/Michter’s US-1 Kentucky Straight Bourbon.png"
+    "Description": "Michter's US-1 Bourbon is made from a carefully selected mashbill that features the highest quality American corn. It is then matured to the peak of perfection, with barrels often aging in excess of eight years. Truly “small batch,” each batch of our US*1 Bourbon is typically composed of no more than two dozen barrels, leaving no margin for “blending out” imperfection and thus necessitating excellence from every barrel. Reflecting the spirit of the Bluegrass State, Michter's US*1 Bourbon is nuanced, mellow, and earthy.",
+    "ImageLink": "images/products/Michter's US-1 Kentucky Straight Bourbon.png"
   },
   {
     "Name": "Four Roses Bourbon",
@@ -1980,7 +1980,7 @@
     "RateCount": 28,
     "Price": "$17.49",
     "Volume": "",
-    "Description": "Our Kentucky Straight Bourbon is full of character and simply done right. Named after Evan Williams, who opened Kentucky’s 1st Distillery in 1783. Our Bottled-In-Bond Bourbon is 100 proof and follows the exacting standards of a Bottled-In-Bond product; aged for four years, distilled in one distilling season at one distillery and under U.S. government supervision. Evan Williams Bottled-In-Bond is bright gold in color. It has aromas of caramel with hints of vanilla, oak and barley with a taste of citrus on top of vanilla and black pepper notes.  Evan Williams is the #2 selling KY Straight Bourbon brand in the world. In 2019 Evan Williams Bottled-In-Bond received a Gold  and Consumer's Choice SIP Award.",
+    "Description": "Our Kentucky Straight Bourbon is full of character and simply done right. Named after Evan Williams, who opened Kentucky's 1st Distillery in 1783. Our Bottled-In-Bond Bourbon is 100 proof and follows the exacting standards of a Bottled-In-Bond product; aged for four years, distilled in one distilling season at one distillery and under U.S. government supervision. Evan Williams Bottled-In-Bond is bright gold in color. It has aromas of caramel with hints of vanilla, oak and barley with a taste of citrus on top of vanilla and black pepper notes.  Evan Williams is the #2 selling KY Straight Bourbon brand in the world. In 2019 Evan Williams Bottled-In-Bond received a Gold  and Consumer's Choice SIP Award.",
     "ImageLink": "images/products/Evan Williams Bottled-in-Bond.png"
   },
   {
@@ -1996,7 +1996,7 @@
     "RateCount": 27,
     "Price": "$19.79",
     "Volume": "",
-    "Description": "Our Kentucky Straight Bourbon is full of character and simply done right. Named after Evan Williams, who opened Kentucky’s 1st Distillery in 1783. Evan Williams is the #2 selling KY Straight Bourbon brand in the world.",
+    "Description": "Our Kentucky Straight Bourbon is full of character and simply done right. Named after Evan Williams, who opened Kentucky's 1st Distillery in 1783. Evan Williams is the #2 selling KY Straight Bourbon brand in the world.",
     "ImageLink": "images/products/Evan Williams Green Label Bourbon.png"
   },
   {
@@ -2076,7 +2076,7 @@
     "RateCount": 10,
     "Price": "$62.99",
     "Volume": "",
-    "Description": "Experience the tale told by the tides with a swig of Talisker Storm Single Malt Scotch Whisky. Our 91.6 proof whisky starts out with a mellow yet rich sweet, malty taste ending in an explosion of spice. Distilled by the sea on the shores of the Isle of Skye in Scotland, centuries of local distilling tradition and the rugged environment are what makes our award-winning malt so exquisite. Intense and powerful, the flavour comes from the peat burned during the malting process and the rich vanilla imbued by the aging process. With a lasting smooth aftertaste, savour this spirit's sweet and spicy flavours served neat, or draw them out with a little water.\n\nSitting amongst the Inner Hebridean Scottish Isles, Skye is rugged, windswept and a place of extremes. Our whisky captures the spirit of its island home perfectly. In 1825, Hugh MacAskill of Eigg acquired the Talisker House and along with his brother built what was to become one of the world’s most popular distilleries on the shore of Loch Harport. Now it is one of the oldest single malt Scotch whiskies made by the sea. Through fire, war and financial crises, this northern outpost has remained strong: producing consistently fine whiskies which, once tried, are rarely forgotten. Please drink responsibly.",
+    "Description": "Experience the tale told by the tides with a swig of Talisker Storm Single Malt Scotch Whisky. Our 91.6 proof whisky starts out with a mellow yet rich sweet, malty taste ending in an explosion of spice. Distilled by the sea on the shores of the Isle of Skye in Scotland, centuries of local distilling tradition and the rugged environment are what makes our award-winning malt so exquisite. Intense and powerful, the flavour comes from the peat burned during the malting process and the rich vanilla imbued by the aging process. With a lasting smooth aftertaste, savour this spirit's sweet and spicy flavours served neat, or draw them out with a little water.\n\nSitting amongst the Inner Hebridean Scottish Isles, Skye is rugged, windswept and a place of extremes. Our whisky captures the spirit of its island home perfectly. In 1825, Hugh MacAskill of Eigg acquired the Talisker House and along with his brother built what was to become one of the world's most popular distilleries on the shore of Loch Harport. Now it is one of the oldest single malt Scotch whiskies made by the sea. Through fire, war and financial crises, this northern outpost has remained strong: producing consistently fine whiskies which, once tried, are rarely forgotten. Please drink responsibly.",
     "ImageLink": "images/products/Talisker Storm.png"
   },
   {
@@ -2128,7 +2128,7 @@
     "ImageLink": "images/products/Jeffersons Kentucky Straight Bourbon Whiskey.png"
   },
   {
-    "Name": "Jefferson’s Ocean Aged at Sea Bourbon",
+    "Name": "Jefferson's Ocean Aged at Sea Bourbon",
     "Country": "United States",
     "Brand": "Jeffersons Bourbon",
     "Categories": "Bourbon",
@@ -2141,7 +2141,7 @@
     "Price": "$79.99",
     "Volume": "",
     "Description": "This limited edition small batch Kentucky Bourbon is aged in American oak for around 8 years on land, placed on a ship and allowed to rest for 5 to 10 months at sea. The rolling waves, temperature swings and barometric fluctuations extract more wood tannins from the oak, rendering aromas of vanilla, caramel and burnt matches.",
-    "ImageLink": "images/products/Jefferson’s Ocean Aged at Sea Bourbon.png"
+    "ImageLink": "images/products/Jefferson's Ocean Aged at Sea Bourbon.png"
   },
   {
     "Name": "Bushmills Irish Whiskey",
@@ -2188,7 +2188,7 @@
     "RateCount": 10,
     "Price": "$79.99",
     "Volume": "",
-    "Description": "Melt into the rich flavor of Caol Ila 12 Year Old Single Malt Scotch Whisky. With a subdued, citric fruitiness and a sweet start, our whisky ends with a lengthy, slightly sour finish. Consider pairing our 86 proof whisky with the provincial olive dish, tapenade, which helps bring out Caol Ila's peaty and salty notes, while the mix of capers and herbs accentuates the citrus flavors. Perfect on its own or mixed in a cocktail, our award-winning whisky is best enjoyed when served neat in a rocks glass, adding ice or a splash of water for taste.\n\nCaol Ila is pronounced “Cull Eela”. For more than 100 years, small coal-fired “puffers” like the SS Pibroch brought barley, coal and empty casks to the distillery, returning her whisky to the mainland through the Sound of Islay. Today, Caol Ila’s secret bay is only known to true Islay devotees. The barley used here is still malted locally at Port Ellen and pure spring water still rises from limestone in nearby Loch Nam Ban, then falls to the sea at Caol Ila in a clear crystal stream, just as it always has.",
+    "Description": "Melt into the rich flavor of Caol Ila 12 Year Old Single Malt Scotch Whisky. With a subdued, citric fruitiness and a sweet start, our whisky ends with a lengthy, slightly sour finish. Consider pairing our 86 proof whisky with the provincial olive dish, tapenade, which helps bring out Caol Ila's peaty and salty notes, while the mix of capers and herbs accentuates the citrus flavors. Perfect on its own or mixed in a cocktail, our award-winning whisky is best enjoyed when served neat in a rocks glass, adding ice or a splash of water for taste.\n\nCaol Ila is pronounced “Cull Eela”. For more than 100 years, small coal-fired “puffers” like the SS Pibroch brought barley, coal and empty casks to the distillery, returning her whisky to the mainland through the Sound of Islay. Today, Caol Ila's secret bay is only known to true Islay devotees. The barley used here is still malted locally at Port Ellen and pure spring water still rises from limestone in nearby Loch Nam Ban, then falls to the sea at Caol Ila in a clear crystal stream, just as it always has.",
     "ImageLink": "images/products/Caol Ila 12 Year Single Malt Scotch.png"
   },
   {
@@ -2236,7 +2236,7 @@
     "RateCount": 56,
     "Price": "$29.99",
     "Volume": "",
-    "Description": "Your first sip of Redemption Rye is more than just a sip, it’s a discovery of rye’s beautifully complex flavors. With a rye content of 95%, well past the 51% required to be considered rye, we’ve recreated the classic American whiskey that ruled our glasses before Prohibition. It brings you the bold taste of genuine rye spice with hints of floral and citrus. While delightful on its own, a slight mint finish makes it ideal for creating distinctive cocktails such as a Manhattan or Old Fashioned.\n\n\"93 POINTS, Finalist & Great Value\" - Ultimate Spirits Challenge",
+    "Description": "Your first sip of Redemption Rye is more than just a sip, it's a discovery of rye's beautifully complex flavors. With a rye content of 95%, well past the 51% required to be considered rye, we've recreated the classic American whiskey that ruled our glasses before Prohibition. It brings you the bold taste of genuine rye spice with hints of floral and citrus. While delightful on its own, a slight mint finish makes it ideal for creating distinctive cocktails such as a Manhattan or Old Fashioned.\n\n\"93 POINTS, Finalist & Great Value\" - Ultimate Spirits Challenge",
     "ImageLink": "images/products/Redemption Straight Rye Whiskey.png"
   },
   {
@@ -2252,7 +2252,7 @@
     "RateCount": 21,
     "Price": "$29.99",
     "Volume": "",
-    "Description": "A truly easy drinking bourbon distinguished by its subtle ‘rye-forward’ flavor.  Handcrafted in the mold of classic American bourbons, it has a well-balanced sweetness highlighted by notes of vanilla and caramel. But we’ve also pushed the Rye content to 21% giving it a light but distinct hint of spice. You’d be quite happy enjoying it on the rocks, but it also mixes easily making it a great cocktail bourbon.\n\n\"91 POINTS\" - LA International Wine & Spirits Competition",
+    "Description": "A truly easy drinking bourbon distinguished by its subtle ‘rye-forward' flavor.  Handcrafted in the mold of classic American bourbons, it has a well-balanced sweetness highlighted by notes of vanilla and caramel. But we've also pushed the Rye content to 21% giving it a light but distinct hint of spice. You'd be quite happy enjoying it on the rocks, but it also mixes easily making it a great cocktail bourbon.\n\n\"91 POINTS\" - LA International Wine & Spirits Competition",
     "ImageLink": "images/products/Redemption Straight Bourbon Whiskey.png"
   },
   {
@@ -2268,7 +2268,7 @@
     "RateCount": 12,
     "Price": "$29.99",
     "Volume": "",
-    "Description": "When we say “High Rye” we mean it. Redemption High Rye Bourbon has 36% rye content, significantly higher than comparable bourbons. The result is a unique combination of flavors led by the subtle sweetness of classic bourbon and punctuated by rich notes of rye spice. Light hits of vanilla and caramel round out its ‘rye-forward’ flavor and help make it ideal for sipping or creating a classic cocktail. If you’re looking for a bold bourbon, you’ve found it.\n\n91 Points- 2020, San Diego International Wine and Spirits Challenge",
+    "Description": "When we say “High Rye” we mean it. Redemption High Rye Bourbon has 36% rye content, significantly higher than comparable bourbons. The result is a unique combination of flavors led by the subtle sweetness of classic bourbon and punctuated by rich notes of rye spice. Light hits of vanilla and caramel round out its ‘rye-forward' flavor and help make it ideal for sipping or creating a classic cocktail. If you're looking for a bold bourbon, you've found it.\n\n91 Points- 2020, San Diego International Wine and Spirits Challenge",
     "ImageLink": "images/products/Redemption Straight High-Rye Bourbon.png"
   },
   {
@@ -2284,11 +2284,11 @@
     "RateCount": 17,
     "Price": "$59.59",
     "Volume": "",
-    "Description": "The Aberlour 12 year-old expression is a fine example of how the distinctively crisp, citrus character of Aberlour’s raw spirit is deftly softened by double cask maturation. Traditional oak and seasoned Sherry butts are both used to great effect, as the mellowed spirits within are combined to deliver a subtly balanced flavour.",
+    "Description": "The Aberlour 12 year-old expression is a fine example of how the distinctively crisp, citrus character of Aberlour's raw spirit is deftly softened by double cask maturation. Traditional oak and seasoned Sherry butts are both used to great effect, as the mellowed spirits within are combined to deliver a subtly balanced flavour.",
     "ImageLink": "images/products/Aberlour 12 Year.png"
   },
   {
-    "Name": "Aberlour A’Bunadh",
+    "Name": "Aberlour A'Bunadh",
     "Country": "Scotland",
     "Brand": "Aberlour",
     "Categories": "Scotch Whisky",
@@ -2300,8 +2300,8 @@
     "RateCount": 10,
     "Price": "$102.71",
     "Volume": "",
-    "Description": "With each batch specially crafted, Aberlour A’bunadh is a unique cask strength whisky that has achieved cult status among whisky connoisseurs.\n\nMeaning ‘the original’ in Gaelic, A’bunadh is made in homage to Aberlour’s founder, James Fleming, using only traditional methods without chill filtration or other modern processes.\n\nThe result is a heavier, creamier single malt than most have ever experienced – memorably flavoursome, with an intense raisin character.",
-    "ImageLink": "images/products/Aberlour A’Bunadh.png"
+    "Description": "With each batch specially crafted, Aberlour A'bunadh is a unique cask strength whisky that has achieved cult status among whisky connoisseurs.\n\nMeaning ‘the original' in Gaelic, A'bunadh is made in homage to Aberlour's founder, James Fleming, using only traditional methods without chill filtration or other modern processes.\n\nThe result is a heavier, creamier single malt than most have ever experienced – memorably flavoursome, with an intense raisin character.",
+    "ImageLink": "images/products/Aberlour A'Bunadh.png"
   },
   {
     "Name": "George Dickel Bottled in Bond Distilling Season 2008 Tennessee Whisky",
@@ -2316,7 +2316,7 @@
     "RateCount": 13,
     "Price": "$42.99",
     "Volume": "",
-    "Description": "Delivering complexity and exceptional maturity, George Dickel Bottled in Bond Distilling Season 2008 Tennessee Whisky is reflective of Cascade Hollow Distilling Co.’s continuous commitment to honestly producing quality whisky. Aged for 11 years, this second Bottled in Bond release comes from barrels maturing since Fall 2008. This limited release whisky is bold and balanced with tantalizing notes of pecan, maple syrup and dried apple. Bottled in Bond Distilling Season 2008 is best served neat, on the rocks or with sugar, bitters and an orange twist for a classic Old Fashioned cocktail. “Bottled In Bond” is a label for American-made distilled beverages that follow a set of legal regulations originally laid out in the Bottled-in-Bond Act of 1897. As a reaction to widespread adulteration in American whisky, the act guaranteed a spirit’s authenticity. These spirits must be aged in a federally bonded warehouse under U.S. government supervision for at least four years, bottled at 100 proof and labeled with the identity of the single distillery where they were distilled, and, if different, where they were bottled. Distilled at Cascade Hollow Distillery, our Bottled in Bond Distilling Season 2008 whisky is one-of-a-kind. Please drink responsibly.",
+    "Description": "Delivering complexity and exceptional maturity, George Dickel Bottled in Bond Distilling Season 2008 Tennessee Whisky is reflective of Cascade Hollow Distilling Co.'s continuous commitment to honestly producing quality whisky. Aged for 11 years, this second Bottled in Bond release comes from barrels maturing since Fall 2008. This limited release whisky is bold and balanced with tantalizing notes of pecan, maple syrup and dried apple. Bottled in Bond Distilling Season 2008 is best served neat, on the rocks or with sugar, bitters and an orange twist for a classic Old Fashioned cocktail. “Bottled In Bond” is a label for American-made distilled beverages that follow a set of legal regulations originally laid out in the Bottled-in-Bond Act of 1897. As a reaction to widespread adulteration in American whisky, the act guaranteed a spirit's authenticity. These spirits must be aged in a federally bonded warehouse under U.S. government supervision for at least four years, bottled at 100 proof and labeled with the identity of the single distillery where they were distilled, and, if different, where they were bottled. Distilled at Cascade Hollow Distillery, our Bottled in Bond Distilling Season 2008 whisky is one-of-a-kind. Please drink responsibly.",
     "ImageLink": "images/products/George Dickel Bottled in Bond Distilling Season 2008 Tennessee Whisky.png"
   },
   {
@@ -2380,7 +2380,7 @@
     "RateCount": 23,
     "Price": "$47.99",
     "Volume": "",
-    "Description": "Bulleit Bourbon 10 Year Old Whiskey allows you to savor its bold character and complex finish. With its russet color and oaky aroma, our aged whiskey makes a good first impression before it’s even opened. The flavor profile of our bourbon whiskey combines hints of vanilla and dried fruit for a strong, smoky finish. Aged in charred American white oak, select Bulleit Bourbon barrels were set aside to age for 10 years. The result is an expression of Bulleit that is bold in character and has a complex finish. Simply combine our bourbon whiskey with cloves, lemon juice, brown sugar and hot water for a comforting Hot Toddy. Bulleit Bourbon is still distilled and aged in the Bulleit family tradition. High rye content gives it a bold, spicy character with a distinctively smooth, clean finish. Kentucky limestone-filtered water provides a foundation for the whiskey's character, while charred American oak barrels lend a smoky backbone. Please drink responsibly.",
+    "Description": "Bulleit Bourbon 10 Year Old Whiskey allows you to savor its bold character and complex finish. With its russet color and oaky aroma, our aged whiskey makes a good first impression before it's even opened. The flavor profile of our bourbon whiskey combines hints of vanilla and dried fruit for a strong, smoky finish. Aged in charred American white oak, select Bulleit Bourbon barrels were set aside to age for 10 years. The result is an expression of Bulleit that is bold in character and has a complex finish. Simply combine our bourbon whiskey with cloves, lemon juice, brown sugar and hot water for a comforting Hot Toddy. Bulleit Bourbon is still distilled and aged in the Bulleit family tradition. High rye content gives it a bold, spicy character with a distinctively smooth, clean finish. Kentucky limestone-filtered water provides a foundation for the whiskey's character, while charred American oak barrels lend a smoky backbone. Please drink responsibly.",
     "ImageLink": "images/products/Bulleit Bourbon 10 Year.png"
   },
   {
@@ -2396,7 +2396,7 @@
     "RateCount": 18,
     "Price": "$65.99",
     "Volume": "750ml",
-    "Description": "Distilled in Kentucky from the highest quality ingredients, this new variant is a barrel strength version of Bulleit Bourbon with the same high-rye mash bill. Bulleit Barrel Strength won Best Straight Bourbon and received a Double Gold Medal from the 2018 San Francisco World Spirits Competition, and earned a score of 92 at the 2017 Ultimate Spirits Challenge – continuing Bulleit’s history of sharing award-winning whiskeys.",
+    "Description": "Distilled in Kentucky from the highest quality ingredients, this new variant is a barrel strength version of Bulleit Bourbon with the same high-rye mash bill. Bulleit Barrel Strength won Best Straight Bourbon and received a Double Gold Medal from the 2018 San Francisco World Spirits Competition, and earned a score of 92 at the 2017 Ultimate Spirits Challenge – continuing Bulleit's history of sharing award-winning whiskeys.",
     "ImageLink": "images/products/Bulleit Single Barrel Kentucky Straight Bourbon Whiskey.png"
   },
   {
@@ -2464,7 +2464,7 @@
     "ImageLink": "images/products/Fireball Cinnamon Whisky.png"
   },
   {
-    "Name": "Basil Hayden’s Kentucky Straight Bourbon Whiskey",
+    "Name": "Basil Hayden's Kentucky Straight Bourbon Whiskey",
     "Country": "United States",
     "Brand": "Basil Haydens",
     "Categories": "Bourbon",
@@ -2476,11 +2476,11 @@
     "RateCount": 510,
     "Price": "$36.99",
     "Volume": "750ml",
-    "Description": "Marked by a rich cascade of aromas and flavors, Basil Hayden's® Kentucky Straight Bourbon Whiskey is carefully matured for exceptional quality and distilled in the heart of bourbon country in Clermont, Kentucky. This unique, single small batch bourbon whiskey is blessed with rich hints of peppermint, notes of pepper, slight citrus overtones and a spicy, warming finish. Sip neat, on the rocks, in a classic Manhattan or Old Fashioned. Try it in a Mint Julep or Bourbon Mary while savoring the aroma with a spicy, peppery, honey-toned light body and gentle bite. Carefully matured for exceptional quality, Basil Hayden’s is artfully aged and bottled at 80 proof. Basil Hayden’s® utilizes twice as much rye as the other bourbons in the collection for a gentle yet spicy flavor.",
-    "ImageLink": "images/products/Basil Hayden’s Kentucky Straight Bourbon Whiskey.png"
+    "Description": "Marked by a rich cascade of aromas and flavors, Basil Hayden's® Kentucky Straight Bourbon Whiskey is carefully matured for exceptional quality and distilled in the heart of bourbon country in Clermont, Kentucky. This unique, single small batch bourbon whiskey is blessed with rich hints of peppermint, notes of pepper, slight citrus overtones and a spicy, warming finish. Sip neat, on the rocks, in a classic Manhattan or Old Fashioned. Try it in a Mint Julep or Bourbon Mary while savoring the aroma with a spicy, peppery, honey-toned light body and gentle bite. Carefully matured for exceptional quality, Basil Hayden's is artfully aged and bottled at 80 proof. Basil Hayden's® utilizes twice as much rye as the other bourbons in the collection for a gentle yet spicy flavor.",
+    "ImageLink": "images/products/Basil Hayden's Kentucky Straight Bourbon Whiskey.png"
   },
   {
-    "Name": "Basil Hayden’s Dark Rye Whiskey",
+    "Name": "Basil Hayden's Dark Rye Whiskey",
     "Country": "United States",
     "Brand": "Basil Haydens",
     "Categories": "Rye Whiskey",
@@ -2492,8 +2492,8 @@
     "RateCount": 115,
     "Price": "$44.99",
     "Volume": "",
-    "Description": "Expanding from the unique HIGH RYE RECIPE that has always made Basil Hayden’s® Bourbon so uncommon comes a release that focuses on the ART of blending TWO DISTINCT RYE WHISKIES with just a TOUCH OF PORT to unveil an entirely NEW TASTE DISCOVERY. This blend explores the harmonious combination of 3 distinct liquid profiles for one memorable whiskey. It begins with Kentucky Rye, providing a firm base of spicy rye, rich oak, dried fruit and subtle molasses undertones to build on. Canadian Rye from our award-winning Alberta Distillery is skillfully layered in. This unique rye provides depth to the notes of dried fruit and a more viscous mouth feel than a traditional rye. It’s then finished with a touch of California Port blended in directly to add complementary juicy, ripe fruit without muddying the existing wood notes. The end result is a whiskey full in flavor and still delicately nuanced. BASIL HAYDEN’S® DARK RYE is always perfect sipped on the rocks as well as in a Boulevardier",
-    "ImageLink": "images/products/Basil Hayden’s Dark Rye Whiskey.png"
+    "Description": "Expanding from the unique HIGH RYE RECIPE that has always made Basil Hayden's® Bourbon so uncommon comes a release that focuses on the ART of blending TWO DISTINCT RYE WHISKIES with just a TOUCH OF PORT to unveil an entirely NEW TASTE DISCOVERY. This blend explores the harmonious combination of 3 distinct liquid profiles for one memorable whiskey. It begins with Kentucky Rye, providing a firm base of spicy rye, rich oak, dried fruit and subtle molasses undertones to build on. Canadian Rye from our award-winning Alberta Distillery is skillfully layered in. This unique rye provides depth to the notes of dried fruit and a more viscous mouth feel than a traditional rye. It's then finished with a touch of California Port blended in directly to add complementary juicy, ripe fruit without muddying the existing wood notes. The end result is a whiskey full in flavor and still delicately nuanced. BASIL HAYDEN'S® DARK RYE is always perfect sipped on the rocks as well as in a Boulevardier",
+    "ImageLink": "images/products/Basil Hayden's Dark Rye Whiskey.png"
   },
   {
     "Name": "The Famous Grouse Scotch Whisky",
@@ -2508,7 +2508,7 @@
     "RateCount": 23,
     "Price": "$35.99",
     "Volume": "",
-    "Description": "A commitment to superior quality and unmatched smoothness has made The Famous Grouse Scotland’s favorite whisky for over 40 years. A famous blend of the finest malts and exceptional grain whiskies, every cask that goes into the making of this iconic whisky is nosed prior to blending. The result is a superior tasting whisky with notes of dried fruit, buttery shortbread and oak spice, leading to an exceptionally smooth and well-balanced finish. Enjoy The Famous Grouse neat, on ice, or in a classic cocktail like the Hot Toddy, Penicillin or Scotch and Soda.",
+    "Description": "A commitment to superior quality and unmatched smoothness has made The Famous Grouse Scotland's favorite whisky for over 40 years. A famous blend of the finest malts and exceptional grain whiskies, every cask that goes into the making of this iconic whisky is nosed prior to blending. The result is a superior tasting whisky with notes of dried fruit, buttery shortbread and oak spice, leading to an exceptionally smooth and well-balanced finish. Enjoy The Famous Grouse neat, on ice, or in a classic cocktail like the Hot Toddy, Penicillin or Scotch and Soda.",
     "ImageLink": "images/products/The Famous Grouse Scotch Whisky.png"
   },
   {
@@ -2524,7 +2524,7 @@
     "RateCount": 28,
     "Price": "$43.99",
     "Volume": "",
-    "Description": "Hudson Baby Bourbon is the first bourbon to ever be produced in New York State. Made with 100% New York State corn and aged in new charred American oak, our Baby Bourbon owes its rich amber color and bold character to the local grain and unique aging process that we use. We’re happy to share this full flavored, easy sipping whiskey with you; enjoy with friends. A big, bold, full flavored bourbon, balanced with notes of vanilla and caramel.",
+    "Description": "Hudson Baby Bourbon is the first bourbon to ever be produced in New York State. Made with 100% New York State corn and aged in new charred American oak, our Baby Bourbon owes its rich amber color and bold character to the local grain and unique aging process that we use. We're happy to share this full flavored, easy sipping whiskey with you; enjoy with friends. A big, bold, full flavored bourbon, balanced with notes of vanilla and caramel.",
     "ImageLink": "images/products/Hudson Bourbon Whiskey.png"
   },
   {
@@ -2572,7 +2572,7 @@
     "RateCount": 18,
     "Price": "$74.74",
     "Volume": "",
-    "Description": "As great whiskey distillers throughout the world — from Kentucky to Scotland — have long known, it takes sweet water from tough rock to make great whiskey. And, that’s what Widow Jane Whiskey is all about.\n\nThis 10 year whiskey is aged to perfection. It drinks like a 20 year bourbon with its deep cherry notes and light tannic finish.",
+    "Description": "As great whiskey distillers throughout the world — from Kentucky to Scotland — have long known, it takes sweet water from tough rock to make great whiskey. And, that's what Widow Jane Whiskey is all about.\n\nThis 10 year whiskey is aged to perfection. It drinks like a 20 year bourbon with its deep cherry notes and light tannic finish.",
     "ImageLink": "images/products/Widow Jane 10 Year Straight Bourbon.png"
   },
   {
@@ -2620,7 +2620,7 @@
     "RateCount": 13,
     "Price": "$89.99",
     "Volume": "",
-    "Description": "There’s a lot of spice that immediately hits your nose, with subtle hints of vanilla, caramel and butterscotch. Deeper within the nose are whiffs of leather and nutmeg with trace amounts of cinnamon. Most surprising is the amount of oak that comes off of it for a relatively young bourbon. If you smell long enough you may even discover some sweet barbecue sauce",
+    "Description": "There's a lot of spice that immediately hits your nose, with subtle hints of vanilla, caramel and butterscotch. Deeper within the nose are whiffs of leather and nutmeg with trace amounts of cinnamon. Most surprising is the amount of oak that comes off of it for a relatively young bourbon. If you smell long enough you may even discover some sweet barbecue sauce",
     "ImageLink": "images/products/Weller Antique 107 Bourbon.png"
   },
   {
@@ -2668,11 +2668,11 @@
     "RateCount": 10,
     "Price": "$57.99",
     "Volume": "",
-    "Description": "Bourbon insiders have long acknowledged that full proof bourbon has a distinguished and rich flavor. This bourbon underwent a distinct filtering process,forgoing the typical chill filtration and passing only through a plate and frame filter. This allowed the bourbon to maintain a robust proof for bottling, as well as a full, rich and bold flavor. Bottled at its original 125 barrel entry proof, just as it was years ago when the barrels were first filled, 1792 Full Proof Bourbon is exceptionally distinct.\n\nTastingNotes:\nStrong and full of flavor, this bold bourbon boasts an incredible deep and smoky taste, superbly balanced with sweet vanilla and notes of caramel.\n\nAwards:\n•\t2020 World Whiskey of the Year – Jim Murray’s Whiskey Bible 2020\n•\t2019 Double Gold Medal – San Francisco World Spirits Competition \n•\t2019 Best In Category (Bourbon – Overproof) – Los Angeles International Spirits Competition \n•\t2019 Gold Medal – Los Angeles International Spirits Competition \n•\t2019 Silver Medal – New York World Wine & Spirits Competition",
+    "Description": "Bourbon insiders have long acknowledged that full proof bourbon has a distinguished and rich flavor. This bourbon underwent a distinct filtering process,forgoing the typical chill filtration and passing only through a plate and frame filter. This allowed the bourbon to maintain a robust proof for bottling, as well as a full, rich and bold flavor. Bottled at its original 125 barrel entry proof, just as it was years ago when the barrels were first filled, 1792 Full Proof Bourbon is exceptionally distinct.\n\nTastingNotes:\nStrong and full of flavor, this bold bourbon boasts an incredible deep and smoky taste, superbly balanced with sweet vanilla and notes of caramel.\n\nAwards:\n•\t2020 World Whiskey of the Year – Jim Murray's Whiskey Bible 2020\n•\t2019 Double Gold Medal – San Francisco World Spirits Competition \n•\t2019 Best In Category (Bourbon – Overproof) – Los Angeles International Spirits Competition \n•\t2019 Gold Medal – Los Angeles International Spirits Competition \n•\t2019 Silver Medal – New York World Wine & Spirits Competition",
     "ImageLink": "images/products/1792 Full Proof Kentucky Straight Bourbon Whiskey.png"
   },
   {
-    "Name": "Booker’s Bourbon",
+    "Name": "Booker's Bourbon",
     "Country": "United States",
     "Brand": "Bookers",
     "Categories": "Bourbon",
@@ -2685,7 +2685,7 @@
     "Price": "$63.99",
     "Volume": "750ml",
     "Description": "Booker's Bourbon is part of Jim Beam's Small Batch Collection. Bottled straight from the barrel - uncut and unfiltered. This rare Bourbon is best enjoyed neat with flavours of oak tannin, smoky vanilla, mocha and coffee with a clean and intense finish.",
-    "ImageLink": "images/products/Booker’s Bourbon.png"
+    "ImageLink": "images/products/Booker's Bourbon.png"
   },
   {
     "Name": "Little Book Bourbon Chapter 3 “The Road Home”",
@@ -2700,11 +2700,11 @@
     "RateCount": 22,
     "Price": "$145.99",
     "Volume": "",
-    "Description": "Freddie Noe named this limited edition series of bourbons after his childhood nickname, given to him by his grandfather and master distiller, Booker Noe.\n\nChapter 3 edition blend comprises: nine-year-old Knob Creek and Basil Hayden’s Bourbons, an 11-year-old Booker’s Bourbon and a 12-year-old Baker’s Bourbon.\n\n“The Road Home” batch pays tribute to my grandfather as the name Little Book is actually the childhood nickname that he gave me. And so I thought after having a couple of chapters under my belt that it would be a great time to pay honor to him and blend some of the liquids that he gave the bourbon industry. The four liquids that I chose to go into this batch of Little Book® are from the original small batch collection that my grandfather, Booker, created. The Road Home is a blend of nine year old Basil Hayden®, nine year old Knob Creek®, 11 year old Booker’s® and 12 year old Baker’s®, and as always with Little Book®, these liquids are at barrel strength and will be bottled at barrel strength as well. The name “The Road Home” references the road that I travel to and from on a regular basis, the same road my grandfather, Booker, traveled back when he used to work here at the distillery. I tinkered with a lot of different recipes, 57 to be exact, before finding what I was looking for – layers of vanilla, char and dried apricots with lingering oak. The final recipe I selected was 51 of the 57 I tried – a lot more trial and error than the others, but I thought if someone is going to play with the liquids that my grandfather developed, they had better produce a damned good blend. - Freddie Noe, 8th Generation Beam Family Distiller",
+    "Description": "Freddie Noe named this limited edition series of bourbons after his childhood nickname, given to him by his grandfather and master distiller, Booker Noe.\n\nChapter 3 edition blend comprises: nine-year-old Knob Creek and Basil Hayden's Bourbons, an 11-year-old Booker's Bourbon and a 12-year-old Baker's Bourbon.\n\n“The Road Home” batch pays tribute to my grandfather as the name Little Book is actually the childhood nickname that he gave me. And so I thought after having a couple of chapters under my belt that it would be a great time to pay honor to him and blend some of the liquids that he gave the bourbon industry. The four liquids that I chose to go into this batch of Little Book® are from the original small batch collection that my grandfather, Booker, created. The Road Home is a blend of nine year old Basil Hayden®, nine year old Knob Creek®, 11 year old Booker's® and 12 year old Baker's®, and as always with Little Book®, these liquids are at barrel strength and will be bottled at barrel strength as well. The name “The Road Home” references the road that I travel to and from on a regular basis, the same road my grandfather, Booker, traveled back when he used to work here at the distillery. I tinkered with a lot of different recipes, 57 to be exact, before finding what I was looking for – layers of vanilla, char and dried apricots with lingering oak. The final recipe I selected was 51 of the 57 I tried – a lot more trial and error than the others, but I thought if someone is going to play with the liquids that my grandfather developed, they had better produce a damned good blend. - Freddie Noe, 8th Generation Beam Family Distiller",
     "ImageLink": "images/products/Little Book Bourbon Chapter 3 “The Road Home”.png"
   },
   {
-    "Name": "Booker’s 30th Anniversary Bourbon",
+    "Name": "Booker's 30th Anniversary Bourbon",
     "Country": "United States",
     "Brand": "Bookers",
     "Categories": "Bourbon",
@@ -2716,11 +2716,11 @@
     "RateCount": 18,
     "Price": "$524.99",
     "Volume": "",
-    "Description": "30 years ago, my dad, Booker Noe, released the first batch of his namesake Booker’s® Bourbon as his vision of what the perfect whiskey should be. In honor of Dad’s legacy and in celebration of 30 years of the damn good whiskey he created, we’re celebrating in the best way we know how – by releasing a special extra-aged, limited edition Booker’s® Bourbon.\n-Fred Noe, Beam Family’s 7th Generation Master Distiller\n\nOver the last few years, the floors of some of our rackhouses in Clermont were in need of redoing, so we pulled up the floorboards. We thought it would be a shame to throw away so much history, so we stored them for something special. Each box of Booker’s® 30th Anniversary Bourbon is made from the reclaimed wood of those floors – the same floors walked by legends Booker and Fred Noe as they selected batches of Booker’s.",
-    "ImageLink": "images/products/Booker’s 30th Anniversary Bourbon.png"
+    "Description": "30 years ago, my dad, Booker Noe, released the first batch of his namesake Booker's® Bourbon as his vision of what the perfect whiskey should be. In honor of Dad's legacy and in celebration of 30 years of the damn good whiskey he created, we're celebrating in the best way we know how – by releasing a special extra-aged, limited edition Booker's® Bourbon.\n-Fred Noe, Beam Family's 7th Generation Master Distiller\n\nOver the last few years, the floors of some of our rackhouses in Clermont were in need of redoing, so we pulled up the floorboards. We thought it would be a shame to throw away so much history, so we stored them for something special. Each box of Booker's® 30th Anniversary Bourbon is made from the reclaimed wood of those floors – the same floors walked by legends Booker and Fred Noe as they selected batches of Booker's.",
+    "ImageLink": "images/products/Booker's 30th Anniversary Bourbon.png"
   },
   {
-    "Name": "Booker’s Front Porch Batch",
+    "Name": "Booker's Front Porch Batch",
     "Country": "United States",
     "Brand": "Bookers",
     "Categories": "Bourbon",
@@ -2733,7 +2733,7 @@
     "Price": "$84.49",
     "Volume": "",
     "Description": "Booker's Front Porch is the 3rd batch in the 2017 limited release series. Aged 6 years, 5 months, and 25 days. Aromas of toasted butterscotch with a well-balanced palate and short finish. Perfect for sipping.",
-    "ImageLink": "images/products/Booker’s Front Porch Batch.png"
+    "ImageLink": "images/products/Booker's Front Porch Batch.png"
   },
   {
     "Name": "Belle Meade Bourbon Whiskey",
@@ -2752,7 +2752,7 @@
     "ImageLink": "images/products/Belle Meade Bourbon Whiskey.png"
   },
   {
-    "Name": "Buchanan’s DeLuxe Aged 12 Years Blended Scotch Whisky",
+    "Name": "Buchanan's DeLuxe Aged 12 Years Blended Scotch Whisky",
     "Country": "Scotland",
     "Brand": "Buchanans",
     "Categories": "Scotch Whisky",
@@ -2764,8 +2764,8 @@
     "RateCount": 32,
     "Price": "$38.49",
     "Volume": "",
-    "Description": "Born from over a century of experience, Buchanan's Deluxe Aged 12 Years Blended Scotch Whisky is guaranteed to heighten any celebration. With notes of citric fruits and honey, our 80 proof whisky features a sweet, smooth flavor with orange and chocolate notes. Our luxury whisky is crafted to the highest quality for a vibrant character. Matured for 12 years, our deluxe blend offers a lighter profile compared to denser whiskies. As our most iconic blend, this award-winning whisky is perfect on its own or in a mixed drink. Simply add with pineapple juice, pour over ice and garnish with fresh fruit for a Buchanita cocktail.\n\nEvery bottle is the result of more than 130 years of distillation experience, culminating in a delicate liquid with refined and gentle notes. With the perfect balance between smooth and complex, every sip of Buchanan’s offers a standard of excellence that is sure to leave a brilliant impression on your taste buds. Please drink responsibly.",
-    "ImageLink": "images/products/Buchanan’s DeLuxe Aged 12 Years Blended Scotch Whisky.png"
+    "Description": "Born from over a century of experience, Buchanan's Deluxe Aged 12 Years Blended Scotch Whisky is guaranteed to heighten any celebration. With notes of citric fruits and honey, our 80 proof whisky features a sweet, smooth flavor with orange and chocolate notes. Our luxury whisky is crafted to the highest quality for a vibrant character. Matured for 12 years, our deluxe blend offers a lighter profile compared to denser whiskies. As our most iconic blend, this award-winning whisky is perfect on its own or in a mixed drink. Simply add with pineapple juice, pour over ice and garnish with fresh fruit for a Buchanita cocktail.\n\nEvery bottle is the result of more than 130 years of distillation experience, culminating in a delicate liquid with refined and gentle notes. With the perfect balance between smooth and complex, every sip of Buchanan's offers a standard of excellence that is sure to leave a brilliant impression on your taste buds. Please drink responsibly.",
+    "ImageLink": "images/products/Buchanan's DeLuxe Aged 12 Years Blended Scotch Whisky.png"
   },
   {
     "Name": "Early Times Kentucky Whisky",
@@ -2796,7 +2796,7 @@
     "RateCount": 64,
     "Price": "$27.99",
     "Volume": "",
-    "Description": "Southern Comfort Original is inspired by our founder’s 1874 recipe, with core whiskey notes and iconic fruit and spice accents. Enjoyed best with mainstream mixers and in cocktails, it brings everyone together – just like our hometown.\n\nTastingNotes:\nCore whiskey notes with iconic fruit and spice accents.",
+    "Description": "Southern Comfort Original is inspired by our founder's 1874 recipe, with core whiskey notes and iconic fruit and spice accents. Enjoyed best with mainstream mixers and in cocktails, it brings everyone together – just like our hometown.\n\nTastingNotes:\nCore whiskey notes with iconic fruit and spice accents.",
     "ImageLink": "images/products/Southern Comfort Original.png"
   },
   {
@@ -2812,7 +2812,7 @@
     "RateCount": 17,
     "Price": "$20.99",
     "Volume": "",
-    "Description": "We’ve been crafting our smooth-drinking whiskey for over 140 years, ever since our founder M.W. Heron created Southern Comfort way back in 1874. Back then, he was fond of saying ‘None Genuine But Mine’ and it still holds true today – as whiskey lovers around the world reach for the unmistakable, smooth-drinking flavor of Southern Comfort.\n\nA premium whiskey that's bold and balanced, with core whiskey notes and vibrant caramel and fruit accents. Crafted for true whiskey lovers who want a little extra New Orleans kick whether enjoyed neat, on the rocks or mixed in classic cocktails.\n\nTastingNotes:\nBold and balanced with core whiskey notes and vibrant caramel and fruit accents",
+    "Description": "We've been crafting our smooth-drinking whiskey for over 140 years, ever since our founder M.W. Heron created Southern Comfort way back in 1874. Back then, he was fond of saying ‘None Genuine But Mine' and it still holds true today – as whiskey lovers around the world reach for the unmistakable, smooth-drinking flavor of Southern Comfort.\n\nA premium whiskey that's bold and balanced, with core whiskey notes and vibrant caramel and fruit accents. Crafted for true whiskey lovers who want a little extra New Orleans kick whether enjoyed neat, on the rocks or mixed in classic cocktails.\n\nTastingNotes:\nBold and balanced with core whiskey notes and vibrant caramel and fruit accents",
     "ImageLink": "images/products/Southern Comfort 100 Proof.png"
   },
   {
@@ -2828,7 +2828,7 @@
     "RateCount": 11,
     "Price": "$27.94",
     "Volume": "",
-    "Description": "We’ve been crafting our smooth-drinking whiskey for over 140 years, ever since our founder M.W. Heron created Southern Comfort way back in 1874. Back then, he was fond of saying ‘None Genuine But Mine’ and it still holds true today – as whiskey lovers around the world reach for the unmistakable, smooth-drinking flavor of Southern Comfort.\n\nA robust whiskey-forward profile with subtle spice and fruity accents, our 80 proof takes the original Southern Comfort experience up a notch — for those who like their extra-smooth whiskey extra bold. Try it neat, on the rocks or in a classic cocktail.\n\nTastingNotes:\nWhiskey forward with subtle spice and fruit accents",
+    "Description": "We've been crafting our smooth-drinking whiskey for over 140 years, ever since our founder M.W. Heron created Southern Comfort way back in 1874. Back then, he was fond of saying ‘None Genuine But Mine' and it still holds true today – as whiskey lovers around the world reach for the unmistakable, smooth-drinking flavor of Southern Comfort.\n\nA robust whiskey-forward profile with subtle spice and fruity accents, our 80 proof takes the original Southern Comfort experience up a notch — for those who like their extra-smooth whiskey extra bold. Try it neat, on the rocks or in a classic cocktail.\n\nTastingNotes:\nWhiskey forward with subtle spice and fruit accents",
     "ImageLink": "images/products/Southern Comfort Black.png"
   },
   {
@@ -2896,7 +2896,7 @@
     "ImageLink": "images/products/Templeton Rye Whiskey The Good Stuff 4 Year.png"
   },
   {
-    "Name": "Angel’s Envy Kentucky Straight Bourbon Whiskey",
+    "Name": "Angel's Envy Kentucky Straight Bourbon Whiskey",
     "Country": "United States",
     "Brand": "Angels Envy",
     "Categories": "Bourbon",
@@ -2908,11 +2908,11 @@
     "RateCount": 90,
     "Price": "$54.99",
     "Volume": "",
-    "Description": "Angel’s Envy is an exceptional Kentucky straight bourbon finished in port wine barrels. Given the Highest Recommendation by Spirit Journal, celebrated by Whisky Advocate, The Bourbon Review, and awarded Wine Enthusiast’s highest bourbon rating, Angel’s Envy is unlike any other whiskey you’ve ever tasted.",
-    "ImageLink": "images/products/Angel’s Envy Kentucky Straight Bourbon Whiskey.png"
+    "Description": "Angel's Envy is an exceptional Kentucky straight bourbon finished in port wine barrels. Given the Highest Recommendation by Spirit Journal, celebrated by Whisky Advocate, The Bourbon Review, and awarded Wine Enthusiast's highest bourbon rating, Angel's Envy is unlike any other whiskey you've ever tasted.",
+    "ImageLink": "images/products/Angel's Envy Kentucky Straight Bourbon Whiskey.png"
   },
   {
-    "Name": "Angel’s Envy Rum Cask Rye",
+    "Name": "Angel's Envy Rum Cask Rye",
     "Country": "United States",
     "Brand": "Angels Envy",
     "Categories": "Rye Whiskey",
@@ -2924,11 +2924,11 @@
     "RateCount": 18,
     "Price": "$96.52",
     "Volume": "",
-    "Description": "Angel’s Envy Rye Finished in Plantation XO Rum Casks is released just twice each year in the autumn and spring. The rum casks were previously used to age French cognac, which adds an additional layer of complexity on the palate. It’s a collision of bold flavors as the raw, spicy rye mingles with the mellow sweetness of the rum, culminating in a uniquely delicious spirit.",
-    "ImageLink": "images/products/Angel’s Envy Rum Cask Rye.png"
+    "Description": "Angel's Envy Rye Finished in Plantation XO Rum Casks is released just twice each year in the autumn and spring. The rum casks were previously used to age French cognac, which adds an additional layer of complexity on the palate. It's a collision of bold flavors as the raw, spicy rye mingles with the mellow sweetness of the rum, culminating in a uniquely delicious spirit.",
+    "ImageLink": "images/products/Angel's Envy Rum Cask Rye.png"
   },
   {
-    "Name": "Russell’s Reserve 10 Year Old Bourbon",
+    "Name": "Russell's Reserve 10 Year Old Bourbon",
     "Country": "United States",
     "Brand": "Russells Reserve",
     "Categories": "Bourbon",
@@ -2940,11 +2940,11 @@
     "RateCount": 19,
     "Price": "$38.49",
     "Volume": "",
-    "Description": "Master distillers and premier whiskey makers, Jimmy and Eddie Russell, bring nearly 100 years of combined experience to artfully crafting Russell’s Reserve 10 Year Old Bourbon.  They hand-select barrels after at least 10 years of aging, resulting in a Bourbon that delivers a balance of rich, spicy vanilla flavors.  Their experience guarantees yours.",
-    "ImageLink": "images/products/Russell’s Reserve 10 Year Old Bourbon.png"
+    "Description": "Master distillers and premier whiskey makers, Jimmy and Eddie Russell, bring nearly 100 years of combined experience to artfully crafting Russell's Reserve 10 Year Old Bourbon.  They hand-select barrels after at least 10 years of aging, resulting in a Bourbon that delivers a balance of rich, spicy vanilla flavors.  Their experience guarantees yours.",
+    "ImageLink": "images/products/Russell's Reserve 10 Year Old Bourbon.png"
   },
   {
-    "Name": "Russell’s Reserve Single Barrel Bourbon",
+    "Name": "Russell's Reserve Single Barrel Bourbon",
     "Country": "United States",
     "Brand": "Russells Reserve",
     "Categories": "Bourbon",
@@ -2956,8 +2956,8 @@
     "RateCount": 13,
     "Price": "$63.99",
     "Volume": "750ml",
-    "Description": "Matured in only the deepest No. 4 “alligator” char American White Oak barrels handpicked by Jimmy and Eddie Russel, our father and son Master Distillers. Each barrel comes with its own unique personality yet still captures our signature rich, creamy toffee and vanilla taste. Individually bottled at 110 proof and non-chill filtered to guarantee maximum flavor, this is a bourbon that’s meant to be savored.",
-    "ImageLink": "images/products/Russell’s Reserve Single Barrel Bourbon.png"
+    "Description": "Matured in only the deepest No. 4 “alligator” char American White Oak barrels handpicked by Jimmy and Eddie Russel, our father and son Master Distillers. Each barrel comes with its own unique personality yet still captures our signature rich, creamy toffee and vanilla taste. Individually bottled at 110 proof and non-chill filtered to guarantee maximum flavor, this is a bourbon that's meant to be savored.",
+    "ImageLink": "images/products/Russell's Reserve Single Barrel Bourbon.png"
   },
   {
     "Name": "BSB Brown Sugar Bourbon",
@@ -2992,7 +2992,7 @@
     "ImageLink": "images/products/Dalwhinnie 15 Year.png"
   },
   {
-    "Name": "Seagram’s 7 Crown Blended Whiskey",
+    "Name": "Seagram's 7 Crown Blended Whiskey",
     "Country": "United States",
     "Brand": "Seagrams 7",
     "Categories": "American Whiskey",
@@ -3004,8 +3004,8 @@
     "RateCount": 97,
     "Price": "$14.99",
     "Volume": "",
-    "Description": "Put your feet up, relax and let the crisp aroma of Seagram's 7 Crown American Blended Whiskey envelop you. Our whiskey has a smooth, slightly sweet taste that leaves your palate with a creamy, vanilla finish. Our American whiskey is 80 proof and carefully blended and aged in oak barrels to bring out its bold flavors. Simply mix Seagram's 7 Crown Blended American Whiskey and lemon-lime soda in a highball glass with ice for a signature 7 & 7 cocktail. Seagram's 7 Crown is an American icon with a rich heritage. We take pride in our core values of integrity, craftsmanship and tradition that were instilled by our brand founder. Our history of premium quality and smooth flavor distinguishes Seagram’s from other leading whiskey brands. Please drink responsibly.",
-    "ImageLink": "images/products/Seagram’s 7 Crown Blended Whiskey.png"
+    "Description": "Put your feet up, relax and let the crisp aroma of Seagram's 7 Crown American Blended Whiskey envelop you. Our whiskey has a smooth, slightly sweet taste that leaves your palate with a creamy, vanilla finish. Our American whiskey is 80 proof and carefully blended and aged in oak barrels to bring out its bold flavors. Simply mix Seagram's 7 Crown Blended American Whiskey and lemon-lime soda in a highball glass with ice for a signature 7 & 7 cocktail. Seagram's 7 Crown is an American icon with a rich heritage. We take pride in our core values of integrity, craftsmanship and tradition that were instilled by our brand founder. Our history of premium quality and smooth flavor distinguishes Seagram's from other leading whiskey brands. Please drink responsibly.",
+    "ImageLink": "images/products/Seagram's 7 Crown Blended Whiskey.png"
   },
   {
     "Name": "Pendleton Canadian Whisky",
@@ -3020,7 +3020,7 @@
     "RateCount": 17,
     "Price": "$25.99",
     "Volume": "",
-    "Description": "Each batch of Pendleton® is crafted using a masterful blend of ultra-premium whiskies distilled from the finest northern grains. The whisky is rested in American oak barrels before being cut to proof with pristine glacier-fed spring water from Oregon’s highest peak, Mt. Hood. This time-honored process provides a consistently rich flavor with an uncommonly smooth finish. (40% ABV – 80 proof)",
+    "Description": "Each batch of Pendleton® is crafted using a masterful blend of ultra-premium whiskies distilled from the finest northern grains. The whisky is rested in American oak barrels before being cut to proof with pristine glacier-fed spring water from Oregon's highest peak, Mt. Hood. This time-honored process provides a consistently rich flavor with an uncommonly smooth finish. (40% ABV – 80 proof)",
     "ImageLink": "images/products/Pendleton Canadian Whisky.png"
   },
   {
@@ -3036,7 +3036,7 @@
     "RateCount": 105,
     "Price": "$89.99",
     "Volume": "",
-    "Description": "Given the name, it should come as no surprise that Hibiki Japanese Harmony Whisky is a harmonious blend of Japanese craftsmanship. Considered the paragon of Japanese whisky, Hibiki is a unique blend of several malt and grain whiskies that are meticulously added, resulting in an orchestra of aromas and flavors. \n\nHibiki is the culmination of the Japanese art of blending and expert craftsmanship, with a healthy heaping of luxury thrown in for good measure. The brand was launched in 1989 to celebrate the brand Suntory's 90th birthday, and it's become Japan's most highly awarded blended whisky of all time. More than that, Hibiki takes the honor of being among the most prestigious whiskies the world over.\n\nHibiki Japanese Harmony Whisky is both delicate and luminous with a wonderful complexity. The amber-colored liquid smells of rosemary, rose, lychee and sandalwood, paving the way for a honey-like sweetness with notes of white chocolate and candied orange peel. As for the finish, Hibiki Japanese Haromy is subtle with a hint of Japanese oak, which lingers on the palate.\n\nIt’s best enjoyed neat, on the rocks or with a bit of water added. Japanese whisky pairs remarkably well with Japanese food, so don't be afraid to drink it with sashimi, sushi or a strong fermented fish. It also makes a wonderful cocktail, such as the Sokaiya, which consists of Hibiki, bitter Sencha green tea and ginger liqueur.\n\nBuy Hibiki Japanese Harmony Whisky online through Drizly and have it delivered directly to your door or pick it up in store.",
+    "Description": "Given the name, it should come as no surprise that Hibiki Japanese Harmony Whisky is a harmonious blend of Japanese craftsmanship. Considered the paragon of Japanese whisky, Hibiki is a unique blend of several malt and grain whiskies that are meticulously added, resulting in an orchestra of aromas and flavors. \n\nHibiki is the culmination of the Japanese art of blending and expert craftsmanship, with a healthy heaping of luxury thrown in for good measure. The brand was launched in 1989 to celebrate the brand Suntory's 90th birthday, and it's become Japan's most highly awarded blended whisky of all time. More than that, Hibiki takes the honor of being among the most prestigious whiskies the world over.\n\nHibiki Japanese Harmony Whisky is both delicate and luminous with a wonderful complexity. The amber-colored liquid smells of rosemary, rose, lychee and sandalwood, paving the way for a honey-like sweetness with notes of white chocolate and candied orange peel. As for the finish, Hibiki Japanese Haromy is subtle with a hint of Japanese oak, which lingers on the palate.\n\nIt's best enjoyed neat, on the rocks or with a bit of water added. Japanese whisky pairs remarkably well with Japanese food, so don't be afraid to drink it with sashimi, sushi or a strong fermented fish. It also makes a wonderful cocktail, such as the Sokaiya, which consists of Hibiki, bitter Sencha green tea and ginger liqueur.\n\nBuy Hibiki Japanese Harmony Whisky online through Drizly and have it delivered directly to your door or pick it up in store.",
     "ImageLink": "images/products/Hibiki Japanese Harmony Whisky.png"
   },
   {
@@ -3084,11 +3084,11 @@
     "RateCount": 12,
     "Price": "$29.99",
     "Volume": "",
-    "Description": "Cutty Sark is an iconic whisky; its distinctive yellow label has graced the world’s best bars and lounges for over 90 years. The first light-colored blended Scotch whisky, Cutty Sark was launched at the height of cocktail culture in the 1920s and is the original easy drinking Scotch whisky. Cutty Sark is balanced and lively with vanilla ice cream and caramel flavor notes.",
+    "Description": "Cutty Sark is an iconic whisky; its distinctive yellow label has graced the world's best bars and lounges for over 90 years. The first light-colored blended Scotch whisky, Cutty Sark was launched at the height of cocktail culture in the 1920s and is the original easy drinking Scotch whisky. Cutty Sark is balanced and lively with vanilla ice cream and caramel flavor notes.",
     "ImageLink": "images/products/Cutty Sark Blended Scotch Whisky.png"
   },
   {
-    "Name": "Stranahan’s Colorado Whiskey",
+    "Name": "Stranahan's Colorado Whiskey",
     "Country": "United States",
     "Brand": "Stranahans",
     "Categories": "American Whiskey",
@@ -3100,8 +3100,8 @@
     "RateCount": 15,
     "Price": "$56.84",
     "Volume": "",
-    "Description": "Stranahan’s® Original is 100% barley, double-distilled, cut with Rocky mountain water, then aged for 2 years in virgin-charred American white oak barrels. The spirit is aromatic. Its flavor is first of caramel and vanilla, then cola with toasted marshmallow, then chocolate and cinnamon spice. With a full-bodied, smooth mouth-feel, the finish returns to oak with hints of mint, cayenne and aged leather. Best enjoyed neat, with a splash of water, or in cocktails. (47% ABV – 94 proof)",
-    "ImageLink": "images/products/Stranahan’s Colorado Whiskey.png"
+    "Description": "Stranahan's® Original is 100% barley, double-distilled, cut with Rocky mountain water, then aged for 2 years in virgin-charred American white oak barrels. The spirit is aromatic. Its flavor is first of caramel and vanilla, then cola with toasted marshmallow, then chocolate and cinnamon spice. With a full-bodied, smooth mouth-feel, the finish returns to oak with hints of mint, cayenne and aged leather. Best enjoyed neat, with a splash of water, or in cocktails. (47% ABV – 94 proof)",
+    "ImageLink": "images/products/Stranahan's Colorado Whiskey.png"
   },
   {
     "Name": "TX Blended Whiskey",
@@ -3164,11 +3164,11 @@
     "RateCount": 10,
     "Price": "$42.99",
     "Volume": "",
-    "Description": "This truly small-batch bourbon starts with traditionally grown corn, rye & malted barley.  All of our staple grains are cultivated exclusively for us on the Omlin Family farm in Quincy, Washington. The grains are mashed, distilled, and barreled in our Woodinville distillery, then trucked back over the Cascade Mountains to our private barrel houses, where Central Washington’s extreme temperature cycles promote the extraction of natural flavors from the oak. Prior to being coopered, the barrel wood is seasoned in open air, rain, wind, sun, and snow for eighteen months, softening the wood’s harsh tannins. The barrels are then slowly toasted and heavily charred to further enrich the wood’s desirable flavors.",
+    "Description": "This truly small-batch bourbon starts with traditionally grown corn, rye & malted barley.  All of our staple grains are cultivated exclusively for us on the Omlin Family farm in Quincy, Washington. The grains are mashed, distilled, and barreled in our Woodinville distillery, then trucked back over the Cascade Mountains to our private barrel houses, where Central Washington's extreme temperature cycles promote the extraction of natural flavors from the oak. Prior to being coopered, the barrel wood is seasoned in open air, rain, wind, sun, and snow for eighteen months, softening the wood's harsh tannins. The barrels are then slowly toasted and heavily charred to further enrich the wood's desirable flavors.",
     "ImageLink": "images/products/Woodinville Whiskey Straight Bourbon.png"
   },
   {
-    "Name": "Heaven’s Door Straight Bourbon Whiskey",
+    "Name": "Heaven's Door Straight Bourbon Whiskey",
     "Country": "United States",
     "Brand": "Heavens Door",
     "Categories": "Bourbon",
@@ -3181,7 +3181,7 @@
     "Price": "$49.99",
     "Volume": "",
     "Description": "Heaven's Door Straight Bourbon Whiskey, aged for a minimum of 6 years, is exceptional by all measures: smooth and lasting with notes of baking spices and vanilla layered over a bed of toasted oak.",
-    "ImageLink": "images/products/Heaven’s Door Straight Bourbon Whiskey.png"
+    "ImageLink": "images/products/Heaven's Door Straight Bourbon Whiskey.png"
   },
   {
     "Name": "Yellowstone Bourbon Select 93",
@@ -3212,7 +3212,7 @@
     "RateCount": 15,
     "Price": "$27.54",
     "Volume": "",
-    "Description": "Devils River Bourbon captures the spirit of the waters it draws from. The first sip is bold, followed by an oak, honey and caramel medley. Our bourbon finishes smooth with a warm, sweet flavor—just a reminder that there’s a little Devil inside all of us.",
+    "Description": "Devils River Bourbon captures the spirit of the waters it draws from. The first sip is bold, followed by an oak, honey and caramel medley. Our bourbon finishes smooth with a warm, sweet flavor—just a reminder that there's a little Devil inside all of us.",
     "ImageLink": "images/products/Devils River Bourbon.png"
   },
   {
@@ -3264,7 +3264,7 @@
     "ImageLink": "images/products/Elijah Craig Barrel Proof Bourbon.png"
   },
   {
-    "Name": "Blanton’s Single Barrel Bourbon",
+    "Name": "Blanton's Single Barrel Bourbon",
     "Country": "United States",
     "Brand": "Blantons",
     "Categories": "Bourbon",
@@ -3276,8 +3276,8 @@
     "RateCount": 115,
     "Price": "$99.99",
     "Volume": "",
-    "Description": "In the winter of 1881, Albert Bacon Blanton was born into one of the first families of bourbon history. At the age of sixteen, he started work in the Distillery as an office boy and fast became a leading pioneer in the development of bourbon. From the time he was made company president in 1921 until his retirement in 1952, his Distillery expanded from 44 to 144 buildings to become the largest Distillery of its day. During that period Colonel Blanton created his very special and limited supply of bourbon - his private reserve - handpicked and stored in what now is known as the famous Warehouse H. Although Colonel Blanton died in the spring of 1959, his legacy lives. Introduced in 1984, Blanton’s namesake bourbon was the first ever Single Barrel Bourbon sold commercially. The Single Barrel Bourbon is the first of its kind.\n\nBlanton's is the Original Single Barrel Bourbon that retains its uniqueness today by virtue of world wide critical acclaim. It has been awarded international gold medals, grand gold medals, and recommendations from noted spirits writers like Paul Pacult. The individual barrel selection process is one that involves one of the most respected Master Distillers in the bourbon industry. Elmer T. Lee introduced Blanton's Single Barrel Bourbon in 1984 and since that time has been enshrined in the Master Distillers' Hall of Fame. Elmer searched the honey spots of Warehouse H to personally select those barrels destined for greatness. Unlike other brands which are restricted to certain ages, Blanton's strives for a distinctive flavor profile across an array of years. The typical bourbon used is approximately eight years old, however, it is not unusual for the age to extend to ten or twelve years. From world-class bourbon to the most unique package, everything about Blanton's exudes quality, class, and excellence.\n\nREVIEWS\n\"Liquid gold.\"\n–Jim Murray's Whisky Bible\n\nTastingNotes\nA deep, satisfying nose of nutmeg and spices. Powerful dry vanilla notes in harmony with hints of honey amid strong caramel and corn. A medium finish composed of returning corn and nutmeg flavors.\n\nAWARDS\n2019 Gold Medal - Los Angeles International Spirits Competition\n2019 Silver Medal - San Francisco World Spirits Competition\n2018 Gold Medal - Los Angeles International Spirits Competition\n2018 Double Gold Medal - San Francisco World Spirits Competition\n2018 \"Tried & True\" - 91 points - Ultimate Spirits Challenge\n2018 Silver Medal - Denver International Spirits Competition\n2017 Gold Medal - 90 points - Los Angeles International Spirits Competition\n2017 Silver Medal - San Francisco World Spirits Competition\n2017 \"Tried & True\" - 93 points - Ultimate Spirits Challenge\n2017 Double Gold Medal - Denver International Spirits Competition\n2016 Gold Medal - New York World Wine & Spirits Competition\n2016 Silver Outstanding Medal - International Wine & Spirits Competition\n2016 Gold Medal / 90 points - Los Angeles International Spirits Competition\n2016 \"Tried & True\" - 95 points - Ultimate Spirits Challenge\n2016 Silver Medal - North American Bourbon & Whisky Competition\n2016 Gold Medal - San Francisco World Spirits Competition\n2015 Silver Medal - New York World Wine & Spirits Competition\n2015 Gold Outstanding Medal - International Wine & Spirits Competition\n2015 Gold Medal - The Fifty Best Bourbon Whiskeys 2015\n2015 Trophy Finalist; \"Tried & True\" - 95 points - Ultimate Spirits Challenge\n2015 Bronze Medal - Los Angeles International Spirits Competition\n2014 Double Gold Medal - New York World Wine & Spirits Competition\n2014 Silver Outstanding Medal - International Wine & Spirits Competition\n2014 Silver Medal - Los Angeles International Wine & Spirits Competition\n2013 Gold Medal - International Wine & Spirits Competition\n2013 Double Gold Medal - San Francisco World Spirits Competition\n2013 Extraordinary/Ultimate Recommendation; Chairman's Trophy - Ultimate Spirits Challenge\n2013 Gold Medal - Best Bourbon - The Fifty Best\n2012 Extraordinary-Ultimate Recommendation - Chairman's Trophy Winner - Ultimate Spirits Challenge\n2012 Gold Medal - San Francisco World Spirits Competition\n2012 Gold Medal - New York World Wine & Spirits Competition\n2012 Silver Outstanding Medal - International Wine & Spirits Competition\n2011 Excellent/Strong Recommendation - Ultimate Spirits Challenge\n2011 Gold Medal - Los Angeles International Wine & Spirits Competition\n2011 Best of Category - Los Angeles International Wine & Spirits Competition\n2011 Silver Medal - San Francisco World Spirits Competition\n2010 Silver Medal - Los Angeles International Wine & Spirits Competition\n2010 Gold Medal - San Francisco World Spirits Competition\n2010 Very Good-Recommended - Ultimate Spirits Challenge\n2009 Double Gold Medal - San Francisco World Spirits Competition\n2008 Silver Medal - San Francisco World Spirits Competition\n2007 Gold Medal - San Francisco World Spirits Competition\n2006 Silver Medal - San Francisco World Spirits Competition\n2005 Silver Medal - International Wine & Spirits Competition\n2003 Gold Medal - International Wine & Spirits Competition\n2003 Silver Medal - International Wine & Spirits Competition\n2003 Bronze Medal - International Wine & Spirits Competition\n2003 Commended - International Wine & Spirits Competition\n2002 Silver Medal - International Wine & Spirits Competition\n2000 Grand Gold Medal - Monde Selection\n2000 Gold Medal - International Wine & Spirits Competition\n1999 Gold Medal - International Wine & Spirits Competition\n1998 Two Grand Gold Medals - Monde Selection\n1998 Gold Medal - International Wine & Spirits Competition\n1997 Gold Medal - International Wine & Spirits Competition",
-    "ImageLink": "images/products/Blanton’s Single Barrel Bourbon.png"
+    "Description": "In the winter of 1881, Albert Bacon Blanton was born into one of the first families of bourbon history. At the age of sixteen, he started work in the Distillery as an office boy and fast became a leading pioneer in the development of bourbon. From the time he was made company president in 1921 until his retirement in 1952, his Distillery expanded from 44 to 144 buildings to become the largest Distillery of its day. During that period Colonel Blanton created his very special and limited supply of bourbon - his private reserve - handpicked and stored in what now is known as the famous Warehouse H. Although Colonel Blanton died in the spring of 1959, his legacy lives. Introduced in 1984, Blanton's namesake bourbon was the first ever Single Barrel Bourbon sold commercially. The Single Barrel Bourbon is the first of its kind.\n\nBlanton's is the Original Single Barrel Bourbon that retains its uniqueness today by virtue of world wide critical acclaim. It has been awarded international gold medals, grand gold medals, and recommendations from noted spirits writers like Paul Pacult. The individual barrel selection process is one that involves one of the most respected Master Distillers in the bourbon industry. Elmer T. Lee introduced Blanton's Single Barrel Bourbon in 1984 and since that time has been enshrined in the Master Distillers' Hall of Fame. Elmer searched the honey spots of Warehouse H to personally select those barrels destined for greatness. Unlike other brands which are restricted to certain ages, Blanton's strives for a distinctive flavor profile across an array of years. The typical bourbon used is approximately eight years old, however, it is not unusual for the age to extend to ten or twelve years. From world-class bourbon to the most unique package, everything about Blanton's exudes quality, class, and excellence.\n\nREVIEWS\n\"Liquid gold.\"\n–Jim Murray's Whisky Bible\n\nTastingNotes\nA deep, satisfying nose of nutmeg and spices. Powerful dry vanilla notes in harmony with hints of honey amid strong caramel and corn. A medium finish composed of returning corn and nutmeg flavors.\n\nAWARDS\n2019 Gold Medal - Los Angeles International Spirits Competition\n2019 Silver Medal - San Francisco World Spirits Competition\n2018 Gold Medal - Los Angeles International Spirits Competition\n2018 Double Gold Medal - San Francisco World Spirits Competition\n2018 \"Tried & True\" - 91 points - Ultimate Spirits Challenge\n2018 Silver Medal - Denver International Spirits Competition\n2017 Gold Medal - 90 points - Los Angeles International Spirits Competition\n2017 Silver Medal - San Francisco World Spirits Competition\n2017 \"Tried & True\" - 93 points - Ultimate Spirits Challenge\n2017 Double Gold Medal - Denver International Spirits Competition\n2016 Gold Medal - New York World Wine & Spirits Competition\n2016 Silver Outstanding Medal - International Wine & Spirits Competition\n2016 Gold Medal / 90 points - Los Angeles International Spirits Competition\n2016 \"Tried & True\" - 95 points - Ultimate Spirits Challenge\n2016 Silver Medal - North American Bourbon & Whisky Competition\n2016 Gold Medal - San Francisco World Spirits Competition\n2015 Silver Medal - New York World Wine & Spirits Competition\n2015 Gold Outstanding Medal - International Wine & Spirits Competition\n2015 Gold Medal - The Fifty Best Bourbon Whiskeys 2015\n2015 Trophy Finalist; \"Tried & True\" - 95 points - Ultimate Spirits Challenge\n2015 Bronze Medal - Los Angeles International Spirits Competition\n2014 Double Gold Medal - New York World Wine & Spirits Competition\n2014 Silver Outstanding Medal - International Wine & Spirits Competition\n2014 Silver Medal - Los Angeles International Wine & Spirits Competition\n2013 Gold Medal - International Wine & Spirits Competition\n2013 Double Gold Medal - San Francisco World Spirits Competition\n2013 Extraordinary/Ultimate Recommendation; Chairman's Trophy - Ultimate Spirits Challenge\n2013 Gold Medal - Best Bourbon - The Fifty Best\n2012 Extraordinary-Ultimate Recommendation - Chairman's Trophy Winner - Ultimate Spirits Challenge\n2012 Gold Medal - San Francisco World Spirits Competition\n2012 Gold Medal - New York World Wine & Spirits Competition\n2012 Silver Outstanding Medal - International Wine & Spirits Competition\n2011 Excellent/Strong Recommendation - Ultimate Spirits Challenge\n2011 Gold Medal - Los Angeles International Wine & Spirits Competition\n2011 Best of Category - Los Angeles International Wine & Spirits Competition\n2011 Silver Medal - San Francisco World Spirits Competition\n2010 Silver Medal - Los Angeles International Wine & Spirits Competition\n2010 Gold Medal - San Francisco World Spirits Competition\n2010 Very Good-Recommended - Ultimate Spirits Challenge\n2009 Double Gold Medal - San Francisco World Spirits Competition\n2008 Silver Medal - San Francisco World Spirits Competition\n2007 Gold Medal - San Francisco World Spirits Competition\n2006 Silver Medal - San Francisco World Spirits Competition\n2005 Silver Medal - International Wine & Spirits Competition\n2003 Gold Medal - International Wine & Spirits Competition\n2003 Silver Medal - International Wine & Spirits Competition\n2003 Bronze Medal - International Wine & Spirits Competition\n2003 Commended - International Wine & Spirits Competition\n2002 Silver Medal - International Wine & Spirits Competition\n2000 Grand Gold Medal - Monde Selection\n2000 Gold Medal - International Wine & Spirits Competition\n1999 Gold Medal - International Wine & Spirits Competition\n1998 Two Grand Gold Medals - Monde Selection\n1998 Gold Medal - International Wine & Spirits Competition\n1997 Gold Medal - International Wine & Spirits Competition",
+    "ImageLink": "images/products/Blanton's Single Barrel Bourbon.png"
   },
   {
     "Name": "Eagle Rare 10yr Bourbon",
@@ -3324,7 +3324,7 @@
     "RateCount": 13,
     "Price": "$29.99",
     "Volume": "",
-    "Description": "Deep Amber Color with 57% abv. Nose: This bourbon’s attitude is airy and effervescent even at full strength. Orange rind, burned sugars, honey, southern spearmint, touches of floral (orange blossom, honeysuckle) notes and grain (corn and dry rye). Pour and leave in the glass for a good 3-4 minutes. The initial alcohol blast quickly subsides and you can get to business.Palate: Brief notes of honey, bitter orange, caramel and vanilla yield to warming spices (cinnamon, mint, white pepper). Barrel flavors and a bit of resiny grip lead to the finish.",
+    "Description": "Deep Amber Color with 57% abv. Nose: This bourbon's attitude is airy and effervescent even at full strength. Orange rind, burned sugars, honey, southern spearmint, touches of floral (orange blossom, honeysuckle) notes and grain (corn and dry rye). Pour and leave in the glass for a good 3-4 minutes. The initial alcohol blast quickly subsides and you can get to business.Palate: Brief notes of honey, bitter orange, caramel and vanilla yield to warming spices (cinnamon, mint, white pepper). Barrel flavors and a bit of resiny grip lead to the finish.",
     "ImageLink": "images/products/Old Grand Dad 114 Proof Bourbon Whiskey.png"
   },
   {
@@ -3340,7 +3340,7 @@
     "RateCount": 10,
     "Price": "$19.99",
     "Volume": "",
-    "Description": "Old Camp® was launched with Brian Kelley & Tyler Hubbard of Florida Georgia Line. The 1st and only peach pecan whiskey is blended using American whiskey and aged for 2 years in American White Oak barrels. It has an aroma of fresh citrus, sweet Georgia peach and nutty southern pecan. The flavor is balanced with nutty caramel and a crisp spiced peach finish. Kick-start the party. Best enjoyed as a shot, over ice or especially in mixin’s like Old Camp® Iced Tea or Lemonade. (35% ABV – 70 proof)",
+    "Description": "Old Camp® was launched with Brian Kelley & Tyler Hubbard of Florida Georgia Line. The 1st and only peach pecan whiskey is blended using American whiskey and aged for 2 years in American White Oak barrels. It has an aroma of fresh citrus, sweet Georgia peach and nutty southern pecan. The flavor is balanced with nutty caramel and a crisp spiced peach finish. Kick-start the party. Best enjoyed as a shot, over ice or especially in mixin's like Old Camp® Iced Tea or Lemonade. (35% ABV – 70 proof)",
     "ImageLink": "images/products/Old Camp Peach Pecan Whiskey.png"
   },
   {
@@ -3392,7 +3392,7 @@
     "ImageLink": "images/products/Windsor Canadian Blended Whiskey.png"
   },
   {
-    "Name": "Paddy’s Irish Whiskey",
+    "Name": "Paddy's Irish Whiskey",
     "Country": "Ireland",
     "Brand": "Paddy",
     "Categories": "Irish Whiskey",
@@ -3404,8 +3404,8 @@
     "RateCount": 14,
     "Price": "$21.99",
     "Volume": "",
-    "Description": "Our Irish Whiskey traces its roots back to 1779, but its true name did not come until much later when a salesman by the name of Paddy Flaherty roamed pub to pub with a sales pitch of equal parts smooth triple-distilled whiskey, good humor, and revelry.  Paddy was as beloved as the whiskey he sold, in no small part because of the free rounds he’d give at every stop.  It was only fitting that this fine whiskey became known as Paddy’s.\n\nAn approachable Irish whiskey comprised of a triple-distilled blend of grain, malt and pot-still, Paddy’s is mild and yet crisp, with a hint of honey. Paddy’s is the perfect session spirit for gathering ‘round for good times with friends. Triple-distilled from the finest barley and water from County Cork’s Irish countryside, Paddy’s matures for years in three types of oaken casks, acquiring its distinctively rich and golden color in dark, aromatic warehouses before being shipped directly from Ireland.\n\nTastingNotes:\n• Nose: Malty, fresh, woody. Hints of spice, honey, vanilla.\n• Taste: Light and crisp. Hints of nuts, malt, charred wood.\n• Finish: A gently fading sweetness. A lingering of mild, woody malt.",
-    "ImageLink": "images/products/Paddy’s Irish Whiskey.png"
+    "Description": "Our Irish Whiskey traces its roots back to 1779, but its true name did not come until much later when a salesman by the name of Paddy Flaherty roamed pub to pub with a sales pitch of equal parts smooth triple-distilled whiskey, good humor, and revelry.  Paddy was as beloved as the whiskey he sold, in no small part because of the free rounds he'd give at every stop.  It was only fitting that this fine whiskey became known as Paddy's.\n\nAn approachable Irish whiskey comprised of a triple-distilled blend of grain, malt and pot-still, Paddy's is mild and yet crisp, with a hint of honey. Paddy's is the perfect session spirit for gathering ‘round for good times with friends. Triple-distilled from the finest barley and water from County Cork's Irish countryside, Paddy's matures for years in three types of oaken casks, acquiring its distinctively rich and golden color in dark, aromatic warehouses before being shipped directly from Ireland.\n\nTastingNotes:\n• Nose: Malty, fresh, woody. Hints of spice, honey, vanilla.\n• Taste: Light and crisp. Hints of nuts, malt, charred wood.\n• Finish: A gently fading sweetness. A lingering of mild, woody malt.",
+    "ImageLink": "images/products/Paddy's Irish Whiskey.png"
   },
   {
     "Name": "Sazerac Rye Whiskey",
@@ -3420,11 +3420,11 @@
     "RateCount": 29,
     "Price": "$32.99",
     "Volume": "",
-    "Description": "The One and Only New Orleans Original. Sazerac Rye Whiskey symbolizes the tradition and history of New Orleans. Rye Whiskey that dates back to the 1800’s, around the time when saloons, veiled as Coffee Houses, began lining the streets of New Orleans. It was at the Sazerac Coffee House on Royal Street where local patrons were served toddies made with Rye Whiskey and Peychaud’s Bitters. The libation became known as the “Sazerac” and America’s first branded cocktail was born. This is the whiskey that started it all. Today, Sazerac Rye is the most awarded rye whiskey since 2005. \n\nSazerac Rye has the perfect balance of sweetness and spice; in part because of the unique recipe and rye used, and in part because of the thorough distillation process done at Buffalo Trace Distillery. \n\nTastingNotes:\n• Nose: Vanilla, Clove, Anise, Pepper \n• Taste: Candied Spices, Citrus \n• Finish: Smooth, Licorice, Smoked Pepper\n\nAwards:\n2019 Silver Medal - San Francisco World Spirits Competition\n2018 Silver Medal - New York International Spirits Competition\n2018 Silver Medal - North American Bourbon & Whiskey Competition\n2018 Gold Medal - Los Angeles International Spirits Competition\n2018 Gold Medal - San Francisco World Spirits Competition\n2018 Trophy Finalist; \"\"Great Value;\"\" \"\"Tried & True\"\" - 94 points - Ultimate Spirits Challenge\n2018 Silver Medal - Denver International Spirits Competition\n2017 Gold Medal - 92 points - Beverage Testing Institute\n2017 Gold Medal - New York World Wine & Spirits Competition\n2017 Gold Medal - The American Whiskey Masters\n2017 Gold Medal - World Whisky Masters\n2017 Silver Outstanding Medal - International Wine & Spirits Competition\n2017 Bronze Medal - North American Bourbon & Whiskey Competition\n2017 Gold Medal (92 points) - Los Angeles International Spirits Competition\n2017 Gold Medal - San Francisco World Spirits Competition\n2017 Trophy Finalist; \"\"Great Value;\"\" \"\"Tried & True\"\" - 95 points - Ultimate Spirits Challenge\n2017 Gold Medal - Denver International Spirits Competition\n2016 Gold Medal - The Fifty Best Rye Whiskeys\n2016 Silver Medal - New York World Wine & Spirits Competition\n2016 Silver Outstanding Medal - International Wine & Spirits Competition\n2016 Bronze Medal - The Washington Cup Spirits Competition\n2016 Best of Category / Gold Medal (90 points) - Los Angeles International Spirits Competition\n2016 Gold Medal, \"\"Best American Rye Whiskey,\"\" 91.6 points - International Whisky Competition\n2016 \"\"Great Value;\"\" \"\"Tried & True\"\" - 94 points - Ultimate Spirits Challenge\n2016 Gold Medal - San Francisco World Spirits Competition\n2015 Gold Medal - The Fifty Best Rye Whiskeys\n2015 Silver Medal - Spirits of the Americas\n2015 Gold Medal - The Washington Cup Spirits Competition\n2015 Silver Medal - New York World Wine & Spirits Competition\n2015 Double Gold Medal - San Francisco World Spirits Competition\n2015 Gold Medal - International Wine & Spirits Competition\n2015 Gold Medal (91 points) - Los Angeles International Spirits Competition\n2015 Trophy Finalist; \"\"Great Value;\"\" \"\"Tried & True\"\" - 94 points - Ultimate Spirits Challenge\n2015 Silver Medal - Denver International Spirits Competition\n2015 Silver Medal - North American Bourbon & Whiskey Competition\n2015 Bronze Medal - International Whisky Competition\n2014 Double Gold Medal - The Fifty Best Rye Whiskeys\n2014 Gold Medal - New York World Wine & Spirits Competition\n2014 Best of Category; Gold Medal (91 points) - Los Angeles International Wine & Spirits Competition\n2014 Silver Medal - San Francisco World Spirits Competition\n2014 World Whiskies Awards - Rye American Whiskey 7 Years and Under\n2014 Excellent/Highly Recommended; Finalist - Chairman's Trophy; Tried & True Award - Ultimate Spirits Challenge\n2013 Gold Medal AND Washington Cup Winner - The Washington Cup Spirits Competition\n2013 Silver Outstanding Medal - International Wine & Spirits Competition\n2013 Silver Medal - Los Angeles International Wine & Spirits Competition\n2013 World Whiskies Awards - Best Rye American Whiskey 7 Years and Under\n2013 Double Gold Medal - San Francisco World Spirits Competition\n2013 Excellent/Strong Recommendation; Finalist - Chairman's Trophy - Ultimate Spirits Challenge\n2012 Excellent/Strong Recommendation - Chairman's Trophy Finalist - Ultimate Spirits Challenge\n2012 Silver Medal - San Francisco World Spirits Competition\n2012 Gold Medal - Best in Category - Los Angeles International Wine & Spirits Competition\n2012 Silver Medal - Container Design - Los Angeles International Wine & Spirits Competition\n2012 Silver Outstanding Medal - International Wine & Spirits Competition\n2012 Washington Cup Winner, Silver - The Washington Cup Spirits Competition\n2011 Gold Medal - San Francisco World Spirits Competition\n2011 Gold Medal - Los Angeles International Wine & Spirits Competition\n2011 Gold Medal - Best in Class - International Wine & Spirits Competition\n2011 Very Good-Recommended - Ultimate Spirits Challenge\n2010 Gold Medal - Los Angeles International Wine & Spirits Competition\n2010 Bronze Medal - PACKAGING - Los Angeles International Wine & Spirits Competition\n2010 Silver Medal - San Francisco World Spirits Competition\n2010 Very Good-Recommended - Ultimate Spirits Challenge\n2009 Gold Medal - San Francisco World Spirits Competition\n2008 Gold Medal - Best in Class - International Wine & Spirits Competition\n2008 Gold Medal - San Francisco World Spirits Competition\n2008 Bronze Medal - Los Angeles International Wine & Spirits Competition\n2007 Double Gold Medal - San Francisco World Spirits Competition\n2007 Silver Medal - Best in Class - International Wine & Spirits Competition\n2006 Silver Medal - San Francisco World Spirits Competition\n\nRatings:\nRating 94.5 –Jim Murray's Whisky Bible \n95 points - Wine Enthusiast, July 2013\n\nReviews:\n“Any crispier and the glass would shatter…a rare and valuable gem!” -Jim Murray\n\n\"Versatile, crisp, and an ideal match for cocktails that also include orange liqueur, as well as its namesake classic cocktail.  Light aromas include vanilla and a touch of juicy citrus.  Flavors run to bitter orange, dark chocolate and black tea, finishing with a pepper tingle.  Velvety feel, despite the brisk alcohol.\" Wine Enthusiast, July 2013",
+    "Description": "The One and Only New Orleans Original. Sazerac Rye Whiskey symbolizes the tradition and history of New Orleans. Rye Whiskey that dates back to the 1800's, around the time when saloons, veiled as Coffee Houses, began lining the streets of New Orleans. It was at the Sazerac Coffee House on Royal Street where local patrons were served toddies made with Rye Whiskey and Peychaud's Bitters. The libation became known as the “Sazerac” and America's first branded cocktail was born. This is the whiskey that started it all. Today, Sazerac Rye is the most awarded rye whiskey since 2005. \n\nSazerac Rye has the perfect balance of sweetness and spice; in part because of the unique recipe and rye used, and in part because of the thorough distillation process done at Buffalo Trace Distillery. \n\nTastingNotes:\n• Nose: Vanilla, Clove, Anise, Pepper \n• Taste: Candied Spices, Citrus \n• Finish: Smooth, Licorice, Smoked Pepper\n\nAwards:\n2019 Silver Medal - San Francisco World Spirits Competition\n2018 Silver Medal - New York International Spirits Competition\n2018 Silver Medal - North American Bourbon & Whiskey Competition\n2018 Gold Medal - Los Angeles International Spirits Competition\n2018 Gold Medal - San Francisco World Spirits Competition\n2018 Trophy Finalist; \"\"Great Value;\"\" \"\"Tried & True\"\" - 94 points - Ultimate Spirits Challenge\n2018 Silver Medal - Denver International Spirits Competition\n2017 Gold Medal - 92 points - Beverage Testing Institute\n2017 Gold Medal - New York World Wine & Spirits Competition\n2017 Gold Medal - The American Whiskey Masters\n2017 Gold Medal - World Whisky Masters\n2017 Silver Outstanding Medal - International Wine & Spirits Competition\n2017 Bronze Medal - North American Bourbon & Whiskey Competition\n2017 Gold Medal (92 points) - Los Angeles International Spirits Competition\n2017 Gold Medal - San Francisco World Spirits Competition\n2017 Trophy Finalist; \"\"Great Value;\"\" \"\"Tried & True\"\" - 95 points - Ultimate Spirits Challenge\n2017 Gold Medal - Denver International Spirits Competition\n2016 Gold Medal - The Fifty Best Rye Whiskeys\n2016 Silver Medal - New York World Wine & Spirits Competition\n2016 Silver Outstanding Medal - International Wine & Spirits Competition\n2016 Bronze Medal - The Washington Cup Spirits Competition\n2016 Best of Category / Gold Medal (90 points) - Los Angeles International Spirits Competition\n2016 Gold Medal, \"\"Best American Rye Whiskey,\"\" 91.6 points - International Whisky Competition\n2016 \"\"Great Value;\"\" \"\"Tried & True\"\" - 94 points - Ultimate Spirits Challenge\n2016 Gold Medal - San Francisco World Spirits Competition\n2015 Gold Medal - The Fifty Best Rye Whiskeys\n2015 Silver Medal - Spirits of the Americas\n2015 Gold Medal - The Washington Cup Spirits Competition\n2015 Silver Medal - New York World Wine & Spirits Competition\n2015 Double Gold Medal - San Francisco World Spirits Competition\n2015 Gold Medal - International Wine & Spirits Competition\n2015 Gold Medal (91 points) - Los Angeles International Spirits Competition\n2015 Trophy Finalist; \"\"Great Value;\"\" \"\"Tried & True\"\" - 94 points - Ultimate Spirits Challenge\n2015 Silver Medal - Denver International Spirits Competition\n2015 Silver Medal - North American Bourbon & Whiskey Competition\n2015 Bronze Medal - International Whisky Competition\n2014 Double Gold Medal - The Fifty Best Rye Whiskeys\n2014 Gold Medal - New York World Wine & Spirits Competition\n2014 Best of Category; Gold Medal (91 points) - Los Angeles International Wine & Spirits Competition\n2014 Silver Medal - San Francisco World Spirits Competition\n2014 World Whiskies Awards - Rye American Whiskey 7 Years and Under\n2014 Excellent/Highly Recommended; Finalist - Chairman's Trophy; Tried & True Award - Ultimate Spirits Challenge\n2013 Gold Medal AND Washington Cup Winner - The Washington Cup Spirits Competition\n2013 Silver Outstanding Medal - International Wine & Spirits Competition\n2013 Silver Medal - Los Angeles International Wine & Spirits Competition\n2013 World Whiskies Awards - Best Rye American Whiskey 7 Years and Under\n2013 Double Gold Medal - San Francisco World Spirits Competition\n2013 Excellent/Strong Recommendation; Finalist - Chairman's Trophy - Ultimate Spirits Challenge\n2012 Excellent/Strong Recommendation - Chairman's Trophy Finalist - Ultimate Spirits Challenge\n2012 Silver Medal - San Francisco World Spirits Competition\n2012 Gold Medal - Best in Category - Los Angeles International Wine & Spirits Competition\n2012 Silver Medal - Container Design - Los Angeles International Wine & Spirits Competition\n2012 Silver Outstanding Medal - International Wine & Spirits Competition\n2012 Washington Cup Winner, Silver - The Washington Cup Spirits Competition\n2011 Gold Medal - San Francisco World Spirits Competition\n2011 Gold Medal - Los Angeles International Wine & Spirits Competition\n2011 Gold Medal - Best in Class - International Wine & Spirits Competition\n2011 Very Good-Recommended - Ultimate Spirits Challenge\n2010 Gold Medal - Los Angeles International Wine & Spirits Competition\n2010 Bronze Medal - PACKAGING - Los Angeles International Wine & Spirits Competition\n2010 Silver Medal - San Francisco World Spirits Competition\n2010 Very Good-Recommended - Ultimate Spirits Challenge\n2009 Gold Medal - San Francisco World Spirits Competition\n2008 Gold Medal - Best in Class - International Wine & Spirits Competition\n2008 Gold Medal - San Francisco World Spirits Competition\n2008 Bronze Medal - Los Angeles International Wine & Spirits Competition\n2007 Double Gold Medal - San Francisco World Spirits Competition\n2007 Silver Medal - Best in Class - International Wine & Spirits Competition\n2006 Silver Medal - San Francisco World Spirits Competition\n\nRatings:\nRating 94.5 –Jim Murray's Whisky Bible \n95 points - Wine Enthusiast, July 2013\n\nReviews:\n“Any crispier and the glass would shatter…a rare and valuable gem!” -Jim Murray\n\n\"Versatile, crisp, and an ideal match for cocktails that also include orange liqueur, as well as its namesake classic cocktail.  Light aromas include vanilla and a touch of juicy citrus.  Flavors run to bitter orange, dark chocolate and black tea, finishing with a pepper tingle.  Velvety feel, despite the brisk alcohol.\" Wine Enthusiast, July 2013",
     "ImageLink": "images/products/Sazerac Rye Whiskey.png"
   },
   {
-    "Name": "Hochstadter’s Slow & Low Rock and Rye",
+    "Name": "Hochstadter's Slow & Low Rock and Rye",
     "Country": "United States",
     "Brand": "Hochstadters",
     "Categories": "Rye Whiskey",
@@ -3437,7 +3437,7 @@
     "Price": "$26.87",
     "Volume": "",
     "Description": "Slow & Low is a modern update to the historic category of Rock & Rye. A combination of 84 proof Straight Rye Whiskey, a pinch of rock candy & the additions of raw honey, navel oranges and importantly, Angostura bitters, making Slow & Low a proper bottled old fashioned.  \n\nSlow & Low is rebellious and free spirited, a lifestyle that is embodied by the punks, artists, builders and fixers. It belongs everywhere from the dives to the mosh pits, tailgates to the drag races or from cocktail dens to personal cabinets. Slow & Low is for talking story around the fire and cheersing with the girls. Slow & Low is for all, but finds its roots in the lives of those with a checkered past...",
-    "ImageLink": "images/products/Hochstadter’s Slow & Low Rock and Rye.png"
+    "ImageLink": "images/products/Hochstadter's Slow & Low Rock and Rye.png"
   },
   {
     "Name": "Larceny Small Batch",
@@ -3452,7 +3452,7 @@
     "RateCount": 50,
     "Price": "$26.99",
     "Volume": "",
-    "Description": "Made with wheat instead of rye as the secondary grain, our signature Small Batch Wheated Bourbon delivers a smoother taste that’s hard to resist.\n\nWinner of Gold at San Francisco Worlds Spirits Competition 2020, Double Gold at the consumer-led SIP Awards, and a 91 point rating at the Ultimate Spirits Challenge.",
+    "Description": "Made with wheat instead of rye as the secondary grain, our signature Small Batch Wheated Bourbon delivers a smoother taste that's hard to resist.\n\nWinner of Gold at San Francisco Worlds Spirits Competition 2020, Double Gold at the consumer-led SIP Awards, and a 91 point rating at the Ultimate Spirits Challenge.",
     "ImageLink": "images/products/Larceny Small Batch.png"
   },
   {
@@ -3468,7 +3468,7 @@
     "RateCount": 61,
     "Price": "$59.99",
     "Volume": "",
-    "Description": "Uncle Nearest 1856 is an award-winning blend of 8-14 year old barrels, bottled at 100 proof. Uncle Nearest is astonishingly smooth, and can be enjoyed neat, on the rocks, or in your favorite whiskey or bourbon cocktail.\n \nIn 2017, Uncle Nearest 1856 Premium Aged Whiskey launched in the United States. Honoring the first African American master distiller, this premium whiskey swiftly rolled out throughout the U.S. and abroad, and can now be found in 50 States, 12 Countries, and shipped to over 148 countries in the world. Uncle Nearest is now the Fastest-Growing Independent American Whiskey Brand in U.S. History.\n \nUncle Nearest Premium Whiskey has garnered more than 125 awards and accolades throughout the world, including “Top 5 Whiskies in the World” by Cigar & Spirits Magazine and “World’s Best” by Whisky Magazine. Uncle Nearest was the most awarded premium American whiskey or bourbon of 2019.\n\nAWARDS & ACCOLADES:\n• 90 Rating - Wine Enthusiast\n• 95 Rating - Ultimate Spirits Challenge\n• 96 Rating - Tastings.com",
+    "Description": "Uncle Nearest 1856 is an award-winning blend of 8-14 year old barrels, bottled at 100 proof. Uncle Nearest is astonishingly smooth, and can be enjoyed neat, on the rocks, or in your favorite whiskey or bourbon cocktail.\n \nIn 2017, Uncle Nearest 1856 Premium Aged Whiskey launched in the United States. Honoring the first African American master distiller, this premium whiskey swiftly rolled out throughout the U.S. and abroad, and can now be found in 50 States, 12 Countries, and shipped to over 148 countries in the world. Uncle Nearest is now the Fastest-Growing Independent American Whiskey Brand in U.S. History.\n \nUncle Nearest Premium Whiskey has garnered more than 125 awards and accolades throughout the world, including “Top 5 Whiskies in the World” by Cigar & Spirits Magazine and “World's Best” by Whisky Magazine. Uncle Nearest was the most awarded premium American whiskey or bourbon of 2019.\n\nAWARDS & ACCOLADES:\n• 90 Rating - Wine Enthusiast\n• 95 Rating - Ultimate Spirits Challenge\n• 96 Rating - Tastings.com",
     "ImageLink": "images/products/Uncle Nearest 1856 Premium Whiskey.png"
   },
   {
@@ -3484,11 +3484,11 @@
     "RateCount": 26,
     "Price": "$48.98",
     "Volume": "",
-    "Description": "Every batch of Uncle Nearest 1884 Small Batch Whiskey is hand-selected by our founders and curated by fifth-generation Master Blender, Victoria Eady Butler, who’s signature is on the back of each bottle. Aged a minimum of 7 years, and bottled at 93-proof, this is a smooth sipping whiskey. \n\nIn 2019, Uncle Nearest 1884 joined the award-winning Uncle Nearest Premium Whiskey line-up including Uncle Nearest 1820 and Uncle Nearest 1856. Together, these three ultra-premium whiskies have garnered more than 125 awards since launching in July 2017, including two “World’s Best” by World Whiskies Awards, “Top 5 Whiskies in the World,” by Cigar & Spirits Magazine, “Chairman’s Trophy, Platinum and Double Gold” by SIP Awards and “Best American Whiskey.”",
+    "Description": "Every batch of Uncle Nearest 1884 Small Batch Whiskey is hand-selected by our founders and curated by fifth-generation Master Blender, Victoria Eady Butler, who's signature is on the back of each bottle. Aged a minimum of 7 years, and bottled at 93-proof, this is a smooth sipping whiskey. \n\nIn 2019, Uncle Nearest 1884 joined the award-winning Uncle Nearest Premium Whiskey line-up including Uncle Nearest 1820 and Uncle Nearest 1856. Together, these three ultra-premium whiskies have garnered more than 125 awards since launching in July 2017, including two “World's Best” by World Whiskies Awards, “Top 5 Whiskies in the World,” by Cigar & Spirits Magazine, “Chairman's Trophy, Platinum and Double Gold” by SIP Awards and “Best American Whiskey.”",
     "ImageLink": "images/products/Uncle Nearest 1884 Small Batch Whiskey.png"
   },
   {
-    "Name": "Seagram’s VO Canadian Whisky",
+    "Name": "Seagram's VO Canadian Whisky",
     "Country": "United States",
     "Brand": "Seagrams VO",
     "Categories": "Canadian Whisky",
@@ -3501,7 +3501,7 @@
     "Price": "$18.51",
     "Volume": "",
     "Description": "There is a mystery surrounding the origins and naming of Seagram's V.O., one of the most well-known whiskies produced at Joseph E. Seagram's former Waterloo Distillery. Family tradition states that \"V.O.\" stands for \"Very Own,\" as this was a whisky blend created for Joseph E. Seagram's own family. Others claim that the initials stand for \"Very Old\" in keeping with the distillers assertion that is was a blend of very old Canadian Whiskies. \n\nThe story tells how Joseph's son, Thomas, had the distillery's blender, William Hortop, prepare a whisky blend for his personal use to celebrate his upcoming marriage in 1913 to Dorothy Pearson. Upon tasting the special blend, Joseph insisted that the family blend be put on the market. It went on to become one Seagram's biggest sellers.",
-    "ImageLink": "images/products/Seagram’s VO Canadian Whisky.png"
+    "ImageLink": "images/products/Seagram's VO Canadian Whisky.png"
   },
   {
     "Name": "Old Overholt Rye Whiskey",
@@ -3516,7 +3516,7 @@
     "RateCount": 33,
     "Price": "$18.99",
     "Volume": "",
-    "Description": "Old Overholt is the oldest of The Olds, a relic you can drink. This famous Straight Rye Whiskey has a distinctive ﬂavor and appeal that, after Prohibition, made it the most popular spirit in the country.\n\nAgreeable means you get along. And Old Overholt does just that. It’s renowned for its outstanding mixability in classic cocktails like the Old Style Manhattan (look it up). The one and only Old Overholt Rye Whiskey is 80 Proof and aged 3 years.",
+    "Description": "Old Overholt is the oldest of The Olds, a relic you can drink. This famous Straight Rye Whiskey has a distinctive ﬂavor and appeal that, after Prohibition, made it the most popular spirit in the country.\n\nAgreeable means you get along. And Old Overholt does just that. It's renowned for its outstanding mixability in classic cocktails like the Old Style Manhattan (look it up). The one and only Old Overholt Rye Whiskey is 80 Proof and aged 3 years.",
     "ImageLink": "images/products/Old Overholt Rye Whiskey.png"
   },
   {
@@ -3564,11 +3564,11 @@
     "RateCount": 19,
     "Price": "$57.23",
     "Volume": "",
-    "Description": "In 1837, a young man from Ireland known for his remarkable whiskey-making skills, came to America with his family’s whiskey recipe that had been passed down for generations. Young Mr. McKenna settled in Kentucky and discovered the uniquely American drink known as Bourbon. McKenna instantly took a liking to Kentucky whiskey and set out to create a better Bourbon using his family’s recipe. To ensure the highest quality, he insisted that his Bourbon age in oak barrels before bottling. From this process, highly unusual for the time, emerged a remarkably smooth Bourbon boasting a distinctive character.  As one of the only extra-aged Bottled-in-Bond Single Barrel Bourbons, Henry McKenna Single Barrel satisfies those looking for a real whiskey with real history. The super-premium status is conveyed through new packaging. The front label contains handwritten authentication of the barrel number and the barreled on date. It also emphasizes the Bottled-In-Bond designation and the 10 year age statement.",
+    "Description": "In 1837, a young man from Ireland known for his remarkable whiskey-making skills, came to America with his family's whiskey recipe that had been passed down for generations. Young Mr. McKenna settled in Kentucky and discovered the uniquely American drink known as Bourbon. McKenna instantly took a liking to Kentucky whiskey and set out to create a better Bourbon using his family's recipe. To ensure the highest quality, he insisted that his Bourbon age in oak barrels before bottling. From this process, highly unusual for the time, emerged a remarkably smooth Bourbon boasting a distinctive character.  As one of the only extra-aged Bottled-in-Bond Single Barrel Bourbons, Henry McKenna Single Barrel satisfies those looking for a real whiskey with real history. The super-premium status is conveyed through new packaging. The front label contains handwritten authentication of the barrel number and the barreled on date. It also emphasizes the Bottled-In-Bond designation and the 10 year age statement.",
     "ImageLink": "images/products/Henry McKenna Single Barrel Bourbon, 10 Year, Bottled-in-Bond.png"
   },
   {
-    "Name": "Baker’s Single Barrel 7 Year Kentucky Straight Bourbon Whiskey",
+    "Name": "Baker's Single Barrel 7 Year Kentucky Straight Bourbon Whiskey",
     "Country": "United States",
     "Brand": "Bakers",
     "Categories": "Bourbon",
@@ -3581,7 +3581,7 @@
     "Price": "$59.99",
     "Volume": "",
     "Description": "Named after Baker Beam, grand nephew of the legendary Jim Beam, Baker's Bourbon is seven-years-old and hand-bottled at 107 proof. Embracing over six generations of distilling experience, Baker's Bourbon utilizes a special strain of jug yeast that has been in his family for over 60 years. This time tested yeast provides Baker's with a silky smooth texture and consistent taste from batch to batch.",
-    "ImageLink": "images/products/Baker’s Single Barrel 7 Year Kentucky Straight Bourbon Whiskey.png"
+    "ImageLink": "images/products/Baker's Single Barrel 7 Year Kentucky Straight Bourbon Whiskey.png"
   },
   {
     "Name": "Old Crow Bourbon Whiskey",
@@ -3644,7 +3644,7 @@
     "RateCount": 290,
     "Price": "$29.99",
     "Volume": "",
-    "Description": "On one side, you have good ol’ whiskey - a bold, loud, and strong partner-in-crime who exudes confidence. On the other, we have peanut butter - a rich, smooth, and irresistible spread that’s as dependable as they come for all your late night cravings. Little did you know, these two blend together quite phenomenally.  In fact, they go together so well, they make PB&J jealous. It’s nearly impossible to just have one of this delicious treat. But we have to warn you - a night with Skrewball is bound to get a little nutty.",
+    "Description": "On one side, you have good ol' whiskey - a bold, loud, and strong partner-in-crime who exudes confidence. On the other, we have peanut butter - a rich, smooth, and irresistible spread that's as dependable as they come for all your late night cravings. Little did you know, these two blend together quite phenomenally.  In fact, they go together so well, they make PB&J jealous. It's nearly impossible to just have one of this delicious treat. But we have to warn you - a night with Skrewball is bound to get a little nutty.",
     "ImageLink": "images/products/Skrewball Peanut Butter Whiskey.png"
   },
   {
@@ -3756,11 +3756,11 @@
     "RateCount": 48,
     "Price": "$40.69",
     "Volume": "",
-    "Description": "Legent is more than just another bourbon. It’s a San Francisco World Spirits Competition, Gold Medal winner that pushes boundaries and redefines how bourbons are created while remaining true to the core of the bourbon’s principles. \n\nIt’s a collaboration as distinct as the two whiskey legends who made it. Fred Noe from the founding family of bourbon and Jim Beam’s seventh-generation Master Distiller and Shinji Fukuyo from the founding house of Japanese whisky and Suntory’s fifth-ever Chief Blender. \n\nTogether they created a blend of several unique bourbons aged in newly charred white oak barrels and some extra-aged in wine and sherry casks. The result is a rounded and balanced bourbon that is layered, complex and unlike anything you’ve ever tried.",
+    "Description": "Legent is more than just another bourbon. It's a San Francisco World Spirits Competition, Gold Medal winner that pushes boundaries and redefines how bourbons are created while remaining true to the core of the bourbon's principles. \n\nIt's a collaboration as distinct as the two whiskey legends who made it. Fred Noe from the founding family of bourbon and Jim Beam's seventh-generation Master Distiller and Shinji Fukuyo from the founding house of Japanese whisky and Suntory's fifth-ever Chief Blender. \n\nTogether they created a blend of several unique bourbons aged in newly charred white oak barrels and some extra-aged in wine and sherry casks. The result is a rounded and balanced bourbon that is layered, complex and unlike anything you've ever tried.",
     "ImageLink": "images/products/Legent Bourbon Whiskey.png"
   },
   {
-    "Name": "Noah’s Mill Bourbon",
+    "Name": "Noah's Mill Bourbon",
     "Country": "United States",
     "Brand": "Noahs Mill",
     "Categories": "Bourbon",
@@ -3772,8 +3772,8 @@
     "RateCount": 25,
     "Price": "$50.99",
     "Volume": "750ml",
-    "Description": "If Noah was only allowed to take two bourbons on the ark, chances are he'd opt for two bottles of Noah's Mill Bourbon. Rich and yet unpretentious, there's nothing quite like Noah's Mill Bourbon. Part of the Willett Family of Bourbons, Noah's Mill is distilled in Bardstown, Kentucky, which is often referred to as the \"Bourbon Capital of the World.\" That's why there's no surprise that Noah's Mill is one of the leading craft bourbons on the market.\n\nAged for anywhere from 4 years to 20 years, Noah's Mill is only made in small batches, assuring that it's made with the care and diligence that only a craft bourbon can achieve. Once you uncork this bad boy, you're overwhelmed with floral, prune and walnut aromas. Each drink of this bourbon is lush with flavors of spice, lavender and caramel that make it a unique mix that only comes with a bottle of Noah's Mill Bourbon.\n\nLike any top-shelf bourbon, you don't want to sully the flavors with any mixers unless you're a non-traditionalist. Most drinkers will find the bourbon best with a few fingers in a low-ball glass, while a splash of water or an ice cube adds a cool rush to the beverage, especially if you're enjoying it outdoors.\n\nIf you're a cocktail drinker, Noah's Mill Bourbon is the perfect choice to take your drink to new heights. From an Old Fashioned to a mint julep, it turns everything it touches into the best drink you've never had.\n\nBuy Noah’s Mill online at a great price through Drizly to enjoy a glass of this great tasting bourbon.",
-    "ImageLink": "images/products/Noah’s Mill Bourbon.png"
+    "Description": "If Noah was only allowed to take two bourbons on the ark, chances are he'd opt for two bottles of Noah's Mill Bourbon. Rich and yet unpretentious, there's nothing quite like Noah's Mill Bourbon. Part of the Willett Family of Bourbons, Noah's Mill is distilled in Bardstown, Kentucky, which is often referred to as the \"Bourbon Capital of the World.\" That's why there's no surprise that Noah's Mill is one of the leading craft bourbons on the market.\n\nAged for anywhere from 4 years to 20 years, Noah's Mill is only made in small batches, assuring that it's made with the care and diligence that only a craft bourbon can achieve. Once you uncork this bad boy, you're overwhelmed with floral, prune and walnut aromas. Each drink of this bourbon is lush with flavors of spice, lavender and caramel that make it a unique mix that only comes with a bottle of Noah's Mill Bourbon.\n\nLike any top-shelf bourbon, you don't want to sully the flavors with any mixers unless you're a non-traditionalist. Most drinkers will find the bourbon best with a few fingers in a low-ball glass, while a splash of water or an ice cube adds a cool rush to the beverage, especially if you're enjoying it outdoors.\n\nIf you're a cocktail drinker, Noah's Mill Bourbon is the perfect choice to take your drink to new heights. From an Old Fashioned to a mint julep, it turns everything it touches into the best drink you've never had.\n\nBuy Noah's Mill online at a great price through Drizly to enjoy a glass of this great tasting bourbon.",
+    "ImageLink": "images/products/Noah's Mill Bourbon.png"
   },
   {
     "Name": "Kentucky Gentleman Bourbon",
@@ -3788,7 +3788,7 @@
     "RateCount": 20,
     "Price": "$14.69",
     "Volume": "",
-    "Description": "Made in the Bourbon Capital of the World since 1879, Kentucky Gentleman is a smooth and classic bourbon whiskey. The southern hospitality of Kentucky Gentleman often includes Kentucky’s finest on the front porch while the sun sets and wind whispers through the trees. This whiskey is meant for relaxing",
+    "Description": "Made in the Bourbon Capital of the World since 1879, Kentucky Gentleman is a smooth and classic bourbon whiskey. The southern hospitality of Kentucky Gentleman often includes Kentucky's finest on the front porch while the sun sets and wind whispers through the trees. This whiskey is meant for relaxing",
     "ImageLink": "images/products/Kentucky Gentleman Bourbon.png"
   },
   {
@@ -3804,7 +3804,7 @@
     "RateCount": 19,
     "Price": "$25.99",
     "Volume": "",
-    "Description": "Fistful of Bourbon is a blend of five straight American bourbons – literally a damn fistful. \n\nCreated by William Grant & Son’s Master Blender Brian Kinsman, who was awarded the 2017 ISC Master Distiller of the Year, and Kelsey McKechnie, William Grant & Son’s Whisk(e)y Blender, who happens to be the world’s youngest female Apprentice Malt Master. After sampling loads of straight bourbons, they landed on five that make up the complex, yet smooth flavor profile they were searching for. \n\nA touch of sweetness, green/leafy/floral, warm spice/nutmeg, buttery toffee, and notes of cinnamon/licorice all blended together to make one bourbon that’s big, balanced and stands apart from all the rest.\n\nNot for nothin’ Fistful was awarded a Double Gold medal at the 2019 International Spirits Challenge (ISC) and a Gold medal at the 2020 San Francisco Spirits Awards. Seems like one mighty fine bourbon ya’ll shouldn’t miss out on!\n\nIT AIN’T JUST A BOURBON. IT’S A DAMN FISTFUL.",
+    "Description": "Fistful of Bourbon is a blend of five straight American bourbons – literally a damn fistful. \n\nCreated by William Grant & Son's Master Blender Brian Kinsman, who was awarded the 2017 ISC Master Distiller of the Year, and Kelsey McKechnie, William Grant & Son's Whisk(e)y Blender, who happens to be the world's youngest female Apprentice Malt Master. After sampling loads of straight bourbons, they landed on five that make up the complex, yet smooth flavor profile they were searching for. \n\nA touch of sweetness, green/leafy/floral, warm spice/nutmeg, buttery toffee, and notes of cinnamon/licorice all blended together to make one bourbon that's big, balanced and stands apart from all the rest.\n\nNot for nothin' Fistful was awarded a Double Gold medal at the 2019 International Spirits Challenge (ISC) and a Gold medal at the 2020 San Francisco Spirits Awards. Seems like one mighty fine bourbon ya'll shouldn't miss out on!\n\nIT AIN'T JUST A BOURBON. IT'S A DAMN FISTFUL.",
     "ImageLink": "images/products/Fistful Of Bourbon.png"
   },
   {
@@ -3852,7 +3852,7 @@
     "RateCount": 24,
     "Price": "$37.99",
     "Volume": "",
-    "Description": "Sip the smooth and complex flavor of J&B Rare Blended Scotch Whisky. At the heart of J&B Rare are malt whiskies from Speyside, a region recognized as the superior area in Scotland for making single malt whisky. With a fruity, fresh quality to its taste, this is what also gives J&B its light color. Added to that are some of the finest grain whiskies Scotland has to offer, helping reveal the individual flavors of the various malts and the smooth character of J&B Rare. Perfect on its own or in a cocktail, mix with cola and pour over ice for a classic drink.\n\nThis spirit brings together 42 single malt and grain whiskies and carefully blends them to create a subtle, smooth and complex flavor. It’s this delicate balance that gives J&B Rare its distinctive character. Please drink responsibly.",
+    "Description": "Sip the smooth and complex flavor of J&B Rare Blended Scotch Whisky. At the heart of J&B Rare are malt whiskies from Speyside, a region recognized as the superior area in Scotland for making single malt whisky. With a fruity, fresh quality to its taste, this is what also gives J&B its light color. Added to that are some of the finest grain whiskies Scotland has to offer, helping reveal the individual flavors of the various malts and the smooth character of J&B Rare. Perfect on its own or in a cocktail, mix with cola and pour over ice for a classic drink.\n\nThis spirit brings together 42 single malt and grain whiskies and carefully blends them to create a subtle, smooth and complex flavor. It's this delicate balance that gives J&B Rare its distinctive character. Please drink responsibly.",
     "ImageLink": "images/products/J&B Rare Blended Scotch.png"
   }
 ]
