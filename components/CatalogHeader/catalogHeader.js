@@ -3,6 +3,8 @@ import { getWhiskeyItemsCount } from '../../services/paginationUtils.js';
 import { getPage } from '../../services/urlSearchParams.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
 
+await initializeWhiskey();
+
 const catalogHeader = () => {
   return `
   <link rel="stylesheet" href="./components/CatalogHeader/catalogHeader.css" />
@@ -15,8 +17,6 @@ const catalogHeader = () => {
 };
 
 $('#catalogHeader').html(catalogHeader());
-
-await initializeWhiskey();
 
 const whiskeyItemsCount = getWhiskeyItemsCount();
 const page = getPage();

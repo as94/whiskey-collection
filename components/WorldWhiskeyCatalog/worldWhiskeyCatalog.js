@@ -7,6 +7,8 @@ import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { changeCategory } from '../../services/urlSearchParams.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 
+await initializeWhiskey();
+
 const getCatalogItems = () => {
   let result = '';
   const categories = getMainCategories();
@@ -54,5 +56,4 @@ const catalog = () => `
 </div>
 `;
 
-await initializeWhiskey();
 $('#world-whiskey-catalog').html(catalog());

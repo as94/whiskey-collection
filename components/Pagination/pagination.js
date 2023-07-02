@@ -6,6 +6,8 @@ import {
   getTotalPagesCount,
 } from '../../services/paginationUtils.js';
 
+await initializeWhiskey();
+
 const getPages = currentPageNumber => {
   const pagesCount = getPagesCount();
   const totalPagesCount = getTotalPagesCount();
@@ -76,7 +78,6 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
   `;
 };
 
-await initializeWhiskey();
 const page = getPage();
 const totalPagesCount = getTotalPagesCount();
 const pagesCount = getPagesCount();

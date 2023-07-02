@@ -1,6 +1,8 @@
 import { getMainCategories } from '../../services/state.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 
+await initializeWhiskey();
+
 const getCategories = () => {
   let result = '';
   const categories = getMainCategories();
@@ -32,5 +34,4 @@ const footer = () => {
   `;
 };
 
-await initializeWhiskey();
 $('#mainFooter').html(footer());

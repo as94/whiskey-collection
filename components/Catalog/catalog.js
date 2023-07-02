@@ -23,6 +23,8 @@ import {
   catalogBySearchResults,
 } from '../../services/routePaths.js';
 
+await initializeWhiskey();
+
 const generateCatalogRows = () => {
   let whiskeyItems = [];
   const route = getRoute();
@@ -116,8 +118,6 @@ const generateCatalogRows = () => {
 
   return result;
 };
-
-await initializeWhiskey();
 
 export const catalog = () => `
 <link rel="stylesheet" href="./components/Catalog/catalog.css" />

@@ -12,6 +12,8 @@ import {
   changeSearchResults,
 } from '../../services/urlSearchParams.js';
 
+await initializeWhiskey();
+
 const generateCountryListItems = selectedCountry => {
   let result = '';
   const countries = getCountries();
@@ -124,8 +126,6 @@ const searchInput = () => {
 </div>
 `;
 };
-
-await initializeWhiskey();
 
 $(document).ready(() => {
   const filters = ['country', 'brand', 'budget'];
