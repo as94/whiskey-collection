@@ -8,7 +8,7 @@ import {
   getSearchText,
 } from '../services/urlSearchParams.js';
 import {
-  catalogByCategory,
+  catalogByCategories,
   catalogBySearchResults,
 } from '../services/routePaths.js';
 
@@ -18,7 +18,7 @@ export const visiblePagesCount = 4;
 export const getWhiskeyItemsCount = () => {
   let whiskeyItems = [];
   const route = getRoute();
-  if (route === catalogByCategory) {
+  if (route === catalogByCategories) {
     const category = getCategory();
     if (category) {
       const whiskeyByCategory = getWhiskeyByCategory();

@@ -1,19 +1,16 @@
 import { nameAsc } from './orderBySettings.js';
 import {
-  catalogByCategory,
+  catalogByCategories,
   catalogBySearchResults,
   main,
 } from './routePaths.js';
 
-const catalogByCategoriesHtml = 'catalogByCategories.html';
-const catalogBySearchResultsHtml = 'catalogBySearchResults.html';
-
 export const getRoute = () => {
   const path = window.location.pathname.slice(1);
-  if (path === catalogByCategoriesHtml) {
-    return catalogByCategory;
+  if (path === catalogByCategories) {
+    return catalogByCategories;
   }
-  if (path === catalogBySearchResultsHtml) {
+  if (path === catalogBySearchResults) {
     return catalogBySearchResults;
   }
   return main;
@@ -22,7 +19,7 @@ export const getRoute = () => {
 export const changeCategory = category => {
   const params = new URLSearchParams(window.location.search);
   params.set('category', category);
-  const newUrl = catalogByCategoriesHtml + '?' + params.toString();
+  const newUrl = catalogByCategories + '?' + params.toString();
   window.location.href = newUrl;
 };
 
@@ -73,7 +70,7 @@ export const changeSearchResults = (country, brand, priceRange, searchText) => {
   params.set('priceRange', priceRange);
   params.set('searchText', searchText);
   params.set('page', 1);
-  const newUrl = catalogBySearchResultsHtml + '?' + params.toString();
+  const newUrl = catalogBySearchResults + '?' + params.toString();
   window.location.href = newUrl;
 };
 

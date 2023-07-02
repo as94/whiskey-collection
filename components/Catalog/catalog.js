@@ -19,7 +19,7 @@ import {
   popularDesc,
 } from '../../services/orderBySettings.js';
 import {
-  catalogByCategory,
+  catalogByCategories,
   catalogBySearchResults,
 } from '../../services/routePaths.js';
 
@@ -28,8 +28,7 @@ await initializeWhiskey();
 const generateCatalogRows = () => {
   let whiskeyItems = [];
   const route = getRoute();
-  console.log('route', route);
-  if (route === catalogByCategory) {
+  if (route === catalogByCategories) {
     const category = getCategory();
     if (category) {
       const whiskeyByCategory = getWhiskeyByCategory();
