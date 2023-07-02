@@ -28,6 +28,7 @@ await initializeWhiskey();
 const generateCatalogRows = () => {
   let whiskeyItems = [];
   const route = getRoute();
+  console.log('route', route);
   if (route === catalogByCategory) {
     const category = getCategory();
     if (category) {
