@@ -8,6 +8,7 @@ import {
   getPriceRange,
   getRoute,
   getSearchText,
+  changeProductCard,
 } from '../../services/urlSearchParams.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
@@ -126,9 +127,10 @@ export const catalog = () => `
 </div>
 `;
 
-$(document).ready(() => {
-  $('.card').click(() => {
-    window.location.href = 'productCard.html';
+$(document).ready(function () {
+  $('.card').click(function () {
+    const productName = $(this).find('.whiskey-name').text().trim();
+    changeProductCard(productName);
   });
 });
 

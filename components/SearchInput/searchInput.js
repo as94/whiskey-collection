@@ -127,7 +127,7 @@ const searchInput = () => {
 `;
 };
 
-$(document).ready(() => {
+$(document).ready(function () {
   const filters = ['country', 'brand', 'budget'];
 
   const root = '.filter-block .dropdown-container';
@@ -163,7 +163,7 @@ $(document).ready(() => {
     }
   });
 
-  $('.search-line .search-clean').click(() => {
+  $('.search-line .search-clean').click(function () {
     $('#search').val('');
   });
 

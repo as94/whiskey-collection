@@ -2,6 +2,7 @@ import { nameAsc } from './orderBySettings.js';
 import {
   catalogByCategories,
   catalogBySearchResults,
+  productCard,
   main,
 } from './routePaths.js';
 
@@ -108,4 +109,17 @@ export const getSearchText = () => {
     return searchText;
   }
   return '';
+};
+
+export const changeProductCard = productName => {
+  const params = new URLSearchParams(window.location.search);
+  params.set('productName', productName);
+  const newUrl = productCard + '?' + params.toString();
+  window.location.href = newUrl;
+};
+
+export const getProductName = () => {
+  const params = new URLSearchParams(window.location.search);
+  const productName = params.get('productName');
+  return productName;
 };

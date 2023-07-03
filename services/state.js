@@ -1,10 +1,11 @@
-import { groupBy } from './utils.js';
+import { groupBy, toDictionary } from './utils.js';
 
 const emptyFilter = 'Any';
 
 const state = {
   whiskey: [],
   whiskeyByCategory: {},
+  whiskeyByName: {},
   mainCategories: [],
   countries: [],
   brands: [],
@@ -14,6 +15,7 @@ const state = {
 export const setWhiskey = whiskey => {
   state.whiskey = whiskey;
   initWhiskeyByCategory(whiskey);
+  initWhiskeyByName(whiskey);
   initCountries(whiskey);
   initBrands(whiskey);
   initBudgetRanges();
@@ -32,6 +34,10 @@ const initWhiskeyByCategory = whiskey => {
     a.localeCompare(b)
   );
   state.mainCategories = categories;
+};
+
+const initWhiskeyByName = whiskey => {
+  state.whiskeyByName = toDictionary(whiskey, 'Name');
 };
 
 const initCountries = whiskey => {
@@ -92,6 +98,7 @@ export const getWhiskeyBy = (country, brand, priceRange, searchText) => {
   return result;
 };
 export const getWhiskeyByCategory = () => state.whiskeyByCategory;
+export const getWhiskeyByName = () => state.whiskeyByName;
 export const getMainCategories = () => state.mainCategories;
 export const getCountries = () => state.countries;
 export const getBrands = () => state.brands;

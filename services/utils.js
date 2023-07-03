@@ -9,6 +9,13 @@ export const groupBy = (data, groupField) => {
   }, {});
 };
 
+export const toDictionary = (array, keyProperty) => {
+  return array.reduce(function (dictionary, obj) {
+    dictionary[obj[keyProperty]] = obj;
+    return dictionary;
+  }, {});
+};
+
 export const getRandomItem = items => {
   if (items.length === 0) {
     return null;

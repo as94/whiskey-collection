@@ -1,3 +1,3 @@
 import { catalog } from './catalog.js';
 
-$('#more-whiskey-catalog').html(catalog(3));
+$('#more-whiskey-catalog').html(catalog());

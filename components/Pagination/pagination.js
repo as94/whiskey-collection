@@ -82,24 +82,24 @@ const page = getPage();
 const totalPagesCount = getTotalPagesCount();
 const pagesCount = getPagesCount();
 
-$(document).ready(() => {
+$(document).ready(function () {
   $('.pagination-block .page').click(function () {
     changePage(Number($(this).attr('id').replace('page-', '')));
   });
 
-  $('.pagination-block .arrow.go-back').click(() => {
+  $('.pagination-block .arrow.go-back').click(function () {
     changePage(page - 1);
   });
 
-  $('.pagination-block .arrow.go-forward').click(() => {
+  $('.pagination-block .arrow.go-forward').click(function () {
     changePage(page + 1);
   });
 
-  $('.pagination-block .arrow.go-first').click(() => {
+  $('.pagination-block .arrow.go-first').click(function () {
     changePage(1);
   });
 
-  $('.pagination-block .arrow.go-last').click(() => {
+  $('.pagination-block .arrow.go-last').click(function () {
     changePage(totalPagesCount);
   });
 });
