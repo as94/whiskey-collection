@@ -26,7 +26,7 @@ import {
 
 await initializeWhiskey();
 
-const generateCatalogRows = () => {
+const getWhiskeyItems = () => {
   let whiskeyItems = [];
   const route = getRoute();
   if (route === catalogByCategories) {
@@ -71,9 +71,13 @@ const generateCatalogRows = () => {
       }
     })
     .slice((page - 1) * whiskeyItemsPerPage, whiskeyItemsPerPage * page);
-  const count = whiskeyItems.length;
+
+  return whiskeyItems;
+};
+
+const generateCatalogRows = whiskeyItems => {
   let result = '';
-  for (let index = 0; index < count; index++) {
+  for (let index = 0; index < whiskeyItems.length; index++) {
     const whiskey = whiskeyItems[index];
     if (index % 2 === 0) {
       result += `<div class="card">
@@ -120,18 +124,23 @@ const generateCatalogRows = () => {
   return result;
 };
 
-export const catalog = () => `
+export const catalog = whiskeyItems => {
+  const result = `
 <link rel="stylesheet" href="./components/Catalog/catalog.css" />
 <div class="catalog">
-  ${generateCatalogRows()}
+  ${generateCatalogRows(whiskeyItems)}
 </div>
 `;
 
-$(document).ready(function () {
-  $('.card').click(function () {
-    const productName = $(this).find('.whiskey-name').text().trim();
-    changeProductCard(productName);
+  $(document).ready(function () {
+    $('.card').click(function () {
+      const productName = $(this).find('.whiskey-name').text().trim();
+      changeProductCard(productName);
+    });
   });
-});
 
-$('#catalog').html(catalog());
+  return result;
+};
+
+const whiskeyItems = getWhiskeyItems();
+$('#catalog').html(catalog(whiskeyItems));

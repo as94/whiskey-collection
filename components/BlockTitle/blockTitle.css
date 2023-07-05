@@ -11,7 +11,7 @@
 
 .line-before::before {
   content: '';
-  width: 400px;
+  width: 35%;
   border-top: 1px solid var(--primary-brown);
   margin-right: 64px;
 }
@@ -28,7 +28,7 @@
 
 .line-after::after {
   content: '';
-  width: 400px;
+  width: 35%;
   border-top: 1px solid var(--primary-light-green);
   margin-left: 64px;
 }

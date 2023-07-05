@@ -6,6 +6,7 @@ const state = {
   whiskey: [],
   whiskeyByCategory: {},
   whiskeyByName: {},
+  whiskeyByBrand: {},
   mainCategories: [],
   countries: [],
   brands: [],
@@ -16,6 +17,7 @@ export const setWhiskey = whiskey => {
   state.whiskey = whiskey;
   initWhiskeyByCategory(whiskey);
   initWhiskeyByName(whiskey);
+  initWhiskeyByBrand(whiskey);
   initCountries(whiskey);
   initBrands(whiskey);
   initBudgetRanges();
@@ -38,6 +40,10 @@ const initWhiskeyByCategory = whiskey => {
 
 const initWhiskeyByName = whiskey => {
   state.whiskeyByName = toDictionary(whiskey, 'Name');
+};
+
+const initWhiskeyByBrand = whiskey => {
+  state.whiskeyByBrand = groupBy(whiskey, 'Brand');
 };
 
 const initCountries = whiskey => {
@@ -99,6 +105,7 @@ export const getWhiskeyBy = (country, brand, priceRange, searchText) => {
 };
 export const getWhiskeyByCategory = () => state.whiskeyByCategory;
 export const getWhiskeyByName = () => state.whiskeyByName;
+export const getWhiskeyByBrand = () => state.whiskeyByBrand;
 export const getMainCategories = () => state.mainCategories;
 export const getCountries = () => state.countries;
 export const getBrands = () => state.brands;

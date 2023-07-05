@@ -1,20 +1,19 @@
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getWhiskeyByName } from '../../services/state.js';
 import { getProductName } from '../../services/urlSearchParams.js';
+import { emptyElement } from '../../services/emptyElement.js';
 
 await initializeWhiskey();
-
-const emptyCard = '<div class="product-card"></div>';
 
 const productCard = () => {
   const productName = getProductName();
   if (!productName) {
-    return emptyCard;
+    return emptyElement;
   }
   const whiskeyByName = getWhiskeyByName();
   const product = whiskeyByName[productName];
   if (!product) {
-    return emptyCard;
+    return emptyElement;
   }
   return `
 <link rel="stylesheet" href="./components/ProductCard/productCard.css" />
