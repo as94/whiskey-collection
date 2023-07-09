@@ -1,3 +1,10 @@
+import {
+  getRoute,
+  getProductName,
+  getCategory,
+} from '../../services/urlSearchParams.js';
+import { main } from '../../services/routePaths.js';
+
 const getItems = items => {
   let result = '';
   for (let index = 0; index < items.length; index++) {
@@ -13,9 +20,23 @@ const getItems = items => {
   return result;
 };
 
-export const breadcrumbs = items => `
+const breadcrumbs = () => {
+  const items = ['Home'];
+  const route = getRoute();
+  if (route !== main) {
+    items.push(getCategory() ?? 'Search Results');
+    const productName = getProductName();
+    if (productName) {
+      items.push(productName);
+    }
+  }
+
+  return `
 <link rel="stylesheet" href="./components/Breadcrumbs/breadcrumbs.css" />
 <div class="breadcrumbs">
     ${getItems(items)}
 </div>
 `;
+};
+
+$('#breadcrumbs').html(breadcrumbs());

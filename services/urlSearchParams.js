@@ -14,6 +14,9 @@ export const getRoute = () => {
   if (path === catalogBySearchResults) {
     return catalogBySearchResults;
   }
+  if (path === productCard) {
+    return productCard;
+  }
   return main;
 };
 
