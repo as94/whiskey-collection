@@ -17,10 +17,34 @@ export const getRoute = () => {
   return main;
 };
 
+const clearParams = params => {
+  const keys = [];
+  for (const key of params.keys()) {
+    keys.push(key);
+  }
+  for (let index = 0; index < keys.length; index++) {
+    const key = keys[index];
+    params.delete(key);
+  }
+};
+
 export const changeCategory = category => {
   const params = new URLSearchParams(window.location.search);
+  clearParams(params);
   params.set('category', category);
   const newUrl = catalogByCategories + '?' + params.toString();
+  window.location.href = newUrl;
+};
+
+export const changeSearchResults = (country, brand, priceRange, searchText) => {
+  const params = new URLSearchParams(window.location.search);
+  clearParams(params);
+  params.set('country', country);
+  params.set('brand', brand);
+  params.set('priceRange', priceRange);
+  params.set('searchText', searchText);
+  params.set('page', 1);
+  const newUrl = catalogBySearchResults + '?' + params.toString();
   window.location.href = newUrl;
 };
 
@@ -61,17 +85,6 @@ export const changeOrderBy = orderBy => {
   params.set('page', 1);
   const newUrl =
     window.location.pathname + '?' + params.toString() + '#catalog-result';
-  window.location.href = newUrl;
-};
-
-export const changeSearchResults = (country, brand, priceRange, searchText) => {
-  const params = new URLSearchParams(window.location.search);
-  params.set('country', country);
-  params.set('brand', brand);
-  params.set('priceRange', priceRange);
-  params.set('searchText', searchText);
-  params.set('page', 1);
-  const newUrl = catalogBySearchResults + '?' + params.toString();
   window.location.href = newUrl;
 };
 
