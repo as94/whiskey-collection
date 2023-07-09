@@ -1,5 +1,6 @@
 import { getMainCategories } from '../../services/state.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
+import { changeCategory } from '../../services/urlSearchParams.js';
 
 await initializeWhiskey();
 
@@ -10,9 +11,7 @@ const getCategories = () => {
   for (let index = 0; index < categories.length; index++) {
     const category = categories[index];
     result += `<div class="footer-menu-item body-text-16">
-      <a href="/" class="footer-link">
-        ${category}
-      </a>
+      <div class="footer-link">${category}</div>
     </div>`;
   }
 
@@ -33,5 +32,11 @@ const footer = () => {
   </div>
   `;
 };
+
+$(document).on('click', '.footer-link', function () {
+  const category = $(this).text();
+
+  changeCategory(category);
+});
 
 $('#mainFooter').html(footer());
