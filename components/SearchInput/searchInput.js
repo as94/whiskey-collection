@@ -9,7 +9,7 @@ import {
   getBrand,
   getPriceRange,
   getSearchText,
-  changeSearchResults,
+  goToCatalogBySearchResults,
 } from '../../services/urlSearchParams.js';
 
 await initializeWhiskey();
@@ -173,7 +173,7 @@ $(document).ready(function () {
     const budget = $('#selected-budget').text();
     const searchText = $('#search').val();
 
-    changeSearchResults(country, brand, budget, searchText);
+    goToCatalogBySearchResults(country, brand, budget, searchText);
   };
 
   $('#search').keypress(function (event) {

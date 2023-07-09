@@ -20,48 +20,9 @@ export const getRoute = () => {
   return main;
 };
 
-const clearParams = params => {
-  const keys = [];
-  for (const key of params.keys()) {
-    keys.push(key);
-  }
-  for (let index = 0; index < keys.length; index++) {
-    const key = keys[index];
-    params.delete(key);
-  }
-};
-
-export const changeCategory = category => {
-  const params = new URLSearchParams(window.location.search);
-  clearParams(params);
-  params.set('category', category);
-  const newUrl = catalogByCategories + '?' + params.toString();
-  window.location.href = newUrl;
-};
-
-export const changeSearchResults = (country, brand, priceRange, searchText) => {
-  const params = new URLSearchParams(window.location.search);
-  clearParams(params);
-  params.set('country', country);
-  params.set('brand', brand);
-  params.set('priceRange', priceRange);
-  params.set('searchText', searchText);
-  params.set('page', 1);
-  const newUrl = catalogBySearchResults + '?' + params.toString();
-  window.location.href = newUrl;
-};
-
 export const getCategory = () => {
   const params = new URLSearchParams(window.location.search);
   return params.get('category');
-};
-
-export const changePage = page => {
-  const params = new URLSearchParams(window.location.search);
-  params.set('page', page);
-  const newUrl =
-    window.location.pathname + '?' + params.toString() + '#catalog-result';
-  window.location.href = newUrl;
 };
 
 export const getPage = () => {
@@ -80,15 +41,6 @@ export const getOrderBy = () => {
     return orderBy;
   }
   return nameAsc;
-};
-
-export const changeOrderBy = orderBy => {
-  const params = new URLSearchParams(window.location.search);
-  params.set('orderBy', orderBy);
-  params.set('page', 1);
-  const newUrl =
-    window.location.pathname + '?' + params.toString() + '#catalog-result';
-  window.location.href = newUrl;
 };
 
 export const getCountry = () => {
@@ -127,15 +79,72 @@ export const getSearchText = () => {
   return '';
 };
 
-export const changeProductCard = productName => {
+export const getProductName = () => {
+  const params = new URLSearchParams(window.location.search);
+  const productName = params.get('productName');
+  return productName;
+};
+
+const clearParams = params => {
+  const keys = [];
+  for (const key of params.keys()) {
+    keys.push(key);
+  }
+  for (let index = 0; index < keys.length; index++) {
+    const key = keys[index];
+    params.delete(key);
+  }
+};
+
+export const goBack = (depth = 1) => {
+  window.history.go(-depth);
+};
+
+export const goToCatalogByCategories = category => {
+  const params = new URLSearchParams(window.location.search);
+  clearParams(params);
+  params.set('category', category);
+  const newUrl = catalogByCategories + '?' + params.toString();
+  window.location.href = newUrl;
+};
+
+export const goToCatalogBySearchResults = (
+  country,
+  brand,
+  priceRange,
+  searchText
+) => {
+  const params = new URLSearchParams(window.location.search);
+  clearParams(params);
+  params.set('country', country);
+  params.set('brand', brand);
+  params.set('priceRange', priceRange);
+  params.set('searchText', searchText);
+  params.set('page', 1);
+  const newUrl = catalogBySearchResults + '?' + params.toString();
+  window.location.href = newUrl;
+};
+
+export const goToProductCard = productName => {
   const params = new URLSearchParams(window.location.search);
   params.set('productName', productName);
   const newUrl = productCard + '?' + params.toString();
   window.location.href = newUrl;
 };
 
-export const getProductName = () => {
+export const changePage = page => {
   const params = new URLSearchParams(window.location.search);
-  const productName = params.get('productName');
-  return productName;
+  params.set('page', page);
+  const newUrl =
+    window.location.pathname + '?' + params.toString() + '#catalog-result';
+  window.location.href = newUrl;
+};
+
+export const changeOrderBy = orderBy => {
+  const params = new URLSearchParams(window.location.search);
+  params.set('orderBy', orderBy);
+  params.set('page', 1);
+  const newUrl =
+    window.location.pathname + '?' + params.toString() + '#catalog-result';
+  window.location.href = newUrl;
 };

@@ -1,6 +1,6 @@
 import { getMainCategories } from '../../services/state.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { changeCategory } from '../../services/urlSearchParams.js';
+import { goToCatalogByCategories } from '../../services/urlSearchParams.js';
 
 await initializeWhiskey();
 
@@ -36,7 +36,7 @@ const footer = () => {
 $(document).on('click', '.footer-link', function () {
   const category = $(this).text();
 
-  changeCategory(category);
+  goToCatalogByCategories(category);
 });
 
 $('#mainFooter').html(footer());

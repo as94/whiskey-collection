@@ -4,7 +4,7 @@ import {
 } from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { changeCategory } from '../../services/urlSearchParams.js';
+import { goToCatalogByCategories } from '../../services/urlSearchParams.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 
 await initializeWhiskey();
@@ -46,7 +46,7 @@ const getCatalogItems = () => {
 
 $(document).on('click', '.card', function () {
   const category = $(this).data('whiskey-category');
-  changeCategory(category);
+  goToCatalogByCategories(category);
 });
 
 const catalog = () => `

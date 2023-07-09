@@ -4,7 +4,7 @@ import {
 } from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { changeCategory } from '../../services/urlSearchParams.js';
+import { goToCatalogByCategories } from '../../services/urlSearchParams.js';
 
 const nextSlide = () => {
   const currentSlide = $('.active');
@@ -94,7 +94,7 @@ const top5RatedWhiskey = whiskey
   .slice(0, 5);
 
 $(document).on('click', '.catalog-btn', function () {
-  changeCategory(category);
+  goToCatalogByCategories(category);
 });
 
 $('#thumbnail').html(thumbnail(category, whiskey[0].Country, top5RatedWhiskey));

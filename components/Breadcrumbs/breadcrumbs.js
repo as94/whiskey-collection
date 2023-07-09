@@ -2,20 +2,23 @@ import {
   getRoute,
   getProductName,
   getCategory,
+  goBack,
 } from '../../services/urlSearchParams.js';
-import { main } from '../../services/routePaths.js';
+import {
+  main,
+  productCard,
+  catalogByCategories,
+  catalogBySearchResults,
+} from '../../services/routePaths.js';
 
 const getItems = items => {
   let result = '';
   for (let index = 0; index < items.length; index++) {
     const item = items[index];
-    result +=
-      index === items.length - 1
-        ? `<span class="item body-text-16">${item}</span>`
-        : `
-    <span class="item body-text-16">${item}</span>
-    <img class="chevron" src="icons/chevron-right.svg" />
-`;
+    result += `<span class="item body-text-16" index=${index}>${item}</span>`;
+    if (index !== items.length - 1) {
+      result += `<img class="chevron" src="icons/chevron-right.svg" />`;
+    }
   }
   return result;
 };
@@ -38,5 +41,22 @@ const breadcrumbs = () => {
 </div>
 `;
 };
+
+$(document).on('click', '.breadcrumbs .item', function () {
+  const route = getRoute();
+  const index = parseInt($(this).attr('index'));
+  if (route === productCard) {
+    if (index === 1) {
+      goBack();
+    } else if (index === 0) {
+      goBack(2);
+    }
+  } else if (
+    route === catalogByCategories ||
+    route === catalogBySearchResults
+  ) {
+    goBack();
+  }
+});
 
 $('#breadcrumbs').html(breadcrumbs());

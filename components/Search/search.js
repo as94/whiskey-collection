@@ -5,7 +5,7 @@ import {
   getBrands,
   getBudgetRanges,
 } from '../../services/state.js';
-import { changeSearchResults } from '../../services/urlSearchParams.js';
+import { goToCatalogBySearchResults } from '../../services/urlSearchParams.js';
 
 const generateCountryListItems = () => {
   let result = '';
@@ -153,7 +153,7 @@ $(document).ready(function () {
     const budget = $('#selected-budget').text();
     const searchText = $('#search').val();
 
-    changeSearchResults(country, brand, budget, searchText);
+    goToCatalogBySearchResults(country, brand, budget, searchText);
   };
 
   $('#search').keypress(function (event) {
