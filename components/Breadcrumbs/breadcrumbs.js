@@ -3,6 +3,7 @@ import {
   getProductName,
   getCategory,
   goBack,
+  goToMain,
 } from '../../services/urlSearchParams.js';
 import {
   main,
@@ -49,13 +50,13 @@ $(document).on('click', '.breadcrumbs .item', function () {
     if (index === 1) {
       goBack();
     } else if (index === 0) {
-      goBack(2);
+      goToMain();
     }
   } else if (
     route === catalogByCategories ||
     route === catalogBySearchResults
   ) {
-    goBack();
+    goToMain();
   }
 });
 

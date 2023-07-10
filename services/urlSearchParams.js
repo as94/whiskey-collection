@@ -96,8 +96,12 @@ const clearParams = params => {
   }
 };
 
-export const goBack = (depth = 1) => {
-  window.history.go(-depth);
+export const goToMain = () => {
+  window.location.href = main;
+};
+
+export const goBack = () => {
+  window.history.go(-1);
 };
 
 export const goToCatalogByCategories = category => {
