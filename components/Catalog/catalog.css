@@ -64,7 +64,7 @@
   position: relative;
 }
 
-.background-image {
+.catalog .background-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -73,13 +73,13 @@
   object-fit: cover;
 }
 
-.foreground-image {
+.catalog .foreground-image {
   position: absolute;
-  width: 80%;
-  height: 90%;
+  max-width: 300px;
+  max-height: 300px;
   object-fit: cover;
 }
 
-.foreground-image {
+.catalog .foreground-image {
   z-index: 1;
 }

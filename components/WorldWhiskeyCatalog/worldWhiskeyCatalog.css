@@ -92,13 +92,14 @@
   object-fit: cover;
 }
 
-.foreground-image {
+.catalog .foreground-image {
   position: absolute;
-  height: 85%;
+  max-width: 300px;
+  max-height: 300px;
   object-fit: cover;
 }
 
-.foreground-image {
+.catalog .foreground-image {
   z-index: 1;
 }
 

@@ -18,7 +18,9 @@ const moreWhiskey = () => {
     return emptyElement;
   }
   const whiskeyByBrand = getWhiskeyByBrand()
-    [product.Brand].filter(x => x.Name !== productName)
+    [product.Brand].filter(
+      x => x.Name !== productName && x.Categories === product.Categories
+    )
     .sort((a, b) => a.Name.localeCompare(b.Name));
   if (!whiskeyByBrand || whiskeyByBrand.length === 0) {
     return emptyElement;

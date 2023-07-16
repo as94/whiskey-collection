@@ -24,7 +24,7 @@
   position: relative;
 }
 
-.background-image {
+.product-card .background-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,14 +33,14 @@
   object-fit: cover;
 }
 
-.foreground-image {
+.product-card .foreground-image {
   position: absolute;
-  width: 60%;
-  height: 90%;
+  max-width: 450px;
+  max-height: 500px;
   object-fit: cover;
 }
 
-.foreground-image {
+.product-card .foreground-image {
   z-index: 1;
 }
 
