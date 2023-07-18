@@ -97,7 +97,9 @@ export const getWhiskeyBy = (country, brand, priceRange, searchText) => {
 
   if (searchText && searchText !== '') {
     result = result.filter(x =>
-      x.Name.toLowerCase().includes(searchText.toLowerCase())
+      x.Name.toLowerCase()
+        .replace(/["'’]/g, '')
+        .includes(searchText.toLowerCase().replace(/["'’]/g, ''))
     );
   }
 

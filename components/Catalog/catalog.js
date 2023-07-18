@@ -36,6 +36,7 @@ const getWhiskeyItems = () => {
       whiskeyItems = whiskeyByCategory[category];
     }
   }
+
   if (route === catalogBySearchResults) {
     const country = getCountry();
     const brand = getBrand();
@@ -44,6 +45,7 @@ const getWhiskeyItems = () => {
 
     whiskeyItems = getWhiskeyBy(country, brand, priceRange, searchText);
   }
+
   const page = getPage();
   const orderBy = getOrderBy();
   whiskeyItems = whiskeyItems
