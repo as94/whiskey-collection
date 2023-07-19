@@ -116,12 +116,9 @@ const generateCatalogRows = whiskeyItems => {
     }
   }
 
-  // TODO: rewrite, fill empty space with dummy pictures
-  // if (count % 3 !== 0) {
-  //   result += `<div class="card">
-  //     <img src="images/atmosphere-1.jpg" />
-  //   </div>`;
-  // }
+  if (whiskeyItems.length % 3 === 2) {
+    result += `<div class="empty-block"></div>`;
+  }
 
   return result;
 };

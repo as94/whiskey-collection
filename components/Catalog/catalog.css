@@ -17,6 +17,12 @@
   cursor: pointer;
 }
 
+.catalog .empty-block {
+  width: 32%;
+  display: flex;
+  margin-bottom: 2%;
+}
+
 .catalog .card:nth-child(even) {
   background-color: var(--primary-brown);
 }
@@ -24,16 +30,6 @@
 .catalog .card:nth-child(odd) {
   background-color: var(--primary-light-green);
 }
-
-/* .catalog .card:nth-child(even):last-child {
-  padding: 0;
-}
-
-.catalog .card:nth-child(even):last-child img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 .catalog .card:nth-child(odd):hover .whiskey-name,
 .catalog .card:nth-child(odd):hover .whiskey-characteristics {
