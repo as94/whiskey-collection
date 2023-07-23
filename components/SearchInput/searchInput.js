@@ -64,12 +64,12 @@ const searchInput = () => {
   <div class="search-parameters">
     <div class="filters">
       <div class="filter-block">
-        <label class="body-text-20">
+        <label class="body-semibold-20">
           What country?
         </label>
         <div class="dropdown-container">
           <div class="selected-item country">
-            <span id="selected-country" class="body-text-16">${country}</span>
+            <span id="selected-country" class="body-medium-16">${country}</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
               <div class="open"></div>
@@ -81,12 +81,12 @@ const searchInput = () => {
         </div>
       </div>
       <div class="filter-block">
-        <label class="body-text-20">
+        <label class="body-semibold-20">
           What brand?
         </label>
         <div class="dropdown-container">
           <div class="selected-item brand">
-            <span id="selected-brand" class="body-text-16">${brand}</span>
+            <span id="selected-brand" class="body-medium-16">${brand}</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
               <div class="open"></div>
@@ -98,12 +98,12 @@ const searchInput = () => {
         </div>
       </div>
       <div class="filter-block">
-        <label class="body-text-20">
+        <label class="body-semibold-20">
           What budget?
         </label>
         <div class="dropdown-container">
           <div class="selected-item budget">
-            <span id="selected-budget" class="body-text-16">${priceRange}</span>
+            <span id="selected-budget" class="body-medium-16">${priceRange}</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
               <div class="open"></div>
@@ -117,11 +117,11 @@ const searchInput = () => {
     </div>
     <div class="search-line">
       <img class="search-icon" src="icons/search.svg" />
-      <input id="search" type="text" placeholder="Search whiskey" class="body-text-16" value="${searchText}" />
+      <input id="search" type="text" placeholder="Search whiskey" class="body-medium-16" value="${searchText}" />
       <div class="search-clean"></div>
     </div>
 
-    <button class="find-again-btn body-text-18">Find again</button>
+    <button class="find-again-btn body-semibold-20">Find again</button>
   </div>
 </div>
 `;

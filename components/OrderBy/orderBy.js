@@ -53,7 +53,7 @@ const orderBy = () => {
   <div>
     <div class="dropdown-container">
       <div class="selected-item sorting-field">
-        <span id="selected-sorting-field" class="body-text-16">
+        <span id="selected-sorting-field" class="body-semibold-16">
           ${selected}
         </span>
         <img src="icons/chevron.svg" />

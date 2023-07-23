@@ -154,6 +154,6 @@
 }
 
 .find-btn:hover {
-  background-color: var(--btn-hover-green);
+  background-color: var(--btn-green-dark);
   cursor: pointer;
 }

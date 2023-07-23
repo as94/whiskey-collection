@@ -9,14 +9,14 @@
 .category-description .category-image {
   height: 300px;
   padding-left: 115px;
-  padding-right: 45px;
+  padding-right: 110px;
 }
 
 .category-description .description {
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
-  padding-right: 70px;
+  padding-top: 50px;
+  width: 50%;
 }
 
 .category-description .description .title {

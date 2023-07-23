@@ -9,7 +9,7 @@ const catalogHeader = () => {
   return `
   <link rel="stylesheet" href="./components/CatalogHeader/catalogHeader.css" />
   <div class="catalog-header">
-    <div id="catalog-result" class="result-label body-text-18">
+    <div id="catalog-result" class="result-label body-medium-18">
       Showing: 0 out of 0
     </div>
     <div id="orderBy" class="order-by"></div>

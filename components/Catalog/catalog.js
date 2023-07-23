@@ -90,10 +90,10 @@ const generateCatalogRows = whiskeyItems => {
         />
         <img class="foreground-image" src="${whiskey.ImageLink}" />
       </div>
-      <div class="whiskey-name body-text-18">
+      <div class="whiskey-name body-semibold-18">
         ${whiskey.Name}
       </div>
-      <div class="whiskey-characteristics body-text-18">${
+      <div class="whiskey-characteristics body-regular-18">${
         whiskey.ABV ? `${whiskey.ABV} / ${whiskey.Price}` : `${whiskey.Price}`
       }</div>
     </div>`;
@@ -106,10 +106,10 @@ const generateCatalogRows = whiskeyItems => {
         />
         <img class="foreground-image" src="${whiskey.ImageLink}" />
       </div>
-      <div class="whiskey-name body-text-18">
+      <div class="whiskey-name body-semibold-18">
         ${whiskey.Name}
       </div>
-      <div class="whiskey-characteristics body-text-18">${
+      <div class="whiskey-characteristics body-regular-18">${
         whiskey.ABV ? `${whiskey.ABV} / ${whiskey.Price}` : `${whiskey.Price}`
       }</div>
     </div>`;

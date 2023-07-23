@@ -8,10 +8,10 @@ const categoryDescription = () => {
 <div class="category-description">
   <img class="category-image" src="images/atmosphere-2.jpg" />
   <div class="description">
-    <div class="title h-2">${category.toUpperCase()}</div>
-    <div class="text body-text-18">
+    <h3 class="title h3-bold-32">${category.toUpperCase()}</h3>
+    <p class="text body-medium-18">
       ${whiskeyCategoryDescriptions[category]}
-    </div>
+    </p>
   </div>
 </div>
 `;

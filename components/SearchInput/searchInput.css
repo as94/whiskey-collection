@@ -128,7 +128,7 @@
 }
 
 .search-line input[type='text']::placeholder {
-  color: var(--text-brown-light);
+  color: var(--text-brown-medium);
 }
 
 .search-line input[type='text']:hover {
@@ -165,6 +165,6 @@
 }
 
 .find-again-btn:hover {
-  background-color: var(--btn-hover-green);
+  background-color: var(--btn-green-dark);
   cursor: pointer;
 }

@@ -10,7 +10,7 @@ const getCategories = () => {
 
   for (let index = 0; index < categories.length; index++) {
     const category = categories[index];
-    result += `<div class="footer-menu-item body-text-16">
+    result += `<div class="footer-menu-item body-semibold-16">
       <div class="footer-link">${category}</div>
     </div>`;
   }

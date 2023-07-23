@@ -31,69 +31,70 @@ const productCard = () => {
     </div>
   </div>
   <div class="right-side">
-    <div class="h-3 product-card-header">${productName}</div>
+    <h3 class="h3-bold-32 product-card-header">${productName}</h3>
+    <div class="line"></div>
     <div class="characteristic-list">
       ${
         product.Country &&
         `<div class="characteristic">
-            <span class="body-text-18">Country: </span>
-            <span class="body-text-18">${product.Country}</span>
+            <span class="body-semibold-16">Country: </span>
+            <span class="body-medium-16">${product.Country}</span>
         </div>`
       }
 
       ${
         product.Brand &&
         `<div class="characteristic">
-            <span class="body-text-18">Brand: </span>
-            <span class="body-text-18">${product.Brand}</span>
+            <span class="body-semibold-16">Brand: </span>
+            <span class="body-medium-16">${product.Brand}</span>
         </div>`
       }
 
       ${
         product.Categories &&
         `<div class="characteristic">
-            <span class="body-text-18">Category: </span>
-            <span class="body-text-18">${product.Categories}</span>
+            <span class="body-semibold-16">Category: </span>
+            <span class="body-medium-16">${product.Categories}</span>
         </div>`
       }
 
       ${
         product.TastingNotes &&
         `<div class="characteristic">
-            <span class="body-text-18">Tasting Notes: </span>
-            <span class="body-text-18">${product.TastingNotes}</span>
+            <span class="body-semibold-16">Tasting Notes: </span>
+            <span class="body-medium-16">${product.TastingNotes}</span>
         </div>`
       }
 
       ${
         product.YearsAged &&
         `<div class="characteristic">
-            <span class="body-text-18">Age: </span>
-            <span class="body-text-18">${product.YearsAged}</span>
+            <span class="body-semibold-16">Age: </span>
+            <span class="body-medium-16">${product.YearsAged}</span>
         </div>`
       }
 
       ${
         product.ABV &&
         `<div class="characteristic">
-            <span class="body-text-18">ABV: </span>
-            <span class="body-text-18">${product.ABV}</span>
+            <span class="body-semibold-16">ABV: </span>
+            <span class="body-medium-16">${product.ABV}</span>
         </div>`
       }
 
       ${
         product.Volume &&
         `<div class="characteristic">
-            <span class="body-text-18">Volume: </span>
-            <span class="body-text-18">${product.Volume}</span>
+            <span class="body-semibold-16">Volume: </span>
+            <span class="body-medium-16">${product.Volume}</span>
         </div>`
       }
 
       ${
         product.Price &&
         `<div class="characteristic">
-            <span class="body-text-18">Average price: </span>
-            <span class="body-text-18">${product.Price}</span>
+            <span class="body-semibold-16">Average price: </span>
+            <span class="body-medium-16">${product.Price}</span>
         </div>`
       }
     </div>
@@ -101,7 +102,7 @@ const productCard = () => {
     ${
       product.Description &&
       `<div class="line"></div>
-    <div class="description body-text-16">${product.Description}</div>`
+    <p class="description body-medium-16">${product.Description}</p>`
     }
   </div>
 </div>

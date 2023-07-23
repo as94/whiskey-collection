@@ -7,11 +7,11 @@
 
 .breadcrumbs .item {
   padding-top: 5px;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .breadcrumbs .chevron {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .breadcrumbs .item:hover {
