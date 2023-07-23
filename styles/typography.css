@@ -1,7 +1,7 @@
 .h1-bold-48 {
   font-size: 48px;
   font-weight: 700;
-  line-height: 140%;
+  line-height: 140%; /* 67.2px */
   letter-spacing: 2.16px;
   text-transform: uppercase;
 }
@@ -9,14 +9,14 @@
 .h3-bold-32 {
   font-size: 32px;
   font-weight: 700;
-  line-height: 140%;
+  line-height: 140%; /* 44.8px */
   letter-spacing: 1.44px;
 }
 
 .h4-semibold-28 {
   font-size: 28px;
   font-weight: 600;
-  line-height: 140%;
+  line-height: 140%; /* 39.2px */
   letter-spacing: 1.26px;
 }
 
