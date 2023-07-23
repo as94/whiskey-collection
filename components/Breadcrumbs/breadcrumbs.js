@@ -16,7 +16,7 @@ const getItems = items => {
   let result = '';
   for (let index = 0; index < items.length; index++) {
     const item = items[index];
-    result += `<span class="item body-semibold-18" index=${index}>${item}</span>`;
+    result += `<span class="item body-semibold-large" index=${index}>${item}</span>`;
     if (index !== items.length - 1) {
       result += `<img class="chevron" src="icons/chevron-right.svg" />`;
     }

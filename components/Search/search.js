@@ -42,12 +42,12 @@ const search = () => {
   <div class="search-parameters">
     <div class="filters">
       <div class="filter-block">
-        <label class="body-semibold-20">
+        <label class="body-semibold-extra">
           What country?
         </label>
         <div class="dropdown-container">
           <div class="selected-item country">
-            <span id="selected-country" class="body-medium-16">Any</span>
+            <span id="selected-country" class="body-medium">Any</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
               <div class="open"></div>
@@ -59,12 +59,12 @@ const search = () => {
         </div>
       </div>
       <div class="filter-block">
-        <label class="body-semibold-20">
+        <label class="body-semibold-extra">
           What brand?
         </label>
         <div class="dropdown-container">
           <div class="selected-item brand">
-            <span id="selected-brand" class="body-medium-16">Any</span>
+            <span id="selected-brand" class="body-medium">Any</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
               <div class="open"></div>
@@ -76,12 +76,12 @@ const search = () => {
         </div>
       </div>
       <div class="filter-block">
-        <label class="body-semibold-20">
+        <label class="body-semibold-extra">
           What budget?
         </label>
         <div class="dropdown-container">
           <div class="selected-item budget">
-            <span id="selected-budget" class="body-medium-16">Any</span>
+            <span id="selected-budget" class="body-medium">Any</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
               <div class="open"></div>
@@ -95,11 +95,11 @@ const search = () => {
     </div>
     <div class="search-line">
       <img class="search-icon" src="icons/search.svg" />
-      <input id="search" type="text" placeholder="Search whiskey" class="body-medium-16" />
+      <input id="search" type="text" placeholder="Search whiskey" class="body-medium" />
       <div class="search-clean"></div>
     </div>
 
-    <button class="find-btn body-semibold-20">Find</button>
+    <button class="find-btn body-semibold-extra">Find</button>
   </div>
 </div>
 `;

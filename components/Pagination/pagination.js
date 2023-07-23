@@ -17,7 +17,7 @@ const getPages = currentPageNumber => {
 
   let result = '';
   for (let id = start; id <= end; id++) {
-    result += `<div id='page-${id}' class="page body-semibold-20">${id}</div>`;
+    result += `<div id='page-${id}' class="page body-semibold-extra">${id}</div>`;
   }
   return result;
 };
