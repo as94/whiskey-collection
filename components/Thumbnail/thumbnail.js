@@ -49,14 +49,14 @@ const thumbnail = (category, country, topRatedWhiskey) => `
 <link rel="stylesheet" href="./components/Thumbnail/thumbnail.css" />
 <div class="thumbnail">
   <div class="column">
-    <h4 class="usp-text h3-semibold-28">
+    <h4 class="usp-text h4-semibold-28">
       We have collected the most popular whiskey here. You can use it free and
       begin with
     </h4>
   </div>
   <div class="column middle">
     <div class="usp-product">
-      <h3 class="first-row h2-bold-32 ">${category}</h3>
+      <h3 class="first-row h3-bold-32">${category}</h3>
       <h1 class="second-row h1-bold-48">${country.toUpperCase()}</h1>
       <h1 class="third-row h1-bold-48">Whiskey</h1>
       <div class="fourth-row">
