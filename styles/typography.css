@@ -1,7 +1,7 @@
 .h1-bold-48 {
   font-size: 48px;
   font-weight: 700;
-  line-height: 140%; /* 67.2px */
+  line-height: 140%;
   letter-spacing: 2.16px;
   text-transform: uppercase;
 }
@@ -9,49 +9,49 @@
 .h2-bold-36 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 140%; /* 50.4px */
+  line-height: 140%;
   letter-spacing: 1.62px;
 }
 
 .h2-semibold-36 {
   font-size: 36px;
   font-weight: 600;
-  line-height: 140%; /* 50.4px */
+  line-height: 140%;
   letter-spacing: 1.62px;
 }
 
 .h3-bold-32 {
   font-size: 32px;
   font-weight: 700;
-  line-height: 140%; /* 44.8px */
+  line-height: 140%;
   letter-spacing: 1.44px;
 }
 
 .h4-bold-28 {
   font-size: 28px;
   font-weight: 700;
-  line-height: 140%; /* 39.2px */
+  line-height: 140%;
   letter-spacing: 1.26px;
 }
 
 .h4-semibold-28 {
   font-size: 28px;
   font-weight: 600;
-  line-height: 140%; /* 39.2px */
+  line-height: 140%;
   letter-spacing: 1.26px;
 }
 
 .h5-bold-24 {
   font-size: 24px;
   font-weight: 700;
-  line-height: 140%; /* 33.6px */
+  line-height: 140%;
   letter-spacing: 1.08px;
 }
 
 .h5-semibold-24 {
   font-size: 24px;
   font-weight: 600;
-  line-height: 140%; /* 33.6px */
+  line-height: 140%;
   letter-spacing: 1.08px;
 }
 
