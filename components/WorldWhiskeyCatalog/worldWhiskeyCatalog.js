@@ -18,7 +18,7 @@ const getCatalogItems = () => {
     const whiskey = getRandomItem(whiskeyByCategory[category]);
 
     result += `<div class="card" data-whiskey-category="${category}">
-        <h4 class="category-name h4-semibold-28">${category}</h4>
+        <h4 class="category-name h3-semibold-28">${category}</h4>
         <div class="category-link-container">
         <a class="category-link body-semibold-14">
             Discover more
