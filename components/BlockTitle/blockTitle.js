@@ -1,10 +1,10 @@
 const blockTitle = (firstRow, secondRow) => `
 <link rel="stylesheet" href="./components/BlockTitle/blockTitle.css" />
 <div class="block-title">
-  <h3 class="first-row h2 line-before">
+  <h2 class="first-row h2 line-before">
     <span>${firstRow}</span>
-  </h3>
-  <h3 class="second-row h2 line-after">${secondRow}</h3>
+  </h2>
+  <h2 class="second-row h2 line-after">${secondRow}</h2>
 </div>
 `;
 

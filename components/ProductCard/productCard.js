@@ -31,7 +31,7 @@ const productCard = () => {
     </div>
   </div>
   <div class="right-side">
-    <h3 class="h2 product-card-header">${productName}</h3>
+    <h2 class="h2 product-card-header">${productName}</h2>
     <div class="line"></div>
     <div class="characteristic-list">
       ${

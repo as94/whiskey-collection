@@ -3,27 +3,6 @@
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 2.16px;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 744px) {
-  .h1 {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 140%;
-    letter-spacing: 1.62px;
-    text-transform: uppercase;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .h1 {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 140%;
-    letter-spacing: 1.26px;
-    text-transform: uppercase;
-  }
 }
 
 .h2 {
@@ -34,10 +13,56 @@
 }
 
 .h3 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: 1.26px;
+  letter-spacing: 1.08px;
+}
+
+@media screen and (max-width: 744px) {
+  .h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1.62px;
+  }
+
+  .h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1.08px;
+  }
+
+  .h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.9px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1.26px;
+  }
+
+  .h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.9px;
+  }
+
+  .h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.81px;
+  }
 }
 
 .body-semibold-small {
