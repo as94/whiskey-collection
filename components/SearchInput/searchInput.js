@@ -121,7 +121,7 @@ const searchInput = () => {
       <div class="search-clean"></div>
     </div>
 
-    <button class="find-again-btn body-semibold-extra">Find again</button>
+    <button class="find-again-btn body-semibold">Find again</button>
   </div>
 </div>
 `;

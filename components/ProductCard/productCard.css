@@ -1,6 +1,6 @@
 .product-card {
   display: flex;
-  margin: 0 80px 80px 120px;
+  margin: 0 80px 120px 80px;
   padding: 50px 70px 40px 100px;
   color: white;
   background-color: var(--primary-brown);

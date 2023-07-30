@@ -99,7 +99,7 @@ const search = () => {
       <div class="search-clean"></div>
     </div>
 
-    <button class="find-btn body-semibold-extra">Find</button>
+    <button class="find-btn body-semibold">Find</button>
   </div>
 </div>
 `;
