@@ -48,7 +48,7 @@ const getSliderImages = topRatedWhiskey => {
 const thumbnail = (category, country, topRatedWhiskey) => `
 <link rel="stylesheet" href="./components/Thumbnail/thumbnail.css" />
 <div class="thumbnail">
-  <div class="column">
+  <div class="column offer">
     <h3 class="usp-text h3">
       We have collected the most popular whiskey here. You can use it free and
       begin with
@@ -58,7 +58,7 @@ const thumbnail = (category, country, topRatedWhiskey) => `
     <div class="usp-product">
       <h2 class="first-row h2">${category}</h2>
       <h1 class="second-row h1">${country.toUpperCase()}</h1>
-      <h1 class="third-row h1">Whiskey</h1>
+      <h1 class="third-row h1">WHISKEY</h1>
       <div class="fourth-row">
         <button class="catalog-btn body-semibold">Discover more</button>
       </div>

@@ -32,3 +32,20 @@
   border-top: 1px solid var(--primary-light-green);
   margin-left: 64px;
 }
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .block-title {
+    padding-bottom: 20px;
+  }
+
+  .line-before::before {
+    width: 25%;
+    margin-right: 20px;
+  }
+
+  .line-after::after {
+    width: 25%;
+    margin-left: 20px;
+  }
+}

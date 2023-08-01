@@ -108,3 +108,36 @@
   text-align: center;
   padding: 0 60px;
 }
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .catalog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog .card {
+    padding: 50px 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .catalog .card .category-name {
+    padding-bottom: 20px;
+  }
+
+  .catalog .card .category-image {
+    margin-top: 15px;
+    width: 200px;
+    min-height: 240px;
+  }
+
+  .catalog .foreground-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .catalog .card .category-description {
+    display: none;
+  }
+}

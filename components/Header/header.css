@@ -9,3 +9,22 @@
   left: 80px;
   position: absolute;
 }
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+
+  .header-logo {
+    left: 16px;
+    position: absolute;
+  }
+
+  .header-logo img {
+    width: 50%;
+  }
+}

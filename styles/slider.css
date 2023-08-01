@@ -31,3 +31,11 @@
 .active {
   opacity: 1;
 }
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .slider__slide img {
+    max-width: 225px;
+    height: 300px;
+  }
+}
