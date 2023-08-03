@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   background-color: var(--primary-brown);
-  flex-direction: row;
   padding: 40px 0 40px 220px;
 }
 
