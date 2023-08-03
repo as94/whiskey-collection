@@ -25,7 +25,6 @@ const footer = () => {
     <a href="/" class="footer-logo">
       <img src="./components/Footer/logo-light-text.svg" />
     </a>
-    <div class="footer-blank"></div>
     <div class="footer-menu">
       ${getCategories()}
     </div>
