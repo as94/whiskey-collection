@@ -1,19 +1,29 @@
 .catalog-header {
   display: flex;
   justify-content: space-between;
-  padding: 0 120px;
-}
-
-.catalog-header {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 70px;
+  padding: 0 105px 75px 105px;
 }
 
 .catalog-header .result-label {
   padding-top: 10px;
 }
 
-.order-by {
+.catalog-header .order-by {
   width: 20%;
+}
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .catalog-header {
+    padding: 0 18px 30px 18px;
+    justify-content: end;
+  }
+
+  .catalog-header .result-label {
+    display: none;
+  }
+
+  .catalog-header .order-by {
+    width: 60%;
+  }
 }
