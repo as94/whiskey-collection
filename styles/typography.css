@@ -167,4 +167,11 @@
     line-height: 130%;
     letter-spacing: 0.81px;
   }
+
+  .body-semibold {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.54px;
+  }
 }

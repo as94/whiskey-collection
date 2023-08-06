@@ -1,14 +1,13 @@
 .breadcrumbs {
   display: flex;
+  align-items: center;
   padding-top: 30px;
   padding-left: 120px;
   padding-bottom: 50px;
-  width: 100%;
 }
 
 .breadcrumbs .item {
-  padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 3px;
 }
 
 .breadcrumbs .chevron {
@@ -17,4 +16,13 @@
 
 .breadcrumbs .item:hover {
   cursor: pointer;
+}
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    padding-top: 28px;
+    padding-left: 16px;
+    padding-bottom: 38px;
+  }
 }
