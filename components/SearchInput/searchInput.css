@@ -168,3 +168,37 @@
   background-color: var(--btn-green-dark);
   cursor: pointer;
 }
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .search-block {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+  }
+
+  .search-parameters {
+    padding: 0;
+  }
+
+  .filters {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .filter-block {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .filter-block label {
+    padding-bottom: 10px;
+  }
+
+  .find-again-btn {
+    height: 50px;
+    width: 290px;
+  }
+}
