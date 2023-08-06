@@ -2,3 +2,11 @@
   padding-left: 165px;
   padding-right: 165px;
 }
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .more-whiskey {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

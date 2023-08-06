@@ -15,7 +15,7 @@
   margin-right: 65px;
 }
 
-.product-card .left-side .whiskey-image {
+.product-card .whiskey-image {
   width: 440px;
   min-height: 585px;
   display: flex;
@@ -52,4 +52,40 @@
   border: 1px solid var(--text-brown-medium);
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .product-card {
+    margin: 0 0 40px 0;
+    padding: 0 18px 25px 18px;
+    flex-direction: column;
+  }
+
+  .product-card .left-side {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .product-card .whiskey-image {
+    margin-top: 30px;
+    width: 240px;
+    min-height: 320px;
+  }
+
+  .product-card .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-card .foreground-image {
+    max-width: 200px;
+    max-height: 240px;
+  }
 }
