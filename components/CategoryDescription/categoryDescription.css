@@ -22,3 +22,29 @@
 .category-description .description .title {
   padding-bottom: 20px;
 }
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .category-description {
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  .category-description .category-image {
+    height: 80px;
+    padding: 20px 20px 20px 16px;
+  }
+
+  .category-description .description {
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  .category-description .description .title {
+    padding-bottom: 0;
+  }
+
+  .category-description .description .text {
+    display: none;
+  }
+}
