@@ -36,7 +36,7 @@ const getCatalogItems = () => {
         <img class="foreground-image" src="${whiskey.ImageLink}" />
         </div>
         <p class="category-description body-semibold">
-        ${whiskeyCategoryDescriptions[category]}
+          ${whiskeyCategoryDescriptions[category]}
         </p>
     </div>`;
   }
