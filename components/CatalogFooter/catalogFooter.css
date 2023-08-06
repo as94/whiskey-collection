@@ -7,3 +7,16 @@
 .catalog-footer .pagination {
   width: 20%;
 }
+
+/* from 320 to 768 px */
+@media screen and (max-width: 768px) {
+  .catalog-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .catalog-footer .pagination {
+    width: 70%;
+  }
+}

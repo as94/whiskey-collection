@@ -7,14 +7,6 @@
   flex: 1;
 }
 
-.pagination-block .empty-block.left {
-  padding-right: 5%;
-}
-
-.pagination-block .empty-block.right {
-  padding-left: 5%;
-}
-
 .pagination-block .page {
   color: var(--text-brown-dark);
   flex: 1;
@@ -34,14 +26,6 @@
 
 .pagination-block .page.active {
   color: var(--primary-light-green);
-}
-
-.pagination-block .arrow.go-back {
-  padding-right: 5%;
-}
-
-.pagination-block .arrow.go-forward {
-  padding-left: 5%;
 }
 
 .pagination-block .page:hover {
