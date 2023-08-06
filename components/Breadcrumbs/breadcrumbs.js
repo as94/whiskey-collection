@@ -37,7 +37,7 @@ const breadcrumbs = () => {
 
   return `
 <link rel="stylesheet" href="./components/Breadcrumbs/breadcrumbs.css" />
-<div class="breadcrumbs">
+<div class="breadcrumbs" data-no-select>
     ${getItems(items)}
 </div>
 `;

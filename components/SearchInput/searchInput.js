@@ -67,7 +67,7 @@ const searchInput = () => {
         <label class="body-semibold-extra">
           What country?
         </label>
-        <div class="dropdown-container">
+        <div class="dropdown-container" data-no-select>
           <div class="selected-item country">
             <span id="selected-country" class="body-medium">${country}</span>
             <div class="dropdown-controls">
@@ -84,7 +84,7 @@ const searchInput = () => {
         <label class="body-semibold-extra">
           What brand?
         </label>
-        <div class="dropdown-container">
+        <div class="dropdown-container" data-no-select>
           <div class="selected-item brand">
             <span id="selected-brand" class="body-medium">${brand}</span>
             <div class="dropdown-controls">
@@ -101,7 +101,7 @@ const searchInput = () => {
         <label class="body-semibold-extra">
           What budget?
         </label>
-        <div class="dropdown-container">
+        <div class="dropdown-container" data-no-select>
           <div class="selected-item budget">
             <span id="selected-budget" class="body-medium">${priceRange}</span>
             <div class="dropdown-controls">
@@ -121,7 +121,7 @@ const searchInput = () => {
       <div class="search-clean"></div>
     </div>
 
-    <button class="find-again-btn body-semibold">Find again</button>
+    <button class="find-again-btn body-semibold" data-no-select>Find again</button>
   </div>
 </div>
 `;

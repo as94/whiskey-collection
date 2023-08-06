@@ -17,7 +17,7 @@ const getPages = currentPageNumber => {
 
   let result = '';
   for (let id = start; id <= end; id++) {
-    result += `<div id='page-${id}' class="page body-semibold-extra">${id}</div>`;
+    result += `<div id='page-${id}' class="page body-semibold-extra" data-no-select>${id}</div>`;
   }
   return result;
 };
@@ -45,7 +45,7 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
 
   return `
   <link rel="stylesheet" href="./components/Pagination/pagination.css" />
-  <div class="pagination-block">
+  <div class="pagination-block" data-no-select>
     ${
       withoutGoFirst
         ? `<div class="empty-block left"></div>`

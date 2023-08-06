@@ -32,7 +32,6 @@
   padding-bottom: 20px;
   text-align: center;
   color: white;
-  user-select: none;
 }
 
 .filter-block .dropdown-container {
@@ -48,7 +47,6 @@
   cursor: pointer;
   padding: 0 10px;
   justify-content: space-between;
-  user-select: none;
 }
 
 .filter-block .dropdown-container .selected-item .dropdown-controls {
@@ -98,7 +96,6 @@
 .filter-block .dropdown-container .dropdown-options > li {
   padding: 10px;
   cursor: pointer;
-  user-select: none;
 }
 
 .filter-block .dropdown-container .dropdown-options > li:hover {
@@ -122,7 +119,6 @@
   padding: 15px;
   width: 95%;
   margin-left: 30px;
-  user-select: none;
   background-color: var(--primary-brown);
   color: white;
 }
@@ -139,7 +135,6 @@
   position: absolute;
   margin-top: 10px;
   margin-left: 10px;
-  user-select: none;
 }
 
 .search-line .search-clean {

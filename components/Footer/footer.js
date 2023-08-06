@@ -21,7 +21,7 @@ const getCategories = () => {
 const footer = () => {
   return `
   <link rel="stylesheet" href="./components/Footer/footer.css" />
-  <div class="main-footer">
+  <div class="main-footer" data-no-select>
     <a href="/" class="footer-logo">
       <img src="./components/Footer/logo-light-text.svg" />
     </a>

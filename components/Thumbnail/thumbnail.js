@@ -60,7 +60,7 @@ const thumbnail = (category, country, topRatedWhiskey) => `
       <h1 class="second-row h1">${country.toUpperCase()}</h1>
       <h1 class="third-row h1">WHISKEY</h1>
       <div class="fourth-row">
-        <button class="catalog-btn body-semibold">Discover more</button>
+        <button class="catalog-btn body-semibold" data-no-select>Discover more</button>
       </div>
     </div>
   </div>

@@ -12,7 +12,6 @@
   cursor: pointer;
   padding: 10px 20px;
   justify-content: space-between;
-  user-select: none;
 }
 
 .order-by .dropdown-container .dropdown-options {
@@ -40,7 +39,6 @@
 .order-by .dropdown-container .dropdown-options > li {
   padding: 10px;
   cursor: pointer;
-  user-select: none;
 }
 
 .order-by .dropdown-container .dropdown-options > li:hover {

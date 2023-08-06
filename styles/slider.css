@@ -1,5 +1,5 @@
 .column.slider {
-  padding-top: 5vh;
+  padding-top: 120px;
   overflow: hidden;
 }
 
@@ -34,6 +34,10 @@
 
 /* from 320 to 768 px */
 @media screen and (max-width: 768px) {
+  .column.slider {
+    padding-top: 0;
+  }
+
   .slider__slide img {
     max-width: 225px;
     height: 300px;

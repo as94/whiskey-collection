@@ -12,7 +12,7 @@ const catalogHeader = () => {
     <div id="catalog-result" class="result-label body-medium-large">
       Showing: 0 out of 0
     </div>
-    <div id="orderBy" class="order-by"></div>
+    <div id="orderBy" class="order-by" data-no-select></div>
   </div>`;
 };
 

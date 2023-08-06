@@ -18,8 +18,10 @@
 .thumbnail .column .usp-text {
   text-align: left;
   color: white;
-  padding-left: 105px;
+  padding-left: 260px;
   padding-top: 100px;
+  position: absolute;
+  width: 440px;
 }
 
 .thumbnail .column .usp-product {

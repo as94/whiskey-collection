@@ -82,7 +82,7 @@ const generateCatalogRows = whiskeyItems => {
   for (let index = 0; index < whiskeyItems.length; index++) {
     const whiskey = whiskeyItems[index];
     if (index % 2 === 0) {
-      result += `<div class="card">
+      result += `<div class="card" data-no-select>
       <div class="whiskey-image">
         <img
           class="background-image"
@@ -98,7 +98,7 @@ const generateCatalogRows = whiskeyItems => {
       }</div>
     </div>`;
     } else {
-      result += `<div class="card">
+      result += `<div class="card" data-no-select>
       <div class="whiskey-image">
         <img
           class="background-image"

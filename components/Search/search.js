@@ -45,7 +45,7 @@ const search = () => {
         <label class="body-semibold-extra">
           What country?
         </label>
-        <div class="dropdown-container">
+        <div class="dropdown-container" data-no-select>
           <div class="selected-item country">
             <span id="selected-country" class="body-medium">Any</span>
             <div class="dropdown-controls">
@@ -62,7 +62,7 @@ const search = () => {
         <label class="body-semibold-extra">
           What brand?
         </label>
-        <div class="dropdown-container">
+        <div class="dropdown-container" data-no-select>
           <div class="selected-item brand">
             <span id="selected-brand" class="body-medium">Any</span>
             <div class="dropdown-controls">
@@ -79,7 +79,7 @@ const search = () => {
         <label class="body-semibold-extra">
           What budget?
         </label>
-        <div class="dropdown-container">
+        <div class="dropdown-container" data-no-select>
           <div class="selected-item budget">
             <span id="selected-budget" class="body-medium">Any</span>
             <div class="dropdown-controls">
@@ -99,7 +99,7 @@ const search = () => {
       <div class="search-clean"></div>
     </div>
 
-    <button class="find-btn body-semibold">Find</button>
+    <button class="find-btn body-semibold" data-no-select>Find</button>
   </div>
 </div>
 `;

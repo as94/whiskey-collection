@@ -17,7 +17,7 @@ const getCatalogItems = () => {
     const category = categories[index];
     const whiskey = getRandomItem(whiskeyByCategory[category]);
 
-    result += `<div class="card" data-whiskey-category="${category}">
+    result += `<div class="card" data-whiskey-category="${category}" data-no-select>
         <h3 class="category-name h3">${category}</h3>
         <div class="category-link-container">
         <a class="category-link body-semibold">

@@ -28,3 +28,7 @@ body {
   font-size: inherit;
   font-weight: inherit;
 }
+
+[data-no-select] {
+  user-select: none;
+}
