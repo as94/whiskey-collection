@@ -29,9 +29,9 @@ const moreWhiskey = () => {
   return `
 <link rel="stylesheet" href="./components/MoreWhiskey/moreWhiskey.css" />
 <div class="more-whiskey">
-    <div id="more-block-title" firstRow="More" secondRow="${
-      product.Brand
-    }"></div>
+    <div id="more-block-title" firstRow="More ${
+      product.Categories
+    }" secondRow="${product.Brand}"></div>
 </div>
 ${catalog(whiskeyByBrand)}
 `;
