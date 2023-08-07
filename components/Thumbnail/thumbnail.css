@@ -84,7 +84,6 @@
 /* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .thumbnail {
-    display: flex;
     flex-direction: column;
   }
 
@@ -118,5 +117,11 @@
 
   .catalog-btn {
     width: 100%;
+  }
+
+  @media screen and (orientation: landscape) {
+    .thumbnail {
+      flex-direction: row;
+    }
   }
 }
