@@ -21,6 +21,10 @@ const getItems = items => {
       result += `<div class="chevron"><img src="icons/chevron-right.svg" /></div>`;
     }
   }
+  if (items.length === 2) {
+    result += `<div class="chevron"></div>`;
+    result += `<span class="item body-semibold" index="2"></span>`;
+  }
   return result;
 };
 

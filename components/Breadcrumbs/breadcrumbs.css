@@ -4,21 +4,23 @@
   padding-top: 30px;
   padding-left: 120px;
   padding-bottom: 50px;
-  width: 50%;
+  width: 30%;
+}
+
+.breadcrumbs .item:first-child {
+  justify-content: center;
 }
 
 .breadcrumbs .item {
   padding-right: 3px;
   flex: 1;
   display: flex;
-  justify-content: center;
 }
 
 .breadcrumbs .chevron {
   padding-right: 5px;
-  flex: 1;
+  flex: 0.5;
   display: flex;
-  justify-content: center;
 }
 
 .breadcrumbs .item:hover {
@@ -31,5 +33,6 @@
     padding-top: 28px;
     padding-left: 16px;
     padding-bottom: 28px;
+    padding-bottom: 50px;
   }
 }
