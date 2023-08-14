@@ -1,19 +1,17 @@
 .column.slider {
-  padding-top: 120px;
   overflow: hidden;
 }
 
 .slider__wrapper {
   display: flex;
   flex-direction: column;
-  height: 1800px;
   transition: transform 0.5s ease-in-out;
 }
 
 .slider__slide {
   height: 600px;
   transition: opacity 0.5s ease-in-out;
-  transform: translateY(0);
+  transform: translateY(25vh);
   display: flex;
   align-items: center;
   justify-content: center;

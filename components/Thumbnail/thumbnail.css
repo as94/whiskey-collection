@@ -9,6 +9,11 @@
   width: 33.3%;
 }
 
+.thumbnail .column.offer {
+  display: flex;
+  align-items: center;
+}
+
 .thumbnail .column.middle {
   display: flex;
   justify-content: center;
@@ -18,10 +23,8 @@
 .thumbnail .column .usp-text {
   text-align: left;
   color: white;
-  padding-left: 260px;
-  padding-top: 100px;
-  position: absolute;
-  width: 440px;
+  padding-left: 25%;
+  padding-bottom: 80%;
 }
 
 .thumbnail .column .usp-product {
