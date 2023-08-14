@@ -32,8 +32,8 @@
 
 /* from 320 to 768 px */
 @media screen and (max-width: 768px) {
-  .column.slider {
-    padding-top: 0;
+  .slider__slide {
+    transform: translateY(0);
   }
 
   .slider__slide img {
