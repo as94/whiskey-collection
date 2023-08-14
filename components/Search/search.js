@@ -114,8 +114,16 @@ $(document).ready(function () {
 
   for (const filter of filters) {
     $(`${root} .selected-item.${filter} .open`).click(function () {
-      $(this).toggleClass('active');
-      $(`${root} .dropdown-options.${filter}`).toggleClass('show');
+      $(`${root} .dropdown-options`).removeClass('show');
+      $(`${root} .selected-item`).removeClass('active');
+
+      if (!$(this).hasClass('active')) {
+        $(this).toggleClass('active');
+        $(`${root} .dropdown-options.${filter}`).toggleClass('show');
+      } else {
+        $(this).removeClass('active');
+        $(`${root} .dropdown-options.${filter}`).removeClass('show');
+      }
     });
 
     $(`${root} .selected-item.${filter} .clean`).click(function () {
