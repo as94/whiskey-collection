@@ -1,18 +1,23 @@
 .product-card {
   display: flex;
+  flex-direction: column;
   margin: 0 80px 120px 80px;
   padding: 50px 70px 40px 100px;
   color: white;
   background-color: var(--primary-brown);
 }
 
+.product-card-body {
+  display: flex;
+}
+
 .product-card-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .product-card .left-side {
-  margin-right: 65px;
+  margin-right: 40px;
 }
 
 .product-card .whiskey-image {
@@ -59,6 +64,15 @@
   .product-card {
     margin: 0 0 40px 0;
     padding: 0 18px 25px 18px;
+    flex-direction: column;
+  }
+
+  .product-card-header {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .product-card-body {
     flex-direction: column;
   }
 

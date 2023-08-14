@@ -18,92 +18,93 @@ const productCard = () => {
   return `
 <link rel="stylesheet" href="./components/ProductCard/productCard.css" />
 <div class="product-card">
-  <div class="left-side">
-    <div class="whiskey-image">
-      <img
-        class="background-image"
-        src="images/product-card-backgrounds/main.png"
-      />
-      <img
-        class="foreground-image"
-        src="${product.ImageLink}"
-      />
+  <h2 class="h2 product-card-header">${productName}</h2>
+  <div class="product-card-body">
+    <div class="left-side">
+      <div class="whiskey-image">
+        <img
+          class="background-image"
+          src="images/product-card-backgrounds/main.png"
+        />
+        <img
+          class="foreground-image"
+          src="${product.ImageLink}"
+        />
+      </div>
     </div>
-  </div>
-  <div class="right-side">
-    <h2 class="h2 product-card-header">${productName}</h2>
-    <div class="line"></div>
-    <div class="characteristic-list">
-      ${
-        product.Country &&
-        `<div class="characteristic">
-            <span class="body-semibold">Country: </span>
-            <span class="body-medium">${product.Country}</span>
-        </div>`
-      }
+    <div class="right-side">
+      <div class="characteristic-list">
+        ${
+          product.Country &&
+          `<div class="characteristic">
+              <span class="body-semibold">Country: </span>
+              <span class="body-medium">${product.Country}</span>
+          </div>`
+        }
+
+        ${
+          product.Brand &&
+          `<div class="characteristic">
+              <span class="body-semibold">Brand: </span>
+              <span class="body-medium">${product.Brand}</span>
+          </div>`
+        }
+
+        ${
+          product.Categories &&
+          `<div class="characteristic">
+              <span class="body-semibold">Category: </span>
+              <span class="body-medium">${product.Categories}</span>
+          </div>`
+        }
+
+        ${
+          product.TastingNotes &&
+          `<div class="characteristic">
+              <span class="body-semibold">Tasting Notes: </span>
+              <span class="body-medium">${product.TastingNotes}</span>
+          </div>`
+        }
+
+        ${
+          product.YearsAged &&
+          `<div class="characteristic">
+              <span class="body-semibold">Age: </span>
+              <span class="body-medium">${product.YearsAged}</span>
+          </div>`
+        }
+
+        ${
+          product.ABV &&
+          `<div class="characteristic">
+              <span class="body-semibold">ABV: </span>
+              <span class="body-medium">${product.ABV}</span>
+          </div>`
+        }
+
+        ${
+          product.Volume &&
+          `<div class="characteristic">
+              <span class="body-semibold">Volume: </span>
+              <span class="body-medium">${product.Volume}</span>
+          </div>`
+        }
+
+        ${
+          product.Price &&
+          `<div class="characteristic">
+              <span class="body-semibold">Average price: </span>
+              <span class="body-medium">${product.Price}</span>
+          </div>`
+        }
+      </div>
 
       ${
-        product.Brand &&
-        `<div class="characteristic">
-            <span class="body-semibold">Brand: </span>
-            <span class="body-medium">${product.Brand}</span>
-        </div>`
-      }
-
-      ${
-        product.Categories &&
-        `<div class="characteristic">
-            <span class="body-semibold">Category: </span>
-            <span class="body-medium">${product.Categories}</span>
-        </div>`
-      }
-
-      ${
-        product.TastingNotes &&
-        `<div class="characteristic">
-            <span class="body-semibold">Tasting Notes: </span>
-            <span class="body-medium">${product.TastingNotes}</span>
-        </div>`
-      }
-
-      ${
-        product.YearsAged &&
-        `<div class="characteristic">
-            <span class="body-semibold">Age: </span>
-            <span class="body-medium">${product.YearsAged}</span>
-        </div>`
-      }
-
-      ${
-        product.ABV &&
-        `<div class="characteristic">
-            <span class="body-semibold">ABV: </span>
-            <span class="body-medium">${product.ABV}</span>
-        </div>`
-      }
-
-      ${
-        product.Volume &&
-        `<div class="characteristic">
-            <span class="body-semibold">Volume: </span>
-            <span class="body-medium">${product.Volume}</span>
-        </div>`
-      }
-
-      ${
-        product.Price &&
-        `<div class="characteristic">
-            <span class="body-semibold">Average price: </span>
-            <span class="body-medium">${product.Price}</span>
-        </div>`
+        product.Description &&
+        `<div class="line"></div>
+      <p class="description body-medium">${product.Description}</p>`
       }
     </div>
-
-    ${
-      product.Description &&
-      `<div class="line"></div>
-    <p class="description body-medium">${product.Description}</p>`
-    }
   </div>
 </div>
 `;
