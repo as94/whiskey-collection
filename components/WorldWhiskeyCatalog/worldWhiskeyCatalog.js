@@ -36,7 +36,13 @@ const getCatalogItems = () => {
         <img class="foreground-image" src="${whiskey.ImageLink}" />
         </div>
         <p class="category-description body-semibold">
-          ${whiskeyCategoryDescriptions[category]}
+          ${
+            whiskeyCategoryDescriptions[category]
+              .split(/\s+/)
+              .map(x => x.replace(',', ''))
+              .slice(0, 15)
+              .join(' ') + ' ...'
+          }
         </p>
     </div>`;
   }
