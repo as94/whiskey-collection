@@ -23,6 +23,15 @@
   padding-bottom: 20px;
 }
 
+/* from 1440 to 1600 px */
+@media screen and (max-width: 1600px) {
+  .category-description .category-image {
+    height: 310px;
+    padding-left: 115px;
+    padding-right: 80px;
+  }
+}
+
 /* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .category-description {

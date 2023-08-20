@@ -80,6 +80,13 @@
   z-index: 1;
 }
 
+/* from 1440 to 1600 px */
+@media screen and (max-width: 1600px) {
+  .catalog {
+    margin-bottom: 50px;
+  }
+}
+
 /* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .catalog {

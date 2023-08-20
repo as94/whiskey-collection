@@ -12,6 +12,13 @@
   width: 20%;
 }
 
+/* from 1440 to 1600 px */
+@media screen and (max-width: 1600px) {
+  .catalog-header {
+    padding-bottom: 60px;
+  }
+}
+
 /* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .catalog-header {
