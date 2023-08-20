@@ -113,12 +113,13 @@ $(document).ready(function () {
   const root = '.filter-block .dropdown-container';
 
   for (const filter of filters) {
-    $(`${root} .selected-item.${filter} .open`).click(function () {
+    $(`${root} .selected-item.${filter}`).click(function () {
       $(this).toggleClass('active');
       $(`${root} .dropdown-options.${filter}`).toggleClass('show');
     });
 
-    $(`${root} .selected-item.${filter} .clean`).click(function () {
+    $(`${root} .selected-item.${filter} .clean`).click(function (event) {
+      event.stopPropagation();
       $(`${root} .dropdown-options.${filter} > li`).removeClass('selected');
       $(`${root} .selected-item`).removeClass('active');
       $(`${root} .dropdown-options`).removeClass('show');

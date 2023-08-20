@@ -34,6 +34,7 @@
 .filter-block .dropdown-container {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .filter-block .dropdown-container .selected-item {
@@ -53,7 +54,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   padding: 12px;
-  cursor: pointer;
   margin: 10px 5px;
 }
 
@@ -62,7 +62,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   padding: 12px;
-  cursor: pointer;
   margin: 10px 5px;
 }
 

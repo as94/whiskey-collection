@@ -91,6 +91,17 @@
   }
 }
 
+/* from 768 to 1440 px */
+@media screen and (max-width: 1440px) {
+  .thumbnail .column {
+    width: 50%;
+  }
+
+  .thumbnail .column.offer {
+    display: none;
+  }
+}
+
 /* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .thumbnail {
