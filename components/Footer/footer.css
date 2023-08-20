@@ -30,6 +30,13 @@
   cursor: pointer;
 }
 
+/* from 1440 to 1600 px */
+@media screen and (max-width: 1600px) {
+  .main-footer {
+    padding-left: 80px;
+  }
+}
+
 /* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .main-footer {
