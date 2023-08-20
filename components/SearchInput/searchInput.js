@@ -116,7 +116,7 @@ const searchInput = () => {
       </div>
     </div>
     <div class="search-line">
-      <img class="search-icon" src="icons/search.svg" />
+      <img class="search-icon" src="icons/search-white.svg" />
       <input id="search" type="text" placeholder="Search whiskey" class="body-medium" value="${searchText}" />
       <div class="search-clean"></div>
     </div>
