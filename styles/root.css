@@ -12,6 +12,7 @@
   --btn-green-dark: #53714b;
   --btn-green-medium: #7d9f8c;
   --btn-green-light: #a4aaa2;
+  --btn-green-disabled: #d4dfd2;
 }
 
 body {
@@ -31,25 +32,4 @@ body {
 
 [data-no-select] {
   user-select: none;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary-light-green);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--btn-green-dark);
-}
-
-::-webkit-scrollbar-thumb:active {
-  background-color: var(--btn-green-dark);
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
 }
