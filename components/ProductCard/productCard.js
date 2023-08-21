@@ -97,6 +97,22 @@ const productCard = () => {
               <span class="body-medium">${product.Price}</span>
           </div>`
         }
+
+        ${
+          product.Rating &&
+          `<div class="characteristic">
+              <span class="body-semibold">Rating: </span>
+              <span class="body-medium">${product.Rating}</span>
+          </div>`
+        }
+
+        ${
+          product.RateCount &&
+          `<div class="characteristic">
+              <span class="body-semibold">Reviews: </span>
+              <span class="body-medium">${product.RateCount}</span>
+          </div>`
+        }
       </div>
 
       ${
