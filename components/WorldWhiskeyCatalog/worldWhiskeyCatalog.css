@@ -128,7 +128,7 @@
   }
 }
 
-/* from 320 to 768 px */
+/* from 440 to 768 px */
 @media screen and (max-width: 768px) {
   .catalog {
     display: flex;
@@ -145,6 +145,13 @@
     padding-bottom: 20px;
   }
 
+  .catalog .card .category-description {
+    display: none;
+  }
+}
+
+/* from 320 to 440 px */
+@media screen and (max-width: 440px) {
   .catalog .card .category-image {
     margin-top: 15px;
     width: 210px;
@@ -154,9 +161,5 @@
   .catalog .foreground-image {
     max-width: 200px;
     max-height: 200px;
-  }
-
-  .catalog .card .category-description {
-    display: none;
   }
 }

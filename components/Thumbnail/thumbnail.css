@@ -133,10 +133,14 @@
   }
 
   .thumbnail .column .usp-product .third-row {
-    text-align: right;
+    text-align: center;
+  }
+
+  .thumbnail .column .usp-product .fourth-row {
+    justify-content: center;
   }
 
   .catalog-btn {
-    width: 100%;
+    width: 185px;
   }
 }
