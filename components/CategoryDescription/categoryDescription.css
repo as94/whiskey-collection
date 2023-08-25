@@ -26,7 +26,7 @@
 /* from 1440 to 1600 px */
 @media screen and (max-width: 1600px) {
   .category-description .category-image {
-    height: 310px;
+    height: 320px;
     padding-left: 115px;
     padding-right: 80px;
   }

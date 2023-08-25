@@ -139,10 +139,4 @@
   .catalog-btn {
     width: 100%;
   }
-
-  @media screen and (orientation: landscape) {
-    .thumbnail {
-      flex-direction: row;
-    }
-  }
 }

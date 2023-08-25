@@ -37,8 +37,7 @@ const getCatalogItems = () => {
         </div>
         <p class="category-description body-semibold">
           ${
-            whiskeyCategoryDescriptions[category]
-              .split(/\s+/)
+            whiskeyCategoryDescriptions[category].Description.split(/\s+/)
               .map(x => x.replace(',', ''))
               .slice(0, 15)
               .join(' ') + ' ...'

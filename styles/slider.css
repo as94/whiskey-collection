@@ -30,17 +30,10 @@
   opacity: 1;
 }
 
-/* from 1440 to 1600 px */
-@media screen and (max-width: 1600px) and (orientation: landscape) {
-  .slider__slide {
-    transform: translateY(10vh);
-  }
-}
-
 /* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .slider__slide {
-    transform: translateY(0);
+    transform: translateY(-10vh);
   }
 
   .slider__slide img {
