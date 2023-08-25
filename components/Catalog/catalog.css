@@ -7,7 +7,7 @@
 }
 
 .catalog .card {
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 40px;
   width: 32%;
   display: flex;
@@ -80,24 +80,22 @@
   z-index: 1;
 }
 
-/* from 1440 to 1600 px */
 @media screen and (max-width: 1600px) {
   .catalog {
     margin-bottom: 50px;
   }
 }
 
-/* from 440 to 768 px */
 @media screen and (max-width: 768px) {
   .catalog {
     display: flex;
     flex-direction: column;
-    padding: 0 18px;
+    padding: 0 80px;
     margin-bottom: 10px;
   }
 
   .catalog .card {
-    padding: 40px 0 30px 0;
+    padding: 60px 0 30px 0;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -112,8 +110,29 @@
   }
 }
 
-/* from 320 to 440 px */
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 600px) {
+  .catalog .card .whiskey-image {
+    margin-top: 15px;
+    width: 230px;
+    min-height: 280px;
+  }
+
+  .catalog .foreground-image {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .catalog {
+    padding: 0 18px;
+    margin-bottom: 10px;
+  }
+
+  .catalog .card {
+    padding: 40px 0 30px 0;
+  }
+
   .catalog .card .whiskey-image {
     margin-top: 15px;
     width: 210px;

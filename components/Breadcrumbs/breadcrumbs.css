@@ -22,7 +22,6 @@
   cursor: pointer;
 }
 
-/* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .breadcrumbs {
     padding-top: 28px;

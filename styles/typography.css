@@ -1,4 +1,3 @@
-/* from 1440 px */
 .h1 {
   font-size: 48px;
   font-weight: 700;
@@ -62,7 +61,6 @@
   letter-spacing: 0.81px;
 }
 
-/* from 1024 to 1440 px */
 @media screen and (max-width: 1440px) {
   .h3 {
     font-size: 20px;
@@ -114,7 +112,6 @@
   }
 }
 
-/* from 768 to 1024 px */
 @media screen and (max-width: 1024px) {
   .h1 {
     font-size: 36px;
@@ -145,7 +142,6 @@
   }
 }
 
-/* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .h1 {
     font-size: 28px;

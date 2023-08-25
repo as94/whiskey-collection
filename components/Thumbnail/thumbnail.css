@@ -84,15 +84,23 @@
   cursor: pointer;
 }
 
-/* from 1440 to 1600 px */
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 769px) and (max-width: 1920px) and (orientation: portrait) {
+  .thumbnail .column.slider {
+    display: none;
+  }
+
+  .thumbnail .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (orientation: landscape) {
   .catalog-btn {
     width: 185px;
   }
 }
 
-/* from 768 to 1440 px */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) and (orientation: landscape) {
   .thumbnail .column {
     width: 50%;
   }
@@ -102,8 +110,17 @@
   }
 }
 
-/* from 320 to 768 px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .thumbnail .column.slider {
+    display: none;
+  }
+
+  .thumbnail .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
   .thumbnail {
     flex-direction: column;
   }

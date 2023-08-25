@@ -110,7 +110,6 @@
   padding: 0 60px;
 }
 
-/* from 1440 to 1600 px */
 @media screen and (max-width: 1600px) {
   .catalog .card {
     padding: 50px 0;
@@ -128,7 +127,6 @@
   }
 }
 
-/* from 440 to 768 px */
 @media screen and (max-width: 768px) {
   .catalog {
     display: flex;
@@ -150,8 +148,20 @@
   }
 }
 
-/* from 320 to 440 px */
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 600px) {
+  .catalog .card .category-image {
+    margin-top: 15px;
+    width: 230px;
+    min-height: 280px;
+  }
+
+  .catalog .foreground-image {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .catalog .card .category-image {
     margin-top: 15px;
     width: 210px;

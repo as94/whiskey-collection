@@ -182,7 +182,6 @@
   cursor: pointer;
 }
 
-/* from 1440 to 1600 px */
 @media screen and (max-width: 1600px) {
   .search-block {
     padding-bottom: 80px;
@@ -194,7 +193,6 @@
   }
 }
 
-/* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .search-block {
     padding-left: 25px;

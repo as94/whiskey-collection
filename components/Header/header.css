@@ -3,14 +3,12 @@
   padding-left: 220px;
 }
 
-/* from 1440 to 1600 px */
 @media screen and (max-width: 1600px) {
   .main-header {
     padding-left: 80px;
   }
 }
 
-/* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .main-header {
     display: flex;

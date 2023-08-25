@@ -23,7 +23,6 @@
   padding-bottom: 20px;
 }
 
-/* from 1440 to 1600 px */
 @media screen and (max-width: 1600px) {
   .category-description .category-image {
     height: 320px;
@@ -32,7 +31,6 @@
   }
 }
 
-/* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .category-description {
     height: 120px;

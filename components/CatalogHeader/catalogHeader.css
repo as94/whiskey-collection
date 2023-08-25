@@ -12,14 +12,12 @@
   width: 20%;
 }
 
-/* from 1440 to 1600 px */
 @media screen and (max-width: 1600px) {
   .catalog-header {
     padding-bottom: 60px;
   }
 }
 
-/* from 320 to 768 px */
 @media screen and (max-width: 768px) {
   .catalog-header {
     padding: 0 18px 30px 18px;
@@ -30,6 +28,12 @@
     display: none;
   }
 
+  .catalog-header .order-by {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .catalog-header .order-by {
     width: 60%;
   }
