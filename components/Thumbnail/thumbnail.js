@@ -99,4 +99,4 @@ $(document).on('click', '.catalog-btn', function () {
 
 $('#thumbnail').html(thumbnail(category, whiskey[0].Country, top5RatedWhiskey));
 setFirstSlideActive();
-// setInterval(nextSlide, 5000);
+setInterval(nextSlide, 5000);
