@@ -84,7 +84,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1920px) and (orientation: portrait) {
+@media screen and (max-width: 1920px) and (orientation: portrait) {
   .thumbnail .column.slider {
     display: none;
   }
@@ -121,6 +121,10 @@
 }
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
+  .thumbnail .column.slider {
+    display: block;
+  }
+
   .thumbnail {
     flex-direction: column;
   }
