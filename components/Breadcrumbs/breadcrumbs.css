@@ -22,6 +22,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  .breadcrumbs {
+    padding-left: 60px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .breadcrumbs {
     padding-top: 28px;

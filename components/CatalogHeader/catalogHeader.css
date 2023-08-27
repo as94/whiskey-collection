@@ -18,6 +18,18 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .catalog-header {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+  }
+
+  .catalog-header .order-by {
+    width: 25%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .catalog-header {
     padding: 0 18px 30px 18px;
