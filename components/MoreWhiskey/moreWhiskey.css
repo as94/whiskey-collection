@@ -3,9 +3,23 @@
   padding-right: 165px;
 }
 
+@media screen and (max-width: 1024px) {
+  .more-whiskey {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .more-whiskey {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .more-whiskey {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
