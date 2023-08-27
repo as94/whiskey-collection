@@ -9,6 +9,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .main-header {
+    padding-left: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-header {
     display: flex;

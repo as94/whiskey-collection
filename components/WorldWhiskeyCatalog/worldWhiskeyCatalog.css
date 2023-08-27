@@ -127,6 +127,28 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .catalog .card {
+    padding: 30px 0;
+    margin-bottom: 20px;
+  }
+
+  .catalog .card .category-image {
+    margin-top: 20px;
+    width: 270px;
+    min-height: 320px;
+  }
+
+  .catalog .foreground-image {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .catalog .card .category-description {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .catalog {
     display: flex;

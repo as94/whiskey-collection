@@ -193,6 +193,16 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .search-block {
+    padding: 40px 45px 40px 45px;
+  }
+
+  .search-parameters {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .search-block {
     padding-left: 25px;
