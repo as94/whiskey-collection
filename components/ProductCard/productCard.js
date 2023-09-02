@@ -24,7 +24,7 @@ const productCard = () => {
       <div class="whiskey-image">
         <img
           class="background-image"
-          src="images/product-card-backgrounds/main.png"
+          src="images/product-card-backgrounds/main.webp"
         />
         <img
           class="foreground-image"

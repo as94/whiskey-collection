@@ -86,7 +86,7 @@ const generateCatalogRows = whiskeyItems => {
       <div class="whiskey-image">
         <img
           class="background-image"
-          src="images/product-card-backgrounds/dark-green.png"
+          src="images/product-card-backgrounds/dark-green.webp"
         />
         <img class="foreground-image" src="${whiskey.ImageLink}" />
       </div>
@@ -102,7 +102,7 @@ const generateCatalogRows = whiskeyItems => {
       <div class="whiskey-image">
         <img
           class="background-image"
-          src="images/product-card-backgrounds/light-green.png"
+          src="images/product-card-backgrounds/light-green.webp"
         />
         <img class="foreground-image" src="${whiskey.ImageLink}" />
       </div>

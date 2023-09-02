@@ -29,8 +29,8 @@ const getCatalogItems = () => {
             class="background-image"
             src="${
               index % 2 === 0
-                ? 'images/product-card-backgrounds/dark-green.png'
-                : 'images/product-card-backgrounds/light-green.png'
+                ? 'images/product-card-backgrounds/dark-green.webp'
+                : 'images/product-card-backgrounds/light-green.webp'
             }"
         />
         <img class="foreground-image" src="${whiskey.ImageLink}" />
