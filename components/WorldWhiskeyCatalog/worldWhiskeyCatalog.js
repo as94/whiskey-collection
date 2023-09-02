@@ -33,7 +33,9 @@ const getCatalogItems = () => {
                 : 'images/product-card-backgrounds/light-green.webp'
             }"
         />
-        <img class="foreground-image" src="${whiskey.ImageLink}" />
+        <img class="foreground-image" src="${
+          whiskey.ImageLink
+        }" title="${category}" alt="${category}" />
         </div>
         <p class="category-description body-semibold">
           ${

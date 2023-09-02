@@ -88,7 +88,9 @@ const generateCatalogRows = whiskeyItems => {
           class="background-image"
           src="images/product-card-backgrounds/dark-green.webp"
         />
-        <img class="foreground-image" src="${whiskey.ImageLink}" />
+        <img class="foreground-image" src="${whiskey.ImageLink}" title="${
+        whiskey.Name
+      }" alt="${whiskey.Description}" />
       </div>
       <div class="whiskey-name body-semibold-large">
         ${whiskey.Name}
@@ -104,7 +106,9 @@ const generateCatalogRows = whiskeyItems => {
           class="background-image"
           src="images/product-card-backgrounds/light-green.webp"
         />
-        <img class="foreground-image" src="${whiskey.ImageLink}" />
+        <img class="foreground-image" src="${whiskey.ImageLink}" title="${
+        whiskey.Name
+      }" alt="${whiskey.Description}" />
       </div>
       <div class="whiskey-name body-semibold-large">
         ${whiskey.Name}

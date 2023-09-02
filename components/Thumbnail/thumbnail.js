@@ -38,7 +38,9 @@ const getSliderImages = topRatedWhiskey => {
   for (let index = 0; index < topRatedWhiskey.length; index++) {
     const item = topRatedWhiskey[index];
     result += `<div class="slider__slide" data-index="${index + 1}">
-        <img src="${item.ImageLink}" />
+        <img src="${item.ImageLink}" title="${item.Name}" alt="${
+      item.Description
+    }" />
     </div>`;
   }
 

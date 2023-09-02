@@ -29,6 +29,8 @@ const productCard = () => {
         <img
           class="foreground-image"
           src="${product.ImageLink}"
+          title="${product.Name}"
+          alt="${product.Description}"
         />
       </div>
     </div>
