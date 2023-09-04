@@ -3,7 +3,45 @@
     <url>
         <loc>https://whiskey-collection.com</loc>
         <lastmod>2023-09-03</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=American+Whiskey</loc>
+        <lastmod>2023-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=Bourbon</loc>
+        <lastmod>2023-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=Canadian+Whisky</loc>
+        <lastmod>2023-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=Flavored+Whiskey</loc>
+        <lastmod>2023-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=Irish+Whiskey</loc>
+        <lastmod>2023-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=Japanese+Whisky</loc>
+        <lastmod>2023-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=Rye+Whiskey</loc>
+        <lastmod>2023-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=Scotch+Whisky</loc>
+        <lastmod>2023-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=Single+Malt+Whiskey</loc>
+        <lastmod>2023-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://whiskey-collection.com/catalog-by-categories?category=White+Whiskey+Moonshine</loc>
+        <lastmod>2023-09-03</lastmod>
     </url>
 </urlset>
