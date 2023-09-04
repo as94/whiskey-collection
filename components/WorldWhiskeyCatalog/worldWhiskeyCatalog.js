@@ -4,7 +4,7 @@ import {
 } from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { goToCatalogByCategories } from '../../services/urlSearchParams.js';
+import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 
 await initializeWhiskey();
@@ -17,12 +17,14 @@ const getCatalogItems = () => {
     const category = categories[index];
     const whiskey = getRandomItem(whiskeyByCategory[category]);
 
-    result += `<div class="card" data-whiskey-category="${category}" data-no-select>
+    result += `<a class="card" data-whiskey-category="${category}" data-no-select href="${getCatalogByCategoriesLink(
+      category
+    )}">
         <h3 class="category-name h3">${category}</h3>
         <div class="category-link-container">
-        <a class="category-link body-semibold">
+        <div class="category-link body-semibold"">
             Discover more
-        </a>
+        </div>
         </div>
         <div class="category-image">
         <img
@@ -45,16 +47,11 @@ const getCatalogItems = () => {
               .join(' ') + ' ...'
           }
         </p>
-    </div>`;
+    </a>`;
   }
 
   return result;
 };
-
-$(document).on('click', '.card', function () {
-  const category = $(this).data('whiskey-category');
-  goToCatalogByCategories(category);
-});
 
 const catalog = () => `
 <link rel="stylesheet" href="./components/WorldWhiskeyCatalog/worldWhiskeyCatalog.css" />

@@ -1,6 +1,6 @@
 import { getMainCategories } from '../../services/state.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { goToCatalogByCategories } from '../../services/urlSearchParams.js';
+import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
 
 await initializeWhiskey();
 
@@ -11,7 +11,9 @@ const getCategories = () => {
   for (let index = 0; index < categories.length; index++) {
     const category = categories[index];
     result += `<div class="footer-menu-item body-semibold">
-      <div class="footer-link">${category}</div>
+      <a class="footer-link" href="${getCatalogByCategoriesLink(
+        category
+      )}">${category}</a>
     </div>`;
   }
 
@@ -31,11 +33,5 @@ const footer = () => {
   </div>
   `;
 };
-
-$(document).on('click', '.footer-link', function () {
-  const category = $(this).text();
-
-  goToCatalogByCategories(category);
-});
 
 $('#mainFooter').html(footer());

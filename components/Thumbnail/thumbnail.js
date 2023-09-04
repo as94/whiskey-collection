@@ -4,7 +4,7 @@ import {
 } from '../../services/state.js';
 import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { goToCatalogByCategories } from '../../services/urlSearchParams.js';
+import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
 
 const nextSlide = () => {
   const currentSlide = $('.active');
@@ -62,7 +62,9 @@ const thumbnail = (category, country, topRatedWhiskey) => `
       <h1 class="second-row h1">${country.toUpperCase()}</h1>
       <h1 class="third-row h1">WHISKEY</h1>
       <div class="fourth-row">
-        <button class="catalog-btn body-semibold" data-no-select>Discover more</button>
+        <a class="catalog-btn body-semibold" data-no-select href="${getCatalogByCategoriesLink(
+          category
+        )}">Discover more</a>
       </div>
     </div>
   </div>
@@ -94,10 +96,6 @@ const top5RatedWhiskey = whiskey
     return a.Name.localeCompare(b.Name);
   })
   .slice(0, 5);
-
-$(document).on('click', '.catalog-btn', function () {
-  goToCatalogByCategories(category);
-});
 
 $('#thumbnail').html(thumbnail(category, whiskey[0].Country, top5RatedWhiskey));
 setFirstSlideActive();

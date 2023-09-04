@@ -104,12 +104,12 @@ export const goBack = () => {
   window.history.go(-1);
 };
 
-export const goToCatalogByCategories = category => {
+export const getCatalogByCategoriesLink = category => {
   const params = new URLSearchParams(window.location.search);
   clearParams(params);
   params.set('category', category);
   const newUrl = catalogByCategories + '?' + params.toString();
-  window.location.href = newUrl;
+  return newUrl;
 };
 
 export const goToCatalogBySearchResults = (

@@ -39,6 +39,9 @@
   align-items: center;
   position: relative;
   padding-right: 20px;
+}
+
+.catalog .card {
   text-decoration: none;
 }
 
