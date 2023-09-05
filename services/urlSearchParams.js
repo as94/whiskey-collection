@@ -142,12 +142,9 @@ export const getPageLink = page => {
   return newUrl;
 };
 
-export const changeOrderBy = orderBy => {
+export const getOrderByLink = orderBy => {
   const params = new URLSearchParams(window.location.search);
   params.set('orderBy', orderBy);
   params.set('page', 1);
-  const newUrl =
-    window.location.pathname + '?' + params.toString() + '#catalog-result';
-  // window.location.href = newUrl;
-  return newUrl;
+  return window.location.pathname + '?' + params.toString() + '#catalog-result';
 };

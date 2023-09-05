@@ -1,5 +1,5 @@
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { changeOrderBy, getOrderBy } from '../../services/urlSearchParams.js';
+import { getOrderByLink, getOrderBy } from '../../services/urlSearchParams.js';
 import {
   nameAsc,
   nameDesc,
@@ -43,11 +43,11 @@ const orderBy = () => {
     const item = orderByItems[index];
 
     if (selected === item) {
-      list += `<li class="selected"><a href="${changeOrderBy(
+      list += `<li class="selected"><a href="${getOrderByLink(
         allOrderBySettings[index]
       )}"><div>${item}</div></a></li>`;
     } else {
-      list += `<li><a href="${changeOrderBy(
+      list += `<li><a href="${getOrderByLink(
         allOrderBySettings[index]
       )}"><div>${item}</div></a></li>`;
     }
