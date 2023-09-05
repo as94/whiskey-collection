@@ -8,7 +8,7 @@ import {
   getPriceRange,
   getRoute,
   getSearchText,
-  goToProductCard,
+  getProductCardLink,
 } from '../../services/urlSearchParams.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
@@ -82,7 +82,9 @@ const generateCatalogRows = whiskeyItems => {
   for (let index = 0; index < whiskeyItems.length; index++) {
     const whiskey = whiskeyItems[index];
     if (index % 2 === 0) {
-      result += `<div class="card" data-no-select>
+      result += `<a class="card" data-no-select href="${getProductCardLink(
+        whiskey.Name
+      )}">
       <div class="whiskey-image">
         <img
           class="background-image"
@@ -98,9 +100,11 @@ const generateCatalogRows = whiskeyItems => {
       <div class="whiskey-characteristics body-regular-large">${
         whiskey.ABV ? `${whiskey.ABV} / ${whiskey.Price}` : `${whiskey.Price}`
       }</div>
-    </div>`;
+    </a>`;
     } else {
-      result += `<div class="card" data-no-select>
+      result += `<a class="card" data-no-select href="${getProductCardLink(
+        whiskey.Name
+      )}">
       <div class="whiskey-image">
         <img
           class="background-image"
@@ -116,7 +120,7 @@ const generateCatalogRows = whiskeyItems => {
       <div class="whiskey-characteristics body-regular-large">${
         whiskey.ABV ? `${whiskey.ABV} / ${whiskey.Price}` : `${whiskey.Price}`
       }</div>
-    </div>`;
+    </a>`;
     }
   }
 
@@ -134,13 +138,6 @@ export const catalog = whiskeyItems => {
   ${generateCatalogRows(whiskeyItems)}
 </div>
 `;
-
-  $(document).ready(function () {
-    $('.card').click(function () {
-      const productName = $(this).find('.whiskey-name').text().trim();
-      goToProductCard(productName);
-    });
-  });
 
   return result;
 };

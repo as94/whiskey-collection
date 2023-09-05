@@ -108,8 +108,7 @@ export const getCatalogByCategoriesLink = category => {
   const params = new URLSearchParams(window.location.search);
   clearParams(params);
   params.set('category', category);
-  const newUrl = catalogByCategories + '?' + params.toString();
-  return newUrl;
+  return catalogByCategories + '?' + params.toString();
 };
 
 export const goToCatalogBySearchResults = (
@@ -129,11 +128,10 @@ export const goToCatalogBySearchResults = (
   window.location.href = newUrl;
 };
 
-export const goToProductCard = productName => {
+export const getProductCardLink = productName => {
   const params = new URLSearchParams(window.location.search);
   params.set('productName', productName);
-  const newUrl = productCard + '?' + params.toString();
-  window.location.href = newUrl;
+  return productCard + '?' + params.toString();
 };
 
 export const changePage = page => {
