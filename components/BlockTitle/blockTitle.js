@@ -14,8 +14,13 @@ const blockTitle = (firstRow, secondRow) => `
 `;
 
 export const registerBlockTitle = id => {
-  const firstRow = $(`#${id}`).attr('firstRow');
-  const secondRow = $(`#${id}`).attr('secondRow');
+  const element = document.getElementById(id);
+  if (!element) {
+    return;
+  }
 
-  $(`#${id}`).html(blockTitle(firstRow, secondRow));
+  const firstRow = element.getAttribute('firstRow');
+  const secondRow = element.getAttribute('secondRow');
+
+  element.innerHTML = blockTitle(firstRow, secondRow);
 };

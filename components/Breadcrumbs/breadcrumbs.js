@@ -47,20 +47,22 @@ const breadcrumbs = () => {
 `;
 };
 
-$(document).on('click', '.breadcrumbs .item', function () {
-  const route = getRoute();
-  const index = parseInt($(this).attr('index'));
-  if (route === productCard) {
-    if (index === 1) {
-      goBack();
-    } else if (index === 0) {
+document.addEventListener('click', function (event) {
+  if (event.target && event.target.matches('.breadcrumbs .item')) {
+    const route = getRoute();
+    const index = parseInt(event.target.getAttribute('index'));
+    if (route === productCard) {
+      if (index === 1) {
+        goBack();
+      } else if (index === 0) {
+        goToMain();
+      }
+    } else if (
+      route === catalogByCategories ||
+      route === catalogBySearchResults
+    ) {
       goToMain();
     }
-  } else if (
-    route === catalogByCategories ||
-    route === catalogBySearchResults
-  ) {
-    goToMain();
   }
 });
 
