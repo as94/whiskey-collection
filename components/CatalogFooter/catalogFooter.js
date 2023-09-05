@@ -5,4 +5,7 @@ const catalogFooter = `
 </div>
 `;
 
-$('#catalogFooter').html(catalogFooter);
+const element = document.getElementById('catalogFooter');
+if (element) {
+  document.getElementById('catalogFooter').innerHTML = catalogFooter;
+}

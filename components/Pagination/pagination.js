@@ -88,6 +88,18 @@ const pagesCount = getPagesCount();
 
 if (totalPagesCount > 1) {
   const currentPageNumber = Math.floor((page - 1) / pagesCount) + 1;
-  $('#pagination').html(pagination(totalPagesCount, currentPageNumber, page));
-  $(`#page-${page}`).addClass('active');
+
+  const paginationElement = document.getElementById('pagination');
+  if (paginationElement) {
+    paginationElement.innerHTML = pagination(
+      totalPagesCount,
+      currentPageNumber,
+      page
+    );
+  }
+
+  const pageElement = document.getElementById(`page-${page}`);
+  if (pageElement) {
+    pageElement.classList.add('active');
+  }
 }

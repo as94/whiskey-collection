@@ -6,4 +6,7 @@ const header = `
   </a>
 </div>`;
 
-$('#mainHeader').html(header);
+const element = document.getElementById('mainHeader');
+if (element) {
+  element.innerHTML = header;
+}

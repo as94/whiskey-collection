@@ -17,4 +17,7 @@ const categoryDescription = () => {
 `;
 };
 
-$('#category-description').html(categoryDescription());
+const element = document.getElementById('category-description');
+if (element) {
+  element.innerHTML = categoryDescription();
+}

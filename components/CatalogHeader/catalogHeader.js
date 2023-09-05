@@ -16,7 +16,10 @@ const catalogHeader = () => {
   </div>`;
 };
 
-$('#catalogHeader').html(catalogHeader());
+const element = document.getElementById('catalogHeader');
+if (element) {
+  element.innerHTML = catalogHeader();
+}
 
 const whiskeyItemsCount = getWhiskeyItemsCount();
 const page = getPage();
@@ -28,4 +31,8 @@ if (start === end) {
   range = end;
 }
 
-$('#catalog-result').text(`Showing: ${range} out of ${whiskeyItemsCount}`);
+const catalogResult = document.getElementById('catalog-result');
+
+if (catalogResult) {
+  catalogResult.textContent = `Showing: ${range} out of ${whiskeyItemsCount}`;
+}

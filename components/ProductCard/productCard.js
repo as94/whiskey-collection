@@ -128,4 +128,7 @@ const productCard = () => {
 `;
 };
 
-$('#productCard').html(productCard());
+const element = document.getElementById('productCard');
+if (element) {
+  element.innerHTML = productCard();
+}

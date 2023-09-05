@@ -60,4 +60,7 @@ const catalog = () => `
 </div>
 `;
 
-$('#world-whiskey-catalog').html(catalog());
+const element = document.getElementById('world-whiskey-catalog');
+if (element) {
+  element.innerHTML = catalog();
+}

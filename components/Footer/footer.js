@@ -34,4 +34,7 @@ const footer = () => {
   `;
 };
 
-$('#mainFooter').html(footer());
+const element = document.getElementById('mainFooter');
+if (element) {
+  element.innerHTML = footer();
+}

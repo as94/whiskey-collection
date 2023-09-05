@@ -66,4 +66,7 @@ document.addEventListener('click', function (event) {
   }
 });
 
-$('#breadcrumbs').html(breadcrumbs());
+const element = document.getElementById('breadcrumbs');
+if (element) {
+  document.getElementById('breadcrumbs').innerHTML = breadcrumbs();
+}

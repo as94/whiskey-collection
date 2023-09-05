@@ -37,6 +37,9 @@ ${catalog(whiskeyByBrand)}
 `;
 };
 
-$('#more-whiskey').html(moreWhiskey());
+const element = document.getElementById('more-whiskey');
+if (element) {
+  element.innerHTML = moreWhiskey();
+}
 
 registerBlockTitle('more-block-title');

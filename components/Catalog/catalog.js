@@ -143,4 +143,8 @@ export const catalog = whiskeyItems => {
 };
 
 const whiskeyItems = getWhiskeyItems();
-$('#catalog').html(catalog(whiskeyItems));
+
+const element = document.getElementById('catalog');
+if (element) {
+  element.innerHTML = catalog(whiskeyItems);
+}
