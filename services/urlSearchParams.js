@@ -148,5 +148,6 @@ export const changeOrderBy = orderBy => {
   params.set('page', 1);
   const newUrl =
     window.location.pathname + '?' + params.toString() + '#catalog-result';
-  window.location.href = newUrl;
+  // window.location.href = newUrl;
+  return newUrl;
 };

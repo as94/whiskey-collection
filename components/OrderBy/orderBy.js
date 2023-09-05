@@ -6,6 +6,7 @@ import {
   priceAsc,
   priceDesc,
   popularDesc,
+  allOrderBySettings,
 } from '../../services/orderBySettings.js';
 
 const orderByItems = [
@@ -42,9 +43,13 @@ const orderBy = () => {
     const item = orderByItems[index];
 
     if (selected === item) {
-      list += `<li class="selected">${item}</li>`;
+      list += `<li class="selected"><a href="${changeOrderBy(
+        allOrderBySettings[index]
+      )}"><div>${item}</div></a></li>`;
     } else {
-      list += `<li>${item}</li>`;
+      list += `<li><a href="${changeOrderBy(
+        allOrderBySettings[index]
+      )}"><div>${item}</div></a></li>`;
     }
   }
 
@@ -76,25 +81,6 @@ $(document).ready(function () {
   });
 
   $(`${root} .dropdown-options.sorting-field > li`).click(function () {
-    const selectedOption = $(this).text();
-    switch (selectedOption) {
-      case 'Name (A-Z)':
-        changeOrderBy(nameAsc);
-        break;
-      case 'Name (Z-A)':
-        changeOrderBy(nameDesc);
-        break;
-      case 'Price (Low-High)':
-        changeOrderBy(priceAsc);
-        break;
-      case 'Price (High-Low)':
-        changeOrderBy(priceDesc);
-        break;
-      case 'Popular':
-        changeOrderBy(popularDesc);
-        break;
-    }
-    $(`#selected-sorting-field`).text(selectedOption);
     $(`${root} .dropdown-options.sorting-field > li`).removeClass('selected');
     $(this).addClass('selected');
     $(`${root} .dropdown-options`).removeClass('show');
