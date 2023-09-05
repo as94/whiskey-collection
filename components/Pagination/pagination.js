@@ -1,5 +1,5 @@
 import { visiblePagesCount } from '../../services/paginationUtils.js';
-import { changePage, getPage } from '../../services/urlSearchParams.js';
+import { getPageLink, getPage } from '../../services/urlSearchParams.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import {
   getPagesCount,
@@ -17,7 +17,9 @@ const getPages = currentPageNumber => {
 
   let result = '';
   for (let id = start; id <= end; id++) {
-    result += `<div id='page-${id}' class="page body-semibold-extra" data-no-select>${id}</div>`;
+    result += `<a id='page-${id}' class="page body-semibold-extra" data-no-select href="${getPageLink(
+      id
+    )}">${id}</a>`;
   }
   return result;
 };
@@ -43,37 +45,39 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
     withoutGoLast = true;
   }
 
+  const page = getPage();
+
   return `
   <link rel="stylesheet" href="./components/Pagination/pagination.css" />
   <div class="pagination-block" data-no-select>
     ${
       withoutGoFirst
         ? `<div class="empty-block left"></div>`
-        : `<div class="arrow go-first">
+        : `<a class="arrow go-first" href="${getPageLink(1)}">
     <img src="/icons/chevron-double-left.svg" />
-  </div>`
+  </a>`
     }
     ${
       withoutGoBack
         ? `<div class="empty-block"></div>`
-        : `<div class="arrow go-back">
+        : `<a class="arrow go-back" href="${getPageLink(page - 1)}">
     <img src="/icons/chevron-left.svg" />
-  </div>`
+  </a>`
     }
     ${getPages(currentPageNumber)}
     ${
       withoutGoForward
         ? `<div class="empty-block right"></div>`
-        : `<div class="arrow go-forward">
+        : `<a class="arrow go-forward" href="${getPageLink(page + 1)}">
     <img src="/icons/chevron-right.svg" />
-  </div>`
+  </a>`
     }
     ${
       withoutGoLast
         ? `<div class="empty-block"></div>`
-        : `<div class="arrow go-last">
+        : `<a class="arrow go-last" href="${getPageLink(totalPagesCount)}">
     <img src="/icons/chevron-double-right.svg" />
-  </div>`
+  </a>`
     }
   `;
 };
@@ -81,28 +85,6 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
 const page = getPage();
 const totalPagesCount = getTotalPagesCount();
 const pagesCount = getPagesCount();
-
-$(document).ready(function () {
-  $('.pagination-block .page').click(function () {
-    changePage(Number($(this).attr('id').replace('page-', '')));
-  });
-
-  $('.pagination-block .arrow.go-back').click(function () {
-    changePage(page - 1);
-  });
-
-  $('.pagination-block .arrow.go-forward').click(function () {
-    changePage(page + 1);
-  });
-
-  $('.pagination-block .arrow.go-first').click(function () {
-    changePage(1);
-  });
-
-  $('.pagination-block .arrow.go-last').click(function () {
-    changePage(totalPagesCount);
-  });
-});
 
 if (totalPagesCount > 1) {
   const currentPageNumber = Math.floor((page - 1) / pagesCount) + 1;

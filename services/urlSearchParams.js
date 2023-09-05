@@ -134,12 +134,12 @@ export const getProductCardLink = productName => {
   return productCard + '?' + params.toString();
 };
 
-export const changePage = page => {
+export const getPageLink = page => {
   const params = new URLSearchParams(window.location.search);
   params.set('page', page);
   const newUrl =
     window.location.pathname + '?' + params.toString() + '#catalog-result';
-  window.location.href = newUrl;
+  return newUrl;
 };
 
 export const changeOrderBy = orderBy => {
