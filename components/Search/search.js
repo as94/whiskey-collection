@@ -107,68 +107,98 @@ const search = () => {
 
 await initializeWhiskey();
 
-$(document).ready(function () {
-  const filters = ['country', 'brand', 'budget'];
+var element = document.getElementById('searchBlock');
+if (element) {
+  element.innerHTML = search();
+}
 
-  const root = '.filter-block .dropdown-container';
+registerBlockTitle('search-block-title');
 
-  for (const filter of filters) {
-    $(`${root} .selected-item.${filter}`).click(function () {
-      $(this).toggleClass('active');
-      $(`${root} .dropdown-options.${filter}`).toggleClass('show');
+const filters = ['country', 'brand', 'budget'];
+const root = '.filter-block .dropdown-container';
+
+filters.forEach(filter => {
+  const selectedFilter = document.querySelector(
+    `${root} .selected-item.${filter}`
+  );
+
+  selectedFilter.addEventListener('click', function () {
+    this.classList.toggle('active');
+    const dropdownOptions = document.querySelector(
+      `${root} .dropdown-options.${filter}`
+    );
+    dropdownOptions.classList.toggle('show');
+  });
+
+  const cleanButton = selectedFilter.querySelector('.clean');
+  const options = document.querySelectorAll(
+    `${root} .dropdown-options.${filter} > li`
+  );
+  const selectedText = document.querySelector(`#selected-${filter}`);
+  cleanButton.addEventListener('click', function (event) {
+    event.stopPropagation();
+    options.forEach(option => option.classList.remove('selected'));
+    document
+      .querySelectorAll(`${root} .selected-item`)
+      .forEach(item => item.classList.remove('active'));
+    document
+      .querySelectorAll(`${root} .dropdown-options`)
+      .forEach(option => option.classList.remove('show'));
+    selectedText.textContent = 'Any';
+  });
+
+  options.forEach(option => {
+    option.addEventListener('click', function () {
+      const selectedOption = this.textContent;
+      selectedText.textContent = selectedOption;
+      options.forEach(opt => opt.classList.remove('selected'));
+      this.classList.add('selected');
+      document
+        .querySelectorAll(`${root} .dropdown-options`)
+        .forEach(option => option.classList.remove('show'));
+      document
+        .querySelectorAll(`${root} .selected-item`)
+        .forEach(item => item.classList.remove('active'));
     });
+  });
+});
 
-    $(`${root} .selected-item.${filter} .clean`).click(function (event) {
-      event.stopPropagation();
-      $(`${root} .dropdown-options.${filter} > li`).removeClass('selected');
-      $(`${root} .selected-item`).removeClass('active');
-      $(`${root} .dropdown-options`).removeClass('show');
-      $(`#selected-${filter}`).text('Any');
-    });
-
-    $(`${root} .dropdown-options.${filter} > li`).click(function () {
-      const selectedOption = $(this).text();
-      $(`#selected-${filter}`).text(selectedOption);
-      $(`${root} .dropdown-options.${filter} > li`).removeClass('selected');
-      $(this).addClass('selected');
-      $(`${root} .dropdown-options`).removeClass('show');
-      $(`${root} .selected-item`).removeClass('active');
-    });
+document.addEventListener('click', event => {
+  const target = event.target;
+  if (!target.closest(root)) {
+    document
+      .querySelectorAll(`${root} .dropdown-options`)
+      .forEach(option => option.classList.remove('show'));
+    document
+      .querySelectorAll(`${root} .selected-item`)
+      .forEach(item => item.classList.remove('active'));
   }
+});
 
-  $(document).click(event => {
-    const target = $(event.target);
-    if (!target.closest(root).length) {
-      $(`${root} .dropdown-options`).removeClass('show');
-      $(`${root} .selected-item`).removeClass('active');
-    }
+document
+  .querySelector('.search-line .search-clean')
+  .addEventListener('click', function () {
+    document.querySelector('#search').value = '';
   });
 
-  $('.search-line .search-clean').click(function () {
-    $('#search').val('');
-  });
+function handleClick() {
+  const country = document.querySelector('#selected-country').textContent;
+  const brand = document.querySelector('#selected-brand').textContent;
+  const budget = document.querySelector('#selected-budget').textContent;
+  const searchText = document.querySelector('#search').value;
 
-  const handleClick = () => {
-    const country = $('#selected-country').text();
-    const brand = $('#selected-brand').text();
-    const budget = $('#selected-budget').text();
-    const searchText = $('#search').val();
+  goToCatalogBySearchResults(country, brand, budget, searchText);
+}
 
-    goToCatalogBySearchResults(country, brand, budget, searchText);
-  };
-
-  $('#search').keypress(function (event) {
+document
+  .querySelector('#search')
+  .addEventListener('keypress', function (event) {
     if (event.which === 13) {
       event.preventDefault();
       handleClick();
     }
   });
 
-  $('.find-btn').click(function () {
-    handleClick();
-  });
+document.querySelector('.find-btn').addEventListener('click', function () {
+  handleClick();
 });
-
-$('#searchBlock').html(search());
-
-registerBlockTitle('search-block-title');
