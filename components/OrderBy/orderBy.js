@@ -73,27 +73,62 @@ const orderBy = () => {
 
 await initializeWhiskey();
 
-$(document).ready(function () {
-  const root = '.order-by .dropdown-container';
-  $(`${root} .selected-item.sorting-field`).click(function () {
-    $(this).toggleClass('active');
-    $(`${root} .dropdown-options.sorting-field`).toggleClass('show');
-  });
+var orderByElement = document.getElementById('orderBy');
+if (orderByElement) {
+  orderByElement.innerHTML = orderBy();
+}
 
-  $(`${root} .dropdown-options.sorting-field > li`).click(function () {
-    $(`${root} .dropdown-options.sorting-field > li`).removeClass('selected');
-    $(this).addClass('selected');
-    $(`${root} .dropdown-options`).removeClass('show');
-    $(`${root} .selected-item`).removeClass('active');
-  });
+const root = '.order-by .dropdown-container';
 
-  $(document).click(event => {
-    const target = $(event.target);
-    if (!target.closest(root).length) {
-      $(`${root} .dropdown-options`).removeClass('show');
-      $(`${root} .selected-item`).removeClass('active');
+// Click event for selected-item.sorting-field
+const selectedField = document.querySelector(
+  `${root} .selected-item.sorting-field`
+);
+if (selectedField) {
+  selectedField.addEventListener('click', function () {
+    this.classList.toggle('active');
+    const dropdownOptions = document.querySelector(
+      `${root} .dropdown-options.sorting-field`
+    );
+    if (dropdownOptions) {
+      dropdownOptions.classList.toggle('show');
+    }
+  });
+}
+
+// Click event for dropdown-options.sorting-field > li
+const optionItems = document.querySelectorAll(
+  `${root} .dropdown-options.sorting-field > li`
+);
+optionItems.forEach(function (item) {
+  item.addEventListener('click', function () {
+    optionItems.forEach(function (li) {
+      li.classList.remove('selected');
+    });
+    this.classList.add('selected');
+    const dropdownOptions = document.querySelector(`${root} .dropdown-options`);
+    if (dropdownOptions) {
+      dropdownOptions.classList.remove('show');
+    }
+    const selectedItem = document.querySelector(`${root} .selected-item`);
+    if (selectedItem) {
+      selectedItem.classList.remove('active');
     }
   });
 });
 
-$('#orderBy').html(orderBy());
+// Click event to close dropdown if clicked outside
+document.addEventListener('click', function (event) {
+  const target = event.target;
+  const dropdownContainer = document.querySelector(root);
+  if (dropdownContainer && !dropdownContainer.contains(target)) {
+    const dropdownOptions = document.querySelector(`${root} .dropdown-options`);
+    if (dropdownOptions) {
+      dropdownOptions.classList.remove('show');
+    }
+    const selectedItem = document.querySelector(`${root} .selected-item`);
+    if (selectedItem) {
+      selectedItem.classList.remove('active');
+    }
+  }
+});
