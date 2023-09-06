@@ -7,29 +7,37 @@ import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
 
 const nextSlide = () => {
-  const currentSlide = $('.active');
+  const currentSlide = document.querySelector('.active');
 
-  currentSlide.removeClass('active');
+  if (currentSlide) {
+    currentSlide.classList.remove('active');
 
-  let nextSlide = currentSlide.next();
+    let nextSlide = currentSlide.nextElementSibling;
 
-  if (!nextSlide.length) {
-    nextSlide = $('.slider__slide:first-child');
+    if (!nextSlide) {
+      nextSlide = document.querySelector('.slider__slide:first-child');
+    }
+
+    if (nextSlide) {
+      nextSlide.classList.add('active');
+
+      const sliderWrapper = document.getElementById('sliderWrapper');
+      const height = document.querySelector('.slider__slide').offsetHeight;
+      const index = nextSlide.getAttribute('data-index') - 1;
+
+      if (sliderWrapper && !isNaN(height) && !isNaN(index)) {
+        sliderWrapper.style.transform = `translateY(-${height * index}px)`;
+      }
+    }
   }
-
-  nextSlide.addClass('active');
-
-  const sliderWrapper = $('#sliderWrapper');
-  const height = $('.slider__slide').first().outerHeight();
-  sliderWrapper.css(
-    'transform',
-    `translateY(-${height * (nextSlide.data('index') - 1)}px)`
-  );
 };
 
 const setFirstSlideActive = () => {
-  const firstSlide = $('.slider__slide:first-child');
-  firstSlide.addClass('active');
+  const firstSlide = document.querySelector('.slider__slide:first-child');
+
+  if (firstSlide) {
+    firstSlide.classList.add('active');
+  }
 };
 
 const getSliderImages = topRatedWhiskey => {
@@ -97,6 +105,14 @@ const top5RatedWhiskey = whiskey
   })
   .slice(0, 5);
 
-$('#thumbnail').html(thumbnail(category, whiskey[0].Country, top5RatedWhiskey));
+var thumbnailElement = document.getElementById('thumbnail');
+if (thumbnailElement) {
+  thumbnailElement.innerHTML = thumbnail(
+    category,
+    whiskey[0].Country,
+    top5RatedWhiskey
+  );
+}
+
 setFirstSlideActive();
 setInterval(nextSlide, 5000);
