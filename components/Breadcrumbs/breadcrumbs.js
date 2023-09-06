@@ -2,30 +2,32 @@ import {
   getRoute,
   getProductName,
   getCategory,
-  goBack,
-  goToMain,
 } from '../../services/urlSearchParams.js';
-import {
-  main,
-  productCard,
-  catalogByCategories,
-  catalogBySearchResults,
-} from '../../services/routePaths.js';
+import { main } from '../../services/routePaths.js';
 
 const getItems = items => {
-  let result = '';
-  for (let index = 0; index < items.length; index++) {
-    const item = items[index];
-    result += `<span class="item body-semibold" index=${index}>${item}</span>`;
-    if (index !== items.length - 1) {
-      result += `<div class="chevron"><img src="icons/chevron-right.svg" /></div>`;
-    }
-  }
+  let resultItems = [`<a class="item body-semibold" href="/">${items[0]}</a>`];
   if (items.length === 2) {
-    result += `<div class="chevron"></div>`;
-    result += `<span class="item body-semibold" index="2"></span>`;
+    resultItems.push(
+      '<div class="chevron"><img src="icons/chevron-right.svg" /></div>'
+    );
+    resultItems.push(`<a class="item body-semibold">${items[1]}</a>`);
   }
-  return result;
+
+  if (items.length === 3) {
+    resultItems.push(
+      '<div class="chevron"><img src="icons/chevron-right.svg" /></div>'
+    );
+    resultItems.push(
+      `<a class="item body-semibold" href="${document.referrer}">${items[1]}</a>`
+    );
+    resultItems.push(
+      '<div class="chevron"><img src="icons/chevron-right.svg" /></div>'
+    );
+    resultItems.push(`<a class="item body-semibold">${items[2]}</a>`);
+  }
+
+  return resultItems.join('');
 };
 
 const breadcrumbs = () => {
@@ -46,25 +48,6 @@ const breadcrumbs = () => {
 </div>
 `;
 };
-
-document.addEventListener('click', function (event) {
-  if (event.target && event.target.matches('.breadcrumbs .item')) {
-    const route = getRoute();
-    const index = parseInt(event.target.getAttribute('index'));
-    if (route === productCard) {
-      if (index === 1) {
-        goBack();
-      } else if (index === 0) {
-        goToMain();
-      }
-    } else if (
-      route === catalogByCategories ||
-      route === catalogBySearchResults
-    ) {
-      goToMain();
-    }
-  }
-});
 
 const element = document.getElementById('breadcrumbs');
 if (element) {

@@ -46,7 +46,7 @@
 
 .order-by .dropdown-container .dropdown-options > li > a {
   text-decoration: none;
-  color: #4e4442;
+  color: var(--text-brown-dark);
 }
 
 .order-by .dropdown-container .dropdown-options > li > a > div {

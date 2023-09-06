@@ -10,16 +10,14 @@
   padding-right: 3px;
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  color: var(--text-brown-dark);
 }
 
 .breadcrumbs .chevron {
   padding-right: 5px;
   display: flex;
   justify-content: center;
-}
-
-.breadcrumbs .item:hover {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {

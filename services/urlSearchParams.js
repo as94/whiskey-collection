@@ -96,14 +96,6 @@ const clearParams = params => {
   }
 };
 
-export const goToMain = () => {
-  window.location.href = main;
-};
-
-export const goBack = () => {
-  window.history.go(-1);
-};
-
 export const getCatalogByCategoriesLink = category => {
   const params = new URLSearchParams(window.location.search);
   clearParams(params);
