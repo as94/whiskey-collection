@@ -65,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .product-card {
     margin: 0 30px 30px 30px;
     padding: 30 25px 16px 30px;
@@ -73,7 +73,18 @@
   }
 
   .product-card .whiskey-image {
-    margin-top: 30px;
+    width: 400px;
+    min-height: 530px;
+  }
+
+  .product-card .foreground-image {
+    max-width: 400px;
+    max-height: 440px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-card .whiskey-image {
     width: 285px;
     min-height: 380px;
   }
