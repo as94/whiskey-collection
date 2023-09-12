@@ -105,6 +105,9 @@ const fillBrands = () => {
 
   const country = document.querySelector('#selected-country').textContent;
   const brands = getBrandsByCountry(country);
+  if (!brands) {
+    return;
+  }
   for (const brand of brands) {
     const li = document.createElement('li');
     li.textContent = brand;
@@ -123,6 +126,10 @@ const fillBudgets = () => {
 
   const brand = document.querySelector('#selected-brand').textContent;
   const budgets = getBudgetsByBrand(brand);
+  if (!budgets) {
+    return;
+  }
+
   for (const budget of budgets) {
     const li = document.createElement('li');
     li.textContent = budget;
@@ -130,6 +137,38 @@ const fillBudgets = () => {
   }
 
   parent.replaceChild(newList, oldList);
+};
+
+const clearBlock = blockName => {
+  const oldList = document.querySelector(
+    `${root} .dropdown-options.${blockName}`
+  );
+  const parent = oldList.parentNode;
+  const newList = document.createElement('ul');
+  newList.classList.add('dropdown-options', blockName);
+  parent.replaceChild(newList, oldList);
+
+  const oldDiv = document.querySelector(`${root} .selected-item.${blockName}`);
+  const parentDiv = oldDiv.parentNode;
+  const newDiv = document.createElement('div');
+  newDiv.classList.add('selected-item', blockName, 'disabled');
+  const span = document.createElement('span');
+  span.id = `selected-${blockName}`;
+  span.classList.add('body-medium');
+  span.innerHTML = 'Any';
+  newDiv.appendChild(span);
+
+  const dropdownControls = document.createElement('div');
+  dropdownControls.classList.add('dropdown-controls');
+  const clean = document.createElement('div');
+  clean.classList.add('clean');
+  const open = document.createElement('div');
+  open.classList.add('open');
+  dropdownControls.appendChild(clean);
+  dropdownControls.appendChild(open);
+  newDiv.appendChild(dropdownControls);
+
+  parentDiv.replaceChild(newDiv, oldDiv);
 };
 
 const addEventListeners = filter => {
@@ -167,24 +206,11 @@ const addEventListeners = filter => {
     selectedText.textContent = 'Any';
 
     if (filter === 'country') {
-      document.getElementById('selected-brand').textContent = 'Any';
-      const brandFilter = document.querySelector(
-        `${root} .selected-item.brand`
-      );
-      const cleanBrand = brandFilter.querySelector('.clean');
-      cleanBrand.click();
-      // brandFilter.classList.add('disabled');
-      // addEventListeners('brand');
+      clearBlock('brand');
     }
 
-    if (filter === 'brand') {
-      const budgetFilter = document.querySelector(
-        `${root} .selected-item.budget`
-      );
-      const cleanBudget = budgetFilter.querySelector('.clean');
-      cleanBudget.click();
-      // budgetFilter.classList.add('disabled');
-      // addEventListeners('budget');
+    if (filter === 'country' || filter === 'brand') {
+      clearBlock('budget');
     }
   };
 
@@ -214,6 +240,8 @@ const addEventListeners = filter => {
       document.getElementById('selected-brand').textContent = 'Any';
 
       addEventListeners('brand');
+
+      clearBlock('budget');
     }
 
     if (filter === 'brand') {
