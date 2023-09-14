@@ -55,9 +55,9 @@ const getSliderImages = topRatedWhiskey => {
   return result;
 };
 
-const jumbotron = (category, country, topRatedWhiskey) => `
-<link rel="stylesheet" href="./components/jumbotron/jumbotron.css" />
-<div class="jumbotron">
+const thumbnail = (category, country, topRatedWhiskey) => `
+<link rel="stylesheet" href="./components/Thumbnail/thumbnail.css" />
+<div class="thumbnail">
   <div class="column offer">
     <h3 class="usp-text h3">
       We have collected the most popular whiskey here. You can use it free and
@@ -105,9 +105,9 @@ const top5RatedWhiskey = whiskey
   })
   .slice(0, 5);
 
-var jumbotronElement = document.getElementById('jumbotron');
-if (jumbotronElement) {
-  jumbotronElement.innerHTML = jumbotron(
+var thumbnailElement = document.getElementById('thumbnail');
+if (thumbnailElement) {
+  thumbnailElement.innerHTML = thumbnail(
     category,
     whiskey[0].Country,
     top5RatedWhiskey
