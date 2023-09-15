@@ -56,7 +56,7 @@ const getSliderImages = topRatedWhiskey => {
 };
 
 const jumbotron = (category, country, topRatedWhiskey) => `
-<link rel="stylesheet" href="./components/jumbotron/jumbotron.css" />
+<link rel="stylesheet" href="./components/Jumbotron/jumbotron.css" />
 <div class="jumbotron">
   <div class="column offer">
     <h3 class="usp-text h3">
