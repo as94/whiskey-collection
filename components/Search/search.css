@@ -151,12 +151,15 @@
 
 .search-line input[type='text']:hover {
   cursor: pointer;
-  color: var(--btn-green-disabled);
 }
 
-/* .search-line input[type='text']::-webkit-input-placeholder {
+.search-line input[type='text']:disabled {
+  background-color: #fff;
+}
+
+.search-line input[type='text']:disabled::-webkit-input-placeholder {
   color: var(--btn-green-disabled);
-} */
+}
 
 .search-icon {
   position: absolute;

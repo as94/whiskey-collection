@@ -207,6 +207,11 @@ const addEventListeners = filter => {
 
     if (filter === 'country') {
       clearBlock('brand');
+
+      var searchInput = document.getElementById('search');
+      if (searchInput) {
+        searchInput.disabled = false;
+      }
     }
 
     if (filter === 'country' || filter === 'brand') {
@@ -242,6 +247,11 @@ const addEventListeners = filter => {
       addEventListeners('brand');
 
       clearBlock('budget');
+
+      var searchInput = document.getElementById('search');
+      if (searchInput) {
+        searchInput.disabled = true;
+      }
     }
 
     if (filter === 'brand') {
@@ -288,6 +298,9 @@ document
   .querySelector('.search-line .search-clean')
   .addEventListener('click', function () {
     document.querySelector('#search').value = '';
+    document
+      .querySelector(`${root} .selected-item.country`)
+      .classList.remove('disabled');
   });
 
 function handleClick() {
@@ -307,6 +320,19 @@ document
       handleClick();
     }
   });
+
+document.querySelector('#search').addEventListener('keyup', function (event) {
+  const text = event.target.value;
+  if (text) {
+    document
+      .querySelector(`${root} .selected-item.country`)
+      .classList.add('disabled');
+  } else {
+    document
+      .querySelector(`${root} .selected-item.country`)
+      .classList.remove('disabled');
+  }
+});
 
 document.querySelector('.find-btn').addEventListener('click', function () {
   handleClick();
