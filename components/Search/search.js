@@ -7,6 +7,8 @@ import {
 } from '../../services/state.js';
 import { goToCatalogBySearchResults } from '../../services/urlSearchParams.js';
 
+await initializeWhiskey();
+
 const generateCountryListItems = () => {
   let result = '';
   const countries = getCountries();
@@ -84,8 +86,6 @@ const search = () => {
 </div>
 `;
 };
-
-await initializeWhiskey();
 
 var element = document.getElementById('searchBlock');
 if (element) {

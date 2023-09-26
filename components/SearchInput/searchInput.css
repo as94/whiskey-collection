@@ -49,6 +49,10 @@
   justify-content: space-between;
 }
 
+.filter-block .dropdown-container .selected-item.disabled {
+  color: var(--btn-green-disabled);
+}
+
 .filter-block .dropdown-container .selected-item .dropdown-controls {
   display: flex;
 }
@@ -127,6 +131,14 @@
 
 .search-line input[type='text']:hover {
   cursor: pointer;
+}
+
+.search-line input[type='text']:disabled {
+  background-color: #fff;
+}
+
+.search-line input[type='text']:disabled::-webkit-input-placeholder {
+  color: var(--btn-green-disabled);
 }
 
 .search-icon {
