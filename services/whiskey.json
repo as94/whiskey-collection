@@ -448,22 +448,6 @@
     "ImageLink": "images/products/Jim Beam Devil's Cut Bourbon Whiskey.webp"
   },
   {
-    "Name": "Jim Beam Kentucky Fire Bourbon Whiskey",
-    "Country": "United States",
-    "Brand": "Jim Beam",
-    "Categories": "Bourbon",
-    "TastingNotes": "",
-    "ABV": "35%",
-    "BaseIngredient": "",
-    "YearsAged": "",
-    "Rating": 4,
-    "RateCount": 20,
-    "Price": "$17.99",
-    "Volume": "",
-    "Description": "Delve into the heart of bourbon tradition with Jim Beam® Kentucky Fire™, an expression deeply ingrained in the legacy of Jim Beam. Our dedicated distillers have embarked on an exhilarating journey, infusing the world's finest Kentucky Straight Bourbon Whiskey with the fiery essence of red-hot cinnamon liqueur, culminating in a tantalizing blend that ignites the senses with a harmonious fusion of scorching heat and delectable sweetness. Experience the spirited, fiery kick of Jim Beam® Kentucky Fire™ as it sets your taste buds ablaze, redefining the boundaries of flavor adventure.",
-    "ImageLink": "images/products/Jim Beam Kentucky Fire Bourbon Whiskey.webp"
-  },
-  {
     "Name": "Barrell Dovetail Whiskey",
     "Country": "United States",
     "Brand": "Barrell Craft Spirits",
@@ -1197,7 +1181,7 @@
     "Price": "$17.59",
     "Volume": "",
     "Description": "In the heart of Kentucky, buffalo left their indelible mark, charting a course followed by the earliest American explorers. These intrepid pioneers, driven by a pioneering spirit, practiced time-honored distillation methods, imbibing the raw distillate straight from the still. They affectionately referred to it as 'White Dog' - a crystal-clear, un-aged elixir with a subtle undercurrent of sweet corn. As time marched on, distillers discovered that this unadulterated spirit possessed the ideal qualities for aging, eventually giving birth to what we now recognize as the distinguished Kentucky Straight Bourbon Whiskey. Today, we continue the legacy of crafting whiskey at the very spot where the ancient buffalo once traversed the Kentucky River. Our steadfast commitment to centuries-old distillation traditions remains unswerving. Revel in the essence of White Dog, just as Americans did over two centuries ago, and savor a taste of history reborn.",
-    "ImageLink": "images/products/Buffalo Trace White Dog Mash #1.webp"
+    "ImageLink": "images/products/Buffalo Trace White Dog Mash.webp"
   },
   {
     "Name": "Buffalo Trace Kosher Wheat Recipe",
