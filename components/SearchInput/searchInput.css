@@ -134,7 +134,7 @@
 }
 
 .search-line input[type='text']:disabled {
-  background-color: #fff;
+  background-color: var(--primary-brown);
 }
 
 .search-line input[type='text']:disabled::-webkit-input-placeholder {

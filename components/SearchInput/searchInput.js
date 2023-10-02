@@ -29,29 +29,31 @@ const generateCountryListItems = selectedCountry => {
   return result;
 };
 
-const generateBrandListItems = () => {
+const generateBrandListItems = country => {
   let result = '';
-  const brands = getBrands();
+  const brands = getBrandsByCountry(country);
+  if (!brands) {
+    return;
+  }
   for (const brand of brands) {
     result += `<li>${brand}</li>`;
   }
   return result;
 };
 
-const generateBudgetListItems = () => {
+const generateBudgetListItems = brand => {
   let result = '';
-  const budgetRanges = getBudgetRanges();
-  for (const budgetRange of budgetRanges) {
-    result += `<li>${budgetRange}</li>`;
+  const budgets = getBudgetsByBrand(brand);
+  if (!budgets) {
+    return;
+  }
+  for (const budget of budgets) {
+    result += `<li>${budget}</li>`;
   }
   return result;
 };
 
-const searchInput = () => {
-  const country = getCountry();
-  const brand = getBrand();
-  const priceRange = getPriceRange();
-  const searchText = getSearchText();
+const searchInput = (country, brand, priceRange, searchText) => {
   return `
 <link rel="stylesheet" href="./components/SearchInput/searchInput.css" />
 <div class="search-block">
@@ -62,7 +64,7 @@ const searchInput = () => {
           What country?
         </label>
         <div class="dropdown-container" data-no-select>
-          <div class="selected-item country">
+          <div class="selected-item country ${searchText ? 'disabled' : ''}">
             <span id="selected-country" class="body-medium">${country}</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
@@ -79,7 +81,9 @@ const searchInput = () => {
           What brand?
         </label>
         <div class="dropdown-container" data-no-select>
-          <div class="selected-item brand">
+          <div class="selected-item brand ${
+            searchText || country === 'Any' ? 'disabled' : ''
+          }">
             <span id="selected-brand" class="body-medium">${brand}</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
@@ -87,7 +91,7 @@ const searchInput = () => {
             </div>
           </div>
           <ul class="dropdown-options brand">
-            ${generateBrandListItems()}
+            ${generateBrandListItems(country)}
           </ul>
         </div>
       </div>
@@ -96,7 +100,9 @@ const searchInput = () => {
           What budget?
         </label>
         <div class="dropdown-container" data-no-select>
-          <div class="selected-item budget">
+          <div class="selected-item budget ${
+            searchText || brand === 'Any' ? 'disabled' : ''
+          }">
             <span id="selected-budget" class="body-medium">${priceRange}</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
@@ -104,14 +110,16 @@ const searchInput = () => {
             </div>
           </div>
           <ul class="dropdown-options budget">
-            ${generateBudgetListItems()}
+            ${generateBudgetListItems(brand)}
           </ul>
         </div>
       </div>
     </div>
     <div class="search-line">
       <img class="search-icon" src="icons/search-white.svg" />
-      <input id="search" type="text" placeholder="Search whiskey" class="body-medium" value="${searchText}" />
+      <input id="search" type="text" placeholder="Search whiskey" class="body-medium" value="${searchText}" ${
+    searchText || country === 'Any' ? '' : 'disabled'
+  } />
       <div class="search-clean"></div>
     </div>
 
@@ -121,9 +129,14 @@ const searchInput = () => {
 `;
 };
 
+const country = getCountry();
+const brand = getBrand();
+const priceRange = getPriceRange();
+const searchText = getSearchText();
+
 var element = document.getElementById('searchInput');
 if (element) {
-  element.innerHTML = searchInput();
+  element.innerHTML = searchInput(country, brand, priceRange, searchText);
 }
 
 const root = '.filter-block .dropdown-container';
@@ -313,8 +326,16 @@ const addEventListeners = filter => {
 };
 
 addEventListeners('country');
-addEventListeners('brand');
-addEventListeners('budget');
+
+if (!searchText) {
+  if (country !== 'Any') {
+    addEventListeners('brand');
+  }
+
+  if (brand !== 'Any') {
+    addEventListeners('budget');
+  }
+}
 
 document.addEventListener('click', event => {
   const target = event.target;
