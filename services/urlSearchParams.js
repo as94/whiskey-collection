@@ -111,10 +111,13 @@ export const goToCatalogBySearchResults = (
 ) => {
   const params = new URLSearchParams(window.location.search);
   clearParams(params);
-  params.set('country', country);
-  params.set('brand', brand);
-  params.set('priceRange', priceRange);
-  params.set('searchText', searchText);
+  if (searchText) {
+    params.set('searchText', searchText);
+  } else {
+    params.set('country', country);
+    params.set('brand', brand);
+    params.set('priceRange', priceRange);
+  }
   params.set('page', 1);
   const newUrl = catalogBySearchResults + '?' + params.toString();
   window.location.href = newUrl;
