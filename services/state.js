@@ -30,8 +30,6 @@ export const setWhiskey = whiskey => {
   initBrandsByCountry(whiskey);
   initBudgetsByBrand(whiskey);
   initCountries(whiskey);
-  initBrands(whiskey);
-  initBudgetRanges();
 };
 
 const initWhiskeyByCategory = whiskey => {
@@ -103,18 +101,6 @@ const initCountries = whiskey => {
     a.localeCompare(b)
   );
   state.countries = countries;
-};
-
-const initBudgetRanges = () => {
-  state.budgetRanges = budgetRanges;
-};
-
-const initBrands = whiskey => {
-  const groupedByBrandWhiskey = groupBy(whiskey, 'Brand');
-  const brands = Object.keys(groupedByBrandWhiskey).sort((a, b) =>
-    a.localeCompare(b)
-  );
-  state.brands = brands;
 };
 
 export const getWhiskey = () => state.whiskey;
