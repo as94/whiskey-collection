@@ -1,8 +1,8 @@
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import {
   getCountries,
-  getBrands,
-  getBudgetRanges,
+  getBrandsByCountry,
+  getBudgetsByBrand,
 } from '../../services/state.js';
 import {
   getCountry,
@@ -27,37 +27,31 @@ const generateCountryListItems = selectedCountry => {
   return result;
 };
 
-const generateBrandListItems = selectedBrand => {
+const generateBrandListItems = country => {
   let result = '';
-  const brands = getBrands();
+  const brands = getBrandsByCountry(country);
+  if (!brands) {
+    return;
+  }
   for (const brand of brands) {
-    if (selectedBrand && selectedBrand === brand) {
-      result += `<li class="selected">${brand}</li>`;
-    } else {
-      result += `<li>${brand}</li>`;
-    }
+    result += `<li>${brand}</li>`;
   }
   return result;
 };
 
-const generateBudgetListItems = selectedBudgetRange => {
+const generateBudgetListItems = brand => {
   let result = '';
-  const budgetRanges = getBudgetRanges();
-  for (const budgetRange of budgetRanges) {
-    if (selectedBudgetRange && selectedBudgetRange === budgetRange) {
-      result += `<li class="selected">${budgetRange}</li>`;
-    } else {
-      result += `<li>${budgetRange}</li>`;
-    }
+  const budgets = getBudgetsByBrand(brand);
+  if (!budgets) {
+    return;
+  }
+  for (const budget of budgets) {
+    result += `<li>${budget}</li>`;
   }
   return result;
 };
 
-const searchInput = () => {
-  const country = getCountry();
-  const brand = getBrand();
-  const priceRange = getPriceRange();
-  const searchText = getSearchText();
+const searchInput = (country, brand, priceRange, searchText) => {
   return `
 <link rel="stylesheet" href="./components/SearchInput/searchInput.css" />
 <div class="search-block">
@@ -68,7 +62,7 @@ const searchInput = () => {
           What country?
         </label>
         <div class="dropdown-container" data-no-select>
-          <div class="selected-item country">
+          <div class="selected-item country ${searchText ? 'disabled' : ''}">
             <span id="selected-country" class="body-medium">${country}</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
@@ -85,7 +79,9 @@ const searchInput = () => {
           What brand?
         </label>
         <div class="dropdown-container" data-no-select>
-          <div class="selected-item brand">
+          <div class="selected-item brand ${
+            searchText || country === 'Any' ? 'disabled' : ''
+          }">
             <span id="selected-brand" class="body-medium">${brand}</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
@@ -93,7 +89,7 @@ const searchInput = () => {
             </div>
           </div>
           <ul class="dropdown-options brand">
-            ${generateBrandListItems(brand)}
+            ${generateBrandListItems(country)}
           </ul>
         </div>
       </div>
@@ -102,7 +98,9 @@ const searchInput = () => {
           What budget?
         </label>
         <div class="dropdown-container" data-no-select>
-          <div class="selected-item budget">
+          <div class="selected-item budget ${
+            searchText || brand === 'Any' ? 'disabled' : ''
+          }">
             <span id="selected-budget" class="body-medium">${priceRange}</span>
             <div class="dropdown-controls">
               <div class="clean"></div>
@@ -110,14 +108,16 @@ const searchInput = () => {
             </div>
           </div>
           <ul class="dropdown-options budget">
-            ${generateBudgetListItems(priceRange)}
+            ${generateBudgetListItems(brand)}
           </ul>
         </div>
       </div>
     </div>
     <div class="search-line">
       <img class="search-icon" src="icons/search-white.svg" />
-      <input id="search" type="text" placeholder="Search whiskey" class="body-medium" value="${searchText}" />
+      <input id="search" type="text" placeholder="Search whiskey" class="body-medium" value="${searchText}" ${
+    searchText || country === 'Any' ? '' : 'disabled'
+  } />
       <div class="search-clean"></div>
     </div>
 
@@ -127,33 +127,117 @@ const searchInput = () => {
 `;
 };
 
+const country = getCountry();
+const brand = getBrand();
+const priceRange = getPriceRange();
+const searchText = getSearchText();
+
 var element = document.getElementById('searchInput');
 if (element) {
-  element.innerHTML = searchInput();
+  element.innerHTML = searchInput(country, brand, priceRange, searchText);
 }
 
-const filters = ['country', 'brand', 'budget'];
 const root = '.filter-block .dropdown-container';
 
-filters.forEach(filter => {
+const fillBrands = () => {
+  const oldList = document.querySelector(`${root} .dropdown-options.brand`);
+  const parent = oldList.parentNode;
+
+  const newList = document.createElement('ul');
+  newList.classList.add('dropdown-options', 'brand');
+
+  const country = document.querySelector('#selected-country').textContent;
+  const brands = getBrandsByCountry(country);
+  if (!brands) {
+    return;
+  }
+  for (const brand of brands) {
+    const li = document.createElement('li');
+    li.textContent = brand;
+    newList.appendChild(li);
+  }
+
+  parent.replaceChild(newList, oldList);
+};
+
+const fillBudgets = () => {
+  const oldList = document.querySelector(`${root} .dropdown-options.budget`);
+  const parent = oldList.parentNode;
+
+  const newList = document.createElement('ul');
+  newList.classList.add('dropdown-options', 'budget');
+
+  const brand = document.querySelector('#selected-brand').textContent;
+  const budgets = getBudgetsByBrand(brand);
+  if (!budgets) {
+    return;
+  }
+
+  for (const budget of budgets) {
+    const li = document.createElement('li');
+    li.textContent = budget;
+    newList.appendChild(li);
+  }
+
+  parent.replaceChild(newList, oldList);
+};
+
+const clearBlock = blockName => {
+  const oldList = document.querySelector(
+    `${root} .dropdown-options.${blockName}`
+  );
+  const parent = oldList.parentNode;
+  const newList = document.createElement('ul');
+  newList.classList.add('dropdown-options', blockName);
+  parent.replaceChild(newList, oldList);
+
+  const oldDiv = document.querySelector(`${root} .selected-item.${blockName}`);
+  const parentDiv = oldDiv.parentNode;
+  const newDiv = document.createElement('div');
+  newDiv.classList.add('selected-item', blockName, 'disabled');
+  const span = document.createElement('span');
+  span.id = `selected-${blockName}`;
+  span.classList.add('body-medium');
+  span.innerHTML = 'Any';
+  newDiv.appendChild(span);
+
+  const dropdownControls = document.createElement('div');
+  dropdownControls.classList.add('dropdown-controls');
+  const clean = document.createElement('div');
+  clean.classList.add('clean');
+  const open = document.createElement('div');
+  open.classList.add('open');
+  dropdownControls.appendChild(clean);
+  dropdownControls.appendChild(open);
+  newDiv.appendChild(dropdownControls);
+
+  parentDiv.replaceChild(newDiv, oldDiv);
+};
+
+const addEventListeners = filter => {
   const selectedFilter = document.querySelector(
     `${root} .selected-item.${filter}`
   );
-
-  selectedFilter.addEventListener('click', function () {
-    this.classList.toggle('active');
-    const dropdownOptions = document.querySelector(
-      `${root} .dropdown-options.${filter}`
-    );
-    dropdownOptions.classList.toggle('show');
-  });
 
   const cleanButton = selectedFilter.querySelector('.clean');
   const options = document.querySelectorAll(
     `${root} .dropdown-options.${filter} > li`
   );
   const selectedText = document.querySelector(`#selected-${filter}`);
-  cleanButton.addEventListener('click', function (event) {
+
+  const selectedFilterClickHandler = function () {
+    const isDisabled = this.classList.contains('disabled');
+    if (isDisabled) {
+      return;
+    }
+    this.classList.toggle('active');
+    const dropdownOptions = document.querySelector(
+      `${root} .dropdown-options.${filter}`
+    );
+    dropdownOptions.classList.toggle('show');
+  };
+
+  const cleanButtonClickHandler = function (event) {
     event.stopPropagation();
     options.forEach(option => option.classList.remove('selected'));
     document
@@ -163,23 +247,93 @@ filters.forEach(filter => {
       .querySelectorAll(`${root} .dropdown-options`)
       .forEach(option => option.classList.remove('show'));
     selectedText.textContent = 'Any';
-  });
+
+    if (filter === 'country') {
+      clearBlock('brand');
+
+      var searchInput = document.getElementById('search');
+      if (searchInput) {
+        searchInput.disabled = false;
+      }
+    }
+
+    if (filter === 'country' || filter === 'brand') {
+      clearBlock('budget');
+    }
+  };
+
+  const optionClickHandler = function () {
+    const selectedOption = this.textContent;
+    selectedText.textContent = selectedOption;
+    options.forEach(opt => opt.classList.remove('selected'));
+    this.classList.add('selected');
+    document
+      .querySelectorAll(`${root} .dropdown-options`)
+      .forEach(option => option.classList.remove('show'));
+    document
+      .querySelectorAll(`${root} .selected-item`)
+      .forEach(item => item.classList.remove('active'));
+    if (filter === 'country') {
+      const brandFilter = document.querySelector(
+        `${root} .selected-item.brand`
+      );
+
+      if (!brandFilter.classList.contains('disabled')) {
+        addEventListeners('brand');
+      }
+
+      fillBrands();
+
+      brandFilter.classList.remove('disabled');
+      document.getElementById('selected-brand').textContent = 'Any';
+
+      addEventListeners('brand');
+
+      clearBlock('budget');
+
+      var searchInput = document.getElementById('search');
+      if (searchInput) {
+        searchInput.disabled = true;
+      }
+    }
+
+    if (filter === 'brand') {
+      const budgetFilter = document.querySelector(
+        `${root} .selected-item.budget`
+      );
+
+      if (!budgetFilter.classList.contains('disabled')) {
+        addEventListeners('budget');
+      }
+
+      fillBudgets();
+
+      budgetFilter.classList.remove('disabled');
+      document.getElementById('selected-budget').textContent = 'Any';
+
+      addEventListeners('budget');
+    }
+  };
+
+  selectedFilter.addEventListener('click', selectedFilterClickHandler);
+  cleanButton.addEventListener('click', cleanButtonClickHandler);
 
   options.forEach(option => {
-    option.addEventListener('click', function () {
-      const selectedOption = this.textContent;
-      selectedText.textContent = selectedOption;
-      options.forEach(opt => opt.classList.remove('selected'));
-      this.classList.add('selected');
-      document
-        .querySelectorAll(`${root} .dropdown-options`)
-        .forEach(option => option.classList.remove('show'));
-      document
-        .querySelectorAll(`${root} .selected-item`)
-        .forEach(item => item.classList.remove('active'));
-    });
+    option.addEventListener('click', optionClickHandler);
   });
-});
+};
+
+addEventListeners('country');
+
+if (!searchText) {
+  if (country !== 'Any') {
+    addEventListeners('brand');
+  }
+
+  if (brand !== 'Any') {
+    addEventListeners('budget');
+  }
+}
 
 document.addEventListener('click', event => {
   const target = event.target;
@@ -197,6 +351,9 @@ document
   .querySelector('.search-line .search-clean')
   .addEventListener('click', function () {
     document.querySelector('#search').value = '';
+    document
+      .querySelector(`${root} .selected-item.country`)
+      .classList.remove('disabled');
   });
 
 function handleClick() {
@@ -216,6 +373,19 @@ document
       handleClick();
     }
   });
+
+document.querySelector('#search').addEventListener('keyup', function (event) {
+  const text = event.target.value;
+  if (text) {
+    document
+      .querySelector(`${root} .selected-item.country`)
+      .classList.add('disabled');
+  } else {
+    document
+      .querySelector(`${root} .selected-item.country`)
+      .classList.remove('disabled');
+  }
+});
 
 document
   .querySelector('.find-again-btn')

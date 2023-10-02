@@ -9,6 +9,17 @@ export const groupBy = (data, groupField) => {
   }, {});
 };
 
+export const groupByWithSelect = (data, groupField, selectField) => {
+  return data.reduce((groups, item) => {
+    const groupValue = item[groupField];
+    if (!groups[groupValue]) {
+      groups[groupValue] = new Set();
+    }
+    groups[groupValue].add(item[selectField]);
+    return groups;
+  }, {});
+};
+
 export const toDictionary = (array, keyProperty) => {
   return array.reduce(function (dictionary, obj) {
     dictionary[obj[keyProperty]] = obj;
