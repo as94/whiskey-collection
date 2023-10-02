@@ -20,8 +20,6 @@ const state = {
   budgetsByBrand: {},
   mainCategories: [],
   countries: [],
-  brands: [],
-  budgetRanges: [],
 };
 
 export const setWhiskey = whiskey => {
@@ -156,7 +154,5 @@ export const getWhiskeyByName = () => state.whiskeyByName;
 export const getWhiskeyByBrand = () => state.whiskeyByBrand;
 export const getMainCategories = () => state.mainCategories;
 export const getCountries = () => state.countries;
-export const getBrands = () => state.brands;
 export const getBrandsByCountry = country => state.brandsByCountry[country];
 export const getBudgetsByBrand = brand => state.budgetsByBrand[brand];
-export const getBudgetRanges = () => state.budgetRanges;

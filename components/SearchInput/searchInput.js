@@ -1,8 +1,6 @@
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import {
   getCountries,
-  getBrands,
-  getBudgetRanges,
   getBrandsByCountry,
   getBudgetsByBrand,
 } from '../../services/state.js';
