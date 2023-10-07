@@ -117,13 +117,14 @@ const productCard = () => {
         }
       </div>
 
-      ${
-        product.Description &&
-        `<div class="line"></div>
-      <p class="description body-medium">${product.Description}</p>`
-      }
+      <a class="find-outside-btn body-semibold" data-no-select href="/">Find on Wine-Searcher</a>
     </div>
   </div>
+
+  ${
+    product.Description &&
+    `<p class="description body-medium">${product.Description}</p>`
+  }
 </div>
 `;
 };

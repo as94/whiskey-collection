@@ -13,6 +13,8 @@
   --btn-green-medium: #7d9f8c;
   --btn-green-light: #a4aaa2;
   --btn-green-disabled: #d4dfd2;
+  --btn-orange-nonactive: #cc5907;
+  --btn-orange-active: #b24c02;
 }
 
 body {
