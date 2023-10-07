@@ -3,6 +3,8 @@ import { getWhiskeyByName } from '../../services/state.js';
 import { getProductName } from '../../services/urlSearchParams.js';
 import { emptyElement } from '../../services/emptyElement.js';
 
+const wineSearcherUrl = 'https://www.wine-searcher.com';
+
 await initializeWhiskey();
 
 const productCard = () => {
@@ -117,7 +119,9 @@ const productCard = () => {
         }
       </div>
 
-      <a class="find-outside-btn body-semibold" data-no-select href="/">Find on Wine-Searcher</a>
+      <a class="find-outside-btn body-semibold" data-no-select href="${wineSearcherUrl}/find/${
+    product.Name
+  }?referring_site=WhiskeyCollection">Find on Wine-Searcher</a>
     </div>
   </div>
 
@@ -128,6 +132,8 @@ const productCard = () => {
 </div>
 `;
 };
+
+// 'https://www.wine-searcher.com/find/evan williams 1783 small batch bourbon?referring_site=WhiskeyCollection';
 
 const element = document.getElementById('productCard');
 if (element) {
