@@ -133,8 +133,6 @@ const productCard = () => {
 `;
 };
 
-// 'https://www.wine-searcher.com/find/evan williams 1783 small batch bourbon?referring_site=WhiskeyCollection';
-
 const element = document.getElementById('productCard');
 if (element) {
   element.innerHTML = productCard();
