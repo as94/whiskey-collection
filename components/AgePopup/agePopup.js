@@ -1,7 +1,6 @@
 import {
   getUserConfirmedAgeCookie,
   setConfirmUsersAgeCookie,
-  setNotConfirmUsersAgeCookie,
 } from '../../services/cookieStorage.js';
 
 const component = `
@@ -58,7 +57,6 @@ if (element) {
   const noBtn = document.querySelector('.no-btn');
   if (noBtn) {
     noBtn.addEventListener('click', function () {
-      setNotConfirmUsersAgeCookie();
       hidePopup();
       returnToReferringSite();
     });
