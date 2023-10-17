@@ -1,0 +1,155 @@
+.age-popup-background {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.age-popup {
+  background-color: var(--primary-brown);
+  color: white;
+  margin: 120px auto 0;
+  padding: 60px 0;
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+}
+
+.age-popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+.age-popup-content .title {
+  margin-bottom: 30px;
+}
+
+.age-popup-content .disclaimer {
+  margin-bottom: 20px;
+}
+
+.age-popup-content .question {
+  margin-bottom: 40px;
+}
+
+.age-popup-content .answers {
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.yes-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 60px;
+  width: 185px;
+  border-radius: 4px;
+  background-color: var(--primary-light-green);
+  margin-right: 15px;
+}
+
+.yes-btn:hover {
+  background-color: var(--btn-green-dark);
+  cursor: pointer;
+}
+
+.no-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 60px;
+  width: 185px;
+  border-radius: 4px;
+  background-color: var(--primary-brown);
+  border: 1px solid white;
+}
+
+.no-btn:hover {
+  background-color: var(--text-brown-dark);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .age-popup {
+    width: 1000px;
+    margin: 90px auto 0;
+    padding: 40px 0;
+  }
+
+  .age-popup-content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .age-popup {
+    width: 700px;
+    margin: 60px auto 0;
+  }
+
+  .age-popup-content {
+    width: 90%;
+  }
+
+  .yes-btn {
+    width: 170px;
+    height: 55px;
+  }
+
+  .no-btn {
+    width: 170px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .age-popup {
+    width: 500px;
+    margin: 40px auto 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .age-popup {
+    width: 400px;
+  }
+
+  .age-popup-content .answers {
+    flex-direction: column;
+  }
+
+  .yes-btn {
+    margin-right: 0;
+    margin-bottom: 12px;
+    width: 220px;
+  }
+
+  .no-btn {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .age-popup {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .age-popup {
+    width: 250px;
+  }
+}
