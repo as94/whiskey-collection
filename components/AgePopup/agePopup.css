@@ -12,9 +12,8 @@
 .age-popup {
   background-color: var(--primary-brown);
   color: white;
-  margin-top: 25vh;
-  margin-left: 20vh;
-  padding: 100px 0;
+  margin: 120px auto 0;
+  padding: 60px 0;
   width: 1160px;
   display: flex;
   justify-content: center;
@@ -24,6 +23,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+  text-align: center;
 }
 
 .age-popup-content .title {
@@ -51,7 +52,7 @@
   border: none;
   padding: 10px;
   height: 60px;
-  width: 230px;
+  width: 185px;
   border-radius: 4px;
   background-color: var(--primary-light-green);
   margin-right: 15px;
@@ -70,7 +71,7 @@
   border: none;
   padding: 10px;
   height: 60px;
-  width: 230px;
+  width: 185px;
   border-radius: 4px;
   background-color: var(--primary-brown);
   border: 1px solid white;
@@ -79,4 +80,76 @@
 .no-btn:hover {
   background-color: var(--text-brown-dark);
   cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .age-popup {
+    width: 1000px;
+    margin: 90px auto 0;
+    padding: 40px 0;
+  }
+
+  .age-popup-content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .age-popup {
+    width: 700px;
+    margin: 60px auto 0;
+  }
+
+  .age-popup-content {
+    width: 90%;
+  }
+
+  .yes-btn {
+    width: 170px;
+    height: 55px;
+  }
+
+  .no-btn {
+    width: 170px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .age-popup {
+    width: 500px;
+    margin: 40px auto 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .age-popup {
+    width: 400px;
+  }
+
+  .age-popup-content .answers {
+    flex-direction: column;
+  }
+
+  .yes-btn {
+    margin-right: 0;
+    margin-bottom: 12px;
+    width: 220px;
+  }
+
+  .no-btn {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .age-popup {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .age-popup {
+    width: 250px;
+  }
 }
