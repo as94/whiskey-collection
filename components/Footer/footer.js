@@ -24,11 +24,16 @@ const footer = () => {
   return `
   <link rel="stylesheet" href="./components/Footer/footer.css" />
   <div class="main-footer" data-no-select>
-    <a href="/" class="footer-logo">
-      <img src="./components/Footer/logo-light-text.svg" title="Whiskey collection logo" alt="Glass of whiskey" />
-    </a>
     <div class="footer-menu">
-      ${getCategories()}
+      <a href="/" class="footer-logo">
+        <img src="./components/Footer/logo-light-text.svg" title="Whiskey collection logo" alt="Glass of whiskey" />
+      </a>
+      <div class="footer-menu-content">
+        ${getCategories()}
+      </div>
+    </div>
+    <div class="footer-copyright body-small">
+      <p>© Whisky Collection - ${new Date().getFullYear()}. All rights reserved.</p>
     </div>
   </div>
   `;
