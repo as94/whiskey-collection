@@ -97,9 +97,13 @@ const generateCatalogRows = whiskeyItems => {
       <div class="whiskey-name body-semibold-large">
         ${whiskey.Name}
       </div>
-      <div class="whiskey-characteristics body-regular-large">${
-        whiskey.ABV ? `${whiskey.ABV} / ${whiskey.Price}` : `${whiskey.Price}`
-      }</div>
+      <div class="whiskey-characteristics body-regular-large">
+        <span class="price">${whiskey.Price}</span>
+        <div class="rating">
+          <img class="star-icon" src="icons/star.svg" />
+          <span>${whiskey.Rating} (${whiskey.RateCount})</span>
+        </div>
+      </div>
     </a>`;
     } else {
       result += `<a class="card" data-no-select href="${getProductCardLink(
@@ -117,9 +121,13 @@ const generateCatalogRows = whiskeyItems => {
       <div class="whiskey-name body-semibold-large">
         ${whiskey.Name}
       </div>
-      <div class="whiskey-characteristics body-regular-large">${
-        whiskey.ABV ? `${whiskey.ABV} / ${whiskey.Price}` : `${whiskey.Price}`
-      }</div>
+      <div class="whiskey-characteristics body-regular-large">
+        <span class="price">${whiskey.Price}</span>
+        <div class="rating">
+          <img class="star-icon" src="icons/star.svg" />
+          <span>${whiskey.Rating} (${whiskey.RateCount})</span>
+        </div>
+      </div>
     </a>`;
     }
   }

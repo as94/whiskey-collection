@@ -32,13 +32,11 @@
   background-color: var(--primary-light-green);
 }
 
-.catalog .card:nth-child(odd):hover .whiskey-name,
-.catalog .card:nth-child(odd):hover .whiskey-characteristics {
+.catalog .card:nth-child(odd):hover .whiskey-name {
   color: var(--text-brown-dark);
 }
 
-.catalog .card:nth-child(even):hover .whiskey-name,
-.catalog .card:nth-child(even):hover .whiskey-characteristics {
+.catalog .card:nth-child(even):hover .whiskey-name {
   color: var(--primary-light-green);
 }
 
@@ -50,6 +48,14 @@
 
 .catalog .card .whiskey-characteristics {
   color: white;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog .card .whiskey-characteristics .price {
+  padding-bottom: 5px;
 }
 
 .catalog .card .whiskey-image {
@@ -79,6 +85,14 @@
 
 .catalog .foreground-image {
   z-index: 1;
+}
+
+.catalog .whiskey-characteristics .rating {
+  display: flex;
+}
+
+.catalog .whiskey-characteristics .rating .star-icon {
+  margin-right: 2px;
 }
 
 @media screen and (max-width: 1600px) {

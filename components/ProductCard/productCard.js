@@ -104,9 +104,12 @@ const productCard = () => {
 
         ${
           product.Rating &&
-          `<div class="characteristic">
+          `<div class="characteristic rating">
               <span class="body-semibold">Rating: </span>
-              <span class="body-medium">${product.Rating}</span>
+              <div class="rating-value">
+                <img class="star-icon" src="icons/star.svg" />
+                <span class="body-medium">${product.Rating}</span>
+              </div>
           </div>`
         }
 

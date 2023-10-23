@@ -53,6 +53,14 @@
   margin-bottom: 15px;
 }
 
+.product-card .characteristic-list .characteristic.rating {
+  display: flex;
+}
+
+.product-card .characteristic-list .characteristic .rating-value {
+  display: flex;
+}
+
 .description {
   padding-top: 35px;
 }
@@ -136,6 +144,10 @@
     text-align: center;
   }
 
+  .product-card .characteristic.rating {
+    justify-content: center;
+  }
+
   .product-card {
     margin: 0 0 40px 0;
     padding: 0 40px 40px 40px;
@@ -190,6 +202,10 @@
 
   .product-card .characteristic-list {
     text-align: left;
+  }
+
+  .product-card .characteristic.rating {
+    justify-content: left;
   }
 
   .product-card {
