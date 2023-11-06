@@ -1,0 +1,67 @@
+.whiskey-collection-club-content {
+  background-color: #ad814e;
+  display: flex;
+  padding: 120px 150px 75px 200px;
+  color: white;
+}
+
+.whiskey-collection-club-content .whiskey-collection-club-offer {
+  flex: 4;
+  margin-right: 65px;
+}
+
+.whiskey-collection-club-content .whiskey-collection-club-offer .title {
+  padding-bottom: 30px;
+}
+
+.whiskey-collection-club-content .whiskey-collection-club-offer .welcome-text {
+  padding-bottom: 50px;
+}
+
+.whiskey-collection-club-content
+  .whiskey-collection-club-offer
+  .call-to-action-text {
+  padding-bottom: 30px;
+}
+
+.whiskey-collection-club-content
+  .whiskey-collection-club-offer
+  .call-to-action-block {
+  display: flex;
+}
+
+.whiskey-collection-club-content
+  .whiskey-collection-club-offer
+  .call-to-action-block
+  .email {
+  margin-right: 12px;
+}
+
+.join-club-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  padding: 10px 8px;
+  height: 60px;
+  width: 185px;
+  border-radius: 4px;
+  background-color: #deb62a;
+}
+
+.join-club-btn:hover {
+  background-color: #c29f25;
+  cursor: pointer;
+}
+
+.whiskey-collection-club-content img {
+  flex: 1;
+  width: 240px;
+  min-height: 700px;
+}
+
+.error {
+  color: #c80000;
+  display: none;
+}
