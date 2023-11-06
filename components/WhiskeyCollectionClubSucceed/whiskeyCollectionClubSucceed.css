@@ -1,0 +1,67 @@
+.whiskey-collection-club-succeed {
+  background-color: #ad814e;
+  padding: 120px 150px 120px 200px;
+  color: white;
+  display: flex;
+}
+
+.whiskey-collection-club-succeed .whiskey-collection-club-thanks {
+  flex: 4;
+  padding: 44px 64px;
+  margin-right: 15px;
+  border-left: 1px solid var(--primary-brown);
+  border-bottom: 1px solid var(--primary-brown);
+}
+
+.whiskey-collection-club-succeed .whiskey-collection-club-thanks .thanks {
+  padding-bottom: 30px;
+}
+
+.whiskey-collection-club-succeed .whiskey-collection-club-thanks .thanks-text {
+  padding-bottom: 30px;
+}
+
+.whiskey-collection-club-succeed .whiskey-collection-club-thanks .next {
+  padding-bottom: 30px;
+}
+
+.whiskey-collection-club-succeed .whiskey-collection-club-thanks .next-text {
+  padding-bottom: 40px;
+}
+
+.back-home-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  padding: 10px 8px;
+  height: 60px;
+  width: 185px;
+  border-radius: 4px;
+  background-color: var(--primary-light-green);
+}
+
+.back-home-btn::before {
+  content: '';
+  background-image: url('../../icons/arrow.svg');
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.back-home-btn:hover {
+  background-color: var(--btn-green-dark);
+  cursor: pointer;
+}
+
+.whiskey-collection-club-succeed img {
+  flex: 1;
+  width: 240px;
+  min-height: 700px;
+}

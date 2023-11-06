@@ -4,6 +4,7 @@ import {
   catalogBySearchResults,
   productCard,
   main,
+  whiskeyCollectionClubSucceed,
 } from './routePaths.js';
 
 export const getRoute = () => {
@@ -101,6 +102,18 @@ export const getCatalogByCategoriesLink = category => {
   clearParams(params);
   params.set('category', category);
   return catalogByCategories + '?' + params.toString();
+};
+
+export const goToHome = () => {
+  window.location.href = main;
+};
+
+export const goToWhiskeyCollectionClub = () => {
+  window.location.href = whiskeyCollectionClub;
+};
+
+export const goToWhiskeyCollectionClubSucceed = () => {
+  window.location.href = whiskeyCollectionClubSucceed;
 };
 
 export const goToCatalogBySearchResults = (
