@@ -3,7 +3,7 @@ import { goToHome } from '../../services/urlSearchParams.js';
 const whiskeyCollectionClubContent = `
 <link rel="stylesheet" href="./components/WhiskeyCollectionClubSucceed/whiskeyCollectionClubSucceed.css" />
 <div class="whiskey-collection-club-succeed" data-no-select>
-    <div class="whiskey-collection-club-thanks">
+    <div id="whiskey-collection-club-thanks" class="whiskey-collection-club-thanks">
         <h2 class="h2 thanks">Thank you for subscribing!</h2>
         <p class="thanks-text body-medium-large">Congratulations! You have successfully subscribed to the Whiskey-Collection. We are glad that you are ready to become part of our community.</p>
 

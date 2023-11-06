@@ -4,7 +4,7 @@ import { goToWhiskeyCollectionClubSucceed } from '../../services/urlSearchParams
 const whiskeyCollectionClubContent = `
 <link rel="stylesheet" href="./components/WhiskeyCollectionClubContent/whiskeyCollectionClubContent.css" />
 <div class="whiskey-collection-club-content" data-no-select>
-    <div class="whiskey-collection-club-offer">
+    <div id="whiskey-collection-club-offer" class="whiskey-collection-club-offer">
         <h1 class="h1 title">WHISKEY-COLLECTION CLUB</h1>
         <p class="welcome-text body-medium-large">Welcome to The Whiskey Collection, where whiskey passion, friendliness and intimate knowledge of the spirit come together. Our club is dedicated to celebrating the great art of whiskey making and its rich variety of flavours. It doesn't matter if you are an experienced connoisseur or just starting your journey in the world of whiskey, our club is open to everyone who appreciates this amazing drink.</p>
 

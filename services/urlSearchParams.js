@@ -4,6 +4,7 @@ import {
   catalogBySearchResults,
   productCard,
   main,
+  whiskeyCollectionClub,
   whiskeyCollectionClubSucceed,
 } from './routePaths.js';
 
@@ -109,11 +110,13 @@ export const goToHome = () => {
 };
 
 export const goToWhiskeyCollectionClub = () => {
-  window.location.href = whiskeyCollectionClub;
+  window.location.href =
+    whiskeyCollectionClub + '#whiskey-collection-club-offer';
 };
 
 export const goToWhiskeyCollectionClubSucceed = () => {
-  window.location.href = whiskeyCollectionClubSucceed;
+  window.location.href =
+    whiskeyCollectionClubSucceed + '#whiskey-collection-club-thanks';
 };
 
 export const goToCatalogBySearchResults = (
