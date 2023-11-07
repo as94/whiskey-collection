@@ -5,7 +5,7 @@
   display: flex;
 }
 
-.whiskey-collection-club-succeed .whiskey-collection-club-thanks {
+.whiskey-collection-club-thanks {
   flex: 4;
   padding: 44px 64px;
   margin-right: 15px;
@@ -13,19 +13,19 @@
   border-bottom: 1px solid var(--primary-brown);
 }
 
-.whiskey-collection-club-succeed .whiskey-collection-club-thanks .thanks {
+.thanks {
   padding-bottom: 30px;
 }
 
-.whiskey-collection-club-succeed .whiskey-collection-club-thanks .thanks-text {
+.thanks-text {
   padding-bottom: 30px;
 }
 
-.whiskey-collection-club-succeed .whiskey-collection-club-thanks .next {
+.next {
   padding-bottom: 30px;
 }
 
-.whiskey-collection-club-succeed .whiskey-collection-club-thanks .next-text {
+.next-text {
   padding-bottom: 40px;
 }
 
@@ -71,7 +71,7 @@
     padding: 70px 80px 70px 130px;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-thanks {
+  .whiskey-collection-club-thanks {
     margin-right: 0;
   }
 }
@@ -102,7 +102,7 @@
     padding: 0;
   }
 
-  .whiskey-collection-club-succeed .whiskey-collection-club-thanks {
+  .whiskey-collection-club-thanks {
     padding: 60px;
     border: none;
   }
@@ -113,22 +113,20 @@
     padding: 0;
   }
 
-  .whiskey-collection-club-succeed .whiskey-collection-club-thanks {
+  .whiskey-collection-club-thanks {
     padding: 40px 16px;
     border: none;
   }
 
-  .whiskey-collection-club-succeed .whiskey-collection-club-thanks .thanks {
+  .thanks {
     padding-bottom: 5px;
   }
 
-  .whiskey-collection-club-succeed
-    .whiskey-collection-club-thanks
-    .thanks-text {
+  .thanks-text {
     padding-bottom: 20px;
   }
 
-  .whiskey-collection-club-succeed .whiskey-collection-club-thanks .next {
+  .next {
     padding-bottom: 15px;
   }
 

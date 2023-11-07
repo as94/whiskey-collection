@@ -5,7 +5,7 @@
   display: flex;
 }
 
-.whiskey-collection-club-content .whiskey-collection-club-offer {
+.whiskey-collection-club-offer {
   flex: 4;
   padding: 44px 64px;
   margin-right: 15px;
@@ -13,24 +13,24 @@
   border-bottom: 1px solid var(--primary-brown);
 }
 
-.whiskey-collection-club-content .whiskey-collection-club-offer .title {
+.title {
   padding-bottom: 30px;
 }
 
-.whiskey-collection-club-content .whiskey-collection-club-offer .welcome-text {
+.welcome-text {
   padding-bottom: 50px;
 }
 
-.whiskey-collection-club-content .whiskey-collection-club-offer .offer {
+.offer {
   padding-bottom: 30px;
 }
 
-.whiskey-collection-club-content .whiskey-collection-club-offer .offer-list {
+.offer-list {
   padding-bottom: 50px;
   list-style-type: none;
 }
 
-.whiskey-collection-club-content .whiskey-collection-club-offer .offer-list li {
+.offer-list li {
   background-image: url(../../icons/check-white.svg);
   background-size: 24px;
   background-repeat: no-repeat;
@@ -38,28 +38,27 @@
   padding-bottom: 20px;
 }
 
-.whiskey-collection-club-content
-  .whiskey-collection-club-offer
-  .call-to-action-text {
+.call-to-action-text {
   padding-bottom: 30px;
 }
 
-.whiskey-collection-club-content
-  .whiskey-collection-club-offer
-  .call-to-action-block {
+.call-to-action-block {
   display: flex;
 }
 
-.whiskey-collection-club-content
-  .whiskey-collection-club-offer
-  .call-to-action-block
-  .email {
-  margin-right: 12px;
-  width: 385px;
+.call-to-action-block .email {
   outline: none;
   padding: 18px 24px;
-  border: none;
   border-radius: 4px;
+  border: none;
+  height: 24px;
+}
+
+.call-to-action-block .email.invalid {
+  border-radius: 0;
+  border: 1px solid #c80000;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
 .join-club-btn {
@@ -86,8 +85,19 @@
   min-height: 700px;
 }
 
+.email-container {
+  display: flex;
+  flex-direction: column;
+  width: 385px;
+  margin-right: 12px;
+}
+
 .error {
-  color: #c80000;
+  color: white;
+  background-color: #c80000;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 5px 10px;
   display: none;
 }
 
@@ -96,7 +106,7 @@
     padding: 70px 80px 70px 80px;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer {
+  .whiskey-collection-club-offer {
     margin-right: 0;
   }
 }
@@ -116,25 +126,24 @@
     display: none;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer .offer {
+  .offer {
     padding-bottom: 20px;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .welcome-text {
+  .welcome-text {
     padding-bottom: 30px;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer .offer-list {
+  .offer-list {
     padding-bottom: 35px;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .call-to-action-block
-    .email {
+  .email-container {
     width: 340px;
+  }
+
+  .call-to-action-block .email {
+    height: 20px;
   }
 
   .join-club-btn {
@@ -148,39 +157,32 @@
     padding: 0;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer {
+  .whiskey-collection-club-offer {
     padding: 60px;
     border: none;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer .title {
+  .title {
     padding-bottom: 20px;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .welcome-text {
+  .welcome-text {
     padding-bottom: 15px;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer .offer {
+  .offer {
     padding-bottom: 20px;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer .offer-list {
+  .offer-list {
     padding-bottom: 20px;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .call-to-action-text {
+  .call-to-action-text {
     padding-bottom: 20px;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .call-to-action-block
-    .email {
+  .email-container {
     width: 315px;
   }
 
@@ -194,53 +196,42 @@
     padding: 0;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer {
+  .whiskey-collection-club-offer {
     padding: 40px 16px;
     border: none;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer .title {
+  .title {
     padding-bottom: 15px;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .welcome-text {
+  .welcome-text {
     padding-bottom: 20px;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer .offer {
+  .offer {
     padding-bottom: 15px;
   }
 
-  .whiskey-collection-club-content .whiskey-collection-club-offer .offer-list {
+  .offer-list {
     padding-bottom: 15px;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .call-to-action-text {
+  .call-to-action-text {
     padding-bottom: 20px;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .call-to-action-block {
+  .call-to-action-block {
     flex-direction: column;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .call-to-action-block
-    .email {
+  .email-container {
     width: auto;
     margin-bottom: 15px;
     margin-right: 0;
   }
 
-  .whiskey-collection-club-content
-    .whiskey-collection-club-offer
-    .call-to-action-text {
+  .call-to-action-text {
     text-align: center;
   }
 

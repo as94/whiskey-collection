@@ -19,11 +19,12 @@ const whiskeyCollectionClubContent = `
 
         <p class="call-to-action-text body-semibold-large">If you want to join us, just enter your email and we will contact you</p>
         <div class="call-to-action-block">
+          <div class="email-container">
             <input id="email" class="email" type="text" placeholder="Enter your email" />
+            <p id="email-error" class="error body-small">Email is not correct. Please, check that the field is email and not empty</p>
+          </div>
             <button class="join-club-btn body-semibold" data-no-select>I want to join your club</button>
         </div>
-
-        <p id="error" class="error"></p>
     </div>
     <img src="./components/WhiskeyCollectionClubContent/whiskeybottle.svg" title="Join our Whiskey-Collection club" alt="Bottle of whiskey" />
 </div>`;
@@ -34,22 +35,24 @@ if (element) {
 }
 
 async function handleClick() {
-  const email = document.querySelector('#email').value;
-  const error = document.querySelector('#error');
+  const email = document.querySelector('#email');
+  const emailError = document.querySelector('#email-error');
 
-  if (!email || !email.includes('@')) {
-    error.style.display = 'block';
-    error.textContent =
+  if (!email.value || !email.value.includes('@')) {
+    emailError.style.display = 'block';
+    emailError.textContent =
       'Email is not correct. Please, check that the field is email and not empty';
+    email.classList.add('invalid');
     return;
   } else {
-    error.style.display = 'none';
+    emailError.style.display = 'none';
+    email.classList.remove('invalid');
   }
 
-  const succeed = await sendNotification(email);
+  const succeed = await sendNotification(email.value);
   if (!succeed) {
-    error.style.display = 'block';
-    error.textContent =
+    emailError.style.display = 'block';
+    emailError.textContent =
       'Something goes wrong with sending email. Please, try later. You also can contact administrator whiskeycollections@gmail.com';
     return;
   }
