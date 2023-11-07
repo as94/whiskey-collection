@@ -8,7 +8,9 @@
 }
 
 .special-offer {
-  padding: 25px 80px 25px 0;
+  display: flex;
+  align-items: center;
+  padding-right: 80px;
 }
 
 .join-our-club-btn {
@@ -18,8 +20,8 @@
   color: white;
   border: none;
   padding: 10px 8px;
-  height: 60px;
   width: 185px;
+  height: 60px;
   border-radius: 4px;
   background-color: #deb62a;
 }
@@ -39,14 +41,18 @@
   .main-header {
     padding-left: 25px;
   }
+
+  .special-offer {
+    padding-right: 55px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .main-header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 60px;
+    justify-content: end;
+    height: 100px;
   }
 
   .header-logo {
@@ -56,5 +62,20 @@
 
   .header-logo img {
     width: 70%;
+  }
+
+  .special-offer {
+    padding-right: 30px;
+  }
+
+  .join-our-club-btn {
+    width: 170px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .join-our-club-btn {
+    width: 120px;
   }
 }
