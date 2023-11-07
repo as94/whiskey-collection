@@ -90,3 +90,29 @@
   color: #c80000;
   display: none;
 }
+
+@media screen and (max-width: 1440px) {
+  .whiskey-collection-club-content {
+    padding: 70px 80px 70px 80px;
+  }
+
+  .whiskey-collection-club-content .whiskey-collection-club-offer {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .whiskey-collection-club-content img {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .whiskey-collection-club-content {
+    padding: 65px 110px 65px 50px;
+  }
+
+  .whiskey-collection-club-content img {
+    display: none;
+  }
+}
