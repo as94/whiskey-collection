@@ -43,10 +43,13 @@ async function handleClick() {
     emailError.textContent =
       'Email is not correct. Please, check that the field is email and not empty';
     email.classList.add('invalid');
+
+    email.addEventListener('keyup', function () {
+      emailError.style.display = 'none';
+      email.classList.remove('invalid');
+    });
+
     return;
-  } else {
-    emailError.style.display = 'none';
-    email.classList.remove('invalid');
   }
 
   const succeed = await sendNotification(email.value);
