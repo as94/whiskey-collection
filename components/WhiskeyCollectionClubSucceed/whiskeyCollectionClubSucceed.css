@@ -90,4 +90,20 @@
   .whiskey-collection-club-succeed img {
     display: none;
   }
+
+  .back-home-btn {
+    width: 170px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .whiskey-collection-club-succeed {
+    padding: 0;
+  }
+
+  .whiskey-collection-club-succeed .whiskey-collection-club-thanks {
+    padding: 60px;
+    border: none;
+  }
 }

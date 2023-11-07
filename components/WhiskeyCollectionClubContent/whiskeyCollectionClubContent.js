@@ -17,7 +17,7 @@ const whiskeyCollectionClubContent = `
           <li class="body-medium-large">Make new acquaintances and friends</li>
         </ul>
 
-        <p class="call-to-action-text body-semibold">If you want to join us, just enter your email and we will contact you</p>
+        <p class="call-to-action-text body-semibold-large">If you want to join us, just enter your email and we will contact you</p>
         <div class="call-to-action-block">
             <input id="email" class="email" type="text" placeholder="Enter your email" />
             <button class="join-club-btn body-semibold" data-no-select>I want to join your club</button>
