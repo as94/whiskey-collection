@@ -177,4 +177,11 @@
     line-height: 130%;
     letter-spacing: 0.54px;
   }
+
+  .body-small {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0.45px;
+  }
 }
