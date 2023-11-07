@@ -107,3 +107,32 @@
     border: none;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .whiskey-collection-club-succeed {
+    padding: 0;
+  }
+
+  .whiskey-collection-club-succeed .whiskey-collection-club-thanks {
+    padding: 40px 16px;
+    border: none;
+  }
+
+  .whiskey-collection-club-succeed .whiskey-collection-club-thanks .thanks {
+    padding-bottom: 5px;
+  }
+
+  .whiskey-collection-club-succeed
+    .whiskey-collection-club-thanks
+    .thanks-text {
+    padding-bottom: 20px;
+  }
+
+  .whiskey-collection-club-succeed .whiskey-collection-club-thanks .next {
+    padding-bottom: 15px;
+  }
+
+  .back-home-btn {
+    width: 100%;
+  }
+}
