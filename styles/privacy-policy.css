@@ -1,0 +1,52 @@
+.privacy-policy {
+  padding-top: 125px;
+  padding-bottom: 40px;
+  padding-left: 250px;
+  padding-right: 250px;
+  background-color: var(--primary-brown);
+  color: white;
+}
+
+.privacy-policy a {
+  color: white;
+}
+
+.privacy-policy a:visited {
+  color: white;
+}
+
+@media screen and (max-width: 1600px) {
+  .privacy-policy {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .privacy-policy {
+    padding-top: 60px;
+    padding-bottom: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-policy {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .privacy-policy {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
