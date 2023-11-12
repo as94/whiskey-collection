@@ -6,6 +6,11 @@ import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
 
+await initializeWhiskey();
+
+const response = await fetch('./components/Jumbotron/jumbotron.html');
+const htmlContent = await response.text();
+
 const nextSlide = () => {
   const currentSlide = document.querySelector('.active');
 
@@ -55,35 +60,12 @@ const getSliderImages = topRatedWhiskey => {
   return result;
 };
 
-const jumbotron = (category, country, topRatedWhiskey) => `
-<link rel="stylesheet" href="./components/Jumbotron/jumbotron.css" />
-<div class="jumbotron">
-  <div class="column offer">
-    <h3 class="usp-text h3">
-      We have collected the most popular whiskey here. You can use it free and
-      begin with
-    </h3>
-  </div>
-  <div class="column middle">
-    <div class="usp-product">
-      <h2 class="first-row h2">${category}</h2>
-      <h1 class="second-row h1">${country.toUpperCase()}</h1>
-      <h1 class="third-row h1">WHISKEY</h1>
-      <div class="fourth-row">
-        <a class="catalog-btn body-semibold" data-no-select href="${getCatalogByCategoriesLink(
-          category
-        )}">Discover more</a>
-      </div>
-    </div>
-  </div>
-  <div class="column slider">
-    <div class="slider__wrapper" id="sliderWrapper">
-      ${getSliderImages(topRatedWhiskey)}
-    </div>
-  </div>
-</div>`;
-
-await initializeWhiskey();
+const jumbotron = (category, country, topRatedWhiskey) =>
+  htmlContent
+    .replace('${category}', category)
+    .replace('${country}', country.toUpperCase())
+    .replace('${catalogByCategoriesLink}', getCatalogByCategoriesLink(category))
+    .replace('${sliderImages}', getSliderImages(topRatedWhiskey));
 
 const categories = getMainCategories();
 const category = getRandomItem(categories);
