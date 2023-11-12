@@ -89,8 +89,8 @@ const generateCatalogRows = whiskeyItems => {
     const whiskey = whiskeyItems[index];
     const backgroundImage =
       index % 2 === 0
-        ? 'images/product-card-backgrounds/dark-green.webp'
-        : 'images/product-card-backgrounds/light-green.webp';
+        ? 'assets/images/product-card-backgrounds/dark-green.webp'
+        : 'assets/images/product-card-backgrounds/light-green.webp';
 
     result += cardHtmlContent
       .replace('${backgroundImage}', backgroundImage)

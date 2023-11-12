@@ -37,8 +37,8 @@ const getCatalogItems = () => {
       .replace(
         '${categoryBackground}',
         index % 2 === 0
-          ? 'images/product-card-backgrounds/dark-green.webp'
-          : 'images/product-card-backgrounds/light-green.webp'
+          ? 'assets/images/product-card-backgrounds/dark-green.webp'
+          : 'assets/images/product-card-backgrounds/light-green.webp'
       )
       .replace('${whiskeyImageLink}', whiskey.ImageLink)
       .replace('${category}', category)

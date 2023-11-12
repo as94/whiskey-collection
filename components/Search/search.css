@@ -54,7 +54,7 @@
 }
 
 .filter-block .dropdown-container .selected-item .clean {
-  background-image: url('/icons/close.svg');
+  background-image: url('/assets/icons/close.svg');
   background-size: contain;
   background-repeat: no-repeat;
   padding: 12px;
@@ -62,7 +62,7 @@
 }
 
 .filter-block .dropdown-container .selected-item .open {
-  background-image: url('/icons/chevron.svg');
+  background-image: url('/assets/icons/chevron.svg');
   background-size: contain;
   background-repeat: no-repeat;
   padding: 12px;
@@ -168,7 +168,7 @@
 }
 
 .search-line .search-clean {
-  background-image: url('/icons/close.svg');
+  background-image: url('/assets/icons/close.svg');
   background-size: contain;
   background-repeat: no-repeat;
   padding: 12px;

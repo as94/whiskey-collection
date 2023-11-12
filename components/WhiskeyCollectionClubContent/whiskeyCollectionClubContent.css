@@ -31,7 +31,7 @@
 }
 
 .offer-list li {
-  background-image: url(../../icons/check-white.svg);
+  background-image: url(../../assets/icons/check-white.svg);
   background-size: 24px;
   background-repeat: no-repeat;
   padding-left: 30px;
