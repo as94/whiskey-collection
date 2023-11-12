@@ -7,6 +7,9 @@ const wineSearcherUrl = 'https://www.wine-searcher.com';
 
 await initializeWhiskey();
 
+const response = await fetch('./components/ProductCard/productCard.html');
+const htmlContent = await response.text();
+
 const productCard = () => {
   const productName = getProductName();
   if (!productName) {
@@ -17,123 +20,50 @@ const productCard = () => {
   if (!product) {
     return emptyElement;
   }
-  return `
-<link rel="stylesheet" href="./components/ProductCard/productCard.css" />
-<div class="product-card">
-  <h2 class="h2 product-card-header">${productName}</h2>
-  <div class="product-card-body">
-    <div class="left-side">
-      <div class="whiskey-image">
-        <img
-          class="background-image"
-          src="images/product-card-backgrounds/main.webp"
-        />
-        <img
-          class="foreground-image"
-          src="${product.ImageLink}"
-          title="${product.Name}"
-          alt="${product.Description}"
-        />
-      </div>
-    </div>
-    <div class="right-side">
-      <div class="characteristic-list">
-        ${
-          product.Country &&
-          `<div class="characteristic">
-              <span class="body-semibold">Country: </span>
-              <span class="body-medium">${product.Country}</span>
-          </div>`
-        }
 
-        ${
-          product.Brand &&
-          `<div class="characteristic">
-              <span class="body-semibold">Brand: </span>
-              <span class="body-medium">${product.Brand}</span>
-          </div>`
-        }
+  const hiddenCountry = product.Country ? '' : 'hidden';
+  const hiddenBrand = product.Brand ? '' : 'hidden';
+  const hiddenCategories = product.Categories ? '' : 'hidden';
+  const hiddenTastingNotes = product.TastingNotes ? '' : 'hidden';
+  const hiddenYearsAge = product.YearsAged ? '' : 'hidden';
+  const hiddenABV = product.ABV ? '' : 'hidden';
+  const hiddenVolume = product.Volume ? '' : 'hidden';
+  const hiddenPrice = product.Price ? '' : 'hidden';
+  const hiddenRating = product.Rating ? '' : 'hidden';
+  const hiddenRateCount = product.RateCount ? '' : 'hidden';
+  const hiddenDescription = product.Description ? '' : 'hidden';
 
-        ${
-          product.Categories &&
-          `<div class="characteristic">
-              <span class="body-semibold">Category: </span>
-              <span class="body-medium">${product.Categories}</span>
-          </div>`
-        }
-
-        ${
-          product.TastingNotes &&
-          `<div class="characteristic">
-              <span class="body-semibold">Tasting Notes: </span>
-              <span class="body-medium">${product.TastingNotes}</span>
-          </div>`
-        }
-
-        ${
-          product.YearsAged &&
-          `<div class="characteristic">
-              <span class="body-semibold">Age: </span>
-              <span class="body-medium">${product.YearsAged}</span>
-          </div>`
-        }
-
-        ${
-          product.ABV &&
-          `<div class="characteristic">
-              <span class="body-semibold">ABV: </span>
-              <span class="body-medium">${product.ABV}</span>
-          </div>`
-        }
-
-        ${
-          product.Volume &&
-          `<div class="characteristic">
-              <span class="body-semibold">Volume: </span>
-              <span class="body-medium">${product.Volume}</span>
-          </div>`
-        }
-
-        ${
-          product.Price &&
-          `<div class="characteristic">
-              <span class="body-semibold">Average price: </span>
-              <span class="body-medium">${product.Price}</span>
-          </div>`
-        }
-
-        ${
-          product.Rating &&
-          `<div class="characteristic rating">
-              <span class="body-semibold">Rating: </span>
-              <div class="rating-value">
-                <img class="star-icon" src="icons/star.svg" />
-                <span class="body-medium">${product.Rating}</span>
-              </div>
-          </div>`
-        }
-
-        ${
-          product.RateCount &&
-          `<div class="characteristic">
-              <span class="body-semibold">Reviews: </span>
-              <span class="body-medium">${product.RateCount}</span>
-          </div>`
-        }
-      </div>
-
-      <a class="find-outside-btn body-semibold" data-no-select href="${wineSearcherUrl}/find/${
-    product.Name
-  }?referring_site=WhiskeyCollection">Find on Wine-Searcher</a>
-    </div>
-  </div>
-
-  ${
-    product.Description &&
-    `<p class="description body-medium">${product.Description}</p>`
-  }
-</div>
-`;
+  return htmlContent
+    .replace('${productName}', productName)
+    .replace('${productImageLink}', product.ImageLink)
+    .replace('${productName}', product.Name)
+    .replace('${productDescription}', product.Description)
+    .replace('${hiddenCountry}', hiddenCountry)
+    .replace('${productCountry}', product.Country)
+    .replace('${hiddenBrand}', hiddenBrand)
+    .replace('${productBrand}', product.Brand)
+    .replace('${hiddenCategories}', hiddenCategories)
+    .replace('${productCategories}', product.Categories)
+    .replace('${hiddenTastingNotes}', hiddenTastingNotes)
+    .replace('${productTastingNotes}', product.TastingNotes)
+    .replace('${hiddenYearsAge}', hiddenYearsAge)
+    .replace('${productYearsAged}', product.YearsAged)
+    .replace('${hiddenABV}', hiddenABV)
+    .replace('${productABV}', product.ABV)
+    .replace('${hiddenVolume}', hiddenVolume)
+    .replace('${productVolume}', product.Volume)
+    .replace('${hiddenPrice}', hiddenPrice)
+    .replace('${productPrice}', product.Price)
+    .replace('${hiddenRating}', hiddenRating)
+    .replace('${productRating}', product.Rating)
+    .replace('${hiddenRateCount}', hiddenRateCount)
+    .replace('${productRateCount}', product.RateCount)
+    .replace(
+      '${wineSearcherLink}',
+      `${wineSearcherUrl}/find/${product.Name}?referring_site=WhiskeyCollection`
+    )
+    .replace('${hiddenDescription}', hiddenDescription)
+    .replace('${productDescription}', product.Description);
 };
 
 const element = document.getElementById('productCard');
