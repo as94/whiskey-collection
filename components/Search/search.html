@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="./components/Search/search.css" />
+<div class="search-block">
+  <div id="search-block-title" firstRow="I want to" secondRow="Find"></div>
+  <div class="search-parameters">
+    <div class="filters">
+      <div class="filter-block">
+        <label class="body-semibold-extra"> What country? </label>
+        <div class="dropdown-container" data-no-select>
+          <div class="selected-item country">
+            <span id="selected-country" class="body-medium">Any</span>
+            <div class="dropdown-controls">
+              <div class="clean"></div>
+              <div class="open"></div>
+            </div>
+          </div>
+          <ul class="dropdown-options country">
+            ${countryListItems}
+          </ul>
+        </div>
+      </div>
+      <div class="filter-block">
+        <label class="body-semibold-extra"> What brand? </label>
+        <div class="dropdown-container" data-no-select>
+          <div class="selected-item brand disabled">
+            <span id="selected-brand" class="body-medium">Any</span>
+            <div class="dropdown-controls">
+              <div class="clean"></div>
+              <div class="open"></div>
+            </div>
+          </div>
+          <ul class="dropdown-options brand"></ul>
+        </div>
+      </div>
+      <div class="filter-block">
+        <label class="body-semibold-extra"> What budget? </label>
+        <div class="dropdown-container" data-no-select>
+          <div class="selected-item budget disabled">
+            <span id="selected-budget" class="body-medium">Any</span>
+            <div class="dropdown-controls">
+              <div class="clean"></div>
+              <div class="open"></div>
+            </div>
+          </div>
+          <ul class="dropdown-options budget"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="search-line">
+      <img class="search-icon" src="icons/search.svg" />
+      <input
+        id="search"
+        type="text"
+        placeholder="Search whiskey"
+        class="body-medium"
+      />
+      <div class="search-clean"></div>
+    </div>
+
+    <button class="find-btn body-semibold" data-no-select>Find</button>
+  </div>
+</div>
