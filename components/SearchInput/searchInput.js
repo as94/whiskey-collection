@@ -14,6 +14,9 @@ import {
 
 await initializeWhiskey();
 
+const response = await fetch('./components/SearchInput/searchInput.html');
+const htmlContent = await response.text();
+
 const generateCountryListItems = selectedCountry => {
   let result = '';
   const countries = getCountries();
@@ -52,79 +55,23 @@ const generateBudgetListItems = brand => {
 };
 
 const searchInput = (country, brand, priceRange, searchText) => {
-  return `
-<link rel="stylesheet" href="./components/SearchInput/searchInput.css" />
-<div class="search-block">
-  <div class="search-parameters">
-    <div class="filters">
-      <div class="filter-block">
-        <label class="body-semibold-extra">
-          What country?
-        </label>
-        <div class="dropdown-container" data-no-select>
-          <div class="selected-item country ${searchText ? 'disabled' : ''}">
-            <span id="selected-country" class="body-medium">${country}</span>
-            <div class="dropdown-controls">
-              <div class="clean"></div>
-              <div class="open"></div>
-            </div>
-          </div>
-          <ul class="dropdown-options country">
-            ${generateCountryListItems(country)}
-          </ul>
-        </div>
-      </div>
-      <div class="filter-block">
-        <label class="body-semibold-extra">
-          What brand?
-        </label>
-        <div class="dropdown-container" data-no-select>
-          <div class="selected-item brand ${
-            searchText || country === 'Any' ? 'disabled' : ''
-          }">
-            <span id="selected-brand" class="body-medium">${brand}</span>
-            <div class="dropdown-controls">
-              <div class="clean"></div>
-              <div class="open"></div>
-            </div>
-          </div>
-          <ul class="dropdown-options brand">
-            ${generateBrandListItems(country)}
-          </ul>
-        </div>
-      </div>
-      <div class="filter-block">
-        <label class="body-semibold-extra">
-          What budget?
-        </label>
-        <div class="dropdown-container" data-no-select>
-          <div class="selected-item budget ${
-            searchText || brand === 'Any' ? 'disabled' : ''
-          }">
-            <span id="selected-budget" class="body-medium">${priceRange}</span>
-            <div class="dropdown-controls">
-              <div class="clean"></div>
-              <div class="open"></div>
-            </div>
-          </div>
-          <ul class="dropdown-options budget">
-            ${generateBudgetListItems(brand)}
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="search-line">
-      <img class="search-icon" src="icons/search-white.svg" />
-      <input id="search" type="text" placeholder="Search whiskey" class="body-medium" value="${searchText}" ${
-    searchText || country === 'Any' ? '' : 'disabled'
-  } />
-      <div class="search-clean"></div>
-    </div>
+  const disableCountry = searchText ? 'disabled' : '';
+  const disableBrand = searchText || country === 'Any' ? 'disabled' : '';
+  const disableBudget = searchText || brand === 'Any' ? 'disabled' : '';
+  const disableSearch = searchText || country === 'Any' ? '' : 'disabled';
 
-    <button class="find-again-btn body-semibold" data-no-select>Find again</button>
-  </div>
-</div>
-`;
+  return htmlContent
+    .replace('${disableCountry}', disableCountry)
+    .replace('${country}', country)
+    .replace('${countryListItems}', generateCountryListItems(country))
+    .replace('${disableBrand}', disableBrand)
+    .replace('${brand}', brand)
+    .replace('${brandListItems}', generateBrandListItems(country))
+    .replace('${disableBudget}', disableBudget)
+    .replace('${priceRange}', priceRange)
+    .replace('${budgetListItems}', generateBudgetListItems(brand))
+    .replace('${searchText}', searchText)
+    .replace('${disableSearch}', disableSearch);
 };
 
 const country = getCountry();
