@@ -30,7 +30,7 @@ const getItems = items => {
   return resultItems.join('');
 };
 
-const breadcrumbs = () => {
+const breadcrumbs = async () => {
   const items = ['Home'];
   const route = getRoute();
   if (route !== main) {
@@ -41,15 +41,13 @@ const breadcrumbs = () => {
     }
   }
 
-  return `
-<link rel="stylesheet" href="./components/Breadcrumbs/breadcrumbs.css" />
-<div class="breadcrumbs" data-no-select>
-    ${getItems(items)}
-</div>
-`;
+  const response = await fetch('./components/Breadcrumbs/breadcrumbs.html');
+  const htmlContent = await response.text();
+
+  return htmlContent.replace('${items}', getItems(items));
 };
 
 const element = document.getElementById('breadcrumbs');
 if (element) {
-  document.getElementById('breadcrumbs').innerHTML = breadcrumbs();
+  document.getElementById('breadcrumbs').innerHTML = await breadcrumbs();
 }
