@@ -5,6 +5,9 @@ import {
 } from '../../services/urlSearchParams.js';
 import { main } from '../../services/routePaths.js';
 
+const response = await fetch('./components/Breadcrumbs/breadcrumbs.html');
+const htmlContent = await response.text();
+
 const getItems = items => {
   let resultItems = [`<a class="item body-semibold" href="/">${items[0]}</a>`];
   if (items.length === 2) {
@@ -40,9 +43,6 @@ const breadcrumbs = async () => {
       items.push(productName);
     }
   }
-
-  const response = await fetch('./components/Breadcrumbs/breadcrumbs.html');
-  const htmlContent = await response.text();
 
   return htmlContent.replace('${items}', getItems(items));
 };

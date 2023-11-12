@@ -1,10 +1,10 @@
-const blockTitle = async (firstRow, secondRow) => {
-  const response = await fetch('./components/BlockTitle/blockTitle.html');
-  const htmlContent = await response.text();
-  return htmlContent
+const response = await fetch('./components/BlockTitle/blockTitle.html');
+const htmlContent = await response.text();
+
+const blockTitle = async (firstRow, secondRow) =>
+  htmlContent
     .replace('${firstRow}', firstRow)
     .replace('${secondRow}', secondRow);
-};
 
 export const registerBlockTitle = async id => {
   const element = document.getElementById(id);

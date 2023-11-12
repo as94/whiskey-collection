@@ -26,6 +26,12 @@ import {
 
 await initializeWhiskey();
 
+const catalogResponse = await fetch('./components/Catalog/catalog.html');
+const catalogHtmlContent = await catalogResponse.text();
+
+const cardResponse = await fetch('./components/Catalog/card.html');
+const cardHtmlContent = await cardResponse.text();
+
 const getWhiskeyItems = () => {
   let whiskeyItems = [];
   const route = getRoute();
@@ -81,55 +87,21 @@ const generateCatalogRows = whiskeyItems => {
   let result = '';
   for (let index = 0; index < whiskeyItems.length; index++) {
     const whiskey = whiskeyItems[index];
-    if (index % 2 === 0) {
-      result += `<a class="card" data-no-select href="${getProductCardLink(
-        whiskey.Name
-      )}">
-      <div class="whiskey-image">
-        <img
-          class="background-image"
-          src="images/product-card-backgrounds/dark-green.webp"
-        />
-        <img class="foreground-image" src="${whiskey.ImageLink}" title="${
-        whiskey.Name
-      }" alt="${whiskey.Description}" />
-      </div>
-      <div class="whiskey-name body-semibold-large">
-        ${whiskey.Name}
-      </div>
-      <div class="whiskey-characteristics body-regular-large">
-        <span class="price">${whiskey.Price}</span>
-        <div class="rating">
-          <img class="star-icon" src="icons/star.svg" />
-          <span>${whiskey.Rating} (${whiskey.RateCount})</span>
-        </div>
-      </div>
-    </a>`;
-    } else {
-      result += `<a class="card" data-no-select href="${getProductCardLink(
-        whiskey.Name
-      )}">
-      <div class="whiskey-image">
-        <img
-          class="background-image"
-          src="images/product-card-backgrounds/light-green.webp"
-        />
-        <img class="foreground-image" src="${whiskey.ImageLink}" title="${
-        whiskey.Name
-      }" alt="${whiskey.Description}" />
-      </div>
-      <div class="whiskey-name body-semibold-large">
-        ${whiskey.Name}
-      </div>
-      <div class="whiskey-characteristics body-regular-large">
-        <span class="price">${whiskey.Price}</span>
-        <div class="rating">
-          <img class="star-icon" src="icons/star.svg" />
-          <span>${whiskey.Rating} (${whiskey.RateCount})</span>
-        </div>
-      </div>
-    </a>`;
-    }
+    const backgroundImage =
+      index % 2 === 0
+        ? 'images/product-card-backgrounds/dark-green.webp'
+        : 'images/product-card-backgrounds/light-green.webp';
+
+    result += cardHtmlContent
+      .replace('${backgroundImage}', backgroundImage)
+      .replace('${productCardLink}', getProductCardLink(whiskey.Name))
+      .replace('${imageLink}', whiskey.ImageLink)
+      .replace('${name}', whiskey.Name)
+      .replace('${description}', whiskey.Description)
+      .replace('${name}', whiskey.Name)
+      .replace('${price}', whiskey.Price)
+      .replace('${rating}', whiskey.Rating)
+      .replace('${rateCount}', whiskey.RateCount);
   }
 
   if (whiskeyItems.length % 3 === 2) {
@@ -139,16 +111,11 @@ const generateCatalogRows = whiskeyItems => {
   return result;
 };
 
-export const catalog = whiskeyItems => {
-  const result = `
-<link rel="stylesheet" href="./components/Catalog/catalog.css" />
-<div class="catalog">
-  ${generateCatalogRows(whiskeyItems)}
-</div>
-`;
-
-  return result;
-};
+export const catalog = whiskeyItems =>
+  catalogHtmlContent.replace(
+    '${catalogRows}',
+    generateCatalogRows(whiskeyItems)
+  );
 
 const whiskeyItems = getWhiskeyItems();
 
