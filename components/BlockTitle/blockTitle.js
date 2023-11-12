@@ -1,19 +1,12 @@
-const blockTitle = (firstRow, secondRow) => `
-<link rel="stylesheet" href="./components/BlockTitle/blockTitle.css" />
-<div class="block-title">
-  <div class="first-row">
-    <h2 class="h2">${firstRow}</h2>
-    <div class="empty-block"></div>
-  </div>
+const blockTitle = async (firstRow, secondRow) => {
+  const response = await fetch('./components/BlockTitle/blockTitle.html');
+  const htmlContent = await response.text();
+  return htmlContent
+    .replace('${firstRow}', firstRow)
+    .replace('${secondRow}', secondRow);
+};
 
-  <div class="second-row">
-    <div class="empty-block"></div>
-    <h2 class="h2">${secondRow}</h2>
-  </div>
-</div>
-`;
-
-export const registerBlockTitle = id => {
+export const registerBlockTitle = async id => {
   const element = document.getElementById(id);
   if (!element) {
     return;
@@ -22,5 +15,5 @@ export const registerBlockTitle = id => {
   const firstRow = element.getAttribute('firstRow');
   const secondRow = element.getAttribute('secondRow');
 
-  element.innerHTML = blockTitle(firstRow, secondRow);
+  element.innerHTML = await blockTitle(firstRow, secondRow);
 };
