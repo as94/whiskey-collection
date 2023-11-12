@@ -7,6 +7,9 @@ import { catalog } from '../Catalog/catalog.js';
 
 await initializeWhiskey();
 
+const response = await fetch('./components/MoreWhiskey/moreWhiskey.html');
+const htmlContent = await response.text();
+
 const moreWhiskey = () => {
   const productName = getProductName();
   if (!productName) {
@@ -26,15 +29,10 @@ const moreWhiskey = () => {
     return emptyElement;
   }
 
-  return `
-<link rel="stylesheet" href="./components/MoreWhiskey/moreWhiskey.css" />
-<div class="more-whiskey">
-    <div id="more-block-title" firstRow="More ${
-      product.Categories
-    }" secondRow="${product.Brand}"></div>
-</div>
-${catalog(whiskeyByBrand)}
-`;
+  return htmlContent
+    .replace('${productCategories}', product.Categories)
+    .replace('${productBrand}', product.Brand)
+    .replace('${whiskeyCatalogByBrand}', catalog(whiskeyByBrand));
 };
 
 const element = document.getElementById('more-whiskey');
