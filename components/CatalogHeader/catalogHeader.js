@@ -11,6 +11,7 @@ const htmlContent = await response.text();
 const element = document.getElementById('catalogHeader');
 if (element) {
   element.innerHTML = htmlContent;
+  element.dispatchEvent(new CustomEvent('catalogHeaderRenderComplete'));
 }
 
 const whiskeyItemsCount = getWhiskeyItemsCount();

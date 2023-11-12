@@ -90,7 +90,6 @@ if (totalPagesCount > 1) {
   const currentPageNumber = Math.floor((page - 1) / pagesCount) + 1;
 
   const paginationElement = document.getElementById('pagination');
-  console.log('paginationElement', paginationElement);
 
   if (paginationElement) {
     paginationElement.innerHTML = pagination(
@@ -98,8 +97,6 @@ if (totalPagesCount > 1) {
       currentPageNumber,
       page
     );
-
-    console.log('paginationElement rendered');
   }
 
   const pageElement = document.getElementById(`page-${page}`);
