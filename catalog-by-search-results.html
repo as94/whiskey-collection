@@ -48,13 +48,6 @@
     <div id="mainFooter"></div>
   </body>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      import('/components/OrderBy/orderBy.js');
-      import('/components/Pagination/pagination.js');
-    });
-  </script>
-
   <script src="/components/Header/header.js" type="module"></script>
   <script src="/components/Breadcrumbs/breadcrumbs.js" type="module"></script>
   <script
@@ -68,4 +61,24 @@
   ></script>
   <script src="/components/SearchInput/searchInput.js" type="module"></script>
   <script src="/components/Footer/footer.js" type="module"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var catalogHeader = document.getElementById('catalogHeader');
+      catalogHeader.addEventListener(
+        'catalogHeaderRenderComplete',
+        function () {
+          import('/components/OrderBy/orderBy.js');
+        }
+      );
+
+      var catalogFooter = document.getElementById('catalogFooter');
+      catalogFooter.addEventListener(
+        'catalogFooterRenderComplete',
+        function () {
+          import('/components/Pagination/pagination.js');
+        }
+      );
+    });
+  </script>
 </html>

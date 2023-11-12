@@ -48,14 +48,6 @@
     <div id="searchBlock"></div>
     <div id="mainFooter"></div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        console.log('DOMContentLoaded');
-        import('/components/OrderBy/orderBy.js');
-        import('/components/Pagination/pagination.js');
-      });
-    </script>
-
     <script src="/components/Header/header.js" type="module"></script>
     <script
       src="/components/CategoryDescription/categoryDescription.js"
@@ -72,5 +64,25 @@
     ></script>
     <script src="/components/Search/search.js" type="module"></script>
     <script src="/components/Footer/footer.js" type="module"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var catalogHeader = document.getElementById('catalogHeader');
+        catalogHeader.addEventListener(
+          'catalogHeaderRenderComplete',
+          function () {
+            import('/components/OrderBy/orderBy.js');
+          }
+        );
+
+        var catalogFooter = document.getElementById('catalogFooter');
+        catalogFooter.addEventListener(
+          'catalogFooterRenderComplete',
+          function () {
+            import('/components/Pagination/pagination.js');
+          }
+        );
+      });
+    </script>
   </body>
 </html>
