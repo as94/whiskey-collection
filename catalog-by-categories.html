@@ -53,8 +53,11 @@
     <script
       src="/components/CatalogHeader/catalogHeader.js"
       type="module"
+      defer
     ></script>
-    <script src="/components/OrderBy/orderBy.js" type="module"></script>
+    <script type="module" defer>
+      import('/components/OrderBy/orderBy.js');
+    </script>
     <script src="/components/Catalog/catalog.js" type="module"></script>
     <script
       src="/components/CatalogFooter/catalogFooter.js"

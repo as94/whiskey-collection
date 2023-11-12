@@ -5,20 +5,12 @@ import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
 
 await initializeWhiskey();
 
-const catalogHeader = () => {
-  return `
-  <link rel="stylesheet" href="./components/CatalogHeader/catalogHeader.css" />
-  <div class="catalog-header">
-    <div id="catalog-result" class="result-label body-medium-large">
-      Showing: 0 out of 0
-    </div>
-    <div id="orderBy" class="order-by" data-no-select></div>
-  </div>`;
-};
+const response = await fetch('./components/CatalogHeader/catalogHeader.html');
+const htmlContent = await response.text();
 
 const element = document.getElementById('catalogHeader');
 if (element) {
-  element.innerHTML = catalogHeader();
+  element.innerHTML = htmlContent;
 }
 
 const whiskeyItemsCount = getWhiskeyItemsCount();

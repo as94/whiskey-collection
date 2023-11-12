@@ -9,6 +9,11 @@ import {
   allOrderBySettings,
 } from '../../services/orderBySettings.js';
 
+await initializeWhiskey();
+
+const response = await fetch('./components/OrderBy/orderBy.html');
+const htmlContent = await response.text();
+
 const orderByItems = [
   'Name (A-Z)',
   'Name (Z-A)',
@@ -17,7 +22,7 @@ const orderByItems = [
   'Popular',
 ];
 
-const orderBy = () => {
+const orderBy = async () => {
   const orderBy = getOrderBy();
   let selected = '';
   switch (orderBy) {
@@ -53,34 +58,16 @@ const orderBy = () => {
     }
   }
 
-  return `
-  <link rel="stylesheet" href="./components/OrderBy/orderBy.css" />
-  <div>
-    <div class="dropdown-container">
-      <div class="selected-item sorting-field">
-        <span id="selected-sorting-field" class="body-semibold">
-          ${selected}
-        </span>
-        <img src="icons/chevron.svg" />
-      </div>
-      <ul class="dropdown-options sorting-field">
-        ${list}
-      </ul>
-    </div>
-  </div>
-  `;
+  return htmlContent.replace('${selected}', selected).replace('${list}', list);
 };
-
-await initializeWhiskey();
 
 var orderByElement = document.getElementById('orderBy');
 if (orderByElement) {
-  orderByElement.innerHTML = orderBy();
+  orderByElement.innerHTML = await orderBy();
 }
 
 const root = '.order-by .dropdown-container';
 
-// Click event for selected-item.sorting-field
 const selectedField = document.querySelector(
   `${root} .selected-item.sorting-field`
 );
@@ -96,7 +83,6 @@ if (selectedField) {
   });
 }
 
-// Click event for dropdown-options.sorting-field > li
 const optionItems = document.querySelectorAll(
   `${root} .dropdown-options.sorting-field > li`
 );
@@ -117,7 +103,6 @@ optionItems.forEach(function (item) {
   });
 });
 
-// Click event to close dropdown if clicked outside
 document.addEventListener('click', function (event) {
   const target = event.target;
   const dropdownContainer = document.querySelector(root);
