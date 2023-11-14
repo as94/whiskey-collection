@@ -19,7 +19,7 @@
 
 body {
   margin: 0;
-  font-family: Georama;
+  font-family: Georama, sans-serif;
   height: 100%;
   width: 100%;
   color: var(--text-brown-dark);
