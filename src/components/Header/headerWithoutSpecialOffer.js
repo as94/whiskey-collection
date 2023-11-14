@@ -1,9 +1,6 @@
-const response = await fetch(
-  './components/Header/headerWithoutSpecialOffer.html'
-);
-const htmlContent = await response.text();
+import headerWithoutSpecialOfferContent from './headerWithoutSpecialOffer.html';
 
 const element = document.getElementById('mainHeader');
 if (element) {
-  element.innerHTML = htmlContent;
+  element.innerHTML = headerWithoutSpecialOfferContent;
 }

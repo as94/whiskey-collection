@@ -1,7 +1,9 @@
-const response = await fetch('./components/Footer/footer.html');
-const htmlContent = await response.text();
+import footerContent from './footer.html';
 
 const element = document.getElementById('mainFooter');
 if (element) {
-  element.innerHTML = htmlContent.replace('${year}', new Date().getFullYear());
+  element.innerHTML = footerContent.replace(
+    '${year}',
+    new Date().getFullYear()
+  );
 }

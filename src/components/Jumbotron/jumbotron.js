@@ -5,11 +5,9 @@ import {
 import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
+import jumbotronContent from './jumbotron.html';
 
 await initializeWhiskey();
-
-const response = await fetch('./components/Jumbotron/jumbotron.html');
-const htmlContent = await response.text();
 
 const nextSlide = () => {
   const currentSlide = document.querySelector('.active');
@@ -61,7 +59,7 @@ const getSliderImages = topRatedWhiskey => {
 };
 
 const jumbotron = (category, country, topRatedWhiskey) =>
-  htmlContent
+  jumbotronContent
     .replace('${category}', category)
     .replace('${country}', country.toUpperCase())
     .replace('${catalogByCategoriesLink}', getCatalogByCategoriesLink(category))

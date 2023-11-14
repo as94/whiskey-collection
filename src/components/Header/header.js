@@ -1,11 +1,10 @@
 import { goToWhiskeyCollectionClub } from '../../services/urlSearchParams.js';
 
-const response = await fetch('./components/Header/header.html');
-const htmlContent = await response.text();
+import headerContent from './header.html';
 
 const element = document.getElementById('mainHeader');
 if (element) {
-  element.innerHTML = htmlContent;
+  element.innerHTML = headerContent;
 }
 
 document

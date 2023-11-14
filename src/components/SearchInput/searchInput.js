@@ -11,11 +11,9 @@ import {
   getSearchText,
   goToCatalogBySearchResults,
 } from '../../services/urlSearchParams.js';
+import searchInputContent from './searchInput.html';
 
 await initializeWhiskey();
-
-const response = await fetch('./components/SearchInput/searchInput.html');
-const htmlContent = await response.text();
 
 const generateCountryListItems = selectedCountry => {
   let result = '';
@@ -60,7 +58,7 @@ const searchInput = (country, brand, priceRange, searchText) => {
   const disableBudget = searchText || brand === 'Any' ? 'disabled' : '';
   const disableSearch = searchText || country === 'Any' ? '' : 'disabled';
 
-  return htmlContent
+  return searchInputContent
     .replace('${disableCountry}', disableCountry)
     .replace('${country}', country)
     .replace('${countryListItems}', generateCountryListItems(country))

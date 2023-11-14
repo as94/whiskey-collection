@@ -1,8 +1,7 @@
-const response = await fetch('./components/BlockTitle/blockTitle.html');
-const htmlContent = await response.text();
+import blockTitleContent from './blockTitle.html';
 
 const blockTitle = async (firstRow, secondRow) =>
-  htmlContent
+  blockTitleContent
     .replace('${firstRow}', firstRow)
     .replace('${secondRow}', secondRow);
 

@@ -6,11 +6,9 @@ import {
   getBudgetsByBrand,
 } from '../../services/state.js';
 import { goToCatalogBySearchResults } from '../../services/urlSearchParams.js';
+import searchContent from './search.html';
 
 await initializeWhiskey();
-
-const response = await fetch('./components/Search/search.html');
-const htmlContent = await response.text();
 
 const generateCountryListItems = () => {
   let result = '';
@@ -22,7 +20,7 @@ const generateCountryListItems = () => {
 };
 
 const search = () =>
-  htmlContent.replace('${countryListItems}', generateCountryListItems());
+  searchContent.replace('${countryListItems}', generateCountryListItems());
 
 var element = document.getElementById('searchBlock');
 if (element) {

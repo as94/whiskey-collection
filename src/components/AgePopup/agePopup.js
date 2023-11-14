@@ -3,13 +3,12 @@ import {
   setConfirmUsersAgeCookie,
 } from '../../services/cookieStorage.js';
 
-const response = await fetch('./components/AgePopup/agePopup.html');
-const htmlContent = await response.text();
+import agePopupContent from './agePopup.html';
 
 const agePopup = () => {
   const userConfirmedAgeCookie = getUserConfirmedAgeCookie();
   if (userConfirmedAgeCookie === null || !JSON.parse(userConfirmedAgeCookie)) {
-    return htmlContent;
+    return agePopupContent;
   } else {
     return '';
   }

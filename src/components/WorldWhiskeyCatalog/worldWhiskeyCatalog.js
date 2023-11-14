@@ -6,18 +6,10 @@ import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
+import worldWhiskeyCatalogContent from './worldWhiskeyCatalog.html';
+import worldWhiskeyCardContent from './worldWhiskeyCard.html';
 
 await initializeWhiskey();
-
-const response = await fetch(
-  './components/WorldWhiskeyCatalog/worldWhiskeyCatalog.html'
-);
-const htmlContent = await response.text();
-
-const cardResponse = await fetch(
-  './components/WorldWhiskeyCatalog/worldWhiskeyCard.html'
-);
-const cardHtmlContent = await cardResponse.text();
 
 const getCatalogItems = () => {
   let result = '';
@@ -27,7 +19,7 @@ const getCatalogItems = () => {
     const category = categories[index];
     const whiskey = getRandomItem(whiskeyByCategory[category]);
 
-    result += cardHtmlContent
+    result += worldWhiskeyCardContent
       .replace('${category}', category)
       .replace(
         '${catalogByCategoriesLink}',
@@ -55,7 +47,8 @@ const getCatalogItems = () => {
   return result;
 };
 
-const catalog = () => htmlContent.replace('${catalogItems}', getCatalogItems());
+const catalog = () =>
+  worldWhiskeyCatalogContent.replace('${catalogItems}', getCatalogItems());
 
 const element = document.getElementById('world-whiskey-catalog');
 if (element) {
