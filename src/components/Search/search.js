@@ -7,6 +7,7 @@ import {
 } from '../../services/state.js';
 import { goToCatalogBySearchResults } from '../../services/urlSearchParams.js';
 import searchContent from './search.html';
+import './search.css';
 
 await initializeWhiskey();
 

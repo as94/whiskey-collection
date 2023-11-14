@@ -1,4 +1,5 @@
 import blockTitleContent from './blockTitle.html';
+import './blockTitle.css';
 
 const blockTitle = async (firstRow, secondRow) =>
   blockTitleContent

@@ -3,17 +3,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
-    header: './src/components/Header/header.js',
-    jumbotron: './src/components/Jumbotron/jumbotron.js',
+    index: './index.js',
+    header: './components/Header/header.js',
+    jumbotron: './components/Jumbotron/jumbotron.js',
     worldWhiskeyCatalog:
-      './src/components/WorldWhiskeyCatalog/worldWhiskeyCatalog.js',
-    worldWhiskeyBlockTitle:
-      './src/components/BlockTitle/worldWhiskeyBlockTitle.js',
-    search: './src/components/Search/search.js',
-    footer: './src/components/Footer/footer.js',
-    agePopup: './src/components/AgePopup/agePopup.js',
+      './components/WorldWhiskeyCatalog/worldWhiskeyCatalog.js',
+    worldWhiskeyBlockTitle: './components/BlockTitle/worldWhiskeyBlockTitle.js',
+    search: './components/Search/search.js',
+    footer: './components/Footer/footer.js',
+    agePopup: './components/AgePopup/agePopup.js',
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -21,7 +22,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './index.html',
     }),
     new CleanWebpackPlugin(),
   ],
@@ -31,6 +32,10 @@ module.exports = {
         test: /\.html$/,
         exclude: /node_modules/,
         use: { loader: 'html-loader' },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },

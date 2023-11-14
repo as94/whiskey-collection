@@ -6,6 +6,7 @@ import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
 import jumbotronContent from './jumbotron.html';
+import './jumbotron.css';
 
 await initializeWhiskey();
 

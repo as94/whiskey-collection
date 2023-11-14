@@ -4,6 +4,7 @@ import {
 } from '../../services/cookieStorage.js';
 
 import agePopupContent from './agePopup.html';
+import './agePopup.css';
 
 const agePopup = () => {
   const userConfirmedAgeCookie = getUserConfirmedAgeCookie();

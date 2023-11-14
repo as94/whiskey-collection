@@ -4,9 +4,8 @@ import {
   getCategory,
 } from '../../services/urlSearchParams.js';
 import { main } from '../../services/routePaths.js';
-
-const response = await fetch('./components/Breadcrumbs/breadcrumbs.html');
-const htmlContent = await response.text();
+import breadcrumbsContent from './breadcrumbs.html';
+import './breadcrumbs.css';
 
 const getItems = items => {
   let resultItems = [`<a class="item body-semibold" href="/">${items[0]}</a>`];
@@ -44,7 +43,7 @@ const breadcrumbs = async () => {
     }
   }
 
-  return htmlContent.replace('${items}', getItems(items));
+  return breadcrumbsContent.replace('${items}', getItems(items));
 };
 
 const element = document.getElementById('breadcrumbs');

@@ -12,6 +12,7 @@ import {
   goToCatalogBySearchResults,
 } from '../../services/urlSearchParams.js';
 import searchInputContent from './searchInput.html';
+import './searchInput.css';
 
 await initializeWhiskey();
 

@@ -8,6 +8,7 @@ import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 import worldWhiskeyCatalogContent from './worldWhiskeyCatalog.html';
 import worldWhiskeyCardContent from './worldWhiskeyCard.html';
+import './worldWhiskeyCatalog.css';
 
 await initializeWhiskey();
 
