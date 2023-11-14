@@ -1,0 +1,230 @@
+.search-block {
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: var(--primary-brown);
+}
+
+.search-parameters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 110px;
+}
+
+.filters {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.filter-block {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.filter-block label {
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.filter-block .dropdown-container {
+  position: relative;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-block .dropdown-container .selected-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.filter-block .dropdown-container .selected-item.disabled {
+  color: var(--btn-green-disabled);
+}
+
+.filter-block .dropdown-container .selected-item .dropdown-controls {
+  display: flex;
+}
+
+.filter-block .dropdown-container .selected-item .clean {
+  background-image: url('/src/assets/icons/close.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12px;
+  margin: 10px 5px;
+}
+
+.filter-block .dropdown-container .selected-item .open {
+  background-image: url('/src/assets/icons/chevron.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12px;
+  margin: 10px 5px;
+}
+
+.filter-block .dropdown-container .dropdown-options {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-brown);
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.filter-block .dropdown-container .dropdown-options.show {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 5;
+}
+
+.filter-block .dropdown-container .dropdown-options > li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filter-block .dropdown-container .dropdown-options > li:hover {
+  background-color: var(--primary-light-green);
+}
+
+.filter-block .dropdown-container .dropdown-options > li.selected {
+  font-weight: bold;
+}
+
+.search-line {
+  margin-bottom: 40px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: flex;
+}
+
+.search-line input[type='text'] {
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 95%;
+  margin-left: 30px;
+  background-color: var(--primary-brown);
+  color: white;
+}
+
+.search-line input[type='text']::placeholder {
+  color: var(--text-brown-medium);
+}
+
+.search-line input[type='text']:hover {
+  cursor: pointer;
+}
+
+.search-line input[type='text']:disabled {
+  background-color: var(--primary-brown);
+}
+
+.search-line input[type='text']:disabled::-webkit-input-placeholder {
+  color: var(--btn-green-disabled);
+}
+
+.search-icon {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.search-line .search-clean {
+  background-image: url('/src/assets/icons/close.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12px;
+  cursor: pointer;
+  margin: 14px 10px;
+}
+
+.find-again-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 60px;
+  width: 230px;
+  border-radius: 4px;
+  background-color: var(--primary-light-green);
+}
+
+.find-again-btn:hover {
+  background-color: var(--btn-green-dark);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+  .search-block {
+    padding-bottom: 80px;
+  }
+
+  .find-again-btn {
+    height: 50px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .search-block {
+    padding: 40px 75px 40px 75px;
+  }
+
+  .search-parameters {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .search-block {
+    padding: 40px 45px 40px 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-block {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+  }
+
+  .filters {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .filter-block {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .filter-block label {
+    padding-bottom: 10px;
+  }
+
+  .find-again-btn {
+    height: 50px;
+    width: 290px;
+  }
+}
