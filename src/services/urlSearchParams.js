@@ -10,6 +10,7 @@ import {
 
 export const getRoute = () => {
   const path = window.location.pathname.slice(1);
+  console.log('path', path);
   if (path === catalogByCategories) {
     return catalogByCategories;
   }

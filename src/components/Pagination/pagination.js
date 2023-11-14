@@ -54,14 +54,14 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
       withoutGoFirst
         ? `<div class="empty-block left"></div>`
         : `<a class="arrow go-first" href="${getPageLink(1)}">
-    <img src="/src/assets/icons/chevron-double-left.svg" />
+    <img src="/assets/icons/chevron-double-left.svg" />
   </a>`
     }
     ${
       withoutGoBack
         ? `<div class="empty-block"></div>`
         : `<a class="arrow go-back" href="${getPageLink(page - 1)}">
-    <img src="/src/assets/icons/chevron-left.svg" />
+    <img src="/assets/icons/chevron-left.svg" />
   </a>`
     }
     ${getPages(currentPageNumber)}
@@ -69,14 +69,14 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
       withoutGoForward
         ? `<div class="empty-block right"></div>`
         : `<a class="arrow go-forward" href="${getPageLink(page + 1)}">
-    <img src="/src/assets/icons/chevron-right.svg" />
+    <img src="/assets/icons/chevron-right.svg" />
   </a>`
     }
     ${
       withoutGoLast
         ? `<div class="empty-block"></div>`
         : `<a class="arrow go-last" href="${getPageLink(totalPagesCount)}">
-    <img src="/src/assets/icons/chevron-double-right.svg" />
+    <img src="/assets/icons/chevron-double-right.svg" />
   </a>`
     }
   `;

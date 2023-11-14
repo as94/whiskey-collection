@@ -48,25 +48,19 @@
     <div id="mainFooter"></div>
   </body>
 
-  <script src="/src/components/Header/header.js" type="module"></script>
+  <script src="/components/Header/header.js" type="module"></script>
+  <script src="/components/Breadcrumbs/breadcrumbs.js" type="module"></script>
   <script
-    src="/src/components/Breadcrumbs/breadcrumbs.js"
+    src="/components/CatalogHeader/catalogHeader.js"
     type="module"
   ></script>
+  <script src="/components/Catalog/catalog.js" type="module"></script>
   <script
-    src="/src/components/CatalogHeader/catalogHeader.js"
+    src="/components/CatalogFooter/catalogFooter.js"
     type="module"
   ></script>
-  <script src="/src/components/Catalog/catalog.js" type="module"></script>
-  <script
-    src="/src/components/CatalogFooter/catalogFooter.js"
-    type="module"
-  ></script>
-  <script
-    src="/src/components/SearchInput/searchInput.js"
-    type="module"
-  ></script>
-  <script src="/src/components/Footer/footer.js" type="module"></script>
+  <script src="/components/SearchInput/searchInput.js" type="module"></script>
+  <script src="/components/Footer/footer.js" type="module"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -74,7 +68,7 @@
       catalogHeader.addEventListener(
         'catalogHeaderRenderComplete',
         function () {
-          import('/src/components/OrderBy/orderBy.js');
+          import('/components/OrderBy/orderBy.js');
         }
       );
 
@@ -82,7 +76,7 @@
       catalogFooter.addEventListener(
         'catalogFooterRenderComplete',
         function () {
-          import('/src/components/Pagination/pagination.js');
+          import('/components/Pagination/pagination.js');
         }
       );
     });
