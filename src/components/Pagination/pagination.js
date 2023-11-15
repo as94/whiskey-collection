@@ -5,6 +5,7 @@ import {
   getPagesCount,
   getTotalPagesCount,
 } from '../../services/paginationUtils.js';
+import paginationContent from './pagination.html';
 import './pagination.css';
 
 await initializeWhiskey();
@@ -48,39 +49,37 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
 
   const page = getPage();
 
-  return `
-  <link rel="stylesheet" href="./pagination.css" />
-  <div class="pagination-block" data-no-select>
-    ${
-      withoutGoFirst
-        ? `<div class="empty-block left"></div>`
-        : `<a class="arrow go-first" href="${getPageLink(1)}">
-    <img src="/assets/icons/chevron-double-left.svg" />
-  </a>`
-    }
-    ${
-      withoutGoBack
-        ? `<div class="empty-block"></div>`
-        : `<a class="arrow go-back" href="${getPageLink(page - 1)}">
-    <img src="/assets/icons/chevron-left.svg" />
-  </a>`
-    }
-    ${getPages(currentPageNumber)}
-    ${
-      withoutGoForward
-        ? `<div class="empty-block right"></div>`
-        : `<a class="arrow go-forward" href="${getPageLink(page + 1)}">
-    <img src="/assets/icons/chevron-right.svg" />
-  </a>`
-    }
-    ${
-      withoutGoLast
-        ? `<div class="empty-block"></div>`
-        : `<a class="arrow go-last" href="${getPageLink(totalPagesCount)}">
-    <img src="/assets/icons/chevron-double-right.svg" />
-  </a>`
-    }
-  `;
+  const content = `${
+    withoutGoFirst
+      ? `<div class="empty-block left"></div>`
+      : `<a class="arrow go-first" href="${getPageLink(1)}">
+  <img src="/assets/icons/chevron-double-left.svg" />
+</a>`
+  }
+  ${
+    withoutGoBack
+      ? `<div class="empty-block"></div>`
+      : `<a class="arrow go-back" href="${getPageLink(page - 1)}">
+  <img src="/assets/icons/chevron-left.svg" />
+</a>`
+  }
+  ${getPages(currentPageNumber)}
+  ${
+    withoutGoForward
+      ? `<div class="empty-block right"></div>`
+      : `<a class="arrow go-forward" href="${getPageLink(page + 1)}">
+  <img src="/assets/icons/chevron-right.svg" />
+</a>`
+  }
+  ${
+    withoutGoLast
+      ? `<div class="empty-block"></div>`
+      : `<a class="arrow go-last" href="${getPageLink(totalPagesCount)}">
+  <img src="/assets/icons/chevron-double-right.svg" />
+</a>`
+  }`;
+
+  return paginationContent.replace('${paginationContent}', content);
 };
 
 const page = getPage();
