@@ -21,7 +21,7 @@ const orderByItems = [
   'Popular',
 ];
 
-const orderBy = async () => {
+const orderBy = () => {
   const orderBy = getOrderBy();
   let selected = '';
   switch (orderBy) {
@@ -62,59 +62,65 @@ const orderBy = async () => {
     .replace('${list}', list);
 };
 
-var orderByElement = document.getElementById('orderBy');
-if (orderByElement) {
-  orderByElement.innerHTML = await orderBy();
-}
-
-const root = '.order-by .dropdown-container';
-
-const selectedField = document.querySelector(
-  `${root} .selected-item.sorting-field`
-);
-if (selectedField) {
-  selectedField.addEventListener('click', function () {
-    this.classList.toggle('active');
-    const dropdownOptions = document.querySelector(
-      `${root} .dropdown-options.sorting-field`
-    );
-    if (dropdownOptions) {
-      dropdownOptions.classList.toggle('show');
-    }
-  });
-}
-
-const optionItems = document.querySelectorAll(
-  `${root} .dropdown-options.sorting-field > li`
-);
-optionItems.forEach(function (item) {
-  item.addEventListener('click', function () {
-    optionItems.forEach(function (li) {
-      li.classList.remove('selected');
-    });
-    this.classList.add('selected');
-    const dropdownOptions = document.querySelector(`${root} .dropdown-options`);
-    if (dropdownOptions) {
-      dropdownOptions.classList.remove('show');
-    }
-    const selectedItem = document.querySelector(`${root} .selected-item`);
-    if (selectedItem) {
-      selectedItem.classList.remove('active');
-    }
-  });
-});
-
-document.addEventListener('click', function (event) {
-  const target = event.target;
-  const dropdownContainer = document.querySelector(root);
-  if (dropdownContainer && !dropdownContainer.contains(target)) {
-    const dropdownOptions = document.querySelector(`${root} .dropdown-options`);
-    if (dropdownOptions) {
-      dropdownOptions.classList.remove('show');
-    }
-    const selectedItem = document.querySelector(`${root} .selected-item`);
-    if (selectedItem) {
-      selectedItem.classList.remove('active');
-    }
+export const renderOrderBy = () => {
+  var orderByElement = document.getElementById('orderBy');
+  if (orderByElement) {
+    orderByElement.innerHTML = orderBy();
   }
-});
+
+  const root = '.order-by .dropdown-container';
+
+  const selectedField = document.querySelector(
+    `${root} .selected-item.sorting-field`
+  );
+  if (selectedField) {
+    selectedField.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const dropdownOptions = document.querySelector(
+        `${root} .dropdown-options.sorting-field`
+      );
+      if (dropdownOptions) {
+        dropdownOptions.classList.toggle('show');
+      }
+    });
+  }
+
+  const optionItems = document.querySelectorAll(
+    `${root} .dropdown-options.sorting-field > li`
+  );
+  optionItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      optionItems.forEach(function (li) {
+        li.classList.remove('selected');
+      });
+      this.classList.add('selected');
+      const dropdownOptions = document.querySelector(
+        `${root} .dropdown-options`
+      );
+      if (dropdownOptions) {
+        dropdownOptions.classList.remove('show');
+      }
+      const selectedItem = document.querySelector(`${root} .selected-item`);
+      if (selectedItem) {
+        selectedItem.classList.remove('active');
+      }
+    });
+  });
+
+  document.addEventListener('click', function (event) {
+    const target = event.target;
+    const dropdownContainer = document.querySelector(root);
+    if (dropdownContainer && !dropdownContainer.contains(target)) {
+      const dropdownOptions = document.querySelector(
+        `${root} .dropdown-options`
+      );
+      if (dropdownOptions) {
+        dropdownOptions.classList.remove('show');
+      }
+      const selectedItem = document.querySelector(`${root} .selected-item`);
+      if (selectedItem) {
+        selectedItem.classList.remove('active');
+      }
+    }
+  });
+};

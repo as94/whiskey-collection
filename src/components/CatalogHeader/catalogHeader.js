@@ -4,13 +4,15 @@ import { getPage } from '../../services/urlSearchParams.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
 import catalogHeaderContent from './catalogHeader.html';
 import './catalogHeader.css';
+import { renderOrderBy } from '../OrderBy/orderBy.js';
 
 await initializeWhiskey();
 
 const element = document.getElementById('catalogHeader');
 if (element) {
   element.innerHTML = catalogHeaderContent;
-  element.dispatchEvent(new CustomEvent('catalogHeaderRenderComplete'));
+
+  renderOrderBy();
 }
 
 const whiskeyItemsCount = getWhiskeyItemsCount();

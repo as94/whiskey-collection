@@ -61,24 +61,4 @@
   ></script>
   <script src="/components/SearchInput/searchInput.js" type="module"></script>
   <script src="/components/Footer/footer.js" type="module"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var catalogHeader = document.getElementById('catalogHeader');
-      catalogHeader.addEventListener(
-        'catalogHeaderRenderComplete',
-        function () {
-          import('/components/OrderBy/orderBy.js');
-        }
-      );
-
-      var catalogFooter = document.getElementById('catalogFooter');
-      catalogFooter.addEventListener(
-        'catalogFooterRenderComplete',
-        function () {
-          import('/components/Pagination/pagination.js');
-        }
-      );
-    });
-  </script>
 </html>

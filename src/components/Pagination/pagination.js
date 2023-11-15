@@ -82,25 +82,27 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
   return paginationContent.replace('${paginationContent}', content);
 };
 
-const page = getPage();
-const totalPagesCount = getTotalPagesCount();
-const pagesCount = getPagesCount();
+export const renderPagination = () => {
+  const page = getPage();
+  const totalPagesCount = getTotalPagesCount();
+  const pagesCount = getPagesCount();
 
-if (totalPagesCount > 1) {
-  const currentPageNumber = Math.floor((page - 1) / pagesCount) + 1;
+  if (totalPagesCount > 1) {
+    const currentPageNumber = Math.floor((page - 1) / pagesCount) + 1;
 
-  const paginationElement = document.getElementById('pagination');
+    const paginationElement = document.getElementById('pagination');
 
-  if (paginationElement) {
-    paginationElement.innerHTML = pagination(
-      totalPagesCount,
-      currentPageNumber,
-      page
-    );
+    if (paginationElement) {
+      paginationElement.innerHTML = pagination(
+        totalPagesCount,
+        currentPageNumber,
+        page
+      );
+    }
+
+    const pageElement = document.getElementById(`page-${page}`);
+    if (pageElement) {
+      pageElement.classList.add('active');
+    }
   }
-
-  const pageElement = document.getElementById(`page-${page}`);
-  if (pageElement) {
-    pageElement.classList.add('active');
-  }
-}
+};
