@@ -25,6 +25,7 @@ import {
 } from '../../services/routePaths.js';
 import catalogContent from './catalog.html';
 import cardContent from './card.html';
+import './catalog.css';
 
 await initializeWhiskey();
 

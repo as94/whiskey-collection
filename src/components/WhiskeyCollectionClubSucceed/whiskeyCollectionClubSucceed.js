@@ -1,5 +1,6 @@
 import { goToHome } from '../../services/urlSearchParams.js';
 import whiskeyCollectionClubSucceedContent from './whiskeyCollectionClubSucceed.html';
+import './whiskeyCollectionClubSucceed.css';
 
 const element = document.getElementById('whiskeyCollectionClubSucceed');
 if (element) {

@@ -3,6 +3,7 @@ import { getWhiskeyByName } from '../../services/state.js';
 import { getProductName } from '../../services/urlSearchParams.js';
 import { emptyElement } from '../../services/emptyElement.js';
 import productCardContent from './productCard.html';
+import './productCard.css';
 
 const wineSearcherUrl = 'https://www.wine-searcher.com';
 

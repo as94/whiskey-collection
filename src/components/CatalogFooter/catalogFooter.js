@@ -1,4 +1,5 @@
 import catalogFooterContent from './catalogFooter.html';
+import './catalogFooter.css';
 
 const element = document.getElementById('catalogFooter');
 if (element) {

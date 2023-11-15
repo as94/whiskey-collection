@@ -3,6 +3,7 @@ import { getWhiskeyItemsCount } from '../../services/paginationUtils.js';
 import { getPage } from '../../services/urlSearchParams.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
 import catalogHeaderContent from './catalogHeader.html';
+import './catalogHeader.css';
 
 await initializeWhiskey();
 

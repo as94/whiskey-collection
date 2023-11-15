@@ -1,6 +1,7 @@
 import { sendNotification } from '../../services/sendNotification.js';
 import { goToWhiskeyCollectionClubSucceed } from '../../services/urlSearchParams.js';
 import whiskeyCollectionClubContent from './whiskeyCollectionClubContent.html';
+import './whiskeyCollectionClubContent.css';
 
 const element = document.getElementById('whiskeyCollectionClubContent');
 if (element) {

@@ -5,6 +5,7 @@ import { getWhiskeyByName, getWhiskeyByBrand } from '../../services/state.js';
 import { emptyElement } from '../../services/emptyElement.js';
 import { catalog } from '../Catalog/catalog.js';
 import moreWhiskeyContent from './moreWhiskey.html';
+import './moreWhiskey.css';
 
 await initializeWhiskey();
 

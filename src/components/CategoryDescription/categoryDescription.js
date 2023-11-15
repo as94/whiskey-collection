@@ -1,6 +1,7 @@
 import { getCategory } from '../../services/urlSearchParams.js';
 import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 import categoryDescriptionContent from './categoryDescription.html';
+import './categoryDescription.css';
 
 const categoryDescription = () => {
   const category = getCategory();

@@ -5,6 +5,7 @@ import {
   getPagesCount,
   getTotalPagesCount,
 } from '../../services/paginationUtils.js';
+import './pagination.css';
 
 await initializeWhiskey();
 

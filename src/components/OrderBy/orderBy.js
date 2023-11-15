@@ -9,6 +9,7 @@ import {
   allOrderBySettings,
 } from '../../services/orderBySettings.js';
 import orderByContent from './orderBy.html';
+import './orderBy.css';
 
 await initializeWhiskey();
 

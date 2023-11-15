@@ -8,6 +8,7 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './index.js',
+    'catalog-by-categories': './catalog-by-categories.js',
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -22,6 +23,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'catalog-by-categories.html',
+      template: './catalog-by-categories.html',
+      chunks: ['catalog-by-categories'],
     }),
     new CopyWebpackPlugin({
       patterns: [{ from: './assets/images', to: './assets/images' }],
