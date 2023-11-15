@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     index: './index.js',
     'catalog-by-categories': './catalog-by-categories.js',
+    'catalog-by-search-results': './catalog-by-search-results.js',
     'whiskey-collection-club': './whiskey-collection-club.js',
     'whiskey-collection-club-succeed': './whiskey-collection-club-succeed.js',
     'terms-and-conditions': './terms-and-conditions.js',
@@ -32,6 +33,11 @@ module.exports = {
       filename: 'catalog-by-categories.html',
       template: './catalog-by-categories.html',
       chunks: ['catalog-by-categories'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'catalog-by-search-results.html',
+      template: './catalog-by-search-results.html',
+      chunks: ['catalog-by-search-results'],
     }),
     new HtmlWebpackPlugin({
       filename: 'whiskey-collection-club.html',
