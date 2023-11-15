@@ -66,7 +66,11 @@ module.exports = {
       chunks: ['privacy-policy'],
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: './assets', to: './assets' }],
+      patterns: [
+        { from: './assets', to: './assets' },
+        { from: './robots.txt' },
+        { from: './sitemap.xml' },
+      ],
     }),
     new CleanWebpackPlugin(),
   ],

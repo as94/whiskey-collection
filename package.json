@@ -4,7 +4,7 @@
   "description": "Explore a curated whiskey collection featuring rare and premium spirits. Discover the finest blends and single malts from around the world.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
+    "dev": "webpack --mode development --progress",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch"
   },
