@@ -8,11 +8,9 @@ import {
   popularDesc,
   allOrderBySettings,
 } from '../../services/orderBySettings.js';
+import orderByContent from './orderBy.html';
 
 await initializeWhiskey();
-
-const response = await fetch('./components/OrderBy/orderBy.html');
-const htmlContent = await response.text();
 
 const orderByItems = [
   'Name (A-Z)',
@@ -58,7 +56,9 @@ const orderBy = async () => {
     }
   }
 
-  return htmlContent.replace('${selected}', selected).replace('${list}', list);
+  return orderByContent
+    .replace('${selected}', selected)
+    .replace('${list}', list);
 };
 
 var orderByElement = document.getElementById('orderBy');

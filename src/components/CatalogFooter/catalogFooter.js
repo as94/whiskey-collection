@@ -1,9 +1,8 @@
-const response = await fetch('./components/CatalogFooter/catalogFooter.html');
-const htmlContent = await response.text();
+import catalogFooterContent from './catalogFooter.html';
 
 const element = document.getElementById('catalogFooter');
 if (element) {
-  document.getElementById('catalogFooter').innerHTML = htmlContent;
+  document.getElementById('catalogFooter').innerHTML = catalogFooterContent;
 
   element.dispatchEvent(new CustomEvent('catalogFooterRenderComplete'));
 }

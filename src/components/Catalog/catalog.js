@@ -23,14 +23,10 @@ import {
   catalogByCategories,
   catalogBySearchResults,
 } from '../../services/routePaths.js';
+import catalogContent from './catalog.html';
+import cardContent from './card.html';
 
 await initializeWhiskey();
-
-const catalogResponse = await fetch('./components/Catalog/catalog.html');
-const catalogHtmlContent = await catalogResponse.text();
-
-const cardResponse = await fetch('./components/Catalog/card.html');
-const cardHtmlContent = await cardResponse.text();
 
 const getWhiskeyItems = () => {
   let whiskeyItems = [];
@@ -92,7 +88,7 @@ const generateCatalogRows = whiskeyItems => {
         ? 'assets/images/product-card-backgrounds/dark-green.webp'
         : 'assets/images/product-card-backgrounds/light-green.webp';
 
-    result += cardHtmlContent
+    result += cardContent
       .replace('${backgroundImage}', backgroundImage)
       .replace('${productCardLink}', getProductCardLink(whiskey.Name))
       .replace('${imageLink}', whiskey.ImageLink)
@@ -112,10 +108,7 @@ const generateCatalogRows = whiskeyItems => {
 };
 
 export const catalog = whiskeyItems =>
-  catalogHtmlContent.replace(
-    '${catalogRows}',
-    generateCatalogRows(whiskeyItems)
-  );
+  catalogContent.replace('${catalogRows}', generateCatalogRows(whiskeyItems));
 
 const whiskeyItems = getWhiskeyItems();
 

@@ -1,14 +1,10 @@
 import { sendNotification } from '../../services/sendNotification.js';
 import { goToWhiskeyCollectionClubSucceed } from '../../services/urlSearchParams.js';
-
-const response = await fetch(
-  './components/WhiskeyCollectionClubContent/whiskeyCollectionClubContent.html'
-);
-const htmlContent = await response.text();
+import whiskeyCollectionClubContent from './whiskeyCollectionClubContent.html';
 
 const element = document.getElementById('whiskeyCollectionClubContent');
 if (element) {
-  element.innerHTML = htmlContent;
+  element.innerHTML = whiskeyCollectionClubContent;
 }
 
 async function handleClick() {

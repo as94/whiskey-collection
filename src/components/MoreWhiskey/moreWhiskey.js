@@ -4,11 +4,9 @@ import { getProductName } from '../../services/urlSearchParams.js';
 import { getWhiskeyByName, getWhiskeyByBrand } from '../../services/state.js';
 import { emptyElement } from '../../services/emptyElement.js';
 import { catalog } from '../Catalog/catalog.js';
+import moreWhiskeyContent from './moreWhiskey.html';
 
 await initializeWhiskey();
-
-const response = await fetch('./components/MoreWhiskey/moreWhiskey.html');
-const htmlContent = await response.text();
 
 const moreWhiskey = () => {
   const productName = getProductName();
@@ -29,7 +27,7 @@ const moreWhiskey = () => {
     return emptyElement;
   }
 
-  return htmlContent
+  return moreWhiskeyContent
     .replace('${productCategories}', product.Categories)
     .replace('${productBrand}', product.Brand)
     .replace('${whiskeyCatalogByBrand}', catalog(whiskeyByBrand));

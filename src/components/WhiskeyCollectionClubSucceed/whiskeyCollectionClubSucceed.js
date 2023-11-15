@@ -1,13 +1,9 @@
 import { goToHome } from '../../services/urlSearchParams.js';
-
-const response = await fetch(
-  './components/WhiskeyCollectionClubSucceed/whiskeyCollectionClubSucceed.html'
-);
-const htmlContent = await response.text();
+import whiskeyCollectionClubSucceedContent from './whiskeyCollectionClubSucceed.html';
 
 const element = document.getElementById('whiskeyCollectionClubSucceed');
 if (element) {
-  element.innerHTML = htmlContent;
+  element.innerHTML = whiskeyCollectionClubSucceedContent;
 }
 
 async function handleClick() {

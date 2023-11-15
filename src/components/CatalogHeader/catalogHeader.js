@@ -2,15 +2,13 @@ import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getWhiskeyItemsCount } from '../../services/paginationUtils.js';
 import { getPage } from '../../services/urlSearchParams.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
+import catalogHeaderContent from './catalogHeader.html';
 
 await initializeWhiskey();
 
-const response = await fetch('./components/CatalogHeader/catalogHeader.html');
-const htmlContent = await response.text();
-
 const element = document.getElementById('catalogHeader');
 if (element) {
-  element.innerHTML = htmlContent;
+  element.innerHTML = catalogHeaderContent;
   element.dispatchEvent(new CustomEvent('catalogHeaderRenderComplete'));
 }
 

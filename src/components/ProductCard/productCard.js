@@ -2,13 +2,11 @@ import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getWhiskeyByName } from '../../services/state.js';
 import { getProductName } from '../../services/urlSearchParams.js';
 import { emptyElement } from '../../services/emptyElement.js';
+import productCardContent from './productCard.html';
 
 const wineSearcherUrl = 'https://www.wine-searcher.com';
 
 await initializeWhiskey();
-
-const response = await fetch('./components/ProductCard/productCard.html');
-const htmlContent = await response.text();
 
 const productCard = () => {
   const productName = getProductName();
@@ -33,7 +31,7 @@ const productCard = () => {
   const hiddenRateCount = product.RateCount ? '' : 'hidden';
   const hiddenDescription = product.Description ? '' : 'hidden';
 
-  return htmlContent
+  return productCardContent
     .replace('${productName}', productName)
     .replace('${productImageLink}', product.ImageLink)
     .replace('${productName}', product.Name)
