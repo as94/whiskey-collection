@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development --progress",
     "prod": "webpack --mode production --progress",
+    "analyze": "webpack --mode production --analyze",
     "watch": "webpack --mode development --watch"
   },
   "keywords": [
@@ -40,7 +41,9 @@
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.9.1",
     "webpack-cli": "^5.1.4"
   }
 }
