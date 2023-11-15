@@ -10,6 +10,7 @@ module.exports = {
     index: './index.js',
     'catalog-by-categories': './catalog-by-categories.js',
     'terms-and-conditions': './terms-and-conditions.js',
+    'privacy-policy': './privacy-policy.js',
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -34,6 +35,11 @@ module.exports = {
       filename: 'terms-and-conditions.html',
       template: './terms-and-conditions.html',
       chunks: ['terms-and-conditions'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'privacy-policy.html',
+      template: './privacy-policy.html',
+      chunks: ['privacy-policy'],
     }),
     new CopyWebpackPlugin({
       patterns: [
