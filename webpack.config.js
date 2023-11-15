@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     index: './index.js',
     'catalog-by-categories': './catalog-by-categories.js',
+    'terms-and-conditions': './terms-and-conditions.js',
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -28,6 +29,11 @@ module.exports = {
       filename: 'catalog-by-categories.html',
       template: './catalog-by-categories.html',
       chunks: ['catalog-by-categories'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'terms-and-conditions.html',
+      template: './terms-and-conditions.html',
+      chunks: ['terms-and-conditions'],
     }),
     new CopyWebpackPlugin({
       patterns: [
