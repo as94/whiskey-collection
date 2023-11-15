@@ -6,6 +6,10 @@ import {
   getTotalPagesCount,
 } from '../../services/paginationUtils.js';
 import paginationContent from './pagination.html';
+import chevronDoubleRightContent from './chevron-double-right.html';
+import chevronDoubleLeftContent from './chevron-double-left.html';
+import chevronRightContent from './chevron-right.html';
+import chevronLeftContent from './chevron-left.html';
 import './pagination.css';
 
 await initializeWhiskey();
@@ -52,31 +56,31 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
   const content = `${
     withoutGoFirst
       ? `<div class="empty-block left"></div>`
-      : `<a class="arrow go-first" href="${getPageLink(1)}">
-  <img src="/assets/icons/chevron-double-left.svg" />
-</a>`
+      : `<a class="arrow go-first" href="${getPageLink(
+          1
+        )}">${chevronDoubleLeftContent}</a>`
   }
   ${
     withoutGoBack
       ? `<div class="empty-block"></div>`
-      : `<a class="arrow go-back" href="${getPageLink(page - 1)}">
-  <img src="/assets/icons/chevron-left.svg" />
-</a>`
+      : `<a class="arrow go-back" href="${getPageLink(
+          page - 1
+        )}">${chevronLeftContent}</a>`
   }
   ${getPages(currentPageNumber)}
   ${
     withoutGoForward
       ? `<div class="empty-block right"></div>`
-      : `<a class="arrow go-forward" href="${getPageLink(page + 1)}">
-  <img src="/assets/icons/chevron-right.svg" />
-</a>`
+      : `<a class="arrow go-forward" href="${getPageLink(
+          page + 1
+        )}">${chevronRightContent}</a>`
   }
   ${
     withoutGoLast
       ? `<div class="empty-block"></div>`
-      : `<a class="arrow go-last" href="${getPageLink(totalPagesCount)}">
-  <img src="/assets/icons/chevron-double-right.svg" />
-</a>`
+      : `<a class="arrow go-last" href="${getPageLink(
+          totalPagesCount
+        )}">${chevronDoubleRightContent}</a>`
   }`;
 
   return paginationContent.replace('${paginationContent}', content);
