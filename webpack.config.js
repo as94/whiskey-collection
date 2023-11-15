@@ -8,27 +8,25 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './index.js',
-    header: './components/Header/header.js',
-    jumbotron: './components/Jumbotron/jumbotron.js',
-    worldWhiskeyCatalog:
-      './components/WorldWhiskeyCatalog/worldWhiskeyCatalog.js',
-    worldWhiskeyBlockTitle: './components/BlockTitle/worldWhiskeyBlockTitle.js',
-    search: './components/Search/search.js',
-    footer: './components/Footer/footer.js',
-    agePopup: './components/AgePopup/agePopup.js',
   },
   output: {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
   plugins: [
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './index.html',
+      chunks: ['index'],
     }),
     new CopyWebpackPlugin({
       patterns: [{ from: './assets/images', to: './assets/images' }],
     }),
+    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
