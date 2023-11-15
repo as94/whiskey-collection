@@ -10,6 +10,7 @@ module.exports = {
     index: './index.js',
     'catalog-by-categories': './catalog-by-categories.js',
     'whiskey-collection-club': './whiskey-collection-club.js',
+    'whiskey-collection-club-succeed': './whiskey-collection-club-succeed.js',
     'terms-and-conditions': './terms-and-conditions.js',
     'privacy-policy': './privacy-policy.js',
   },
@@ -38,6 +39,11 @@ module.exports = {
       chunks: ['whiskey-collection-club'],
     }),
     new HtmlWebpackPlugin({
+      filename: 'whiskey-collection-club-succeed.html',
+      template: './whiskey-collection-club-succeed.html',
+      chunks: ['whiskey-collection-club-succeed'],
+    }),
+    new HtmlWebpackPlugin({
       filename: 'terms-and-conditions.html',
       template: './terms-and-conditions.html',
       chunks: ['terms-and-conditions'],
@@ -48,10 +54,7 @@ module.exports = {
       chunks: ['privacy-policy'],
     }),
     new CopyWebpackPlugin({
-      patterns: [
-        { from: './assets/images', to: './assets/images' },
-        { from: './assets/icons', to: './assets/icons' },
-      ],
+      patterns: [{ from: './assets', to: './assets' }],
     }),
     new CleanWebpackPlugin(),
   ],
