@@ -30,7 +30,10 @@ module.exports = {
       chunks: ['catalog-by-categories'],
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: './assets/images', to: './assets/images' }],
+      patterns: [
+        { from: './assets/images', to: './assets/images' },
+        { from: './assets/icons', to: './assets/icons' },
+      ],
     }),
     new CleanWebpackPlugin(),
   ],

@@ -49,7 +49,7 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
   const page = getPage();
 
   return `
-  <link rel="stylesheet" href="./components/Pagination/pagination.css" />
+  <link rel="stylesheet" href="./pagination.css" />
   <div class="pagination-block" data-no-select>
     ${
       withoutGoFirst
