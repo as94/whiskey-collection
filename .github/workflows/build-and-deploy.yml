@@ -31,7 +31,8 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git checkout -b gh-pages
-          git add -f dist
+          git checkout --orphan gh-pages
+          git rm -rf .
+          git add dist
           git commit -m "Deploy dist to gh-pages branch [skip ci]"
           git push --force origin gh-pages
