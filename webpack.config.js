@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
   const shouldAnalyze = process.argv.includes('--analyze');
 
-  const config = {
+  const configuration = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
@@ -98,5 +98,5 @@ module.exports = (env, argv) => {
     },
   };
 
-  return config;
+  return configuration;
 };
