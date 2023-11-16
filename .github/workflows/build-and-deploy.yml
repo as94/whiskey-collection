@@ -27,7 +27,7 @@ jobs:
       # It started work after such changes:
       # Setting -> actions -> General -> Workflow permissions -> select 'Read and Write permissions' button.
       # Go to Setting -> pages-> at the 'build and deployment' section, choose GitHub Actions, then commit with the default settings.
-      - name: Deploy to gh-pages branch
+      - name: Deploy to gh-pages Branch
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
