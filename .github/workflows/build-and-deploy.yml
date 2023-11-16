@@ -34,5 +34,5 @@ jobs:
           git checkout --orphan gh-pages
           git rm -rf .
           git add dist
-          git commit -m "Deploy dist to gh-pages branch [skip ci]"
+          git commit -m "Deploy dist to gh-pages branch"
           git push --force origin gh-pages
