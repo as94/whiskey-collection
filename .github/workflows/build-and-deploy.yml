@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - add-webpack
+      - main
 
 jobs:
   build:
