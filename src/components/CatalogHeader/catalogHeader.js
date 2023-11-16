@@ -4,7 +4,7 @@ import { getPage } from '../../services/urlSearchParams.js';
 import { whiskeyItemsPerPage } from '../../services/paginationUtils.js';
 import catalogHeaderContent from './catalogHeader.html';
 import './catalogHeader.css';
-import { renderOrderBy } from '../OrderBy/orderBy.js';
+import { initializeOrderBy } from '../OrderBy/orderBy.js';
 
 await initializeWhiskey();
 
@@ -12,7 +12,7 @@ const element = document.getElementById('catalogHeader');
 if (element) {
   element.innerHTML = catalogHeaderContent;
 
-  renderOrderBy();
+  initializeOrderBy();
 }
 
 const whiskeyItemsCount = getWhiskeyItemsCount();

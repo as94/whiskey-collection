@@ -86,7 +86,7 @@ const pagination = (totalPagesCount, currentPageNumber, currentPage) => {
   return paginationContent.replace('${paginationContent}', content);
 };
 
-export const renderPagination = () => {
+export const initializePagination = () => {
   const page = getPage();
   const totalPagesCount = getTotalPagesCount();
   const pagesCount = getPagesCount();
