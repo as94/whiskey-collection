@@ -62,7 +62,7 @@ const orderBy = () => {
     .replace('${list}', list);
 };
 
-export const renderOrderBy = () => {
+export const initializeOrderBy = () => {
   var orderByElement = document.getElementById('orderBy');
   if (orderByElement) {
     orderByElement.innerHTML = orderBy();
