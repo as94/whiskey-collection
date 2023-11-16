@@ -1,0 +1,38 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Application
+        run: npm run prod
+
+      # It started work after such changes:
+      # Setting -> actions -> General -> Workflow permissions -> select 'Read and Write permissions' button.
+      # Go to Setting -> pages-> at the 'build and deployment' section, choose GitHub Actions, then commit with the default settings.
+      - name: Deploy to gh-pages branch
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git checkout --orphan gh-pages
+          git rm -rf .
+          git add dist
+          git commit -m "Deploy dist to gh-pages branch"
+          git push --force origin gh-pages

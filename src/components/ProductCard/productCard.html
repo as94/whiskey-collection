@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="./productCard.css" />
+<div class="product-card">
+  <h2 class="h2 product-card-header">${productName}</h2>
+  <div class="product-card-body">
+    <div class="left-side">
+      <div class="whiskey-image">
+        <img
+          class="background-image"
+          src="/assets/images/product-card-backgrounds/main.webp"
+        />
+        <img
+          class="foreground-image"
+          src="${productImageLink}"
+          title="${productName}"
+          alt="${productDescription}"
+        />
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="characteristic-list">
+        <div class="characteristic ${hiddenCountry}">
+          <span class="body-semibold">Country: </span>
+          <span class="body-medium">${productCountry}</span>
+        </div>
+
+        <div class="characteristic ${hiddenBrand}">
+          <span class="body-semibold">Brand: </span>
+          <span class="body-medium">${productBrand}</span>
+        </div>
+
+        <div class="characteristic ${hiddenCategories}">
+          <span class="body-semibold">Category: </span>
+          <span class="body-medium">${productCategories}</span>
+        </div>
+
+        <div class="characteristic ${hiddenTastingNotes}">
+          <span class="body-semibold">Tasting Notes: </span>
+          <span class="body-medium">${productTastingNotes}</span>
+        </div>
+
+        <div class="characteristic ${hiddenYearsAge}">
+          <span class="body-semibold">Age: </span>
+          <span class="body-medium">${productYearsAged}</span>
+        </div>
+
+        <div class="characteristic ${hiddenABV}">
+          <span class="body-semibold">ABV: </span>
+          <span class="body-medium">${productABV}</span>
+        </div>
+
+        <div class="characteristic ${hiddenVolume}">
+          <span class="body-semibold">Volume: </span>
+          <span class="body-medium">${productVolume}</span>
+        </div>
+
+        <div class="characteristic ${hiddenPrice}">
+          <span class="body-semibold">Average price: </span>
+          <span class="body-medium">${productPrice}</span>
+        </div>
+
+        <div class="characteristic rating ${hiddenRating}">
+          <span class="body-semibold">Rating: </span>
+          <div class="rating-value">
+            <img class="star-icon" src="/assets/icons/star.svg" />
+            <span class="body-medium">${productRating}</span>
+          </div>
+        </div>
+
+        <div class="characteristic ${hiddenRateCount}">
+          <span class="body-semibold">Reviews: </span>
+          <span class="body-medium">${productRateCount}</span>
+        </div>
+      </div>
+
+      <a
+        class="find-outside-btn body-semibold"
+        data-no-select
+        href="${wineSearcherLink}"
+        >Find on Wine-Searcher</a
+      >
+    </div>
+  </div>
+
+  <p class="description body-medium ${hiddenDescription}">
+    ${productDescription}
+  </p>
+</div>

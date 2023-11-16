@@ -1,0 +1,49 @@
+{
+  "name": "whiskey-collection",
+  "version": "1.0.0",
+  "description": "Explore a curated whiskey collection featuring rare and premium spirits. Discover the finest blends and single malts from around the world.",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --mode development --progress",
+    "prod": "webpack --mode production --progress",
+    "analyze": "webpack --mode production --analyze",
+    "watch": "webpack --mode development --watch"
+  },
+  "keywords": [
+    "American",
+    "Whiskey",
+    "Flavored",
+    "Whiskey",
+    "Rye",
+    "Whiskey",
+    "White",
+    "Whiskey",
+    "Moonshine",
+    "Bourbon",
+    "Irish",
+    "Whiskey",
+    "Scotch",
+    "Whisky",
+    "Canadian",
+    "Whisky",
+    "Japanese",
+    "Whisky",
+    "Single",
+    "Malt",
+    "Whiskey"
+  ],
+  "author": "Anatoly Sorokin <whiskeycollections@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.9.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
