@@ -8,5 +8,7 @@ import './components/Footer/footer';
 import './components/OrderBy/orderBy';
 import './components/Pagination/pagination';
 
+import './services/yandexMetricaCounter';
+
 import './styles/root.css';
 import './styles/typography.css';
