@@ -6,8 +6,6 @@ import './components/Search/search';
 import './components/Footer/footer';
 import './components/AgePopup/agePopup';
 
-import './services/yandexMetricaCounter';
-
 import './styles/root.css';
 import './styles/typography.css';
 import './styles/main-page.css';
