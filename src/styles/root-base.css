@@ -1,6 +1,7 @@
 @font-face {
   font-family: Georama;
   src: url('../assets/fonts/georama.ttf');
+  font-display: swap;
 }
 
 :root {
