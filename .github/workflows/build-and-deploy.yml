@@ -31,4 +31,6 @@ jobs:
           git checkout -b gh-pages
           git add -f dist
           git commit -m "Deploy dist to gh-pages branch [skip ci]"
-          git push --force origin gh-pages
+          git push --force "https://$DEPLOY_TOKEN@github.com/as94/whiskey-collection.git" gh-pages
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
