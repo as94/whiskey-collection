@@ -4,14 +4,31 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
-module.exports = (env, argv) => {
+module.exports = (_, argv) => {
   const isProduction = argv.mode === 'production';
   const shouldAnalyze = process.argv.includes('--analyze');
 
+  const optimization = () => {
+    const optimizeConfig = {
+      splitChunks: {
+        chunks: 'all',
+      },
+    };
+
+    if (isProduction) {
+      optimizeConfig.minimize = true;
+      optimizeConfig.minimizer = [new CssMinimizerPlugin(), new TerserPlugin()];
+    }
+
+    return optimizeConfig;
+  };
+
   const configuration = {
     context: path.resolve(__dirname, 'src'),
-    mode: 'development',
+    mode: isProduction ? 'production' : 'development',
     entry: {
       index: './index.js',
       'catalog-by-categories': './catalog-by-categories.js',
@@ -26,52 +43,70 @@ module.exports = (env, argv) => {
       filename: '[name].[contenthash].js',
       path: path.resolve(__dirname, 'dist'),
     },
-    optimization: {
-      minimize: true,
-      minimizer: [new TerserPlugin()],
-      splitChunks: {
-        chunks: 'all',
-      },
-    },
+    optimization: optimization(),
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
         chunks: ['index'],
+        minify: {
+          collapseWhitespace: isProduction,
+        },
       }),
       new HtmlWebpackPlugin({
         filename: 'catalog-by-categories.html',
         template: './catalog-by-categories.html',
         chunks: ['catalog-by-categories'],
+        minify: {
+          collapseWhitespace: isProduction,
+        },
       }),
       new HtmlWebpackPlugin({
         filename: 'catalog-by-search-results.html',
         template: './catalog-by-search-results.html',
         chunks: ['catalog-by-search-results'],
+        minify: {
+          collapseWhitespace: isProduction,
+        },
       }),
       new HtmlWebpackPlugin({
         filename: 'product-card.html',
         template: './product-card.html',
         chunks: ['product-card'],
+        minify: {
+          collapseWhitespace: isProduction,
+        },
       }),
       new HtmlWebpackPlugin({
         filename: 'whiskey-collection-club.html',
         template: './whiskey-collection-club.html',
         chunks: ['whiskey-collection-club'],
+        minify: {
+          collapseWhitespace: isProduction,
+        },
       }),
       new HtmlWebpackPlugin({
         filename: 'whiskey-collection-club-succeed.html',
         template: './whiskey-collection-club-succeed.html',
         chunks: ['whiskey-collection-club-succeed'],
+        minify: {
+          collapseWhitespace: isProduction,
+        },
       }),
       new HtmlWebpackPlugin({
         filename: 'terms-and-conditions.html',
         template: './terms-and-conditions.html',
         chunks: ['terms-and-conditions'],
+        minify: {
+          collapseWhitespace: isProduction,
+        },
       }),
       new HtmlWebpackPlugin({
         filename: 'privacy-policy.html',
         template: './privacy-policy.html',
         chunks: ['privacy-policy'],
+        minify: {
+          collapseWhitespace: isProduction,
+        },
       }),
       new CopyWebpackPlugin({
         patterns: [
@@ -80,6 +115,9 @@ module.exports = (env, argv) => {
           { from: './robots.txt' },
           { from: './sitemap.xml' },
         ],
+      }),
+      new MiniCssExtractPlugin({
+        filename: '[name].[contenthash].css',
       }),
       new CleanWebpackPlugin(),
       isProduction && shouldAnalyze && new BundleAnalyzerPlugin(),
@@ -92,7 +130,7 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.css$/,
-          use: ['style-loader', 'css-loader'],
+          use: [MiniCssExtractPlugin.loader, 'css-loader'],
         },
       ],
     },
