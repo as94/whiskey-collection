@@ -16,6 +16,7 @@ const pageKeys = [
   'whiskey-collection-club-succeed',
   'terms-and-conditions',
   'privacy-policy',
+  'blog-post',
 ];
 
 module.exports = (_, argv) => {
@@ -74,6 +75,7 @@ module.exports = (_, argv) => {
       new CopyWebpackPlugin({
         patterns: [
           { from: './assets/images', to: './assets/images' },
+          { from: './assets/posts', to: './assets/posts' },
           { from: './assets/whiskey.json', to: './assets/whiskey.json' },
           { from: './robots.txt' },
           { from: './sitemap.xml' },
@@ -104,6 +106,10 @@ module.exports = (_, argv) => {
               presets: ['@babel/preset-env'],
             },
           },
+        },
+        {
+          test: /\.md$/,
+          use: 'raw-loader',
         },
       ],
     },
