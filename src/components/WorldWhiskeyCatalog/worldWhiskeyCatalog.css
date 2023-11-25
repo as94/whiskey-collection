@@ -30,7 +30,6 @@
 .catalog .card .category-link-container {
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .catalog .card .category-link-container .category-link {

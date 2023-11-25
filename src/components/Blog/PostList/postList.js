@@ -1,98 +1,49 @@
+import showdown from 'showdown';
+import posts from '../../../services/post-context';
+import postContent from './post.html';
+import postListContent from './postList.html';
 import './postList.css';
 
-const content = `<div class="blog-post-list-content">
-  <div class="post-list-item">
-    <img
-      src="assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/preview.webp"
-      alt="Preview"
-      width="300"
-      height="300"
-    />
-    <div><span class="tag body-small">American whiskey</span></div>
-    <div class="title body-semibold-large">
-      Why do the people drink American whiskey often?
-    </div>
-    <p class="description body-medium">
-      Alright, fellow whiskey aficionados, grab your favorite glass because
-      we're about to embark on a deep dive into the world of everyone's favorite...
-    </p>
-    <a class="read-article-link body-semibold">Read</a>
-  </div>
-  <div class="post-list-item">
-    <img
-      src="assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/preview.webp"
-      alt="Preview"
-      width="300"
-      height="300"
-    />
-    <div><span class="tag body-small">American whiskey</span></div>
-    <div class="title body-semibold-large">
-      Why do the people drink American whiskey often?
-    </div>
-    <p class="description body-medium">
-      Alright, fellow whiskey aficionados, grab your favorite glass because
-      we're about to embark on a deep dive into the world of everyone's favorite...
-    </p>
-    <a class="read-article-link body-semibold">Read</a>
-  </div>
-  <div class="post-list-item">
-    <img
-      src="assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/preview.webp"
-      alt="Preview"
-      width="300"
-      height="300"
-    />
-    <div><span class="tag body-small">American whiskey</span></div>
-    <div class="title body-semibold-large">
-      Why do the people drink American whiskey often?
-    </div>
-    <p class="description body-medium">
-      Alright, fellow whiskey aficionados, grab your favorite glass because
-      we're about to embark on a deep dive into the world of everyone's favorite...
-    </p>
-    <a class="read-article-link body-semibold">Read</a>
-  </div>
-
-  <div class="post-list-item">
-    <img
-      src="assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/preview.webp"
-      alt="Preview"
-      width="300"
-      height="300"
-    />
-    <div><span class="tag body-small">American whiskey</span></div>
-    <div class="title body-semibold-large">
-      Why do the people drink American whiskey often?
-    </div>
-    <p class="description body-medium">
-      Alright, fellow whiskey aficionados, grab your favorite glass because
-      we're about to embark on a deep dive into the world of everyone's favorite...
-    </p>
-    <a class="read-article-link body-semibold">Read</a>
-  </div>
-
-  <div class="post-list-item">
-    <img
-      src="assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/preview.webp"
-      alt="Preview"
-      width="300"
-      height="300"
-    />
-    <div><span class="tag body-small">American whiskey</span></div>
-    <div class="title body-semibold-large">
-      Why do the people drink American whiskey often?
-    </div>
-    <p class="description body-medium">
-      Alright, fellow whiskey aficionados, grab your favorite glass because
-      we're about to embark on a deep dive into the world of everyone's favorite...
-    </p>
-    <a class="read-article-link body-semibold">Read</a>
-  </div>
-  <div class="empty-block"></div>
-</div>
-`;
+const converter = new showdown.Converter();
 
 const element = document.getElementById('blogPostList');
 if (element) {
-  element.innerHTML = content;
+  const orderedPosts = posts.sort((a, b) => {
+    const dateA = new Date(a.article.publicationDate);
+    const dateB = new Date(b.article.publicationDate);
+    return dateB - dateA;
+  });
+
+  let result = '';
+  for (let i = 0; i < orderedPosts.length; i++) {
+    const post = orderedPosts[i];
+
+    const content = converter.makeHtml(post.markdownContent);
+
+    const tags = post.article.tags.map(
+      tag => `<span class="tag body-small">${tag}</span>`
+    );
+
+    result += postContent
+      .replace(
+        '${previewImgLink}',
+        `assets/posts/${post.article.previewImagePath}`
+      )
+      .replace('${tags}', tags)
+      .replace('${title}', post.article.title)
+      .replace(
+        '${description}',
+        content
+          .split(/\s+/)
+          .map(x => x.replace(',', ''))
+          .slice(0, 30)
+          .join(' ') + ' ...'
+      );
+  }
+
+  if (posts.length % 3 === 2) {
+    result += `<div class="empty-block"></div>`;
+  }
+
+  element.innerHTML = postListContent.replace('${posts}', result);
 }

@@ -1,5 +1,5 @@
 import showdown from 'showdown';
-import content from '../../../assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/WhichTypeOfWhiskeyDoPeopleDrinkOften.md';
+import content from '../../../assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/content.md';
 import article from '../../../assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/article.json';
 
 const converter = new showdown.Converter();

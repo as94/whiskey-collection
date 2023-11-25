@@ -3,5 +3,7 @@
   "tags": ["American whiskey"],
   "publicationDate": "2023-11-22",
   "readingTimeInMinutes": 5,
-  "previewImagePath": "assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/BarCounter.png"
+  "mainImagePath": "WhichTypeOfWhiskeyDoPeopleDrinkOften/main.png",
+  "previewImagePath": "WhichTypeOfWhiskeyDoPeopleDrinkOften/preview.webp",
+  "contentPath": "content.md"
 }

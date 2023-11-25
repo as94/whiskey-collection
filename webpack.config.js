@@ -109,6 +109,11 @@ module.exports = (_, argv) => {
           },
         },
         {
+          test: /\.json$/,
+          type: 'javascript/auto',
+          use: 'raw-loader',
+        },
+        {
           test: /\.md$/,
           use: 'raw-loader',
         },
