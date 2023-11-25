@@ -163,3 +163,9 @@ export const getOrderByLink = orderBy => {
   params.set('page', 1);
   return window.location.pathname + '?' + params.toString() + '#catalog-result';
 };
+
+export const getPostTitle = () => {
+  const params = new URLSearchParams(window.location.search);
+  const postTitle = params.get('key');
+  return postTitle;
+};

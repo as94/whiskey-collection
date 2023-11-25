@@ -1,4 +1,4 @@
-import posts from '../../../services/post-context';
+import { posts } from '../../../services/post-context';
 import postContent from './post.html';
 import postListContent from './postList.html';
 import './postList.css';
@@ -33,8 +33,6 @@ if (element) {
   if (posts.length % 3 === 2) {
     result += `<div class="empty-block"></div>`;
   }
-
-  console.log('result', result);
 
   element.innerHTML = postListContent.replace('${posts}', result);
 }

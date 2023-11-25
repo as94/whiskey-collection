@@ -4,23 +4,40 @@ const postContext = require.context(
   /article\.json$/
 );
 
-const posts = await Promise.all(
-  postContext.keys().map(async key => {
-    const postPath = key.slice(2, key.lastIndexOf('/'));
+const postsByKey = {};
 
-    const postData = postContext(key);
-    const contentPath = postData.contentPath || 'content.md';
+const fillAllPosts = async () =>
+  await Promise.all(
+    postContext.keys().map(async key => {
+      const postPath = key.slice(2, key.lastIndexOf('/'));
 
-    const content = await import(
-      `!raw-loader!../assets/posts/${postPath}/${contentPath}`
-    );
+      const postData = postContext(key);
+      const contentPath = postData.contentPath || 'content.md';
 
-    return {
-      key: postPath,
-      article: JSON.parse(postData.default),
-      markdownContent: content.default,
-    };
-  })
-);
+      const content = await import(
+        `!raw-loader!../assets/posts/${postPath}/${contentPath}`
+      );
 
-export default posts;
+      const post = {
+        key: postPath,
+        article: JSON.parse(postData.default),
+        markdownContent: content.default,
+      };
+
+      postsByKey[post.key] = post;
+    })
+  );
+
+await fillAllPosts();
+
+const getPost = key => {
+  if (postsByKey[key]) {
+    return postsByKey[key];
+  } else {
+    return null;
+  }
+};
+
+const posts = Object.values(postsByKey);
+
+export { posts, getPost };
