@@ -24,10 +24,8 @@ if (element) {
 
   var tempContainer = document.createElement('div');
   tempContainer.innerHTML = htmlContent;
-  console.log('tempContainer.innerHTML', tempContainer.innerHTML);
 
   const imgElements = tempContainer.querySelectorAll('img');
-  console.log('imgElements', imgElements);
   for (let i = imgElements.length - 1; i >= 0; i--) {
     if (i % 2 === 0) {
       imgElements[i].style.float = 'left';

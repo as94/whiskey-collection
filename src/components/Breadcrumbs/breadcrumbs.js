@@ -3,7 +3,7 @@ import {
   getProductName,
   getCategory,
 } from '../../services/urlSearchParams.js';
-import { main } from '../../services/routePaths.js';
+import { blogPostList, main } from '../../services/routePaths.js';
 import breadcrumbsContent from './breadcrumbs.html';
 import chevronRightContent from './chevron-right.html';
 import './breadcrumbs.css';
@@ -31,7 +31,12 @@ const breadcrumbs = async () => {
   const items = ['Home'];
   const route = getRoute();
   if (route !== main) {
-    items.push(getCategory() ?? 'Search Results');
+    if (route === blogPostList) {
+      items.push('Blog');
+    } else {
+      items.push(getCategory() ?? 'Search Results');
+    }
+
     const productName = getProductName();
     if (productName) {
       items.push(productName);

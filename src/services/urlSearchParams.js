@@ -6,6 +6,7 @@ import {
   main,
   whiskeyCollectionClub,
   whiskeyCollectionClubSucceed,
+  blogPostList,
 } from './routePaths.js';
 
 export const getRoute = () => {
@@ -18,6 +19,9 @@ export const getRoute = () => {
   }
   if (path === productCard) {
     return productCard;
+  }
+  if (path === blogPostList) {
+    return blogPostList;
   }
   return main;
 };

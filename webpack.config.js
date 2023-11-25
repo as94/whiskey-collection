@@ -16,6 +16,7 @@ const pageKeys = [
   'whiskey-collection-club-succeed',
   'terms-and-conditions',
   'privacy-policy',
+  'blog-post-list',
   'blog-post',
 ];
 
