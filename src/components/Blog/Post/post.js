@@ -7,17 +7,19 @@ const htmlContent = converter.makeHtml(content);
 
 const element = document.getElementById('blogPost');
 if (element) {
+  const content = JSON.parse(article);
+
   const title = document.createElement('h1');
-  title.textContent = article.title;
+  title.textContent = content.title;
   element.appendChild(title);
 
   const tags = document.createElement('p');
-  tags.textContent = article.tags.join(', '); // TODO: for a while
+  tags.textContent = content.tags.join(', '); // TODO: for a while
   element.appendChild(tags);
 
   const previewImg = document.createElement('img');
-  previewImg.src = article.previewImagePath;
-  previewImg.alt = article.previewImagePath
+  previewImg.src = `assets/posts/${content.mainImagePath}`;
+  previewImg.alt = content.previewImagePath
     .replace(/^.*[\\\/]/, '')
     .replace(/\.[^/.]+$/, '');
   element.appendChild(previewImg);
