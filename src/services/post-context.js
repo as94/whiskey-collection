@@ -16,6 +16,7 @@ const posts = await Promise.all(
     );
 
     return {
+      key: postPath,
       article: JSON.parse(postData.default),
       markdownContent: content.default,
     };

@@ -9,6 +9,10 @@
   width: 300px;
   margin-bottom: 2%;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-brown-dark);
 }
 
 .empty-block {
@@ -64,4 +68,16 @@
 
 .post-list-item:hover .read-article-link::before {
   width: 100%;
+}
+
+.post-list-item:hover .title {
+  color: var(--text-brown-medium);
+}
+
+.post-list-item .title {
+  margin-bottom: 5px;
+}
+
+.post-list-item .description {
+  margin-bottom: 10px;
 }

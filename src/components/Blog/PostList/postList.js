@@ -1,10 +1,7 @@
-import showdown from 'showdown';
 import posts from '../../../services/post-context';
 import postContent from './post.html';
 import postListContent from './postList.html';
 import './postList.css';
-
-const converter = new showdown.Converter();
 
 const element = document.getElementById('blogPostList');
 if (element) {
@@ -18,8 +15,6 @@ if (element) {
   for (let i = 0; i < orderedPosts.length; i++) {
     const post = orderedPosts[i];
 
-    const content = converter.makeHtml(post.markdownContent);
-
     const tags = post.article.tags.map(
       tag => `<span class="tag body-small">${tag}</span>`
     );
@@ -31,19 +26,15 @@ if (element) {
       )
       .replace('${tags}', tags)
       .replace('${title}', post.article.title)
-      .replace(
-        '${description}',
-        content
-          .split(/\s+/)
-          .map(x => x.replace(',', ''))
-          .slice(0, 30)
-          .join(' ') + ' ...'
-      );
+      .replace('${description}', post.article.previewText)
+      .replace('${postLink}', `blog-post?key=${post.key}`);
   }
 
   if (posts.length % 3 === 2) {
     result += `<div class="empty-block"></div>`;
   }
+
+  console.log('result', result);
 
   element.innerHTML = postListContent.replace('${posts}', result);
 }
