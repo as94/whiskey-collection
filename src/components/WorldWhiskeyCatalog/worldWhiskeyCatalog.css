@@ -30,7 +30,6 @@
 .catalog .card .category-link-container {
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .catalog .card .category-link-container .category-link {
@@ -56,8 +55,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   filter: brightness(0) invert(1);
-
-  display: block;
 }
 
 .catalog .card .category-link::before {

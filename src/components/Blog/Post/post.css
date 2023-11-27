@@ -1,0 +1,148 @@
+.post-content {
+  padding: 0 290px 100px 140px;
+}
+
+.post-content .title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1.62px;
+  text-transform: capitalize;
+}
+
+.post-content a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--primary-light-green);
+}
+
+.post-content a:hover {
+  color: var(--text-brown-dark);
+}
+
+.main-img-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.main-img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.tags {
+  margin-bottom: 30px;
+}
+
+.tag {
+  display: inline-block;
+  border: 1px solid var(--text-brown-dark);
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.article {
+  padding-left: 215px;
+}
+
+.meta {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.meta .publication-date {
+  text-align: right;
+}
+
+.meta .splitter {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.post-preview {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+.post-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.9px;
+}
+
+@media screen and (max-width: 1440px) {
+  .post-content {
+    padding: 0 135px 100px 140px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .post-content {
+    padding: 0 60px 80px 60px;
+  }
+
+  .article {
+    padding-left: 25px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post-content {
+    padding: 0 60px 60px 60px;
+  }
+
+  .post-preview {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.7px;
+  }
+
+  .post-paragraph {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.7px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .post-content {
+    padding: 0 30px 40px 30px;
+  }
+
+  .post-content .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1.08px;
+  }
+
+  .article {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .post-preview {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.7px;
+  }
+
+  .post-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.7px;
+  }
+
+  .article img {
+    display: none;
+  }
+}

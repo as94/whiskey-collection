@@ -10,16 +10,7 @@ import {
 
 export const getRoute = () => {
   const path = window.location.pathname.slice(1);
-  if (path === catalogByCategories) {
-    return catalogByCategories;
-  }
-  if (path === catalogBySearchResults) {
-    return catalogBySearchResults;
-  }
-  if (path === productCard) {
-    return productCard;
-  }
-  return main;
+  return path;
 };
 
 export const getCategory = () => {
@@ -158,4 +149,10 @@ export const getOrderByLink = orderBy => {
   params.set('orderBy', orderBy);
   params.set('page', 1);
   return window.location.pathname + '?' + params.toString() + '#catalog-result';
+};
+
+export const getPostTitleKey = () => {
+  const params = new URLSearchParams(window.location.search);
+  const postTitleKey = params.get('key');
+  return postTitleKey;
 };

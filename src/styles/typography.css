@@ -61,6 +61,13 @@
   letter-spacing: 0.81px;
 }
 
+.body-regular {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.72px;
+}
+
 .body-regular-large {
   font-size: 18px;
   font-weight: 400;
@@ -107,6 +114,13 @@
   .body-medium-large {
     font-size: 16px;
     font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.72px;
+  }
+
+  .body-regular {
+    font-size: 14px;
+    font-weight: 400;
     line-height: 130%;
     letter-spacing: 0.72px;
   }

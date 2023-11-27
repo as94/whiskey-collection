@@ -1,7 +1,7 @@
 export const setConfirmUsersAgeCookie = () => {
   const currentDate = new Date();
   currentDate.setMonth(currentDate.getMonth() + 1);
-  document.cookie = `isUserConfirmedAge=true; expires=${currentDate.toUTCString()}; path=/`;
+  document.cookie = `isUserConfirmedAge=true; expires=${currentDate.toUTCString()}; Secure; path=/; Secure; SameSite=Strict`;
 };
 
 export const getUserConfirmedAgeCookie = () => {

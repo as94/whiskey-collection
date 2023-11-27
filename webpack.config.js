@@ -7,6 +7,19 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
+const pageKeys = [
+  'index',
+  'catalog-by-categories',
+  'catalog-by-search-results',
+  'product-card',
+  'whiskey-collection-club',
+  'whiskey-collection-club-succeed',
+  'terms-and-conditions',
+  'privacy-policy',
+  'blog-post-list',
+  'blog-post',
+];
+
 module.exports = (_, argv) => {
   const isProduction = argv.mode === 'production';
   const shouldAnalyze = process.argv.includes('--analyze');
@@ -26,91 +39,44 @@ module.exports = (_, argv) => {
     return optimizeConfig;
   };
 
+  const entryPoints = () => {
+    const entryPoints = {};
+    pageKeys.forEach(key => {
+      entryPoints[key] = `./${key}.js`;
+    });
+
+    return entryPoints;
+  };
+
+  const htmlPagePlugins = () => {
+    return pageKeys.map(
+      key =>
+        new HtmlWebpackPlugin({
+          filename: `./${key}.html`,
+          template: `./${key}.html`,
+          chunks: [`${key}`],
+          minify: {
+            collapseWhitespace: isProduction,
+          },
+        })
+    );
+  };
+
   const configuration = {
     context: path.resolve(__dirname, 'src'),
     mode: isProduction ? 'production' : 'development',
-    entry: {
-      index: './index.js',
-      'catalog-by-categories': './catalog-by-categories.js',
-      'catalog-by-search-results': './catalog-by-search-results.js',
-      'product-card': './product-card.js',
-      'whiskey-collection-club': './whiskey-collection-club.js',
-      'whiskey-collection-club-succeed': './whiskey-collection-club-succeed.js',
-      'terms-and-conditions': './terms-and-conditions.js',
-      'privacy-policy': './privacy-policy.js',
-    },
+    entry: entryPoints(),
     output: {
       filename: '[name].[contenthash].js',
       path: path.resolve(__dirname, 'dist'),
     },
     optimization: optimization(),
     plugins: [
-      new HtmlWebpackPlugin({
-        template: './index.html',
-        chunks: ['index'],
-        minify: {
-          collapseWhitespace: isProduction,
-        },
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'catalog-by-categories.html',
-        template: './catalog-by-categories.html',
-        chunks: ['catalog-by-categories'],
-        minify: {
-          collapseWhitespace: isProduction,
-        },
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'catalog-by-search-results.html',
-        template: './catalog-by-search-results.html',
-        chunks: ['catalog-by-search-results'],
-        minify: {
-          collapseWhitespace: isProduction,
-        },
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'product-card.html',
-        template: './product-card.html',
-        chunks: ['product-card'],
-        minify: {
-          collapseWhitespace: isProduction,
-        },
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'whiskey-collection-club.html',
-        template: './whiskey-collection-club.html',
-        chunks: ['whiskey-collection-club'],
-        minify: {
-          collapseWhitespace: isProduction,
-        },
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'whiskey-collection-club-succeed.html',
-        template: './whiskey-collection-club-succeed.html',
-        chunks: ['whiskey-collection-club-succeed'],
-        minify: {
-          collapseWhitespace: isProduction,
-        },
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'terms-and-conditions.html',
-        template: './terms-and-conditions.html',
-        chunks: ['terms-and-conditions'],
-        minify: {
-          collapseWhitespace: isProduction,
-        },
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'privacy-policy.html',
-        template: './privacy-policy.html',
-        chunks: ['privacy-policy'],
-        minify: {
-          collapseWhitespace: isProduction,
-        },
-      }),
+      ...htmlPagePlugins(),
       new CopyWebpackPlugin({
         patterns: [
           { from: './assets/images', to: './assets/images' },
+          { from: './assets/posts', to: './assets/posts' },
           { from: './assets/whiskey.json', to: './assets/whiskey.json' },
           { from: './robots.txt' },
           { from: './sitemap.xml' },
@@ -141,6 +107,15 @@ module.exports = (_, argv) => {
               presets: ['@babel/preset-env'],
             },
           },
+        },
+        {
+          test: /\.json$/,
+          type: 'javascript/auto',
+          use: 'raw-loader',
+        },
+        {
+          test: /\.md$/,
+          use: 'raw-loader',
         },
       ],
     },
