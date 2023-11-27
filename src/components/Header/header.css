@@ -1,11 +1,12 @@
 .main-header {
   display: flex;
   padding-left: 220px;
+  box-shadow: 0 2px 8px #0000001a;
 }
 
 .header-logo {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 80px;
 }
 
 .menu {
@@ -97,9 +98,27 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .header-logo {
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 450px) {
+  .main-header {
+    padding-left: 0;
+  }
+
   .header-logo img {
     width: 100px;
+  }
+
+  .special-offer {
+    margin-right: 20px;
   }
 
   .join-our-club-btn {
