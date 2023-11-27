@@ -6,24 +6,11 @@ import {
   main,
   whiskeyCollectionClub,
   whiskeyCollectionClubSucceed,
-  blogPostList,
 } from './routePaths.js';
 
 export const getRoute = () => {
   const path = window.location.pathname.slice(1);
-  if (path === catalogByCategories) {
-    return catalogByCategories;
-  }
-  if (path === catalogBySearchResults) {
-    return catalogBySearchResults;
-  }
-  if (path === productCard) {
-    return productCard;
-  }
-  if (path === blogPostList) {
-    return blogPostList;
-  }
-  return main;
+  return path;
 };
 
 export const getCategory = () => {
@@ -164,8 +151,8 @@ export const getOrderByLink = orderBy => {
   return window.location.pathname + '?' + params.toString() + '#catalog-result';
 };
 
-export const getPostTitle = () => {
+export const getPostTitleKey = () => {
   const params = new URLSearchParams(window.location.search);
-  const postTitle = params.get('key');
-  return postTitle;
+  const postTitleKey = params.get('key');
+  return postTitleKey;
 };

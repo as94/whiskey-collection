@@ -1,4 +1,5 @@
 import './components/Header/header';
+import './components/Breadcrumbs/breadcrumbs';
 import './components/Blog/Post/post';
 import './components/Footer/footer';
 

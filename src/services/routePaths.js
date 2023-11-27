@@ -5,3 +5,4 @@ export const main = '/';
 export const whiskeyCollectionClub = 'whiskey-collection-club';
 export const whiskeyCollectionClubSucceed = 'whiskey-collection-club-succeed';
 export const blogPostList = 'blog-post-list';
+export const blogPost = 'blog-post';

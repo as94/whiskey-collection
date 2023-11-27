@@ -1,13 +1,13 @@
 import showdown from 'showdown';
-import { getPostTitle } from '../../../services/urlSearchParams.js';
+import { getPostTitleKey } from '../../../services/urlSearchParams.js';
 import { getPost } from '../../../services/post-context.js';
 import postContent from './post.html';
 import './post.css';
 
 const element = document.getElementById('blogPost');
 if (element) {
-  const postTitle = getPostTitle();
-  const post = getPost(postTitle);
+  const postTitleKey = getPostTitleKey();
+  const post = getPost(postTitleKey);
 
   // const content = post.article;
 
