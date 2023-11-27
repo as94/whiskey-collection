@@ -21,8 +21,13 @@
   color: var(--text-brown-dark);
 }
 
-.post-content .main-img {
-  width: 1175px;
+.main-img-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.main-img {
+  width: 100%;
   margin-bottom: 25px;
 }
 
@@ -64,4 +69,10 @@
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.9px;
+}
+
+@media screen and (max-width: 1440px) {
+  .post-content {
+    padding: 0 135px 100px 140px;
+  }
 }
