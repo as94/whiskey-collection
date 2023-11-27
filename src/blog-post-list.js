@@ -7,4 +7,3 @@ import './services/yandexMetricaCounter';
 
 import './styles/root.css';
 import './styles/typography.css';
-import './styles/blog-post-list.css';
