@@ -35,7 +35,7 @@ if (element) {
 
   const imgElements = tempContainer.querySelectorAll('img');
   for (let i = 0; i < imgElements.length; i++) {
-    imgElements[i].style.width = '400px';
+    imgElements[i].style.width = '50%';
     imgElements[i].style.marginTop = '25px';
     imgElements[i].style.marginBottom = '25px';
     if (i % 2 === 0) {
