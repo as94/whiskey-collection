@@ -5,12 +5,22 @@
 
 .header-logo {
   flex: 1;
+  margin-right: 20px;
+}
+
+.menu {
+  display: flex;
+  flex: 4;
+}
+
+.menu-item {
+  padding-bottom: 5px;
 }
 
 .blog-post-list-item {
   display: flex;
   align-items: center;
-  margin-right: 80px;
+  padding: 0 10px;
   text-decoration: none;
   color: var(--primary-brown);
 }
@@ -19,10 +29,16 @@
   color: var(--text-brown-medium);
 }
 
+.blog-post-list-item:hover .menu-item {
+  border-bottom: 2px solid var(--text-brown-medium);
+  padding-bottom: 3px;
+}
+
 .special-offer {
   display: flex;
+  flex: 1;
   align-items: center;
-  padding-right: 80px;
+  margin-right: 80px;
 }
 
 .join-our-club-btn {
@@ -55,7 +71,7 @@
   }
 
   .special-offer {
-    padding-right: 55px;
+    margin-right: 55px;
   }
 }
 
@@ -67,17 +83,12 @@
     height: 100px;
   }
 
-  .header-logo {
-    left: 16px;
-    position: absolute;
-  }
-
   .header-logo img {
-    width: 70%;
+    width: 130px;
   }
 
   .special-offer {
-    padding-right: 30px;
+    margin-right: 30px;
   }
 
   .join-our-club-btn {
@@ -87,6 +98,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  .header-logo img {
+    width: 100px;
+  }
+
   .join-our-club-btn {
     width: 120px;
   }
