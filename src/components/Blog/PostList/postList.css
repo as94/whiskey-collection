@@ -89,6 +89,7 @@
 
 .post-list-item .description {
   margin-bottom: 10px;
+  min-height: 150px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -181,6 +182,10 @@
   .preview-image {
     width: inherit;
     height: inherit;
+  }
+
+  .post-list-item .description {
+    min-height: 0;
   }
 }
 

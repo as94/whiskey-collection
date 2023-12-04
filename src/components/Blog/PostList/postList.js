@@ -15,9 +15,9 @@ if (element) {
   for (let i = 0; i < orderedPosts.length; i++) {
     const post = orderedPosts[i];
 
-    const tags = post.article.tags.map(
-      tag => `<span class="tag body-small">${tag}</span>`
-    );
+    const tags = post.article.tags
+      .map(tag => `<span class="tag body-small">${tag}</span>`)
+      .join(' ');
 
     result += postContent
       .replace(

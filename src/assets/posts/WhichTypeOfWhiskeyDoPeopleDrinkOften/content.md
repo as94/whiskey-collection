@@ -6,9 +6,11 @@ Alright, fellow whiskey aficionados, grab your favorite glass because we're abou
 
 **Scotch**
 
-Our adventure kicks off in the enchanting hills of Scotland – the homeland of Scotch whisky. It's like the superhero of whiskies, with types like Single Malt and Blended Scotch ready to save the day. Single Malt, think [Glenfiddich](test), packs a punch with its bold, often peaty flavor. Glenfiddich is your go-to. It's like the friend who always brings good vibes to the party – reliable, exciting, and always a crowd-pleaser. Cheers to Glenfiddich, making Scotch whisky feel like a backstage pass to flavor town. On the flip side, Blended Scotch, the mixtape of whiskies, featuring classics like [Johnnie Walker](test) is like the rockstar of Scotch, born in the hills of Scotland. This family has been doing the whisky game for ages – legends, really. When you sip Johnnie, it's like a flavor fiesta: a bit smoky, a tad sweet, and always smooth. Blended with precision, it's a symphony of malt and grain whiskies, each bottle telling tales of ages past. Whether you're into the classic Black Label or the fancy Blue, Johnnie Walker is the maestro of Scotch – a party for your taste buds. Cheers to the striding dude on the label, striding right into flavor town, caters to a more diverse palate, hitting all the right notes.
+Our adventure kicks off in the enchanting hills of Scotland – the homeland of Scotch whisky. It's like the superhero of whiskies, with types like Single Malt and Blended Scotch ready to save the day. Single Malt, think [Glenfiddich](test), packs a punch with its bold, often peaty flavor. Glenfiddich is your go-to. It's like the friend who always brings good vibes to the party – reliable, exciting, and always a crowd-pleaser. Cheers to Glenfiddich, making Scotch whisky feel like a backstage pass to flavor town.
 
 ![Whiskey degustation](assets/posts/WhichTypeOfWhiskeyDoPeopleDrinkOften/WhiskeyDegustation.webp)
+
+On the flip side, Blended Scotch, the mixtape of whiskies, featuring classics like [Johnnie Walker](test) is like the rockstar of Scotch, born in the hills of Scotland. This family has been doing the whisky game for ages – legends, really. When you sip Johnnie, it's like a flavor fiesta: a bit smoky, a tad sweet, and always smooth. Blended with precision, it's a symphony of malt and grain whiskies, each bottle telling tales of ages past. Whether you're into the classic Black Label or the fancy Blue, Johnnie Walker is the maestro of Scotch – a party for your taste buds. Cheers to the striding dude on the label, striding right into flavor town, caters to a more diverse palate, hitting all the right notes.
 
 **American Bourbon**
 
@@ -18,9 +20,7 @@ Whether you're sipping their classic White Label or spicing things up with Devil
 
 [Maker's Mark](test) – the rebel of bourbon! Hailing from Kentucky, just like its cousin Jim Beam, Maker's Mark is like the cool kid with that signature red wax dip on every bottle.
 
-When you take a sip, it's like a sweet, caramel hug – smooth, rich, and with a hint of vanilla. Crafted by the Samuels family, they've been at this bourbon game since the '50s, and you can taste the legacy in every drop.
-
-The cool kids at the Bourbon party, bring that smooth, caramel-infused goodness that keeps us coming back for more.
+When you take a sip, it's like a sweet, caramel hug – smooth, rich, and with a hint of vanilla. Crafted by the Samuels family, they've been at this bourbon game since the '50s, and you can taste the legacy in every drop. The cool kids at the Bourbon party, bring that smooth, caramel-infused goodness that keeps us coming back for more.
 
 ### Picking Your Poison: Whiskey Wisdom for the Wannabe Connoisseur
 

@@ -36,8 +36,9 @@ if (element) {
   const imgElements = tempContainer.querySelectorAll('img');
   for (let i = 0; i < imgElements.length; i++) {
     imgElements[i].style.width = '50%';
-    imgElements[i].style.marginTop = '25px';
-    imgElements[i].style.marginBottom = '25px';
+    // imgElements[i].style.marginTop = '25px';
+    // imgElements[i].style.marginBottom = '25px';
+    imgElements[i].style.borderRadius = '4px';
     if (i % 2 === 0) {
       imgElements[i].style.float = 'right';
       imgElements[i].style.marginLeft = '25px';
@@ -60,9 +61,9 @@ if (element) {
     aElements[i].rel = 'noopener noreferrer';
   }
 
-  const tags = post.article.tags.map(
-    tag => `<span class="tag body-small">${tag}</span>`
-  );
+  const tags = post.article.tags
+    .map(tag => `<span class="tag body-small">${tag}</span>`)
+    .join(' ');
 
   element.innerHTML = postContent
     .replace('${title}', post.article.title)
