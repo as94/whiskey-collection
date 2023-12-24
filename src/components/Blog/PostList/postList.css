@@ -34,8 +34,12 @@
   border-radius: 4px;
 }
 
+.tags {
+  margin: 10px 0;
+}
+
 .tag {
-  margin: 12px 0;
+  margin: 2px 0;
   display: inline-block;
   border: 1px solid var(--text-brown-dark);
   border-radius: 4px;
@@ -89,6 +93,9 @@
 
 .post-list-item .description {
   margin-bottom: 10px;
+}
+
+.post-list-item-content {
   min-height: 150px;
 }
 
@@ -184,7 +191,7 @@
     height: inherit;
   }
 
-  .post-list-item .description {
+  .post-list-item-content {
     min-height: 0;
   }
 }
