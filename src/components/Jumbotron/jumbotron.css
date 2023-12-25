@@ -60,8 +60,7 @@
   align-items: center;
   color: white;
   border: none;
-  padding: 15px 0;
-  width: 200px;
+  padding: 15px;
   border-radius: 4px;
   background-color: var(--primary-light-green);
   text-align: left;
@@ -92,12 +91,6 @@
 
   .jumbotron .column {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 1600px) and (orientation: landscape) {
-  .catalog-btn {
-    width: 185px;
   }
 }
 
@@ -163,9 +156,5 @@
 
   .jumbotron .column .usp-product .fourth-row {
     justify-content: center;
-  }
-
-  .catalog-btn {
-    width: 185px;
   }
 }

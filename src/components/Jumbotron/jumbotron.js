@@ -1,10 +1,6 @@
-import {
-  getMainCategories,
-  getWhiskeyByCategory,
-} from '../../services/state.js';
-import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
+import { getWhiskey } from '../../services/state.js';
+import { getMostPopularWhiskeyLink } from '../../services/urlSearchParams.js';
 import jumbotronContent from './jumbotron.html';
 import './jumbotron.css';
 
@@ -59,18 +55,15 @@ const getSliderImages = topRatedWhiskey => {
   return result;
 };
 
-const jumbotron = (category, country, topRatedWhiskey) =>
+const jumbotron = (mostPopularWhiskeyLink, topRatedWhiskey) =>
   jumbotronContent
-    .replace('${category}', category)
-    .replace('${country}', country.toUpperCase())
-    .replace('${catalogByCategoriesLink}', getCatalogByCategoriesLink(category))
+    .replace('${mostPopularWhiskeyLink}', mostPopularWhiskeyLink)
     .replace('${sliderImages}', getSliderImages(topRatedWhiskey));
 
-const categories = getMainCategories();
-const category = getRandomItem(categories);
-const whiskeyByCategory = getWhiskeyByCategory();
-const whiskey = whiskeyByCategory[category];
-const top5RatedWhiskey = whiskey
+const mostPopularWhiskeyLink = getMostPopularWhiskeyLink();
+
+const whiskey = getWhiskey();
+const top10RatedWhiskey = whiskey
   .slice()
   .sort((a, b) => {
     const weightA = a.Rating * Math.log10(a.RateCount + 1);
@@ -84,14 +77,13 @@ const top5RatedWhiskey = whiskey
 
     return a.Name.localeCompare(b.Name);
   })
-  .slice(0, 5);
+  .slice(0, 10);
 
 var jumbotronElement = document.getElementById('jumbotron');
 if (jumbotronElement) {
   jumbotronElement.innerHTML = jumbotron(
-    category,
-    whiskey[0].Country,
-    top5RatedWhiskey
+    mostPopularWhiskeyLink,
+    top10RatedWhiskey
   );
 }
 

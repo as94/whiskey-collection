@@ -1,7 +1,8 @@
 .search-block {
+  padding-top: 125px;
   padding-left: 165px;
   padding-right: 165px;
-  padding-bottom: 120px;
+  padding-bottom: 40px;
 }
 
 .search-parameters {
@@ -196,7 +197,8 @@
 
 @media screen and (max-width: 1600px) {
   .search-block {
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 30px;
   }
 
   .find-btn {
@@ -207,7 +209,7 @@
 
 @media screen and (max-width: 1440px) {
   .search-block {
-    padding: 40px 75px 40px 75px;
+    padding: 80px 75px 0 75px;
   }
 
   .search-parameters {
@@ -217,15 +219,16 @@
 
 @media screen and (max-width: 1024px) {
   .search-block {
-    padding: 40px 45px 40px 45px;
+    padding: 80px 45px 0 45px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .search-block {
+    padding-top: 80px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 
   .filters {

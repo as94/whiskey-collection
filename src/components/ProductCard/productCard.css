@@ -29,15 +29,6 @@
   position: relative;
 }
 
-.product-card .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .product-card .foreground-image {
   position: absolute;
   max-width: 450px;
@@ -103,6 +94,10 @@
 .find-outside-btn:hover {
   background-color: var(--btn-orange-active);
   cursor: pointer;
+}
+
+.search-block {
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -176,15 +171,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-  }
-
-  .product-card .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
   .product-card .whiskey-image {

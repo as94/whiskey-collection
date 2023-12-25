@@ -8,5 +8,4 @@ import './components/AgePopup/agePopup';
 
 import './styles/root.css';
 import './styles/typography.css';
-import './styles/main-page.css';
 import './styles/slider.css';

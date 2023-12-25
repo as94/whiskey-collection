@@ -27,12 +27,6 @@ const getCatalogItems = () => {
         getCatalogByCategoriesLink(category)
       )
       .replace('${category}', category)
-      .replace(
-        '${categoryBackground}',
-        index % 2 === 0
-          ? 'assets/images/product-card-backgrounds/dark-green.webp'
-          : 'assets/images/product-card-backgrounds/light-green.webp'
-      )
       .replace('${whiskeyImageLink}', whiskey.ImageLink)
       .replace('${category}', category)
       .replace('${category}', category)
