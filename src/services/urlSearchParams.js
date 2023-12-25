@@ -100,16 +100,6 @@ export const goToHome = () => {
   window.location.href = main;
 };
 
-export const goToWhiskeyCollectionClub = () => {
-  window.location.href =
-    whiskeyCollectionClub + '#whiskey-collection-club-offer';
-};
-
-export const goToWhiskeyCollectionClubSucceed = () => {
-  window.location.href =
-    whiskeyCollectionClubSucceed + '#whiskey-collection-club-thanks';
-};
-
 export const goToCatalogBySearchResults = (
   country,
   brand,

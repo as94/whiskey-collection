@@ -6,7 +6,7 @@
 
 .header-logo {
   flex: 1;
-  margin-right: 80px;
+  margin-right: 40px;
 }
 
 .menu {
@@ -35,31 +35,6 @@
   padding-bottom: 3px;
 }
 
-.special-offer {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  margin-right: 80px;
-}
-
-.join-our-club-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  border: none;
-  padding: 10px 8px;
-  width: 185px;
-  height: 60px;
-  border-radius: 4px;
-  background-color: #deb62a;
-}
-
-.join-our-club-btn:hover {
-  background-color: #c29f25;
-  cursor: pointer;
-}
-
 @media screen and (max-width: 1600px) {
   .main-header {
     padding-left: 80px;
@@ -69,10 +44,6 @@
 @media screen and (max-width: 1024px) {
   .main-header {
     padding-left: 25px;
-  }
-
-  .special-offer {
-    margin-right: 55px;
   }
 }
 
@@ -87,25 +58,6 @@
   .header-logo img {
     width: 130px;
   }
-
-  .special-offer {
-    margin-right: 30px;
-  }
-
-  .join-our-club-btn {
-    width: 170px;
-    height: 55px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .menu {
-    justify-content: center;
-  }
-
-  .header-logo {
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -115,13 +67,5 @@
 
   .header-logo img {
     width: 100px;
-  }
-
-  .special-offer {
-    margin-right: 20px;
-  }
-
-  .join-our-club-btn {
-    width: 120px;
   }
 }

@@ -12,8 +12,6 @@ const pageKeys = [
   'catalog-by-categories',
   'catalog-by-search-results',
   'product-card',
-  'whiskey-collection-club',
-  'whiskey-collection-club-succeed',
   'terms-and-conditions',
   'privacy-policy',
   'blog-post-list',
