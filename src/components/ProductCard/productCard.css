@@ -96,6 +96,10 @@
   cursor: pointer;
 }
 
+.search-block {
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1600px) {
   .product-card {
     margin: 0 80px 80px 80px;
