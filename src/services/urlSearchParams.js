@@ -1,11 +1,9 @@
-import { nameAsc } from './orderBySettings.js';
+import { nameAsc, popularDesc } from './orderBySettings.js';
 import {
   catalogByCategories,
   catalogBySearchResults,
   productCard,
   main,
-  whiskeyCollectionClub,
-  whiskeyCollectionClubSucceed,
 } from './routePaths.js';
 
 export const getRoute = () => {
@@ -98,6 +96,18 @@ export const getCatalogByCategoriesLink = category => {
 
 export const goToHome = () => {
   window.location.href = main;
+};
+
+export const getMostPopularWhiskeyLink = () => {
+  const params = new URLSearchParams(window.location.search);
+  clearParams(params);
+  params.set('searchText', '');
+  params.set('country', 'Any');
+  params.set('brand', 'Any');
+  params.set('priceRange', 'Any');
+  params.set('orderBy', popularDesc);
+  params.set('page', 1);
+  return catalogBySearchResults + '?' + params.toString();
 };
 
 export const goToCatalogBySearchResults = (

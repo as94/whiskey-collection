@@ -135,6 +135,7 @@ export const getWhiskeyBy = (country, brand, priceRange, searchText) => {
 
   return result;
 };
+
 export const getWhiskeyByCategory = () => state.whiskeyByCategory;
 export const getWhiskeyByName = () => state.whiskeyByName;
 export const getWhiskeyByBrand = () => state.whiskeyByBrand;
