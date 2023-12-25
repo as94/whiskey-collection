@@ -84,13 +84,8 @@ const generateCatalogRows = whiskeyItems => {
   let result = '';
   for (let index = 0; index < whiskeyItems.length; index++) {
     const whiskey = whiskeyItems[index];
-    const backgroundImage =
-      index % 2 === 0
-        ? 'assets/images/product-card-backgrounds/dark-green.webp'
-        : 'assets/images/product-card-backgrounds/light-green.webp';
 
     result += cardContent
-      .replace('${backgroundImage}', backgroundImage)
       .replace('${productCardLink}', getProductCardLink(whiskey.Name))
       .replace('${imageLink}', whiskey.ImageLink)
       .replace('${name}', whiskey.Name)
