@@ -68,4 +68,49 @@ const productCard = () => {
 const element = document.getElementById('productCard');
 if (element) {
   element.innerHTML = productCard();
+
+  const productName = getProductName();
+  if (productName) {
+    document.title = productName;
+
+    const whiskeyByName = getWhiskeyByName();
+    const product = whiskeyByName[productName];
+    if (product) {
+      var descriptionMetaTag = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMetaTag) {
+        descriptionMetaTag.setAttribute(
+          'content',
+          product.Description.split(/(?<=\.|\?|\!)\s/)
+            .slice(0, 2)
+            .join(' ')
+        );
+      }
+
+      var keywordsMetaTag = document.querySelector('meta[name="keywords"]');
+      if (keywordsMetaTag) {
+        let keywords = '';
+        if (product.Country) {
+          keywords += product.Country;
+        }
+        if (product.Brand) {
+          keywords += `, ${product.Brand}`;
+        }
+        if (product.Categories) {
+          keywords += `, ${product.Categories}`;
+        }
+        if (product.TastingNotes) {
+          keywords += `, ${product.TastingNotes}`;
+        }
+        if (product.ABV) {
+          keywords += `, ${product.ABV}`;
+        }
+        if (product.Price) {
+          keywords += `, ${product.Price}`;
+        }
+        keywordsMetaTag.setAttribute('content', keywords);
+      }
+    }
+  }
 }
