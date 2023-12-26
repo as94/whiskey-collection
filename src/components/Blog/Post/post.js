@@ -9,6 +9,8 @@ if (element) {
   const postTitleKey = getPostTitleKey();
   const post = getPost(postTitleKey);
 
+  document.title = post.article.title;
+
   var tempContainer = document.createElement('div');
 
   const converter = new showdown.Converter();
