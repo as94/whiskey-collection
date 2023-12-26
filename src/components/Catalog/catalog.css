@@ -95,6 +95,10 @@
   margin-right: 2px;
 }
 
+.search-block {
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1600px) {
   .catalog {
     margin-bottom: 50px;

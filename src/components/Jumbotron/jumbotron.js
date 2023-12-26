@@ -1,6 +1,7 @@
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getWhiskey } from '../../services/state.js';
 import { getMostPopularWhiskeyLink } from '../../services/urlSearchParams.js';
+import { popularity } from '../../services/sortWhiskeyBy.js';
 import jumbotronContent from './jumbotron.html';
 import './jumbotron.css';
 
@@ -63,21 +64,7 @@ const jumbotron = (mostPopularWhiskeyLink, topRatedWhiskey) =>
 const mostPopularWhiskeyLink = getMostPopularWhiskeyLink();
 
 const whiskey = getWhiskey();
-const top10RatedWhiskey = whiskey
-  .slice()
-  .sort((a, b) => {
-    const weightA = a.Rating * Math.log10(a.RateCount + 1);
-    const weightB = b.Rating * Math.log10(b.RateCount + 1);
-
-    const difference = weightB - weightA;
-
-    if (Number(difference.toFixed(2)) !== 0) {
-      return difference;
-    }
-
-    return a.Name.localeCompare(b.Name);
-  })
-  .slice(0, 10);
+const top10RatedWhiskey = whiskey.slice().sort(popularity).slice(0, 10);
 
 var jumbotronElement = document.getElementById('jumbotron');
 if (jumbotronElement) {

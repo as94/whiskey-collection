@@ -23,6 +23,7 @@ import {
   catalogByCategories,
   catalogBySearchResults,
 } from '../../services/routePaths.js';
+import { popularity } from '../../services/sortWhiskeyBy.js';
 import catalogContent from './catalog.html';
 import cardContent from './card.html';
 import './catalog.css';
@@ -63,16 +64,7 @@ const getWhiskeyItems = () => {
         case priceDesc:
           return parseFloat(b.Price.slice(1)) - parseFloat(a.Price.slice(1));
         case popularDesc:
-          const weightA = a.Rating * Math.log10(a.RateCount + 1);
-          const weightB = b.Rating * Math.log10(b.RateCount + 1);
-
-          const difference = weightB - weightA;
-
-          if (Number(difference.toFixed(2)) !== 0) {
-            return difference;
-          }
-
-          return a.Name.localeCompare(b.Name);
+          return popularity(a, b);
       }
     })
     .slice((page - 1) * whiskeyItemsPerPage, whiskeyItemsPerPage * page);
