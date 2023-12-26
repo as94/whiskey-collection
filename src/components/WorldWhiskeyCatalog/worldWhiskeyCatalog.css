@@ -84,7 +84,6 @@
   margin-top: 30px;
   width: 380px;
   min-height: 460px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,12 +99,6 @@
 
 .catalog .foreground-image {
   z-index: 1;
-}
-
-.catalog .card .category-description {
-  color: white;
-  text-align: center;
-  padding: 0 60px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -163,10 +156,6 @@
     max-width: 250px;
     max-height: 250px;
   }
-
-  .catalog .card .category-description {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -190,10 +179,6 @@
 
   .catalog .card .category-name {
     padding-bottom: 20px;
-  }
-
-  .catalog .card .category-description {
-    display: none;
   }
 }
 

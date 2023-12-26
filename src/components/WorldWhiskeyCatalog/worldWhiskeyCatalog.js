@@ -5,7 +5,6 @@ import {
 import { getRandomItem } from '../../services/utils.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getCatalogByCategoriesLink } from '../../services/urlSearchParams.js';
-import { whiskeyCategoryDescriptions } from '../../services/whiskeyCategoryDescriptions.js';
 import worldWhiskeyCatalogContent from './worldWhiskeyCatalog.html';
 import worldWhiskeyCardContent from './worldWhiskeyCard.html';
 import './worldWhiskeyCatalog.css';
@@ -29,14 +28,7 @@ const getCatalogItems = () => {
       .replace('${category}', category)
       .replace('${whiskeyImageLink}', whiskey.ImageLink)
       .replace('${category}', category)
-      .replace('${category}', category)
-      .replace(
-        '${description}',
-        whiskeyCategoryDescriptions[category].Description.split(/\s+/)
-          .map(x => x.replace(',', ''))
-          .slice(0, 15)
-          .join(' ') + ' ...'
-      );
+      .replace('${category}', category);
   }
 
   return result;
