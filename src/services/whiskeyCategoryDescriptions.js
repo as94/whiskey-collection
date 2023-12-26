@@ -3,22 +3,22 @@ export const whiskeyCategoryDescriptions = {
     Description: `Bourbon is an iconic American whiskey, crafted with at least 51% corn and aged in charred oak barrels. Known for its sweet and mellow flavor profile, it features notes of caramel, vanilla, and rich complexity.`,
     ImageLink: 'assets/images/categories/America.webp',
   },
-  'Flavored Whiskey': {
+  'Flavored Whiskey Review': {
     Description: `Flavored whiskey is a delightful twist on traditional whiskey, infused with enticing flavors such as fruits, spices, or herbs. These additions create a harmonious blend, offering a unique and enjoyable drinking experience. Explore the warmth of cinnamon, the sweetness of honey, or the richness of caramel in this enticing variation of whiskey.`,
     ImageLink: 'assets/images/categories/Flavored.webp',
   },
-  'American Whiskey': {
+  'American Whiskey Review': {
     Description: `American whiskey is a type of distilled spirit made from a mash of
   grains, primarily corn, and aged in charred oak barrels. Types
   include bourbon, rye, and Tennessee whiskey. It can be enjoyed
   straight or in cocktails and is popular globally.`,
     ImageLink: 'assets/images/categories/America.webp',
   },
-  'Rye Whiskey': {
+  'Rye Whiskey Review': {
     Description: `Rye whiskey is a spicy and robust distilled spirit primarily made from rye grain. Known for its peppery flavor and complex profile, it offers a smooth, full-bodied experience with hints of black pepper, cinnamon, and fruit. Enjoy it neat, on the rocks, or in classic cocktails like the Manhattan. Rye whiskey is a cherished and versatile spirit with a rich history in North America.`,
     ImageLink: 'assets/images/categories/Rye.webp',
   },
-  'Scotch Whisky': {
+  'Scotch Whisky Review': {
     Description: `Scotch whisky is a popular alcoholic beverage made from malted
   barley, water, and yeast, produced in Scotland. It comes in two main
   categories: single malt and blended, and is highly regulated in
@@ -27,7 +27,7 @@ export const whiskeyCategoryDescriptions = {
   on the rocks, and in cocktails.`,
     ImageLink: 'assets/images/categories/Scotland.webp',
   },
-  'Canadian Whisky': {
+  'Canadian Whisky Review': {
     Description: `Canadian whisky is a blended alcoholic beverage made primarily from
   corn, rye, and barley. It is produced in Canada and is typically a
   blended whisky made by combining whiskies from different
@@ -35,11 +35,11 @@ export const whiskeyCategoryDescriptions = {
   neat or in cocktails.`,
     ImageLink: 'assets/images/categories/Canada.webp',
   },
-  'White Whiskey Moonshine': {
+  'White Whiskey Moonshine Review': {
     Description: `Moonshine whiskey is an illicitly produced and unaged spirit that embodies the raw and intense character of homemade distillation. Crafted in small batches, typically from corn, it delivers a fiery kick and rustic flavor profile, reflecting its storied history of clandestine production.`,
     ImageLink: 'assets/images/categories/Moonshine.webp',
   },
-  'Irish Whiskey': {
+  'Irish Whiskey Review': {
     Description: `Irish whiskey is a popular alcoholic beverage made from a mash of
   malted barley, water, and other grains. It is triple distilled and
   aged for a minimum of three years in oak casks, resulting in a
@@ -48,7 +48,7 @@ export const whiskeyCategoryDescriptions = {
   whiskey.`,
     ImageLink: 'assets/images/categories/Irish.webp',
   },
-  'Japanese Whisky': {
+  'Japanese Whisky Review': {
     Description: `Japanese whiskey is a type of alcoholic beverage made in Japan,
   modeled after Scotch whisky. It is made from a blend of malted and
   unmalted grains, distilled in pot stills, and aged in oak casks to
@@ -57,7 +57,7 @@ export const whiskeyCategoryDescriptions = {
   recognition and popularity in recent years.`,
     ImageLink: 'assets/images/categories/Japanese.webp',
   },
-  'Single Malt Whiskey': {
+  'Single Malt Whiskey Review': {
     Description: `Single malt whiskey is a prestigious and exceptional style of whiskey made exclusively from malted barley at a single distillery. Its production involves carefully selected ingredients, meticulous fermentation, and aging processes, resulting in a unique and sought-after spirit.`,
     ImageLink: 'assets/images/categories/SingleMalt.webp',
   },

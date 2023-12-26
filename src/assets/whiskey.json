@@ -1,9 +1,9 @@
 [
   {
-    "Name": "Jack Daniel's Old No. 7 Tennessee Whiskey",
+    "Name": "Jack Daniel's Old No. 7 Tennessee Whiskey Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -16,10 +16,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Old No. 7 Tennessee Whiskey.webp"
   },
   {
-    "Name": "Jack Daniel's Tennessee Honey",
+    "Name": "Jack Daniel's Tennessee Honey Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -32,10 +32,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Tennessee Honey.webp"
   },
   {
-    "Name": "Jack Daniel's Gentleman Jack Tennessee Whiskey",
+    "Name": "Jack Daniel's Gentleman Jack Tennessee Whiskey Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -48,10 +48,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Gentleman Jack Tennessee Whiskey.webp"
   },
   {
-    "Name": "Jack Daniel's Tennessee Fire Flavored Whiskey",
+    "Name": "Jack Daniel's Tennessee Fire Flavored Whiskey Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -64,10 +64,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Tennessee Fire Flavored Whiskey.webp"
   },
   {
-    "Name": "Jack Daniel's Tennessee Apple Flavored Whiskey",
+    "Name": "Jack Daniel's Tennessee Apple Flavored Whiskey Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -80,10 +80,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Tennessee Apple Flavored Whiskey.webp"
   },
   {
-    "Name": "Jack Daniel's Tennessee Cider Winter Jack",
+    "Name": "Jack Daniel's Tennessee Cider Winter Jack Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "15%",
     "BaseIngredient": "",
@@ -96,10 +96,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Tennessee Cider Winter Jack.webp"
   },
   {
-    "Name": "Jack Daniel's Single Barrel Select Tennessee Whiskey",
+    "Name": "Jack Daniel's Single Barrel Select Tennessee Whiskey Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "47%",
     "BaseIngredient": "",
@@ -112,10 +112,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Single Barrel Select Tennessee Whiskey.webp"
   },
   {
-    "Name": "Jack Daniel's Rye Tennessee Whiskey",
+    "Name": "Jack Daniel's Rye Tennessee Whiskey Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -128,10 +128,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Rye Tennessee Whiskey.webp"
   },
   {
-    "Name": "Jack Daniel's Single Barrel Barrel Proof Tennessee Whiskey",
+    "Name": "Jack Daniel's Single Barrel Barrel Proof Tennessee Whiskey Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -144,10 +144,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Single Barrel Barrel Proof Tennessee Whiskey.webp"
   },
   {
-    "Name": "Jack Daniel's Sinatra Select Tennessee Whiskey",
+    "Name": "Jack Daniel's Sinatra Select Tennessee Whiskey Review",
     "Country": "United States",
     "Brand": "Jack Daniels",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -160,10 +160,10 @@
     "ImageLink": "assets/images/products/Jack Daniel's Sinatra Select Tennessee Whiskey.webp"
   },
   {
-    "Name": "Johnnie Walker Black Label Blended Scotch Whisky",
+    "Name": "Johnnie Walker Black Label Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Johnnie Walker",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -176,10 +176,10 @@
     "ImageLink": "assets/images/products/Johnnie Walker Black Label Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Johnnie Walker Red Label Blended Scotch Whisky",
+    "Name": "Johnnie Walker Red Label Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Johnnie Walker",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -192,10 +192,10 @@
     "ImageLink": "assets/images/products/Johnnie Walker Red Label Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Johnnie Walker Blue Label Blended Scotch Whisky",
+    "Name": "Johnnie Walker Blue Label Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Johnnie Walker",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -208,10 +208,10 @@
     "ImageLink": "assets/images/products/Johnnie Walker Blue Label Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Johnnie Walker White Walker Blended Scotch Whisky",
+    "Name": "Johnnie Walker White Walker Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Johnnie Walker",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "41.7%",
     "BaseIngredient": "",
@@ -224,10 +224,10 @@
     "ImageLink": "assets/images/products/Johnnie Walker White Walker Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Johnnie Walker Double Black Label Blended Scotch Whisky",
+    "Name": "Johnnie Walker Double Black Label Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Johnnie Walker",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -240,10 +240,10 @@
     "ImageLink": "assets/images/products/Johnnie Walker Double Black Label Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Johnnie Walker Green Label Blended Malt Scotch Whisky",
+    "Name": "Johnnie Walker Green Label Blended Malt Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Johnnie Walker",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -256,10 +256,10 @@
     "ImageLink": "assets/images/products/Johnnie Walker Green Label Blended Malt Scotch Whisky.webp"
   },
   {
-    "Name": "Johnnie Walker Gold Label Reserve Blended Scotch Whisky",
+    "Name": "Johnnie Walker Gold Label Reserve Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Johnnie Walker",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -272,10 +272,10 @@
     "ImageLink": "assets/images/products/Johnnie Walker Gold Label Reserve Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Johnnie Walker A Song of Fire Blended Scotch Whisky",
+    "Name": "Johnnie Walker A Song of Fire Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Johnnie Walker",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40.8%",
     "BaseIngredient": "",
@@ -288,10 +288,10 @@
     "ImageLink": "assets/images/products/Johnnie Walker A Song of Fire Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Johnnie Walker Aged 18 Years Blended Scotch Whisky",
+    "Name": "Johnnie Walker Aged 18 Years Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Johnnie Walker",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -304,10 +304,10 @@
     "ImageLink": "assets/images/products/Johnnie Walker Aged 18 Years Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Highland Park 12 Year Old Single Malt Scotch Whisky",
+    "Name": "Highland Park 12 Year Old Single Malt Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Highland Park",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Balanced, Biscuit, Caramel, Chocolate, Citrus, Dried Fruit, Honey, Malty, Rich, Round, Smoky, Smooth",
     "ABV": "43%",
     "BaseIngredient": "Barley",
@@ -320,10 +320,10 @@
     "ImageLink": "assets/images/products/Highland Park 12 Year Old Single Malt Scotch Whisky.webp"
   },
   {
-    "Name": "Jim Beam Bourbon Whiskey",
+    "Name": "Jim Beam Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Jim Beam",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -336,10 +336,10 @@
     "ImageLink": "assets/images/products/Jim Beam Bourbon Whiskey.webp"
   },
   {
-    "Name": "Jim Beam Black Extra Aged Bourbon Whiskey",
+    "Name": "Jim Beam Black Extra Aged Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Jim Beam",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -352,10 +352,10 @@
     "ImageLink": "assets/images/products/Jim Beam Black Extra Aged Bourbon Whiskey.webp"
   },
   {
-    "Name": "Jim Beam  Honey Bourbon Whiskey",
+    "Name": "Jim Beam  Honey Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Jim Beam",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -368,10 +368,10 @@
     "ImageLink": "assets/images/products/Jim Beam  Honey Bourbon Whiskey.webp"
   },
   {
-    "Name": "Jim Beam Apple Bourbon Whiskey",
+    "Name": "Jim Beam Apple Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Jim Beam",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -384,10 +384,10 @@
     "ImageLink": "assets/images/products/Jim Beam Apple Bourbon Whiskey.webp"
   },
   {
-    "Name": "Jim Beam Peach Bourbon Whiskey",
+    "Name": "Jim Beam Peach Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Jim Beam",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "32.5%",
     "BaseIngredient": "",
@@ -400,10 +400,10 @@
     "ImageLink": "assets/images/products/Jim Beam Peach Bourbon Whiskey.webp"
   },
   {
-    "Name": "Jim Beam Red Stag Black Cherry Bourbon Whiskey",
+    "Name": "Jim Beam Red Stag Black Cherry Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Jim Beam",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -416,10 +416,10 @@
     "ImageLink": "assets/images/products/Jim Beam Red Stag Black Cherry Bourbon Whiskey.webp"
   },
   {
-    "Name": "Jim Beam Vanilla Bourbon Whiskey",
+    "Name": "Jim Beam Vanilla Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Jim Beam",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "Vanilla",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -432,10 +432,10 @@
     "ImageLink": "assets/images/products/Jim Beam Vanilla Bourbon Whiskey.webp"
   },
   {
-    "Name": "Jim Beam Devil's Cut Bourbon Whiskey",
+    "Name": "Jim Beam Devil's Cut Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Jim Beam",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -448,10 +448,10 @@
     "ImageLink": "assets/images/products/Jim Beam Devil's Cut Bourbon Whiskey.webp"
   },
   {
-    "Name": "Barrell Dovetail Whiskey",
+    "Name": "Barrell Dovetail Whiskey Review",
     "Country": "United States",
     "Brand": "Barrell Craft Spirits",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -464,10 +464,10 @@
     "ImageLink": "assets/images/products/Barrell Dovetail Whiskey.webp"
   },
   {
-    "Name": "BCS Line 15 Year Bourbon (1st bottling)",
+    "Name": "BCS Line 15 Year Bourbon (1st bottling) Review",
     "Country": "United States",
     "Brand": "Barrell Craft Spirits",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "53.3%",
     "BaseIngredient": "Barley",
@@ -480,10 +480,10 @@
     "ImageLink": "assets/images/products/BCS Line 15 Year Bourbon (1st bottling).webp"
   },
   {
-    "Name": "Barrell Straight Bourbon Whiskey",
+    "Name": "Barrell Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Barrell Craft Spirits",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -496,10 +496,10 @@
     "ImageLink": "assets/images/products/Barrell Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Glenmorangie Original 10 Year Old Single Malt Whisky",
+    "Name": "Glenmorangie Original 10 Year Old Single Malt Whisky Review",
     "Country": "Scotland",
     "Brand": "Glenmorangie",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Fresh, Vanilla",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -512,10 +512,10 @@
     "ImageLink": "assets/images/products/Glenmorangie Original 10 Year Old Single Malt Whisky.webp"
   },
   {
-    "Name": "Glenmorangie 14 Year Old Port Cask Finish – Quinta Ruban Single Malt Whisky",
+    "Name": "Glenmorangie 14 Year Old Port Cask Finish – Quinta Ruban Single Malt Whisky Review",
     "Country": "Scotland",
     "Brand": "Glenmorangie",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Nutty, Rose Petal, Smooth, Velvety",
     "ABV": "46%",
     "BaseIngredient": "",
@@ -528,10 +528,10 @@
     "ImageLink": "assets/images/products/Glenmorangie 14 Year Old Port Cask Finish – Quinta Ruban Single Malt Whisky.webp"
   },
   {
-    "Name": "Glenmorangie 12 Year Old Sherry Cask Finish – Lasanta Single Malt Whisky",
+    "Name": "Glenmorangie 12 Year Old Sherry Cask Finish – Lasanta Single Malt Whisky Review",
     "Country": "Scotland",
     "Brand": "Glenmorangie",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Bold, Smoky, Smooth, Toasty",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -544,10 +544,10 @@
     "ImageLink": "assets/images/products/Glenmorangie 12 Year Old Sherry Cask Finish – Lasanta Single Malt Whisky.webp"
   },
   {
-    "Name": "The Macallan Double Cask 12 Years Old",
+    "Name": "The Macallan Double Cask 12 Years Old Review",
     "Country": "Scotland",
     "Brand": "The Macallan",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Bold, Caramel, Citrus, Honey",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -560,10 +560,10 @@
     "ImageLink": "assets/images/products/The Macallan Double Cask 12 Years Old.webp"
   },
   {
-    "Name": "The Macallan Sherry Oak 12 Years Old",
+    "Name": "The Macallan Sherry Oak 12 Years Old Review",
     "Country": "Scotland",
     "Brand": "The Macallan",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Cinnamon, Dried Fruit, Oak",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -576,10 +576,10 @@
     "ImageLink": "assets/images/products/The Macallan Sherry Oak 12 Years Old.webp"
   },
   {
-    "Name": "The Macallan Triple Cask Matured 15 Years Old",
+    "Name": "The Macallan Triple Cask Matured 15 Years Old Review",
     "Country": "Scotland",
     "Brand": "The Macallan",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Bright, Chocolate, Cinnamon, Citrus, Red Fruit",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -592,10 +592,10 @@
     "ImageLink": "assets/images/products/The Macallan Triple Cask Matured 15 Years Old.webp"
   },
   {
-    "Name": "The Macallan Sherry Oak 18 Years Old",
+    "Name": "The Macallan Sherry Oak 18 Years Old Review",
     "Country": "Scotland",
     "Brand": "The Macallan",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Cinnamon, Dried Fruit, Oak",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -608,10 +608,10 @@
     "ImageLink": "assets/images/products/The Macallan Sherry Oak 18 Years Old.webp"
   },
   {
-    "Name": "The Glenlivet 12 Year",
+    "Name": "The Glenlivet 12 Year Review",
     "Country": "Scotland",
     "Brand": "The Glenlivet",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -624,10 +624,10 @@
     "ImageLink": "assets/images/products/The Glenlivet 12 Year.webp"
   },
   {
-    "Name": "The Glenlivet Founder's Reserve",
+    "Name": "The Glenlivet Founder's Reserve Review",
     "Country": "Scotland",
     "Brand": "The Glenlivet",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -640,10 +640,10 @@
     "ImageLink": "assets/images/products/The Glenlivet Founder's Reserve.webp"
   },
   {
-    "Name": "The Glenlivet Single Malt Scotch Whisky 14 Year Old",
+    "Name": "The Glenlivet Single Malt Scotch Whisky 14 Year Old Review",
     "Country": "Scotland",
     "Brand": "The Glenlivet",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -656,10 +656,10 @@
     "ImageLink": "assets/images/products/The Glenlivet Single Malt Scotch Whisky 14 Year Old.webp"
   },
   {
-    "Name": "The Glenlivet 15 Year",
+    "Name": "The Glenlivet 15 Year Review",
     "Country": "Scotland",
     "Brand": "The Glenlivet",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -672,10 +672,10 @@
     "ImageLink": "assets/images/products/The Glenlivet 15 Year.webp"
   },
   {
-    "Name": "The Glenlivet Caribbean Reserve",
+    "Name": "The Glenlivet Caribbean Reserve Review",
     "Country": "Scotland",
     "Brand": "The Glenlivet",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Apple, Banana, Caramel, Pear, Rich, Tropical, Tropical Fruit",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -688,10 +688,10 @@
     "ImageLink": "assets/images/products/The Glenlivet Caribbean Reserve.webp"
   },
   {
-    "Name": "The Glenlivet 18 Year",
+    "Name": "The Glenlivet 18 Year Review",
     "Country": "Scotland",
     "Brand": "The Glenlivet",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -704,10 +704,10 @@
     "ImageLink": "assets/images/products/The Glenlivet 18 Year.webp"
   },
   {
-    "Name": "The Balvenie 12 Year Old DoubleWood Single Malt Scotch Whisky",
+    "Name": "The Balvenie 12 Year Old DoubleWood Single Malt Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "The Balvenie",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -720,10 +720,10 @@
     "ImageLink": "assets/images/products/The Balvenie 12 Year Old DoubleWood Single Malt Scotch Whisky.webp"
   },
   {
-    "Name": "The Balvenie 14 Year Old Caribbean Cask Single Malt Scotch Whisky",
+    "Name": "The Balvenie 14 Year Old Caribbean Cask Single Malt Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "The Balvenie",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -736,10 +736,10 @@
     "ImageLink": "assets/images/products/The Balvenie 14 Year Old Caribbean Cask Single Malt Scotch Whisky.webp"
   },
   {
-    "Name": "Crown Royal Fine Deluxe Blended Canadian Whisky",
+    "Name": "Crown Royal Fine Deluxe Blended Canadian Whisky Review",
     "Country": "Canada",
     "Brand": "Crown Royal",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -752,10 +752,10 @@
     "ImageLink": "assets/images/products/Crown Royal Fine Deluxe Blended Canadian Whisky.webp"
   },
   {
-    "Name": "Crown Royal Regal Apple Flavored Whisky",
+    "Name": "Crown Royal Regal Apple Flavored Whisky Review",
     "Country": "Canada",
     "Brand": "Crown Royal",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -768,10 +768,10 @@
     "ImageLink": "assets/images/products/Crown Royal Regal Apple Flavored Whisky.webp"
   },
   {
-    "Name": "Crown Royal Vanilla Flavored Whisky",
+    "Name": "Crown Royal Vanilla Flavored Whisky Review",
     "Country": "Canada",
     "Brand": "Crown Royal",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -784,10 +784,10 @@
     "ImageLink": "assets/images/products/Crown Royal Vanilla Flavored Whisky.webp"
   },
   {
-    "Name": "Crown Royal Peach Flavored Whisky",
+    "Name": "Crown Royal Peach Flavored Whisky Review",
     "Country": "Canada",
     "Brand": "Crown Royal",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -800,10 +800,10 @@
     "ImageLink": "assets/images/products/Crown Royal Peach Flavored Whisky.webp"
   },
   {
-    "Name": "Crown Royal Black Blended Canadian Whisky",
+    "Name": "Crown Royal Black Blended Canadian Whisky Review",
     "Country": "Canada",
     "Brand": "Crown Royal",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -816,10 +816,10 @@
     "ImageLink": "assets/images/products/Crown Royal Black Blended Canadian Whisky.webp"
   },
   {
-    "Name": "Crown Royal Salted Caramel Flavored Whisky",
+    "Name": "Crown Royal Salted Caramel Flavored Whisky Review",
     "Country": "Canada",
     "Brand": "Crown Royal",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -832,10 +832,10 @@
     "ImageLink": "assets/images/products/Crown Royal Salted Caramel Flavored Whisky.webp"
   },
   {
-    "Name": "Crown Royal XO Blended Canadian Whisky",
+    "Name": "Crown Royal XO Blended Canadian Whisky Review",
     "Country": "Canada",
     "Brand": "Crown Royal",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -848,10 +848,10 @@
     "ImageLink": "assets/images/products/Crown Royal XO Blended Canadian Whisky.webp"
   },
   {
-    "Name": "Crown Royal Reserve Blended Canadian Whisky",
+    "Name": "Crown Royal Reserve Blended Canadian Whisky Review",
     "Country": "Canada",
     "Brand": "Crown Royal",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -864,10 +864,10 @@
     "ImageLink": "assets/images/products/Crown Royal Reserve Blended Canadian Whisky.webp"
   },
   {
-    "Name": "Bird Dog Peach Whiskey",
+    "Name": "Bird Dog Peach Whiskey Review",
     "Country": "United States",
     "Brand": "Bird Dog Whiskey",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -880,10 +880,10 @@
     "ImageLink": "assets/images/products/Bird Dog Peach Whiskey.webp"
   },
   {
-    "Name": "Glenfiddich 12 Year Old Single Malt Scotch Whisky",
+    "Name": "Glenfiddich 12 Year Old Single Malt Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Glenfiddich",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Balanced, Creamy, Oak, Pear, Smooth",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -896,10 +896,10 @@
     "ImageLink": "assets/images/products/Glenfiddich 12 Year Old Single Malt Scotch Whisky.webp"
   },
   {
-    "Name": "Glenfiddich Bourbon Barrel Reserve 14 Year",
+    "Name": "Glenfiddich Bourbon Barrel Reserve 14 Year Review",
     "Country": "Scotland",
     "Brand": "Glenfiddich",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -912,10 +912,10 @@
     "ImageLink": "assets/images/products/Glenfiddich Bourbon Barrel Reserve 14 Year.webp"
   },
   {
-    "Name": "Glenfiddich 15 Year Old Solera Reserve Single Malt Scotch Whisky",
+    "Name": "Glenfiddich 15 Year Old Solera Reserve Single Malt Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Glenfiddich",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "51%",
     "BaseIngredient": "",
@@ -928,10 +928,10 @@
     "ImageLink": "assets/images/products/Glenfiddich 15 Year Old Solera Reserve Single Malt Scotch Whisky.webp"
   },
   {
-    "Name": "Ole Smoky Salty Caramel Whiskey",
+    "Name": "Ole Smoky Salty Caramel Whiskey Review",
     "Country": "United States",
     "Brand": "Ole Smoky",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "30%",
     "BaseIngredient": "",
@@ -944,10 +944,10 @@
     "ImageLink": "assets/images/products/Ole Smoky Salty Caramel Whiskey.webp"
   },
   {
-    "Name": "Ole Smoky Moonshine Cherries",
+    "Name": "Ole Smoky Moonshine Cherries Review",
     "Country": "United States",
     "Brand": "Ole Smoky",
-    "Categories": "White Whiskey Moonshine",
+    "Categories": "White Whiskey Moonshine Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -960,10 +960,10 @@
     "ImageLink": "assets/images/products/Ole Smoky Moonshine Cherries.webp"
   },
   {
-    "Name": "Ole Smoky Apple Pie Moonshine",
+    "Name": "Ole Smoky Apple Pie Moonshine Review",
     "Country": "United States",
     "Brand": "Ole Smoky",
-    "Categories": "White Whiskey Moonshine",
+    "Categories": "White Whiskey Moonshine Review",
     "TastingNotes": "",
     "ABV": "20%",
     "BaseIngredient": "",
@@ -976,10 +976,10 @@
     "ImageLink": "assets/images/products/Ole Smoky Apple Pie Moonshine.webp"
   },
   {
-    "Name": "Ole Smoky Butter Pecan Moonshine",
+    "Name": "Ole Smoky Butter Pecan Moonshine Review",
     "Country": "United States",
     "Brand": "Ole Smoky",
-    "Categories": "White Whiskey Moonshine",
+    "Categories": "White Whiskey Moonshine Review",
     "TastingNotes": "",
     "ABV": "17.5%",
     "BaseIngredient": "",
@@ -992,10 +992,10 @@
     "ImageLink": "assets/images/products/Ole Smoky Butter Pecan Moonshine.webp"
   },
   {
-    "Name": "Ole Smoky Moonshine Pickles",
+    "Name": "Ole Smoky Moonshine Pickles Review",
     "Country": "United States",
     "Brand": "Ole Smoky",
-    "Categories": "White Whiskey Moonshine",
+    "Categories": "White Whiskey Moonshine Review",
     "TastingNotes": "",
     "ABV": "20%",
     "BaseIngredient": "",
@@ -1008,10 +1008,10 @@
     "ImageLink": "assets/images/products/Ole Smoky Moonshine Pickles.webp"
   },
   {
-    "Name": "Woodford Reserve Kentucky Straight Bourbon Whiskey",
+    "Name": "Woodford Reserve Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Woodford Reserve",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45.2%",
     "BaseIngredient": "",
@@ -1024,10 +1024,10 @@
     "ImageLink": "assets/images/products/Woodford Reserve Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Woodford Reserve Double Oaked Kentucky Straight Bourbon Whiskey",
+    "Name": "Woodford Reserve Double Oaked Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Woodford Reserve",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45.2%",
     "BaseIngredient": "",
@@ -1040,10 +1040,10 @@
     "ImageLink": "assets/images/products/Woodford Reserve Double Oaked Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Woodford Reserve Kentucky Straight Rye Whiskey",
+    "Name": "Woodford Reserve Kentucky Straight Rye Whiskey Review",
     "Country": "United States",
     "Brand": "Woodford Reserve",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "45.2%",
     "BaseIngredient": "",
@@ -1056,10 +1056,10 @@
     "ImageLink": "assets/images/products/Woodford Reserve Kentucky Straight Rye Whiskey.webp"
   },
   {
-    "Name": "The Dalmore 12 Year",
+    "Name": "The Dalmore 12 Year Review",
     "Country": "Scotland",
     "Brand": "Dalmore",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "12%",
     "BaseIngredient": "",
@@ -1072,10 +1072,10 @@
     "ImageLink": "assets/images/products/The Dalmore 12 Year.webp"
   },
   {
-    "Name": "Knob Creek Kentucky Straight Bourbon Whiskey",
+    "Name": "Knob Creek Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Knob Creek",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -1088,10 +1088,10 @@
     "ImageLink": "assets/images/products/Knob Creek Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Knob Creek Rye Whiskey",
+    "Name": "Knob Creek Rye Whiskey Review",
     "Country": "United States",
     "Brand": "Knob Creek",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -1104,10 +1104,10 @@
     "ImageLink": "assets/images/products/Knob Creek Rye Whiskey.webp"
   },
   {
-    "Name": "Knob Creek Smoked Maple Bourbon Whiskey",
+    "Name": "Knob Creek Smoked Maple Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Knob Creek",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -1120,10 +1120,10 @@
     "ImageLink": "assets/images/products/Knob Creek Smoked Maple Bourbon Whiskey.webp"
   },
   {
-    "Name": "Knob Creek Single Barrel Bourbon Whiskey",
+    "Name": "Knob Creek Single Barrel Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Knob Creek",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "60%",
     "BaseIngredient": "",
@@ -1136,10 +1136,10 @@
     "ImageLink": "assets/images/products/Knob Creek Single Barrel Bourbon Whiskey.webp"
   },
   {
-    "Name": "Knob Creek Straight Bourbon 12 Year",
+    "Name": "Knob Creek Straight Bourbon 12 Year Review",
     "Country": "United States",
     "Brand": "Knob Creek",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -1152,10 +1152,10 @@
     "ImageLink": "assets/images/products/Knob Creek Straight Bourbon 12 Year.webp"
   },
   {
-    "Name": "Buffalo Trace Bourbon",
+    "Name": "Buffalo Trace Bourbon Review",
     "Country": "United States",
     "Brand": "Buffalo Trace",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Anise, Dark Fruit, Mint, Sweet, Vanilla",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -1164,14 +1164,14 @@
     "RateCount": 271,
     "Price": "$31.99",
     "Volume": "",
-    "Description": "Ancient buffalo once blazed trails through untamed wilderness, guiding American pioneers and intrepid explorers toward uncharted frontiers. One of these historic trails led to the serene banks of the Kentucky River, where Buffalo Trace Distillery has faithfully adhered to the same time-honored bourbon-making tradition for over two centuries. As a tribute to the majestic buffalo and the indomitable spirit of those early settlers who ventured forth, we proudly present Buffalo Trace Kentucky Straight Bourbon Whiskey. Buffalo Trace Kentucky Straight Bourbon Whiskey undergoes meticulous distillation, aging, and bottling at the world's most decorated distillery. Carefully crafted from the finest corn, rye, and barley malt, this whiskey matures patiently within new oak barrels, resting for years within century-old warehouses until reaching its zenith of maturity. The resulting flavor is a tapestry of richness and complexity, characterized by subtle hints of vanilla, toffee, and candied fruit. A velvety smooth finish lingers elegantly on the palate. This unyielding commitment to quality remains unwavering and eternal. Tasting Notes: This deep amber elixir tantalizes the senses with a multifaceted bouquet of vanilla, mint, and molasses. The palate revels in its pleasing sweetness, adorned with notes of brown sugar and spices that gracefully yield to oak, toffee, dark fruit, and hints of anise. The whiskey's enduring finish boasts a profound depth that resonates with every sip. Ratings: Wine Enthusiast Rating: 93 Reviews:'One of the world's great whiskeys.' — Jim Murray, Whisky Magazine Awards: Numerous accolades and distinctions have been bestowed upon Buffalo Trace Kentucky Straight Bourbon Whiskey, including but not limited",
+    "Description": "Ancient buffalo once blazed trails through untamed wilderness, guiding American pioneers and intrepid explorers toward uncharted frontiers. One of these historic trails led to the serene banks of the Kentucky River, where Buffalo Trace Distillery has faithfully adhered to the same time-honored bourbon-making tradition for over two centuries. As a tribute to the majestic buffalo and the indomitable spirit of those early settlers who ventured forth, we proudly present Buffalo Trace Kentucky Straight Bourbon Whiskey. Buffalo Trace Kentucky Straight Bourbon Whiskey undergoes meticulous distillation, aging, and bottling at the world's most decorated distillery. Carefully crafted from the finest corn, rye, and barley malt, this whiskey matures patiently within new oak barrels, resting for years within century-old warehouses until reaching its zenith of maturity. The resulting flavor is a tapestry of richness and complexity, characterized by subtle hints of vanilla, toffee, and candied fruit. A velvety smooth finish lingers elegantly on the palate. This unyielding commitment to quality remains unwavering and eternal. Tasting Notes: This deep amber elixir tantalizes the senses with a multifaceted bouquet of vanilla, mint, and molasses. The palate revels in its pleasing sweetness, adorned with notes of brown sugar and spices that gracefully yield to oak, toffee, dark fruit, and hints of anise. The whiskey's enduring finish boasts a profound depth that resonates with every sip. Ratings: Wine Enthusiast Rating: 93 Review:'One of the world's great whiskeys.' — Jim Murray, Whisky Magazine Awards: Numerous accolades and distinctions have been bestowed upon Buffalo Trace Kentucky Straight Bourbon Whiskey, including but not limited",
     "ImageLink": "assets/images/products/Buffalo Trace Bourbon.webp"
   },
   {
-    "Name": "Buffalo Trace White Dog Mash #1",
+    "Name": "Buffalo Trace White Dog Mash #1 Review",
     "Country": "United States",
     "Brand": "Buffalo Trace",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "62.5%",
     "BaseIngredient": "",
@@ -1184,10 +1184,10 @@
     "ImageLink": "assets/images/products/Buffalo Trace White Dog Mash.webp"
   },
   {
-    "Name": "Buffalo Trace Kosher Wheat Recipe",
+    "Name": "Buffalo Trace Kosher Wheat Recipe Review",
     "Country": "United States",
     "Brand": "Buffalo Trace",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -1200,10 +1200,10 @@
     "ImageLink": "assets/images/products/Buffalo Trace Kosher Wheat Recipe.webp"
   },
   {
-    "Name": "Eagle Rare Buffalo Trace Antique Collection Bourbon 17 Year",
+    "Name": "Eagle Rare Buffalo Trace Antique Collection Bourbon 17 Year Review",
     "Country": "United States",
     "Brand": "Buffalo Trace",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "50.5%",
     "BaseIngredient": "",
@@ -1216,10 +1216,10 @@
     "ImageLink": "assets/images/products/Eagle Rare Buffalo Trace Antique Collection Bourbon 17 Year.webp"
   },
   {
-    "Name": "Ardbeg 10 Year Single Malt Scotch Whisky",
+    "Name": "Ardbeg 10 Year Single Malt Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Ardbeg",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Bold, Dried Fruit, Salty, Smoky, Toasty, Woody",
     "ABV": "46%",
     "BaseIngredient": "Barley",
@@ -1232,10 +1232,10 @@
     "ImageLink": "assets/images/products/Ardbeg 10 Year Single Malt Scotch Whisky.webp"
   },
   {
-    "Name": "Ardbeg Scotch Uigeadail",
+    "Name": "Ardbeg Scotch Uigeadail Review",
     "Country": "Scotland",
     "Brand": "Ardbeg",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Bold, Smoky, Toasty, Woody",
     "ABV": "54.2%",
     "BaseIngredient": "",
@@ -1248,10 +1248,10 @@
     "ImageLink": "assets/images/products/Ardbeg Scotch Uigeadail.webp"
   },
   {
-    "Name": "Willett Pot Still Reserve Bourbon",
+    "Name": "Willett Pot Still Reserve Bourbon Review",
     "Country": "United States",
     "Brand": "Willett",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "47%",
     "BaseIngredient": "",
@@ -1264,10 +1264,10 @@
     "ImageLink": "assets/images/products/Willett Pot Still Reserve Bourbon.webp"
   },
   {
-    "Name": "Wild Turkey 101",
+    "Name": "Wild Turkey 101 Review",
     "Country": "United States",
     "Brand": "Wild Turkey Bourbon",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "50.5%",
     "BaseIngredient": "",
@@ -1280,10 +1280,10 @@
     "ImageLink": "assets/images/products/Wild Turkey 101.webp"
   },
   {
-    "Name": "Wild Turkey American Honey",
+    "Name": "Wild Turkey American Honey Review",
     "Country": "United States",
     "Brand": "Wild Turkey Bourbon",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "35.5%",
     "BaseIngredient": "",
@@ -1296,10 +1296,10 @@
     "ImageLink": "assets/images/products/Wild Turkey American Honey.webp"
   },
   {
-    "Name": "Wild Turkey Longbranch",
+    "Name": "Wild Turkey Longbranch Review",
     "Country": "United States",
     "Brand": "Wild Turkey Bourbon",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -1312,10 +1312,10 @@
     "ImageLink": "assets/images/products/Wild Turkey Longbranch.webp"
   },
   {
-    "Name": "Wild Turkey Bourbon",
+    "Name": "Wild Turkey Bourbon Review",
     "Country": "United States",
     "Brand": "Wild Turkey Bourbon",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "40.5%",
     "BaseIngredient": "",
@@ -1328,10 +1328,10 @@
     "ImageLink": "assets/images/products/Wild Turkey Bourbon.webp"
   },
   {
-    "Name": "Maker's Mark Bourbon Whisky",
+    "Name": "Maker's Mark Bourbon Whisky Review",
     "Country": "United States",
     "Brand": "Makers Mark",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -1344,10 +1344,10 @@
     "ImageLink": "assets/images/products/Maker's Mark Bourbon Whisky.webp"
   },
   {
-    "Name": "Maker's 46 Bourbon Whisky",
+    "Name": "Maker's 46 Bourbon Whisky Review",
     "Country": "United States",
     "Brand": "Makers Mark",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "47%",
     "BaseIngredient": "",
@@ -1360,10 +1360,10 @@
     "ImageLink": "assets/images/products/Maker's 46 Bourbon Whisky.webp"
   },
   {
-    "Name": "Maker's Mark 101 Bourbon Whisky",
+    "Name": "Maker's Mark 101 Bourbon Whisky Review",
     "Country": "United States",
     "Brand": "Makers Mark",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Spicy, Sweet",
     "ABV": "50.5%",
     "BaseIngredient": "",
@@ -1376,10 +1376,10 @@
     "ImageLink": "assets/images/products/Maker's Mark 101 Bourbon Whisky.webp"
   },
   {
-    "Name": "Maker's Mark Cask Strength Bourbon Whisky",
+    "Name": "Maker's Mark Cask Strength Bourbon Whisky Review",
     "Country": "United States",
     "Brand": "Makers Mark",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "56.6%",
     "BaseIngredient": "",
@@ -1392,10 +1392,10 @@
     "ImageLink": "assets/images/products/Maker's Mark Cask Strength Bourbon Whisky.webp"
   },
   {
-    "Name": "Canadian Club Whisky",
+    "Name": "Canadian Club Whisky Review",
     "Country": "Canada",
     "Brand": "Canadian Club",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1408,10 +1408,10 @@
     "ImageLink": "assets/images/products/Canadian Club Whisky.webp"
   },
   {
-    "Name": "Jameson Irish Whiskey",
+    "Name": "Jameson Irish Whiskey Review",
     "Country": "Ireland",
     "Brand": "Jameson Irish Whiskey",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1424,10 +1424,10 @@
     "ImageLink": "assets/images/products/Jameson Irish Whiskey.webp"
   },
   {
-    "Name": "Jameson Black Barrel",
+    "Name": "Jameson Black Barrel Review",
     "Country": "Ireland",
     "Brand": "Jameson Irish Whiskey",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1440,10 +1440,10 @@
     "ImageLink": "assets/images/products/Jameson Black Barrel.webp"
   },
   {
-    "Name": "Jameson Cold Brew",
+    "Name": "Jameson Cold Brew Review",
     "Country": "Ireland",
     "Brand": "Jameson Irish Whiskey",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "Chocolate, Coffee, Oak",
     "ABV": "30%",
     "BaseIngredient": "",
@@ -1456,10 +1456,10 @@
     "ImageLink": "assets/images/products/Jameson Cold Brew.webp"
   },
   {
-    "Name": "Jameson Caskmates Stout Edition",
+    "Name": "Jameson Caskmates Stout Edition Review",
     "Country": "Ireland",
     "Brand": "Jameson Irish Whiskey",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1472,10 +1472,10 @@
     "ImageLink": "assets/images/products/Jameson Caskmates Stout Edition.webp"
   },
   {
-    "Name": "Jameson Caskmates IPA Edition",
+    "Name": "Jameson Caskmates IPA Edition Review",
     "Country": "Ireland",
     "Brand": "Jameson Irish Whiskey",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1488,10 +1488,10 @@
     "ImageLink": "assets/images/products/Jameson Caskmates IPA Edition.webp"
   },
   {
-    "Name": "WhistlePig Rye 10 Year",
+    "Name": "WhistlePig Rye 10 Year Review",
     "Country": "United States",
     "Brand": "WhistlePig",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -1504,10 +1504,10 @@
     "ImageLink": "assets/images/products/WhistlePig Rye 10 Year.webp"
   },
   {
-    "Name": "WhistlePig Old World Rye Aged 12 Years",
+    "Name": "WhistlePig Old World Rye Aged 12 Years Review",
     "Country": "United States",
     "Brand": "WhistlePig",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -1520,10 +1520,10 @@
     "ImageLink": "assets/images/products/WhistlePig Old World Rye Aged 12 Years.webp"
   },
   {
-    "Name": "WhistlePig PiggyBack Rye",
+    "Name": "WhistlePig PiggyBack Rye Review",
     "Country": "United States",
     "Brand": "WhistlePig",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "48%",
     "BaseIngredient": "Rye",
@@ -1536,10 +1536,10 @@
     "ImageLink": "assets/images/products/WhistlePig PiggyBack Rye.webp"
   },
   {
-    "Name": "Laphroaig 10 Year Old Islay Single Malt Scotch Whisky",
+    "Name": "Laphroaig 10 Year Old Islay Single Malt Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Laphroaig",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -1552,10 +1552,10 @@
     "ImageLink": "assets/images/products/Laphroaig 10 Year Old Islay Single Malt Scotch Whisky.webp"
   },
   {
-    "Name": "High West American Prairie Bourbon Whiskey",
+    "Name": "High West American Prairie Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "High West",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "46%",
     "BaseIngredient": "",
@@ -1568,10 +1568,10 @@
     "ImageLink": "assets/images/products/High West American Prairie Bourbon Whiskey.webp"
   },
   {
-    "Name": "High West Double Rye Whiskey",
+    "Name": "High West Double Rye Whiskey Review",
     "Country": "United States",
     "Brand": "High West",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "46%",
     "BaseIngredient": "",
@@ -1584,10 +1584,10 @@
     "ImageLink": "assets/images/products/High West Double Rye Whiskey.webp"
   },
   {
-    "Name": "High West A Midwinter's Night Dram Whiskey Limited Release",
+    "Name": "High West A Midwinter's Night Dram Whiskey Limited Release Review",
     "Country": "United States",
     "Brand": "High West",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "49.3%",
     "BaseIngredient": "",
@@ -1600,10 +1600,10 @@
     "ImageLink": "assets/images/products/High West A Midwinter's Night Dram Whiskey Limited Release.webp"
   },
   {
-    "Name": "High West Rendezvous Rye Whiskey",
+    "Name": "High West Rendezvous Rye Whiskey Review",
     "Country": "United States",
     "Brand": "High West",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "46%",
     "BaseIngredient": "",
@@ -1616,10 +1616,10 @@
     "ImageLink": "assets/images/products/High West Rendezvous Rye Whiskey.webp"
   },
   {
-    "Name": "Dewar's White Label Blended Scotch Whisky",
+    "Name": "Dewar's White Label Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Dewars",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1632,10 +1632,10 @@
     "ImageLink": "assets/images/products/Dewar's White Label Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Dewar's 12 Year Blended Scotch Whisky",
+    "Name": "Dewar's 12 Year Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Dewars",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1648,10 +1648,10 @@
     "ImageLink": "assets/images/products/Dewar's 12 Year Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Balcones Texas Pot Still Bourbon Whisky",
+    "Name": "Balcones Texas Pot Still Bourbon Whisky Review",
     "Country": "United States",
     "Brand": "Balcones",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "46%",
     "BaseIngredient": "",
@@ -1664,10 +1664,10 @@
     "ImageLink": "assets/images/products/Balcones Texas Pot Still Bourbon Whisky.webp"
   },
   {
-    "Name": "Chivas Regal 12 Year",
+    "Name": "Chivas Regal 12 Year Review",
     "Country": "Scotland",
     "Brand": "Chivas",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1680,10 +1680,10 @@
     "ImageLink": "assets/images/products/Chivas Regal 12 Year.webp"
   },
   {
-    "Name": "Breckenridge Bourbon Whiskey",
+    "Name": "Breckenridge Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Breckenridge Distillery",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -1696,10 +1696,10 @@
     "ImageLink": "assets/images/products/Breckenridge Bourbon Whiskey.webp"
   },
   {
-    "Name": "A.D. Laws Four Grain Straight Bourbon Whiskey",
+    "Name": "A.D. Laws Four Grain Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Laws Whiskey House",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -1712,10 +1712,10 @@
     "ImageLink": "assets/images/products/A.D. Laws Four Grain Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Nikka Whisky From The Barrel",
+    "Name": "Nikka Whisky From The Barrel Review",
     "Country": "Japan",
     "Brand": "Nikka",
-    "Categories": "Japanese Whisky",
+    "Categories": "Japanese Whisky Review",
     "TastingNotes": "",
     "ABV": "51.4%",
     "BaseIngredient": "",
@@ -1728,10 +1728,10 @@
     "ImageLink": "assets/images/products/Nikka Whisky From The Barrel.webp"
   },
   {
-    "Name": "Nikka Coffey Grain Whisky",
+    "Name": "Nikka Coffey Grain Whisky Review",
     "Country": "Japan",
     "Brand": "Nikka",
-    "Categories": "Japanese Whisky",
+    "Categories": "Japanese Whisky Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -1744,10 +1744,10 @@
     "ImageLink": "assets/images/products/Nikka Coffey Grain Whisky.webp"
   },
   {
-    "Name": "Rebel Yell Kentucky Straight Bourbon",
+    "Name": "Rebel Yell Kentucky Straight Bourbon Review",
     "Country": "United States",
     "Brand": "Rebel Yell",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1760,10 +1760,10 @@
     "ImageLink": "assets/images/products/Rebel Yell Kentucky Straight Bourbon.webp"
   },
   {
-    "Name": "Old Forester 86 Proof Kentucky Straight Bourbon Whisky",
+    "Name": "Old Forester 86 Proof Kentucky Straight Bourbon Whisky Review",
     "Country": "United States",
     "Brand": "Old Forester",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -1776,10 +1776,10 @@
     "ImageLink": "assets/images/products/Old Forester 86 Proof Kentucky Straight Bourbon Whisky.webp"
   },
   {
-    "Name": "Old Forester 1920 Prohibition Style Bourbon",
+    "Name": "Old Forester 1920 Prohibition Style Bourbon Review",
     "Country": "United States",
     "Brand": "Old Forester",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "57.5%",
     "BaseIngredient": "",
@@ -1792,10 +1792,10 @@
     "ImageLink": "assets/images/products/Old Forester 1920 Prohibition Style Bourbon.webp"
   },
   {
-    "Name": "Old Forester 100 Proof Signature Bourbon",
+    "Name": "Old Forester 100 Proof Signature Bourbon Review",
     "Country": "United States",
     "Brand": "Old Forester",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -1808,10 +1808,10 @@
     "ImageLink": "assets/images/products/Old Forester 100 Proof Signature Bourbon.webp"
   },
   {
-    "Name": "Old Forester 1910 Old Fine Whisky",
+    "Name": "Old Forester 1910 Old Fine Whisky Review",
     "Country": "United States",
     "Brand": "Old Forester",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -1824,10 +1824,10 @@
     "ImageLink": "assets/images/products/Old Forester 1910 Old Fine Whisky.webp"
   },
   {
-    "Name": "Old Forester Statesman Bourbon",
+    "Name": "Old Forester Statesman Bourbon Review",
     "Country": "United States",
     "Brand": "Old Forester",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -1840,10 +1840,10 @@
     "ImageLink": "assets/images/products/Old Forester Statesman Bourbon.webp"
   },
   {
-    "Name": "Michter's US-1 Kentucky Straight Rye",
+    "Name": "Michter's US-1 Kentucky Straight Rye Review",
     "Country": "United States",
     "Brand": "Michters",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "42.4%",
     "BaseIngredient": "",
@@ -1856,10 +1856,10 @@
     "ImageLink": "assets/images/products/Michter's US-1 Kentucky Straight Rye.webp"
   },
   {
-    "Name": "Michter's US-1 Kentucky Straight Bourbon",
+    "Name": "Michter's US-1 Kentucky Straight Bourbon Review",
     "Country": "United States",
     "Brand": "Michters",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45.7%",
     "BaseIngredient": "",
@@ -1872,10 +1872,10 @@
     "ImageLink": "assets/images/products/Michter's US-1 Kentucky Straight Bourbon.webp"
   },
   {
-    "Name": "Four Roses Bourbon",
+    "Name": "Four Roses Bourbon Review",
     "Country": "United States",
     "Brand": "Four Roses",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -1888,10 +1888,10 @@
     "ImageLink": "assets/images/products/Four Roses Bourbon.webp"
   },
   {
-    "Name": "Four Roses Small Batch Bourbon",
+    "Name": "Four Roses Small Batch Bourbon Review",
     "Country": "United States",
     "Brand": "Four Roses",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -1904,10 +1904,10 @@
     "ImageLink": "assets/images/products/Four Roses Small Batch Bourbon.webp"
   },
   {
-    "Name": "Four Roses Single Barrel Bourbon",
+    "Name": "Four Roses Single Barrel Bourbon Review",
     "Country": "United States",
     "Brand": "Four Roses",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -1920,10 +1920,10 @@
     "ImageLink": "assets/images/products/Four Roses Single Barrel Bourbon.webp"
   },
   {
-    "Name": "Four Roses Small Batch Select Bourbon",
+    "Name": "Four Roses Small Batch Select Bourbon Review",
     "Country": "United States",
     "Brand": "Four Roses",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "54%",
     "BaseIngredient": "",
@@ -1936,10 +1936,10 @@
     "ImageLink": "assets/images/products/Four Roses Small Batch Select Bourbon.webp"
   },
   {
-    "Name": "Four Roses Private Barrel Selection, Barrel Strength, OBSK",
+    "Name": "Four Roses Private Barrel Selection, Barrel Strength, OBSK Review",
     "Country": "United States",
     "Brand": "Four Roses",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -1952,10 +1952,10 @@
     "ImageLink": "assets/images/products/Four Roses Private Barrel Selection, Barrel Strength, OBSK.webp"
   },
   {
-    "Name": "Evan Williams Bourbon",
+    "Name": "Evan Williams Bourbon Review",
     "Country": "United States",
     "Brand": "Evan Williams Whiskey",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Oak",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -1968,10 +1968,10 @@
     "ImageLink": "assets/images/products/Evan Williams Bourbon.webp"
   },
   {
-    "Name": "Evan Williams Bottled-in-Bond",
+    "Name": "Evan Williams Bottled-in-Bond Review",
     "Country": "United States",
     "Brand": "Evan Williams Whiskey",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Citrus, Oak, Pepper, Vanilla",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -1984,10 +1984,10 @@
     "ImageLink": "assets/images/products/Evan Williams Bottled-in-Bond.webp"
   },
   {
-    "Name": "Evan Williams Green Label Bourbon",
+    "Name": "Evan Williams Green Label Bourbon Review",
     "Country": "United States",
     "Brand": "Evan Williams Whiskey",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Banana, Cinnamon, Coconut",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2000,10 +2000,10 @@
     "ImageLink": "assets/images/products/Evan Williams Green Label Bourbon.webp"
   },
   {
-    "Name": "Evan Williams Honey",
+    "Name": "Evan Williams Honey Review",
     "Country": "United States",
     "Brand": "Evan Williams Whiskey",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -2016,10 +2016,10 @@
     "ImageLink": "assets/images/products/Evan Williams Honey.webp"
   },
   {
-    "Name": "Evan Williams Single Barrel",
+    "Name": "Evan Williams Single Barrel Review",
     "Country": "United States",
     "Brand": "Evan Williams Whiskey",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Honey, Oak, Vanilla",
     "ABV": "43.3%",
     "BaseIngredient": "",
@@ -2032,10 +2032,10 @@
     "ImageLink": "assets/images/products/Evan Williams Single Barrel.webp"
   },
   {
-    "Name": "Evan Williams Cherry",
+    "Name": "Evan Williams Cherry Review",
     "Country": "United States",
     "Brand": "Evan Williams Whiskey",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Dark Fruit, Fruity, Vanilla",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -2048,10 +2048,10 @@
     "ImageLink": "assets/images/products/Evan Williams Cherry.webp"
   },
   {
-    "Name": "Talisker 10 Year",
+    "Name": "Talisker 10 Year Review",
     "Country": "Scotland",
     "Brand": "Talisker",
-    "Categories": "Single Malt Whiskey",
+    "Categories": "Single Malt Whiskey Review",
     "TastingNotes": "",
     "ABV": "45.8%",
     "BaseIngredient": "",
@@ -2064,10 +2064,10 @@
     "ImageLink": "assets/images/products/Talisker 10 Year.webp"
   },
   {
-    "Name": "Talisker Storm",
+    "Name": "Talisker Storm Review",
     "Country": "Scotland",
     "Brand": "Talisker",
-    "Categories": "Single Malt Whiskey",
+    "Categories": "Single Malt Whiskey Review",
     "TastingNotes": "",
     "ABV": "45.8%",
     "BaseIngredient": "",
@@ -2080,10 +2080,10 @@
     "ImageLink": "assets/images/products/Talisker Storm.webp"
   },
   {
-    "Name": "Bunnahabhain 12 Year Single Malt Whisky",
+    "Name": "Bunnahabhain 12 Year Single Malt Whisky Review",
     "Country": "Scotland",
     "Brand": "Bunnahabhain",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "46.3%",
     "BaseIngredient": "",
@@ -2096,10 +2096,10 @@
     "ImageLink": "assets/images/products/Bunnahabhain 12 Year Single Malt Whisky.webp"
   },
   {
-    "Name": "Midnight Moon Apple Pie Moonshine",
+    "Name": "Midnight Moon Apple Pie Moonshine Review",
     "Country": "United States",
     "Brand": "Junior Johnsons Midnight Moon",
-    "Categories": "White Whiskey Moonshine",
+    "Categories": "White Whiskey Moonshine Review",
     "TastingNotes": "Apple, Cinnamon",
     "ABV": "35%",
     "BaseIngredient": "Corn",
@@ -2112,10 +2112,10 @@
     "ImageLink": "assets/images/products/Midnight Moon Apple Pie Moonshine.webp"
   },
   {
-    "Name": "Jeffersons Kentucky Straight Bourbon Whiskey",
+    "Name": "Jeffersons Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Jeffersons Bourbon",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2128,10 +2128,10 @@
     "ImageLink": "assets/images/products/Jeffersons Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Jefferson's Ocean Aged at Sea Bourbon",
+    "Name": "Jefferson's Ocean Aged at Sea Bourbon Review",
     "Country": "United States",
     "Brand": "Jeffersons Bourbon",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -2144,10 +2144,10 @@
     "ImageLink": "assets/images/products/Jefferson's Ocean Aged at Sea Bourbon.webp"
   },
   {
-    "Name": "Bushmills Irish Whiskey",
+    "Name": "Bushmills Irish Whiskey Review",
     "Country": "United Kingdom",
     "Brand": "Bushmills",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2160,10 +2160,10 @@
     "ImageLink": "assets/images/products/Bushmills Irish Whiskey.webp"
   },
   {
-    "Name": "Tullamore D.E.W. Irish Whiskey",
+    "Name": "Tullamore D.E.W. Irish Whiskey Review",
     "Country": "Ireland",
     "Brand": "Tullamore Dew",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "Fruity, Smooth, Vanilla, Woody",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2176,10 +2176,10 @@
     "ImageLink": "assets/images/products/Tullamore D.E.W. Irish Whiskey.webp"
   },
   {
-    "Name": "Caol Ila 12 Year Single Malt Scotch",
+    "Name": "Caol Ila 12 Year Single Malt Scotch Review",
     "Country": "Scotland",
     "Brand": "Caol Ila",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -2192,10 +2192,10 @@
     "ImageLink": "assets/images/products/Caol Ila 12 Year Single Malt Scotch.webp"
   },
   {
-    "Name": "Glendalough Double Barrel Irish Whiskey",
+    "Name": "Glendalough Double Barrel Irish Whiskey Review",
     "Country": "Ireland",
     "Brand": "Glendalough",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "42%",
     "BaseIngredient": "",
@@ -2208,10 +2208,10 @@
     "ImageLink": "assets/images/products/Glendalough Double Barrel Irish Whiskey.webp"
   },
   {
-    "Name": "Sagamore Spirit Signature Rye Whiskey",
+    "Name": "Sagamore Spirit Signature Rye Whiskey Review",
     "Country": "United States",
     "Brand": "Sagamore Spirit",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "Balanced, Cinnamon, Citrus, Smooth",
     "ABV": "41.5%",
     "BaseIngredient": "Barley, Corn, Rye",
@@ -2224,10 +2224,10 @@
     "ImageLink": "assets/images/products/Sagamore Spirit Signature Rye Whiskey.webp"
   },
   {
-    "Name": "Redemption Straight Rye Whiskey",
+    "Name": "Redemption Straight Rye Whiskey Review",
     "Country": "United States",
     "Brand": "Redemption",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "Anise, Citrus, Mint, Spicy, Vegetal",
     "ABV": "46%",
     "BaseIngredient": "Rye",
@@ -2240,10 +2240,10 @@
     "ImageLink": "assets/images/products/Redemption Straight Rye Whiskey.webp"
   },
   {
-    "Name": "Redemption Straight Bourbon Whiskey",
+    "Name": "Redemption Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Redemption",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Anise, Caramel, Honey, Pepper, Woody, Yeasty",
     "ABV": "42%",
     "BaseIngredient": "Barley, Corn, Rye",
@@ -2256,10 +2256,10 @@
     "ImageLink": "assets/images/products/Redemption Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Redemption Straight High-Rye Bourbon",
+    "Name": "Redemption Straight High-Rye Bourbon Review",
     "Country": "United States",
     "Brand": "Redemption",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Berry, Fruity, Mint, Oak, Pepper, Spicy, Woody",
     "ABV": "46%",
     "BaseIngredient": "Barley, Corn, Rye",
@@ -2272,10 +2272,10 @@
     "ImageLink": "assets/images/products/Redemption Straight High-Rye Bourbon.webp"
   },
   {
-    "Name": "Aberlour 12 Year",
+    "Name": "Aberlour 12 Year Review",
     "Country": "Scotland",
     "Brand": "Aberlour",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -2288,10 +2288,10 @@
     "ImageLink": "assets/images/products/Aberlour 12 Year.webp"
   },
   {
-    "Name": "Aberlour A'Bunadh",
+    "Name": "Aberlour A'Bunadh Review",
     "Country": "Scotland",
     "Brand": "Aberlour",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "59.6%",
     "BaseIngredient": "",
@@ -2304,10 +2304,10 @@
     "ImageLink": "assets/images/products/Aberlour A'Bunadh.webp"
   },
   {
-    "Name": "George Dickel Bottled in Bond Distilling Season 2008 Tennessee Whisky",
+    "Name": "George Dickel Bottled in Bond Distilling Season 2008 Tennessee Whisky Review",
     "Country": "United States",
     "Brand": "George Dickel",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -2320,10 +2320,10 @@
     "ImageLink": "assets/images/products/George Dickel Bottled in Bond Distilling Season 2008 Tennessee Whisky.webp"
   },
   {
-    "Name": "George Dickel No. 8 Whiskey",
+    "Name": "George Dickel No. 8 Whiskey Review",
     "Country": "United States",
     "Brand": "George Dickel",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2336,10 +2336,10 @@
     "ImageLink": "assets/images/products/George Dickel No. 8 Whiskey.webp"
   },
   {
-    "Name": "Bulleit Bourbon",
+    "Name": "Bulleit Bourbon Review",
     "Country": "United States",
     "Brand": "Bulleit",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -2352,10 +2352,10 @@
     "ImageLink": "assets/images/products/Bulleit Bourbon.webp"
   },
   {
-    "Name": "Bulleit Rye",
+    "Name": "Bulleit Rye Review",
     "Country": "United States",
     "Brand": "Bulleit",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -2368,10 +2368,10 @@
     "ImageLink": "assets/images/products/Bulleit Rye.webp"
   },
   {
-    "Name": "Bulleit Bourbon 10 Year",
+    "Name": "Bulleit Bourbon 10 Year Review",
     "Country": "United States",
     "Brand": "Bulleit",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45.6%",
     "BaseIngredient": "",
@@ -2384,10 +2384,10 @@
     "ImageLink": "assets/images/products/Bulleit Bourbon 10 Year.webp"
   },
   {
-    "Name": "Bulleit Single Barrel Kentucky Straight Bourbon Whiskey",
+    "Name": "Bulleit Single Barrel Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Bulleit",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "52%",
     "BaseIngredient": "",
@@ -2400,10 +2400,10 @@
     "ImageLink": "assets/images/products/Bulleit Single Barrel Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Fireside Straight Bourbon Whiskey",
+    "Name": "Fireside Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Mile High Spirits",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Smoky, Smooth, Spicy, Vanilla",
     "ABV": "40%",
     "BaseIngredient": "Barley, Corn, Rye",
@@ -2416,10 +2416,10 @@
     "ImageLink": "assets/images/products/Fireside Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Lagavulin 16 Year",
+    "Name": "Lagavulin 16 Year Review",
     "Country": "Scotland",
     "Brand": "Lagavulin",
-    "Categories": "Single Malt Whiskey",
+    "Categories": "Single Malt Whiskey Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -2432,10 +2432,10 @@
     "ImageLink": "assets/images/products/Lagavulin 16 Year.webp"
   },
   {
-    "Name": "Lagavulin 8 Year",
+    "Name": "Lagavulin 8 Year Review",
     "Country": "Scotland",
     "Brand": "Lagavulin",
-    "Categories": "Single Malt Whiskey",
+    "Categories": "Single Malt Whiskey Review",
     "TastingNotes": "",
     "ABV": "48%",
     "BaseIngredient": "",
@@ -2448,10 +2448,10 @@
     "ImageLink": "assets/images/products/Lagavulin 8 Year.webp"
   },
   {
-    "Name": "Fireball Cinnamon Whisky",
+    "Name": "Fireball Cinnamon Whisky Review",
     "Country": "United States",
     "Brand": "Fireball",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "33%",
     "BaseIngredient": "",
@@ -2464,10 +2464,10 @@
     "ImageLink": "assets/images/products/Fireball Cinnamon Whisky.webp"
   },
   {
-    "Name": "Basil Hayden's Kentucky Straight Bourbon Whiskey",
+    "Name": "Basil Hayden's Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Basil Haydens",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2480,10 +2480,10 @@
     "ImageLink": "assets/images/products/Basil Hayden's Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Basil Hayden's Dark Rye Whiskey",
+    "Name": "Basil Hayden's Dark Rye Whiskey Review",
     "Country": "United States",
     "Brand": "Basil Haydens",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2496,10 +2496,10 @@
     "ImageLink": "assets/images/products/Basil Hayden's Dark Rye Whiskey.webp"
   },
   {
-    "Name": "The Famous Grouse Scotch Whisky",
+    "Name": "The Famous Grouse Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "The Famous Grouse",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Biscuit, Caramel, Dried Fruit, Smooth, Vanilla",
     "ABV": "40%",
     "BaseIngredient": "Barley",
@@ -2512,10 +2512,10 @@
     "ImageLink": "assets/images/products/The Famous Grouse Scotch Whisky.webp"
   },
   {
-    "Name": "Hudson Bourbon Whiskey",
+    "Name": "Hudson Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Hudson",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "46%",
     "BaseIngredient": "",
@@ -2528,10 +2528,10 @@
     "ImageLink": "assets/images/products/Hudson Bourbon Whiskey.webp"
   },
   {
-    "Name": "Teeling Small Batch Irish Whiskey",
+    "Name": "Teeling Small Batch Irish Whiskey Review",
     "Country": "Ireland",
     "Brand": "Teeling",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "Smooth, Sweet, Woody",
     "ABV": "46%",
     "BaseIngredient": "",
@@ -2544,10 +2544,10 @@
     "ImageLink": "assets/images/products/Teeling Small Batch Irish Whiskey.webp"
   },
   {
-    "Name": "Redbreast 12 Year",
+    "Name": "Redbreast 12 Year Review",
     "Country": "Ireland",
     "Brand": "Redbreast",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2560,10 +2560,10 @@
     "ImageLink": "assets/images/products/Redbreast 12 Year.webp"
   },
   {
-    "Name": "Widow Jane 10 Year Straight Bourbon",
+    "Name": "Widow Jane 10 Year Straight Bourbon Review",
     "Country": "United States",
     "Brand": "Widow Jane",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45.5%",
     "BaseIngredient": "",
@@ -2576,10 +2576,10 @@
     "ImageLink": "assets/images/products/Widow Jane 10 Year Straight Bourbon.webp"
   },
   {
-    "Name": "Oban 14 Year Single Malt",
+    "Name": "Oban 14 Year Single Malt Review",
     "Country": "Scotland",
     "Brand": "Oban",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -2592,10 +2592,10 @@
     "ImageLink": "assets/images/products/Oban 14 Year Single Malt.webp"
   },
   {
-    "Name": "Weller Special Reserve Bourbon",
+    "Name": "Weller Special Reserve Bourbon Review",
     "Country": "United States",
     "Brand": "W.L. Weller",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -2608,10 +2608,10 @@
     "ImageLink": "assets/images/products/Weller Special Reserve Bourbon.webp"
   },
   {
-    "Name": "Weller Antique 107 Bourbon",
+    "Name": "Weller Antique 107 Bourbon Review",
     "Country": "United States",
     "Brand": "W.L. Weller",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "53.5%",
     "BaseIngredient": "",
@@ -2624,10 +2624,10 @@
     "ImageLink": "assets/images/products/Weller Antique 107 Bourbon.webp"
   },
   {
-    "Name": "Weller 12yr Bourbon",
+    "Name": "Weller 12yr Bourbon Review",
     "Country": "United States",
     "Brand": "W.L. Weller",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -2640,10 +2640,10 @@
     "ImageLink": "assets/images/products/Weller 12yr Bourbon.webp"
   },
   {
-    "Name": "1792 Small Batch Kentucky Straight Bourbon Whiskey",
+    "Name": "1792 Small Batch Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "1792 Bourbon",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Spicy, Vanilla",
     "ABV": "46.85%",
     "BaseIngredient": "",
@@ -2656,10 +2656,10 @@
     "ImageLink": "assets/images/products/1792 Small Batch Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "1792 Full Proof Kentucky Straight Bourbon Whiskey",
+    "Name": "1792 Full Proof Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "1792 Bourbon",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Smoky, Vanilla",
     "ABV": "62.5%",
     "BaseIngredient": "",
@@ -2672,10 +2672,10 @@
     "ImageLink": "assets/images/products/1792 Full Proof Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Booker's Bourbon",
+    "Name": "Booker's Bourbon Review",
     "Country": "United States",
     "Brand": "Bookers",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "63%",
     "BaseIngredient": "",
@@ -2688,10 +2688,10 @@
     "ImageLink": "assets/images/products/Booker's Bourbon.webp"
   },
   {
-    "Name": "Little Book Bourbon Chapter 3 “The Road Home”",
+    "Name": "Little Book Bourbon Chapter 3 “The Road Home” Review",
     "Country": "United States",
     "Brand": "Bookers",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -2704,10 +2704,10 @@
     "ImageLink": "assets/images/products/Little Book Bourbon Chapter 3 “The Road Home”.webp"
   },
   {
-    "Name": "Booker's 30th Anniversary Bourbon",
+    "Name": "Booker's 30th Anniversary Bourbon Review",
     "Country": "United States",
     "Brand": "Bookers",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -2720,10 +2720,10 @@
     "ImageLink": "assets/images/products/Booker's 30th Anniversary Bourbon.webp"
   },
   {
-    "Name": "Booker's Front Porch Batch",
+    "Name": "Booker's Front Porch Batch Review",
     "Country": "United States",
     "Brand": "Bookers",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -2736,10 +2736,10 @@
     "ImageLink": "assets/images/products/Booker's Front Porch Batch.webp"
   },
   {
-    "Name": "Belle Meade Bourbon Whiskey",
+    "Name": "Belle Meade Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Belle Meade",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45.2%",
     "BaseIngredient": "",
@@ -2752,10 +2752,10 @@
     "ImageLink": "assets/images/products/Belle Meade Bourbon Whiskey.webp"
   },
   {
-    "Name": "Buchanan's DeLuxe Aged 12 Years Blended Scotch Whisky",
+    "Name": "Buchanan's DeLuxe Aged 12 Years Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Buchanans",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2768,10 +2768,10 @@
     "ImageLink": "assets/images/products/Buchanan's DeLuxe Aged 12 Years Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Early Times Kentucky Whisky",
+    "Name": "Early Times Kentucky Whisky Review",
     "Country": "United States",
     "Brand": "Early Times",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2784,10 +2784,10 @@
     "ImageLink": "assets/images/products/Early Times Kentucky Whisky.webp"
   },
   {
-    "Name": "Southern Comfort Original",
+    "Name": "Southern Comfort Original Review",
     "Country": "United States",
     "Brand": "Southern Comfort",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -2800,10 +2800,10 @@
     "ImageLink": "assets/images/products/Southern Comfort Original.webp"
   },
   {
-    "Name": "Southern Comfort 100 Proof",
+    "Name": "Southern Comfort 100 Proof Review",
     "Country": "United States",
     "Brand": "Southern Comfort",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -2816,10 +2816,10 @@
     "ImageLink": "assets/images/products/Southern Comfort 100 Proof.webp"
   },
   {
-    "Name": "Southern Comfort Black",
+    "Name": "Southern Comfort Black Review",
     "Country": "United States",
     "Brand": "Southern Comfort",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2832,10 +2832,10 @@
     "ImageLink": "assets/images/products/Southern Comfort Black.webp"
   },
   {
-    "Name": "Ezra Brooks Old Ezra",
+    "Name": "Ezra Brooks Old Ezra Review",
     "Country": "United States",
     "Brand": "Ezra Brooks",
-    "Categories": "American Whiskey, Bourbon",
+    "Categories": "American Whiskey, Bourbon Review",
     "TastingNotes": "",
     "ABV": "58.5%",
     "BaseIngredient": "",
@@ -2848,10 +2848,10 @@
     "ImageLink": "assets/images/products/Ezra Brooks Old Ezra.webp"
   },
   {
-    "Name": "Rich & Rare Reserve",
+    "Name": "Rich & Rare Reserve Review",
     "Country": "Canada",
     "Brand": "Rich  Rare",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2864,10 +2864,10 @@
     "ImageLink": "assets/images/products/Rich & Rare Reserve.webp"
   },
   {
-    "Name": "Yamazaki 12 Year Old Whisky",
+    "Name": "Yamazaki 12 Year Old Whisky Review",
     "Country": "Japan",
     "Brand": "The Yamazaki",
-    "Categories": "Japanese Whisky",
+    "Categories": "Japanese Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -2880,10 +2880,10 @@
     "ImageLink": "assets/images/products/Yamazaki 12 Year Old Whisky.webp"
   },
   {
-    "Name": "Templeton Rye Whiskey The Good Stuff 4 Year",
+    "Name": "Templeton Rye Whiskey The Good Stuff 4 Year Review",
     "Country": "United States",
     "Brand": "Templeton",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -2896,10 +2896,10 @@
     "ImageLink": "assets/images/products/Templeton Rye Whiskey The Good Stuff 4 Year.webp"
   },
   {
-    "Name": "Angel's Envy Kentucky Straight Bourbon Whiskey",
+    "Name": "Angel's Envy Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Angels Envy",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Chocolate, Toasty, Vanilla",
     "ABV": "43.3%",
     "BaseIngredient": "",
@@ -2912,10 +2912,10 @@
     "ImageLink": "assets/images/products/Angel's Envy Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Angel's Envy Rum Cask Rye",
+    "Name": "Angel's Envy Rum Cask Rye Review",
     "Country": "United States",
     "Brand": "Angels Envy",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -2928,10 +2928,10 @@
     "ImageLink": "assets/images/products/Angel's Envy Rum Cask Rye.webp"
   },
   {
-    "Name": "Russell's Reserve 10 Year Old Bourbon",
+    "Name": "Russell's Reserve 10 Year Old Bourbon Review",
     "Country": "United States",
     "Brand": "Russells Reserve",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -2944,10 +2944,10 @@
     "ImageLink": "assets/images/products/Russell's Reserve 10 Year Old Bourbon.webp"
   },
   {
-    "Name": "Russell's Reserve Single Barrel Bourbon",
+    "Name": "Russell's Reserve Single Barrel Bourbon Review",
     "Country": "United States",
     "Brand": "Russells Reserve",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "55%",
     "BaseIngredient": "",
@@ -2960,10 +2960,10 @@
     "ImageLink": "assets/images/products/Russell's Reserve Single Barrel Bourbon.webp"
   },
   {
-    "Name": "BSB Brown Sugar Bourbon",
+    "Name": "BSB Brown Sugar Bourbon Review",
     "Country": "United States",
     "Brand": "Heritage Distilling",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Cinnamon, Flavored, Sweet, Toasty",
     "ABV": "30%",
     "BaseIngredient": "Corn, Sugar",
@@ -2976,10 +2976,10 @@
     "ImageLink": "assets/images/products/BSB Brown Sugar Bourbon.webp"
   },
   {
-    "Name": "Dalwhinnie 15 Year",
+    "Name": "Dalwhinnie 15 Year Review",
     "Country": "Scotland",
     "Brand": "Dalwhinnie",
-    "Categories": "Single Malt Whiskey",
+    "Categories": "Single Malt Whiskey Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -2992,10 +2992,10 @@
     "ImageLink": "assets/images/products/Dalwhinnie 15 Year.webp"
   },
   {
-    "Name": "Seagram's 7 Crown Blended Whiskey",
+    "Name": "Seagram's 7 Crown Blended Whiskey Review",
     "Country": "United States",
     "Brand": "Seagrams 7",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3008,10 +3008,10 @@
     "ImageLink": "assets/images/products/Seagram's 7 Crown Blended Whiskey.webp"
   },
   {
-    "Name": "Pendleton Canadian Whisky",
+    "Name": "Pendleton Canadian Whisky Review",
     "Country": "Canada",
     "Brand": "Pendleton",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3024,10 +3024,10 @@
     "ImageLink": "assets/images/products/Pendleton Canadian Whisky.webp"
   },
   {
-    "Name": "Hibiki Japanese Harmony Whisky",
+    "Name": "Hibiki Japanese Harmony Whisky Review",
     "Country": "Japan",
     "Brand": "Hibiki",
-    "Categories": "Japanese Whisky",
+    "Categories": "Japanese Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -3040,10 +3040,10 @@
     "ImageLink": "assets/images/products/Hibiki Japanese Harmony Whisky.webp"
   },
   {
-    "Name": "Kaiyo Mizunara Oak Cask Strength Japanese Whisky",
+    "Name": "Kaiyo Mizunara Oak Cask Strength Japanese Whisky Review",
     "Country": "Japan",
     "Brand": "Kaiyo",
-    "Categories": "Japanese Whisky",
+    "Categories": "Japanese Whisky Review",
     "TastingNotes": "",
     "ABV": "53%",
     "BaseIngredient": "Barley",
@@ -3056,10 +3056,10 @@
     "ImageLink": "assets/images/products/Kaiyo Mizunara Oak Cask Strength Japanese Whisky.webp"
   },
   {
-    "Name": "E.H. Taylor, Jr. Small Batch Bourbon",
+    "Name": "E.H. Taylor, Jr. Small Batch Bourbon Review",
     "Country": "United States",
     "Brand": "E.H. Taylor, Jr.",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Pepper, Sweet, Tobacco",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -3072,10 +3072,10 @@
     "ImageLink": "assets/images/products/E.H. Taylor, Jr. Small Batch Bourbon.webp"
   },
   {
-    "Name": "Cutty Sark Blended Scotch Whisky",
+    "Name": "Cutty Sark Blended Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Cutty Sark",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3088,10 +3088,10 @@
     "ImageLink": "assets/images/products/Cutty Sark Blended Scotch Whisky.webp"
   },
   {
-    "Name": "Stranahan's Colorado Whiskey",
+    "Name": "Stranahan's Colorado Whiskey Review",
     "Country": "United States",
     "Brand": "Stranahans",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "47%",
     "BaseIngredient": "",
@@ -3104,10 +3104,10 @@
     "ImageLink": "assets/images/products/Stranahan's Colorado Whiskey.webp"
   },
   {
-    "Name": "TX Blended Whiskey",
+    "Name": "TX Blended Whiskey Review",
     "Country": "United States",
     "Brand": "Firestone  Robertson",
-    "Categories": "Blended Whiskey",
+    "Categories": "Blended Whiskey Review",
     "TastingNotes": "",
     "ABV": "41%",
     "BaseIngredient": "",
@@ -3120,10 +3120,10 @@
     "ImageLink": "assets/images/products/TX Blended Whiskey.webp"
   },
   {
-    "Name": "Canadian Mist Canadian Whisky",
+    "Name": "Canadian Mist Canadian Whisky Review",
     "Country": "Canada",
     "Brand": "Canadian Mist",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3136,10 +3136,10 @@
     "ImageLink": "assets/images/products/Canadian Mist Canadian Whisky.webp"
   },
   {
-    "Name": "Green Spot Irish Whiskey",
+    "Name": "Green Spot Irish Whiskey Review",
     "Country": "Ireland",
     "Brand": "Green Spot",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3152,10 +3152,10 @@
     "ImageLink": "assets/images/products/Green Spot Irish Whiskey.webp"
   },
   {
-    "Name": "Woodinville Whiskey Straight Bourbon",
+    "Name": "Woodinville Whiskey Straight Bourbon Review",
     "Country": "United States",
     "Brand": "Woodinville",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Bold, Smoky, Toasty, Woody",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -3168,10 +3168,10 @@
     "ImageLink": "assets/images/products/Woodinville Whiskey Straight Bourbon.webp"
   },
   {
-    "Name": "Heaven's Door Straight Bourbon Whiskey",
+    "Name": "Heaven's Door Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Heavens Door",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "46%",
     "BaseIngredient": "",
@@ -3184,10 +3184,10 @@
     "ImageLink": "assets/images/products/Heaven's Door Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Yellowstone Bourbon Select 93",
+    "Name": "Yellowstone Bourbon Select 93 Review",
     "Country": "United States",
     "Brand": "Limestone Branch Distillery",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "46.5%",
     "BaseIngredient": "",
@@ -3200,10 +3200,10 @@
     "ImageLink": "assets/images/products/Yellowstone Bourbon Select 93.webp"
   },
   {
-    "Name": "Devils River Bourbon",
+    "Name": "Devils River Bourbon Review",
     "Country": "United States",
     "Brand": "Devils River",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Honey, Oak, Pepper, Smooth, Sweet",
     "ABV": "45%",
     "BaseIngredient": "Corn",
@@ -3216,10 +3216,10 @@
     "ImageLink": "assets/images/products/Devils River Bourbon.webp"
   },
   {
-    "Name": "Aberfeldy 12 Year Scotch Whisky",
+    "Name": "Aberfeldy 12 Year Scotch Whisky Review",
     "Country": "Scotland",
     "Brand": "Aberfeldy",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3232,10 +3232,10 @@
     "ImageLink": "assets/images/products/Aberfeldy 12 Year Scotch Whisky.webp"
   },
   {
-    "Name": "Elijah Craig Small Batch Bourbon",
+    "Name": "Elijah Craig Small Batch Bourbon Review",
     "Country": "United States",
     "Brand": "Elijah Craig",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Mint, Nutmeg, Smoky, Sweet, Toasty, Vanilla, Woody",
     "ABV": "47%",
     "BaseIngredient": "Barley, Corn, Rye",
@@ -3248,10 +3248,10 @@
     "ImageLink": "assets/images/products/Elijah Craig Small Batch Bourbon.webp"
   },
   {
-    "Name": "Elijah Craig Barrel Proof Bourbon",
+    "Name": "Elijah Craig Barrel Proof Bourbon Review",
     "Country": "United States",
     "Brand": "Elijah Craig",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Apple, Bold, Caramel, Cinnamon, Oak, Pepper, Vanilla",
     "ABV": "66.4%",
     "BaseIngredient": "Barley, Corn",
@@ -3264,10 +3264,10 @@
     "ImageLink": "assets/images/products/Elijah Craig Barrel Proof Bourbon.webp"
   },
   {
-    "Name": "Blanton's Single Barrel Bourbon",
+    "Name": "Blanton's Single Barrel Bourbon Review",
     "Country": "United States",
     "Brand": "Blantons",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Honey, Vanilla",
     "ABV": "46.5%",
     "BaseIngredient": "",
@@ -3276,14 +3276,14 @@
     "RateCount": 115,
     "Price": "$99.99",
     "Volume": "",
-    "Description": "In the winter of 1881, Albert Bacon Blanton was born into a distinguished bourbon legacy, becoming a pivotal figure in the world of bourbon. He commenced his journey at the Distillery as an office boy at the tender age of sixteen and swiftly evolved into a trailblazer in bourbon's development. From 1921, when he assumed the role of company president, until his retirement in 1952, Colonel Blanton oversaw the remarkable expansion of the Distillery from 44 to 144 buildings, solidifying its status as the largest Distillery of its era. During this period, Colonel Blanton meticulously curated his exclusive and limited reserve of bourbon, personally selecting and storing it in what is now revered as Warehouse H. Although Colonel Blanton passed away in the spring of 1959, his legacy endures. In 1984, Blanton's namesake bourbon made its debut as the world's first commercially available Single Barrel Bourbon. Blanton's Original Single Barrel Bourbon remains a testament to its unparalleled uniqueness, marked by global critical acclaim. It has earned prestigious international gold medals, grand gold medals, and the acclaim of esteemed spirits connoisseurs, including Paul Pacult. The selection of individual barrels for Blanton's Single Barrel Bourbon is a meticulous process led by one of the most respected Master Distillers in the bourbon industry. Elmer T. Lee, an inductee into the Master Distillers' Hall of Fame, ventured into the hallowed corners of Warehouse H to personally identify barrels destined for greatness. Unlike other brands confined by age restrictions, Blanton's seeks to maintain a distinctive flavor profile across various years. While the typical bourbon used is around eight years old, it's not uncommon for the age to extend to ten or twelve years. From its world-class bourbon to its exceptional packaging, every aspect of Blanton's exudes quality, sophistication, and excellence. REVIEWS 'Liquid gold.' – Jim Murray's Whisky Bible TastingNotes: A profound and gratifying bouquet with hints of nutmeg and spices. Robust dry vanilla notes harmonize with traces of honey, complemented by prominent caramel and corn undertones. The medium finish encompasses a resurgence of corn and nutmeg flavors.",
+    "Description": "In the winter of 1881, Albert Bacon Blanton was born into a distinguished bourbon legacy, becoming a pivotal figure in the world of bourbon. He commenced his journey at the Distillery as an office boy at the tender age of sixteen and swiftly evolved into a trailblazer in bourbon's development. From 1921, when he assumed the role of company president, until his retirement in 1952, Colonel Blanton oversaw the remarkable expansion of the Distillery from 44 to 144 buildings, solidifying its status as the largest Distillery of its era. During this period, Colonel Blanton meticulously curated his exclusive and limited reserve of bourbon, personally selecting and storing it in what is now revered as Warehouse H. Although Colonel Blanton passed away in the spring of 1959, his legacy endures. In 1984, Blanton's namesake bourbon made its debut as the world's first commercially available Single Barrel Bourbon. Blanton's Original Single Barrel Bourbon remains a testament to its unparalleled uniqueness, marked by global critical acclaim. It has earned prestigious international gold medals, grand gold medals, and the acclaim of esteemed spirits connoisseurs, including Paul Pacult. The selection of individual barrels for Blanton's Single Barrel Bourbon is a meticulous process led by one of the most respected Master Distillers in the bourbon industry. Elmer T. Lee, an inductee into the Master Distillers' Hall of Fame, ventured into the hallowed corners of Warehouse H to personally identify barrels destined for greatness. Unlike other brands confined by age restrictions, Blanton's seeks to maintain a distinctive flavor profile across various years. While the typical bourbon used is around eight years old, it's not uncommon for the age to extend to ten or twelve years. From its world-class bourbon to its exceptional packaging, every aspect of Blanton's exudes quality, sophistication, and excellence. Review 'Liquid gold.' – Jim Murray's Whisky Bible TastingNotes: A profound and gratifying bouquet with hints of nutmeg and spices. Robust dry vanilla notes harmonize with traces of honey, complemented by prominent caramel and corn undertones. The medium finish encompasses a resurgence of corn and nutmeg flavors.",
     "ImageLink": "assets/images/products/Blanton's Single Barrel Bourbon.webp"
   },
   {
-    "Name": "Eagle Rare 10yr Bourbon",
+    "Name": "Eagle Rare 10yr Bourbon Review",
     "Country": "United States",
     "Brand": "Eagle Rare",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -3296,10 +3296,10 @@
     "ImageLink": "assets/images/products/Eagle Rare 10yr Bourbon.webp"
   },
   {
-    "Name": "Old Grand Dad Bourbon Whiskey",
+    "Name": "Old Grand Dad Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Old Grand-Dad",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3312,10 +3312,10 @@
     "ImageLink": "assets/images/products/Old Grand Dad Bourbon Whiskey.webp"
   },
   {
-    "Name": "Old Grand Dad 114 Proof Bourbon Whiskey",
+    "Name": "Old Grand Dad 114 Proof Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Old Grand-Dad",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "57%",
     "BaseIngredient": "",
@@ -3328,10 +3328,10 @@
     "ImageLink": "assets/images/products/Old Grand Dad 114 Proof Bourbon Whiskey.webp"
   },
   {
-    "Name": "Old Camp Peach Pecan Whiskey",
+    "Name": "Old Camp Peach Pecan Whiskey Review",
     "Country": "United States",
     "Brand": "Old Camp",
-    "Categories": "American Blend",
+    "Categories": "American Blend Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -3344,10 +3344,10 @@
     "ImageLink": "assets/images/products/Old Camp Peach Pecan Whiskey.webp"
   },
   {
-    "Name": "TINCUP American Whiskey",
+    "Name": "TINCUP American Whiskey Review",
     "Country": "United States",
     "Brand": "TINCUP",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "42%",
     "BaseIngredient": "",
@@ -3360,10 +3360,10 @@
     "ImageLink": "assets/images/products/TINCUP American Whiskey.webp"
   },
   {
-    "Name": "Black Velvet Canadian Whisky",
+    "Name": "Black Velvet Canadian Whisky Review",
     "Country": "Canada",
     "Brand": "Black Velvet",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "Caramel, Coconut, Smooth, Vanilla",
     "ABV": "40%",
     "BaseIngredient": "Corn, Rye",
@@ -3376,10 +3376,10 @@
     "ImageLink": "assets/images/products/Black Velvet Canadian Whisky.webp"
   },
   {
-    "Name": "Windsor Canadian Blended Whiskey",
+    "Name": "Windsor Canadian Blended Whiskey Review",
     "Country": "Canada",
     "Brand": "Windsor",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "",
     "BaseIngredient": "",
@@ -3392,10 +3392,10 @@
     "ImageLink": "assets/images/products/Windsor Canadian Blended Whiskey.webp"
   },
   {
-    "Name": "Paddy's Irish Whiskey",
+    "Name": "Paddy's Irish Whiskey Review",
     "Country": "Ireland",
     "Brand": "Paddy",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3408,10 +3408,10 @@
     "ImageLink": "assets/images/products/Paddy's Irish Whiskey.webp"
   },
   {
-    "Name": "Sazerac Rye Whiskey",
+    "Name": "Sazerac Rye Whiskey Review",
     "Country": "United States",
     "Brand": "Sazerac Rye",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -3424,10 +3424,10 @@
     "ImageLink": "assets/images/products/Sazerac Rye Whiskey.webp"
   },
   {
-    "Name": "Hochstadter's Slow & Low Rock and Rye",
+    "Name": "Hochstadter's Slow & Low Rock and Rye Review",
     "Country": "United States",
     "Brand": "Hochstadters",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "Cinnamon, Citrus, Oak, Pepper, Vanilla",
     "ABV": "42%",
     "BaseIngredient": "Rye",
@@ -3440,10 +3440,10 @@
     "ImageLink": "assets/images/products/Hochstadter's Slow & Low Rock and Rye.webp"
   },
   {
-    "Name": "Larceny Small Batch",
+    "Name": "Larceny Small Batch Review",
     "Country": "United States",
     "Brand": "Larceny",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Butter, Caramel, Honey, Vanilla",
     "ABV": "46%",
     "BaseIngredient": "Barley, Corn, Wheat",
@@ -3456,10 +3456,10 @@
     "ImageLink": "assets/images/products/Larceny Small Batch.webp"
   },
   {
-    "Name": "Uncle Nearest 1856 Premium Whiskey",
+    "Name": "Uncle Nearest 1856 Premium Whiskey Review",
     "Country": "United States",
     "Brand": "Uncle Nearest",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "Bold, Caramel, Dried Fruit, Spicy, Stone Fruit, Vanilla",
     "ABV": "50%",
     "BaseIngredient": "Barley, Corn, Rye",
@@ -3472,10 +3472,10 @@
     "ImageLink": "assets/images/products/Uncle Nearest 1856 Premium Whiskey.webp"
   },
   {
-    "Name": "Uncle Nearest 1884 Small Batch Whiskey",
+    "Name": "Uncle Nearest 1884 Small Batch Whiskey Review",
     "Country": "United States",
     "Brand": "Uncle Nearest",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "",
     "ABV": "46.5%",
     "BaseIngredient": "Barley, Corn, Rye",
@@ -3488,10 +3488,10 @@
     "ImageLink": "assets/images/products/Uncle Nearest 1884 Small Batch Whiskey.webp"
   },
   {
-    "Name": "Seagram's VO Canadian Whisky",
+    "Name": "Seagram's VO Canadian Whisky Review",
     "Country": "United States",
     "Brand": "Seagrams VO",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3504,10 +3504,10 @@
     "ImageLink": "assets/images/products/Seagram's VO Canadian Whisky.webp"
   },
   {
-    "Name": "Old Overholt Rye Whiskey",
+    "Name": "Old Overholt Rye Whiskey Review",
     "Country": "United States",
     "Brand": "Old Overholt",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3520,10 +3520,10 @@
     "ImageLink": "assets/images/products/Old Overholt Rye Whiskey.webp"
   },
   {
-    "Name": "Noble Oak Double Oak Bourbon",
+    "Name": "Noble Oak Double Oak Bourbon Review",
     "Country": "United States",
     "Brand": "Noble Oak",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Chocolate, Nutty, Oak, Vanilla",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -3536,10 +3536,10 @@
     "ImageLink": "assets/images/products/Noble Oak Double Oak Bourbon.webp"
   },
   {
-    "Name": "Benchmark Old No. 8 Bourbon",
+    "Name": "Benchmark Old No. 8 Bourbon Review",
     "Country": "United States",
     "Brand": "Benchmark",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Cherry, Leather, Oak, Stone Fruit, Tobacco",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3552,10 +3552,10 @@
     "ImageLink": "assets/images/products/Benchmark Old No. 8 Bourbon.webp"
   },
   {
-    "Name": "Henry McKenna Single Barrel Bourbon, 10 Year, Bottled-in-Bond",
+    "Name": "Henry McKenna Single Barrel Bourbon, 10 Year, Bottled-in-Bond Review",
     "Country": "United States",
     "Brand": "Henry McKenna",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Caramel, Herbal, Honey, Oak, Spicy, Vanilla",
     "ABV": "50%",
     "BaseIngredient": "Barley, Corn",
@@ -3568,10 +3568,10 @@
     "ImageLink": "assets/images/products/Henry McKenna Single Barrel Bourbon, 10 Year, Bottled-in-Bond.webp"
   },
   {
-    "Name": "Baker's Single Barrel 7 Year Kentucky Straight Bourbon Whiskey",
+    "Name": "Baker's Single Barrel 7 Year Kentucky Straight Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Bakers",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "53.5%",
     "BaseIngredient": "",
@@ -3584,10 +3584,10 @@
     "ImageLink": "assets/images/products/Baker's Single Barrel 7 Year Kentucky Straight Bourbon Whiskey.webp"
   },
   {
-    "Name": "Old Crow Bourbon Whiskey",
+    "Name": "Old Crow Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Old Crow",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -3600,10 +3600,10 @@
     "ImageLink": "assets/images/products/Old Crow Bourbon Whiskey.webp"
   },
   {
-    "Name": "BLACKENED American Whiskey",
+    "Name": "BLACKENED American Whiskey Review",
     "Country": "United States",
     "Brand": "BLACKENED",
-    "Categories": "American Whiskey",
+    "Categories": "American Whiskey Review",
     "TastingNotes": "Balanced, Caramel, Cinnamon, Dark Fruit, Honey, Smooth, Spicy, Vanilla",
     "ABV": "45%",
     "BaseIngredient": "Corn, Rye, Wheat",
@@ -3616,10 +3616,10 @@
     "ImageLink": "assets/images/products/BLACKENED American Whiskey.webp"
   },
   {
-    "Name": "Canadian LTD Canadian Whisky",
+    "Name": "Canadian LTD Canadian Whisky Review",
     "Country": "Canada",
     "Brand": "Canadian LTD",
-    "Categories": "Canadian Whisky",
+    "Categories": "Canadian Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3632,10 +3632,10 @@
     "ImageLink": "assets/images/products/Canadian LTD Canadian Whisky.webp"
   },
   {
-    "Name": "Skrewball Peanut Butter Whiskey",
+    "Name": "Skrewball Peanut Butter Whiskey Review",
     "Country": "United States",
     "Brand": "Skrewball Whiskey",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "Caramel, Honey, Roasted, Toasty, Vanilla, Velvety",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -3648,10 +3648,10 @@
     "ImageLink": "assets/images/products/Skrewball Peanut Butter Whiskey.webp"
   },
   {
-    "Name": "Sheep Dog Peanut Butter Whiskey",
+    "Name": "Sheep Dog Peanut Butter Whiskey Review",
     "Country": "United States",
     "Brand": "Sheep Dog",
-    "Categories": "Flavored Whiskey",
+    "Categories": "Flavored Whiskey Review",
     "TastingNotes": "",
     "ABV": "35%",
     "BaseIngredient": "",
@@ -3664,10 +3664,10 @@
     "ImageLink": "assets/images/products/Sheep Dog Peanut Butter Whiskey.webp"
   },
   {
-    "Name": "Slane Irish Whiskey",
+    "Name": "Slane Irish Whiskey Review",
     "Country": "Ireland",
     "Brand": "Slane",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3680,10 +3680,10 @@
     "ImageLink": "assets/images/products/Slane Irish Whiskey.webp"
   },
   {
-    "Name": "Yellow Spot Irish Whiskey",
+    "Name": "Yellow Spot Irish Whiskey Review",
     "Country": "Ireland",
     "Brand": "Yellow Spot",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "46%",
     "BaseIngredient": "",
@@ -3696,10 +3696,10 @@
     "ImageLink": "assets/images/products/Yellow Spot Irish Whiskey.webp"
   },
   {
-    "Name": "Proper No. Twelve Irish Whiskey",
+    "Name": "Proper No. Twelve Irish Whiskey Review",
     "Country": "Ireland",
     "Brand": "Proper Twelve",
-    "Categories": "Irish Whiskey",
+    "Categories": "Irish Whiskey Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3712,10 +3712,10 @@
     "ImageLink": "assets/images/products/Proper No. Twelve Irish Whiskey.webp"
   },
   {
-    "Name": "Suntory Toki Japanese Whisky",
+    "Name": "Suntory Toki Japanese Whisky Review",
     "Country": "Japan",
     "Brand": "Suntory",
-    "Categories": "Japanese Whisky",
+    "Categories": "Japanese Whisky Review",
     "TastingNotes": "",
     "ABV": "43%",
     "BaseIngredient": "",
@@ -3728,10 +3728,10 @@
     "ImageLink": "assets/images/products/Suntory Toki Japanese Whisky.webp"
   },
   {
-    "Name": "Rittenhouse Rye",
+    "Name": "Rittenhouse Rye Review",
     "Country": "United States",
     "Brand": "Rittenhouse",
-    "Categories": "Rye Whiskey",
+    "Categories": "Rye Whiskey Review",
     "TastingNotes": "",
     "ABV": "50%",
     "BaseIngredient": "",
@@ -3744,10 +3744,10 @@
     "ImageLink": "assets/images/products/Rittenhouse Rye.webp"
   },
   {
-    "Name": "Legent Bourbon Whiskey",
+    "Name": "Legent Bourbon Whiskey Review",
     "Country": "United States",
     "Brand": "Legent",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "47%",
     "BaseIngredient": "",
@@ -3760,10 +3760,10 @@
     "ImageLink": "assets/images/products/Legent Bourbon Whiskey.webp"
   },
   {
-    "Name": "Noah's Mill Bourbon",
+    "Name": "Noah's Mill Bourbon Review",
     "Country": "United States",
     "Brand": "Noahs Mill",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "",
     "ABV": "57%",
     "BaseIngredient": "",
@@ -3776,10 +3776,10 @@
     "ImageLink": "assets/images/products/Noah's Mill Bourbon.webp"
   },
   {
-    "Name": "Kentucky Gentleman Bourbon",
+    "Name": "Kentucky Gentleman Bourbon Review",
     "Country": "United States",
     "Brand": "Kentucky Gentleman",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Spicy, Caramel, Apples, Pepper, Dried fruits, Raisins, Tart, Harmonious",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3792,10 +3792,10 @@
     "ImageLink": "assets/images/products/Kentucky Gentleman Bourbon.webp"
   },
   {
-    "Name": "Fistful Of Bourbon",
+    "Name": "Fistful Of Bourbon Review",
     "Country": "United States",
     "Brand": "Fistful Of Bourbon",
-    "Categories": "Bourbon",
+    "Categories": "Bourbon Review",
     "TastingNotes": "Balanced, Cinnamon, Floral, Smooth, Sweet",
     "ABV": "45%",
     "BaseIngredient": "",
@@ -3808,10 +3808,10 @@
     "ImageLink": "assets/images/products/Fistful Of Bourbon.webp"
   },
   {
-    "Name": "Clan Macgregor Scotch",
+    "Name": "Clan Macgregor Scotch Review",
     "Country": "Scotland",
     "Brand": "Clan MacGregor",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Rich, grainy sweetness, hints of dry smoke, baked apple, biscuity, smooth, malty, lingering",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3824,10 +3824,10 @@
     "ImageLink": "assets/images/products/Clan Macgregor Scotch.webp"
   },
   {
-    "Name": "Monkey Shoulder Blended Scotch",
+    "Name": "Monkey Shoulder Blended Scotch Review",
     "Country": "Scotland",
     "Brand": "Monkey Shoulder",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "Vanilla, Orange, Oak, Honey",
     "ABV": "40%",
     "BaseIngredient": "",
@@ -3840,10 +3840,10 @@
     "ImageLink": "assets/images/products/Monkey Shoulder Blended Scotch.webp"
   },
   {
-    "Name": "J&B Rare Blended Scotch",
+    "Name": "J&B Rare Blended Scotch Review",
     "Country": "Scotland",
     "Brand": "JB",
-    "Categories": "Scotch Whisky",
+    "Categories": "Scotch Whisky Review",
     "TastingNotes": "",
     "ABV": "40%",
     "BaseIngredient": "",
