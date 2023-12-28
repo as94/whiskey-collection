@@ -132,6 +132,7 @@ export const goToCatalogBySearchResults = (
 
 export const getProductCardLink = productName => {
   const params = new URLSearchParams(window.location.search);
+  clearParams(params);
   params.set('productName', productName);
   return productCard + '?' + params.toString();
 };

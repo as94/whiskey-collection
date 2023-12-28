@@ -4,11 +4,19 @@ import {
   getCategory,
   getPostTitleKey,
 } from '../../services/urlSearchParams.js';
-import { blogPostList, blogPost, main } from '../../services/routePaths.js';
+import {
+  blogPostList,
+  blogPost,
+  productCard,
+} from '../../services/routePaths.js';
+import { initializeWhiskey } from '../../services/loadWhiskey.js';
 import { getPost } from '../../services/post-context.js';
+import { getWhiskeyByName } from '../../services/state.js';
 import breadcrumbsContent from './breadcrumbs.html';
 import chevronRightContent from './chevron-right.html';
 import './breadcrumbs.css';
+
+await initializeWhiskey();
 
 const getItems = items => {
   let resultItems = [`<a class="item body-semibold" href="/">${items[0]}</a>`];
@@ -32,6 +40,8 @@ const getItems = items => {
 const breadcrumbs = () => {
   const items = ['Home'];
   const route = getRoute();
+  let productName = '';
+
   if (route === blogPostList) {
     items.push('Blog');
   } else if (route === blogPost) {
@@ -39,6 +49,10 @@ const breadcrumbs = () => {
     const postTileKey = getPostTitleKey();
     const post = getPost(postTileKey);
     items.push(post.article.title);
+  } else if (route === productCard) {
+    productName = getProductName();
+    const whiskeyByName = getWhiskeyByName();
+    items.push(whiskeyByName[productName].Categories);
   } else {
     const category = getCategory();
     if (category) {
@@ -47,10 +61,11 @@ const breadcrumbs = () => {
       items.push('Search Results');
     }
 
-    const productName = getProductName();
-    if (productName) {
-      items.push(productName);
-    }
+    productName = getProductName();
+  }
+
+  if (productName) {
+    items.push(productName);
   }
 
   return breadcrumbsContent.replace('${items}', getItems(items));
