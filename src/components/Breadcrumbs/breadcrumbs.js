@@ -51,8 +51,12 @@ const breadcrumbs = () => {
     items.push(post.article.title);
   } else if (route === productCard) {
     productName = getProductName();
-    const whiskeyByName = getWhiskeyByName();
-    items.push(whiskeyByName[productName].Categories);
+    if (productName) {
+      const whiskeyByName = getWhiskeyByName();
+      if (whiskeyByName[productName]) {
+        items.push(whiskeyByName[productName].Categories);
+      }
+    }
   } else {
     const category = getCategory();
     if (category) {
