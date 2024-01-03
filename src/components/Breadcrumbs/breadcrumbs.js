@@ -20,63 +20,57 @@ import './breadcrumbs.css';
 
 await initializeWhiskey();
 
-const getItems = (items, category) => {
-  let resultItems = [`<a class="item body-semibold" href="/">${items[0]}</a>`];
-  if (items.length === 2) {
-    resultItems.push(chevronRightContent);
-    resultItems.push(`<a class="item body-semibold">${items[1]}</a>`);
-  }
+const createBreadcrumbLink = (text, href = '') =>
+  href
+    ? `<a class="item body-semibold" href="${href}">${text}</a>`
+    : `<a class="item body-semibold"">${text}</a>`;
 
-  if (items.length === 3) {
-    resultItems.push(chevronRightContent);
-    if (category) {
-      resultItems.push(
-        `<a class="item body-semibold" href="/catalog-by-categories?category=${category}">${items[1]}</a>`
-      );
-    }
-    resultItems.push(chevronRightContent);
-    resultItems.push(`<a class="item body-semibold">${items[2]}</a>`);
-  }
-
-  return resultItems.join('');
-};
+const convertToHtmlItems = items =>
+  items
+    .map(item => createBreadcrumbLink(item.text, item.href))
+    .join(chevronRightContent);
 
 const breadcrumbs = () => {
-  const items = [];
   const route = getRoute();
-  let productName = '';
-  let category = '';
+  let items = [];
 
   if (route === catalogBySearchResults) {
-    items.push('Back');
+    items = [{ text: 'Back', href: '/' }];
   } else {
-    items.push('Home');
+    items = [{ text: 'Home', href: '/' }];
   }
 
   if (route === catalogByCategories) {
-    category = getCategory();
-    items.push(category);
+    const category = getCategory();
+    items.push({ text: category });
   } else if (route === productCard) {
-    productName = getProductName();
+    const productName = getProductName();
     if (productName) {
       const whiskeyByName = getWhiskeyByName();
-      if (whiskeyByName[productName]) {
-        category = whiskeyByName[productName].Categories;
-        items.push(category);
+      const product = whiskeyByName[productName];
+      if (product) {
+        const category = product.Categories;
+        items.push(
+          {
+            text: category,
+            href: `/catalog-by-categories?category=${category}`,
+          },
+          { text: productName }
+        );
       }
-
-      items.push(productName);
     }
   } else if (route === blogPostList) {
-    items.push('Blog');
+    items.push({ text: 'Blog' });
   } else if (route === blogPost) {
-    items.push('Blog');
-    const postTileKey = getPostTitleKey();
-    const post = getPost(postTileKey);
-    items.push(post.article.title);
+    items.push({ text: 'Blog', href: '/blog-post-list' });
+    const postTitleKey = getPostTitleKey();
+    const post = getPost(postTitleKey);
+    if (post && post.article) {
+      items.push({ text: post.article.title });
+    }
   }
 
-  return breadcrumbsContent.replace('${items}', getItems(items, category));
+  return breadcrumbsContent.replace('${items}', convertToHtmlItems(items));
 };
 
 const element = document.getElementById('breadcrumbs');
