@@ -15,24 +15,25 @@
 }
 
 .menu-item {
-  padding-bottom: 5px;
-}
-
-.blog-post-list-item {
   display: flex;
   align-items: center;
   padding: 0 10px;
   text-decoration: none;
   color: var(--primary-brown);
+  margin: 0 20px;
 }
 
-.blog-post-list-item:hover {
+.menu-item:hover {
   color: var(--text-brown-medium);
 }
 
-.blog-post-list-item:hover .menu-item {
+.menu-item:hover .menu-item-content {
   border-bottom: 2px solid var(--text-brown-medium);
   padding-bottom: 3px;
+}
+
+.menu-item-content {
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 1600px) {
