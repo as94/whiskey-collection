@@ -6,6 +6,13 @@ import {
   getPercentile,
 } from '../services/percentiles.js';
 
+const shuffleArray = array => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+};
+
 export const getWhiskeyRecommendation = userPreferences => {
   const whiskeyItems = getWhiskey();
 
@@ -129,10 +136,10 @@ export const getWhiskeyRecommendation = userPreferences => {
     return matchScore;
   };
 
-  for (const whiskeyItem of whiskeyItems) {
+  const calculateTotalMatchScore = (whiskeyItem, userPreferences) => {
     const matchScoreFlavor = calculateMatchScore(
       whiskeyItem.TastingNotes,
-      userPreferences.tasting_notes
+      userPreferences.tastingNotes
     );
 
     const matchScoreABV = calculateMatchABVScore(
@@ -152,54 +159,50 @@ export const getWhiskeyRecommendation = userPreferences => {
 
     const matchScorePrice = calculateMatchPriceScore(
       whiskeyItem.Price,
-      userPreferences.price_range
+      userPreferences.priceRange
     );
 
-    console.log(whiskeyItem.Name, matchScorePrice);
+    let totalMatchScore =
+      matchScoreFlavor +
+      matchScoreABV +
+      matchScoreCategory +
+      matchScoreCountry +
+      matchScorePrice;
 
-    // let totalMatchScore =
-    //   matchScoreFlavor +
-    //   matchScoreABV +
-    //   matchScorePrice +
-    //   matchScoreBrand +
-    //   matchScoreCategory;
+    return totalMatchScore;
+  };
 
-    // // Adjust match score based on user's experience level using a multiplier
-    // const experienceLevelMultiplier = {
-    //   Novice: 0.9,
-    //   Intermediate: 1,
-    //   Expert: 1.1,
-    // };
-    // totalMatchScore *=
-    //   experienceLevelMultiplier[userPreferences.experience_level] || 1;
+  const scoredWhiskeys = whiskeyItems.map(whiskeyItem => ({
+    whiskeyItem,
+    score: calculateTotalMatchScore(whiskeyItem, userPreferences),
+  }));
 
-    // // Set a base threshold for recommendation (you can adjust this based on your preferences)
-    // const baseRecommendationThreshold = 3;
+  scoredWhiskeys.sort((a, b) => b.score - a.score);
 
-    // // Adjust the threshold based on the user's experience level
-    // const experienceLevelThresholds = {
-    //   Novice: baseRecommendationThreshold - 1,
-    //   Intermediate: baseRecommendationThreshold,
-    //   Expert: baseRecommendationThreshold + 1,
-    // };
+  const resultsCountBeforeShufflingByExperienceLevel = {
+    Novice: 3,
+    Intermediate: 5,
+    Expert: 10,
+  };
 
-    // // Check if the total match score meets the adjusted threshold
-    // if (
-    //   totalMatchScore >=
-    //   (experienceLevelThresholds[userPreferences.experience_level] ||
-    //     baseRecommendationThreshold)
-    // ) {
-    //   console.log(
-    //     `Recommend: ${whiskeyItem.Name} - Match Score: ${totalMatchScore}`
-    //   );
-    // } else {
-    //   console.log(
-    //     `Do Not Recommend: ${whiskeyItem.Name} - Match Score: ${totalMatchScore}`
-    //   );
-    // }
-  }
+  const resultsCountBeforeShuffling =
+    resultsCountBeforeShufflingByExperienceLevel[
+      userPreferences.experienceLevel
+    ];
 
-  console.log('whiskeyItems', whiskeyItems);
+  const selectedWhiskeys = scoredWhiskeys.slice(0, resultsCountBeforeShuffling);
+  shuffleArray(selectedWhiskeys);
 
-  return whiskeyItems[0];
+  const resultsCountAfterShufflingByExperienceLevel = {
+    Novice: 1,
+    Intermediate: 3,
+    Expert: 5,
+  };
+
+  const resultsCountAfterShuffling =
+    resultsCountAfterShufflingByExperienceLevel[
+      userPreferences.experienceLevel
+    ];
+
+  return selectedWhiskeys.slice(0, resultsCountAfterShuffling);
 };

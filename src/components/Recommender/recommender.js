@@ -27,18 +27,24 @@ if (element) {
     Math.round(getPercentile(priceValues, highPercentile) * 100) / 100;
 
   const userPreferences = {
-    flavor: 'Sweet',
-    abv: 'High',
-    price_range: [0, priceLowTreshold],
-    experience_level: 'Intermediate',
-    category: 'Bourbon',
-    tasting_notes: 'Caramel, Vanilla',
-    country: 'United States',
+    abv: 'High', // Low, Medium, High
+    priceRange: [priceHighTreshold, Number.MAX_SAFE_INTEGER],
+    experienceLevel: 'Intermediate', // Novice, Intermediate, Expert
+    category: 'Bourbon', // all categories
+    tastingNotes: 'Caramel, Vanilla', // all tasting notes
+    country: 'United States', // all countries
   };
 
-  const whiskey = getWhiskeyRecommendation(userPreferences);
+  const whiskeyItemsResult = getWhiskeyRecommendation(userPreferences);
   element.innerHTML = recommenderContent.replace(
     '${recommendationResult}',
-    whiskey.Name
+    whiskeyItemsResult
+      .map(
+        item =>
+          `<li>${item.whiskeyItem.Name.replace(' Review', '')} - ${
+            item.score
+          }</li>`
+      )
+      .join('')
   );
 }
