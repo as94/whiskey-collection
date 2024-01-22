@@ -1,23 +1,17 @@
 import { getWhiskey } from '../services/state.js';
+import {
+  lowPercentile,
+  mediumPercentile,
+  highPercentile,
+  getPercentile,
+} from '../services/percentiles.js';
 
-const userPreferences = {
-  flavor: 'Sweet',
-  abv: 'High',
-  price_range: '$20-$50',
-  experience_level: 'Intermediate',
-  brand: 'Brand A',
-  category: 'Bourbon',
-  tasting_notes: 'Caramel, Vanilla',
-};
-
-export const getWhiskeyRecommendation = () => {
+export const getWhiskeyRecommendation = userPreferences => {
   const whiskeyItems = getWhiskey();
+
   const abvValues = whiskeyItems
     .filter(whiskey => whiskey.ABV)
     .map(whiskey => parseFloat(whiskey.ABV.replace('%', '')));
-  const lowPercentile = 25;
-  const mediumPercentile = 50;
-  const highPercentile = 75;
   const abvLowThreshold =
     Math.round(getPercentile(abvValues, lowPercentile) * 100) / 100;
   const abvMediumThreshold =
@@ -91,6 +85,28 @@ export const getWhiskeyRecommendation = () => {
     return 0;
   };
 
+  const calculateMatchPriceScore = (attributeData, userPreference) => {
+    if (
+      !attributeData ||
+      attributeData === '' ||
+      !userPreference ||
+      userPreference === ''
+    ) {
+      return 0;
+    }
+
+    const attributeValue = parseFloat(attributeData.replace('$', ''));
+    const [rangeStart, rangeEnd] = userPreference;
+
+    if (rangeStart < attributeValue && attributeValue < rangeEnd) {
+      return 1;
+    } else if (attributeValue === rangeStart || attributeValue === rangeEnd) {
+      return 0.5;
+    }
+
+    return 0;
+  };
+
   const calculateMatchScore = (attributeData, userPreference) => {
     if (
       !attributeData ||
@@ -123,19 +139,23 @@ export const getWhiskeyRecommendation = () => {
       whiskeyItem.ABV,
       userPreferences.abv
     );
-    console.log(whiskeyItem.Name, matchScoreABV);
-    // const matchScorePrice = calculateMatchScore(
-    //   whiskeyItem.Price,
-    //   userPreferences.price_range
-    // );
-    // const matchScoreBrand = calculateMatchScore(
-    //   whiskeyItem.Brand,
-    //   userPreferences.brand
-    // );
-    // const matchScoreCategory = calculateMatchScore(
-    //   whiskeyItem.Categories,
-    //   userPreferences.category
-    // );
+
+    const matchScoreCategory = calculateMatchScore(
+      whiskeyItem.Categories.replace(' Review', ''),
+      userPreferences.category
+    );
+
+    const matchScoreCountry = calculateMatchScore(
+      whiskeyItem.Country,
+      userPreferences.country
+    );
+
+    const matchScorePrice = calculateMatchPriceScore(
+      whiskeyItem.Price,
+      userPreferences.price_range
+    );
+
+    console.log(whiskeyItem.Name, matchScorePrice);
 
     // let totalMatchScore =
     //   matchScoreFlavor +
@@ -179,13 +199,7 @@ export const getWhiskeyRecommendation = () => {
     // }
   }
 
+  console.log('whiskeyItems', whiskeyItems);
+
   return whiskeyItems[0];
-};
-
-const getPercentile = (values, percentile) => {
-  values.sort((a, b) => a - b);
-  const index = Math.ceil((percentile / 100) * values.length);
-
-  const result = values[index - 1];
-  return result;
 };
