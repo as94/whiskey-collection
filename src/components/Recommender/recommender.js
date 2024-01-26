@@ -10,6 +10,9 @@ import {
   getPercentile,
 } from '../../services/percentiles.js';
 
+const abvs = ['Low', 'Medium', 'High'];
+let priceRanges = [];
+
 await initializeWhiskey();
 
 const element = document.getElementById('recommender');
@@ -26,16 +29,26 @@ if (element) {
   const priceHighTreshold =
     Math.round(getPercentile(priceValues, highPercentile) * 100) / 100;
 
+  priceRanges = [
+    { id: 1, min: 0, max: priceLowTreshold },
+    { id: 2, min: priceLowTreshold, max: priceMediumTreshold },
+    { id: 3, min: priceMediumTreshold, max: priceHighTreshold },
+    { id: 4, min: priceHighTreshold, max: priceValues[priceValues.length - 1] },
+  ];
+
   const userPreferences = {
     abv: 'High', // Low, Medium, High
-    priceRange: [priceHighTreshold, Number.MAX_SAFE_INTEGER],
+    priceRangeId: 4,
     experienceLevel: 'Intermediate', // Novice, Intermediate, Expert
     category: 'Bourbon', // all categories
     tastingNotes: 'Caramel, Vanilla', // all tasting notes
     country: 'United States', // all countries
   };
 
-  const whiskeyItemsResult = getWhiskeyRecommendation(userPreferences);
+  const whiskeyItemsResult = getWhiskeyRecommendation(
+    userPreferences,
+    priceRanges
+  );
   element.innerHTML = recommenderContent.replace(
     '${recommendationResult}',
     whiskeyItemsResult

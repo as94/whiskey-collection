@@ -13,7 +13,7 @@ const shuffleArray = array => {
   }
 };
 
-export const getWhiskeyRecommendation = userPreferences => {
+export const getWhiskeyRecommendation = (userPreferences, priceRanges) => {
   const whiskeyItems = getWhiskey();
 
   const abvValues = whiskeyItems
@@ -92,23 +92,26 @@ export const getWhiskeyRecommendation = userPreferences => {
     return 0;
   };
 
-  const calculateMatchPriceScore = (attributeData, userPreference) => {
-    if (
-      !attributeData ||
-      attributeData === '' ||
-      !userPreference ||
-      userPreference === ''
-    ) {
+  const calculateMatchPriceScore = (
+    attributeData,
+    priceRangeId,
+    priceRanges
+  ) => {
+    if (!attributeData || attributeData === '') {
       return 0;
     }
 
     const attributeValue = parseFloat(attributeData.replace('$', ''));
-    const [rangeStart, rangeEnd] = userPreference;
 
-    if (rangeStart < attributeValue && attributeValue < rangeEnd) {
-      return 1;
-    } else if (attributeValue === rangeStart || attributeValue === rangeEnd) {
-      return 0.5;
+    for (const priceRange of priceRanges) {
+      const distance = Math.abs(priceRange.id - priceRangeId);
+
+      if (
+        priceRange.min <= attributeValue &&
+        attributeValue <= priceRange.max
+      ) {
+        return Number((1 - distance * 0.3).toFixed(2));
+      }
     }
 
     return 0;
@@ -159,7 +162,8 @@ export const getWhiskeyRecommendation = userPreferences => {
 
     const matchScorePrice = calculateMatchPriceScore(
       whiskeyItem.Price,
-      userPreferences.priceRange
+      userPreferences.priceRangeId,
+      priceRanges
     );
 
     let totalMatchScore =
