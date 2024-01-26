@@ -15,6 +15,7 @@ await initializeWhiskey();
 const abvs = ['Low', 'Medium', 'High'];
 let priceRanges = [];
 const countries = getCountries();
+const experienceLevels = ['Novice', 'Intermediate', 'Expert'];
 
 const element = document.getElementById('recommender');
 if (element) {
@@ -54,7 +55,7 @@ if (element) {
     priceRangeId: 4,
     country: 'United States',
     tastingNotes: 'Caramel, Vanilla', // all tasting notes
-    experienceLevel: 'Intermediate', // Novice, Intermediate, Expert
+    experienceLevel: 'Intermediate',
   };
 
   const whiskeyItemsResult = getWhiskeyRecommendation(
@@ -91,6 +92,16 @@ if (element) {
           country => `
         <input type="radio" id="countries-${country}" name="country" value="${country}" />
         <label for="country">${country}</label><br />`
+        )
+        .join('')
+    )
+    .replace(
+      '${experienceLevels}',
+      experienceLevels
+        .map(
+          experienceLevel => `
+        <input type="radio" id="experienceLevel-${experienceLevel}" name="experienceLevel" value="${experienceLevel}" />
+        <label for="experienceLevel">${experienceLevel}</label><br />`
         )
         .join('')
     )
