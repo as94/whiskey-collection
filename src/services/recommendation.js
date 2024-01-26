@@ -112,6 +112,40 @@ const calculateMatchScore = (attributeData, userPreference) => {
   return matchScore;
 };
 
+const calculateTotalMatchScore = (
+  whiskeyItem,
+  userPreferences,
+  abvThresholds,
+  priceRanges
+) => {
+  const matchScoreABV = calculateMatchABVScore(
+    whiskeyItem.ABV,
+    userPreferences.abv,
+    abvThresholds
+  );
+
+  const matchScorePrice = calculateMatchPriceScore(
+    whiskeyItem.Price,
+    userPreferences.priceRangeId,
+    priceRanges
+  );
+
+  const matchScoreCountry = calculateMatchScore(
+    whiskeyItem.Country,
+    userPreferences.country
+  );
+
+  const matchScoreFlavor = calculateMatchScore(
+    whiskeyItem.TastingNotes,
+    userPreferences.tastingNotes
+  );
+
+  let totalMatchScore =
+    matchScoreFlavor + matchScoreABV + matchScoreCountry + matchScorePrice;
+
+  return totalMatchScore;
+};
+
 const shuffleArray = array => {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -126,47 +160,14 @@ export const getWhiskeyRecommendation = (
 ) => {
   const whiskeyItems = getWhiskey();
 
-  const calculateTotalMatchScore = (whiskeyItem, userPreferences) => {
-    const matchScoreABV = calculateMatchABVScore(
-      whiskeyItem.ABV,
-      userPreferences.abv,
-      abvThresholds
-    );
-
-    const matchScorePrice = calculateMatchPriceScore(
-      whiskeyItem.Price,
-      userPreferences.priceRangeId,
-      priceRanges
-    );
-
-    const matchScoreCountry = calculateMatchScore(
-      whiskeyItem.Country,
-      userPreferences.country
-    );
-
-    const matchScoreCategory = calculateMatchScore(
-      whiskeyItem.Categories.replace(' Review', ''),
-      userPreferences.category
-    );
-
-    const matchScoreFlavor = calculateMatchScore(
-      whiskeyItem.TastingNotes,
-      userPreferences.tastingNotes
-    );
-
-    let totalMatchScore =
-      matchScoreFlavor +
-      matchScoreABV +
-      matchScoreCategory +
-      matchScoreCountry +
-      matchScorePrice;
-
-    return totalMatchScore;
-  };
-
   const scoredWhiskeys = whiskeyItems.map(whiskeyItem => ({
     whiskeyItem,
-    score: calculateTotalMatchScore(whiskeyItem, userPreferences),
+    score: calculateTotalMatchScore(
+      whiskeyItem,
+      userPreferences,
+      abvThresholds,
+      priceRanges
+    ),
   }));
 
   scoredWhiskeys.sort((a, b) => b.score - a.score);

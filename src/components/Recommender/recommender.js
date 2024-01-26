@@ -2,7 +2,7 @@ import recommenderContent from './recommender.html';
 import './recommender.css';
 import { getWhiskeyRecommendation } from '../../services/recommendation.js';
 import { initializeWhiskey } from '../../services/loadWhiskey.js';
-import { getWhiskey } from '../../services/state.js';
+import { getWhiskey, getCountries } from '../../services/state.js';
 import {
   lowPercentile,
   mediumPercentile,
@@ -10,10 +10,11 @@ import {
   getPercentile,
 } from '../../services/percentiles.js';
 
+await initializeWhiskey();
+
 const abvs = ['Low', 'Medium', 'High'];
 let priceRanges = [];
-
-await initializeWhiskey();
+const countries = getCountries();
 
 const element = document.getElementById('recommender');
 if (element) {
@@ -49,10 +50,9 @@ if (element) {
   ];
 
   const userPreferences = {
-    abv: 'High', // Low, Medium, High
+    abv: 'High',
     priceRangeId: 4,
-    country: 'United States', // all countries
-    category: 'Bourbon', // all categories
+    country: 'United States',
     tastingNotes: 'Caramel, Vanilla', // all tasting notes
     experienceLevel: 'Intermediate', // Novice, Intermediate, Expert
   };
@@ -81,6 +81,16 @@ if (element) {
           priceRange => `
         <input type="radio" id="priceRange-${priceRange.id}" name="priceRange" value="$${priceRange.min} - $${priceRange.max}" />
         <label for="priceRange">$${priceRange.min} - $${priceRange.max}</label><br />`
+        )
+        .join('')
+    )
+    .replace(
+      '${countries}',
+      countries
+        .map(
+          country => `
+        <input type="radio" id="countries-${country}" name="country" value="${country}" />
+        <label for="country">${country}</label><br />`
         )
         .join('')
     )
