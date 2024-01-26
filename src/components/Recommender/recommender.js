@@ -17,6 +17,75 @@ let priceRanges = [];
 const countries = getCountries();
 const experienceLevels = ['Novice', 'Intermediate', 'Expert'];
 
+const whiskeyTastingNotes = {
+  'Fruit Notes': [
+    'Apple',
+    'Baked apple',
+    'Banana',
+    'Berry',
+    'Cherry',
+    'Citrus',
+    'Coconut',
+    'Dark fruit',
+    'Dried fruit',
+    'Orange',
+    'Pear',
+    'Raisins',
+    'Red fruit',
+    'Stone fruit',
+    'Tropical',
+    'Tropical fruit',
+  ],
+  'Spice and Herb Notes': [
+    'Anise',
+    'Cinnamon',
+    'Mint',
+    'Nutmeg',
+    'Pepper',
+    'Spicy',
+  ],
+  'Sweet Notes': [
+    'Balanced',
+    'Butter',
+    'Caramel',
+    'Creamy',
+    'Grainy sweetness',
+    'Honey',
+    'Malty',
+    'Rich',
+    'Round',
+    'Salty',
+    'Sweet',
+    'Toasty',
+    'Vanilla',
+  ],
+  'Floral and Herbal Notes': [
+    'Floral',
+    'Fresh',
+    'Herbal',
+    'Rose petal',
+    'Vegetal',
+    'Yeasty',
+  ],
+  'Wood and Smoke Notes': [
+    'Bold',
+    'Woody',
+    'Hints of dry smoke',
+    'Leather',
+    'Oak',
+    'Smoky',
+  ],
+  'Complex and Miscellaneous Notes': [
+    'Biscuit',
+    'Bright',
+    'Flavored',
+    'Harmonious',
+    'Lingering',
+    'Roasted',
+    'Smooth',
+  ],
+};
+
 const element = document.getElementById('recommender');
 if (element) {
   const whiskeyItems = getWhiskey();
@@ -54,7 +123,7 @@ if (element) {
     abv: 'High',
     priceRangeId: 4,
     country: 'United States',
-    tastingNotes: 'Caramel, Vanilla', // all tasting notes
+    tastingNotes: 'Caramel, Vanilla',
     experienceLevel: 'Intermediate',
   };
 
@@ -92,6 +161,16 @@ if (element) {
           country => `
         <input type="radio" id="countries-${country}" name="country" value="${country}" />
         <label for="country">${country}</label><br />`
+        )
+        .join('')
+    )
+    .replace(
+      '${tastingNotes}',
+      Object.keys(whiskeyTastingNotes)
+        .map(
+          tastingNote => `
+        <input type="radio" id="tastingNote-${tastingNote}" name="tastingNote" value="${tastingNote}">
+        <label for="tastingNote">${tastingNote}</label><br>`
         )
         .join('')
     )
