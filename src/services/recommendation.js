@@ -2,14 +2,14 @@ import { getWhiskey } from '../services/state.js';
 
 const calculateMatchABVScore = (
   attributeData,
-  userPreference,
+  userPreferenceAbv,
   abvThresholds
 ) => {
   if (
     !attributeData ||
     attributeData === '' ||
-    !userPreference ||
-    userPreference === ''
+    !userPreferenceAbv ||
+    userPreferenceAbv === ''
   ) {
     return 0;
   }
@@ -18,7 +18,7 @@ const calculateMatchABVScore = (
 
   const attributeValue = parseFloat(attributeData.replace('%', ''));
 
-  switch (userPreference) {
+  switch (userPreferenceAbv) {
     case 'High':
       if (attributeValue >= abvHighThreshold) {
         return 1;
@@ -72,15 +72,23 @@ const calculateMatchABVScore = (
   return 0;
 };
 
-const calculateMatchPriceScore = (attributeData, priceRangeId, priceRanges) => {
+const calculateMatchPriceScore = (
+  attributeData,
+  userPreferencePriceRangeId,
+  priceRanges
+) => {
   if (!attributeData || attributeData === '') {
+    return 0;
+  }
+
+  if (!userPreferencePriceRangeId || userPreferencePriceRangeId === 0) {
     return 0;
   }
 
   const attributeValue = parseFloat(attributeData.replace('$', ''));
 
   for (const priceRange of priceRanges) {
-    const distance = Math.abs(priceRange.id - priceRangeId);
+    const distance = Math.abs(priceRange.id - userPreferencePriceRangeId);
 
     if (priceRange.min <= attributeValue && attributeValue <= priceRange.max) {
       return Number((1 - distance * 0.3).toFixed(2));
@@ -130,20 +138,14 @@ const calculateTotalMatchScore = (
     priceRanges
   );
 
-  const matchScoreCountry = calculateMatchScore(
-    whiskeyItem.Country,
-    userPreferences.country
-  );
-
   const matchScoreFlavor = calculateMatchScore(
     whiskeyItem.TastingNotes,
     userPreferences.tastingNotes
   );
 
-  let totalMatchScore =
-    matchScoreFlavor + matchScoreABV + matchScoreCountry + matchScorePrice;
+  let totalMatchScore = matchScoreFlavor + matchScoreABV + matchScorePrice;
 
-  return totalMatchScore;
+  return Number(totalMatchScore.toFixed(2));
 };
 
 const shuffleArray = array => {
@@ -170,7 +172,19 @@ export const getWhiskeyRecommendation = (
     ),
   }));
 
-  scoredWhiskeys.sort((a, b) => b.score - a.score);
+  if (
+    scoredWhiskeys.filter(x => x.score === 0).length === scoredWhiskeys.length
+  ) {
+    shuffleArray(scoredWhiskeys);
+  } else {
+    scoredWhiskeys.sort((a, b) => b.score - a.score);
+  }
+
+  const filteredByCountryScoredWhiskeys = userPreferences.country
+    ? scoredWhiskeys.filter(
+        whiskey => whiskey.whiskeyItem.Country === userPreferences.country
+      )
+    : scoredWhiskeys;
 
   const resultsCountBeforeShufflingByExperienceLevel = {
     Novice: 3,
@@ -183,7 +197,10 @@ export const getWhiskeyRecommendation = (
       userPreferences.experienceLevel
     ];
 
-  const selectedWhiskeys = scoredWhiskeys.slice(0, resultsCountBeforeShuffling);
+  const selectedWhiskeys = filteredByCountryScoredWhiskeys.slice(
+    0,
+    resultsCountBeforeShuffling
+  );
   shuffleArray(selectedWhiskeys);
 
   const resultsCountAfterShufflingByExperienceLevel = {

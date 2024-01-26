@@ -14,7 +14,9 @@ await initializeWhiskey();
 
 const abvs = ['Low', 'Medium', 'High'];
 let priceRanges = [];
-const countries = getCountries();
+const countries = getCountries().filter(
+  country => country !== 'United Kingdom'
+);
 const experienceLevels = ['Novice', 'Intermediate', 'Expert'];
 
 const whiskeyTastingNotes = {
@@ -119,20 +121,6 @@ if (element) {
     { id: 4, min: priceHighTreshold, max: priceValues[priceValues.length - 1] },
   ];
 
-  const userPreferences = {
-    abv: 'High',
-    priceRangeId: 4,
-    country: 'United States',
-    tastingNotes: 'Caramel, Vanilla',
-    experienceLevel: 'Intermediate',
-  };
-
-  const whiskeyItemsResult = getWhiskeyRecommendation(
-    userPreferences,
-    abvThresholds,
-    priceRanges
-  );
-
   element.innerHTML = recommenderContent
     .replace(
       '${abvs}',
@@ -149,7 +137,7 @@ if (element) {
       priceRanges
         .map(
           priceRange => `
-        <input type="radio" id="priceRange-${priceRange.id}" name="priceRange" value="$${priceRange.min} - $${priceRange.max}" />
+        <input type="radio" id="priceRange-${priceRange.id}" name="priceRange" value="${priceRange.id}" />
         <label for="priceRange">$${priceRange.min} - $${priceRange.max}</label><br />`
         )
         .join('')
@@ -183,16 +171,61 @@ if (element) {
         <label for="experienceLevel">${experienceLevel}</label><br />`
         )
         .join('')
-    )
-    .replace(
-      '${recommendationResult}',
-      whiskeyItemsResult
-        .map(
-          item =>
-            `<li>${item.whiskeyItem.Name.replace(' Review', '')} - ${
-              item.score
-            }</li>`
-        )
-        .join('')
     );
+
+  const recommenderBtn = document.querySelector('#recommenderBtn');
+  recommenderBtn.addEventListener('click', function () {
+    const abv = document.querySelector('input[name="abv"]:checked')?.value;
+    const priceRange = document.querySelector(
+      'input[name="priceRange"]:checked'
+    )?.value;
+
+    const country = document.querySelector(
+      'input[name="country"]:checked'
+    )?.value;
+
+    const tastingNote = document.querySelector(
+      'input[name="tastingNote"]:checked'
+    )?.value;
+
+    const experienceLevel = document.querySelector(
+      'input[name="experienceLevel"]:checked'
+    )?.value;
+
+    const userPreferences = {
+      abv: abv,
+      priceRangeId: priceRange,
+      country: country,
+      tastingNotes: whiskeyTastingNotes[tastingNote].join(', '),
+      experienceLevel: experienceLevel ?? 'Novice',
+    };
+
+    const whiskeyItemsResult = getWhiskeyRecommendation(
+      userPreferences,
+      abvThresholds,
+      priceRanges
+    );
+
+    const recommendationResultElement = document.getElementById(
+      'recommendationResult'
+    );
+
+    if (recommendationResultElement) {
+      const parent = recommendationResultElement.parentNode;
+      const newList = document.createElement('ul');
+      newList.id = 'recommendationResult';
+
+      for (const item of whiskeyItemsResult) {
+        const li = document.createElement('li');
+        li.textContent = `${item.whiskeyItem.Name.replace(' Review', '')}, ${
+          item.whiskeyItem.ABV
+        }, ${item.whiskeyItem.Country}, ${item.whiskeyItem.Price}, ${
+          item.whiskeyItem.TastingNotes
+        } - ${item.score}`;
+        newList.appendChild(li);
+      }
+
+      parent.replaceChild(newList, recommendationResultElement);
+    }
+  });
 }
