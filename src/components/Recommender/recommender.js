@@ -19,6 +19,18 @@ const element = document.getElementById('recommender');
 if (element) {
   const whiskeyItems = getWhiskey();
 
+  const abvValues = whiskeyItems
+    .filter(whiskey => whiskey.ABV)
+    .map(whiskey => parseFloat(whiskey.ABV.replace('%', '')));
+  const abvLowThreshold =
+    Math.round(getPercentile(abvValues, lowPercentile) * 100) / 100;
+  const abvMediumThreshold =
+    Math.round(getPercentile(abvValues, mediumPercentile) * 100) / 100;
+  const abvHighThreshold =
+    Math.round(getPercentile(abvValues, highPercentile) * 100) / 100;
+
+  const abvThresholds = [abvLowThreshold, abvMediumThreshold, abvHighThreshold];
+
   const priceValues = whiskeyItems
     .filter(whiskey => whiskey.Price)
     .map(whiskey => parseFloat(whiskey.Price.replace('$', '')));
@@ -39,25 +51,48 @@ if (element) {
   const userPreferences = {
     abv: 'High', // Low, Medium, High
     priceRangeId: 4,
-    experienceLevel: 'Intermediate', // Novice, Intermediate, Expert
+    country: 'United States', // all countries
     category: 'Bourbon', // all categories
     tastingNotes: 'Caramel, Vanilla', // all tasting notes
-    country: 'United States', // all countries
+    experienceLevel: 'Intermediate', // Novice, Intermediate, Expert
   };
 
   const whiskeyItemsResult = getWhiskeyRecommendation(
     userPreferences,
+    abvThresholds,
     priceRanges
   );
-  element.innerHTML = recommenderContent.replace(
-    '${recommendationResult}',
-    whiskeyItemsResult
-      .map(
-        item =>
-          `<li>${item.whiskeyItem.Name.replace(' Review', '')} - ${
-            item.score
-          }</li>`
-      )
-      .join('')
-  );
+
+  element.innerHTML = recommenderContent
+    .replace(
+      '${abvs}',
+      abvs
+        .map(
+          abv => `
+        <input type="radio" id="abv-${abv}" name="abv" value="${abv}" />
+        <label for="abv">${abv}</label><br />`
+        )
+        .join('')
+    )
+    .replace(
+      '${priceRanges}',
+      priceRanges
+        .map(
+          priceRange => `
+        <input type="radio" id="priceRange-${priceRange.id}" name="priceRange" value="$${priceRange.min} - $${priceRange.max}" />
+        <label for="priceRange">$${priceRange.min} - $${priceRange.max}</label><br />`
+        )
+        .join('')
+    )
+    .replace(
+      '${recommendationResult}',
+      whiskeyItemsResult
+        .map(
+          item =>
+            `<li>${item.whiskeyItem.Name.replace(' Review', '')} - ${
+              item.score
+            }</li>`
+        )
+        .join('')
+    );
 }
