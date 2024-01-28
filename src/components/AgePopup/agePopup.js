@@ -15,16 +15,6 @@ const agePopup = () => {
   }
 };
 
-const returnToReferringSite = () => {
-  const referringSite = document.referrer;
-
-  if (referringSite) {
-    window.location.href = referringSite;
-  } else {
-    window.location.href = 'https://www.google.com';
-  }
-};
-
 const element = document.getElementById('agePopup');
 if (element) {
   document.getElementById('agePopup').innerHTML = agePopup();
@@ -44,8 +34,7 @@ if (element) {
   const noBtn = document.querySelector('.no-btn');
   if (noBtn) {
     noBtn.addEventListener('click', function () {
-      hidePopup();
-      returnToReferringSite();
+      // don't do anything yet
     });
   }
 }

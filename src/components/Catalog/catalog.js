@@ -30,9 +30,8 @@ import './catalog.css';
 
 await initializeWhiskey();
 
-const getWhiskeyItems = () => {
+const getWhiskeyItems = route => {
   let whiskeyItems = [];
-  const route = getRoute();
   if (route === catalogByCategories) {
     const category = getCategory();
     if (category) {
@@ -98,9 +97,37 @@ const generateCatalogRows = whiskeyItems => {
 export const catalog = whiskeyItems =>
   catalogContent.replace('${catalogRows}', generateCatalogRows(whiskeyItems));
 
-const whiskeyItems = getWhiskeyItems();
+const route = getRoute();
+const whiskeyItems = getWhiskeyItems(route);
 
 const element = document.getElementById('catalog');
 if (element) {
   element.innerHTML = catalog(whiskeyItems);
+
+  const canonicalLink = document.getElementById('canonicalLink');
+  if (route === catalogByCategories) {
+    const category = getCategory();
+    if (category) {
+      const params = new URLSearchParams();
+      params.set('category', category);
+      canonicalLink.href = `${window.location.protocol}//${
+        window.location.host
+      }/catalog-by-categories?${params.toString()}`;
+    }
+  }
+
+  if (route === catalogBySearchResults) {
+    const country = getCountry();
+    const brand = getBrand();
+    const priceRange = getPriceRange();
+    const searchText = getSearchText();
+    const params = new URLSearchParams();
+    params.set('searchText', searchText);
+    params.set('country', country);
+    params.set('brand', brand);
+    params.set('priceRange', priceRange);
+    canonicalLink.href = `${window.location.protocol}//${
+      window.location.host
+    }/catalog-by-search-results?${params.toString()}`;
+  }
 }

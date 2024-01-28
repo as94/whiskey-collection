@@ -71,11 +71,20 @@ if (element) {
 
   const productName = getProductName();
   if (productName) {
-    document.title = productName;
-
     const whiskeyByName = getWhiskeyByName();
     const product = whiskeyByName[productName];
     if (product) {
+      document.title = productName;
+
+      const canonicalLink = document.getElementById('canonicalLink');
+      if (canonicalLink) {
+        const params = new URLSearchParams();
+        params.set('productName', productName);
+        canonicalLink.href = `${window.location.protocol}//${
+          window.location.host
+        }/product-card?${params.toString()}`;
+      }
+
       var descriptionMetaTag = document.querySelector(
         'meta[name="description"]'
       );
