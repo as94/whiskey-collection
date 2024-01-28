@@ -1,4 +1,3 @@
-import './components/Auth/auth';
 import './components/Header/header';
 import './components/Jumbotron/jumbotron';
 import './components/WorldWhiskeyCatalog/worldWhiskeyCatalog';

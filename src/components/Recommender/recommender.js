@@ -9,6 +9,8 @@ import {
   highPercentile,
   getPercentile,
 } from '../../services/percentiles.js';
+import { signIn, signOut } from '../../services/firebaseGoogle';
+import { getWithExpiry } from '../../services/localStorage.js';
 
 await initializeWhiskey();
 
@@ -171,9 +173,15 @@ if (element) {
         <label for="experienceLevel">${experienceLevel}</label><br />`
         )
         .join('')
+    )
+    .replace(
+      '${signInWithGoogle}',
+      getWithExpiry('token')
+        ? '<input id="signOut" type="button" value="Sign Out" />'
+        : '<input id="signInWithGoogle" type="button" value="Sign In With Google" />'
     );
 
-  const recommenderBtn = document.querySelector('#recommenderBtn');
+  const recommenderBtn = document.getElementById('recommenderBtn');
   recommenderBtn.addEventListener('click', function () {
     const abv = document.querySelector('input[name="abv"]:checked')?.value;
     const priceRange = document.querySelector(
@@ -228,4 +236,18 @@ if (element) {
       parent.replaceChild(newList, recommendationResultElement);
     }
   });
+
+  const signInWithGoogleBtn = document.getElementById('signInWithGoogle');
+  if (signInWithGoogleBtn) {
+    signInWithGoogleBtn.addEventListener('click', function () {
+      signIn();
+    });
+  }
+
+  const signOutBtn = document.getElementById('signOut');
+  if (signOutBtn) {
+    signOutBtn.addEventListener('click', function () {
+      signOut();
+    });
+  }
 }
