@@ -1,9 +1,18 @@
 import recommenderContent from './recommender.html';
 import './recommender.css';
 import { getWhiskeyRecommendation } from '../../services/recommendation.js';
-import { signIn, signOut } from '../../services/firebaseGoogle';
-import { getWithExpiry } from '../../services/localStorage.js';
+import {
+  googleSignIn,
+  signOut,
+  handleSignInResult,
+} from '../../services/firebase.js';
 import { getParameters } from './parameters.js';
+import {
+  setWithExpiry,
+  getWithExpiry,
+  remove,
+  twoWeeksExpiration,
+} from '../../services/localStorage';
 
 const {
   abvs,
@@ -14,14 +23,16 @@ const {
   abvThresholds,
 } = await getParameters();
 
-const showParameters = () =>
-  recommenderContent
+const showParameters = userPreferencesBeforeLogin => {
+  return recommenderContent
     .replace(
       '${abvs}',
       abvs
         .map(
           abv => `
-        <input type="radio" id="abv-${abv}" name="abv" value="${abv}" />
+        <input type="radio" id="abv-${abv}" name="abv" value="${abv}" ${
+            userPreferencesBeforeLogin?.abv === abv ? 'checked' : ''
+          } />
         <label for="abv">${abv}</label><br />`
         )
         .join('')
@@ -31,8 +42,16 @@ const showParameters = () =>
       priceRanges
         .map(
           priceRange => `
-        <input type="radio" id="priceRange-${priceRange.id}" name="priceRange" value="${priceRange.id}" />
-        <label for="priceRange">$${priceRange.min} - $${priceRange.max}</label><br />`
+        <input type="radio" id="priceRange-${
+          priceRange.id
+        }" name="priceRange" value="${priceRange.id}" ${
+            parseInt(userPreferencesBeforeLogin?.priceRangeId) === priceRange.id
+              ? 'checked'
+              : ''
+          } />
+        <label for="priceRange">$${priceRange.min} - $${
+            priceRange.max
+          }</label><br />`
         )
         .join('')
     )
@@ -41,7 +60,9 @@ const showParameters = () =>
       countries
         .map(
           country => `
-        <input type="radio" id="countries-${country}" name="country" value="${country}" />
+        <input type="radio" id="countries-${country}" name="country" value="${country}" ${
+            userPreferencesBeforeLogin?.country === country ? 'checked' : ''
+          } />
         <label for="country">${country}</label><br />`
         )
         .join('')
@@ -51,7 +72,11 @@ const showParameters = () =>
       Object.keys(whiskeyTastingNotes)
         .map(
           tastingNote => `
-        <input type="radio" id="tastingNote-${tastingNote}" name="tastingNote" value="${tastingNote}">
+        <input type="radio" id="tastingNote-${tastingNote}" name="tastingNote" value="${tastingNote}" ${
+            userPreferencesBeforeLogin?.tastingNotes === tastingNote
+              ? 'checked'
+              : ''
+          }>
         <label for="tastingNote">${tastingNote}</label><br>`
         )
         .join('')
@@ -61,17 +86,22 @@ const showParameters = () =>
       experienceLevels
         .map(
           experienceLevel => `
-        <input type="radio" id="experienceLevel-${experienceLevel}" name="experienceLevel" value="${experienceLevel}" />
+        <input type="radio" id="experienceLevel-${experienceLevel}" name="experienceLevel" value="${experienceLevel}" ${
+            userPreferencesBeforeLogin?.experienceLevel === experienceLevel
+              ? 'checked'
+              : ''
+          } />
         <label for="experienceLevel">${experienceLevel}</label><br />`
         )
         .join('')
     )
     .replace(
-      '${signInWithGoogle}',
+      '${signOut}',
       getWithExpiry('token')
         ? '<input id="signOut" type="button" value="Sign Out" />'
-        : '<input id="signInWithGoogle" type="button" value="Sign In With Google" />'
+        : ''
     );
+};
 
 const getUserPreferences = () => {
   const abv = document.querySelector('input[name="abv"]:checked')?.value;
@@ -95,7 +125,7 @@ const getUserPreferences = () => {
     abv: abv,
     priceRangeId: priceRange,
     country: country,
-    tastingNotes: whiskeyTastingNotes[tastingNote].join(', '),
+    tastingNotes: tastingNote,
     experienceLevel: experienceLevel ?? 'Novice',
   };
 };
@@ -126,25 +156,48 @@ const showResults = whiskeyItemsResult => {
 
 const element = document.getElementById('recommender');
 if (element) {
-  element.innerHTML = showParameters();
+  await handleSignInResult();
+
+  const userPreferencesBeforeLogin = getWithExpiry('userPreferences');
+
+  element.innerHTML = showParameters(userPreferencesBeforeLogin);
+
+  const isAuthenticated = getWithExpiry('token');
+  if (isAuthenticated) {
+    if (userPreferencesBeforeLogin) {
+      const whiskeyItemsResult = getWhiskeyRecommendation(
+        userPreferencesBeforeLogin,
+        abvThresholds,
+        priceRanges,
+        whiskeyTastingNotes
+      );
+
+      showResults(whiskeyItemsResult);
+    }
+  }
 
   const recommenderBtn = document.getElementById('recommenderBtn');
   recommenderBtn.addEventListener('click', function () {
     const userPreferences = getUserPreferences();
-    const whiskeyItemsResult = getWhiskeyRecommendation(
-      userPreferences,
-      abvThresholds,
-      priceRanges
-    );
+    setWithExpiry('userPreferences', userPreferences, twoWeeksExpiration);
 
-    showResults(whiskeyItemsResult);
+    if (isAuthenticated) {
+      const whiskeyItemsResult = getWhiskeyRecommendation(
+        userPreferences,
+        abvThresholds,
+        priceRanges,
+        whiskeyTastingNotes
+      );
+
+      showResults(whiskeyItemsResult);
+    } else {
+      googleSignIn();
+    }
   });
 
   const signInWithGoogleBtn = document.getElementById('signInWithGoogle');
   if (signInWithGoogleBtn) {
-    signInWithGoogleBtn.addEventListener('click', function () {
-      signIn();
-    });
+    signInWithGoogleBtn.addEventListener('click', function () {});
   }
 
   const signOutBtn = document.getElementById('signOut');

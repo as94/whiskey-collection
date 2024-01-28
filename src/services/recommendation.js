@@ -124,7 +124,8 @@ const calculateTotalMatchScore = (
   whiskeyItem,
   userPreferences,
   abvThresholds,
-  priceRanges
+  priceRanges,
+  whiskeyTastingNotes
 ) => {
   const matchScoreABV = calculateMatchABVScore(
     whiskeyItem.ABV,
@@ -140,7 +141,7 @@ const calculateTotalMatchScore = (
 
   const matchScoreFlavor = calculateMatchScore(
     whiskeyItem.TastingNotes,
-    userPreferences.tastingNotes
+    whiskeyTastingNotes[userPreferences.tastingNotes].join(', ')
   );
 
   let totalMatchScore = matchScoreFlavor + matchScoreABV + matchScorePrice;
@@ -158,7 +159,8 @@ const shuffleArray = array => {
 export const getWhiskeyRecommendation = (
   userPreferences,
   abvThresholds,
-  priceRanges
+  priceRanges,
+  whiskeyTastingNotes
 ) => {
   const whiskeyItems = getWhiskey();
 
@@ -168,7 +170,8 @@ export const getWhiskeyRecommendation = (
       whiskeyItem,
       userPreferences,
       abvThresholds,
-      priceRanges
+      priceRanges,
+      whiskeyTastingNotes
     ),
   }));
 

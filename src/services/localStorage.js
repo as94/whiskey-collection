@@ -1,3 +1,5 @@
+export const twoWeeksExpiration = 14 * 24 * 60 * 60 * 1000;
+
 export const setWithExpiry = (key, value, ttl) => {
   const now = new Date();
   const item = {
