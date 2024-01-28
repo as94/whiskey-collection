@@ -141,7 +141,9 @@ const calculateTotalMatchScore = (
 
   const matchScoreFlavor = calculateMatchScore(
     whiskeyItem.TastingNotes,
-    whiskeyTastingNotes[userPreferences.tastingNotes].join(', ')
+    userPreferences.tastingNotes
+      ? whiskeyTastingNotes[userPreferences.tastingNotes].join(', ')
+      : undefined
   );
 
   let totalMatchScore = matchScoreFlavor + matchScoreABV + matchScorePrice;
@@ -195,10 +197,10 @@ export const getWhiskeyRecommendation = (
     Expert: 10,
   };
 
+  const userExperienceLevel = userPreferences.experienceLevel ?? 'Novice';
+
   const resultsCountBeforeShuffling =
-    resultsCountBeforeShufflingByExperienceLevel[
-      userPreferences.experienceLevel
-    ];
+    resultsCountBeforeShufflingByExperienceLevel[userExperienceLevel];
 
   const selectedWhiskeys = filteredByCountryScoredWhiskeys.slice(
     0,
@@ -213,9 +215,7 @@ export const getWhiskeyRecommendation = (
   };
 
   const resultsCountAfterShuffling =
-    resultsCountAfterShufflingByExperienceLevel[
-      userPreferences.experienceLevel
-    ];
+    resultsCountAfterShufflingByExperienceLevel[userExperienceLevel];
 
   return selectedWhiskeys.slice(0, resultsCountAfterShuffling);
 };

@@ -10,8 +10,8 @@ import { getParameters } from './parameters.js';
 import {
   setWithExpiry,
   getWithExpiry,
-  remove,
   twoWeeksExpiration,
+  remove,
 } from '../../services/localStorage';
 
 const {
@@ -23,7 +23,7 @@ const {
   abvThresholds,
 } = await getParameters();
 
-const showParameters = userPreferencesBeforeLogin => {
+const showParameters = existingUserPreferences => {
   return recommenderContent
     .replace(
       '${abvs}',
@@ -31,7 +31,7 @@ const showParameters = userPreferencesBeforeLogin => {
         .map(
           abv => `
         <input type="radio" id="abv-${abv}" name="abv" value="${abv}" ${
-            userPreferencesBeforeLogin?.abv === abv ? 'checked' : ''
+            existingUserPreferences?.abv === abv ? 'checked' : ''
           } />
         <label for="abv">${abv}</label><br />`
         )
@@ -45,7 +45,7 @@ const showParameters = userPreferencesBeforeLogin => {
         <input type="radio" id="priceRange-${
           priceRange.id
         }" name="priceRange" value="${priceRange.id}" ${
-            parseInt(userPreferencesBeforeLogin?.priceRangeId) === priceRange.id
+            parseInt(existingUserPreferences?.priceRangeId) === priceRange.id
               ? 'checked'
               : ''
           } />
@@ -61,7 +61,7 @@ const showParameters = userPreferencesBeforeLogin => {
         .map(
           country => `
         <input type="radio" id="countries-${country}" name="country" value="${country}" ${
-            userPreferencesBeforeLogin?.country === country ? 'checked' : ''
+            existingUserPreferences?.country === country ? 'checked' : ''
           } />
         <label for="country">${country}</label><br />`
         )
@@ -73,7 +73,7 @@ const showParameters = userPreferencesBeforeLogin => {
         .map(
           tastingNote => `
         <input type="radio" id="tastingNote-${tastingNote}" name="tastingNote" value="${tastingNote}" ${
-            userPreferencesBeforeLogin?.tastingNotes === tastingNote
+            existingUserPreferences?.tastingNotes === tastingNote
               ? 'checked'
               : ''
           }>
@@ -87,7 +87,7 @@ const showParameters = userPreferencesBeforeLogin => {
         .map(
           experienceLevel => `
         <input type="radio" id="experienceLevel-${experienceLevel}" name="experienceLevel" value="${experienceLevel}" ${
-            userPreferencesBeforeLogin?.experienceLevel === experienceLevel
+            existingUserPreferences?.experienceLevel === experienceLevel
               ? 'checked'
               : ''
           } />
@@ -126,7 +126,7 @@ const getUserPreferences = () => {
     priceRangeId: priceRange,
     country: country,
     tastingNotes: tastingNote,
-    experienceLevel: experienceLevel ?? 'Novice',
+    experienceLevel: experienceLevel,
   };
 };
 
@@ -158,28 +158,25 @@ const element = document.getElementById('recommender');
 if (element) {
   await handleSignInResult();
 
-  const userPreferencesBeforeLogin = getWithExpiry('userPreferences');
+  const existingUserPreferences = getWithExpiry('userPreferences');
 
-  element.innerHTML = showParameters(userPreferencesBeforeLogin);
+  element.innerHTML = showParameters(existingUserPreferences);
 
   const isAuthenticated = getWithExpiry('token');
-  if (isAuthenticated) {
-    if (userPreferencesBeforeLogin) {
-      const whiskeyItemsResult = getWhiskeyRecommendation(
-        userPreferencesBeforeLogin,
-        abvThresholds,
-        priceRanges,
-        whiskeyTastingNotes
-      );
+  if (isAuthenticated && existingUserPreferences) {
+    const whiskeyItemsResult = getWhiskeyRecommendation(
+      existingUserPreferences,
+      abvThresholds,
+      priceRanges,
+      whiskeyTastingNotes
+    );
 
-      showResults(whiskeyItemsResult);
-    }
+    showResults(whiskeyItemsResult);
   }
 
   const recommenderBtn = document.getElementById('recommenderBtn');
   recommenderBtn.addEventListener('click', function () {
     const userPreferences = getUserPreferences();
-    setWithExpiry('userPreferences', userPreferences, twoWeeksExpiration);
 
     if (isAuthenticated) {
       const whiskeyItemsResult = getWhiskeyRecommendation(
@@ -190,15 +187,12 @@ if (element) {
       );
 
       showResults(whiskeyItemsResult);
+      remove('userPreferences');
     } else {
+      setWithExpiry('userPreferences', userPreferences, twoWeeksExpiration);
       googleSignIn();
     }
   });
-
-  const signInWithGoogleBtn = document.getElementById('signInWithGoogle');
-  if (signInWithGoogleBtn) {
-    signInWithGoogleBtn.addEventListener('click', function () {});
-  }
 
   const signOutBtn = document.getElementById('signOut');
   if (signOutBtn) {
