@@ -52,29 +52,15 @@ export const handleSignInResult = async () => {
     const result = await getRedirectResult(auth);
 
     if (result) {
-      // This gives you a Google Access Token. You can use it to access Google APIs.
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const token = credential.accessToken;
-
-      // The signed-in user info.
       const user = result.user;
 
       setWithExpiry('token', token, twoWeeksExpiration);
-
-      console.log('result', result);
-      console.log('credential', credential);
-      console.log('token', token);
-      console.log('user', user);
+      setWithExpiry('userName', user.displayName, twoWeeksExpiration);
+      setWithExpiry('userEmail', user.email, twoWeeksExpiration);
     }
   } catch (error) {
-    console.log('error', error);
-    //   const errorCode = error.code;
-    //   const errorMessage = error.message;
-    //   const email = error.customData.email;
-    //   const credential = GoogleAuthProvider.credentialFromError(error);
-    //   console.log('errorCode', errorCode);
-    //   console.log('errorMessage', errorMessage);
-    //   console.log('email', email);
-    //   console.log('credential', credential);
+    console.log('Error authenticating user:', error);
   }
 };
