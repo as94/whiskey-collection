@@ -1,6 +1,7 @@
 .main-header {
   display: flex;
   padding-left: 220px;
+  padding-right: 220px;
   box-shadow: 0 2px 8px #0000001a;
 }
 
@@ -12,38 +13,87 @@
 .menu {
   display: flex;
   flex: 4;
+  justify-content: end;
 }
 
 .menu-item {
-  padding-bottom: 5px;
-}
-
-.blog-post-list-item {
   display: flex;
   align-items: center;
   padding: 0 10px;
   text-decoration: none;
   color: var(--primary-brown);
+  margin-right: 20px;
 }
 
-.blog-post-list-item:hover {
+.menu-item:hover {
   color: var(--text-brown-medium);
 }
 
-.blog-post-list-item:hover .menu-item {
+.menu-item:hover .menu-item-content {
   border-bottom: 2px solid var(--text-brown-medium);
   padding-bottom: 3px;
+}
+
+.menu-item-content {
+  padding-bottom: 5px;
+}
+
+.sign-in-wrapper,
+.sign-out-wrapper,
+.loading-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.sign-in,
+.sign-out,
+.loading {
+  background-color: white;
+  color: var(--primary-brown);
+  border-radius: 6px;
+  border: 1px var(--primary-brown) solid;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-icon {
+  margin-right: 6px;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid var(--primary-brown);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation: spin 2s linear infinite;
+  margin-right: 6px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 1600px) {
   .main-header {
     padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .main-header {
     padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -63,6 +113,10 @@
 @media screen and (max-width: 450px) {
   .main-header {
     padding-left: 0;
+  }
+
+  .menu-item {
+    margin-right: 15px;
   }
 
   .header-logo img {
