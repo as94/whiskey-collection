@@ -50,10 +50,7 @@ export const handleSignInResult = async () => {
     return;
   }
 
-  console.log('isAuthenticated', isAuthenticated);
-
   const loginInProgress = getWithExpiry('loginInProgress');
-  console.log('loginInProgress', loginInProgress);
 
   if (loginInProgress) {
     try {
@@ -67,11 +64,9 @@ export const handleSignInResult = async () => {
         setWithExpiry('token', token, twoWeeksExpiration);
         setWithExpiry('userName', user.displayName, twoWeeksExpiration);
         setWithExpiry('userEmail', user.email, twoWeeksExpiration);
-
-        console.log('loged in');
       }
     } catch (error) {
-      console.log('Error authenticating user:', error);
+      console.error('Error authenticating user:', error);
     } finally {
       remove('loginInProgress');
     }
