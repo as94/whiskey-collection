@@ -15,11 +15,11 @@ if (element) {
   const loadingWrapper = document.querySelector('.loading-wrapper');
   loadingWrapper.style.display = 'flex';
 
-  await handleSignInResult();
+  // await handleSignInResult();
 
   loadingWrapper.style.display = 'none';
 
-  const isAuthenticated = getWithExpiry('token');
+  const isAuthenticated = getWithExpiry('userName');
 
   const signInWrapper = document.querySelector('.sign-in-wrapper');
   const signOutWrapper = document.querySelector('.sign-out-wrapper');

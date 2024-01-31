@@ -2,6 +2,7 @@ import { initializeApp } from 'firebase/app';
 import {
   getAuth,
   signInWithRedirect,
+  signInWithPopup,
   getRedirectResult,
   GoogleAuthProvider,
   signOut as signOutFirebase,
@@ -28,13 +29,48 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 auth.languageCode = auth.useDeviceLanguage();
 
+// auth.onAuthStateChanged(user => {
+//   const isAuthenticated = getWithExpiry('userName');
+//   if (isAuthenticated) {
+//     return;
+//   }
+
+//   getRedirectResult(auth)
+//     .then(result => {
+//       if (result) {
+//         const credential = GoogleAuthProvider.credentialFromResult(result);
+
+//         setWithExpiry('token', credential.accessToken, twoWeeksExpiration);
+//         setWithExpiry('userName', result.user.displayName, twoWeeksExpiration);
+//         setWithExpiry('userEmail', result.user.email, twoWeeksExpiration);
+//       } else {
+//         setWithExpiry('userName', user.displayName, twoWeeksExpiration);
+//         setWithExpiry('userEmail', user.email, twoWeeksExpiration);
+//       }
+//     })
+//     .catch(error => {
+//       console.error('Error authenticating user:', error);
+//     })
+//     .finally(() => {
+//       remove('loginInProgress');
+//     });
+// });
+
 const provider = new GoogleAuthProvider();
 provider.addScope('https://www.googleapis.com/auth/userinfo.email');
 provider.addScope('https://www.googleapis.com/auth/userinfo.profile');
 
-export const googleSignIn = () => {
-  setWithExpiry('loginInProgress', 'true', twoWeeksExpiration);
-  signInWithRedirect(auth, provider);
+export const googleSignIn = async () => {
+  // setWithExpiry('loginInProgress', 'true', twoWeeksExpiration);
+  // signInWithRedirect(auth, provider);
+
+  const result = await signInWithPopup(auth, provider);
+
+  const credential = GoogleAuthProvider.credentialFromResult(result);
+
+  setWithExpiry('token', credential.accessToken, twoWeeksExpiration);
+  setWithExpiry('userName', result.user.displayName, twoWeeksExpiration);
+  setWithExpiry('userEmail', result.user.email, twoWeeksExpiration);
 };
 
 export const signOut = () => {
@@ -43,31 +79,4 @@ export const signOut = () => {
   location.reload();
 };
 
-export const handleSignInResult = async () => {
-  const isAuthenticated = getWithExpiry('token');
-  if (isAuthenticated) {
-    return;
-  }
-
-  const loginInProgress = getWithExpiry('loginInProgress');
-
-  if (loginInProgress) {
-    try {
-      const result = await getRedirectResult(auth);
-
-      if (result) {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        const user = result.user;
-
-        setWithExpiry('token', token, twoWeeksExpiration);
-        setWithExpiry('userName', user.displayName, twoWeeksExpiration);
-        setWithExpiry('userEmail', user.email, twoWeeksExpiration);
-      }
-    } catch (error) {
-      console.error('Error authenticating user:', error);
-    } finally {
-      remove('loginInProgress');
-    }
-  }
-};
+export const handleSignInResult = async () => {};

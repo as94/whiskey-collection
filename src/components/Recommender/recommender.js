@@ -97,7 +97,7 @@ const showParameters = existingUserPreferences => {
     )
     .replace(
       '${signOut}',
-      getWithExpiry('token')
+      getWithExpiry('userName')
         ? '<input id="signOut" type="button" value="Sign Out" />'
         : ''
     );
@@ -162,7 +162,7 @@ if (element) {
 
   element.innerHTML = showParameters(existingUserPreferences);
 
-  const isAuthenticated = getWithExpiry('token');
+  const isAuthenticated = getWithExpiry('userName');
   if (isAuthenticated && existingUserPreferences) {
     const whiskeyItemsResult = getWhiskeyRecommendation(
       existingUserPreferences,
