@@ -10,6 +10,7 @@ import {
   setWithExpiry,
   getWithExpiry,
   twoWeeksExpiration,
+  remove,
 } from './localStorage';
 
 // move to secrets
@@ -33,6 +34,7 @@ provider.addScope('https://www.googleapis.com/auth/userinfo.email');
 provider.addScope('https://www.googleapis.com/auth/userinfo.profile');
 
 export const googleSignIn = () => {
+  setWithExpiry('loginInProgress', 'true', twoWeeksExpiration);
   signInWithRedirect(auth, provider);
 };
 
@@ -48,19 +50,30 @@ export const handleSignInResult = async () => {
     return;
   }
 
-  try {
-    const result = await getRedirectResult(auth);
+  console.log('isAuthenticated', isAuthenticated);
 
-    if (result) {
-      const credential = GoogleAuthProvider.credentialFromResult(result);
-      const token = credential.accessToken;
-      const user = result.user;
+  const loginInProgress = getWithExpiry('loginInProgress');
+  console.log('loginInProgress', loginInProgress);
 
-      setWithExpiry('token', token, twoWeeksExpiration);
-      setWithExpiry('userName', user.displayName, twoWeeksExpiration);
-      setWithExpiry('userEmail', user.email, twoWeeksExpiration);
+  if (loginInProgress) {
+    try {
+      const result = await getRedirectResult(auth);
+
+      if (result) {
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        const user = result.user;
+
+        setWithExpiry('token', token, twoWeeksExpiration);
+        setWithExpiry('userName', user.displayName, twoWeeksExpiration);
+        setWithExpiry('userEmail', user.email, twoWeeksExpiration);
+
+        console.log('loged in');
+      }
+    } catch (error) {
+      console.log('Error authenticating user:', error);
+    } finally {
+      remove('loginInProgress');
     }
-  } catch (error) {
-    console.log('Error authenticating user:', error);
   }
 };
