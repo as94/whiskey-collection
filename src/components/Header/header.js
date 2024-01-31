@@ -12,29 +12,29 @@ import {
 const element = document.getElementById('mainHeader');
 if (element) {
   element.innerHTML = headerContent;
-  const loadingWrapper = document.querySelector('.loading-wrapper');
-  loadingWrapper.style.display = 'flex';
+  // const loadingWrapper = document.querySelector('.loading-wrapper');
+  // loadingWrapper.style.display = 'flex';
 
-  // await handleSignInResult();
+  // // await handleSignInResult();
 
-  loadingWrapper.style.display = 'none';
+  // loadingWrapper.style.display = 'none';
 
-  const isAuthenticated = getWithExpiry('userName');
+  // const isAuthenticated = getWithExpiry('userName');
 
-  const signInWrapper = document.querySelector('.sign-in-wrapper');
-  const signOutWrapper = document.querySelector('.sign-out-wrapper');
+  // const signInWrapper = document.querySelector('.sign-in-wrapper');
+  // const signOutWrapper = document.querySelector('.sign-out-wrapper');
 
-  if (isAuthenticated) {
-    signOutWrapper.style.display = 'flex';
-  } else {
-    signInWrapper.style.display = 'flex';
-  }
+  // if (isAuthenticated) {
+  //   signOutWrapper.style.display = 'flex';
+  // } else {
+  //   signInWrapper.style.display = 'flex';
+  // }
 
-  signInWrapper.addEventListener('click', function () {
-    googleSignIn();
-  });
+  // signInWrapper.addEventListener('click', function () {
+  //   googleSignIn();
+  // });
 
-  signOutWrapper.addEventListener('click', function () {
-    signOut();
-  });
+  // signOutWrapper.addEventListener('click', function () {
+  //   signOut();
+  // });
 }
