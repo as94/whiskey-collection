@@ -13,7 +13,6 @@ import {
   remove,
 } from './localStorage';
 
-// move to secrets
 const firebaseConfig = {
   apiKey: 'AIzaSyAMb_3E4JAzBpXXXZs-K64XcRDE_rySA-Q',
   authDomain: 'whiskey-collection-6a699.firebaseapp.com',
