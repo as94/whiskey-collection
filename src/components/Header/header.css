@@ -1,6 +1,7 @@
 .main-header {
   display: flex;
   padding-left: 220px;
+  padding-right: 220px;
   box-shadow: 0 2px 8px #0000001a;
 }
 
@@ -12,6 +13,7 @@
 .menu {
   display: flex;
   flex: 4;
+  justify-content: end;
 }
 
 .menu-item {
@@ -20,7 +22,7 @@
   padding: 0 10px;
   text-decoration: none;
   color: var(--primary-brown);
-  margin: 0 20px;
+  margin-right: 20px;
 }
 
 .menu-item:hover {
@@ -36,15 +38,39 @@
   padding-bottom: 5px;
 }
 
+.sign-in-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.sign-in {
+  background-color: white;
+  color: var(--primary-brown);
+  border-radius: 6px;
+  border: 1px var(--primary-brown) solid;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in img {
+  margin-right: 6px;
+}
+
 @media screen and (max-width: 1600px) {
   .main-header {
     padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .main-header {
     padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -64,6 +90,10 @@
 @media screen and (max-width: 450px) {
   .main-header {
     padding-left: 0;
+  }
+
+  .menu-item {
+    margin-right: 15px;
   }
 
   .header-logo img {
