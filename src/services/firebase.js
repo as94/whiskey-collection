@@ -26,7 +26,7 @@ const provider = new GoogleAuthProvider();
 provider.addScope('https://www.googleapis.com/auth/userinfo.email');
 provider.addScope('https://www.googleapis.com/auth/userinfo.profile');
 
-export const googleSignIn = async () => {
+export const googleSignIn = async callbackAction => {
   const result = await signInWithPopup(auth, provider);
 
   const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -35,11 +35,16 @@ export const googleSignIn = async () => {
   setWithExpiry('userName', result.user.displayName, twoWeeksExpiration);
   setWithExpiry('userEmail', result.user.email, twoWeeksExpiration);
 
-  location.reload();
+  if (callbackAction) {
+    callbackAction();
+  }
 };
 
-export const signOut = () => {
+export const signOut = callbackAction => {
   signOutFirebase(auth);
   window.localStorage.clear();
-  location.reload();
+
+  if (callbackAction) {
+    callbackAction();
+  }
 };

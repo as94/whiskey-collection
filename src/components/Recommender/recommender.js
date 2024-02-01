@@ -1,11 +1,7 @@
 import recommenderContent from './recommender.html';
 import './recommender.css';
 import { getWhiskeyRecommendation } from '../../services/recommendation.js';
-import {
-  googleSignIn,
-  signOut,
-  handleSignInResult,
-} from '../../services/firebase.js';
+import { googleSignIn, signOut } from '../../services/firebase.js';
 import { getParameters } from './parameters.js';
 import {
   setWithExpiry,
@@ -156,7 +152,8 @@ const showResults = whiskeyItemsResult => {
 
 const element = document.getElementById('recommender');
 if (element) {
-  await handleSignInResult();
+  // TODO: rewrite
+  // await handleSignInResult();
 
   const existingUserPreferences = getWithExpiry('userPreferences');
 
