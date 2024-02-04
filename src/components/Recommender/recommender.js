@@ -15,16 +15,16 @@ const nextQuestion = id => {
   const nextElement = document.getElementById(`question-${id + 1}`);
 
   if (currentElement && nextElement) {
-    currentElement.classList.add('slide-left-animation');
+    currentElement.classList.add('slide-left-continue-animation');
 
     setTimeout(() => {
       nextElement.classList.remove('hidden');
       currentElement.classList.add('hidden');
-      currentElement.classList.remove('slide-left-animation');
-      nextElement.classList.add('slide-right-animation');
+      currentElement.classList.remove('slide-left-continue-animation');
+      nextElement.classList.add('slide-right-continue-animation');
 
       setTimeout(() => {
-        nextElement.classList.remove('slide-right-animation');
+        nextElement.classList.remove('slide-right-continue-animation');
       }, 500);
     }, 400);
   }
@@ -35,16 +35,17 @@ const prevQuestion = id => {
   const currentElement = document.getElementById(`question-${id}`);
 
   if (currentElement && prevElement) {
-    // currentElement.classList.add('slide-right-animation');
-    //   setTimeout(() => {
-    //     prevElement.classList.remove('hidden');
-    //     currentElement.classList.add('hidden');
-    //     currentElement.classList.remove('slide-right-animation');
-    //     prevElement.classList.add('slide-left-animation');
-    //     setTimeout(() => {
-    //       prevElement.classList.remove('slide-left-animation');
-    //     }, 500);
-    //   }, 400);
+    currentElement.classList.add('slide-left-back-animation');
+    setTimeout(() => {
+      prevElement.classList.remove('hidden');
+      currentElement.classList.add('hidden');
+      currentElement.classList.remove('slide-left-back-animation');
+      prevElement.classList.add('slide-right-back-animation');
+
+      setTimeout(() => {
+        prevElement.classList.remove('slide-right-back-animation');
+      }, 500);
+    }, 400);
   }
 };
 
@@ -218,7 +219,7 @@ if (element) {
   //   }
   // });
 
-  for (let id = 1; id <= 4; id++) {
+  for (let id = 1; id <= 5; id++) {
     const continueBtn = document.querySelector(`#question-${id} .continue-btn`);
     if (continueBtn) {
       continueBtn.addEventListener('click', function (e) {
@@ -226,9 +227,7 @@ if (element) {
         nextQuestion(id);
       });
     }
-  }
 
-  for (let id = 1; id <= 4; id++) {
     const backBtn = document.querySelector(`#question-${id} .back-btn`);
     if (backBtn) {
       backBtn.addEventListener('click', function (e) {
