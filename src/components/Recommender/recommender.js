@@ -10,6 +10,26 @@ import {
   remove,
 } from '../../services/localStorage';
 
+const nextQuestion = id => {
+  const currentElement = document.getElementById(`question-${id}`);
+  const nextElement = document.getElementById(`question-${id + 1}`);
+
+  if (currentElement && nextElement) {
+    currentElement.classList.add('slide-left-animation');
+
+    setTimeout(() => {
+      nextElement.classList.remove('hidden');
+      currentElement.classList.add('hidden');
+      currentElement.classList.remove('slide-left-animation');
+      nextElement.classList.add('slide-right-animation');
+
+      setTimeout(() => {
+        nextElement.classList.remove('slide-right-animation');
+      }, 500);
+    }, 400);
+  }
+};
+
 const {
   abvs,
   priceRanges,
@@ -26,10 +46,9 @@ const showParameters = existingUserPreferences => {
       abvs
         .map(
           abv => `
-        <input type="radio" id="abv-${abv}" name="abv" value="${abv}" ${
+        <label class="answer" for="abv-${abv}"> <input type="radio" id="abv-${abv}" name="abv" value="${abv}" ${
             existingUserPreferences?.abv === abv ? 'checked' : ''
-          } />
-        <label for="abv">${abv}</label><br />`
+          } /><span>${abv}</span></label>`
         )
         .join('')
     )
@@ -38,16 +57,15 @@ const showParameters = existingUserPreferences => {
       priceRanges
         .map(
           priceRange => `
-        <input type="radio" id="priceRange-${
+        <label class="answer" for="priceRange-${
           priceRange.id
-        }" name="priceRange" value="${priceRange.id}" ${
+        }"> <input type="radio" id="priceRange-${
+            priceRange.id
+          }" name="priceRange" value="${priceRange.id}" ${
             parseInt(existingUserPreferences?.priceRangeId) === priceRange.id
               ? 'checked'
               : ''
-          } />
-        <label for="priceRange">$${priceRange.min} - $${
-            priceRange.max
-          }</label><br />`
+          } /> <span>$${priceRange.min} - $${priceRange.max}</span></label>`
         )
         .join('')
     )
@@ -90,12 +108,6 @@ const showParameters = existingUserPreferences => {
         <label for="experienceLevel">${experienceLevel}</label><br />`
         )
         .join('')
-    )
-    .replace(
-      '${signOut}',
-      getWithExpiry('userName')
-        ? '<input id="signOut" type="button" value="Sign Out" />'
-        : ''
     );
 };
 
@@ -159,42 +171,45 @@ if (element) {
 
   element.innerHTML = showParameters(existingUserPreferences);
 
-  const isAuthenticated = getWithExpiry('userName');
-  if (isAuthenticated && existingUserPreferences) {
-    const whiskeyItemsResult = getWhiskeyRecommendation(
-      existingUserPreferences,
-      abvThresholds,
-      priceRanges,
-      whiskeyTastingNotes
-    );
+  // const isAuthenticated = getWithExpiry('userName');
+  // if (isAuthenticated && existingUserPreferences) {
+  //   const whiskeyItemsResult = getWhiskeyRecommendation(
+  //     existingUserPreferences,
+  //     abvThresholds,
+  //     priceRanges,
+  //     whiskeyTastingNotes
+  //   );
 
-    showResults(whiskeyItemsResult);
-  }
+  //   showResults(whiskeyItemsResult);
+  // }
 
-  const recommenderBtn = document.getElementById('recommenderBtn');
-  recommenderBtn.addEventListener('click', function () {
-    const userPreferences = getUserPreferences();
+  // const recommenderBtn = document.getElementById('recommenderBtn');
+  // recommenderBtn.addEventListener('click', function () {
+  //   const userPreferences = getUserPreferences();
 
-    if (isAuthenticated) {
-      const whiskeyItemsResult = getWhiskeyRecommendation(
-        userPreferences,
-        abvThresholds,
-        priceRanges,
-        whiskeyTastingNotes
-      );
+  //   if (isAuthenticated) {
+  //     const whiskeyItemsResult = getWhiskeyRecommendation(
+  //       userPreferences,
+  //       abvThresholds,
+  //       priceRanges,
+  //       whiskeyTastingNotes
+  //     );
 
-      showResults(whiskeyItemsResult);
-      remove('userPreferences');
-    } else {
-      setWithExpiry('userPreferences', userPreferences, twoWeeksExpiration);
-      googleSignIn();
+  //     showResults(whiskeyItemsResult);
+  //     remove('userPreferences');
+  //   } else {
+  //     setWithExpiry('userPreferences', userPreferences, twoWeeksExpiration);
+  //     googleSignIn();
+  //   }
+  // });
+
+  for (let id = 1; id <= 2; id++) {
+    const continueBtn = document.querySelector(`#question-${id} button`);
+    if (continueBtn) {
+      continueBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        nextQuestion(id);
+      });
     }
-  });
-
-  const signOutBtn = document.getElementById('signOut');
-  if (signOutBtn) {
-    signOutBtn.addEventListener('click', function () {
-      signOut();
-    });
   }
 }

@@ -1,13 +1,21 @@
 <div class="recommender-content" data-no-select>
-  <h1 class="h1 title">Whiskey Recommender</h1>
-  <form>
-    <p>Select your preffered alcohol by volume (ABV)</p>
-    ${abvs}
-    <br />
+  <form class="question-container" id="questionContainer">
+    <div class="question-block" id="question-1">
+      <p class="question-text">What strength of drink do you prefer?</p>
+      ${abvs}
 
-    <p>Select your preffered price range</p>
-    ${priceRanges}
-    <br />
+      <button class="body-medium">Continue</button>
+    </div>
+
+    <div class="question-block hidden" id="question-2">
+      <p class="question-text">What price of drink do you prefer?</p>
+      ${priceRanges}
+
+      <button class="body-medium">Continue</button>
+    </div>
+  </form>
+  <!--
+  <form>
 
     <p>Select your preffered country</p>
     ${countries}
@@ -23,12 +31,10 @@
 
     <button id="recommenderBtn">Get result</button>
     <br />
-    <br />
-    ${signOut}
   </form>
 
   <br />
 
   <ul id="recommendationResult"></ul>
-  <br />
+  <br /> -->
 </div>
