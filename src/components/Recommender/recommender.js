@@ -9,6 +9,7 @@ import {
   twoWeeksExpiration,
   remove,
 } from '../../services/localStorage';
+import { authCallbackAction } from '../Header/header.js';
 
 const nextQuestion = id => {
   const currentElement = document.getElementById(`question-${id}`);
@@ -187,37 +188,51 @@ if (element) {
 
   element.innerHTML = showParameters(existingUserPreferences);
 
-  // const isAuthenticated = getWithExpiry('userName');
-  // if (isAuthenticated && existingUserPreferences) {
-  //   const whiskeyItemsResult = getWhiskeyRecommendation(
-  //     existingUserPreferences,
-  //     abvThresholds,
-  //     priceRanges,
-  //     whiskeyTastingNotes
-  //   );
+  const isAuthenticated = getWithExpiry('userName');
+  if (isAuthenticated && existingUserPreferences) {
+    const whiskeyItemsResult = getWhiskeyRecommendation(
+      existingUserPreferences,
+      abvThresholds,
+      priceRanges,
+      whiskeyTastingNotes
+    );
 
-  //   showResults(whiskeyItemsResult);
-  // }
+    showResults(whiskeyItemsResult);
+  }
 
-  // const recommenderBtn = document.getElementById('recommenderBtn');
-  // recommenderBtn.addEventListener('click', function () {
-  //   const userPreferences = getUserPreferences();
+  const recommenderBtn = document.getElementById('recommenderBtn');
+  if (recommenderBtn) {
+    recommenderBtn.addEventListener('click', function () {
+      const userPreferences = getUserPreferences();
 
-  //   if (isAuthenticated) {
-  //     const whiskeyItemsResult = getWhiskeyRecommendation(
-  //       userPreferences,
-  //       abvThresholds,
-  //       priceRanges,
-  //       whiskeyTastingNotes
-  //     );
+      if (isAuthenticated) {
+        const whiskeyItemsResult = getWhiskeyRecommendation(
+          userPreferences,
+          abvThresholds,
+          priceRanges,
+          whiskeyTastingNotes
+        );
 
-  //     showResults(whiskeyItemsResult);
-  //     remove('userPreferences');
-  //   } else {
-  //     setWithExpiry('userPreferences', userPreferences, twoWeeksExpiration);
-  //     googleSignIn();
-  //   }
-  // });
+        showResults(whiskeyItemsResult);
+        remove('userPreferences');
+      } else {
+        setWithExpiry('userPreferences', userPreferences, twoWeeksExpiration);
+        googleSignIn(() => {
+          authCallbackAction();
+          const userPreferences = getUserPreferences();
+
+          const whiskeyItemsResult = getWhiskeyRecommendation(
+            userPreferences,
+            abvThresholds,
+            priceRanges,
+            whiskeyTastingNotes
+          );
+
+          showResults(whiskeyItemsResult);
+        });
+      }
+    });
+  }
 
   for (let id = 1; id <= 5; id++) {
     const continueBtn = document.querySelector(`#question-${id} .continue-btn`);
