@@ -1,33 +1,50 @@
 <div class="recommender-content" data-no-select>
   <form class="question-container" id="questionContainer">
     <div class="question-block" id="question-1">
-      <p class="question-text">What strength of drink do you prefer?</p>
+      <p class="question-text">What strength of the drink do you prefer?</p>
       ${abvs}
 
-      <button class="body-medium">Continue</button>
+      <button class="continue-btn body-medium">Continue</button>
     </div>
 
     <div class="question-block hidden" id="question-2">
-      <p class="question-text">What price of drink do you prefer?</p>
+      <p class="question-text">What price of the drink do you prefer?</p>
       ${priceRanges}
 
-      <button class="body-medium">Continue</button>
+      <button class="continue-btn body-medium">Continue</button>
+      <button class="back-btn body-medium">Back</button>
+    </div>
+
+    <div class="question-block hidden" id="question-3">
+      <p class="question-text">What country of the drink do you prefer?</p>
+      ${countries}
+
+      <button class="continue-btn body-medium">Continue</button>
+      <button class="back-btn body-medium">Back</button>
+    </div>
+
+    <div class="question-block hidden" id="question-4">
+      <p class="question-text">
+        What tasting notes of the drink do you prefer?
+      </p>
+      ${tastingNotes}
+
+      <button class="continue-btn body-medium">Continue</button>
+      <button class="back-btn body-medium">Back</button>
+    </div>
+
+    <div class="question-block hidden" id="question-5">
+      <p class="question-text">What is your level of whiskey expertise?</p>
+      ${experienceLevels}
+
+      <button class="continue-btn body-medium">
+        Continue with Google to learn results
+      </button>
+      <button class="back-btn body-medium">Back</button>
     </div>
   </form>
   <!--
   <form>
-
-    <p>Select your preffered country</p>
-    ${countries}
-    <br />
-
-    <p>Select your preffered tasting notes</p>
-    ${tastingNotes}
-    <br />
-
-    <p>Select your whiskey experience level</p>
-    ${experienceLevels}
-    <br />
 
     <button id="recommenderBtn">Get result</button>
     <br />

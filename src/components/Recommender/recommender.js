@@ -30,6 +30,24 @@ const nextQuestion = id => {
   }
 };
 
+const prevQuestion = id => {
+  const prevElement = document.getElementById(`question-${id - 1}`);
+  const currentElement = document.getElementById(`question-${id}`);
+
+  if (currentElement && prevElement) {
+    // currentElement.classList.add('slide-right-animation');
+    //   setTimeout(() => {
+    //     prevElement.classList.remove('hidden');
+    //     currentElement.classList.add('hidden');
+    //     currentElement.classList.remove('slide-right-animation');
+    //     prevElement.classList.add('slide-left-animation');
+    //     setTimeout(() => {
+    //       prevElement.classList.remove('slide-left-animation');
+    //     }, 500);
+    //   }, 400);
+  }
+};
+
 const {
   abvs,
   priceRanges,
@@ -74,10 +92,9 @@ const showParameters = existingUserPreferences => {
       countries
         .map(
           country => `
-        <input type="radio" id="countries-${country}" name="country" value="${country}" ${
+        <label class="answer" for="countries-${country}"><input type="radio" id="countries-${country}" name="country" value="${country}" ${
             existingUserPreferences?.country === country ? 'checked' : ''
-          } />
-        <label for="country">${country}</label><br />`
+          } /><span>${country}</span></label>`
         )
         .join('')
     )
@@ -86,12 +103,11 @@ const showParameters = existingUserPreferences => {
       Object.keys(whiskeyTastingNotes)
         .map(
           tastingNote => `
-        <input type="radio" id="tastingNote-${tastingNote}" name="tastingNote" value="${tastingNote}" ${
+        <label class="answer" for="tastingNote-${tastingNote}">  <input type="radio" id="tastingNote-${tastingNote}" name="tastingNote" value="${tastingNote}" ${
             existingUserPreferences?.tastingNotes === tastingNote
               ? 'checked'
               : ''
-          }>
-        <label for="tastingNote">${tastingNote}</label><br>`
+          }><span>${tastingNote}</span></label>`
         )
         .join('')
     )
@@ -100,12 +116,11 @@ const showParameters = existingUserPreferences => {
       experienceLevels
         .map(
           experienceLevel => `
-        <input type="radio" id="experienceLevel-${experienceLevel}" name="experienceLevel" value="${experienceLevel}" ${
+        <label class="answer" for="experienceLevel-${experienceLevel}">  <input type="radio" id="experienceLevel-${experienceLevel}" name="experienceLevel" value="${experienceLevel}" ${
             existingUserPreferences?.experienceLevel === experienceLevel
               ? 'checked'
               : ''
-          } />
-        <label for="experienceLevel">${experienceLevel}</label><br />`
+          } /><span>${experienceLevel}</span></label>`
         )
         .join('')
     );
@@ -203,12 +218,22 @@ if (element) {
   //   }
   // });
 
-  for (let id = 1; id <= 2; id++) {
-    const continueBtn = document.querySelector(`#question-${id} button`);
+  for (let id = 1; id <= 4; id++) {
+    const continueBtn = document.querySelector(`#question-${id} .continue-btn`);
     if (continueBtn) {
       continueBtn.addEventListener('click', function (e) {
         e.preventDefault();
         nextQuestion(id);
+      });
+    }
+  }
+
+  for (let id = 1; id <= 4; id++) {
+    const backBtn = document.querySelector(`#question-${id} .back-btn`);
+    if (backBtn) {
+      backBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        prevQuestion(id);
       });
     }
   }

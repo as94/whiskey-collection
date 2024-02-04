@@ -56,9 +56,24 @@
   background-color: #c4ddd1;
 }
 
-.question-block button {
+.question-block .continue-btn {
   background-color: #117243;
   color: white;
+
+  font-size: 18px;
+  line-height: 140%;
+  width: 23%;
+
+  padding: 18px 0;
+  border-radius: 6px;
+}
+
+.question-block .back-btn {
+  background-color: white;
+  color: var(--primary-brown);
+  border-radius: 6px;
+  border: 1px #117243 solid;
+  margin-top: 20px;
 
   font-size: 18px;
   line-height: 140%;
