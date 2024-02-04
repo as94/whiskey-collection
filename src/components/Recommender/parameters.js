@@ -237,9 +237,13 @@ export const getParameters = async () => {
 
   const priceRanges = [
     { id: 1, min: 0, max: priceLowTreshold },
-    { id: 2, min: priceLowTreshold, max: priceMediumTreshold },
-    { id: 3, min: priceMediumTreshold, max: priceHighTreshold },
-    { id: 4, min: priceHighTreshold, max: priceValues[priceValues.length - 1] },
+    { id: 2, min: priceLowTreshold + 1, max: priceMediumTreshold },
+    { id: 3, min: priceMediumTreshold + 1, max: priceHighTreshold },
+    {
+      id: 4,
+      min: priceHighTreshold + 1,
+      max: priceValues[priceValues.length - 1],
+    },
   ];
 
   return {
