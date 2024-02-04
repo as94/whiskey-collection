@@ -76,6 +76,7 @@ module.exports = (_, argv) => {
         patterns: [
           { from: './assets/images', to: './assets/images' },
           { from: './assets/posts', to: './assets/posts' },
+          { from: './assets/icons', to: './assets/icons' },
           { from: './assets/whiskey.json', to: './assets/whiskey.json' },
           { from: './robots.txt' },
           { from: './sitemap.xml' },

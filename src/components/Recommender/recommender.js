@@ -1,14 +1,9 @@
 import recommenderContent from './recommender.html';
 import './recommender.css';
 import { getWhiskeyRecommendation } from '../../services/recommendation.js';
-import { googleSignIn, signOut } from '../../services/firebase.js';
+import { googleSignIn } from '../../services/firebase.js';
 import { getParameters } from './parameters.js';
-import {
-  setWithExpiry,
-  getWithExpiry,
-  twoWeeksExpiration,
-  remove,
-} from '../../services/localStorage';
+import { getWithExpiry } from '../../services/localStorage';
 import { authCallbackAction } from '../Header/header.js';
 
 const nextQuestion = id => {
@@ -59,16 +54,14 @@ const {
   abvThresholds,
 } = await getParameters();
 
-const showParameters = existingUserPreferences => {
+const showParameters = () => {
   return recommenderContent
     .replace(
       '${abvs}',
       abvs
         .map(
           abv => `
-        <label class="answer" for="abv-${abv}"> <input type="radio" id="abv-${abv}" name="abv" value="${abv}" ${
-            existingUserPreferences?.abv === abv ? 'checked' : ''
-          } /><span>${abv}</span></label>`
+        <label class="answer" for="abv-${abv}"> <input type="radio" id="abv-${abv}" name="abv" value="${abv}" /><span>${abv}</span></label>`
         )
         .join('')
     )
@@ -77,15 +70,7 @@ const showParameters = existingUserPreferences => {
       priceRanges
         .map(
           priceRange => `
-        <label class="answer" for="priceRange-${
-          priceRange.id
-        }"> <input type="radio" id="priceRange-${
-            priceRange.id
-          }" name="priceRange" value="${priceRange.id}" ${
-            parseInt(existingUserPreferences?.priceRangeId) === priceRange.id
-              ? 'checked'
-              : ''
-          } /> <span>$${priceRange.min} - $${priceRange.max}</span></label>`
+        <label class="answer" for="priceRange-${priceRange.id}"> <input type="radio" id="priceRange-${priceRange.id}" name="priceRange" value="${priceRange.id}"  /> <span>$${priceRange.min} - $${priceRange.max}</span></label>`
         )
         .join('')
     )
@@ -94,9 +79,7 @@ const showParameters = existingUserPreferences => {
       countries
         .map(
           country => `
-        <label class="answer" for="countries-${country}"><input type="radio" id="countries-${country}" name="country" value="${country}" ${
-            existingUserPreferences?.country === country ? 'checked' : ''
-          } /><span>${country}</span></label>`
+        <label class="answer" for="countries-${country}"><input type="radio" id="countries-${country}" name="country" value="${country}" /><span>${country}</span></label>`
         )
         .join('')
     )
@@ -105,11 +88,7 @@ const showParameters = existingUserPreferences => {
       Object.keys(whiskeyTastingNotes)
         .map(
           tastingNote => `
-        <label class="answer" for="tastingNote-${tastingNote}">  <input type="radio" id="tastingNote-${tastingNote}" name="tastingNote" value="${tastingNote}" ${
-            existingUserPreferences?.tastingNotes === tastingNote
-              ? 'checked'
-              : ''
-          }><span>${tastingNote}</span></label>`
+        <label class="answer" for="tastingNote-${tastingNote}">  <input type="radio" id="tastingNote-${tastingNote}" name="tastingNote" value="${tastingNote}"><span>${tastingNote}</span></label>`
         )
         .join('')
     )
@@ -118,11 +97,7 @@ const showParameters = existingUserPreferences => {
       experienceLevels
         .map(
           experienceLevel => `
-        <label class="answer" for="experienceLevel-${experienceLevel}">  <input type="radio" id="experienceLevel-${experienceLevel}" name="experienceLevel" value="${experienceLevel}" ${
-            existingUserPreferences?.experienceLevel === experienceLevel
-              ? 'checked'
-              : ''
-          } /><span>${experienceLevel}</span></label>`
+        <label class="answer" for="experienceLevel-${experienceLevel}">  <input type="radio" id="experienceLevel-${experienceLevel}" name="experienceLevel" value="${experienceLevel}" /><span>${experienceLevel}</span></label>`
         )
         .join('')
     );
@@ -181,30 +156,33 @@ const showResults = whiskeyItemsResult => {
 
 const element = document.getElementById('recommender');
 if (element) {
-  // TODO: rewrite
-  // await handleSignInResult();
-
-  const existingUserPreferences = getWithExpiry('userPreferences');
-
-  element.innerHTML = showParameters(existingUserPreferences);
-
-  const isAuthenticated = getWithExpiry('userName');
-  if (isAuthenticated && existingUserPreferences) {
-    const whiskeyItemsResult = getWhiskeyRecommendation(
-      existingUserPreferences,
-      abvThresholds,
-      priceRanges,
-      whiskeyTastingNotes
-    );
-
-    showResults(whiskeyItemsResult);
-  }
+  element.innerHTML = showParameters();
 
   const recommenderBtn = document.getElementById('recommenderBtn');
   if (recommenderBtn) {
+    let isAuthenticated = getWithExpiry('userName');
+
+    if (isAuthenticated) {
+      recommenderBtn.textContent = 'Learn results';
+    } else {
+      const textBefore = document.createElement('span');
+      textBefore.textContent = 'Continue with';
+      const img = document.createElement('img');
+      img.src = '../../assets/icons/google.svg';
+      img.title = 'Google icon';
+      img.alt = 'Google icon';
+      const textAfter = document.createElement('span');
+      textAfter.textContent = 'to learn results';
+
+      recommenderBtn.appendChild(textBefore);
+      recommenderBtn.appendChild(img);
+      recommenderBtn.appendChild(textAfter);
+    }
+
     recommenderBtn.addEventListener('click', function () {
       const userPreferences = getUserPreferences();
 
+      isAuthenticated = getWithExpiry('userName');
       if (isAuthenticated) {
         const whiskeyItemsResult = getWhiskeyRecommendation(
           userPreferences,
@@ -214,13 +192,9 @@ if (element) {
         );
 
         showResults(whiskeyItemsResult);
-        remove('userPreferences');
       } else {
-        setWithExpiry('userPreferences', userPreferences, twoWeeksExpiration);
         googleSignIn(() => {
           authCallbackAction();
-          const userPreferences = getUserPreferences();
-
           const whiskeyItemsResult = getWhiskeyRecommendation(
             userPreferences,
             abvThresholds,

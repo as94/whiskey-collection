@@ -134,3 +134,13 @@
     transform: translateX(0);
   }
 }
+
+#recommenderBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#recommenderBtn > img {
+  margin: 0 5px;
+}
