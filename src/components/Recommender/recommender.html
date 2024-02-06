@@ -1,49 +1,51 @@
 <div class="recommender-content" data-no-select>
-  <form class="question-container" id="questionContainer">
-    <div class="question-block" id="question-1">
-      <p class="question-text">What strength of the drink do you prefer?</p>
+  <form class="slider-container" id="sliderContainer">
+    <div class="slider-block" id="slider-1">
+      <p class="slider-text">What strength of the drink do you prefer?</p>
       ${abvs}
 
       <button class="continue-btn body-medium">Continue</button>
     </div>
 
-    <div class="question-block hidden" id="question-2">
-      <p class="question-text">What price of the drink do you prefer?</p>
+    <div class="slider-block hidden" id="slider-2">
+      <p class="slider-text">What price of the drink do you prefer?</p>
       ${priceRanges}
 
       <button class="continue-btn body-medium">Continue</button>
       <button class="back-btn body-medium">Back</button>
     </div>
 
-    <div class="question-block hidden" id="question-3">
-      <p class="question-text">What country of the drink do you prefer?</p>
+    <div class="slider-block hidden" id="slider-3">
+      <p class="slider-text">What country of the drink do you prefer?</p>
       ${countries}
 
       <button class="continue-btn body-medium">Continue</button>
       <button class="back-btn body-medium">Back</button>
     </div>
 
-    <div class="question-block hidden" id="question-4">
-      <p class="question-text">
-        What tasting notes of the drink do you prefer?
-      </p>
+    <div class="slider-block hidden" id="slider-4">
+      <p class="slider-text">What tasting notes of the drink do you prefer?</p>
       ${tastingNotes}
 
       <button class="continue-btn body-medium">Continue</button>
       <button class="back-btn body-medium">Back</button>
     </div>
 
-    <div class="question-block hidden" id="question-5">
-      <p class="question-text">What is your level of whiskey expertise?</p>
+    <div class="slider-block hidden" id="slider-5">
+      <p class="slider-text">What is your level of whiskey expertise?</p>
       ${experienceLevels}
 
       <button id="recommenderBtn" class="continue-btn body-medium"></button>
       <button class="back-btn body-medium">Back</button>
     </div>
+
+    <div class="slider-block hidden" id="slider-6">
+      <p class="slider-text">We collected whiskey for you</p>
+      <div class="catalog" id="recommendationResult"></div>
+
+      <button id="tryAgainBtn" class="try-again-btn body-medium">
+        Try again
+      </button>
+    </div>
   </form>
-
-  <br />
-
-  <ul id="recommendationResult"></ul>
-  <br />
 </div>

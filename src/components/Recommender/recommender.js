@@ -5,10 +5,12 @@ import { googleSignIn } from '../../services/firebase.js';
 import { getParameters } from './parameters.js';
 import { getWithExpiry } from '../../services/localStorage';
 import { authCallbackAction } from '../Header/header.js';
+import '../Catalog/catalog.css';
+import { generateCatalogRows } from '../Catalog/catalog.js';
 
 const nextQuestion = id => {
-  const currentElement = document.getElementById(`question-${id}`);
-  const nextElement = document.getElementById(`question-${id + 1}`);
+  const currentElement = document.getElementById(`slider-${id}`);
+  const nextElement = document.getElementById(`slider-${id + 1}`);
 
   if (currentElement && nextElement) {
     currentElement.classList.add('slide-left-continue-animation');
@@ -27,8 +29,8 @@ const nextQuestion = id => {
 };
 
 const prevQuestion = id => {
-  const prevElement = document.getElementById(`question-${id - 1}`);
-  const currentElement = document.getElementById(`question-${id}`);
+  const prevElement = document.getElementById(`slider-${id - 1}`);
+  const currentElement = document.getElementById(`slider-${id}`);
 
   if (currentElement && prevElement) {
     currentElement.classList.add('slide-left-back-animation');
@@ -136,21 +138,9 @@ const showResults = whiskeyItemsResult => {
   );
 
   if (recommendationResultElement) {
-    const parent = recommendationResultElement.parentNode;
-    const newList = document.createElement('ul');
-    newList.id = 'recommendationResult';
+    const whiskeyItems = whiskeyItemsResult.map(x => x.whiskeyItem);
 
-    for (const item of whiskeyItemsResult) {
-      const li = document.createElement('li');
-      li.textContent = `${item.whiskeyItem.Name.replace(' Review', '')}, ${
-        item.whiskeyItem.ABV
-      }, ${item.whiskeyItem.Country}, ${item.whiskeyItem.Price}, ${
-        item.whiskeyItem.TastingNotes
-      } - ${item.score}`;
-      newList.appendChild(li);
-    }
-
-    parent.replaceChild(newList, recommendationResultElement);
+    recommendationResultElement.innerHTML = generateCatalogRows(whiskeyItems);
   }
 };
 
@@ -209,7 +199,7 @@ if (element) {
   }
 
   for (let id = 1; id <= 5; id++) {
-    const continueBtn = document.querySelector(`#question-${id} .continue-btn`);
+    const continueBtn = document.querySelector(`#slider-${id} .continue-btn`);
     if (continueBtn) {
       continueBtn.addEventListener('click', function (e) {
         e.preventDefault();
@@ -217,7 +207,7 @@ if (element) {
       });
     }
 
-    const backBtn = document.querySelector(`#question-${id} .back-btn`);
+    const backBtn = document.querySelector(`#slider-${id} .back-btn`);
     if (backBtn) {
       backBtn.addEventListener('click', function (e) {
         e.preventDefault();

@@ -1,9 +1,9 @@
-.question-container {
+.slider-container {
   display: flex;
   width: 100%;
 }
 
-.question-block {
+.slider-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,26 +17,26 @@
   display: none;
 }
 
-.question-text {
+.slider-text {
   font-size: 24px;
   font-weight: 600;
   line-height: 140%;
   letter-spacing: 1.08px;
   text-align: center;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .answer {
   background: #f1f2f2;
-  padding: 25px;
-  margin-bottom: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
   border-radius: 14px;
   width: 20%;
   display: flex;
   cursor: pointer;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
 }
 
@@ -48,39 +48,39 @@
   display: none;
 }
 
-.question-block label:last-of-type {
-  margin-bottom: 30px;
+.slider-block label:last-of-type {
+  margin-bottom: 20px;
 }
 
 .answer:has(input[type='radio']:checked) {
   background-color: #c4ddd1;
 }
 
-.question-block .continue-btn {
+.slider-block .continue-btn {
   background-color: #117243;
   color: white;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
-  width: 23%;
+  width: 22%;
 
-  padding: 18px 0;
-  border-radius: 6px;
+  padding: 12px 0;
+  border-radius: 12px;
 }
 
-.question-block .back-btn {
+.slider-block .back-btn,
+.slider-block .try-again-btn {
   background-color: white;
   color: var(--primary-brown);
-  border-radius: 6px;
+  border-radius: 12px;
   border: 1px #117243 solid;
-  margin-top: 20px;
+  margin-top: 15px;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
-  width: 23%;
+  width: 22%;
 
-  padding: 18px 0;
-  border-radius: 6px;
+  padding: 10px 0;
 }
 
 .slide-left-continue-animation {
@@ -89,6 +89,10 @@
 
 .slide-right-continue-animation {
   animation: slideRightContinue 0.5s ease-in-out;
+}
+
+.catalog {
+  width: 70%;
 }
 
 @keyframes slideLeftContinue {

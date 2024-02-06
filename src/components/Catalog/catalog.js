@@ -71,7 +71,7 @@ const getWhiskeyItems = route => {
   return whiskeyItems;
 };
 
-const generateCatalogRows = whiskeyItems => {
+export const generateCatalogRows = whiskeyItems => {
   let result = '';
   for (let index = 0; index < whiskeyItems.length; index++) {
     const whiskey = whiskeyItems[index];
