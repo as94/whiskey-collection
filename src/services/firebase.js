@@ -23,8 +23,6 @@ const auth = getAuth(app);
 auth.languageCode = auth.useDeviceLanguage();
 
 const provider = new GoogleAuthProvider();
-provider.addScope('https://www.googleapis.com/auth/userinfo.email');
-provider.addScope('https://www.googleapis.com/auth/userinfo.profile');
 
 export const googleSignIn = async callbackAction => {
   const result = await signInWithPopup(auth, provider);
