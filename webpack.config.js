@@ -16,7 +16,7 @@ const pageKeys = [
   'privacy-policy',
   'blog-post-list',
   'blog-post',
-  'recommender',
+  'adviser',
 ];
 
 module.exports = (_, argv) => {

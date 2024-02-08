@@ -1,5 +1,5 @@
 import './components/Header/header';
-import './components/Recommender/recommender';
+import './components/Adviser/adviser';
 import './components/Footer/footer';
 
 import './styles/root.css';

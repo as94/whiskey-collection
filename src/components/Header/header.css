@@ -101,4 +101,23 @@
   .header-logo img {
     width: 100px;
   }
+
+  .google-icon {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sign-in .text,
+  .sign-out .text {
+    display: none;
+  }
+
+  .header-logo {
+    margin-right: 20px;
+  }
+
+  .menu-item {
+    margin-right: 0;
+  }
 }

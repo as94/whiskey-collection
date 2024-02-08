@@ -1,9 +1,9 @@
-import recommenderContent from './recommender.html';
-import './recommender.css';
+import adviserContent from './adviser.html';
+import './adviser.css';
 import { getWhiskeyRecommendation } from '../../services/recommendation.js';
 import { googleSignIn } from '../../services/firebase.js';
 import { getParameters } from './parameters.js';
-import { getWithExpiry } from '../../services/localStorage';
+import { getWithExpiry } from '../../services/localStorage.js';
 import { authCallbackAction } from '../Header/header.js';
 import '../Catalog/catalog.css';
 import { generateCatalogRows } from '../Catalog/catalog.js';
@@ -57,7 +57,7 @@ const {
 } = await getParameters();
 
 const showParameters = () => {
-  return recommenderContent
+  return adviserContent
     .replace(
       '${abvs}',
       abvs
@@ -144,16 +144,16 @@ const showResults = whiskeyItemsResult => {
   }
 };
 
-const element = document.getElementById('recommender');
+const element = document.getElementById('adviser');
 if (element) {
+  let isAuthenticated = getWithExpiry('userName');
+
   element.innerHTML = showParameters();
 
-  const recommenderBtn = document.getElementById('recommenderBtn');
-  if (recommenderBtn) {
-    let isAuthenticated = getWithExpiry('userName');
-
+  const adviserBtn = document.getElementById('adviserBtn');
+  if (adviserBtn) {
     if (isAuthenticated) {
-      recommenderBtn.textContent = 'Learn results';
+      adviserBtn.textContent = 'Learn results';
     } else {
       const textBefore = document.createElement('span');
       textBefore.textContent = 'Continue with';
@@ -164,12 +164,12 @@ if (element) {
       const textAfter = document.createElement('span');
       textAfter.textContent = 'to learn results';
 
-      recommenderBtn.appendChild(textBefore);
-      recommenderBtn.appendChild(img);
-      recommenderBtn.appendChild(textAfter);
+      adviserBtn.appendChild(textBefore);
+      adviserBtn.appendChild(img);
+      adviserBtn.appendChild(textAfter);
     }
 
-    recommenderBtn.addEventListener('click', function () {
+    adviserBtn.addEventListener('click', function () {
       const userPreferences = getUserPreferences();
 
       isAuthenticated = getWithExpiry('userName');
@@ -185,6 +185,7 @@ if (element) {
       } else {
         googleSignIn(() => {
           authCallbackAction();
+
           const whiskeyItemsResult = getWhiskeyRecommendation(
             userPreferences,
             abvThresholds,
@@ -193,6 +194,9 @@ if (element) {
           );
 
           showResults(whiskeyItemsResult);
+
+          const lastId = 5;
+          nextQuestion(lastId);
         });
       }
     });
@@ -203,6 +207,11 @@ if (element) {
     if (continueBtn) {
       continueBtn.addEventListener('click', function (e) {
         e.preventDefault();
+
+        if (!isAuthenticated && id === 5) {
+          return;
+        }
+
         nextQuestion(id);
       });
     }
