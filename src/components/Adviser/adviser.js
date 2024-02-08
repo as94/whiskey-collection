@@ -72,7 +72,15 @@ const showParameters = () => {
       priceRanges
         .map(
           priceRange => `
-        <label class="answer" for="priceRange-${priceRange.id}"> <input type="radio" id="priceRange-${priceRange.id}" name="priceRange" value="${priceRange.id}"  /> <span>$${priceRange.min} - $${priceRange.max}</span></label>`
+        <label class="answer" for="priceRange-${
+          priceRange.id
+        }"> <input type="radio" id="priceRange-${
+            priceRange.id
+          }" name="priceRange" value="${priceRange.id}"  /> <span>${
+            priceRange.max < 2000
+              ? `$${priceRange.min} - $${priceRange.max}`
+              : `More than $${priceRange.min}`
+          }  </span></label>`
         )
         .join('')
     )

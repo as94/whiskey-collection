@@ -125,14 +125,12 @@ const whiskeyTastingNotes = {
     'Walnut oil',
     'Wine',
   ],
-  'Wood and Smoke Notes': [
+  'Smoke Notes': ['Smoked apricot', 'Smoky', 'Smoky barrel char', 'Tobacco'],
+  'Wood Notes': [
     'Cedar',
     'Char',
     'Charcoal',
     'Light oak',
-    'Smoked apricot',
-    'Smoky',
-    'Smoky barrel char',
     'Toasted grain',
     'Toasted pecans',
     'Toasty',
