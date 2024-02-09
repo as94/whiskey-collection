@@ -9,3 +9,7 @@ import './components/AgePopup/agePopup';
 import './styles/root.css';
 import './styles/typography.css';
 import './styles/slider.css';
+
+if (navigator.userAgent.includes('Instagram')) {
+  window.location.href = 'https://whiskey-collection.com/';
+}
