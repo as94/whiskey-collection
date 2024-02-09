@@ -7,6 +7,7 @@ import { getWithExpiry } from '../../services/localStorage.js';
 import { authCallbackAction } from '../Header/header.js';
 import '../Catalog/catalog.css';
 import { generateCatalogRows } from '../Catalog/catalog.js';
+import { isInstagram } from '../../services/checkUserAgent.js';
 
 const nextQuestion = id => {
   const currentElement = document.getElementById(`slider-${id}`);
@@ -160,7 +161,7 @@ if (element) {
 
   const adviserBtn = document.getElementById('adviserBtn');
   if (adviserBtn) {
-    if (isAuthenticated) {
+    if (isAuthenticated || isInstagram()) {
       adviserBtn.textContent = 'Learn results';
     } else {
       const textBefore = document.createElement('span');
@@ -181,7 +182,7 @@ if (element) {
       const userPreferences = getUserPreferences();
 
       isAuthenticated = getWithExpiry('userName');
-      if (isAuthenticated) {
+      if (isAuthenticated || isInstagram()) {
         const whiskeyItemsResult = getWhiskeyRecommendation(
           userPreferences,
           abvThresholds,
