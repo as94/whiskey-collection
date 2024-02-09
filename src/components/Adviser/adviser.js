@@ -217,7 +217,7 @@ if (element) {
       continueBtn.addEventListener('click', function (e) {
         e.preventDefault();
 
-        if (!isAuthenticated && id === 5) {
+        if (!isInstagram() && !isAuthenticated && id === 5) {
           return;
         }
 
