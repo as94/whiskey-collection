@@ -17,6 +17,7 @@ const pageKeys = [
   'blog-post-list',
   'blog-post',
   'adviser',
+  'subscription',
 ];
 
 module.exports = (_, argv) => {
